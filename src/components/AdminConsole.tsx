@@ -1,0 +1,691 @@
+/**
+ * @license
+ * SPDX-License-Identifier: Apache-2.0
+ */
+
+import React, { useState } from 'react';
+import { Book, Chapter, Bhajan, Temple, EventKaryakram, Samachar, AnalyticsData } from '../types';
+import { Settings, Plus, TrendingUp, Bell, Image, Shield, AlertCircle, PlayCircle, Eye, EyeOff, CheckCircle } from 'lucide-react';
+
+interface AdminConsoleProps {
+  books: Book[];
+  chapters: Chapter[];
+  temples: Temple[];
+  analytics: AnalyticsData;
+  adsEnabled: boolean;
+  onToggleAds: () => void;
+  onAddBook: (title: string, titleEn: string, author: string, description: string) => void;
+  onAddChapter: (bookId: string, number: number, title: string, content: string, explanation: string) => void;
+  onAddBhajan: (title: string, lyrics: string, singer: string, language: string) => void;
+  onAddTemple: (name: string, type: 'temple' | 'ashram' | 'sthan', location: string, description: string, lat: number, lng: number) => void;
+  onSendNotification: (title: string, body: string, category: 'granth' | 'bhajan' | 'event' | 'general') => void;
+}
+
+export default function AdminConsole({
+  books,
+  chapters,
+  temples,
+  analytics,
+  adsEnabled,
+  onToggleAds,
+  onAddBook,
+  onAddChapter,
+  onAddBhajan,
+  onAddTemple,
+  onSendNotification
+}: AdminConsoleProps) {
+  const [activePanel, setActivePanel] = useState<'analytics' | 'customize' | 'add_book' | 'add_chapter' | 'add_temple' | 'add_bhajan'>('analytics');
+
+  // Form states
+  const [statusMsg, setStatusMsg] = useState<{ type: 'success' | 'error'; text: string } | null>(null);
+
+  // Book Form State
+  const [bTitle, setBTitle] = useState('');
+  const [bTitleEn, setBTitleEn] = useState('');
+  const [bAuthor, setBAuthor] = useState('');
+  const [bDesc, setBDesc] = useState('');
+
+  // Chapter Form State
+  const [cBookId, setCBookId] = useState(books[0]?.id || '');
+  const [cNumber, setCNumber] = useState('1');
+  const [cTitle, setCTitle] = useState('');
+  const [cContent, setCContent] = useState('');
+  const [cExplanation, setCExplanation] = useState('');
+
+  // Temple Form State
+  const [tName, setTName] = useState('');
+  const [tType, setTType] = useState<'temple' | 'ashram' | 'sthan'>('temple');
+  const [tLocation, setTLocation] = useState('');
+  const [tDescription, setTDescription] = useState('');
+  const [tLat, setTLat] = useState('19.0');
+  const [tLng, setTLng] = useState('75.0');
+
+  // Bhajan Form State
+  const [bhTitle, setBhTitle] = useState('');
+  const [bhLyrics, setBhLyrics] = useState('');
+  const [bhSinger, setBhSinger] = useState('');
+  const [bhLang, setBhLang] = useState('हिंदी (Hindi)');
+
+  // Notification State
+  const [notifTitle, setNotifTitle] = useState('');
+  const [notifBody, setNotifBody] = useState('');
+  const [notifCategory, setNotifCategory] = useState<'granth' | 'bhajan' | 'event' | 'general'>('general');
+
+  const flashMessage = (type: 'success' | 'error', text: string) => {
+    setStatusMsg({ type, text });
+    setTimeout(() => {
+      setStatusMsg(null);
+    }, 4000);
+  };
+
+  const handleBookSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!bTitle || !bAuthor || !bDesc) {
+      flashMessage('error', 'कृपया सभी आवश्यक फ़ील्ड भरें।');
+      return;
+    }
+    onAddBook(bTitle, bTitleEn || bTitle, bAuthor, bDesc);
+    flashMessage('success', `ग्रंथ "${bTitle}" सफलतापूर्वक जोड़ दिया गया है!`);
+    setBTitle('');
+    setBTitleEn('');
+    setBAuthor('');
+    setBDesc('');
+  };
+
+  const handleChapterSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!cBookId || !cTitle || !cContent) {
+      flashMessage('error', 'कृपया पुस्तक, शीर्षक और मुख्य पाठ दर्ज करें।');
+      return;
+    }
+    onAddChapter(cBookId, Number(cNumber), cTitle, cContent, cExplanation);
+    flashMessage('success', `अध्याय/प्रकरण "${cTitle}" सफलतापूर्वक जोड़ दिया गया है!`);
+    setCTitle('');
+    setCContent('');
+    setCExplanation('');
+    setCNumber(String(Number(cNumber) + 1));
+  };
+
+  const handleBhajanSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!bhTitle || !bhLyrics) {
+      flashMessage('error', 'शीर्षक और भजन के बोल आवश्यक हैं।');
+      return;
+    }
+    onAddBhajan(bhTitle, bhLyrics, bhSinger, bhLang);
+    flashMessage('success', `भजन "${bhTitle}" सफलतापूर्वक जोड़ दिया गया है!`);
+    setBhTitle('');
+    setBhLyrics('');
+    setBhSinger('');
+  };
+
+  const handleTempleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!tName || !tLocation || !tDescription) {
+      flashMessage('error', 'कृपया नाम, स्थान और संक्षिप्त इतिहास दर्ज करें।');
+      return;
+    }
+    onAddTemple(tName, tType, tLocation, tDescription, Number(tLat), Number(tLng));
+    flashMessage('success', `तीर्थस्थल/आश्रम "${tName}" सफलतापूर्वक जोड़ दिया गया है!`);
+    setTName('');
+    setTLocation('');
+    setTDescription('');
+  };
+
+  const handleNotificationSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!notifTitle || !notifBody) {
+      flashMessage('error', 'नोटिफिकेशन शीर्षक और विवरण आवश्यक हैं।');
+      return;
+    }
+    onSendNotification(notifTitle, notifBody, notifCategory);
+    flashMessage('success', 'पुश नोटिफिकेशन सफलतापूर्वक भेज दिया गया है!');
+    setNotifTitle('');
+    setNotifBody('');
+  };
+
+  return (
+    <div id="admin-root" className="bg-white rounded-2xl shadow-md border border-saffron-100 overflow-hidden min-h-[500px]">
+      {/* Header */}
+      <div className="bg-saffron-50 p-6 border-b border-saffron-100 flex flex-col md:flex-row md:items-center justify-between gap-4">
+        <div>
+          <h2 className="text-2xl font-bold text-saffron-700 font-devanagari flex items-center gap-2">
+            <Settings className="w-6 h-6 text-saffron-500 animate-spin" />
+            एडमिन कस्टमाइज़ेशन पैनल (Admin Panel)
+          </h2>
+          <p className="text-sm text-gray-600 mt-1 font-sans">
+            ग्रंथों, अध्यायों, भजनों और मंदिरों को जोड़ें, नोटिफिकेशन भेजें, विज्ञापन नियंत्रित करें, और लाइव एनालिटिक्स देखें।
+          </p>
+        </div>
+
+        {/* Status Msg */}
+        {statusMsg && (
+          <div className={`px-4 py-2 rounded-lg text-xs font-bold font-sans shadow-sm flex items-center gap-1.5 border ${
+            statusMsg.type === 'success' ? 'bg-emerald-50 text-emerald-700 border-emerald-200' : 'bg-red-50 text-red-700 border-red-200'
+          }`}>
+            <CheckCircle className="w-4 h-4 shrink-0" />
+            {statusMsg.text}
+          </div>
+        )}
+      </div>
+
+      <div className="grid grid-cols-1 md:grid-cols-4">
+        {/* Navigation Options sidebar */}
+        <div className="border-r border-saffron-100 p-4 bg-saffron-50/20 space-y-1">
+          <h3 className="text-xs font-bold text-gray-500 uppercase tracking-wider mb-2.5 px-2">प्रबंधन श्रेणियां</h3>
+          <button
+            onClick={() => { setActivePanel('analytics'); setStatusMsg(null); }}
+            className={`w-full text-left px-3.5 py-2 rounded-lg text-xs font-bold transition-all flex items-center gap-2 ${
+              activePanel === 'analytics' ? 'bg-saffron-500 text-white shadow-xs' : 'text-gray-700 hover:bg-saffron-50 hover:text-saffron-600'
+            }`}
+          >
+            <TrendingUp className="w-4 h-4" />
+            लाइव एनालिटिक्स (Analytics)
+          </button>
+          <button
+            onClick={() => { setActivePanel('customize'); setStatusMsg(null); }}
+            className={`w-full text-left px-3.5 py-2 rounded-lg text-xs font-bold transition-all flex items-center gap-2 ${
+              activePanel === 'customize' ? 'bg-saffron-500 text-white shadow-xs' : 'text-gray-700 hover:bg-saffron-50 hover:text-saffron-600'
+            }`}
+          >
+            <Settings className="w-4 h-4" />
+            अँप कस्टमाइझ & अलर्ट्स
+          </button>
+          <button
+            onClick={() => { setActivePanel('add_book'); setStatusMsg(null); }}
+            className={`w-full text-left px-3.5 py-2 rounded-lg text-xs font-bold transition-all flex items-center gap-2 ${
+              activePanel === 'add_book' ? 'bg-saffron-500 text-white shadow-xs' : 'text-gray-700 hover:bg-saffron-50 hover:text-saffron-600'
+            }`}
+          >
+            <Plus className="w-4 h-4" />
+            नई पुस्तक जोड़ें
+          </button>
+          <button
+            onClick={() => { setActivePanel('add_chapter'); setStatusMsg(null); }}
+            className={`w-full text-left px-3.5 py-2 rounded-lg text-xs font-bold transition-all flex items-center gap-2 ${
+              activePanel === 'add_chapter' ? 'bg-saffron-500 text-white shadow-xs' : 'text-gray-700 hover:bg-saffron-50 hover:text-saffron-600'
+            }`}
+          >
+            <Plus className="w-4 h-4" />
+            नया अध्याय (Chapter) जोड़ें
+          </button>
+          <button
+            onClick={() => { setActivePanel('add_temple'); setStatusMsg(null); }}
+            className={`w-full text-left px-3.5 py-2 rounded-lg text-xs font-bold transition-all flex items-center gap-2 ${
+              activePanel === 'add_temple' ? 'bg-saffron-500 text-white shadow-xs' : 'text-gray-700 hover:bg-saffron-50 hover:text-saffron-600'
+            }`}
+          >
+            <Plus className="w-4 h-4" />
+            नया मंदिर/आश्रम जोड़ें
+          </button>
+          <button
+            onClick={() => { setActivePanel('add_bhajan'); setStatusMsg(null); }}
+            className={`w-full text-left px-3.5 py-2 rounded-lg text-xs font-bold transition-all flex items-center gap-2 ${
+              activePanel === 'add_bhajan' ? 'bg-saffron-500 text-white shadow-xs' : 'text-gray-700 hover:bg-saffron-50 hover:text-saffron-600'
+            }`}
+          >
+            <Plus className="w-4 h-4" />
+            नया भजन जोड़ें
+          </button>
+        </div>
+
+        {/* Forms & Charts Content Block */}
+        <div className="col-span-1 md:col-span-3 p-6 md:p-8 bg-white">
+          
+          {/* ANALYTICS PANEL */}
+          {activePanel === 'analytics' && (
+            <div className="space-y-6">
+              <h3 className="text-sm font-bold text-gray-800 uppercase tracking-wider border-b border-gray-100 pb-2 flex items-center gap-2 font-sans">
+                <TrendingUp className="w-4 h-4 text-saffron-500" />
+                लाइव ऐप एनालिटिक्स (Real-Time Statistics)
+              </h3>
+
+              {/* Counters */}
+              <div className="grid grid-cols-3 gap-4">
+                <div className="bg-saffron-50 border border-saffron-100 p-4 rounded-xl text-center shadow-2xs">
+                  <span className="block text-xl md:text-2xl font-black text-saffron-600 font-mono">{analytics.appOpens}</span>
+                  <span className="text-[10px] text-gray-500 font-bold font-sans">कुल ऐप ओपन (Loads)</span>
+                </div>
+                <div className="bg-saffron-50 border border-saffron-100 p-4 rounded-xl text-center shadow-2xs">
+                  <span className="block text-xl md:text-2xl font-black text-saffron-600 font-mono">{analytics.activeUsersToday}</span>
+                  <span className="text-[10px] text-gray-500 font-bold font-sans">सक्रिय पाठक (Active)</span>
+                </div>
+                <div className="bg-saffron-50 border border-saffron-100 p-4 rounded-xl text-center shadow-2xs">
+                  <span className="block text-xl md:text-2xl font-black text-saffron-600 font-mono">९८.५%</span>
+                  <span className="text-[10px] text-gray-500 font-bold font-sans">संतुष्टि स्कोर (CTR)</span>
+                </div>
+              </div>
+
+              {/* Most Read Books Custom Bar Graphic */}
+              <div>
+                <h4 className="text-xs font-bold text-gray-500 uppercase tracking-wider mb-3">सर्वाधिक पढ़े जाने वाले ग्रंथ (Most Read Books)</h4>
+                <div className="space-y-3">
+                  {Object.entries(analytics.mostReadBooks).map(([bookName, readCount]) => {
+                    const percentage = Math.min(100, (readCount / 200) * 100);
+                    return (
+                      <div key={bookName} className="space-y-1">
+                        <div className="flex justify-between items-center text-xs">
+                          <span className="font-bold font-devanagari text-gray-700">{bookName}</span>
+                          <span className="font-mono text-gray-500 font-bold">{readCount} बार</span>
+                        </div>
+                        <div className="w-full bg-gray-100 rounded-full h-2.5 overflow-hidden">
+                          <div className="bg-saffron-500 h-full rounded-full transition-all duration-1000" style={{ width: `${percentage}%` }}></div>
+                        </div>
+                      </div>
+                    );
+                  })}
+                </div>
+              </div>
+
+              {/* Most Played Bhajans */}
+              <div className="pt-4 border-t border-gray-100">
+                <h4 className="text-xs font-bold text-gray-500 uppercase tracking-wider mb-3">सर्वाधिक सुने जाने वाले भजन (Most Popular Bhajans)</h4>
+                <div className="space-y-3">
+                  {Object.entries(analytics.mostPlayedBhajans).map(([bhTitle, playCount]) => {
+                    const percentage = Math.min(100, (playCount / 100) * 100);
+                    return (
+                      <div key={bhTitle} className="space-y-1">
+                        <div className="flex justify-between items-center text-xs">
+                          <span className="font-bold font-devanagari text-gray-700 truncate max-w-xs">{bhTitle}</span>
+                          <span className="font-mono text-gray-500 font-bold">{playCount} श्रोते</span>
+                        </div>
+                        <div className="w-full bg-gray-100 rounded-full h-2 overflow-hidden">
+                          <div className="bg-orange-500 h-full rounded-full transition-all duration-1000" style={{ width: `${percentage}%` }}></div>
+                        </div>
+                      </div>
+                    );
+                  })}
+                </div>
+              </div>
+            </div>
+          )}
+
+          {/* CUSTOMIZE & NOTIFICATION SETTINGS */}
+          {activePanel === 'customize' && (
+            <div className="space-y-8">
+              <div className="bg-saffron-50/50 p-5 rounded-2xl border border-saffron-100">
+                <h3 className="text-sm font-bold text-gray-800 uppercase tracking-wider border-b border-saffron-200 pb-2 mb-4 font-sans">
+                  अँप कस्टमाइझ (Configure Ads & Interface)
+                </h3>
+
+                {/* Ads Switch */}
+                <div className="flex items-center justify-between">
+                  <div>
+                    <h4 className="text-sm font-bold text-gray-800 font-sans">प्रायोजित बैनर विज्ञापन (Control Sponsor Ads)</h4>
+                    <p className="text-xs text-gray-500 font-sans mt-0.5">
+                      ऐप के शीर्ष भाग में विज्ञापन (Banner Ads) प्रदर्शित या छुपाएं।
+                    </p>
+                  </div>
+
+                  <button
+                    onClick={onToggleAds}
+                    className={`p-2 rounded-xl border flex items-center gap-1.5 transition-all text-xs font-bold ${
+                      adsEnabled
+                        ? 'bg-red-50 text-red-600 border-red-200 hover:bg-red-100'
+                        : 'bg-emerald-50 text-emerald-600 border-emerald-200 hover:bg-emerald-100'
+                    }`}
+                  >
+                    {adsEnabled ? <EyeOff className="w-4 h-4" /> : <Eye className="w-4 h-4" />}
+                    {adsEnabled ? 'Ads बंद करें' : 'Ads चालू करें'}
+                  </button>
+                </div>
+              </div>
+
+              {/* Notification Push form */}
+              <form onSubmit={handleNotificationSubmit} className="space-y-4">
+                <h3 className="text-sm font-bold text-gray-800 uppercase tracking-wider border-b border-gray-100 pb-2 flex items-center gap-1.5 font-sans">
+                  <Bell className="w-4 h-4 text-saffron-500" />
+                  तत्काल पुश नोटिफिकेशन भेजें (Send Live Alerts)
+                </h3>
+
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  <div>
+                    <label className="block text-xs font-semibold text-gray-500 mb-1">शीर्षक (Alert Title)</label>
+                    <input
+                      type="text"
+                      placeholder="उदा: आज के सत्संग की सूचना..."
+                      className="w-full px-3.5 py-1.5 text-xs border border-saffron-200 rounded-lg focus:outline-none focus:ring-1 focus:ring-saffron-500 bg-white font-sans"
+                      value={notifTitle}
+                      onChange={(e) => setNotifTitle(e.target.value)}
+                      required
+                    />
+                  </div>
+
+                  <div>
+                    <label className="block text-xs font-semibold text-gray-500 mb-1">श्रेणी (Category)</label>
+                    <select
+                      className="w-full px-3 py-1.5 text-xs border border-saffron-200 rounded-lg focus:outline-none focus:ring-1 focus:ring-saffron-500 bg-white font-sans"
+                      value={notifCategory}
+                      onChange={(e) => setNotifCategory(e.target.value as any)}
+                    >
+                      <option value="general">सामान्य सूचना (General)</option>
+                      <option value="granth">नया ग्रंथ (Granth)</option>
+                      <option value="bhajan">नया भजन (Bhajan)</option>
+                      <option value="event">उत्सव / कार्यक्रम (Event)</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div>
+                  <label className="block text-xs font-semibold text-gray-500 mb-1">अलर्ट विवरण (Body Message)</label>
+                  <input
+                    type="text"
+                    placeholder="उदा: शाम ६:०० बजे ऋद्धपूर धाम से सीधे लाइव आरती का प्रसारण किया जाएगा।"
+                    className="w-full px-3.5 py-2 text-xs border border-saffron-200 rounded-lg focus:outline-none focus:ring-1 focus:ring-saffron-500 bg-white font-sans"
+                    value={notifBody}
+                    onChange={(e) => setNotifBody(e.target.value)}
+                    required
+                  />
+                </div>
+
+                <button
+                  type="submit"
+                  className="w-full py-2.5 bg-saffron-500 text-white rounded-lg hover:bg-saffron-600 font-bold text-xs transition-all flex items-center justify-center gap-1 border border-saffron-600 shadow-xs"
+                >
+                  <Bell className="w-4 h-4" />
+                  तत्काल पुश नोटिफिकेशन प्रेषित करें
+                </button>
+              </form>
+            </div>
+          )}
+
+          {/* ADD BOOK PANEL */}
+          {activePanel === 'add_book' && (
+            <form onSubmit={handleBookSubmit} className="space-y-4">
+              <h3 className="text-sm font-bold text-gray-800 uppercase tracking-wider border-b border-gray-100 pb-2 font-sans">
+                नया ग्रंथ प्रविष्ट करें (Add New Scripture)
+              </h3>
+
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
+                  <label className="block text-xs font-semibold text-gray-500 mb-1">ग्रंथ का देवनागरी शीर्षक (Devnagari Title) *</label>
+                  <input
+                    type="text"
+                    placeholder="उदा: श्री दृष्टांतपाठ"
+                    className="w-full px-3.5 py-1.5 text-xs border border-saffron-200 rounded-lg focus:outline-none focus:ring-1 focus:ring-saffron-500 bg-white"
+                    value={bTitle}
+                    onChange={(e) => setBTitle(e.target.value)}
+                    required
+                  />
+                </div>
+
+                <div>
+                  <label className="block text-xs font-semibold text-gray-500 mb-1">अंग्रेजी शीर्षक (English Title)</label>
+                  <input
+                    type="text"
+                    placeholder="उदा: Shree Drishtantapath"
+                    className="w-full px-3.5 py-1.5 text-xs border border-saffron-200 rounded-lg focus:outline-none focus:ring-1 focus:ring-saffron-500 bg-white"
+                    value={bTitleEn}
+                    onChange={(e) => setBTitleEn(e.target.value)}
+                  />
+                </div>
+              </div>
+
+              <div>
+                <label className="block text-xs font-semibold text-gray-500 mb-1">लेखक/संकलनकर्ता (Author/Compiler) *</label>
+                <input
+                  type="text"
+                  placeholder="उदा: केशिराज व्यास"
+                  className="w-full px-3.5 py-1.5 text-xs border border-saffron-200 rounded-lg focus:outline-none focus:ring-1 focus:ring-saffron-500 bg-white"
+                  value={bAuthor}
+                  onChange={(e) => setBAuthor(e.target.value)}
+                  required
+                />
+              </div>
+
+              <div>
+                <label className="block text-xs font-semibold text-gray-500 mb-1">ग्रंथ का विस्तृत परिचय (Introduction) *</label>
+                <textarea
+                  className="w-full p-3 text-xs border border-saffron-200 rounded-lg focus:outline-none focus:ring-1 focus:ring-saffron-500 bg-white h-24 resize-none"
+                  placeholder="इस पवित्र ग्रंथ के मुख्य तत्वों और महत्व का संक्षेप में विवरण दें..."
+                  value={bDesc}
+                  onChange={(e) => setBDesc(e.target.value)}
+                  required
+                />
+              </div>
+
+              <button
+                type="submit"
+                className="w-full py-2.5 bg-saffron-500 text-white rounded-lg hover:bg-saffron-600 font-bold text-xs transition-all flex items-center justify-center gap-1 border border-saffron-600"
+              >
+                ग्रंथ प्रकाशित करें
+              </button>
+            </form>
+          )}
+
+          {/* ADD CHAPTER PANEL */}
+          {activePanel === 'add_chapter' && (
+            <form onSubmit={handleChapterSubmit} className="space-y-4">
+              <h3 className="text-sm font-bold text-gray-800 uppercase tracking-wider border-b border-gray-100 pb-2 font-sans">
+                ग्रंथ के अंतर्गत नया अध्याय जोड़ें (Add Chapter)
+              </h3>
+
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                <div>
+                  <label className="block text-xs font-semibold text-gray-500 mb-1">मूल ग्रंथ चुनें (Select Scripture) *</label>
+                  <select
+                    className="w-full px-3 py-1.5 text-xs border border-saffron-200 rounded-lg focus:outline-none focus:ring-1 focus:ring-saffron-500 bg-white"
+                    value={cBookId}
+                    onChange={(e) => setCBookId(e.target.value)}
+                    required
+                  >
+                    {books.map(b => (
+                      <option key={b.id} value={b.id}>{b.title}</option>
+                    ))}
+                  </select>
+                </div>
+
+                <div>
+                  <label className="block text-xs font-semibold text-gray-500 mb-1">अध्याय क्रमांक (Chapter Number) *</label>
+                  <input
+                    type="number"
+                    className="w-full px-3.5 py-1.5 text-xs border border-saffron-200 rounded-lg focus:outline-none focus:ring-1 focus:ring-saffron-500 bg-white font-mono"
+                    value={cNumber}
+                    onChange={(e) => setCNumber(e.target.value)}
+                    required
+                  />
+                </div>
+
+                <div>
+                  <label className="block text-xs font-semibold text-gray-500 mb-1">अध्याय का शीर्षक (Chapter Title) *</label>
+                  <input
+                    type="text"
+                    placeholder="उदा: प्रकरण ५: आचार विचार"
+                    className="w-full px-3.5 py-1.5 text-xs border border-saffron-200 rounded-lg focus:outline-none focus:ring-1 focus:ring-saffron-500 bg-white"
+                    value={cTitle}
+                    onChange={(e) => setCTitle(e.target.value)}
+                    required
+                  />
+                </div>
+              </div>
+
+              <div>
+                <label className="block text-xs font-semibold text-gray-500 mb-1">मूल पाठ/वचन सूत्र (Scripture Text) *</label>
+                <textarea
+                  className="w-full p-3 text-xs border border-saffron-200 rounded-lg focus:outline-none focus:ring-1 focus:ring-saffron-500 bg-white h-24 resize-none font-devanagari text-sm font-medium"
+                  placeholder="मूल श्लोक, वचन सूत्र या लीला यहाँ प्रविष्ट करें..."
+                  value={cContent}
+                  onChange={(e) => setCContent(e.target.value)}
+                  required
+                />
+              </div>
+
+              <div>
+                <label className="block text-xs font-semibold text-gray-500 mb-1">भावार्थ / विवेचन (Commentary/Explanation)</label>
+                <textarea
+                  className="w-full p-3 text-xs border border-saffron-200 rounded-lg focus:outline-none focus:ring-1 focus:ring-saffron-500 bg-white h-24 resize-none"
+                  placeholder="साधकों के समझने के लिए सरल भावार्थ और टीका प्रविष्ट करें..."
+                  value={cExplanation}
+                  onChange={(e) => setCExplanation(e.target.value)}
+                />
+              </div>
+
+              <button
+                type="submit"
+                className="w-full py-2.5 bg-saffron-500 text-white rounded-lg hover:bg-saffron-600 font-bold text-xs transition-all flex items-center justify-center gap-1 border border-saffron-600"
+              >
+                अध्याय सहेजें (Save Chapter)
+              </button>
+            </form>
+          )}
+
+          {/* ADD TEMPLE PANEL */}
+          {activePanel === 'add_temple' && (
+            <form onSubmit={handleTempleSubmit} className="space-y-4">
+              <h3 className="text-sm font-bold text-gray-800 uppercase tracking-wider border-b border-gray-100 pb-2 font-sans">
+                नया तीर्थक्षेत्र अथवा आश्रम जोड़ें (Add Temple/Ashram)
+              </h3>
+
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                <div>
+                  <label className="block text-xs font-semibold text-gray-500 mb-1">तीर्थ का नाम *</label>
+                  <input
+                    type="text"
+                    placeholder="उदा: जालना आश्रम"
+                    className="w-full px-3.5 py-1.5 text-xs border border-saffron-200 rounded-lg focus:outline-none focus:ring-1 focus:ring-saffron-500 bg-white"
+                    value={tName}
+                    onChange={(e) => setTName(e.target.value)}
+                    required
+                  />
+                </div>
+
+                <div>
+                  <label className="block text-xs font-semibold text-gray-500 mb-1">श्रेणी (Type)</label>
+                  <select
+                    className="w-full px-3 py-1.5 text-xs border border-saffron-200 rounded-lg focus:outline-none focus:ring-1 focus:ring-saffron-500 bg-white"
+                    value={tType}
+                    onChange={(e) => setTType(e.target.value as any)}
+                  >
+                    <option value="temple">प्राचीन मंदिर (Temple)</option>
+                    <option value="ashram">साधना आश्रम (Ashram)</option>
+                    <option value="sthan">पवित्र स्थान (Sthan)</option>
+                  </select>
+                </div>
+
+                <div>
+                  <label className="block text-xs font-semibold text-gray-500 mb-1">भौगोलिक पता (Location) *</label>
+                  <input
+                    type="text"
+                    placeholder="उदा: जालना जिला, महाराष्ट्र"
+                    className="w-full px-3.5 py-1.5 text-xs border border-saffron-200 rounded-lg focus:outline-none focus:ring-1 focus:ring-saffron-500 bg-white"
+                    value={tLocation}
+                    onChange={(e) => setTLocation(e.target.value)}
+                    required
+                  />
+                </div>
+              </div>
+
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
+                  <label className="block text-xs font-semibold text-gray-500 mb-1">अक्षांश (Latitude Coordinates)</label>
+                  <input
+                    type="text"
+                    placeholder="19.1667"
+                    className="w-full px-3.5 py-1.5 text-xs border border-saffron-200 rounded-lg focus:outline-none focus:ring-1 focus:ring-saffron-500 bg-white font-mono"
+                    value={tLat}
+                    onChange={(e) => setTLat(e.target.value)}
+                  />
+                </div>
+
+                <div>
+                  <label className="block text-xs font-semibold text-gray-500 mb-1">देशांतर (Longitude Coordinates)</label>
+                  <input
+                    type="text"
+                    placeholder="75.8333"
+                    className="w-full px-3.5 py-1.5 text-xs border border-saffron-200 rounded-lg focus:outline-none focus:ring-1 focus:ring-saffron-500 bg-white font-mono"
+                    value={tLng}
+                    onChange={(e) => setTLng(e.target.value)}
+                  />
+                </div>
+              </div>
+
+              <div>
+                <label className="block text-xs font-semibold text-gray-500 mb-1">स्थान का इतिहास एवं दर्शन महत्व *</label>
+                <textarea
+                  className="w-full p-3 text-xs border border-saffron-200 rounded-lg focus:outline-none focus:ring-1 focus:ring-saffron-500 bg-white h-24 resize-none"
+                  placeholder="यहाँ की लीलाओं और इतिहास का संक्षेप में उल्लेख करें..."
+                  value={tDescription}
+                  onChange={(e) => setTDescription(e.target.value)}
+                  required
+                />
+              </div>
+
+              <button
+                type="submit"
+                className="w-full py-2.5 bg-saffron-500 text-white rounded-lg hover:bg-saffron-600 font-bold text-xs transition-all flex items-center justify-center gap-1 border border-saffron-600"
+              >
+                स्थान सहेजें
+              </button>
+            </form>
+          )}
+
+          {/* ADD BHAJAN PANEL */}
+          {activePanel === 'add_bhajan' && (
+            <form onSubmit={handleBhajanSubmit} className="space-y-4">
+              <h3 className="text-sm font-bold text-gray-800 uppercase tracking-wider border-b border-gray-100 pb-2 font-sans">
+                नया भक्ति भजन प्रविष्ट करें (Add Bhajan)
+              </h3>
+
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                <div className="sm:col-span-2">
+                  <label className="block text-xs font-semibold text-gray-500 mb-1">भजन का शीर्षक (Bhajan Title) *</label>
+                  <input
+                    type="text"
+                    placeholder="उदा: स्वामी चक्रधरा आदि पुरुषा"
+                    className="w-full px-3.5 py-1.5 text-xs border border-saffron-200 rounded-lg focus:outline-none focus:ring-1 focus:ring-saffron-500 bg-white"
+                    value={bhTitle}
+                    onChange={(e) => setBhTitle(e.target.value)}
+                    required
+                  />
+                </div>
+
+                <div>
+                  <label className="block text-xs font-semibold text-gray-500 mb-1">भाषा (Language)</label>
+                  <select
+                    className="w-full px-3 py-1.5 text-xs border border-saffron-200 rounded-lg focus:outline-none focus:ring-1 focus:ring-saffron-500 bg-white"
+                    value={bhLang}
+                    onChange={(e) => setBhLang(e.target.value)}
+                  >
+                    <option value="हिंदी (Hindi)">हिंदी (Hindi)</option>
+                    <option value="मराठी (Marathi)">मराठी (Marathi)</option>
+                    <option value="संस्कृत (Sanskrit)">संस्कृत (Sanskrit)</option>
+                  </select>
+                </div>
+              </div>
+
+              <div>
+                <label className="block text-xs font-semibold text-gray-500 mb-1">गायक / कीर्तनकार (Singer Name)</label>
+                <input
+                  type="text"
+                  placeholder="उदा: आचार्य प्रवर"
+                  className="w-full px-3.5 py-1.5 text-xs border border-saffron-200 rounded-lg focus:outline-none focus:ring-1 focus:ring-saffron-500 bg-white"
+                  value={bhSinger}
+                  onChange={(e) => setBhSinger(e.target.value)}
+                />
+              </div>
+
+              <div>
+                <label className="block text-xs font-semibold text-gray-500 mb-1">भजन के बोल (Full Lyrics) *</label>
+                <textarea
+                  className="w-full p-3 text-xs border border-saffron-200 rounded-lg focus:outline-none focus:ring-1 focus:ring-saffron-500 bg-white h-24 font-devanagari leading-relaxed text-sm"
+                  placeholder="भजन के पूरे अंतरे और शब्द यहाँ प्रविष्ट करें..."
+                  value={bhLyrics}
+                  onChange={(e) => setBhLyrics(e.target.value)}
+                  required
+                />
+              </div>
+
+              <button
+                type="submit"
+                className="w-full py-2.5 bg-saffron-500 text-white rounded-lg hover:bg-saffron-600 font-bold text-xs transition-all flex items-center justify-center gap-1 border border-saffron-600"
+              >
+                भजन सहेजें (Save Bhajan)
+              </button>
+            </form>
+          )}
+
+        </div>
+      </div>
+    </div>
+  );
+}
