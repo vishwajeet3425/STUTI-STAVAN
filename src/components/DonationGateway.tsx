@@ -5,8 +5,13 @@
 
 import React, { useState } from 'react';
 import { Sparkles, ArrowRight, CheckCircle2, Download, QrCode, CreditCard, ShieldCheck } from 'lucide-react';
+import { translations } from '../translations';
 
-export default function DonationGateway() {
+interface DonationGatewayProps {
+  lang?: 'hi' | 'mr' | 'en';
+}
+
+export default function DonationGateway({ lang = 'mr' }: DonationGatewayProps) {
   const [donorName, setDonorName] = useState('');
   const [donorEmail, setDonorEmail] = useState('');
   const [amount, setAmount] = useState('500');
@@ -36,10 +41,10 @@ export default function DonationGateway() {
       <div className="bg-saffron-50 p-6 border-b border-saffron-100 text-center">
         <h2 className="text-2xl font-bold text-saffron-700 font-devanagari inline-flex items-center gap-2">
           <Sparkles className="w-6 h-6 text-saffron-500" />
-          धर्मार्थ दान एवं सहयोग (Donation)
+          {translations.donationHeader[lang]}
         </h2>
         <p className="text-sm text-gray-600 mt-1 font-sans max-w-xl mx-auto">
-          महानुभाव पंथ के तीर्थ क्षेत्रों के जीर्णोद्धार, अन्नदान सेवा और ग्रंथों के डिजिटल प्रकाशन में अपना अमूल्य योगदान दें।
+          {translations.donationSub[lang]}
         </p>
       </div>
 
@@ -49,15 +54,17 @@ export default function DonationGateway() {
           <div className="p-6 md:p-8 border-b lg:border-b-0 lg:border-r border-saffron-100">
             <form onSubmit={handleSubmit} className="space-y-5">
               <h3 className="text-sm font-bold text-gray-800 uppercase tracking-wider border-b border-gray-100 pb-2 font-sans">
-                सहयोग विवरण अंकित करें
+                {lang === 'mr' ? 'सहयोग तपशील भरा' : lang === 'hi' ? 'सहयोग विवरण अंकित करें' : 'Enter Contribution Details'}
               </h3>
 
               {/* Name */}
               <div>
-                <label className="block text-xs font-semibold text-gray-500 mb-1 font-sans">सहयोगी का नाम (Full Name)</label>
+                <label className="block text-xs font-semibold text-gray-500 mb-1 font-sans">
+                  {lang === 'mr' ? 'सहयोग्याचे नाव (Full Name)' : lang === 'hi' ? 'सहयोगी का नाम (Full Name)' : 'Donor Name (Full Name)'}
+                </label>
                 <input
                   type="text"
-                  placeholder="अपना नाम अंकित करें..."
+                  placeholder={lang === 'mr' ? 'आपले नाव प्रविष्ट करा...' : lang === 'hi' ? 'अपना नाम अंकित करें...' : 'Enter your name...'}
                   className="w-full px-3.5 py-2 text-sm border border-saffron-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-saffron-500 bg-white"
                   value={donorName}
                   onChange={(e) => setDonorName(e.target.value)}
@@ -67,10 +74,12 @@ export default function DonationGateway() {
 
               {/* Email */}
               <div>
-                <label className="block text-xs font-semibold text-gray-500 mb-1 font-sans">ईमेल (Email Address)</label>
+                <label className="block text-xs font-semibold text-gray-500 mb-1 font-sans">
+                  {lang === 'mr' ? 'ईमेल (Email Address)' : lang === 'hi' ? 'ईमेल (Email Address)' : 'Email Address'}
+                </label>
                 <input
                   type="email"
-                  placeholder="अपना ईमेल दर्ज करें (वैकल्पिक)..."
+                  placeholder={lang === 'mr' ? 'आपला ईमेल प्रविष्ट करा (पर्यायी)...' : lang === 'hi' ? 'अपना ईमेल दर्ज करें (वैकल्पिक)...' : 'Enter your email (optional)...'}
                   className="w-full px-3.5 py-2 text-sm border border-saffron-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-saffron-500 bg-white"
                   value={donorEmail}
                   onChange={(e) => setDonorEmail(e.target.value)}
@@ -79,22 +88,34 @@ export default function DonationGateway() {
 
               {/* Purpose */}
               <div>
-                <label className="block text-xs font-semibold text-gray-500 mb-1 font-sans">सहयोग का उद्देश्य (Purpose)</label>
+                <label className="block text-xs font-semibold text-gray-500 mb-1 font-sans">
+                  {lang === 'mr' ? 'सहयोगाचा उद्देश (Purpose)' : lang === 'hi' ? 'सहयोग का उद्देश्य (Purpose)' : 'Purpose of Contribution'}
+                </label>
                 <select
                   className="w-full px-3 py-2 text-sm border border-saffron-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-saffron-500 bg-white"
                   value={purpose}
                   onChange={(e) => setPurpose(e.target.value)}
                 >
-                  <option value="temple_dev">तीर्थक्षेत्र जीर्णोद्धार (Temple Development)</option>
-                  <option value="annadan">नित्य अन्नदान सेवा (Daily Food Seva)</option>
-                  <option value="granth_digital">ग्रंथ डिजिटल प्रकाशन (Scripture Digitalization)</option>
-                  <option value="general">सामान्य धर्मार्थ सेवा (General Donation)</option>
+                  <option value="temple_dev">
+                    {lang === 'mr' ? 'तीर्थक्षेत्र जीर्णोद्धार' : lang === 'hi' ? 'तीर्थक्षेत्र जीर्णोद्धार' : 'Temple Development'}
+                  </option>
+                  <option value="annadan">
+                    {lang === 'mr' ? 'नित्य अन्नदान सेवा' : lang === 'hi' ? 'नित्य अन्नदान सेवा' : 'Daily Food Seva'}
+                  </option>
+                  <option value="granth_digital">
+                    {lang === 'mr' ? 'ग्रंथ डिजिटल प्रकाशन' : lang === 'hi' ? 'ग्रंथ डिजिटल प्रकाशन' : 'Scripture Digitalization'}
+                  </option>
+                  <option value="general">
+                    {lang === 'mr' ? 'सामान्य धर्मार्थ सेवा' : lang === 'hi' ? 'सामान्य धर्मार्थ सेवा' : 'General Donation'}
+                  </option>
                 </select>
               </div>
 
               {/* Amount Quick Picker */}
               <div>
-                <label className="block text-xs font-semibold text-gray-500 mb-2 font-sans">सहयोग राशि (Amount INR)</label>
+                <label className="block text-xs font-semibold text-gray-500 mb-2 font-sans">
+                  {lang === 'mr' ? 'सहयोग रक्कम (Amount INR)' : lang === 'hi' ? 'सहयोग राशि (Amount INR)' : 'Contribution Amount (INR)'}
+                </label>
                 <div className="grid grid-cols-4 gap-2 mb-3">
                   {['100', '500', '1100', '5100'].map(val => (
                     <button
@@ -116,7 +137,7 @@ export default function DonationGateway() {
                   <span className="absolute left-3.5 top-2 text-gray-400 text-sm font-bold font-mono">₹</span>
                   <input
                     type="number"
-                    placeholder="अन्य राशि भरें..."
+                    placeholder={lang === 'mr' ? 'इतर रक्कम प्रविष्ट करा...' : lang === 'hi' ? 'अन्य राशि भरें...' : 'Enter custom amount...'}
                     className="w-full pl-7 pr-3 py-1.5 text-sm border border-saffron-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-saffron-500 bg-white font-mono"
                     value={amount}
                     onChange={(e) => setAmount(e.target.value)}
@@ -129,7 +150,7 @@ export default function DonationGateway() {
                 type="submit"
                 className="w-full py-3 bg-saffron-500 hover:bg-saffron-600 text-white rounded-xl font-bold text-sm transition-all flex items-center justify-center gap-1.5 shadow-md border border-saffron-600"
               >
-                सहयोग पूर्ण करें (Proceed to Contribute)
+                {lang === 'mr' ? 'सहयोग पूर्ण करा' : lang === 'hi' ? 'सहयोग पूर्ण करें' : 'Proceed to Contribute'}
                 <ArrowRight className="w-4 h-4" />
               </button>
             </form>
@@ -139,7 +160,7 @@ export default function DonationGateway() {
           <div className="p-6 md:p-8 bg-saffron-50/20 flex flex-col items-center justify-center text-center">
             <h3 className="text-sm font-bold text-gray-800 uppercase tracking-wider mb-4 font-sans flex items-center gap-1.5 justify-center">
               <QrCode className="w-4 h-4 text-saffron-500" />
-              त्वरित भुगतान QR कोड (Scan & Pay)
+              {lang === 'mr' ? 'त्वरित देयक QR कोड' : lang === 'hi' ? 'त्वरित भुगतान QR कोड (Scan & Pay)' : 'Instant Payment QR Code'}
             </h3>
 
             {/* Dynamic QR Code */}
@@ -156,15 +177,25 @@ export default function DonationGateway() {
             </div>
 
             <p className="text-[11px] text-gray-500 mt-4 max-w-xs font-sans leading-relaxed">
-              आप ऊपर दिए गए QR कोड को किसी भी पेमेंट ऐप (Google Pay, PhonePe, Paytm, BHIM) से स्कैन करके सहयोग राशि भेज सकते हैं।
+              {lang === 'mr'
+                ? 'तुम्ही वरील QR कोड कोणत्याही पेमेंट ॲपद्वारे (Google Pay, PhonePe, Paytm, BHIM) स्कॅन करून रक्कम पाठवू शकता.'
+                : lang === 'hi'
+                ? 'आप ऊपर दिए गए QR कोड को किसी भी पेमेंट ऐप (Google Pay, PhonePe, Paytm, BHIM) से स्कैन करके सहयोग राशि भेज सकते हैं।'
+                : 'You can scan the QR code above with any payment app (Google Pay, PhonePe, Paytm, BHIM) to make a contribution.'}
             </p>
 
             <div className="mt-8 p-3.5 bg-white border border-saffron-100 rounded-xl max-w-xs flex items-start gap-3 text-left">
               <ShieldCheck className="w-5 h-5 text-emerald-500 shrink-0" />
               <div>
-                <h4 className="text-[11px] font-bold text-gray-700 font-sans">सुरक्षित और पारदर्शी</h4>
+                <h4 className="text-[11px] font-bold text-gray-700 font-sans">
+                  {lang === 'mr' ? 'सुरक्षित आणि पारदर्शक' : lang === 'hi' ? 'सुरक्षित और पारदर्शी' : 'Secure & Transparent'}
+                </h4>
                 <p className="text-[9px] text-gray-400 mt-0.5 font-sans leading-relaxed">
-                  आपका सहयोग सीधे पंथ के आधिकारिक चैरिटेबल खातों में जमा होता है। दान पर १८२ए आयकर छूट नियमानुसार लागू है।
+                  {lang === 'mr'
+                    ? 'तुमचे योगदान थेट अधिकृत सेवा खात्यात जमा केले जाते. नियमानुसार कर सवलत लागू आहे.'
+                    : lang === 'hi'
+                    ? 'आपका सहयोग सीधे पंथ के आधिकारिक चैरिटेबल खातों में जमा होता है। दान पर आयकर छूट नियमानुसार लागू है।'
+                    : 'Your contribution goes directly to the official charitable bank accounts. Tax exemption benefits apply as per regulations.'}
                 </p>
               </div>
             </div>
@@ -181,38 +212,62 @@ export default function DonationGateway() {
 
             <CheckCircle2 className="w-14 h-14 text-emerald-500 mx-auto mb-4" />
             <span className="text-[11px] bg-emerald-100 text-emerald-700 font-bold px-3 py-1 rounded-full uppercase tracking-wider font-sans">
-              दान स्वीकृत (Receipt Generated)
+              {lang === 'mr' ? 'दान स्वीकृत' : lang === 'hi' ? 'दान स्वीकृत' : 'Receipt Generated'}
             </span>
 
             <h3 className="text-2xl font-black text-saffron-700 font-devanagari mt-4">
-              ॥ धर्मार्थ दान पावती पत्र ॥
+              {lang === 'mr' ? '॥ धर्मार्थ दान पावती पत्र ॥' : lang === 'hi' ? '॥ धर्मार्थ दान पावती पत्र ॥' : '|| Charitable Donation Receipt ||'}
             </h3>
-            <p className="text-xs text-gray-400 font-mono mt-1">पावती क्र: {receiptNumber}</p>
+            <p className="text-xs text-gray-400 font-mono mt-1">
+              {lang === 'mr' ? 'पावती क्र' : lang === 'hi' ? 'पावती क्र' : 'Receipt No'}: {receiptNumber}
+            </p>
 
             {/* Certificate Border Details */}
             <div className="my-6 border-2 border-dashed border-saffron-100 p-5 rounded-2xl bg-saffron-50/30 text-left space-y-3 font-sans">
               <p className="text-sm text-gray-700 font-devanagari leading-relaxed">
-                यह प्रमाणित किया जाता है कि परम श्रद्धालु <span className="font-bold text-gray-900 font-sans">{donorName}</span> ने महानुभाव विश्व संगठन में धर्मार्थ कार्यों हेतु <span className="font-bold text-saffron-600 font-sans">₹{amount}</span> की सहयोग राशि सादर समर्पित की है।
+                {lang === 'mr' ? (
+                  <>
+                    याद्वारे प्रमाणित करण्यात येते की परम श्रद्धालु <span className="font-bold text-gray-900 font-sans">{donorName}</span> यांनी महानुभाव विश्व संघटनेत धर्मार्थ कार्यासाठी <span className="font-bold text-saffron-600 font-sans">₹{amount}</span> ची सहयोग रक्कम सादर समर्पित केली आहे.
+                  </>
+                ) : lang === 'hi' ? (
+                  <>
+                    यह प्रमाणित किया जाता है कि परम श्रद्धालु <span className="font-bold text-gray-900 font-sans">{donorName}</span> ने महानुभाव विश्व संगठन में धर्मार्थ कार्यों हेतु <span className="font-bold text-saffron-600 font-sans">₹{amount}</span> की सहयोग राशि सादर समर्पित की है।
+                  </>
+                ) : (
+                  <>
+                    This is to certify that devout follower <span className="font-bold text-gray-900 font-sans">{donorName}</span> has contributed a generous sum of <span className="font-bold text-saffron-600 font-sans">₹{amount}</span> to the Mahanubhav Vishwa Organization for spiritual and welfare causes.
+                  </>
+                )}
               </p>
               <div className="grid grid-cols-2 gap-4 text-xs pt-3 border-t border-saffron-100">
                 <div>
-                  <p className="font-bold text-gray-500">सहयोग का उद्देश्य:</p>
+                  <p className="font-bold text-gray-500">
+                    {lang === 'mr' ? 'सहयोगाचा उद्देश:' : lang === 'hi' ? 'सहयोग का उद्देश्य:' : 'Sewa Cause:'}
+                  </p>
                   <p className="text-gray-700 font-devanagari mt-0.5">
-                    {purpose === 'temple_dev' && 'तीर्थक्षेत्र जीर्णोद्धार'}
-                    {purpose === 'annadan' && 'नित्य अन्नदान सेवा'}
-                    {purpose === 'granth_digital' && 'ग्रंथ डिजिटल प्रकाशन'}
-                    {purpose === 'general' && 'सामान्य धर्मार्थ सेवा'}
+                    {purpose === 'temple_dev' && (lang === 'mr' ? 'तीर्थक्षेत्र जीर्णोद्धार' : lang === 'hi' ? 'तीर्थक्षेत्र जीर्णोद्धार' : 'Temple Development')}
+                    {purpose === 'annadan' && (lang === 'mr' ? 'नित्य अन्नदान सेवा' : lang === 'hi' ? 'नित्य अन्नदान सेवा' : 'Daily Food Seva')}
+                    {purpose === 'granth_digital' && (lang === 'mr' ? 'ग्रंथ डिजिटल प्रकाशन' : lang === 'hi' ? 'ग्रंथ डिजिटल प्रकाशन' : 'Scripture Digitalization')}
+                    {purpose === 'general' && (lang === 'mr' ? 'सामान्य धर्मार्थ सेवा' : lang === 'hi' ? 'सामान्य धर्मार्थ सेवा' : 'General Donation')}
                   </p>
                 </div>
                 <div>
-                  <p className="font-bold text-gray-500">भुगतान तिथि:</p>
-                  <p className="text-gray-700 mt-0.5 font-mono">{new Date().toLocaleDateString('hi-IN')}</p>
+                  <p className="font-bold text-gray-500">
+                    {lang === 'mr' ? 'देयक तारीख:' : lang === 'hi' ? 'भुगतान तिथि:' : 'Payment Date:'}
+                  </p>
+                  <p className="text-gray-700 mt-0.5 font-mono">
+                    {new Date().toLocaleDateString(lang === 'mr' ? 'mr-IN' : lang === 'hi' ? 'hi-IN' : 'en-US')}
+                  </p>
                 </div>
               </div>
             </div>
 
             <p className="text-xs text-gray-500 italic font-devanagari max-w-md mx-auto">
-              "ईश्वर भक्ति और जनकल्याण की राह पर उठाया गया यह कदम आपके जीवन को परम संतोष से भर दे।"
+              {lang === 'mr'
+                ? '"ईश्वर भक्ती आणि जनकल्याण मार्गावर टाकलेले हे पाऊल आपल्या जीवनात आनंद व समाधान मिळवून देवो."'
+                : lang === 'hi'
+                ? '"ईश्वर भक्ति और जनकल्याण की राह पर उठाया गया यह कदम आपके जीवन को परम संतोष से भर दे।"'
+                : '"May this noble step taken on the path of devotion and humanity fill your life with eternal peace and contentment."'}
             </p>
 
             {/* Receipt buttons */}
@@ -221,14 +276,14 @@ export default function DonationGateway() {
                 onClick={() => setIsSubmitted(false)}
                 className="px-5 py-2.5 bg-gray-100 hover:bg-gray-200 text-gray-700 rounded-xl font-bold text-xs transition-all font-sans"
               >
-                नया योगदान करें
+                {lang === 'mr' ? 'नवीन योगदान करा' : lang === 'hi' ? 'नया योगदान करें' : 'Contribute Again'}
               </button>
               <button
                 onClick={() => window.print()}
                 className="px-5 py-2.5 bg-saffron-500 hover:bg-saffron-600 text-white rounded-xl font-bold text-xs transition-all flex items-center justify-center gap-1.5 shadow-sm border border-saffron-600 font-sans"
               >
                 <Download className="w-4 h-4" />
-                प्रमाणपत्र प्रिंट करें (Print Certificate)
+                {lang === 'mr' ? 'पावती डाऊनलोड करा (Print)' : lang === 'hi' ? 'प्रमाणपत्र प्रिंट करें' : 'Print Certificate'}
               </button>
             </div>
           </div>

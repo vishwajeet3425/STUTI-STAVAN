@@ -21,7 +21,7 @@ export interface Book {
   author: string;
   description: string;
   descriptionEn?: string;
-  category: 'sutra' | 'leela' | 'charitra' | 'other';
+  category: string;
   chaptersCount: number;
   coverImage?: string;
 }
@@ -62,6 +62,9 @@ export interface Temple {
   darshanTimings: string;
   latitude: number;
   longitude: number;
+  state?: string;
+  district?: string;
+  taluka?: string;
 }
 
 export interface EventKaryakram {

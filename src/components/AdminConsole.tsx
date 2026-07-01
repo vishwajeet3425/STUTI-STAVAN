@@ -6,6 +6,7 @@
 import React, { useState } from 'react';
 import { Book, Chapter, Bhajan, Temple, EventKaryakram, Samachar, AnalyticsData } from '../types';
 import { Settings, Plus, TrendingUp, Bell, Image, Shield, AlertCircle, PlayCircle, Eye, EyeOff, CheckCircle } from 'lucide-react';
+import { MAHARASHTRA_DISTRICTS_AND_TALUKAS, maharashtraDistricts } from '../data';
 
 interface AdminConsoleProps {
   books: Book[];
@@ -17,8 +18,9 @@ interface AdminConsoleProps {
   onAddBook: (title: string, titleEn: string, author: string, description: string) => void;
   onAddChapter: (bookId: string, number: number, title: string, content: string, explanation: string) => void;
   onAddBhajan: (title: string, lyrics: string, singer: string, language: string) => void;
-  onAddTemple: (name: string, type: 'temple' | 'ashram' | 'sthan', location: string, description: string, lat: number, lng: number) => void;
+  onAddTemple: (name: string, type: 'temple' | 'ashram' | 'sthan', location: string, description: string, lat: number, lng: number, state?: string, district?: string, taluka?: string) => void;
   onSendNotification: (title: string, body: string, category: 'granth' | 'bhajan' | 'event' | 'general') => void;
+  lang?: 'hi' | 'mr' | 'en';
 }
 
 export default function AdminConsole({
@@ -32,7 +34,8 @@ export default function AdminConsole({
   onAddChapter,
   onAddBhajan,
   onAddTemple,
-  onSendNotification
+  onSendNotification,
+  lang = 'mr'
 }: AdminConsoleProps) {
   const [activePanel, setActivePanel] = useState<'analytics' | 'customize' | 'add_book' | 'add_chapter' | 'add_temple' | 'add_bhajan'>('analytics');
 
@@ -54,11 +57,14 @@ export default function AdminConsole({
 
   // Temple Form State
   const [tName, setTName] = useState('');
-  const [tType, setTType] = useState<'temple' | 'ashram' | 'sthan'>('temple');
+  const [tType, setTType] = useState<'temple' | 'ashram' | 'sthan'>('sthan');
   const [tLocation, setTLocation] = useState('');
   const [tDescription, setTDescription] = useState('');
   const [tLat, setTLat] = useState('19.0');
   const [tLng, setTLng] = useState('75.0');
+  const [tState, setTState] = useState('महाराष्ट्र');
+  const [tDistrict, setTDistrict] = useState('');
+  const [tTaluka, setTTaluka] = useState('');
 
   // Bhajan Form State
   const [bhTitle, setBhTitle] = useState('');
@@ -125,11 +131,13 @@ export default function AdminConsole({
       flashMessage('error', 'कृपया नाम, स्थान और संक्षिप्त इतिहास दर्ज करें।');
       return;
     }
-    onAddTemple(tName, tType, tLocation, tDescription, Number(tLat), Number(tLng));
+    onAddTemple(tName, tType, tLocation, tDescription, Number(tLat), Number(tLng), tState, tDistrict, tTaluka);
     flashMessage('success', `तीर्थस्थल/आश्रम "${tName}" सफलतापूर्वक जोड़ दिया गया है!`);
     setTName('');
     setTLocation('');
     setTDescription('');
+    setTDistrict('');
+    setTTaluka('');
   };
 
   const handleNotificationSubmit = (e: React.FormEvent) => {
@@ -596,6 +604,78 @@ export default function AdminConsole({
                     value={tLng}
                     onChange={(e) => setTLng(e.target.value)}
                   />
+                </div>
+              </div>
+
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                <div>
+                  <label className="block text-xs font-semibold text-gray-500 mb-1">राज्य (State) *</label>
+                  <input
+                    type="text"
+                    placeholder="उदा: महाराष्ट्र"
+                    className="w-full px-3.5 py-1.5 text-xs border border-saffron-200 rounded-lg focus:outline-none focus:ring-1 focus:ring-saffron-500 bg-white"
+                    value={tState}
+                    onChange={(e) => {
+                      setTState(e.target.value);
+                      if (e.target.value !== 'महाराष्ट्र') {
+                        setTDistrict('');
+                        setTTaluka('');
+                      }
+                    }}
+                    required
+                  />
+                </div>
+
+                <div>
+                  <label className="block text-xs font-semibold text-gray-500 mb-1">जिल्हा (District)</label>
+                  {tState === 'महाराष्ट्र' ? (
+                    <select
+                      className="w-full px-3 py-1.5 text-xs border border-saffron-200 rounded-lg focus:outline-none focus:ring-1 focus:ring-saffron-500 bg-white"
+                      value={tDistrict}
+                      onChange={(e) => {
+                        setTDistrict(e.target.value);
+                        setTTaluka('');
+                      }}
+                    >
+                      <option value="">जिल्हा निवडा (Select District)</option>
+                      {maharashtraDistricts.map(dist => (
+                        <option key={dist} value={dist}>{dist}</option>
+                      ))}
+                    </select>
+                  ) : (
+                    <input
+                      type="text"
+                      placeholder="उदा: अमरावती"
+                      className="w-full px-3.5 py-1.5 text-xs border border-saffron-200 rounded-lg focus:outline-none focus:ring-1 focus:ring-saffron-500 bg-white"
+                      value={tDistrict}
+                      onChange={(e) => setTDistrict(e.target.value)}
+                    />
+                  )}
+                </div>
+
+                <div>
+                  <label className="block text-xs font-semibold text-gray-500 mb-1">तालुका (Taluka)</label>
+                  {tState === 'महाराष्ट्र' && tDistrict ? (
+                    <select
+                      className="w-full px-3 py-1.5 text-xs border border-saffron-200 rounded-lg focus:outline-none focus:ring-1 focus:ring-saffron-500 bg-white"
+                      value={tTaluka}
+                      onChange={(e) => setTTaluka(e.target.value)}
+                    >
+                      <option value="">तालुका निवडा (Select Taluka)</option>
+                      {(MAHARASHTRA_DISTRICTS_AND_TALUKAS[tDistrict] || []).sort().map(tal => (
+                        <option key={tal} value={tal}>{tal}</option>
+                      ))}
+                    </select>
+                  ) : (
+                    <input
+                      type="text"
+                      placeholder="उदा: चांदुर बाजार"
+                      className="w-full px-3.5 py-1.5 text-xs border border-saffron-200 rounded-lg focus:outline-none focus:ring-1 focus:ring-saffron-500 bg-white"
+                      value={tTaluka}
+                      onChange={(e) => setTTaluka(e.target.value)}
+                      disabled={tState === 'महाराष्ट्र' && !tDistrict}
+                    />
+                  )}
                 </div>
               </div>
 

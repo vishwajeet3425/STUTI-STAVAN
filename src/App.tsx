@@ -16,17 +16,19 @@ import SamacharNews from './components/SamacharNews';
 import CommunityDiscussion from './components/CommunityDiscussion';
 import LiveChannel from './components/LiveChannel';
 import DonationGateway from './components/DonationGateway';
+import NiwasKosh from './components/NiwasKosh';
 import AdminConsole from './components/AdminConsole';
+import { translations } from './translations';
 
 // Icons
 import {
   BookOpen, Music, Radio, MapPin, Calendar, Newspaper, MessageSquare, Tv, Bell, Settings,
-  Sparkles, Heart, Compass, Volume2, ShieldAlert, ShieldCheck, User, VolumeX, Menu, ChevronDown, Check
+  Sparkles, Heart, Compass, Volume2, ShieldAlert, ShieldCheck, User, VolumeX, Menu, ChevronDown, Check, Home
 } from 'lucide-react';
 
 export default function App() {
   const [activeTab, setActiveTab] = useState<string>('granthalaya');
-  const [lang, setLang] = useState<'hi' | 'mr' | 'en'>('hi');
+  const [lang, setLang] = useState<'hi' | 'mr' | 'en'>('mr');
 
   // Server state data
   const [books, setBooks] = useState<Book[]>([]);
@@ -140,12 +142,12 @@ export default function App() {
     }
   };
 
-  const handleAddTemple = async (name: string, type: 'temple' | 'ashram' | 'sthan', location: string, description: string, lat: number, lng: number) => {
+  const handleAddTemple = async (name: string, type: 'temple' | 'ashram' | 'sthan', location: string, description: string, lat: number, lng: number, state?: string, district?: string, taluka?: string) => {
     try {
       const res = await fetch('/api/temples', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ name, type, location, description, latitude: lat, longitude: lng })
+        body: JSON.stringify({ name, type, location, description, latitude: lat, longitude: lng, state, district, taluka })
       });
       if (res.ok) fetchAllData();
     } catch (err) {
@@ -270,16 +272,16 @@ export default function App() {
           <div className="flex items-center gap-3">
             <img
               src="/src/assets/images/regenerated_image_1782731218548.png"
-              alt="महानुभाव विश्व"
+              alt={translations.appTitle[lang]}
               referrerPolicy="no-referrer"
               className="w-10 h-10 md:w-12 md:h-12 rounded-full object-cover shadow-md border-2 border-white live-pulse"
             />
             <div>
               <h1 className="text-xl md:text-2xl font-black text-saffron-700 font-display leading-tight tracking-wide">
-                महानुभाव विश्व (Mahanubhav)
+                {translations.appTitle[lang]} {lang === 'mr' ? '(महानुभाव)' : lang === 'hi' ? '(महानुभाव)' : '(Mahanubhav)'}
               </h1>
               <p className="text-[10px] text-gray-500 font-sans tracking-widest uppercase mt-0.5 font-bold">
-                श्री चक्रधर स्वामी उपदेश पीठ
+                {translations.appSubtitle[lang]}
               </p>
             </div>
           </div>
@@ -329,14 +331,14 @@ export default function App() {
               {showNotifications && (
                 <div className="absolute right-0 mt-3 w-80 bg-white border border-saffron-100 rounded-2xl shadow-xl overflow-hidden z-50">
                   <div className="bg-saffron-50 p-4 border-b border-saffron-100 flex items-center justify-between">
-                    <h3 className="text-xs font-bold text-saffron-700 uppercase tracking-wider font-sans">नवीन सूचना पत्र</h3>
+                    <h3 className="text-xs font-bold text-saffron-700 uppercase tracking-wider font-sans">{translations.notificationsTitle[lang]}</h3>
                     <button onClick={() => setShowNotifications(false)} className="text-[10px] font-bold text-gray-400 hover:text-gray-600 font-sans">
-                      बंद करें
+                      {translations.close[lang]}
                     </button>
                   </div>
                   <div className="max-h-[300px] overflow-y-auto custom-scrollbar divide-y divide-gray-100">
                     {notifications.length === 0 ? (
-                      <p className="text-xs text-gray-400 p-6 text-center">कोई नई सूचना नहीं है।</p>
+                      <p className="text-xs text-gray-400 p-6 text-center">{translations.noNotifications[lang]}</p>
                     ) : (
                       notifications.map(notif => (
                         <div key={notif.id} className="p-4 hover:bg-saffron-50/20 transition-all">
@@ -364,16 +366,15 @@ export default function App() {
       <nav className="bg-white border-b border-saffron-100 py-1.5 shadow-2xs hidden md:block">
         <div className="max-w-7xl mx-auto px-4 flex flex-wrap gap-1.5">
           {[
-            { id: 'granthalaya', label: 'ग्रंथालय', icon: BookOpen },
-            { id: 'bhajan', label: 'भजन व संगीत', icon: Music },
-            { id: 'pravachan', label: 'प्रवचन माला', icon: Radio },
-            { id: 'temples', label: 'स्थान व आश्रम', icon: MapPin },
-            { id: 'calendar', label: 'कैलेंडर उत्सव', icon: Calendar },
-            { id: 'samachar', label: 'संगठन समाचार', icon: Newspaper },
-            { id: 'community', label: 'चर्चा एवं AI उपदेशक', icon: MessageSquare },
-            { id: 'live', label: 'लाइव चैनल', icon: Tv },
-            { id: 'donation', label: 'दान व सेवा', icon: Sparkles },
-            { id: 'admin', label: 'एडमन पैनल', icon: Settings }
+            { id: 'granthalaya', label: translations.tabGranthalaya[lang], icon: BookOpen },
+            { id: 'bhajan', label: translations.tabBhajan[lang], icon: Music },
+            { id: 'temples', label: translations.tabTemples[lang], icon: MapPin },
+            { id: 'niwas_kosh', label: translations.tabNiwasKosh[lang], icon: Home },
+            { id: 'calendar', label: translations.tabCalendar[lang], icon: Calendar },
+            { id: 'samachar', label: translations.tabSamachar[lang], icon: Newspaper },
+            { id: 'community', label: translations.tabCommunity[lang], icon: MessageSquare },
+            { id: 'donation', label: translations.tabDonation[lang], icon: Sparkles },
+            { id: 'admin', label: translations.tabAdmin[lang], icon: Settings }
           ].map(tab => {
             const IconComp = tab.icon;
             return (
@@ -405,6 +406,7 @@ export default function App() {
               books={books}
               chapters={chapters}
               onBookRead={handleBookReadCount}
+              lang={lang}
             />
           )}
 
@@ -412,30 +414,35 @@ export default function App() {
             <BhajanList
               bhajans={bhajans}
               onBhajanPlay={handleBhajanPlayCount}
+              lang={lang}
             />
           )}
 
           {activeTab === 'pravachan' && (
             <PravachanList
               pravachans={pravachans}
+              lang={lang}
             />
           )}
 
           {activeTab === 'temples' && (
             <TempleDirectory
               temples={temples}
+              lang={lang}
             />
           )}
 
           {activeTab === 'calendar' && (
             <KaryakramCalendar
               events={events}
+              lang={lang}
             />
           )}
 
           {activeTab === 'samachar' && (
             <SamacharNews
               news={news}
+              lang={lang}
             />
           )}
 
@@ -445,15 +452,20 @@ export default function App() {
               onSendMessage={handleSendMessage}
               onSendReply={handleSendReply}
               onLikeMessage={handleLikeMessage}
+              lang={lang}
             />
           )}
 
           {activeTab === 'live' && (
-            <LiveChannel />
+            <LiveChannel lang={lang} />
           )}
 
           {activeTab === 'donation' && (
-            <DonationGateway />
+            <DonationGateway lang={lang} />
+          )}
+
+          {activeTab === 'niwas_kosh' && (
+            <NiwasKosh lang={lang} />
           )}
 
           {activeTab === 'admin' && (
@@ -469,6 +481,7 @@ export default function App() {
               onAddBhajan={handleAddBhajan}
               onAddTemple={handleAddTemple}
               onSendNotification={handleSendNotification}
+              lang={lang}
             />
           )}
         </div>
@@ -477,12 +490,13 @@ export default function App() {
       {/* 5. RESPONSIVE MOBILE BOTTOM NAVIGATION BAR */}
       <nav className="fixed bottom-0 left-0 right-0 z-40 bg-white border-t border-saffron-100 flex items-center justify-around h-16 md:hidden px-2 shadow-lg">
         {[
-          { id: 'granthalaya', label: 'ग्रंथ', icon: BookOpen },
-          { id: 'bhajan', label: 'भजन', icon: Music },
-          { id: 'temples', label: 'स्थान', icon: MapPin },
-          { id: 'community', label: 'AI चर्चा', icon: MessageSquare },
-          { id: 'donation', label: 'दान', icon: Sparkles },
-          { id: 'admin', label: 'एडमिन', icon: Settings }
+          { id: 'granthalaya', label: translations.tabMobGranth[lang], icon: BookOpen },
+          { id: 'bhajan', label: translations.tabMobBhajan[lang], icon: Music },
+          { id: 'temples', label: translations.tabMobSthan[lang], icon: MapPin },
+          { id: 'niwas_kosh', label: translations.tabMobNiwasKosh[lang], icon: Home },
+          { id: 'community', label: translations.tabMobCharcha[lang], icon: MessageSquare },
+          { id: 'donation', label: translations.tabMobDaan[lang], icon: Sparkles },
+          { id: 'admin', label: translations.tabMobAdmin[lang], icon: Settings }
         ].map(tab => {
           const IconComp = tab.icon;
           return (

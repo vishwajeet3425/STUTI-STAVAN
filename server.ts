@@ -177,7 +177,7 @@ app.get("/api/temples", (req, res) => {
 });
 
 app.post("/api/temples", (req, res) => {
-  const { name, nameEn, type, location, description, history, photoUrl, contact, darshanTimings, latitude, longitude } = req.body;
+  const { name, nameEn, type, location, description, history, photoUrl, contact, darshanTimings, latitude, longitude, state, district, taluka } = req.body;
   if (!name || !location || !description) {
     return res.status(400).json({ error: "Name, Location and Description are required" });
   }
@@ -194,7 +194,10 @@ app.post("/api/temples", (req, res) => {
     contact: contact || '',
     darshanTimings: darshanTimings || '',
     latitude: Number(latitude) || 19.0,
-    longitude: Number(longitude) || 75.0
+    longitude: Number(longitude) || 75.0,
+    state: state || 'महाराष्ट्र',
+    district: district || '',
+    taluka: taluka || ''
   };
 
   temples.push(newTemple);

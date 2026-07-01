@@ -6,13 +6,15 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Bhajan } from '../types';
 import { Music, Heart, Play, Pause, Search, Video, Volume2, Info } from 'lucide-react';
+import { translations } from '../translations';
 
 interface BhajanListProps {
   bhajans: Bhajan[];
   onBhajanPlay: (bhajanTitle: string) => void;
+  lang?: 'hi' | 'mr' | 'en';
 }
 
-export default function BhajanList({ bhajans, onBhajanPlay }: BhajanListProps) {
+export default function BhajanList({ bhajans, onBhajanPlay, lang = 'mr' }: BhajanListProps) {
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedLanguage, setSelectedLanguage] = useState<string>('All');
   const [selectedBhajan, setSelectedBhajan] = useState<Bhajan | null>(null);
@@ -92,27 +94,27 @@ export default function BhajanList({ bhajans, onBhajanPlay }: BhajanListProps) {
         <div>
           <h2 className="text-2xl font-bold text-saffron-700 font-devanagari flex items-center gap-2">
             <Music className="w-6 h-6 text-saffron-500" />
-            भजन एवं कीर्तन (Bhajans)
+            {translations.bhajanHeader[lang]}
           </h2>
           <p className="text-sm text-gray-600 mt-1 font-sans">
-            भक्तिरस से सराबोर हिंदी और मराठी भजन, शब्द (Lyrics) और पावन संगीत।
+            {translations.bhajanSub[lang]}
           </p>
         </div>
 
         <div className="flex flex-wrap items-center gap-3">
           {/* Language filter */}
           <div className="flex gap-1.5 bg-saffron-100/50 p-1 rounded-lg border border-saffron-200">
-            {languages.map(lang => (
+            {languages.map(l => (
               <button
-                key={lang}
-                onClick={() => setSelectedLanguage(lang)}
+                key={l}
+                onClick={() => setSelectedLanguage(l)}
                 className={`px-3 py-1 text-xs font-semibold rounded-md transition-all font-sans ${
-                  (lang === 'All' && selectedLanguage === 'All') || (lang !== 'All' && selectedLanguage === lang)
+                  (l === 'All' && selectedLanguage === 'All') || (l !== 'All' && selectedLanguage === l)
                     ? 'bg-saffron-500 text-white shadow-sm'
                     : 'text-gray-600 hover:text-saffron-600'
                 }`}
               >
-                {lang === 'All' ? 'सभी' : lang}
+                {l === 'All' ? translations.all[lang] : l}
               </button>
             ))}
           </div>
@@ -122,7 +124,7 @@ export default function BhajanList({ bhajans, onBhajanPlay }: BhajanListProps) {
             <Search className="absolute left-3 top-2.5 w-4 h-4 text-gray-400" />
             <input
               type="text"
-              placeholder="भजन के बोल या शीर्षक..."
+              placeholder={translations.searchBhajanPlaceholder[lang]}
               className="w-full pl-9 pr-4 py-2 text-sm border border-saffron-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-saffron-500 bg-white"
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
@@ -134,10 +136,14 @@ export default function BhajanList({ bhajans, onBhajanPlay }: BhajanListProps) {
       <div className="grid grid-cols-1 md:grid-cols-3 min-h-[450px]">
         {/* Bhajan list sidebar */}
         <div className="border-r border-saffron-100 p-4 bg-saffron-50/30 overflow-y-auto max-h-[500px] custom-scrollbar">
-          <h3 className="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-3">भजन सूची</h3>
+          <h3 className="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-3">
+            {lang === 'mr' ? 'भजन सूची' : lang === 'hi' ? 'भजन सूची' : 'Bhajan List'}
+          </h3>
           <div className="space-y-2">
             {filteredBhajans.length === 0 ? (
-              <p className="text-xs text-gray-400 py-6 text-center">कोई भजन नहीं मिला।</p>
+              <p className="text-xs text-gray-400 py-6 text-center">
+                {lang === 'mr' ? 'कोणतेही भजन आढळले नाही.' : lang === 'hi' ? 'कोई भजन नहीं मिला।' : 'No bhajans found.'}
+              </p>
             ) : (
               filteredBhajans.map(bh => (
                 <div
@@ -159,7 +165,7 @@ export default function BhajanList({ bhajans, onBhajanPlay }: BhajanListProps) {
                         {bh.title}
                       </h4>
                       <p className="text-[10px] text-gray-400 mt-0.5 font-sans">
-                        भाषा: {bh.language} {bh.singer && `• स्वर: ${bh.singer}`}
+                        {lang === 'mr' ? 'भाषा:' : lang === 'hi' ? 'भाषा:' : 'Language:'} {bh.language} {bh.singer && `• ${translations.singer[lang]}: ${bh.singer}`}
                       </p>
                     </div>
                   </div>
@@ -191,7 +197,7 @@ export default function BhajanList({ bhajans, onBhajanPlay }: BhajanListProps) {
                       {selectedBhajan.title}
                     </h3>
                     <p className="text-xs text-gray-500 mt-1 font-sans">
-                      स्वर: <span className="font-semibold text-gray-700">{selectedBhajan.singer || 'भक्तवृंद'}</span> • {selectedBhajan.language}
+                      {translations.singer[lang]}: <span className="font-semibold text-gray-700">{selectedBhajan.singer || (lang === 'mr' ? 'भक्तवृंद' : lang === 'hi' ? 'भक्तवृंद' : 'Devotees')}</span> • {selectedBhajan.language}
                     </p>
                   </div>
 
@@ -202,7 +208,7 @@ export default function BhajanList({ bhajans, onBhajanPlay }: BhajanListProps) {
                       className="px-3 py-1.5 bg-saffron-500 text-white rounded-lg hover:bg-saffron-600 font-semibold text-xs transition-all flex items-center gap-1.5 shadow-sm"
                     >
                       {isPlaying ? <Pause className="w-3.5 h-3.5" /> : <Play className="w-3.5 h-3.5" />}
-                      {isPlaying ? 'पॉज़ करें' : 'ऑडियो सुनें'}
+                      {isPlaying ? (lang === 'mr' ? 'पॉझ करा' : lang === 'hi' ? 'पॉज़ करें' : 'Pause') : (lang === 'mr' ? 'ऑडिओ ऐका' : lang === 'hi' ? 'ऑडियो सुनें' : 'Listen')}
                     </button>
 
                     {/* Video Embed Toggle */}
@@ -214,7 +220,7 @@ export default function BhajanList({ bhajans, onBhajanPlay }: BhajanListProps) {
                             ? 'bg-red-500 text-white border-red-500'
                             : 'bg-red-50 text-red-600 border-red-200 hover:bg-red-100'
                         }`}
-                        title="वीडियो भजन"
+                        title={lang === 'mr' ? 'व्हिडिओ भजन' : lang === 'hi' ? 'वीडियो भजन' : 'Video Bhajan'}
                       >
                         <Video className="w-4 h-4" />
                       </button>
@@ -241,7 +247,7 @@ export default function BhajanList({ bhajans, onBhajanPlay }: BhajanListProps) {
                 <div className="bg-saffron-50/20 border border-saffron-100 p-6 rounded-2xl shadow-inner max-h-[350px] overflow-y-auto custom-scrollbar">
                   <h4 className="text-xs font-bold text-saffron-600 mb-3 uppercase tracking-widest text-center flex items-center justify-center gap-1.5">
                     <span className="w-1.5 h-1.5 bg-saffron-500 rounded-full"></span>
-                    भजन के बोल (Lyrics)
+                    {translations.lyrics[lang]}
                     <span className="w-1.5 h-1.5 bg-saffron-500 rounded-full"></span>
                   </h4>
                   <div className="text-center text-gray-800 text-sm md:text-base leading-relaxed font-devanagari whitespace-pre-line max-w-md mx-auto py-2">
@@ -256,7 +262,10 @@ export default function BhajanList({ bhajans, onBhajanPlay }: BhajanListProps) {
                   <div className="flex items-center gap-2.5">
                     <div className={`w-2 h-2 rounded-full bg-saffron-500 ${isPlaying ? 'animate-ping' : ''}`} />
                     <span className="text-xs text-gray-600 font-sans">
-                      {isPlaying ? 'अभी बज रहा है...' : 'ऑडियो प्लेयर लोड है।'}
+                      {isPlaying 
+                        ? (lang === 'mr' ? 'आता वाजत आहे...' : lang === 'hi' ? 'अभी बज रहा है...' : 'Now Playing...') 
+                        : (lang === 'mr' ? 'ऑडिओ प्लेअर लोड झाला आहे.' : lang === 'hi' ? 'ऑडियो प्लेयर लोड है।' : 'Audio player is loaded.')
+                      }
                     </span>
                   </div>
                   {isPlaying && (
@@ -273,9 +282,16 @@ export default function BhajanList({ bhajans, onBhajanPlay }: BhajanListProps) {
           ) : (
             <div className="flex-1 flex flex-col items-center justify-center text-center p-8">
               <Music className="w-16 h-16 text-saffron-200 mb-4" />
-              <h3 className="text-lg font-bold text-gray-800 font-devanagari">भक्ति संगीत का आनंद लें</h3>
+              <h3 className="text-lg font-bold text-gray-800 font-devanagari">
+                {lang === 'mr' ? 'भक्ती संगीताचा आनंद घ्या' : lang === 'hi' ? 'भक्ति संगीत का आनंद लें' : 'Enjoy Devotional Music'}
+              </h3>
               <p className="text-sm text-gray-500 max-w-sm mt-2 font-sans">
-                बायें ओर दिए गए भजनों में से कोई भजन चुनें। आप उसके बोल (Lyrics) पढ़ सकते हैं, तथा ऑडियो संगीत और वीडियो भी देख सकते हैं।
+                {lang === 'mr' 
+                  ? 'डाव्या बाजूला दिलेल्या भजनांमधून कोणतेही भजन निवडा. तुम्ही त्याचे बोल (Lyrics) वाचू शकता, ऑडिओ संगीत आणि व्हिडिओ देखील पाहू शकता.' 
+                  : lang === 'hi' 
+                  ? 'बायें ओर दिए गए भजनों में से कोई भजन चुनें। आप उसके बोल (Lyrics) पढ़ सकते हैं, तथा ऑडियो संगीत और वीडियो भी देख सकते हैं।' 
+                  : 'Select a bhajan from the left list. You can read its lyrics, play the audio hymn, or watch the devotional video.'
+                }
               </p>
             </div>
           )}

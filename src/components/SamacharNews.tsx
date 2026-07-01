@@ -6,20 +6,22 @@
 import React, { useState } from 'react';
 import { Samachar } from '../types';
 import { Newspaper, Calendar, Search, Tag, ExternalLink } from 'lucide-react';
+import { translations } from '../translations';
 
 interface SamacharNewsProps {
   news: Samachar[];
+  lang?: 'hi' | 'mr' | 'en';
 }
 
-export default function SamacharNews({ news }: SamacharNewsProps) {
+export default function SamacharNews({ news, lang = 'mr' }: SamacharNewsProps) {
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedCategory, setSelectedCategory] = useState<string>('All');
 
   const categories = [
-    { id: 'All', label: 'सभी समाचार' },
-    { id: 'announcement', label: 'घोषणाएँ (Announcements)' },
-    { id: 'update', label: 'अपडेट्स (Updates)' },
-    { id: 'news', label: 'ताज़ा समाचार (News)' }
+    { id: 'All', label: lang === 'mr' ? 'सर्व मासिक व वृत्त' : lang === 'hi' ? 'सभी मासिक व समाचार' : 'All' },
+    { id: 'announcement', label: lang === 'mr' ? 'मासिक पत्रिका' : lang === 'hi' ? 'मासिक पत्रिका' : 'Monthly Magazine' },
+    { id: 'update', label: lang === 'mr' ? 'संघटन वृत्त' : lang === 'hi' ? 'संगठन समाचार' : 'Community News' },
+    { id: 'news', label: lang === 'mr' ? 'ताज्या घडामोडी' : lang === 'hi' ? 'ताज़ा समाचार' : 'Latest News' }
   ];
 
   const filteredNews = news.filter(ns => {
@@ -31,7 +33,7 @@ export default function SamacharNews({ news }: SamacharNewsProps) {
 
   const getCategoryBadge = (cat: string) => {
     switch (cat) {
-      case 'announcement': return 'bg-red-50 text-red-600 border-red-100';
+      case 'announcement': return 'bg-purple-50 text-purple-600 border-purple-100';
       case 'update': return 'bg-blue-50 text-blue-600 border-blue-100';
       case 'news': return 'bg-amber-50 text-amber-600 border-amber-100';
       default: return 'bg-gray-50 text-gray-500 border-gray-100';
@@ -40,10 +42,10 @@ export default function SamacharNews({ news }: SamacharNewsProps) {
 
   const getCategoryLabel = (cat: string) => {
     switch (cat) {
-      case 'announcement': return 'महत्वपूर्ण घोषणा';
-      case 'update': return 'संस्था अपडेट';
-      case 'news': return 'ताज़ा समाचार';
-      default: return 'जानकारी';
+      case 'announcement': return lang === 'mr' ? 'मासिक पत्रिका' : lang === 'hi' ? 'मासिक पत्रिका' : 'Monthly Magazine';
+      case 'update': return lang === 'mr' ? 'संघटन वृत्त' : lang === 'hi' ? 'संगठन समाचार' : 'Community News';
+      case 'news': return lang === 'mr' ? 'ताज्या घडामोडी' : lang === 'hi' ? 'ताज़ा समाचार' : 'Latest News';
+      default: return lang === 'mr' ? 'वृत्त' : lang === 'hi' ? 'समाचार' : 'News';
     }
   };
 
@@ -54,10 +56,10 @@ export default function SamacharNews({ news }: SamacharNewsProps) {
         <div>
           <h2 className="text-2xl font-bold text-saffron-700 font-devanagari flex items-center gap-2">
             <Newspaper className="w-6 h-6 text-saffron-500" />
-            संगठन समाचार एवं घोषणाएँ (News)
+            {translations.newsHeader[lang]}
           </h2>
           <p className="text-sm text-gray-600 mt-1 font-sans">
-            महानुभाव पंथ, तीर्थक्षेत्र विकास कार्यों तथा आगामी सत्संग घोषणाओं की आधिकारिक जानकारी।
+            {translations.newsSub[lang]}
           </p>
         </div>
 
@@ -66,7 +68,7 @@ export default function SamacharNews({ news }: SamacharNewsProps) {
           <Search className="absolute left-3 top-2.5 w-4 h-4 text-gray-400" />
           <input
             type="text"
-            placeholder="समाचार खोजें..."
+            placeholder={lang === 'mr' ? 'बातम्या शोधा...' : lang === 'hi' ? 'समाचार खोजें...' : 'Search news...'}
             className="w-full pl-9 pr-4 py-2 text-sm border border-saffron-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-saffron-500 bg-white"
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
@@ -96,7 +98,9 @@ export default function SamacharNews({ news }: SamacharNewsProps) {
         {filteredNews.length === 0 ? (
           <div className="text-center py-16 bg-gray-50/50 rounded-2xl border border-dashed border-gray-200">
             <Newspaper className="w-12 h-12 text-gray-300 mx-auto mb-3" />
-            <p className="text-sm text-gray-500 font-sans">कोई समाचार नहीं मिला।</p>
+            <p className="text-sm text-gray-500 font-sans">
+              {lang === 'mr' ? 'कोणतीही बातमी आढळली नाही.' : lang === 'hi' ? 'कोई समाचार नहीं मिला।' : 'No news articles found.'}
+            </p>
           </div>
         ) : (
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -146,7 +150,7 @@ export default function SamacharNews({ news }: SamacharNewsProps) {
                     {ns.date}
                   </span>
                   <button className="text-saffron-600 font-semibold text-xs hover:text-saffron-700 flex items-center gap-0.5 transition-all">
-                    विस्तार से पढ़ें
+                    {lang === 'mr' ? 'सविस्तर वाचा' : lang === 'hi' ? 'विस्तार से पढ़ें' : 'Read More'}
                     <ExternalLink className="w-3.5 h-3.5" />
                   </button>
                 </div>
