@@ -8,8 +8,8 @@ export const translations = {
     en: 'Mahanubhav Vishwa'
   },
   appSubtitle: {
-    mr: 'श्री चक्रधर स्वामी उपदेश पीठ',
-    hi: 'श्री चक्रधर स्वामी उपदेश पीठ',
+    mr: 'श्रीचक्रधर स्वामी उपदेश पीठ',
+    hi: 'श्रीचक्रधर स्वामी उपदेश पीठ',
     en: 'Shree Chakradhar Swami Upadesh Peeth'
   },
   
@@ -18,11 +18,7 @@ export const translations = {
     mr: 'ग्रंथालय',
     hi: 'ग्रंथालय',
     en: 'Library'
-  },
-  tabBhajan: {
-    mr: 'भजन',
-    hi: 'भजन',
-    en: 'Bhajans'
+  
   },
   tabPravachan: {
     mr: 'प्रवचन माला',
@@ -136,8 +132,8 @@ export const translations = {
     en: 'Sacred Scriptures of Mahanubhav Sect'
   },
   granthalayaSub: {
-    mr: 'श्री चक्रधर स्वामींच्या मुखातून प्रगटलेली वचनावली आणि लीळाचरित्रादी धर्मग्रंथ',
-    hi: 'श्री चक्रधर स्वामी के मुखकमल से प्रगट वचन और लीळाचरित्र आदि पावन ग्रंथ',
+    mr: 'श्रीचक्रधर स्वामींच्या मुखातून प्रगटलेली वचनावली आणि लीळाचरित्रादी धर्मग्रंथ',
+    hi: 'श्रीचक्रधर स्वामी के मुखकमल से प्रगट वचन और लीळाचरित्र आदि पावन ग्रंथ',
     en: 'Sacred words and divine pastimes uttered by Lord Chakradhar Swami'
   },
   searchGranthPlaceholder: {
@@ -262,8 +258,8 @@ export const translations = {
     en: 'Mahanubhav Pilgrimage Sites & Ashrams Directory'
   },
   templeSub: {
-    mr: 'श्री चक्रधर स्वामींच्या चरणस्पर्शाने पुनित झालेली अमरावती, जालना व संपूर्ण महाराष्ट्रातील ८५०+ पवित्र स्थाने',
-    hi: 'श्री चक्रधर स्वामी के चरणकमल से पावन अमरावती, जालना व संपूर्ण महाराष्ट्र के ८५०+ पवित्र स्थान',
+    mr: 'श्रीचक्रधर स्वामींच्या चरणस्पर्शाने पुनित झालेली अमरावती, जालना व संपूर्ण महाराष्ट्रातील ८५०+ पवित्र स्थाने',
+    hi: 'श्रीचक्रधर स्वामी के चरणकमल से पावन अमरावती, जालना व संपूर्ण महाराष्ट्र के ८५०+ पवित्र स्थान',
     en: '850+ holy places and ashrams touched by the lotus feet of Shree Chakradhar Swami'
   },
   addTempleBtn: {

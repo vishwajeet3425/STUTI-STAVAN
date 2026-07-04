@@ -2444,7 +2444,7 @@ const juneDaysRaw: Omit<MahanubhavCalendarDay, 'month'>[] = [
     shubhLabel: "",
     isShubh: false,
     events: [
-      "श्रीचक्रधर मंदिर श्री चक्रधरप्रभू पदस्पर्श पावन दिन, श्रीक्षेत्र नेवरगाव, ता. गंगापूर, जि. संभाजीनगर",
+      "श्रीचक्रधर मंदिर श्रीचक्रधरप्रभू पदस्पर्श पावन दिन, श्रीक्षेत्र नेवरगाव, ता. गंगापूर, जि. संभाजीनगर",
       "सूर्याचा आर्द्रा नक्षत्रात प्रवेश स. ६.११ वाहन : बगळा"
     ],
     yogs: [
@@ -4699,7 +4699,7 @@ const novemberDaysRaw: Omit<MahanubhavCalendarDay, 'month'>[] = [
     events: [
       "श्रीकृष्ण मंदिर, वर्धापन दिन दि.२५ व २६",
       "हरवे फाँस जवळ, धुळे, जि.धुळे",
-      "पदस्पर्श पावन दिन श्री चक्रधर मंदिर",
+      "पदस्पर्श पावन दिन श्रीचक्रधर मंदिर",
       "क्षेत्र मरहरपेढी, जि.अ.नगर",
       "द्वितीया समाप्ती दु.१.१6"
     ],
@@ -5276,7 +5276,13 @@ export default function KaryakramCalendar({ events, lang = 'mr' }: KaryakramCale
   const [searchQuery, setSearchQuery] = useState('');
   const [viewMode, setViewMode] = useState<'grid' | 'events'>('grid');
   const [selectedDay, setSelectedDay] = useState<MahanubhavCalendarDay | null>(null);
-  const [selectedMonth, setSelectedMonth] = useState<'jan' | 'feb' | 'mar' | 'apr' | 'may' | 'jun' | 'jul' | 'aug' | 'sep' | 'oct' | 'nov' | 'dec'>('jan');
+  const [selectedMonth, setSelectedMonth] = useState<'jan' | 'feb' | 'mar' | 'apr' | 'may' | 'jun' | 'jul' | 'aug' | 'sep' | 'oct' | 'nov' | 'dec'>(() => {
+    const today = new Date();
+    const months: ('jan' | 'feb' | 'mar' | 'apr' | 'may' | 'jun' | 'jul' | 'aug' | 'sep' | 'oct' | 'nov' | 'dec')[] = [
+      'jan', 'feb', 'mar', 'apr', 'may', 'jun', 'jul', 'aug', 'sep', 'oct', 'nov', 'dec'
+    ];
+    return months[today.getMonth()] || 'jan';
+  });
 
   // Event Categories for existing upcoming events list
   const eventTypes = [
@@ -6158,7 +6164,7 @@ export default function KaryakramCalendar({ events, lang = 'mr' }: KaryakramCale
                           <p className="border-b border-pink-100 pb-0.5">• तरुण मित्र मंडळ, गंगापूर, ता. संगमनेर</p>
                           <p className="border-b border-pink-100 pb-0.5">• श्रीकृष्ण मंदिर तरूण मंडळ, आरवी खुर्द ता. संगमनेर</p>
                           <p className="border-b border-pink-100 pb-0.5">• श्रीकृष्ण सेवाश्रम रथयात्रा चिंचोली शिराळ ता. पाथर्डी</p>
-                          <p className="border-b border-pink-100 pb-0.5">• श्री चक्रधर मंदिर वेली, जि. बुलढाणा</p>
+                          <p className="border-b border-pink-100 pb-0.5">• श्रीचक्रधर मंदिर वेली, जि. बुलढाणा</p>
                           <p className="border-b border-pink-100 pb-0.5">• श्रीकृष्ण मंदिर सावखेडा ता. सोयगांव जि. औरंगाबाद</p>
                         </div>
                       </div>
@@ -6451,6 +6457,9 @@ export default function KaryakramCalendar({ events, lang = 'mr' }: KaryakramCale
               {(selectedMonth === 'jan' ? januaryDaysWithMonth : selectedMonth === 'feb' ? februaryDays : selectedMonth === 'mar' ? marchDays : selectedMonth === 'apr' ? aprilDays : selectedMonth === 'may' ? mayDays : selectedMonth === 'jun' ? juneDays : selectedMonth === 'jul' ? julyDays : selectedMonth === 'aug' ? augustDays : selectedMonth === 'sep' ? septemberDays : selectedMonth === 'oct' ? octoberDays : selectedMonth === 'nov' ? novemberDays : decemberDays).map((day) => {
                 // Determine styling based on Sunday or typical day
                 const isSunday = day.isSunday;
+                const todayObj = new Date();
+                const currentMonthKey = ['jan', 'feb', 'mar', 'apr', 'may', 'jun', 'jul', 'aug', 'sep', 'oct', 'nov', 'dec'][todayObj.getMonth()];
+                const isToday = day.dayNumber === todayObj.getDate() && selectedMonth === currentMonthKey;
                 
                 return (
                   <div
@@ -6460,21 +6469,37 @@ export default function KaryakramCalendar({ events, lang = 'mr' }: KaryakramCale
                       gridRowStart: day.weekdayIndex + 1 
                     }}
                     onClick={() => setSelectedDay(day)}
-                    className={`p-3 min-h-[180px] bg-white hover:bg-saffron-50/60 cursor-pointer transition-all flex flex-col justify-between group relative border-r border-b border-amber-100 ${
-                      isSunday ? 'bg-rose-50/20' : ''
+                    className={`p-3 min-h-[180px] cursor-pointer transition-all flex flex-col justify-between group relative border-r border-b border-amber-100 ${
+                      isToday 
+                        ? 'bg-amber-100 border-2 border-saffron-500 shadow-lg ring-4 ring-saffron-400/30 z-10' 
+                        : isSunday 
+                          ? 'bg-rose-50/20 hover:bg-saffron-50/60' 
+                          : 'bg-white hover:bg-saffron-50/60'
                     }`}
                   >
+                    {/* Pulsing background effect for today to blink on and off */}
+                    {isToday && (
+                      <div className="absolute inset-0 bg-saffron-200/50 animate-pulse pointer-events-none rounded-sm" />
+                    )}
+
                     {/* Cell Top Header */}
-                    <div className="flex items-center justify-between gap-2 border-b border-gray-100 pb-1">
+                    <div className="flex items-center justify-between gap-2 border-b border-gray-100 pb-1 z-10">
                       {/* Date number in top-left corner */}
-                      <div className="inline-block transition-transform duration-200 group-hover:scale-110">
-                        {isSunday ? (
-                          <span className="text-xl md:text-2xl font-black text-[#dc2626] font-sans">
-                            {day.dayNumber}
-                          </span>
-                        ) : (
-                          <span className="text-xl md:text-2xl font-black text-blue-700 font-sans">
-                            {day.dayNumber}
+                      <div className="flex items-center gap-1.5">
+                        <div className="inline-block transition-transform duration-200 group-hover:scale-110">
+                          {isSunday ? (
+                            <span className={`text-xl md:text-2xl font-black font-sans ${isToday ? 'text-saffron-900' : 'text-[#dc2626]'}`}>
+                              {day.dayNumber}
+                            </span>
+                          ) : (
+                            <span className={`text-xl md:text-2xl font-black font-sans ${isToday ? 'text-saffron-900' : 'text-blue-700'}`}>
+                              {day.dayNumber}
+                            </span>
+                          )}
+                        </div>
+                        {isToday && (
+                          <span className="text-xs md:text-sm bg-red-600 text-white font-extrabold px-2.5 py-0.5 rounded-md shadow-md animate-pulse font-devanagari shrink-0">
+                            {lang === 'mr' ? 'आज' : lang === 'hi' ? 'आज' : 'Today'}
                           </span>
                         )}
                       </div>
@@ -6495,7 +6520,7 @@ export default function KaryakramCalendar({ events, lang = 'mr' }: KaryakramCale
                     </div>
 
                     {/* Cell Center & Content: Full tithi and complete events/yogs */}
-                    <div className="flex-1 flex flex-col justify-start mt-2">
+                    <div className="flex-1 flex flex-col justify-start mt-2 z-10 relative">
                       {/* Tithi Details in a prominent larger bold Marathi font */}
                       <div className="text-xs md:text-[13px] font-extrabold text-slate-800 font-devanagari leading-snug bg-amber-50/40 px-1 py-0.5 rounded border border-amber-100/50">
                         {day.tithi}
@@ -6545,7 +6570,7 @@ export default function KaryakramCalendar({ events, lang = 'mr' }: KaryakramCale
           {/* Calendar Traditional Footer Slogan */}
           <div className="mt-6 bg-gradient-to-r from-saffron-500/10 to-amber-500/10 rounded-2xl p-4 border border-saffron-100 text-center">
             <p className="text-xs font-bold text-saffron-800 font-devanagari leading-relaxed">
-              ॥ सर्वज्ञ श्री चक्रधर स्वामी की जय ॥
+              ॥ सर्वज्ञ श्रीचक्रधर स्वामी की जय ॥
             </p>
             <p className="text-[10px] text-gray-500 font-sans mt-1">
               *ही दिनदर्शिका महानुभाव पंथाच्या प्राचीन परंपरा आणि तिथी गणनेनुसार तयार करण्यात आली आहे.
@@ -6682,7 +6707,7 @@ export default function KaryakramCalendar({ events, lang = 'mr' }: KaryakramCale
                   "परिग्रहा पासौनि निवृत्ति करावी। असंभोगु रक्षीजे।"
                 </p>
                 <p className="text-xs text-saffron-600 font-sans mt-2 text-right">
-                  {lang === 'mr' ? '— श्री चक्रधर स्वामी (सूत्रपाठ)' : lang === 'hi' ? '— श्री चक्रधर स्वामी (सूत्रपाठ)' : '— Shri Chakradhar Swami (Sutrapath)'}
+                  {lang === 'mr' ? '— श्रीचक्रधर स्वामी (सूत्रपाठ)' : lang === 'hi' ? '— श्रीचक्रधर स्वामी (सूत्रपाठ)' : '— Shri Chakradhar Swami (Sutrapath)'}
                 </p>
               </div>
 

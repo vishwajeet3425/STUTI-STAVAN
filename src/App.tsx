@@ -367,10 +367,9 @@ export default function App() {
         <div className="max-w-7xl mx-auto px-4 flex flex-wrap gap-1.5">
           {[
             { id: 'granthalaya', label: translations.tabGranthalaya[lang], icon: BookOpen },
-            { id: 'bhajan', label: translations.tabBhajan[lang], icon: Music },
-            { id: 'temples', label: translations.tabTemples[lang], icon: MapPin },
-            { id: 'niwas_kosh', label: translations.tabNiwasKosh[lang], icon: Home },
             { id: 'calendar', label: translations.tabCalendar[lang], icon: Calendar },
+            { id: 'niwas_kosh', label: translations.tabNiwasKosh[lang], icon: Home },
+            { id: 'temples', label: translations.tabTemples[lang], icon: MapPin },
             { id: 'samachar', label: translations.tabSamachar[lang], icon: Newspaper },
             { id: 'community', label: translations.tabCommunity[lang], icon: MessageSquare },
             { id: 'donation', label: translations.tabDonation[lang], icon: Sparkles },
@@ -491,9 +490,9 @@ export default function App() {
       <nav className="fixed bottom-0 left-0 right-0 z-40 bg-white border-t border-saffron-100 flex items-center justify-around h-16 md:hidden px-2 shadow-lg">
         {[
           { id: 'granthalaya', label: translations.tabMobGranth[lang], icon: BookOpen },
-          { id: 'bhajan', label: translations.tabMobBhajan[lang], icon: Music },
-          { id: 'temples', label: translations.tabMobSthan[lang], icon: MapPin },
+          { id: 'calendar', label: translations.tabMobCalendar[lang], icon: Calendar },
           { id: 'niwas_kosh', label: translations.tabMobNiwasKosh[lang], icon: Home },
+          { id: 'temples', label: translations.tabMobSthan[lang], icon: MapPin },
           { id: 'community', label: translations.tabMobCharcha[lang], icon: MessageSquare },
           { id: 'donation', label: translations.tabMobDaan[lang], icon: Sparkles },
           { id: 'admin', label: translations.tabMobAdmin[lang], icon: Settings }

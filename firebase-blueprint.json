@@ -1,0 +1,66 @@
+{
+  "entities": {
+    "sthan_darshan": {
+      "title": "Sthan Darshan Place",
+      "description": "Mahanubhav Panth holy places with geographical coordinates and spiritual history",
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Unique identifier of the place"
+        },
+        "number": {
+          "type": "integer",
+          "description": "Chapter or sequence number"
+        },
+        "title": {
+          "type": "string",
+          "description": "Name of the place in Devanagari"
+        },
+        "titleEn": {
+          "type": "string",
+          "description": "Name of the place in English"
+        },
+        "content": {
+          "type": "string",
+          "description": "Detailed description and spiritual history of the place"
+        },
+        "explanation": {
+          "type": "string",
+          "description": "How to reach and other travel/pilgrim details"
+        },
+        "latitude": {
+          "type": "number",
+          "description": "Latitude coordinate for Google Maps"
+        },
+        "longitude": {
+          "type": "number",
+          "description": "Longitude coordinate for Google Maps"
+        },
+        "photoUrl": {
+          "type": "string",
+          "description": "Image URL of the holy place"
+        },
+        "state": {
+          "type": "string",
+          "description": "State where located"
+        },
+        "district": {
+          "type": "string",
+          "description": "District where located"
+        },
+        "taluka": {
+          "type": "string",
+          "description": "Taluka where located"
+        }
+      },
+      "required": ["id", "number", "title", "content", "latitude", "longitude"]
+    }
+  },
+  "firestore": {
+    "/sthan_darshan/{sthanId}": {
+      "schema": "sthan_darshan",
+      "description": "Sacred Sthan Darshan places collection"
+    }
+  }
+}

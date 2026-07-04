@@ -37,10 +37,22 @@ export default function AdminConsole({
   onSendNotification,
   lang = 'mr'
 }: AdminConsoleProps) {
-  const [activePanel, setActivePanel] = useState<'analytics' | 'customize' | 'add_book' | 'add_chapter' | 'add_temple' | 'add_bhajan'>('analytics');
+  const [activePanel, setActivePanel] = useState<'analytics' | 'customize' | 'add_book' | 'add_chapter' | 'add_temple' | 'add_bhajan' | 'add_sthan'>('analytics');
 
   // Form states
   const [statusMsg, setStatusMsg] = useState<{ type: 'success' | 'error'; text: string } | null>(null);
+
+  // Sthan Darshan Form State
+  const [stTitle, setStTitle] = useState('');
+  const [stTitleEn, setStTitleEn] = useState('');
+  const [stContent, setStContent] = useState('');
+  const [stExplanation, setStExplanation] = useState('');
+  const [stLat, setStLat] = useState('21.0');
+  const [stLng, setStLng] = useState('77.0');
+  const [stState, setStState] = useState('महाराष्ट्र');
+  const [stDistrict, setStDistrict] = useState('');
+  const [stTaluka, setStTaluka] = useState('');
+  const [stNumber, setStNumber] = useState('11');
 
   // Book Form State
   const [bTitle, setBTitle] = useState('');
@@ -140,6 +152,50 @@ export default function AdminConsole({
     setTTaluka('');
   };
 
+  const handleSthanSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!stTitle || !stContent) {
+      flashMessage('error', 'कृपया स्थान का नाम और संक्षिप्त इतिहास दर्ज करें।');
+      return;
+    }
+    try {
+      const id = 'sthan_' + Date.now();
+      const newPlace = {
+        id,
+        number: Number(stNumber),
+        title: stTitle,
+        titleEn: stTitleEn || stTitle,
+        content: stContent,
+        explanation: stExplanation,
+        latitude: Number(stLat),
+        longitude: Number(stLng),
+        state: stState,
+        district: stDistrict,
+        taluka: stTaluka,
+        photoUrl: 'https://images.unsplash.com/photo-1590050752117-238cb0fb12b1?q=80&w=600&auto=format&fit=crop'
+      };
+
+      // Direct write to Firebase Firestore!
+      const { doc, setDoc } = await import('firebase/firestore');
+      const { db } = await import('../lib/firebase');
+      await setDoc(doc(db, 'sthan_darshan', id), newPlace);
+
+      flashMessage('success', `स्थान दर्शन स्थल "${stTitle}" सफलतापूर्वक Firestore में जोड़ दिया गया है!`);
+      
+      // Reset form
+      setStTitle('');
+      setStTitleEn('');
+      setStContent('');
+      setStExplanation('');
+      setStDistrict('');
+      setStTaluka('');
+      setStNumber(String(Number(stNumber) + 1));
+    } catch (err) {
+      console.error("Error adding Sthan to Firestore:", err);
+      flashMessage('error', 'स्थान जोड़ने में त्रुटि हुई। कृपया फ़ायरबेस कनेक्टिविटी जांचें।');
+    }
+  };
+
   const handleNotificationSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     if (!notifTitle || !notifBody) {
@@ -225,6 +281,15 @@ export default function AdminConsole({
           >
             <Plus className="w-4 h-4" />
             नया मंदिर/आश्रम जोड़ें
+          </button>
+          <button
+            onClick={() => { setActivePanel('add_sthan'); setStatusMsg(null); }}
+            className={`w-full text-left px-3.5 py-2 rounded-lg text-xs font-bold transition-all flex items-center gap-2 ${
+              activePanel === 'add_sthan' ? 'bg-saffron-500 text-white shadow-xs' : 'text-gray-700 hover:bg-saffron-50 hover:text-saffron-600'
+            }`}
+          >
+            <Plus className="w-4 h-4" />
+            स्थान दर्शन स्थल जोड़ें (Firestore)
           </button>
           <button
             onClick={() => { setActivePanel('add_bhajan'); setStatusMsg(null); }}
@@ -760,6 +825,178 @@ export default function AdminConsole({
                 className="w-full py-2.5 bg-saffron-500 text-white rounded-lg hover:bg-saffron-600 font-bold text-xs transition-all flex items-center justify-center gap-1 border border-saffron-600"
               >
                 भजन सहेजें (Save Bhajan)
+              </button>
+            </form>
+          )}
+
+          {/* ADD STHAN DARSHAN PLACE PANEL (FIRESTORE) */}
+          {activePanel === 'add_sthan' && (
+            <form onSubmit={handleSthanSubmit} className="space-y-4">
+              <h3 className="text-sm font-bold text-gray-800 uppercase tracking-wider border-b border-gray-100 pb-2 font-sans flex items-center gap-1.5">
+                <span className="w-1.5 h-4 bg-saffron-500 rounded-full"></span>
+                नया स्थान दर्शन स्थल जोड़ें (Add Sthan Darshan - Firestore)
+              </h3>
+              <p className="text-[11px] text-gray-500 font-sans">
+                यह डेटा सीधे फ़ायरबेस फ़ायरस्टोर (Firebase Firestore) में जुड़ता है और लाइव ऐप के स्थान दर्शन खंड में प्रतिबिंबित होता है।
+              </p>
+
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
+                  <label className="block text-xs font-semibold text-gray-500 mb-1">स्थान का नाम (देवनागरी) *</label>
+                  <input
+                    type="text"
+                    placeholder="उदा: श्री क्षेत्र ऋद्धपूर धाम"
+                    className="w-full px-3.5 py-1.5 text-xs border border-saffron-200 rounded-lg focus:outline-none focus:ring-1 focus:ring-saffron-500 bg-white"
+                    value={stTitle}
+                    onChange={(e) => setStTitle(e.target.value)}
+                    required
+                  />
+                </div>
+
+                <div>
+                  <label className="block text-xs font-semibold text-gray-500 mb-1">स्थान का नाम (English)</label>
+                  <input
+                    type="text"
+                    placeholder="उदा: Shree Kshetra Riddhapur Dham"
+                    className="w-full px-3.5 py-1.5 text-xs border border-saffron-200 rounded-lg focus:outline-none focus:ring-1 focus:ring-saffron-500 bg-white"
+                    value={stTitleEn}
+                    onChange={(e) => setStTitleEn(e.target.value)}
+                  />
+                </div>
+              </div>
+
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                <div>
+                  <label className="block text-xs font-semibold text-gray-500 mb-1">स्थान संख्या / अनुक्रम नंबर *</label>
+                  <input
+                    type="number"
+                    className="w-full px-3.5 py-1.5 text-xs border border-saffron-200 rounded-lg focus:outline-none focus:ring-1 focus:ring-saffron-500 bg-white"
+                    value={stNumber}
+                    onChange={(e) => setStNumber(e.target.value)}
+                    required
+                  />
+                </div>
+
+                <div>
+                  <label className="block text-xs font-semibold text-gray-500 mb-1">अक्षांश (Latitude) *</label>
+                  <input
+                    type="text"
+                    placeholder="उदा: 21.2294"
+                    className="w-full px-3.5 py-1.5 text-xs border border-saffron-200 rounded-lg focus:outline-none focus:ring-1 focus:ring-saffron-500 bg-white font-mono"
+                    value={stLat}
+                    onChange={(e) => setStLat(e.target.value)}
+                    required
+                  />
+                </div>
+
+                <div>
+                  <label className="block text-xs font-semibold text-gray-500 mb-1">रेखांश (Longitude) *</label>
+                  <input
+                    type="text"
+                    placeholder="उदा: 77.8596"
+                    className="w-full px-3.5 py-1.5 text-xs border border-saffron-200 rounded-lg focus:outline-none focus:ring-1 focus:ring-saffron-500 bg-white font-mono"
+                    value={stLng}
+                    onChange={(e) => setStLng(e.target.value)}
+                    required
+                  />
+                </div>
+              </div>
+
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                <div>
+                  <label className="block text-xs font-semibold text-gray-500 mb-1">राज्य (State)</label>
+                  <select
+                    className="w-full px-3 py-1.5 text-xs border border-saffron-200 rounded-lg focus:outline-none focus:ring-1 focus:ring-saffron-500 bg-white"
+                    value={stState}
+                    onChange={(e) => setStState(e.target.value)}
+                  >
+                    <option value="महाराष्ट्र">महाराष्ट्र (Maharashtra)</option>
+                    <option value="कर्नाटक">कर्नाटक (Karnataka)</option>
+                    <option value="गुजरात">गुजरात (Gujarat)</option>
+                    <option value="मध्य प्रदेश">मध्य प्रदेश (Madhya Pradesh)</option>
+                    <option value="पंजाब">पंजाब (Punjab)</option>
+                  </select>
+                </div>
+
+                <div>
+                  <label className="block text-xs font-semibold text-gray-500 mb-1">जिल्हा (District)</label>
+                  {stState === 'महाराष्ट्र' ? (
+                    <select
+                      className="w-full px-3 py-1.5 text-xs border border-saffron-200 rounded-lg focus:outline-none focus:ring-1 focus:ring-saffron-500 bg-white"
+                      value={stDistrict}
+                      onChange={(e) => {
+                        setStDistrict(e.target.value);
+                        setStTaluka('');
+                      }}
+                    >
+                      <option value="">जिल्हा निवडा (Select District)</option>
+                      {maharashtraDistricts.map(dist => (
+                        <option key={dist} value={dist}>{dist}</option>
+                      ))}
+                    </select>
+                  ) : (
+                    <input
+                      type="text"
+                      placeholder="उदा: अमरावती"
+                      className="w-full px-3.5 py-1.5 text-xs border border-saffron-200 rounded-lg focus:outline-none focus:ring-1 focus:ring-saffron-500 bg-white"
+                      value={stDistrict}
+                      onChange={(e) => setStDistrict(e.target.value)}
+                    />
+                  )}
+                </div>
+
+                <div>
+                  <label className="block text-xs font-semibold text-gray-500 mb-1">तालुका (Taluka)</label>
+                  {stState === 'महाराष्ट्र' && stDistrict ? (
+                    <select
+                      className="w-full px-3 py-1.5 text-xs border border-saffron-200 rounded-lg focus:outline-none focus:ring-1 focus:ring-saffron-500 bg-white"
+                      value={stTaluka}
+                      onChange={(e) => setStTaluka(e.target.value)}
+                    >
+                      <option value="">तालुका निवडा (Select Taluka)</option>
+                      {(MAHARASHTRA_DISTRICTS_AND_TALUKAS[stDistrict] || []).sort().map(tal => (
+                        <option key={tal} value={tal}>{tal}</option>
+                      ))}
+                    </select>
+                  ) : (
+                    <input
+                      type="text"
+                      placeholder="उदा: मोर्शी"
+                      className="w-full px-3.5 py-1.5 text-xs border border-saffron-200 rounded-lg focus:outline-none focus:ring-1 focus:ring-saffron-500 bg-white"
+                      value={stTaluka}
+                      onChange={(e) => setStTaluka(e.target.value)}
+                      disabled={stState === 'महाराष्ट्र' && !stDistrict}
+                    />
+                  )}
+                </div>
+              </div>
+
+              <div>
+                <label className="block text-xs font-semibold text-gray-500 mb-1">स्थान का इतिहास एवं दर्शन महत्व *</label>
+                <textarea
+                  className="w-full p-3 text-xs border border-saffron-200 rounded-lg focus:outline-none focus:ring-1 focus:ring-saffron-500 bg-white h-24 resize-none"
+                  placeholder="यहाँ की लीलाओं, चरणमुद्रिका और ऐतिहासिक महत्व का विस्तार से वर्णन करें..."
+                  value={stContent}
+                  onChange={(e) => setStContent(e.target.value)}
+                  required
+                />
+              </div>
+
+              <div>
+                <label className="block text-xs font-semibold text-gray-500 mb-1">मार्गदर्शन (कसे पोहोचावे / How to Reach)</label>
+                <textarea
+                  className="w-full p-3 text-xs border border-saffron-200 rounded-lg focus:outline-none focus:ring-1 focus:ring-saffron-500 bg-white h-16 resize-none"
+                  placeholder="नजदीकी रेलवे स्टेशन, बस स्टैंड या मार्ग की जानकारी दें..."
+                  value={stExplanation}
+                  onChange={(e) => setStExplanation(e.target.value)}
+                />
+              </div>
+
+              <button
+                type="submit"
+                className="w-full py-2.5 bg-saffron-600 text-white rounded-lg hover:bg-saffron-700 font-bold text-xs transition-all flex items-center justify-center gap-1 border border-saffron-700 shadow-sm"
+              >
+                स्थान सहेजें (Save to Firestore)
               </button>
             </form>
           )}

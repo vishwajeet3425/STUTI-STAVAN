@@ -1,0 +1,13 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    function isValidId(id) {
+      return id.matches('^[a-zA-Z0-9_\\-]+$') && id.size() <= 128;
+    }
+
+    match /sthan_darshan/{sthanId} {
+      allow read: if true;
+      allow write: if isValidId(sthanId);
+    }
+  }
+}

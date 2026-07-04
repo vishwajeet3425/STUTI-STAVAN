@@ -110,9 +110,47 @@ export interface AppNotification {
   category: 'granth' | 'bhajan' | 'event' | 'general';
 }
 
+export interface NiwasItem {
+  id: string;
+  name: string;
+  nameEn: string;
+  location: string;
+  state: string; // "महाराष्ट्र" | "राजस्थान" | "गुजरात"
+  district: string;
+  taluka: string;
+  village?: string; // Manually added village name
+  facilities: { mr: string[]; hi: string[]; en: string[] };
+  rooms: { mr: string[]; hi: string[]; en: string[] };
+  contactPerson: string;
+  phone: string;
+  sevaCharge: { mr: string; hi: string; en: string };
+  imageUrl: string;
+  rating: number;
+  bhikshuk?: number;
+  tapasvini?: number;
+  children?: number;
+  totalMembers?: number;
+}
+
 export interface AnalyticsData {
   appOpens: number;
-  mostReadBooks: { [bookTitle: string]: number };
-  mostPlayedBhajans: { [bhajanTitle: string]: number };
+  mostReadBooks: Record<string, number>;
+  mostPlayedBhajans: Record<string, number>;
   activeUsersToday: number;
 }
+
+export interface SthanDarshanPlace {
+  id: string;
+  number: number;
+  title: string;
+  titleEn?: string;
+  content: string; // Marathi/Hindi text describing history & mahatva
+  explanation?: string; // Guidance on how to reach / travel
+  latitude: number;
+  longitude: number;
+  photoUrl?: string;
+  state?: string;
+  district?: string;
+  taluka?: string;
+}
+
