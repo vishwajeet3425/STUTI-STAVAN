@@ -59,7 +59,17 @@ export const initialBooks: Book[] = [
     chaptersCount: 4,
     coverImage: 'https://images.unsplash.com/photo-1544947950-fa07a98d237f?q=80&w=600&auto=format&fit=crop'
   },
-
+  {
+    id: 'leela_charitra',
+    title: 'लीळाचरित्र',
+    titleEn: 'Leela Charitra',
+    author: 'म्हाइंभट (Mhaimbhat)',
+    description: 'महानुभाव पंथाचा आद्य ऐतिहासिक चरित्रग्रंथ. सर्वज्ञ श्रीचक्रधर स्वामींच्या पवित्र आणि पावन लीळांचे संकलन.',
+    descriptionEn: 'The first biographical/historical scripture of the Mahanubhav order depicting the divine life and pastimes of Shree Chakradhar Swami, compiled by Mhaimbhat.',
+    category: 'pramukh_granth',
+    chaptersCount: 13,
+    coverImage: 'https://images.unsplash.com/photo-1490730141103-6cac27aaab94?q=80&w=600&auto=format&fit=crop'
+  },
   {
     id: 'drishtantapath',
     title: 'श्री दृष्टांतपाठ (Shree Drishtantapath)',
@@ -160,110 +170,99 @@ export const initialBooks: Book[] = [
     coverImage: 'https://images.unsplash.com/photo-1561344640-2453889cda5b?q=80&w=600&auto=format&fit=crop'
   },
   {
-    id: 'shreedattatreyacharitra',
-    title: 'श्रीदत्तात्रेयचरित्र (Shree Dattatreya Charitra)',
-    titleEn: 'Shree Dattatreya Charitra',
-    author: 'आदि भक्ताग्रणी',
-    description: 'अत्रि-अनुसूया नंदन भगवान श्रीदत्तात्रेय प्रभु के दिव्य स्वरूप, ज्ञानयोग और उनकी पावन अवतार लीलाओं का विवरण।',
-    descriptionEn: 'The spiritual accounts and divine manifestations of Lord Dattatreya.',
-    category: 'pramukh_granth',
-    chaptersCount: 14,
+    id: 'prarthana_sangrah',
+    title: 'प्रार्थना संग्रह (Prarthana Sangrah)',
+    titleEn: 'Prarthana Sangrah',
+    author: 'महानुभाव पूजनीय संत',
+    description: 'भक्तों द्वारा संकट निवारण, आत्मोद्धार और भक्ति की प्राप्ति हेतु गाई जाने वाली मधुर प्रार्थनाओं का संकलन।',
+    descriptionEn: 'Collection of divine prayers and submission of surrender (Sharanagati).',
+    category: 'itar_sahity',
+    chaptersCount: 1,
+    coverImage: 'https://images.unsplash.com/photo-1499209974431-9dddcece7f88?q=80&w=600&auto=format&fit=crop'
+  },
+  {
+    id: 'smrutisthal',
+    title: 'स्मृतिस्थळ (Smrutisthal)',
+    titleEn: 'Smrutisthal',
+    author: 'नरेन्द्र व प्राचीन लेखक',
+    description: 'स्वामी चक्रधर के प्रयाण के उपरांत नागदेवाचार्य and अन्य शिष्यों के संस्मरणों, चरित्र और महानुभाव संघ के प्रसार का इतिहास।',
+    descriptionEn: 'The historical records of the post-Chakradhar era and early disciples like Nagdevacharya.',
+    category: 'itar_sahity',
+    chaptersCount: 1,
+    coverImage: 'https://cdn.soft112.com/mahanubhav-smritisthal/00/00/0G/GM/00000GGMYY/pad_screenshot.png'
+  },
+  {
+    id: 'murtiprakash',
+    title: 'मूर्तिप्रकाश (Murtiprakash)',
+    titleEn: 'Murtiprakash',
+    author: 'केशिराज व्यास (Keshiraj Vyas)',
+    description: 'सर्वज्ञ श्रीचक्रधर स्वामी के दिव्य, सगुण व मनोहारी शारीरिक सौंदर्य का शिख-नख अत्यंत प्रेमपूर्ण व भक्तिमय काव्य वर्णन।',
+    descriptionEn: 'Poetic description detailing the glorious sanyasi form of Shree Chakradhar Swami.',
+    category: 'sati_granth',
+    chaptersCount: 1,
     coverImage: 'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=600&auto=format&fit=crop'
   },
   {
-    id: 'shreechangdevraulcharitra',
-    title: 'श्री चांगदेव राऊळ चरित्र (Shree Changdev Raul Charitra)',
-    titleEn: 'Shree Changdev Raul Charitra',
-    author: 'म्हाइंभट (Mhaimbhat)',
-    description: 'द्वारकापीठ के अधिपति और महानुभाव पंथ के तृतीय अवतार श्री चांगदेव राऊळ महाराज के बाल्यकाल और साधना लीलाओं का पावन संग्रह।',
-    descriptionEn: 'Holy biography of Shree Changdev Raul Maharaj, the third incarnation.',
+    id: 'sahyadrivarnan',
+    title: 'सह्याद्रीवर्णन (Sahyadrivarnan)',
+    titleEn: 'Sahyadrivarnan',
+    author: 'रविंद्र पंडित',
+    description: 'भगवान श्री दत्तात्रेय प्रभु के निवास स्थान सह्याद्री पर्वत के पावन वातावरण, वनों और उनके महात्म्य का अनुपम वर्णन।',
+    descriptionEn: 'Poetic praise of the Sahyadri mountains, the sacred abode of Lord Dattatreya.',
+    category: 'sati_granth',
+    chaptersCount: 1,
+    coverImage: 'https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?q=80&w=600&auto=format&fit=crop'
+  },
+  {
+    id: 'chakradhar_aarti',
+    title: 'श्रीचक्रधर स्वामी आरती व स्तोत्र संग्रह',
+    titleEn: 'Shree Chakradhar Swami Aarti & Stotra Sangrah',
+    author: 'महानुभाव संप्रदाय आचार्य',
+    description: 'सर्वज्ञ चक्रधर स्वामी महाराज, दत्तात्रेय प्रभु आणि पंचकृष्णांची मधुर व भावपूर्ण आरती आणि स्तोत्र संग्रह।',
+    descriptionEn: 'Aarti and Stotra collection dedicated to Shree Chakradhar Swami and Panchakrishna.',
+    category: 'aarti_stotra',
+    chaptersCount: 1,
+    coverImage: 'https://images.unsplash.com/photo-1609137144813-979434863ab9?q=80&w=600&auto=format&fit=crop'
+  },
+  {
+    id: 'chakradhar_leelasthan',
+    title: 'श्रीचक्रधर स्वामी लीला-स्थान संकलन',
+    titleEn: 'Shree Chakradhar Swami Leela-Sthan Compilation',
+    author: 'महानुभाव संशोधक मंडळ',
+    description: 'महानुभाव पंथाच्या अत्यंत पवित्र, पावन आणि ऐतिहासिक तीर्थक्षेत्रांची आणि लीळा स्थानांची संपूर्ण माहिती, दिशा व थेट गुगल मॅप्स लोकेशनसह।',
+    descriptionEn: 'Complete guide of holy places, footprint temples and historic Leela Sthans of Mahanubhav Panth with coordinates and direct Google Maps.',
     category: 'pramukh_granth',
-    chaptersCount: 1,
-    coverImage: 'https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?q=80&w=600&auto=format&fit=crop'
+    chaptersCount: 10,
+    coverImage: 'https://images.unsplash.com/photo-1590050752117-238cb0fb12b1?q=80&w=600&auto=format&fit=crop'
   },
   {
-    id: 'shreegovindaprabhucharitra',
-    title: 'श्री गोविंदप्रभु चरित्र (Shree Govindaprabhu Charitra)',
-    titleEn: 'Shree Govindaprabhu Charitra',
-    author: 'म्हाइंभट (Mhaimbhat)',
-    description: 'भगवान श्री गोविंदप्रभु महाराज (गुंडम करुण्य) के ऋद्धपूर धाम में की गई पावन, अद्भुत और करुणामयी लीलाओं का प्रामाणिक चरित्र।',
-    descriptionEn: 'The legendary and compassionate Leelas of Lord Govindaprabhu at Ridhpur.',
-    category: 'pramukh_granth',
-    chaptersCount: 1,
-    coverImage: 'https://images.unsplash.com/photo-1447752875215-b2761acb3c5d?q=80&w=600&auto=format&fit=crop'
-  },
-  {
-    id: 'shreechakradharswamicharitra',
-    title: 'श्रीचक्रधर स्वामी चरित्र (Shree Chakradhar Swami Charitra)',
-    titleEn: 'Shree Chakradhar Swami Charitra',
-    author: 'म्हाइंभट (Mhaimbhat)',
-    description: 'महानुभाव पंथ के संस्थापक सर्वज्ञ श्रीचक्रधर स्वामी महाराज के संपूर्ण जीवन वृत्त, साधनाकाल और भक्त-उद्धार की लीलाओं का महाग्रंथ।',
-    descriptionEn: 'The full divine biography of the founder, Lord Chakradhar Swami.',
-    category: 'pramukh_granth',
-    chaptersCount: 1,
-    coverImage: 'https://images.unsplash.com/photo-1472214222541-d510753a4907?q=80&w=600&auto=format&fit=crop'
-  },
-  {
-    id: 'avtarlakshan',
-    title: 'अवतारलक्षण (Avtarlakshan)',
-    titleEn: 'Avtarlakshan',
-    author: 'केशिराज व्यास',
-    description: 'ईश्वरी अवतार के बत्तीस दिव्य शारीरिक व आध्यात्मिक लक्षणों का सूक्ष्म विवेचन करने वाला महत्वपूर्ण सैद्धांतिक ग्रंथ।',
-    descriptionEn: 'Detailed commentary on the 32 divine attributes of a divine incarnation.',
+    id: 'dhavale',
+    title: 'धवळे (Dhavale)',
+    titleEn: 'Dhavale',
+    author: 'महदंबा (Mahadamba)',
+    description: 'मराठी की सर्वप्रथम कवयित्री महदंबा द्वारा रचित मंगलकारी विवाह गीत, जिसमें श्रीकृष्ण-रुक्मिणी विवाह का रसमय वर्णन है।',
+    descriptionEn: 'The sacred, auspicious songs composed by Mahadamba, Marathi’s first poetess.',
     category: 'itar_sahity',
     chaptersCount: 1,
-    coverImage: 'https://images.unsplash.com/photo-1513542789411-b6a5d4f31634?q=80&w=600&auto=format&fit=crop'
+    coverImage: 'https://images.unsplash.com/photo-1519741497674-611481863552?q=80&w=600&auto=format&fit=crop'
   },
   {
-    id: 'sutrapath_tika',
-    title: 'सूत्रपाठ टीका व भाष्य (Sutrapath Tika)',
-    titleEn: 'Sutrapath Tika',
-    author: 'प्राचीन आचार्य व विद्वान',
-    description: 'श्री सूत्रपाठ के गूढ़ आध्यात्मिक वचनों और सूत्रों को सुगम भाषा में समझाने के लिए लिखी गई प्राचीन टीकाएं।',
-    descriptionEn: 'Traditional interpretations and annotations on the core Sutrapath aphorisms.',
-    category: 'itar_sahity',
+    id: 'rukmini_swayamvar',
+    title: 'रुक्मिणी स्वयंवर (Rukmini Swayamvar)',
+    titleEn: 'Rukmini Swayamvar',
+    author: 'नरेन्द्र पंडित (Narendra Pandit)',
+    description: 'साती ग्रंथों में प्रथम। श्रीकृष्ण और रुक्मिणी जी के अलौकिक प्रेम और विवाह प्रसंग का अद्भुत शृंगारिक व आध्यात्मिक काव्य वर्णन।',
+    descriptionEn: 'A masterpiece depicting the holy union and marriage of Krishna and Rukmini.',
+    category: 'sati_granth',
     chaptersCount: 1,
-    coverImage: 'https://images.unsplash.com/photo-1457369804613-52c61a468e7d?q=80&w=600&auto=format&fit=crop'
-  },
-  {
-    id: 'drishtantapath_tika',
-    title: 'दृष्टांतपाठ टीका (Drishtantapath Tika)',
-    titleEn: 'Drishtantapath Tika',
-    author: 'प्राचीन महानुभाव भाष्यकार',
-    description: 'सर्वज्ञ चक्रधर स्वामी के दृष्टांतों (उदारहणों) के भीतर छिपे दार्शनिक अर्थ और आध्यात्मिक संदेशों का विवेचन।',
-    descriptionEn: 'Analytical commentaries on the parables of Shree Drishtantapath.',
-    category: 'itar_sahity',
-    chaptersCount: 1,
-    coverImage: 'https://images.unsplash.com/photo-1481627834876-b7833e8f5570?q=80&w=600&auto=format&fit=crop'
-  },
-  {
-    id: 'mahabhashya',
-    title: 'महाभाष्य (Mahabhashya)',
-    titleEn: 'Mahabhashya',
-    author: 'केशिराज व्यास व प्राचीन आचार्य',
-    description: 'महानुभाव संप्रदाय के दर्शन, जीव-जगत संबंध और ब्रह्मविद्या के मूल तत्वों पर रचित सर्वश्रेष्ठ प्रामाणिक भाष्य।',
-    descriptionEn: 'The supreme theological and philosophical commentary of the sect.',
-    category: 'itar_sahity',
-    chaptersCount: 1,
-    coverImage: 'https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?q=80&w=600&auto=format&fit=crop'
-  },
-  {
-    id: 'brahmavidya',
-    title: 'ब्रह्मविद्या शास्त्र (Brahmavidya Shastra)',
-    titleEn: 'Brahmavidya Shastra',
-    author: 'महेंद्रभट / केशिराज व्यास',
-    description: 'ईश्वर के निर्गुण व सगुण स्वरूप, ब्रह्मज्ञान और मोक्ष मार्ग का गहन प्रतिपादन करने वाला सैद्धांतिक ग्रंथ।',
-    descriptionEn: 'Scientific exploration of Divine Knowledge and ultimate liberation.',
-    category: 'itar_sahity',
-    chaptersCount: 1,
-    coverImage: 'https://images.unsplash.com/photo-1491841573190-711c0337ffea?q=80&w=600&auto=format&fit=crop'
+    coverImage: 'https://images.unsplash.com/photo-1518199266791-5375a83190b7?q=80&w=600&auto=format&fit=crop'
   },
   {
     id: 'jnanprabodh',
-    title: 'ज्ञानप्रबोध (Jnana Prabodh)',
-    titleEn: 'Jnana Prabodh',
-    author: 'विश्वनाथ बाळकृष्ण',
-    description: 'महानुभाव साती ग्रंथों में समाविष्ट, ज्ञान, भक्ति और वैराग्य के दिव्य सिद्धांतों को जाग्रत करने वाला उत्तम पद्य ग्रंथ।',
+    title: 'ज्ञानप्रबोध (Jnanprabodh)',
+    titleEn: 'Jnanprabodh',
+    author: 'विश्वनाथ व्यास (Vishwanath Vyas)',
+    description: 'साती ग्रंथों में अंतिम। अध्यात्म, तत्वज्ञान और आत्म-साक्षात्कार निरूपण करने वाला उत्तम पद्य ग्रंथ।',
     descriptionEn: 'A masterwork on spiritual awakening and philosophy in verse form.',
     category: 'sati_granth',
     chaptersCount: 1,
@@ -345,153 +344,2788 @@ export const initialBooks: Book[] = [
     category: 'itar_sahity',
     chaptersCount: 1,
     coverImage: 'https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?q=80&w=600&auto=format&fit=crop'
-  },
-  {
-    id: 'prarthana_sangrah',
-    title: 'प्रार्थना संग्रह (Prarthana Sangrah)',
-    titleEn: 'Prarthana Sangrah',
-    author: 'महानुभाव पूजनीय संत',
-    description: 'भक्तों द्वारा संकट निवारण, आत्मोद्धार और भक्ति की प्राप्ति हेतु गाई जाने वाली मधुर प्रार्थनाओं का संकलन।',
-    descriptionEn: 'Collection of divine prayers and submission of surrender (Sharanagati).',
-    category: 'itar_sahity',
-    chaptersCount: 1,
-    coverImage: 'https://images.unsplash.com/photo-1499209974431-9dddcece7f88?q=80&w=600&auto=format&fit=crop'
-  },
-  {
-    id: 'smrutisthal',
-    title: 'स्मृतिस्थळ (Smrutisthal)',
-    titleEn: 'Smrutisthal',
-    author: 'नरेन्द्र व प्राचीन लेखक',
-    description: 'स्वामी चक्रधर के प्रयाण के उपरांत नागदेवाचार्य और अन्य शिष्यों के संस्मरणों, चरित्र और महानुभाव संघ के प्रसार का इतिहास।',
-    descriptionEn: 'The historical records of the post-Chakradhar era and early disciples like Nagdevacharya.',
-    category: 'itar_sahity',
-    chaptersCount: 1,
-    coverImage: 'https://cdn.soft112.com/mahanubhav-smritisthal/00/00/0G/GM/00000GGMYY/pad_screenshot.png'
-  },
-  {
-    id: 'sthanpothi',
-    title: 'स्थानपोथी (Sthanpothi)',
-    titleEn: 'Sthanpothi',
-    author: 'मुनि व्यास',
-    description: 'सर्वज्ञ श्रीचक्रधर स्वामी और श्री गोविंदप्रभु महाराज की चरणधूलि से पावन हुए सभी तीर्थ स्थानों (ओटे, स्थान) का भूगोल और प्रामाणिक मार्गदर्शिका।',
-    descriptionEn: 'Geographical cataloging and history of all holy places visited by the incarnations.',
-    category: 'itar_sahity',
-    chaptersCount: 1,
-    coverImage: 'https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?q=80&w=600&auto=format&fit=crop'
-  },
-  {
-    id: 'sati_granth',
-    title: 'साती ग्रंथ (Sati Granth)',
-    titleEn: 'Sati Granth',
-    author: 'महानुभाव कवि पंचक',
-    description: 'महानुभाव पंथ के अत्यंत प्रसिद्ध सात पद्य ग्रंथ: शिशुपालवध, रुक्मिणी स्वयंवर, सह्याद्रीवर्णन, मूर्तिप्रकाश, वत्सहरण, ऋद्धिपूरवर्णन और ज्ञानप्रबोध।',
-    descriptionEn: 'The famous seven poetic masterpieces recognized by the Mahanubhav literary traditional canon.',
-    category: 'sati_granth',
-    chaptersCount: 1,
-    coverImage: 'https://images.unsplash.com/photo-1474932430478-367db26830c1?q=80&w=600&auto=format&fit=crop'
-  },
-  {
-    id: 'dhavale',
-    title: 'धवळे (Dhavale)',
-    titleEn: 'Dhavale',
-    author: 'महदंबा (Mahadamba)',
-    description: 'मराठी की सर्वप्रथम कवयित्री महदंबा द्वारा रचित मंगलकारी विवाह गीत, जिसमें श्रीकृष्ण-रुक्मिणी विवाह का रसमय वर्णन है।',
-    descriptionEn: 'The sacred, auspicious songs composed by Mahadamba, Marathi’s first poetess.',
-    category: 'itar_sahity',
-    chaptersCount: 1,
-    coverImage: 'https://images.unsplash.com/photo-1519741497674-611481863552?q=80&w=600&auto=format&fit=crop'
-  },
-  {
-    id: 'rukmini_swayamvar',
-    title: 'रुक्मिणी स्वयंवर (Rukmini Swayamvar)',
-    titleEn: 'Rukmini Swayamvar',
-    author: 'नरेन्द्र पंडित (Narendra Pandit)',
-    description: 'साती ग्रंथों में प्रथम। श्रीकृष्ण और रुक्मिणी जी के अलौकिक प्रेम और विवाह प्रसंग का अद्भुत शृंगारिक व आध्यात्मिक काव्य वर्णन।',
-    descriptionEn: 'A masterpiece depicting the holy union and marriage of Krishna and Rukmini.',
-    category: 'sati_granth',
-    chaptersCount: 1,
-    coverImage: 'https://images.unsplash.com/photo-1518199266791-5375a83190b7?q=80&w=600&auto=format&fit=crop'
-  },
-  {
-    id: 'murtiprakash',
-    title: 'मूर्तिप्रकाश (Murtiprakash)',
-    titleEn: 'Murtiprakash',
-    author: 'केशिराज व्यास (Keshiraj Vyas)',
-    description: 'सर्वज्ञ श्रीचक्रधर स्वामी के दिव्य, सगुण और मनोहारी शारीरिक सौंदर्य का शिख-नख अत्यंत प्रेमपूर्ण व भक्तिमय काव्य वर्णन।',
-    descriptionEn: 'Poetic description detailing the glorious sanyasi form of Shree Chakradhar Swami.',
-    category: 'sati_granth',
-    chaptersCount: 1,
-    coverImage: 'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=600&auto=format&fit=crop'
-  },
-  {
-    id: 'sahyadrivarnan',
-    title: 'सह्याद्रीवर्णन (Sahyadrivarnan)',
-    titleEn: 'Sahyadrivarnan',
-    author: 'रविंद्र पंडित',
-    description: 'भगवान श्री दत्तात्रेय प्रभु के निवास स्थान सह्याद्री पर्वत के पावन वातावरण, वनों और उनके महात्म्य का अनुपम वर्णन।',
-    descriptionEn: 'Poetic praise of the Sahyadri mountains, the sacred abode of Lord Dattatreya.',
-    category: 'sati_granth',
-    chaptersCount: 1,
-    coverImage: 'https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?q=80&w=600&auto=format&fit=crop'
-  },
-  {
-    id: 'chakradhar_aarti',
-    title: 'श्रीचक्रधर स्वामी आरती व स्तोत्र संग्रह',
-    titleEn: 'Shree Chakradhar Swami Aarti & Stotra Sangrah',
-    author: 'महानुभाव संप्रदाय आचार्य',
-    description: 'सर्वज्ञ चक्रधर स्वामी महाराज, दत्तात्रेय प्रभु आणि पंचकृष्णांच्या अत्यंत मंगलकारी आणि रसमय आरत्या, अष्टके आणि स्तोत्रांचे पावन संकलन।',
-    descriptionEn: 'Sacred compilation of prayers, hymns, and aartis dedicated to Lord Chakradhar and Panchakrishna.',
-    category: 'aarti_stotra',
-    chaptersCount: 2,
-    coverImage: 'https://images.unsplash.com/photo-1545128485-c400e7702796?q=80&w=600&auto=format&fit=crop'
-  },
-  {
-    id: 'm_bhajanavali',
-    title: 'महानुभाव भजनावली (Mahanubhav Bhajanavali)',
-    titleEn: 'Mahanubhav Bhajanavali',
-    author: 'महंत आणि पूजनीय कवी',
-    description: 'संप्रदायातील प्राचीन आणि अर्वाचीन महंतांनी रचलेल्या भक्तिमय भजनांचा अपूर्व संग्रह, जो भक्तांना ध्यान आणि नामस्मरणात लीन करतो।',
-    descriptionEn: 'Divine collection of traditional Mahanubhav bhajans and devotional poetry.',
-    category: 'bhajan',
-    chaptersCount: 2,
-    coverImage: 'https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?q=80&w=600&auto=format&fit=crop'
-  },
-  {
-    id: 'shree_pujavsar',
-    title: 'श्री पूजावसर पाठ (Shree Pujavasar Path)',
-    titleEn: 'Shree Pujavasar Path',
-    author: 'प्राचीन महानुभाव आचार्य',
-    description: 'दैनंदिन ईश्वरीय सेवेची आणि पूजेची विधी, मंत्र आणि वचनांचे संकलन, जे साधकाला नित्य कर्मामध्ये मार्गदर्शन करते।',
-    descriptionEn: 'The traditional manual of daily worship, prayers, and rituals for Mahanubhav devotees.',
-    category: 'pujavsar',
-    chaptersCount: 1,
-    coverImage: 'https://images.unsplash.com/photo-1609137144813-2dbe4836ca91?q=80&w=600&auto=format&fit=crop'
-  },
-  {
-    id: 'sutrapath_parayan',
-    title: 'श्री सूत्रपाठ पारायण पद्धती',
-    titleEn: 'Shree Sutrapath Parayan Paddhati',
-    author: 'केशिराज व्यास (संपादक)',
-    description: 'सूत्रपाठाचे नित्य पठण आणि पारायण करण्यासाठी विशेष रितीने तयार केलेला पारायण ग्रंथ, ज्यामध्ये वचनांची सुयोग्य मांडणी केली आहे।',
-    descriptionEn: 'Daily recitation guide and parayan edition of Shree Sutrapath with traditional arrangement.',
-    category: 'parayn',
-    chaptersCount: 1,
-    coverImage: 'https://images.unsplash.com/photo-1491841573634-28140fc7ccd7?q=80&w=600&auto=format&fit=crop'
-  },
-  {
-    id: 'sthan_darshan',
-    title: 'स्थान दर्शन (Sthan Darshan Map & Guide)',
-    titleEn: 'Sthan Darshan (Holy Places Guide)',
-    author: 'सर्वज्ञ श्रीचक्रधर स्वामी लीला-स्थान संकलन',
-    description: 'महानुभाव पंथाच्या अत्यंत पवित्र, पावन आणि ऐतिहासिक तीर्थक्षेत्रांची आणि लीळा स्थानांची संपूर्ण माहिती, दिशा व थेट गुगल मॅप्स लोकेशनसह।',
-    descriptionEn: 'Complete guide of holy places, footprint temples and historic Leela Sthans of Mahanubhav Panth with coordinates and direct Google Maps.',
-    category: 'pramukh_granth',
-    chaptersCount: 10,
-    coverImage: 'https://images.unsplash.com/photo-1590050752117-238cb0fb12b1?q=80&w=600&auto=format&fit=crop'
   }
 ];
 
 export const initialChapters: Chapter[] = [
+
+  {
+    id: 'lc_p1',
+    bookId: 'leela_charitra',
+    number: 1,
+    title: 'लीळा १: श्रीदत्तात्रय मार्गादिमूळ निरोपण',
+    titleEn: 'Leela 1: Shree Dattatreya Margadimool Niropan',
+    content: 'श्रीपरेसाए नमः ॥\nमाहादाइसीं प्रष्णु केला : " जी जी : या मार्गासि कवण आदि ? " यावरि सर्वज्ञें म्हणीतलें : " बाइ : या मार्गासि श्रीदत्तात्रय प्रभु आदि : " सर्वज्ञें म्हणीतलें : " बाइ : दत्तात्रयप्रभु गोसावी भोगभूमी कृतयोगी रीखीस्वरांचां ठाईं अवतारी स्वीकारिला : अत्रि रीखि पिता : अनुसैया माता : मग तेतीं कर्मभूमीसि सैहाद्र पर्वतासि बीजें केलें : " गोसावीयांसि जीव उधरावेयाची प्रवृती : मग गोसावीयांसि तेथ अवस्थान जालें : मग राज्य करूं लागले : ॥',
+    explanation: 'या लीळेमध्ये माहादाइसेने विचारलेल्या प्रश्नाला उत्तर देताना सर्वज्ञ श्रीचक्रधर स्वामी या मार्गाचे आदिसूत्र भगवान श्रीदत्तात्रेय प्रभु आहेत हे निरूपण करतात. श्रीदत्तात्रेय प्रभूंनी अवतार घेऊन सह्याद्री पर्वतावर निवास केला आणि जीवांच्या उद्धाराचे कार्य आरंभिले।'
+  },
+  {
+    id: 'lc_p2',
+    bookId: 'leela_charitra',
+    number: 2,
+    title: 'लीळा २: सैहाद्रीं व्याघ्रवेखें दरीसन',
+    titleEn: 'Leela 2: Sahyadri Vyaghravekhe Darisan',
+    content: 'गोसावीयांसि जीव उधरावेयाची प्रवृती : मग फळेतांनीं कन्हाडेया ब्राह्मणाचां घरीं अवतारु स्वीकारिला : तो गर्भिचा अवतारू : श्रीचांगदेवोरावूळ गोसावी हें नांवं स्वीकारिलें : जनकनायेकु पीता : जनकाइसें माता : मग तेथ केतीएक दीस राज्य केलें : गृहस्थधर्म स्वीकारिले : गोसावीयांसि सानेयाचि वेव्हाराची प्रवृती : मातापीता दोन्ही अपरोक्ष जालीं : मातेयापीतायांचें श्राध आलें : ब्राह्मणा क्षेणु देउनि आले : मग वोटेयावरि भूमिसएन : वांगेनेमू : ब्रह्मचरीयें एं तीन्हीं स्वीकारिली : श्राध केलें : अखवा लोकु जेवीला : मग गोसावीयांसि आरोगण झाली : पहुड जाला : गोसावीयांची राणी पुफवंती झाली होती : तीयें ते दीसीची न्हाली : मग वीडा घेउनि आली : वीडा वोळगविला : आणि रति मार्गो आदरिली : गोसावी रति नेदीति : तेही आग्रहो थोरु घेतला : गोसावी बहुत नीराकरिलें : परि तीयें नीराकरितीचि ना : मग तेही म्हणीतलें : " रति नेदा तरि प्राणिया एकु वाट पाहातु असे : तेयाचा प्रतिवावो घडैल : " मग सर्वज्ञें म्हणीतलें : " हुं : आतां काइ ? " ऐसें म्हणोनि रति दीधली : मग गोसावी उदास्य स्वीकारिलें : तेयाचें पोटीं अनुचीत घेतलें : मग केतुलयां एकां दीसां कार्तीक मासा मातापुरा प्व्हा नीगाला : मग गोसावी तेण्हेंचि नीमीत्यें प्व्हेयासिरिसें बीजें केलें : पेणोवेणा प्व्हा मातापूर पावला : आवघां लोकांपेणीसि मावास्नानें केलीं : तेहीं पेणीसि मात्रास्नान केले : आवघा लोक घाटावरि नीगाला : तेही घाटावरि नीगाले : मेरूवाळां स्नान जालें : आवघेनि लोके सर्वतीर्थी स्नानें केलीं : तेहीं सर्वतीर्थी स्नान केलें : आवघा लोक पर्वतावरि नीगाला : तेही पर्वतावरि नीगाले : गोसावी उदासगें धौत : खांदीं मात्रा : मोकळे केसकळाप दोहो भागीं : स्याम श्रीमुर्ति : देवगीरीवरि बीजें करितात : ऐसें जात असति तवं पर्वताचा अधोपरीं वेळुबाचीये जाळीआंतुनि हाक देउनि वाघ नीगाला : जाळीआंतुनि श्रीदत्तात्रयप्रभू व्याघ्रवेखू धरूनि बीजें केलें : पुढां उभे ठाकले : हाक देउनि चपेट उचुलुनि श्रीमुगुटावरि चवडा ठेविला : श्रीमुखा श्रीमुख लाविलें : तेथ प्रकासु पडिला : तेथीनि पर आणि अवर एं दोन्हीं स्वीकारिलीं : पर आच्छादिलें : अवर प्रकटियें केलें : \' वाघु वाघु \' म्हणोनि मागीलू लोकू मागां पळाला : पुढीळु लोकू पुढां पळाला : मग श्रीदत्तात्रयप्रभू अद्रीस्य जाले : मग गोसावी नगराआंतु बीजें करिती : पुडी करीती : मेरूवाळां आरोगण करीती : देवदेवेस्वरीं पहुडु स्वीकारीती : ऐसें केतुले एक दीस श्रीचांगदेवोरावूळी मातापुरीं राज्य केलें : मग वैसाबीयेसि द्वारावतीये प्व्हा नीगाला : तेया लोकासरिसे श्रीचांगदेवोरावूळी द्वारावतीeesि बीजें केलें : मग द्वारावतीये अवस्थान जालें : ॥',
+    explanation: 'या पावन लीळेत श्री चांगदेवराऊळ गोसावी (प्रभूंचा अवतार) आणि श्रीदत्तात्रेय प्रभू यांची सह्याद्री पर्वतावर झालेली भेट आणि व्याघ्ररूपातील अद्भुत दर्शन प्रसंग अत्यंत सविस्तरपणे वर्णन केला आहे।'
+  },
+  {
+    id: 'lc_p3',
+    bookId: 'leela_charitra',
+    number: 3,
+    title: 'लीळा ३: सूर्पमार्जन क्रीडा',
+    titleEn: 'Leela 3: Surpamarjan Krida',
+    content: 'माहादाइसांप्रति सर्वज्ञें म्हणीतलें : " बाइ : तेथीची क्रीडा ते ऐसी कीं : श्रीचांगदेवोरावुळांचां उजवीये सीकरीं सुप : डावीये सीकरीं खरांता : बीदी गोदरीया झाडीति : सुपीं पुंजे भरीति : श्रीमुगुटावरि ठेवीति : नेउनि गोमतीमध्यें घालीति : आणि बुडुबुडुकरि हांस्य करीति : ऐसें अनंतां दान देति : " ॥',
+    explanation: 'श्री चांगदेवराऊळ गोसावी यांच्या द्वारका येथील बाललीलेचे वर्णन. स्वामी महादाइसेला सांगतात की प्रभू एका हाताने सुप व दुसऱ्या हाताने खराटा घेऊन रस्ते झाडत आणि कचरा गोमती नदीत टाकून हसत असत।'
+  },
+  {
+    id: 'lc_p4',
+    bookId: 'leela_charitra',
+    number: 4,
+    title: 'लीळा ४: रवळैयां गीतश्रवणीं नीवंसु कथन',
+    titleEn: 'Leela 4: Ravalaiyan Geethashravani Nivansu Kathan',
+    content: 'रवळेंन कुंभारें गीतू केला : गोसावीयांसि गोमतीचां तिरीं गुंफा : तेथ आसन असे : तो तेथ आला : गोसावीयांपुढां गीतू म्हणीतला : तवं गोसावी उगेचि : मग तेणें पुसिलें : " जी जी : गीतू कैसा जाला ? " सर्वज्ञें म्हणीतलें : " तूझा नीवंसू होए ऐसा जाला : " ॥',
+    explanation: 'रवळू कुंभाराने प्रभूंच्या स्तुतीमध्ये रचलेले गीत ऐकण्याचा प्रसंग. प्रभूंच्या पुढे त्याने गीत गायले असता प्रभू शांत राहिले, व विचारले की गीत कसे झाले, तेव्हा प्रभू म्हणाले की "तुझा विसावा होईल असा झाला".'
+  },
+  {
+    id: 'lc_p5',
+    bookId: 'leela_charitra',
+    number: 5,
+    title: 'लीळा ५: कन्हेकूचकीं आसन',
+    titleEn: 'Leela 5: Kanhekuchaki Asan',
+    content: 'कव्हणी एकू ब्राह्मणू द्वारावतीएसि नीगाला : तवं काबा वाट घेतली : आवघें गेलें : बैलु गेला : बाइला भवरी तोंडीं घातली होती : ते वांचली : द्वारावतीये सहस्त्रभोजन करीन म्हणोनि नीगाला होता : द्वारावती पावला : सप्ततीर्थीया केलिया : एरी दीसीं ब्राह्मणां नीमंत्रण दीधलें : इतुलेनि तो म्हणों लागला : " बेचू नाहीं : वेचेंवीन काइ करूं ? " मग ब्राह्मणीं भवरि दाखविली : " वेचेंवीन गडबडु नको : " तवं तेणें म्हणीतलें : " हे कैची ? " " ना हे मीयां तोंडीं घातली होती : तरि वांचली : " " हो कां : तुं अन नीफजवि : मी गोसावीयांसि नीमंत्रण देईन : " तेया पुसिलें : " गोसावी कवण ? " " मां श्रीचांगदेवोरावुळासि : " " ना ते कोण ? " " ना ते कन्हेंयाचीये करवडीमध्यें बैसले होते ते : " " मां तेया कैसी असत चाल ? " " ना ते पूरूष आहाति : " इतुकेन तो गेला : गोसावीयासि नीमंत्रण दीधलें : तीया अन नीफजविलें : तेणें संध्यानस्नान केलें : तवं गोसावी बीजें केलें : तवं तेणें म्हणीतलें : " आधीं गोसावीयासि आरोगणा देओं : मग एरांसि देओं : " गोसावीयासि आसन रचीलें : गोसावी आसनीं उपवीष्ट जाले : श्रीचरणक्षाळण केलें : टीळा जाला : पातळी वाढीलें : मग आरोगणा करूं लागले : अस्तरीया म्हणीतलें : " जी जी : वाढूं ? " गोसावी उगेचि : " आणि आणि : " म्हणोनि वाढीति : ऐसें पांचांसेयांचें अन गोसावी जेविले : तवं तीयां पोटीं भावीलें : " इतुके अन एहींचि खादले : " म्हणोनि : आणि गोसावी श्रीकरू आखूडीला : गोसावीयांसि गुळुळा जाला : वीडा जाला : आणि गोसावी बीजें केलें : सर्वज्ञें म्हणीतलें : " मग तीया पातळी काढीलीया : तवं पांचैसें पातळी नीगालीया : मग तेणें ब्राह्मणें म्हणीतलें : " मर मर पापीणी : ऐसें काइ केलें ? सहस्त्र ब्राम्हणांचें अन एथचि देतो तरि यांवाचि ठाईं सहस्त्र ब्राम्हणां पूरतें : ॥',
+    explanation: 'एक गरीब ब्राह्मण प्रभू चांगदेवराऊळ गोसावी यांना भोजनाचे आमंत्रण देतो. प्रभू एकटेच पाचशे लोकांचे अन्न ग्रहण करतात, परंतु नंतर तेवढीच पात्रे शुद्ध स्वरूपात परत मिळतात, प्रभूंची ही अगाध अन्नपूर्णा लीला यात रेखाटली आहे।'
+  },
+  {
+    id: 'lc_p6',
+    bookId: 'leela_charitra',
+    number: 6,
+    title: 'लीळा ६: वाराणसी जनु नेणें आणणें',
+    titleEn: 'Leela 6: Varanasi Janu Nene Anane',
+    content: 'वाराणसी अवधा प्व्हा नीगाला : येकें दोघें राहीलीं : तीयें दुख करूं लागलीं : गोसावीयातें म्हणीति : " काइ करूं जी : अवधा प्व्हा गेला : आम्हीं राहीलों : " गोसावी म्हणीतलें : " आम्हीं तुमते नेउनु : " जीए दीसीं प्व्हा गेला : वाराणसी पावला : तीये दीसीं तीयें जनें नेलीं : तीयें अवचेन लोकें देखीलीं : तेयातें पूसीलें : " तुम्ही के नीगालीती ? " " ना आजिचि नीगालों : " तेयां आश्चर्य वाटले : गोसावी आजीचि नेलीं : एतुकेनि माहादौतीं तेधवाचि आणीलीं : आवघेयां लोकां आश्चर्य जालें : " आजिचि नेलीं : आजिचि आणीलीं : " आणि तीयें म्हणति : " गोसावी आम्हांसि वाराणसी भेटले : " गांवीचीं म्हणति : " गोसावी गांवीचि असति : " मग तेयांसि वीस्मो जाला : ॥',
+    explanation: 'काशीला जाणाऱ्या यात्रेकरूंच्या संघातून मागे राहिलेल्या दोन गरिबांना प्रभू एकाच दिवसात वाराणसीला नेऊन परत आणतात, प्रभूंचे दिव्य अतींद्रिय गमन सामर्थ्य या लीळेत दर्शविले आहे।'
+  },
+  {
+    id: 'lc_p7',
+    bookId: 'leela_charitra',
+    number: 7,
+    title: 'लीळा ७: सारंगधराचा चांदोवा वीझवणें',
+    titleEn: 'Leela 7: Sarangdharacha Chandova Vijhavane',
+    content: 'गोसावी आसनीं उपवीष्ट असति : एकू दीस गावीचे महाजन बैसले असति : तवं गोसावी हास्य करूनि श्रीकर कुसकरीले : तवं काळे जाले : मग तेहीं पुसीलें : " जी जी : श्रीकर काळे कां जाले ? " गोसावी म्हणीतलें : " सारंगधरीचे भोपे सारंगधरासि आति करीत होते : ते चांदोवेयासि आगी लागली : ते एथोनि वीझविली : " तवं तेयांसि आश्चर्य जालें : तोचि मासू : तोचि दीसू लिहुनि पाठवीला : तवं साचचि : मग तेहीं म्हणीतलें : " हे गोसावी सामान्य नव्हती : साक्षात परमेश्वर " ॥',
+    explanation: 'सारंगधराच्या मंदिरातील चांदव्याला आग लागली असता, प्रभू चांगदेवराऊळ यांनी स्वतःचे हात घासून ती आग दुरूनच विझवली. त्यांचे हात काळे पडल्याचे पाहून भक्तांना आश्चर्य वाटले आणि त्यांनी त्याची खात्री केली तेव्हा तो चमत्कार खरा असल्याचे सिद्ध झाले।'
+  },
+  {
+    id: 'lc_p8',
+    bookId: 'leela_charitra',
+    number: 8,
+    title: 'लीळा ८: सारंगधरा उचीष्ट बोनें सूवणें',
+    titleEn: 'Leela 8: Sarangdhara Uchista Bone Suvane',
+    content: 'गोसावी आसनीं उपविष्ट असति : जवळे कव्हणी बैसले असति : तेहीं पूसीलें : " हें काइ जी : उचीष्ट बोणें कैसें ?" गोसावीं म्हणीतलें : "सारंगधराचा भोपा : दीवा जात होता : ते वाति गेली : म्हणौनि बोटें आबूथीली : तो पोहळा : तैसीचि तोंडीं आंगुळी सूदली : तैसेंचि सारंगधरा बोणें दाखवीलें :" तोचि मासू : तोचि दीसू लीखीत पाठवीलें : तवं साचचि : तेयां आश्चर्य जालें : ॥',
+    explanation: 'या लीळेत श्री चांगदेवराऊळ महाराजांनी आपल्या जवळील भक्तांना सारंगधराच्या मंदिरात घडलेला उच्छिष्ट नैवेद्याचा आणि पुजाऱ्याच्या चुकीचा प्रसंग अंतर्ज्ञानाने सांगितला, ज्याची खातरजमा केली असता तो अगदी खरा निघाला।'
+  },
+  {
+    id: 'lc_p9',
+    bookId: 'leela_charitra',
+    number: 9,
+    title: 'लीळा ९: श्राद्धग्रहीं आरोगण',
+    titleEn: 'Leela 9: Shraddhagrahi Aarogan',
+    content: 'कण्हेर्णा एकाचां घरीं श्राध होत होतें : तेथ गोसावी एती म्हणौनि नीवंडी केली : दारवठा घातला : गोसावी तेथ उतपवन करूनि बीजें केलें : खरीचीं दोनि अळदीं नीवतें घातलीं होतीं : तेथ आरोगणा केली : मग मूत केलें : तें सोनें रुपें जालें : मग तेथौनि बीजें केलें : ॥',
+    explanation: 'या लीळेत कण्हेर्णा येथील एका श्राद्ध प्रसंगी प्रभूंच्या दिव्य आरोगणाचा आणि मूत्राचे सोने-रुपयात रूपांतर होण्याच्या चमत्काराचे वर्णन आहे।'
+  },
+  {
+    id: 'lc_p10',
+    bookId: 'leela_charitra',
+    number: 10,
+    title: 'लीळा १०: वसो जीववणें',
+    titleEn: 'Leela 10: Vaso Jivavane',
+    content: 'गावीं एकू वसो असे : तो लींगावरीलें फुलें प्रतदीनीं खाए : तो एकू दीसू नीगतां सीरकला : तो सरला : ते देवतेसि पूजापुरस्कारू वर्जला : गोसावीयांसि गोमतीएचां तीरीं आसन असे : भोपे आणि महाजन गोसावीयांपासि आले : दंडवतें केलीं : श्रीचरणां लागले : मग वीनवीलें : " जी जी : वसो देवतेवरीलीं फुलें प्रतदीनीं खाए : आजि नीगतां सीरकला : तो सरला : देवतेसि पूजापुरस्कारू वर्जले जी :" मग गोसावी तेथ बीजें केलें : गोसावीं खडेन सीतीला : आणि उठीला : तो पौळीबाहिरि जाउनि पडीला : लोकांसि आश्चर्य जालें : ॥',
+    explanation: 'एका वासराला (वसो/गाय) जो रोज शिवलिंगावरील फुले खात असे आणि भिंतीत अडकून मरण पावला होता, त्याला चक्रधर स्वामींनी आपल्या दिव्य स्पर्शाने आणि एका खड्याच्या स्पर्शाने जिवंत केले।'
+  },
+  {
+    id: 'lc_p11',
+    bookId: 'leela_charitra',
+    number: 11,
+    title: 'लीळा ११: चांपेल स्वीकारू',
+    titleEn: 'Leela 11: Champel Svikaru',
+    content: 'नारायणाचां देवळीं दोनि घागरी करूनि चांपेलाच्या ठेवीलीया होतिया : तिया गोसावीं श्रीमुगुटावरी घेतलीया : वोतीलीया : तवं भोपां पूसीलें : "राउळो : एथ चांपेल होतें तें काइ केलें ?" गोसावीं म्हणीतलें : " एणें घेतलें :" म्हणौनि बोंबीएवरि श्रीकरीचें बोट ठेवीलें आणि बोंबीएहुनि चांपेल नीगालें : तेणें मागुती घागरी भरीलीया : तेयासि जालें : गांवीचेया लोकांसि जालें : आवघेयांसि आश्चर्य जालें : ॥',
+    explanation: 'नारायण देवळात ठेवलेले चांफेकळीचे तेल (चांपेल) प्रभू चांगदेवराऊळांनी आपल्या डोक्यावर ओतले, आणि पुजाऱ्याने विचारल्यावर आपल्या बेंबीवर बोट ठेवून तेथून पुन्हा ते तेल काढून घागरी भरून दिल्या।'
+  },
+  {
+    id: 'lc_p12',
+    bookId: 'leela_charitra',
+    number: 12,
+    title: 'लीळा १२: स्वानवछ प्रतेजणें',
+    titleEn: 'Leela 12: Svanavacha Pratejane',
+    content: 'गोसावी उभया हाटवटीया एत होते : तवं स्वान सरलें होतें : तें गोसावीं श्रीमुगुटावरि ठेवीलें : गावाबाहीरी प्रत्येजीलें : ॥',
+    explanation: 'बाजारात जात असताना स्वामींनी एका मृत कुत्र्याच्या पिल्लाला (स्वानवछ) उचलून डोक्यावर ठेवले आणि गावाबाहेर नेऊन जिवंत केले।'
+  },
+  {
+    id: 'lc_p13',
+    bookId: 'leela_charitra',
+    number: 13,
+    title: 'लीळा १३: खीरभोजनीं वीस्मो',
+    titleEn: 'Leela 13: Khirbhojani Vismo',
+    content: 'द्वारके प्रदेसीं एकी गांवी श्राध : बाइला खीरि नीवों घातली होति : नीवों घालीतां पोळली : आणि तोंडीं आंगुळीया घातलीया : गोसावीं हास्य करूनि श्रीमुखीं आंगुळी घातली : तें माहाजनीं पूसीलें : " राउळो : ऐसें काइ ?" गोसावीं म्हणीतलें : " बाइला खीरी नीवों घातली होती : ते पोळली :" माहाजनीं तोचि दीसू तोचि मासू लीहोनि पाठवीलें : तवं तीया बाइला म्हणीतलें : " साच : तेधवां श्रीचांगदेवोरावूळ गोसावी येथ होते :" आवघेया आश्चर्य जालें : ॥',
+    explanation: 'द्वारका प्रांतात एका गावी एका स्त्रीला खीर वाढताना बोट भाजले, अंतर्ज्ञानाने श्री चांगदेवराऊळांनी आपल्या तोंडात बोट घालून ते दुःख स्वतः अनुभवले, ज्याची शहानिशा करता ती सत्य असल्याचे निष्पन्न झाले।'
+  },
+  {
+    id: 'lc_p14',
+    bookId: 'leela_charitra',
+    number: 14,
+    title: 'लीळा १४: कामाक्षा सूगरणी म्हणणें',
+    titleEn: 'Leela 14: Kamaksha Sugarani Mhanane',
+    content: 'एकू दीसू गावीचे माहाजन गोसावीयांपासि बैसले होते : तवं गोसावीं श्रीकरेंकरूनि टाळि वाइली : आणि उभे राहीले : श्रीमुखीं आंगुळी घातली : माहाजनीं पूसीलें : " राउळो : ऐसें काइ ?" गोसावीं म्हणीतलें : " काऊरळची कामाक्षा अळजपूरीं बडे पूरीया तळीत होती : पूरी काढीतां पोळली : तें तोंडीं आंगुळी सूदली :" मग माहाजनीं तोचि दीसू तोचि मासू लीहुनि पाठवीलें : तवं कामाक्षा म्हणीतलें : " साच : हें तुम्हांपूंढें कवणें सांगीतलें ?" " ना हे श्रीचांगदेवोरावुळीं सांगीतलें :" तीसि आश्चर्य जालें : तीया म्हणीतलें : " हो : ते दीसी गोसावी एथ होतें :" माहाजना आश्चर्य जालें : हे गोष्ट माहादाइसीं गोसावीयांपासि सांगीतली : ॥',
+    explanation: 'कामाक्षा देवी अळजपुरात पुरी तळत असताना तिचे बोट भाजले, जे अंतर्ज्ञानाने ओळखून चांगदेवराऊळांनी टाळी वाजवून बोट तोंडात घातले, याची साक्ष कामाक्षाने स्वतः दिली।'
+  },
+  {
+    id: 'lc_p15',
+    bookId: 'leela_charitra',
+    number: 15,
+    title: 'लीळा १५: श्रीप्रभू भेटि',
+    titleEn: 'Leela 15: Shriprabhu Bheti',
+    content: 'माहादाइसांप्रति सर्वज्ञें म्हणीतलें : "रीधपुर प्रांतीं रीधपुरा आणि नांदेगावांमाझारि दीढा गाउवांचेनि मानें खेड नावं गव्हाण : तेथ काणवा ब्राह्मणांचां ग्रहीं श्रीप्रभु गोसावीं गर्भी अवतारु स्वीकारिला : मातें नावं नेमाइसें : पितेया नावं आनंतनाएकु : गोसावि-यांचेया मातेयापितेया बहुतें लेकरूवें जालीं : तीएं जीतीचि ना : मग निपट नेयांचे गोसावी जाले : मग तेहीं गुंडो ऐसें नावं ठेवीलें : गोसाविांची मातापिता अपरोक्ष जालीं : मग मामेनि माउसीया वाढवीलें : मग वरीखां सातांपांचांमध्ये मुंजिबंधन जालें : मुंजिव्रत केलेयां नंतरें मग रीधपुरासि आणिलें : तीको उपाध्ये : बोपदेवो उपाध्ये : माहादेओ उपाध्ये : हे तीघे भाऊ : तेयांपासि वेद अभ्यासुं घातले : गोसावीं अभूत सामग्री स्वीकारिली : गोसावियांसि नीमीखें ये तें आणिकासि देहें नैये : गोसावियांसि देहें ए तें आणिकासि मासें नैये : गोसावियांसि मासें ए तें आणिकासि वरीखें नैये : चुकि भुलि ते चाटेयाही संगति : आणि उपाध्यांही सांगति : वरीखां बारातेरामध्यें संन्यासू स्वीकारिला : कमळारण्य गुरू : गोसावीयांसि नावं वीबुधारण्य : ऐसें नावं स्वीकारिलें : मग केसवापासिली मढीहुनि द्वारावतीए बीजें केलें : डुंडीराउळ सरिसे होतें " : श्रीप्रभु गोसाविआंसि गोमतीएचां तीरीं आसन जालें : पुढां डुंडीराउळ बैसले असति : दंडु रोविला : पुढां देवपटु देव मांडिले : श्रीचांगदेवोरावुळ गोसावीं बीडी-गोदरीया झाडुनि तेथ बीजें केलें : सीमुगुटीं सूप : श्रीकरीं खरांता : गोमतीमध्ये पुंजे नीक्षेपिले : श्रीप्रभूंचां मुगुटीं सूप ठेवीलें : वरि खरातेयाचा घाओ दीधला : तेथ श्रीप्रभु परावर स्वीकारिलें : अवर अछादिलें : पर प्रकटियें केलें : डुंडीराउळ खराटेनि हाणीतले : तेयां मंत्रजात वीदीत सीधी प्रकटली : दंडु मोडिला : गोमतीए आंतु घातला : देव देवपटु सुपीं भरूनि गोमतीए आंतु निक्षेपिले : सुपे हाणीलेयां तेयां वीद्या होति : खराटेनि हाणीलेयां मार्ग प्रगटति : मग श्रीप्रभू मागुतें रीधपुरासि बीजें केलें : नगरांआंतु पुडी करीति : बारवे अथवा देवाळां आरोगण करीती : परि झोळी धूवावेयाचि प्रवृती नाही : ते आवधी अनरसेकरूनi झोळी कुहीजली : ते फाटली : ते भिक्षाकरितां अन खाली सांडे : आणि गोसावी तेथचि बैसोनि आरोगण करीती : लोकु म्हणे : "पुरुखांचां ठाई तुर्य अवस्था असे :" एक नीद्रास्थान नाही : म्हणौनि अनिएत वासु म्हणीजे : ॥',
+    explanation: 'या लीळेमध्ये श्री चक्रधर स्वामी महदाइसेला श्री गोविंदप्रभू (गुंडम राऊळ) यांच्या जन्माची, रिद्धपुरातील बालपणीची, शिक्षणाची, संन्यासाची आणि चांगदेवराऊळांशी गोदावरी / गोमती तीरावर झालेल्या भेटीची आणि त्यांच्यात झालेल्या दिव्य शक्ती संक्रमणाची अद्भुत कथा सांगतात।'
+  },
+  {
+    id: 'lc_p16',
+    bookId: 'leela_charitra',
+    number: 16,
+    title: 'लीळा १६: कामाक्षाप्रसंग',
+    titleEn: 'Leela 16: Kamakshaprasang',
+    content: 'तीएं हीवरळीएसि भेटलीं : " जी जी : आम्हीं श्रीचांगदेओराउळा गोसावियांचीये गुंफे गेलों होतों : तेथ एक पुरुख बैसले होते : तेयांचीये मुखींहुनि रूपेयाचीया सरीया : सरीया ऐसीया नीगति : तें तैसें काइ जी ? "\n" बाइ : ते तेयांची लाळ : "\n" जी जी : मीयां तेयातें पुसिलें : " आम्हांसि नांवं काइ ? "\n" ना : माहादमुनि : "\n" तुम्ही कोणाचे अनुग्रहीत ? "\n" ना : अनंतमुनिचे : "\n" तुमचे अनंतमुनि कोणाचे अनुग्रहीत ? "\n" ना : श्रीचांगदेओराउळा गोसावियांचे : "\n" तुम्ही काइ म्हणा ? "\n" ना : अनंतमुनि : " ॥',
+    explanation: 'भक्तांनी श्रीचांगदेवराऊळांच्या गुहेत एका तपस्व्याला पाहिले, ज्यांच्या मुखातून लाळ गळत होती. विचारले असता त्यांनी आपले नाव महादमुनी असल्याचे सांगितले आणि ते चांगदेवराऊळांच्या परंपरेतील अनंतमुनींचे शिष्य असल्याचे स्पष्ट केले। प्रभूंच्या शिष्यांचे दर्शन आणि त्यांच्या भक्तीचे महत्त्व या लीळेत सांगितले आहे।'
+  },
+  {
+    id: 'lc_p17',
+    bookId: 'leela_charitra',
+    number: 17,
+    title: 'लीळा १७: परकायाप्रवेश',
+    titleEn: 'Leela 17: Parakaayapravesh',
+    content: 'मां तेणेंनि स्वीकारिलें : वस्त्र हालीनलेें : वास पाहों लागले : \' आरे वास पाहातें : \' आणि म्हणीतलें : \' कूमरु जीयाला जीयाला : \' म्हणौनि वाद्यें लागलीं : सर्वज्ञें म्हणीतलें : " प्रधानु सीहाणा चतुरु : कुसळू : तेणें दृष्टी देखतखेओ जाणीतलें : जें हा तो नव्हे : सीधांसाधकांचा ठाईं प्रकाशप्रवेसु असे : तेहीं भोगाकारणें हें स्वीकारिलें : तैसाचि \' कुमरु जीयाला जीयाला \' ऐसें म्हणौनि मंगळ वाद्यें वाजीनलीं : अवधेया नगरांतु गुढीया उभेलीया : पांचपालवीया आणिलीया : पांचपालवीं पंचामृतें न्हवण केलें : वरवीं धुवटें वस्त्रें वेढिलीं : मग दांडीयेवरि आरोहण होउनि नगरामधुनि : कमळा नांवं राणी : तेयाचेया आवारासि बीजें केलें : मंगळ तुरें वाजों लागलीं : तेही पांचपालवीं न्हवण जालें : पाटु पासवदिला : कमळाआउसांसीं सेसु भरिली : प्रधानें बहुत वेचिलें : " सर्वज्ञें म्हणीतलें : " बाइ : तो प्रधानु : सीहाणा : चतुरु : कुसळू : तेणें म्हणीतलें : " पुरुख जे होती ते राज्याचेनि अभिलाखें स्वीकारिती : " ऐसा प्रधानासें संदेहू : म्हणौनि तेणें बारां गांवांचेनि मानें भवतें दरेदरकूटें : गिरीकपाटें : आडदरे : कोहंके : तळामळां नद्वाहाळां मढमढीया देऊळें : रांनीवनीं : कव्हणीं देहु ठेविलें असेल : म्हणौनि भवतें चहूंकडे पाहावीलें : शोधवीलें : तवं तेथ काहीँ नेदखतीचि : मग आपुलीए राणीयेकरवि ओव्हारीएतें कमळाउसांतें वीहरणीचीया खूणा पूसीवीलीया : " मागीलासारिखें वर्तन कीं कांहीं अनसारिखें ? " तेही ओव्हारी कमळाआउसांतें पुसिलें : " मागीलासारिखें वर्तन कीं कांहीं अनसारिखें ? " तेहीं म्हणीतलें : " मागीलाचि सारिखें : मग प्रधानें बाळलेणें पुसविले : कमळाराणीया पाणी म्हणीतलें : " तुमचें बाळलेणें की आहे ? " " ना उगाणा आहे : " " तरि काइ काइ आहे ? " " ना अमुकें अमुकें आहे : " खूण पुरली : एतूलेनि तेयांचा संदेहू नीवर्तला : मग भ्रांति फीटली : " मग सर्वज्ञें म्हणीतलें : " बाइ एथौनि तेयांचे सकळें गुणधर्म स्वीकारिले : गोपाळमंती दीक्षा : गोपाळनी आणि : राणीएचा पढीयाओ : जुआचें वेसन : वय : रूप : गुण : उपगुण : बळ : प्राक्रमू : जाणीव : सेहाणीव : दाहाही गुण स्वीकारिले : " सर्वज्ञें म्हणीतलें : " बाइ : प्रमेस्वरू सकळही देहधर्म जीवधर्म स्वीकरीति : " गोसावीयांपासाौनि एकू पुत्रु जाला : तवं गोसावी तेथ राज्य केलें : ॥',
+    explanation: 'देहत्याग केल्यानंतर प्रभू चांगदेवराऊळ यांनी गुजरातमधील मृत पावलेल्या एका तरुण प्रधानपुत्राच्या देहात प्रवेश केला (परकाया प्रवेश). प्रभू उठून बसले तेव्हा प्रधानाने व लोकांनी आनंदोत्सव साजरा केला. प्रधानाने प्रभूंच्या पूर्व देहाची खात्री करण्यासाठी जंगलात शोध घेतला आणि राणी कमळाराणीमार्फत विविध गुपिते विचारून घेतली. अशा प्रकारे खात्री पटल्यावर प्रभूने तेथे राज्य केले।'
+  },
+  {
+    id: 'lc_p18',
+    bookId: 'leela_charitra',
+    number: 18,
+    title: 'लीळा १८: जुतक्रीडा',
+    titleEn: 'Leela 18: Jutkrida',
+    content: 'गोसावीयांसि सारी जूं खेळावेयाची प्रवृती : मग गोसावी प्रतदीनीं जूआंठेयासि बीजें करीति : सारी जूं खेळावेयाचें वेसन स्वीकारीति : गोसावी प्रतदीनीं सारी जूं खेळति : जीतुकाही जीणा ए तीतुका दानासि देति : एकु दीं गोसावी हारिची प्रवृती स्वीकारिली : बहुत जूं हारवीलें : मग पाडगींय पाहावंरि हात ठेउनि वीनवीलें : " जी जी : आंखू पाहिजो : मग पुढारें खेळीजो जी : " गोसावी आंखु पाहीला : तवं बहुत हारविलें असे : " जी जी : देवा कीजो : मग पुढारें खेळीजो जी : जुइंचें जुईं : भूइंचें भूईं : आमचें देयावें : मग बीजें करावें : " मग गोसावी हडपीयाजवळि होतें तें दीधलें : तवं न पुरे : तेव्हळि श्रीमूर्तीवरील अलंकारभूसणें दीधलीं : तन्हीं न पुरेचि : मग गोसावी गुळुळा केला : वीडा घेतला : मग गोसावीं आवारासि बीजें केलें : जुआरी दारवठावारि सरिसे आले : तेथ श्रीचरणांवरि माथा ठेवुनि मोचेयाचा पुडा धरिला : मग वीनवीलें : " जी जी : गोसावी भीतरि बीजें करिती : आणि ते आमतें धरीति : मां गोसावीयांतें कवणें बोलावाबें ? गोसावीयांतें कवणें वीनवावें ? तरि आमचें देयावें : मग भीतरि बीजें करावें : " तेव्हळि गोसावी म्हणीतलें : " हें तुमचें दीधलेयांवीन स्नान देपुजा करी : आरोगण करी तरी गोपाळनी आण : " येतुलेनि गोसावी भीतरि बीजें केलें : तवं कमळा नावं राणी मंचाकावरि बैसली होती : गोसावीयातें बीजें करितां देखीलें : आणि झडकरि उठौनि उभीं ठेलीं : गोसावीयांसि मांचेयावरि आसन जालें : मग कमळाआउसांसीं म्हणीतलें : " हें काइ जी ? आजुनि गोसावियांसि गुळुळा नाहीं : वीडा नाहीं : आरोगणेसि उसीरू जाला : तो बडुवा कें गेला ? " तवं सर्वज्ञें म्हणीतलें : " एथौनि जूं बहुत हारविलें : तेयांचें दीधलेयांवांचौनि आरोगण कीजे तरि गोपाळनी आण वाइली असे : तुमचीं अळंकारभूसणें असति तीएं आरुतीं घेउनि या : मां तेयांचें फेडिर्जैल : " तवं तेही म्हणीतलें : " आम्ही आपुले अळंकार नेदूं : आम्हांसि बाबाचें कोपणें होईल : " तवं सर्वज्ञें म्हणीतलें : " देया : मां एथौनि तुम्हांसि दूणा अळंकारभूसणें कीजैल : " तवं तेही म्हणीतलें : " आम्ही आपुलें अळंकार नेदूं : " सर्वज्ञें म्हणीतलें : " तुमचे देइति ना तरि गोपाळनी आण : " तवं तेही म्हणीतलें : " आम्ही आपुले अळंकार देओं तरि आम्हांही गोपाळनी आण : "\n\nमग गोसावीं उदास्य स्वीकारिलें : गोसावीं उपरीयेवरि बीजें केलें : माचेयावरि पहुडु स्वीकारिला : गोसावीयांच्या माता तेही मर्दनीया पाठविला : तो आला : वीनऊं लागला : गोसावी पडदणी नेघति : मग उलंगीया पाठविला : तो वीनऊं लागला : गोसावी वीनती न स्वीकरीति : तेयातें म्हणीतलें : " क्षुधा नसें : " मग आपण आलीं : तीएं उठउं लागलीं : परि गोसावी उपहुडु न स्वीकरीति : मग कमळाआउसांतें पुसिलें : तीही म्हणीतलें : " आजि जूं खेळीनले : तेयांसि आपुला आवधा अळंकारु हारवीला : माझा अळंकारु मागत होते : तो मी नेदींचि : तरि रूसले असति : आणि काइ ? "\nरायाची वोळग वीसर्जली : मग केतुलैया एका वेळा राऊळहुनि प्रधानु आला : तेणें एतक्षणीं राणीएतें पुसिलें : " हरिपाळदेयासि आरोगण जाली ? " ऐसें तो प्रतदीनीं पुसे : तवं तेहीं म्हणीतलें : " ना : नाहीं जाली : " तवं तेहीं म्हणीतलें : " कां नाहीं जाली ? " राणीया तेयांपुढें अवधेचि मागील वृतांत सांघीतलें : प्रधानें अवघे वृतांत आइकिले : तैसाचि तो उपरीयेवरि आला : " कां गा बा : आजुंहि आरोगण नाही ? " सर्वज्ञें म्हणीतलें : " एथौनि जूं हारविलें असे : तेयांतें म्हणीतलें असे : \' तुमचें दीधलेयांवीन आरोगण कीजे तरि गोपाळनी आन : \' मग तेणें म्हणीतलें : " तुमचें दीधलें : वा रे : हें आवघें तुझें नव्हे ? हें कोणालागी जोडिलें असे ? हें राज्य कोणाचें ? हें आवघें तुझें : नव्हे ? " ऐसें म्हणोनि डावा हातु तळीं घालुनि उपंगळीये घेउनि उठविलें : मग मांडीएवरि बैसौनि आवळिलें : पोटिळिलें : श्रीमुख चुंबिलें : मग भांडारियाकरवि बाहेरीवाहेरिच तेथचि तेयांची पांचसें आसु फेडविलीया : मग गोसावीयांचें उदास्य परीहरलें : तीये दीसीं गोसावीयांसि मर्दनें उसीरू लागला. मग गोसावीयांसि नसुधेन पाणीयें स्नान : देपुजा : आरोगण प्रधानाचां आवारि जाली : ते दीसीं गोसावीयांची पांति प्रधानासि जाली : आणि अवघेयांसि पांती जेवण जालें : गोसावीयांसि आरोगण झाली : परि कमळाआउसांवरील उदास्य न परीहरेचि : ॥',
+    explanation: 'प्रभू चांगदेवराऊळ (हरिपाळदेव) यांना जुगार खेळण्याचा छंद होता. ते खेळात सर्व काही जिंकलेले दान करत आणि एकदा खेळात खूप हरले. त्यांनी स्वतःचे अलंकार व राजवाड्याचे वैभव पणाला लावले तरी कर्ज फिटेना. तेव्हा प्रभू भोजनाविना राहिले. शेवटी प्रधानाने येऊन प्रभूंचे सांत्वन केले आणि सरकारी खजिन्यातून ५०० आस्सू (नाणी) देऊन जुकाऱ्यांचे कर्ज फेडले, तेव्हा प्रभूंचे उदासपण दूर झाले।'
+  },
+  {
+    id: 'lc_p19',
+    bookId: 'leela_charitra',
+    number: 19,
+    title: 'लीळा १९: उदास्यस्वीकारू',
+    titleEn: 'Leela 19: Udasyasveekaru',
+    content: 'तें नीमीत्य करूनि गोसावीं उदास्य स्वीकारिलें : मग एककूं दीसु गोसावी येककूं पदार्थू वर्जीते जाले : गोसावीयांसि रामयात्रे करावेयाची प्रवृती : परि प्रधानु गोसावीयांतें न पठवी : मग येकू दीं मर्दनामादनें वर्जीलीं : एककूं दीं एककूं पदार्थू वर्जीति : ऐसे अवघेचि पदार्थ वर्जीले : पुसति तरि गोसावी ऐसें म्हणति : " रामयात्रे जाउनि : मग आरोगुनि : " ऐसा गोसावी हळूहळू एकू दीं अळणी : अतेली : मग गोसावीं नसुधा अळणी ताकभातु आरोगण करिति : ऐसें गोसावीं राणीएवरि उदास्य स्वीकारिलें : ॥',
+    explanation: 'प्रभू चांगदेवराऊळांनी रामयात्रेला जाण्याच्या निमित्ताने अत्यंत विरक्तपणा (उदासपण) धारण केला. त्यांनी रोज एकेक करत सर्व राजवैभव, सुगंधी द्रव्ये आणि सुस्वादु भोजन सोडले, आणि शेवटी केवळ अळणी ताक-भात खाऊ लागले।'
+  },
+  {
+    id: 'lc_p20',
+    bookId: 'leela_charitra',
+    number: 20,
+    title: 'लीळा २०: श्रीप्रभूभेटि',
+    titleEn: 'Leela 20: Shree Prabhu Bheti',
+    content: 'मग गोसावीयांची श्रीमूर्ती सावीयांचि संकीर्ण झाली : मग गोसावीयांच्या माता प्रधानांतें वीनवीलें : " कुमरू सावीयां संकीर्ण जाला : तरि रामयात्रे पाठवीजे ना कां : " तवं तेहीं म्हणीतलें : " आम्हीं राजे : राजेयासि काइ केहीं जाणें असे ? राजा प्रोहीतद्वारें क्रीय कीजे : ब्राह्मणातें पाठौनि : ते प्रोहीतद्वारें यात्रा करूनि येती : " गोसावीयांसि मानेचि ना : मग गोसावीयांची माता म्हणीतलें : " यासि रामयात्रेचा आग्रहो : तरि रामयात्रे पाठवीजे ना कां : " तवं तेणें म्हणीतलें : " सेजां सींगणदेओ राज्य करीतु असे : गुजरां आणि जाधवां दंड लागलें असे : ऐसांहीं जाणीतलें होइल तरि अन्यारें दंड हातां येईल : मां कैसा पाठवावा ? " माता म्हणीतलें : " सडीए आइतीसीं पाठवावा : दो घाईं रजपुतांचीया परी : अनेत लोकु जाते तैसा हाही जाइल : " ऐसा गोसावीयांचीया माता रामयात्रे पाठवावेयाचा आग्रहो घेतला : तेव्हळि प्रधानें आइति केली : गोसावीयांसि दांडी : १ : डोळीकार : २ : हडपी : ३ : बारी : ४ : सागळीया : ५ : चवरधरू : ६ : भांडारी : ७ : वेचकरू : ८ : सुआरू : ९ : बडुवा : १० : ऐसे दाही सरिसे दीधले : आणि ऐसी कोठी भरिली : अवधी आइति केली : मग गोसावी बीजें करतां तीनि वेळ माळवधाआंतु गेले : तीनि वेळ कमळाराणीएतें अवळोकिलें : परि तेया काहीँ उपजे ना : मग बीजें केलें : तीनि वांकद्वारेंवरि माता बोळवीत आली : तीएं तेथ राहावीलीं : मग बीजें केलें : आपण प्रधानु येक पेंणें बोळवीत आला : पाइकपरिवारू बहुत सरिसा : तो तेथ राहावीला : दूस राहावीलें : दुसरा पेंणां दांडी राहाविली : कमळाआउसांतें आणावेया म्हणौनि तीसरीये पेंणां एकांतें राहाविलें : गोसावी आपुला देसु सांडीति तवं्व्ही अवघेयांसि एओं दीधलें : मग गोसावी पेणेंप्रति एकएक राहावीत गेले : हडपु आणि सागळीया ते दोघे न संडितीचि : मग हडपीयाचेया घोड्यावरि आरोहण करूनि बीजें करिती : रात्रीं नीद्रा करीति : ते दोन्ही दोहींकडे माझारि गोसावी : ऐसां एकू दीसु अवघे अलंकार प्रत्येजुनि : दोन्ही नीदसुरे सांडुनि : एक वस्त्र वेढिलें : एक प्रावरण केलें : ऐसें गोसावीं रीधपुरा बीजें केलें : मग ते रडति : दुख करिती : चहूंकडे पाहाति : मासा ऐसें चडफडीति : मग ते रामुवन्हीं गेले : मग आपुलेया गावा गेले : \n\n माहादाइसीं पुसिलें : " जी जी : तेया काइ जालें ? " सर्वज्ञें म्हणीतलें : " बाइ : तेयासि मंहत क्षेत्रासि जाली : " \n\n मग गोसावी उतरील दारवठेंनि : सवळेचीया पाहारा दीसा : परमेस्वरपुरासि आले : नगराआंतु बीजें केलें : रांधवन हाटीं श्रीप्रभूंसी दरीसन जालें : पूर्वपसीम दोन्ही वोळी : उत्तरदखीण धीधडीया : पसिमील वोळि पूर्वांभिमुख आमचे गोसावी : पूर्वीली वोळि पसिमामुख श्रीप्रभू : अर्धवस्त्र वेढिलें असे : अर्ध उतरासंगें प्रावरण केलें असे : मोकळा कासोटा : नाभिचुंबीत खाड : मोकळे केसकळाप : डावा श्रीनेत्रु अर्धोन्मीलीत : डावीये श्रीकरिची आंगुळी वांकटि : आमचा गोसावी श्रीप्रभूर्तें देखौनि कायाप्रणीत केलें : आणि आपणेयां आपण क्षेमालींगण दीधलें : आणि आमचेया गोसावीयांतें देखौनि श्रीप्रभू म्हणीतलें : " ऐया माझा जाला म्हणे : आतां होये म्हणे : " श्रीप्रभूचां एकीं श्रीकरीं सेंगळें : एकीं श्रीकरीं बुडडें : चावीति थुंकीति : हास्य करिती : गगनाची वास पाहाति : आमचे गोसावी श्रीप्रभूची लीळा अवलोकीति : श्रीप्रभू आमच्या गोसावीयांची वास पाहाति : आणि गोसावी श्रीमुगुटु खोलवीती : श्रीप्रभूचां श्रीकरीं सेंगळें बुडडें होतें : सेंगुलें आरोगुं सरळें होतें : बुडडें आरोगार्वे होतें : ते श्रीप्रभू म्हणीतलें : " आरे : घे : घे : " म्हणे : घे ना म्हणे : आरे घे घे : म्हणौनि प्रसादु करूनि दीधलें : आमच्या गोसावी माहाप्रसादु म्हणौनि कायाप्रणीत करूनि दोही श्रीकरीं धरूनि नमस्करिलें : आणि श्रीप्रभू आमच्या गोसावीयांच्या श्रीमुखावरि श्रीकरू ठेविला : तेथ आमचा गोसावी ज्ञान-शक्ति स्वीकारिली : परावर-शक्ति स्वीकारिली : आमचा गोसावी पूर्वीलेनि दारवठेंनि बीजें केलें : श्रीप्रभू माहाद्वारवरि बोळवीत आले : तेयां दीसीं तळेगांवीं वस्ति जाली : ज्ञानाचें कार्य ऐसें : जें ज्ञानापाठीं वैराग्य उपजे : मग गोसावीं तेहीं स्वीकारिलें : ॥',
+    explanation: 'प्रभू चांगदेवराऊळ रामयात्रेचे निमित्त करून शेवटी सर्व काही त्यागून विरक्तपणे ऋद्धिपूर येथे प्रभू श्रीगोविंदप्रभूंच्या भेटीसाठी आले. तेथे त्यांची श्रीगोविंदप्रभूंशी अत्यंत दिव्य भेट झाली. श्रीगोविंदप्रभूंनी त्यांना उष्टा प्रसाद (मात्रा) देऊन अलौकिक पर-अवर ज्ञानशक्तीचे संक्रमण केले. या भेटीनंतर चांगदेवराऊळांना परम वैराग्य प्राप्त झाले।'
+  },
+  {
+    id: 'lc_p21',
+    bookId: 'leela_charitra',
+    number: 21,
+    title: 'लीळा २१: अवस्थास्वीकारू',
+    titleEn: 'Leela 21: Avasthasveekaru',
+    content: 'मग गोसावीं अवस्था स्वीकारिली : श्रीमूर्तीवरि उदास्य स्वीकारिलें : गोसावीयांची घणीं पीटीली ऐसी श्रीमूर्ती : गोसावीयांसि वाटे जावेयाची प्रवृती तरि वाटे बीजें करीति : वाटे बीजें करावेयाची प्रवृती नाहीं तेव्हळि अरण्यामध्यें बीजें करिती : गोसावीयांचें वस्त्र कांटीयेसि गुंफे : तें फाटोनि कांटीयांसींचि जाये : ऐसें अवघें वस्त्र फाटोनि कांटीयांसींचि लागे : मां उघडीयाचि श्रीमूर्ती बीजें करिती : गोसावीयांच्या बाहेप्रदेशीं कांटीयांचे ओरखडे जाति : तेथ अशुधाचे बिंदु नीगति : ते श्रीमूर्तीवरि वाळति : जैसी कां माणिकें : मोतीयें : रत्नें खेवणीलीं असति : तैसीं बाहुप्रदेशीं मीरवती : जैसीं पन्हेरेयावरि टीक ऐसीं मीरवती : गोसावीयांचे केसकळाप झाडीं गुंफति : ते गोसावीयांसि सोडवावेयाची प्रवृती नाहीं : तवं गोसावी तैसेंचि उभे असति : मां वारेन उकलति तेव्हळि गोसावी बीजें करिती : कां कव्हणु एकाधा एकु वाटे जातु असे तो देखे : तो उगवी तेव्हळि गोसावी बीजें करिती : ऐसीया उघडीया श्रीमूर्ती खेडेयांगोटेयांवरि पहुडु स्वीकारीति : ऐसीयापरी गोसावीं पर्वतासि बीजें केलें : ॥',
+    explanation: 'ज्ञान प्राप्तीनंतर प्रभूंच्या अंगात दिव्य वेडाचार (अवस्था) संचारला. ते जंगलातून फिरत असताना暖かい काट्यांमध्ये अडकून फाटले तरी ते उघड्या शरीराने फिरू लागले. शरीरावर काट्यांचे ओरखडे उमटून रक्ताचे थेंब वाळले की ते एखाद्या रत्नाप्रमाणे भासत असत. केस झाडांमध्ये गुंफले तरी प्रभू तसेच उभे राहत, जोवर वारा किंवा कोणी वाटसरू ते सोडवत नसे. अशा प्रकारे प्रभू संपूर्ण विरक्त अवस्थेत सह्याद्री पर्वतावर निघून गेले।'
+  },
+  {
+    id: 'lc_p22',
+    bookId: 'leela_charitra',
+    number: 22,
+    title: 'लीळा २२: पर्वतीं क्रीडा',
+    titleEn: 'Leela 22: Parvatin Krida',
+    content: 'ऐसीया उघडीया श्रीमूर्ती खेडेयांगोटेयांतु पहुडु स्वीकारीती : ऐसीयापरी गोसावीं पर्वतीं बारा वरीखें क्रीडा केली : मग मुगुताबाईये गोसावीं भेटि दीधली : ॥',
+    explanation: 'प्रभू चांगदेवराऊळांनी उघड्या श्रीमूर्तीने खडकाळ पर्वतावर सलग १२ वर्षे ध्यान आणि भ्रमण क्रीडा केली आणि नंतर मुक्ताबाईला दर्शन दिले।'
+  },
+  {
+    id: 'lc_p23',
+    bookId: 'leela_charitra',
+    number: 23,
+    title: 'लीळा २३: मुगताबाईये भेटी',
+    titleEn: 'Leela 23: Mugatabaiye Bheti',
+    content: 'गोसावीयांसि यासी एका ठांई आसन जालें होतें : तवं मुगुताबाईया गोसावीयातें देखिलें : आलीं : गोसावीयांसि दंडवत घातलें : श्रीचरणां लागीनि वीनवीलें : " जी जी : माझी पैंन्हां प्राणकुटिका असे : तेथ गोसावीं बीजें करावें : " सर्वज्ञें म्हणीतलें : " बाइ : यासि तेथ बीजें करावेयाची प्रवृती : मां तेथ बीजें केलें : " मग गोसावीयांसि कुसासन बैसों घातलें : जाउनि हें तेथ बैसलें : जटा सोडुनि श्रीचरण झाडिले : मग श्रीचरण प्रक्षाळण केलें : मग यासि बरवी वनपुष्पांची पुजा केली : मग दंडवत घालुनि : दोन्ही हात जोडुनि पुढां उभीं ठेलीं : मग म्हणीतलें : " जी जी : माझेया तपाचें फळ आजि जालें जी : " " तें कैसें बाइ ? " " ना जी : ऐसेया पुरुखांसीं दरीसन जालें जी : " " ऐसें होए : " यासि कंदामुळांफळांची आरोगण दीधली : " गोसावीं माहादाइसातें म्हणीतलें : " बाइ : कैसी बाइ नीन्हां तापस ! आंगिची लोंव पाहाळी गेली : हातापायांची नखें चुंभळि वळलीं : माथांचीया जटा भूईंसी काढति : सेवाळें दांत : तीएं बैसति तरि तेयांचीया जटा भुईं पुंजा होति : उभीं ठाकति तरि तेयांचीया जटें भूईंसी काढति : बाइ : कैसी बाइ नीन्हां तापस ! " ऐसें गोसावी मागुतें पुढारें तोखति : माहादाइसीं पुसिलें : " हा जी : तेयांचेया तपा कीतीसें वरीसें भरलीं जी ? " सर्वज्ञें म्हणीतलें : " बाइ तेयांचेया तपासी : तेरासें वरीखां भरलीं आणि एणें तेथ वारा वरीखें राज्य केलें : " मग माहादाइसीं पुसिलें : " जी जी : तीएं तेथ असती तरि तेयांसि परावर्ण काइ ? " सर्वज्ञें म्हणीतलें : " तेयाचीये आंगीं रोमावळि निघाली असे : तेणें तेयांचें देह आच्छादोनि गेलें असे : "',
+    explanation: 'मुक्ताबाईने प्रभू चांगदेवराऊळांचे दर्शन घेऊन त्यांची मनोभावे सेवा केली. मुक्ताबाईच्या तीव्र तपाचे प्रभूने कौतुक केले।'
+  },
+  {
+    id: 'lc_p24',
+    bookId: 'leela_charitra',
+    number: 24,
+    title: 'लीळा २४: चामारु स्तीती',
+    titleEn: 'Leela 24: Chamaru Stiti',
+    content: 'दंडवत केलें : श्रीचरणां लागौनि गोसावीयांपासि पुढां बैसला : पुडांत्वा काढिला : पोफळफोडणेनि फोडी केलीया : गोसावीयांसि फोडी ओळखविलीया : आपण वीडया करूनि दीधलीया : तवं मागीलीकडोनि चामारि आली : तीसीही वीडा दीधला : आपणही घेतला : तवं तीया म्हणीतलें : " उठि गा : चाल जाओं : सांगातु गेला : " तेहीं म्हणीतलें : " नावेक पारूख : " मागुतें तीया म्हणीतलें : " उठि गा चाल : लोकु दूरि पावला : माणुसांची नेहारि जाली : गोरूवें गावांकडे नीगालीं : वीडु जाला : कोव्हाकरवि काइ घोंगडा हीरैल पातासि ? उठि गा चाल : " तेणें म्हणीतलें : " पारूख पारूख : नावेक : " ऐसे वेळां दोनि तीनि : तीया म्हणीतलें : परि तो नुठिचि मागोतें तीयां म्हणीतलें : " हां गा : तरि काइ तुं नैयेसि ? " " ना नैयें : " " तरी मी जाओं ? " " ना जाए : " पैलू ठावोवरि गेलीं : आणि मागोती आलीं : मग म्हणीतलें : " कांगा : तुं नैएसि : तरि फेडि माझीये माथांचा हातु : " तेही म्हणीतलें : " फेडिला : जाए : " तीयां म्हणीतलें : " तरि कवण साक्ष ? " " ना हे राउळ साक्ष : " तीया म्हणीतलें : " राउळो : तुम्ही साक्ष ? " गोसावीं श्रीमुगुटीं अनुकारू केला : इतुकेंनि ते नीगाली : गोसावीं तांबोळ प्रत्यजु आदरिलें : आणि तेण्हें दोन्ही हात ओडविले : श्रीमुखीचें तांबोळ घेतलें : तांबोळाचा प्रसादु घेतला : आणि तेयासि स्तीति झाली : तैसेंचि गोसावीं तेथौनि बीजें केलें : मग सर्वज्ञें म्हणीतलें : " ते खोलनायिकेचाया आंबेयासि आले : तेथ इस्वरपुरूख होउनि खेळत असति : इस्वरत्वें वर्तू लागला : तेयातें इस्वरत्वें लोकु मानूं लागला : घरोघरीं न्हाणिति : उटीती : चंदनपुजा : धुपारतीया : मंगळारतीया : आडवाटी थाणवें जेवण : बाजां सुपवतीयांवरि नीद्रा करीती : ऐसें सपुजीत एकाचां घरी जेउं बैसले असति सर्वांगीं चंदनाची मोरी : लल्हाटी आडा : गळां पुष्पांचीया माळा : आरतीया नींबलोणें होतें असति : तवं तेयांचे गावींचा चामारु हाटासि आला होता : तेणें म्हणीतलें : " अमुका चामारु तो तुं नव्हसि ? " तवं तेथ ब्राम्हण असति : तेहीं म्हणीतलें : " हा कवणु ? " तेणें म्हणीतलें : " ना हा आमचीए गावीचा चामारु : आमचा गोतीया : याची मायबापें यातें पाहातु असति : " ब्राम्हणीं म्हणीतलें : " ऐसे ? ऐया रे : कैसा लोकु वीटाळिला : " ऐसे एैंरें आइकिलें : आणिकीं आइकिलें : ऐसे जगळवेयावींजेदेयाचा ठावो पावले : जगळदेवो वींजेदेवो ते तेथीचे अधीकारीये : तेयांपासी अवघे महाजन आले : तेयांपुढें सांघीतलें : जें " हा चामारु : एणें अवधा गांवू वीटाळिला : ऐसेयासि काइ कीजे ? " मग तेही नीबंधकार ब्राम्हण बोलाविले : तेयातें पुसिलें : " हा चामारु : एणें अवधा गांवू वीटाळिला : तरि ऐसेयासि काइ कीजे ? " मग तेहीं नीबंध काढिले : नीबंधीं पाहिलें : तवं नीबंधीं ऐसें नीगालें : जे " हे चूनखडेयांतु दादिजति : " तैसीचि तेहीं खांच खणविली : तेथ तेयातें बैसविले : वरि चुनखडे ताउनि घातले : तेयावरि पाखाला रीचवीलीया : केतुलि एकी मांदी मीनली होती : तवं एकु हाटवटीएहुनि आला : तेणें ते मांदी देखिली : मग तेयातें पुसिलें : " हां गा : हे मांदी काइसी ? " तेहीं म्हणीतलें : " तुम्ही नेणा ? " " ना : नेणों : " " ना एथें जे इस्वरपूरूख होउनि खेळत होते ते चामार जाले : तेणें अवधा गांवू वीटाळिला : तो खडेयांतु बैसविला : " तेणें म्हणीतलें : " आरे : खडेयांतु कैसें बैसवीलें ? ते तवं हाटवटीये खेळत असति : जा पां पाहा : " मग आवघे हाटवटीएसि आले : तवं तैसेंचि सपुजीत खेळत असति : देखिलें : सर्वांगीं चंदन : लल्हाटीं चंदनाचा आडा : गंधाक्षता : गळां गळदंडे : पुष्पांचीया माळा : " सर्वज्ञें म्हणीतलें : " गळांचा गळदंडा आदिकरुनि कोमाइजेचि ना : ना पुजा वीखुरेची ना : मग ते आवघे अनुतापिले : दंडवतें घातलीं : " जी जी : आम्ही पापीए चांडाळ : तुम्हांसि आम्ही खस्ता केली : " मग ते तेथौनि नीगाले : " \n\n मग माहादाइसीं पुसिलें : " जी जी : एसणें तेहीं तेयांसि केलें तरि तेयांसि काइ जालें ? " सर्वज्ञें म्हणीतलें : " बाइ तेयाचा नीवंशू जाला : " ॥',
+    explanation: 'बीड जवळील एका गावातील चर्मकार दांपत्याची कथा. चर्मकाराला प्रभूच्या दर्शनाने स्तीती (सिद्धी) प्राप्त झाली आणि तो स्वतःला ईश्वर समजून वागू लागला. ब्राह्मण व गावकऱ्यांनी त्याला विटाळाचा आरोप ठेवून चुन्याच्या खड्ड्यात पुरले, तरीही तो बाजारात खेळत असल्याचे सर्वांना दिसले. प्रभूंचा छळ केल्यामुळे त्या निंदकांचा वंश नष्ट झाला।'
+  },
+  {
+    id: 'lc_p28',
+    bookId: 'leela_charitra',
+    number: 28,
+    title: 'लीळा २८: जुतक्रीडा',
+    titleEn: 'Leela 28: Jutkrida',
+    content: 'कव्हणी एकु गावू : तेथ गोसावीं बीजें केलें : गोसावीयांसि कटिप्रदेशीं सुडा : श्रीमुगुटीं सुडा : ऐसे गोसावीं जुआंठेयासि बीजें केलें : तवं ते कव्हणीचि गोसावीयांची वास न पाहाति : सर्वज्ञें म्हणीतलें : " धूरे एकी पवाडु आति ? " आणि तेही ऐसें पाहिलें : तेही म्हणीतलें : " एइजो जी : एइजो जी : " म्हणौनि अवघे परते सरले : मध्यें पवाडु केला : बैसों घातलें : गोसावीयांसि आसन जालें : चौदानी जुं पडत असे : कडु जागरू : नाडु : त्रेतीया : तीहीं गोसावीयांतें वीनवीलें : " घेइजो जी एक दान : " गोसावी एक दान घेतलें : पाउगीयापासाौनि फेरू घेतला : गोसावी पुंजीएचे कवडें श्रीकरीं घेउनि ऐसें चोळीलें : तीहीं म्हणीतलें : " गोसावी जुआरी होती ! " खेळों लागले : अवधेयासि जो पाणी पीओं सूए तेणें गोसावीयांसि उदक ओळखविलें : गोसावीं उदक स्वीकारिला : जो अवधेयांसि वीडा दे तेणें गोसावीयांसि वीडा ओळखविला : गोसावीं वीडा स्वीकारिला : मग गोसावीं वीळुवरि खेळू स्वीकारिला : गोसावीं जूं वीळुवरि खेळीनले : बहुत जूं जीतलें : मा कुरंगे कुरंगे कवडे नीवडीले : एर कवडे मग जीतुलाही जीणा जींकिला तेतुलाही गोसावी दानासि करिती : एक कवडें तांबोळ दे तेयासि देति : एक पाणी पाजी तेयासि देति : गंधवादी धूपि : मागतैयांसि देति : एकासि पवींत देति : मा पीवळे कुरंगे कुरंगे कवडे श्रीकरीं ऐसा पसाभरि घेउनि दोदेंसीं धरूनि गोसावी रांधवणहाटा : उभीया हाटवटीया बीजें करिती : मां सोवणी : दुसी : वाणीए : भूसारी : तेली : तांबोळी : आपुलाले व्यापार करीत होते : तेया श्रीमूर्ती अवलोकितां तेयांचे व्यापार तैसेचि राहिले : गोसावीयांसि बीजें करितां श्रीमूर्ती दीसेतवं पाहातचि राहिले : ऐसी गोसावीं अवधी हाटवटी वेधली : दृष्टि फांके तवं पाहातचि असति : ऐसें गोसावी रांधवणहाटें बीजें करीति : मां गोसावी एकाधी एकी रांधवणीतें म्हणति " कवडा अं " जोडे ओ ? " मग ते म्हणे : " एइजो जी : एइजो जी : भीतरि बीजें कीजो जी : " मग गोसावी भीतरि बीजें करीति म्हणौनि तीया बैसों घालीति : मां पसाभरि कवडे श्रीदोंदेंसीं धरिले असति : ते ऐसे टाकुनि माझघरीं घालीति : मग आसनीं बैसति : मा तीयें श्रीचरण प्रक्षाळिती : ओळणी देति : मां मर्दनामादनें होए : मग आपुलीं वस्त्रें वोळगवीति : चंदन ओळखवीति : लल्हाटीं चंदनाचा आडा रेखिती : पुजा होए : मग उंचा मोलाचें ताट करीति : मग गोसावीयांसि आरोगण होए : गुळुळा होए : सर्वज्ञें म्हणीतलें : " ते आरोगण कव्हडेयासारिखी नव्हे : ते अनुरागासारिखी होए : परत्रबुद्धी आरोगण देति : " मग गोसावी आरोगण करीतां तया अन्नासि रूप करीति : अमुकें अमुकेयासि पुरैलें : अमुकेयासि अमुकें न पुरैचि : ऐसें रूप करीति : तेणें तेयांसि सुख होए : वीडा देति : मग बाजुसुपवती आंथरूति : झाडीती : मा गोसावी तेथ पहुडु स्वीकारीति : चरणसह्रान करीति : ते दीसीं तेयांसि वीकिरा थोरू होए : मग उदीयांची गोसावी आपुलीं वस्त्रें वेढिती : तेयांचीं वस्त्रें ठेविलीं : नावेक हींव फीटों देती : ओतपळीया पडति तवं हें तेथ नीजैलेंचि असे : तवं ते जुआरी याची वाट पाहाति : भाट : वीदावंत म्हणति : " हां गा कालिची धुर आजुंही नैए ? कालिचा माहादानि आजुंही नैए ? " ऐसी अवधींची याची वाट पाहाति : मग गोसावीं नैकडे जाति : प्रख्या बैसति : सोवा आचमन करीति : हातपाये प्रक्षाळिती : गुळुळा करूनि तेथ बीजें करिती : मागुतें खेळति : जींकिति : कुरंगे कुरंगे कवडे श्रीदोंदेंसीं धरीति : एर अवघे गोसावी पवींत देति : मां तीए दीसीं आणीकी रांधवणीचेया घरा बीजें करीति : तीया यांसि तैसेंच करीति : तवं तीए अवघींची याची वाट पाहाति : म्हणति : " कालिची धुर आजुंही नैए ? " मागुतें म्हणति : " कालिचा माहादानि आजुंही नैए ? " ऐसें दोहीं ओळी जेतुकीं रांधवण घरें तेतुकेयां घरा एककु दीं आरोगण होए : तेतुके दीं अवस्थान जालें : ऐसेया आवघेया रांधवणहाटासि संबंधु दीधला : ॥',
+    explanation: 'प्रभू चांगदेवराऊळ यांच्या जुगार (जुतक्रीडा) खेळण्याच्या आवडीचे आणि रंजक बाललीलेचे वर्णन. ते जुगारात मिळालेले सर्व धन व कवडे इतरांना दान करत. त्यांच्या दर्शनाने बाजारातील तांबोळी, वाणी व तेली आपापले व्यापार विसरून त्यांच्याकडे टक लावून पाहत असत।'
+  },
+  {
+    id: 'lc_p29',
+    bookId: 'leela_charitra',
+    number: 29,
+    title: 'लीळा २९: भगता भेटि',
+    titleEn: 'Leela 29: Bhagata Bheti',
+    content: 'ओरंगळ प्रदेशीं एकी गांवी गोसावीयांसि अवस्थान : गोसावी नगराआंतु पाणी पात्र केलें : तळां आरोगण केली : पाळीं पींपळ : तेथ आसन जालें : तवं ब्राम्हणु एक संध्यानंदनासि आले : संध्या केली : तवं गोसावीयातें देखिलें : मग गोसावीयांसि दंडवत केलें : श्रीचरणास लागले : मग म्हणीतलें : " जी जी : गोसावीयांसि बीढार कोणी ठांई ? " सर्वज्ञें म्हणीतलें : " आतां कीजैल : " मग गोसावीयांसि आरोगणे वीनवीलें : गोसावीयांसि बीजें करावेयाची प्रवृती : मां गोसावीं तेयांची वीनवणी स्वीकारिली : मां तेणें आपुलीए बहीणीतें म्हणीतलें : " आवो : तुआं गोसावीयांची बरवी सेवासुश्रुका करावी : " मग उपरीयेवरि गोसावीयांसि अवस्थान जालें : पहुडु जाला : तेयांची बहीण गोसावीयांची सेवासुश्रुका करीती : गोसावी तेथ राज्य करूं लागले : गोसावी उदीयांची वीहरणा बीजें करीती : तवं तीए गोसावीयाकारणे उपाहारू नीफजवीति : आसन घालुनि गोसावीयांची वाट पाहात असति : मग गोसावी वीहरणीौनि बीजें करीती : आसनीं उपवीष्ट होति : तीयें गोसावीयांचे श्रीचरण प्रक्षाळीति : पुजा करीति : ताट करीती : आरोगण होए : गुळुळा होए : वीडा ओळखवीति : मां पहुडु होए : तीए झडकरी चरणसह्रान करूनि मग तीं जेवीति : मासें : \n\n धाकुटीचि गोसावीयांची श्रीमूर्ती : धाकुटीचि ते बाइको : लोकांचां ठाईं अनुकुळता : प्रतिकुळता : उदासीनता : ऐसें तीन्ही ठाए गोसावीं स्वीकरिले : लोकें अन्यथाज्ञान भाउं आदरिलें : प्रतिकुळू लोकु तो काहीँ काहीँ जनअपवाडू बोलों लागला : मग तो आइके : ऐसां तेयांची सोइरीधारी म्हणीति : " हे गोसावी धाकुटे : हेही धाकुटी : एथ काहीँ ऐसेनि ऐसें असे : " तें हळूहळू तेणें आइकिलें : मग तेयापुढें तेयाचेया तोंडावरि बोलति : तेणें म्हणीतलें : " हैं साच कीं लटिकें ? आपुलां डोळां देखैन : तेधवां साच : आणि काइ : " म्हणौनि तेणें पाहों आदरिलें : बहीणीतें म्हणीतलें : " सीदौरि करि हो : मी गावा एका जाइन : " म्हणौनि गावा गेला : मागोता आला : ऐसें म्हणौनि जाळारखें पाहावेया राहिला : तवं गोसावी पहुडु स्वीकारिला असे : तीए गोसावीयांचे चरणसह्रान करितें होती : तैसीचि गोसावीयांसि नीद्रा आली : तीएें श्रीचरणांवरि माथा ठेउनि नीजैली होती : " हे नव्हे : काहीँ उनखुन चुकली : मा हे रूसेलै असति : हे बुझावीत असे : " गोसावी वीनती स्वीकारीति ना : गोसावी ऐसें करीताति : " ऐसें म्हणौनि खर्ग काढुनि आले : आणि गोसावीं श्रीमगुटावरील पदरू श्रीकरें ऐसा करूनि फेडीला : तेयातें कृपादृष्टी अवलोकुनि दुसरें प्रेम : उत्तम साधन होतें तें संचरीलें : प्रेमसंचारमात्रें वीकारू वीकल्पु : स्वभावो : तीन्ही उच्छेदोनि गेले : हातिचें खर्ग उसळौनि पन्हा पडिलें : मग तैसेंचि गोसावीं तेथौनि बीजें केलें : ८ सरीसें भगतही नीगाले : \n\n ऐलाडि पैलाडि गावं : गोसावीं एका गावां बीजें केलें : एकी गांवीं गोसावीं तेयातें म्हणीतलें : " भटो : हें पैला गावीं असैल : मासापाखा हें तुम्हां दरीसन देइल : " " हो कांस जी : " ऐसें म्हणौनि भगतातें राहाविलें : ते तीए गावीं राहिले : आपण गोसावीं तेया गावा बीजें केलें : तीए गावीं गोसावीयांसि अवस्थान जालें : तेथौनि भगताचेया गावांसि ब्राम्हणु एक प्रतदीनीं कणवृतीसि ए : भगत तीए गाविची सीवंव्हत एत असे : मग तेयातें पुसति : " हां भटो : या गांवी एक पुरूख असति कीं ? गुजरूबेखू : गौरवर्ण श्रीमूर्ती : लंबकर्ण : वीसाळनेत्र : अजानबाहु : बतीसलक्षण : कटिप्रदेशीं एकु सुडा : श्रीमुगुटावरि एकु सुडा : श्रीकरीं आंजुळी पाणीपात : ऐसे गोसावी तीए गावीं राज्य करीत असति कीं ? " तो म्हणे : " हो असति " : " नीकेनि असति ? " " ना नीकेनि असति : " मग दुख करीति : " तेयां कैसा अवस्रू असे ? " " ना ऐसा ऐसा असे : " ऐसें ते दीसविडि नीच पुसति : ऐसां एकू दीं तीं ब्राम्हणीं म्हणीतलें : " काइ पां : अस्त्रीयांसि पुरूखांचा वेधू : पुरूखांसि स्त्रीचा वेधू : पुरूखांसि पुरूखांचा एसणा वेधु काइसा पां ? " एकु दीं भगतीं ब्राम्हणातें पुसिलें : तवं तेही तेयातें म्हणीतलें : " तें तुम्ही नेणा ? " भगतीं म्हणीतलें : " कैसें ? " " ना तें एसेनि वर्तलें : सर्पनीमीत्यें : " एसें उमटवीलें : भगतीं म्हणीतलें : " हां भटो : हें सत्य ? " " ना सत्य : " " सत्य ? " " ना सत्य : " " सत्य ? " " ना सत्य : " ऐसें वीसुधी पुसिलें : तेही वीसुधी तैसेंचि म्हणीतलें : आणि दंडकरि पडिले : देह वीसर्जले : तेणें ब्राम्हणें म्हणीतलें : " आहा : मीयां ओखटें केलें : " ना म्हणौनि : तैसाचि तो ब्राम्हणु बीहाला : " आरे : ओखटें जालें : आतां काइ करीन ? " म्हणौनि गोसावीयांपासि सांघावेया आला : मां मागील वृтаंत आवघे गोसावीयांपुढां सांघीतलें : सर्वज्ञें म्हणीतलें : " आहा : ओखटें केलें : भटो : ऐसा सत्यहि अर्थु न बोलीजे : मां एसणें असत्य तुम्हांसि कैसें बोलवलें ? आणि आतां कव्हणीं माएचा पोटीं रीगाल ? " \n\n मग गोसावीं तेयातें पुसिलें : " भटो : तुमते कुदळीपाउडे असे ? " तीही म्हणीतलें : " जी जी : " " जा : घेउनि या : " गेले : कुदळीपाउडे घेउनि आले : गोसावीं तेथ बीजें केलें : गोसावीं तेयातें श्रीकरें स्परीसीलें : मां गोसावी तेयातें श्रीदोंदेंसीं धरुनि : आसन जालें : मग तेया ब्राम्हणाकरवि खांच खणविली : रीगौनि पाहिली : मग मानकेडे गोसावीं धरिलें : पायांकडे तेहीं ब्राम्हणीं धरिलें : मां भगताचा नीक्षेपु केला : मग सर्वज्ञें म्हणीतलें : " बाइ : यासि तेथ घडीभरि असवेंचि ना : मग हें तेथौनि नीगालें " : ॥',
+    explanation: 'वारंगळ प्रदेशातील एका ब्राह्मण कुटुंबाची कथा. प्रभू त्याच्या घरी राहू लागले असता, काही दुष्ट लोकांनी प्रभूंच्या चारित्र्याबद्दल संशय घेतला. तेव्हा प्रभूंच्या दिव्य दर्शनाने संशयी ब्राह्मणाचा वध टळला आणि त्याला प्रभूंचे महात्म्य कळून तो प्रभूंचा अनन्य भक्त बनला।'
+  },
+  {
+    id: 'lc_p30',
+    bookId: 'leela_charitra',
+    number: 30,
+    title: 'लीळा ३०: ओरंगळीं मालपुजा स्वीकारू',
+    titleEn: 'Leela 30: Orangali Malpuja Sweekaru',
+    content: 'एकु दीस आउसें जोगवटा घालुनि बैसली होती : सर्वज्ञें म्हणीतलें : " नाएका : येथही एकु जोगवटा होता : " आउसीं म्हणीतलें : " तो कैसा जी स्वामी जगनाथा ? " \n\n सर्वज्ञें म्हणीतलें : " हें ओरंगला गेलें होतें : ओरंगली सदर्ध मालु एकु : तेयाखाली पांचसें मालां : तेयातें पुतु नाहीं : तेयासि सैनभाताची भगति : अव्हा चौरस तीनि गावें ओरंगल : माझि सैनभाथाचें देऊळ : तो दांडीए बैसला सैनभाथासि जातु होता : हें मार्गों ऐसें जात होतें : तेणें यातें देखिलें : आणि दांडीए खालुता उतरला : दंडवत घातलें : श्रीचरणां लागला : मग गोसावीयातें म्हणीतलें : " माझा सोभनाथु एथचि भेटला : " ऐसें म्हणौनि यातें वीनवीलें : " जी जी : गोसावीं माझेया आवारासि बीजें करावें जी : " गोसावीयांसि प्रवृती : गोसावीं वीनवणी स्वीकारिली : आपण पुढां पाईं चालतु : मागां गोसावीयांतें दांडीए बैसौनि आपुलेया आवारासि आणिलें : तेणें गोसावीयांसि आसन घातलें : गोसावी आसनीं उपवीष्ट जाले : श्रीचरणक्षाळण जालें : सर्वज्ञें म्हणीतलें : " मग यासि ओळणी दीधली : " मग आणीकु मालु मर्दना देयावेया आले : तवं तेणें तेयातें म्हणीतलें : " सरा रे : तुम्ही एथ कें रीगाल ? एसणी अति काइ तुम्हाकारणें काढिली असे ? गोसावीयांसि मर्दना मीचि देइन : " मग आपण मर्दना दीधली : जेतुलीं मालवीचेया अंगें तेतुलीं गोसावीयांचां ठाईं ओळखविलीं : गोसावी तीएतीए कळेसि रूप करीती जाति : मग मादणें जालें : पुजाअवस्वरू जाला : धुपारती मंगळारती जाली : सैनभाथाची भगति ते गोसावीयांचां ठाईं अर्पिली : आरोगण झाली : गुळुळा जाला : वीडा ओळखविला : मग दंडवत घालुनि यातें वीनवीलें : " जी जी : मज संपत्ति असे : परि संतति नाही जी : " सर्वज्ञें म्हणीतलें : " होइल हो : " मग तेणें पोटींचि ऐसें म्हणीतलें : " जरि मज पुतु होइल तरि मी गोसावीयांचां ठाईं पांचां सहस्रा सोनेयांची पुजा करीन : " ऐसें म्हणीतलें : गोसावीयातें वीनवीलें : " जी जी : गोसावी एथ असती तवं गोसावीं एथचि आरोगण करावी जी : आणि देिव्हारचौकीयेसि पहुडु करावा जी : माझी राणी गोसावीयांची सेवा करील जी : " गोसावीं मानिलें : देिव्हारचौकीयेसि अवस्थान जालें : तेयाची राणी गोसावीयांची सेवा करी : गोसावी वीहरणीौनि बीजें करीती : मां तीं आसन रचीति : गोसावीयांसि आरोगण : गुळुळा : वीडा : पहुडू होए : चरणसह्रान करूनि मग तीं जेवीति : मासें : वडली राणीसि गर्भसंभूति जाली : त्यापरि दोघांही गोसावीयांची अधीक श्रद्धा जाली : गोसावीयांसि आरोगण जालेयांविन स्त्री जेवि ना : मग गोसावीही उसीरू न लवीती : मां गोसावीं बीजें करूनि आदरिलें : तेव्हाळि तेणें वीनवीलें : " जी जी : आपचार्ये होइल : मग गोसावीं बीजें करावें : " " हो कां : " म्हणौनि मानिलें : मग वीहरणीौनि सकाळींची बीजें करीती : गोसावीयांसि आरोगण होए : मग तीं जेविति : ऐसें अपचारीए जालें : मग गोसावीं बीजें करूं आदरिलें : मग तेणें वीनवीलें : " ना जी : आठांगुळे होइल : मग गोसावीं बीजें करावें : " तेहीं गोसावीं मानिलें : ऐसां आठांगुळें जालें : मां गोसावीं बीजें करूं आदरिलें : " ना जी बारसें होइल : मग गोसावीं बीजें करावें जी : " तेही गोसावीं मानिलें : ऐसां प्रसुति जाली : पुतु जाला : बारसें जालें : मग गोसावीं बीजें करूं आदरिलें : तेणें म्हणीतलें : " ना जी : गोसावीं उष्टवनवरि राहावें : उष्टवन होइल : मग गोसावीं बीजें करावें जी : " तेहीं गोसावीं मानिलें : ऐसां उष्टवन जालें : मग गोसावीं बीजें करूं आदरिलें : " जी जी : गोसावीं चोळोवरि राहावें जी : " तेहीं गोसावीं मानिलें : ऐसां चोळो जालें : ऐसें पन्हरा मास तेथ गोसावीयांसि अवस्थान जालें : तेव्हळि तेणें वीनवीलें : " ना जी : मीयां गोसावीयांसि पांचा सहस्रा सोनेयांची पुजा करावी : ऐसा मनौर्थु केला जी : तरि मी गोसावीयांसि पुजा करीन : मग गोसावीं बीजें करावें जी : " मग तेणें वीचारिलें : " गोसावीयांसि काहीँ लागे ना : गोसावी दाम काइ करिती ? माहात्मे तरि गोसावीयांकारणें जोगवटा करूं : " म्हणौनि पाताउवांचा जोगवटा केला : तेयांसि ठीक : माणीकें : मोतींयें : रत्‍नें : पांचां सहस्रांची खीवणीलीं : मग यासि मर्दना : मादणें : पुजा : केली : वस्त्रें वोळगविलीं : आणि तो जोगवटा ओळखविला : दंडवत घातलें : श्रीचरणां लागले : मग आरोगण : गुळुळा : वीडा ओळखविला : मग हें तेथौनि नीगालें : आउसीं म्हणीतलें : " मग तो जोगवटा काइ केला : स्वामी जगनाथा ? " सर्वज्ञें म्हणीतलें : " वाटे एकु ब्राम्हणु भेटला : तो दीधला तेया ब्राम्हणासि : " " हें काइ जी स्वामी जगनाथा : एसना जोगवटा कैसा ब्राम्हणासि देवविला जी ? " सर्वज्ञें म्हणीतलें : " नाएका : तुम्ही असतीती तरि तुम्हां दीजता " : ॥',
+    explanation: 'वारंगळ येथील एका धनाढ्य शिवभक्ताची (मालु) प्रभूंच्या चरणी असणारी भक्ती. पुत्रप्राप्तीचा नवस पूर्ण झाल्यावर त्याने प्रभूंचे पाच हजार सोन्याच्या मोहरांचे पूजन केले आणि प्रभूंच्या चरणी रत्नांनी मढवलेला जोगवटा (झोळी) अर्पण केला, जो प्रभूने एका गरीब ब्राह्मणाला दान केला।'
+  },
+  {
+    id: 'lc_p31',
+    bookId: 'leela_charitra',
+    number: 31,
+    title: 'लीळा ३१: हेडाउवां भेटि',
+    titleEn: 'Leela 31: Hedauvan Bheti',
+    content: 'एकी गावी गोसावीयांसि वस्ति जाली : उदैक गोसावीं वीहरणासि बीजें केलें : नदीचीए थडीए : वृक्षातीळ गोसावीयांसि आसन असे : तवं हेडाउ तेलंग देसोनि घोड्यांची हेड घेउनि वोरंगला जात होते : नदीचीए थडीए एउनि ते राहिले : दूसें मांडवीया घातलीया : घोड्यांचे लाहास दीधलें : द्रासनीं बळीयाविलेें : मग आपण नदीसि संध्यानंदनासि आले : तवं गोसावीयांतें देखिलें : अवचेचि गोसावीयांजवळि आले : दंडवतें घातलीं : श्रीचरणां लागले : वीनतकंदर होउनि गोसावीयांजवळें बैसले : मग घोड्यांचीया गोष्टी करूं लागले : जातिसूध घोडे ते ऐसेऐसें : सर्वज्ञें म्हणीतलें : " जातिसूध घोडे ते काइ ऐसे ? ते ऐसे कीं : " मग गोसावीं तेयांसि घोड्यांची जाति दीधें नीरोपु आदरिली : सर्वज्ञें म्हणीतलें : " जातिसुध घोडा एकु आति : तेयातें एकाधा एकु सभेआंतुनि पांगिलाकडुनि पासाळावरी हरूळेंकरूनि ऐसा हाणे : आणि ऐसा रोहके : दृष्टी तेयांकडे पाहे : दुसरीकडुनि जरि हाणे तरि तेउताही रोहकें पाहे : तो आपुलें करणीय करीतुचि असे : परि तो घोडा तेयावरीली रोहंक दृष्टी फेडी ना : तो जेउतजेउता जाए तेउततेउतेंच तो घोडा पाहे : ऐसा जातिसूध घोडा एकु आति : " गोसावीं तेयाचि घोड्यांतु दाखविला : तेहीं म्हणीतलें : " जी जी : आम्ही हें परीसोंचि नेणों : मां बोलोनि काइ जी ? जी जी : अस्वहृदए तें गोसावीं जाणति : जी जी : याची आम्हीं सोएही नेणों : बाहे नेणों : हें गोसावीं नीरोपावें : आणि गोसावींची आइकावें : " मग अवघे हेडाउ आड पडिले : दंडवतें घातलीं : मग तेहीं गोसावीयांतें वीनवीलें : " जी जी : गोसावीं आमच्या दूसासि बीजें करावें जी : " गोसावीं मानिलें : मग तेयांच्या दूसासि बीजें केलें : तीहीं ओळणी दीधली : मर्दनामादनें जालें : आरोगण झाली : गुळुळा जाला : वीडा जाला : गोसावी आसनीं उपवीष्ट जाले असति : ते अवघे ओळगे बैसले असति : मग तेहीं यांतें वीनवीलें : " जी जी : ओरंगल नगर बरवें जी : गोसावीं तेथ आम्हांसरिसें बीजें करावें जी : " सर्वज्ञें म्हणीतलें : " तैएथ पूर्वदृष्ट असे : " तीही म्हणीतलें : " जी जी : या घोड्यांची हेड घेउनि जात असों : गोसावी जरि हे घोड्यांचे हेडेसरीसें बीजें करिती तरि आम्हां लाभांचे लाभ होती जी : " मग गोसावीयांसि तेहीं बरवी लुगडीं ओळखविलीं : आंगीया ओळखविलीया : घोडा ओळखविला : गोसावी घोड्यापरि आरोहण होति : आणि तो कळविला ऐसा होए : ऐसा आवघेया घोड्यां संबंधु दीधला : मा घोड्याचीए हेडे हेहि समर्थ : ऐसें गोसावीं ओरंगला बीजें केलें : \n\n तीनि गाउवें ओरंगल नगर : उदैक पलाणिवलाणि होए : घोडे पुढां नीगति : मा वाजंत्रें वाजति : मग गोसावीं बीजें करिती : एककु घोडा एककु दीं ओळखवीति : ऐसें ओरंगला बीजें केलें : नगराबाहेरि दूसें पडिलीं : गोसावी हेडाउवांचे मुदल हेडाउ : आणि ते अवघे अनुखंजीत : सर्वज्ञें म्हणीतलें : " बाइ : तेथीचेया रायाची वेवस्था ऐसी : जें आधीं अवघे घोडे रायासि दाखवीजति : मग रायासि लागति ते राओ घे : मग गाविचे वाणीएवेव्हारे घेति : " मग गोसावीं अवघे घोडे रायापासि दाखवीले : राया लागति ते राए घेतले : एर राणेराउतीं ठकुराकुरीं घेतले : मग गावीचे वाणीएवेव्हारे आले : तेयांसि जे लागति ते तेहीं घेतले : बाहेरीलाकडुनि जे एति तेयांपुढां काढूनिया घोडा दाखवीति : तवं दीठीतळि नैए : गोसावी मध्यवर्ती : मग गोसावी आंगीयाचिया बाहीया ऐसीया वरतीया करीति : आंगीचे पालव सरीसे करूनि ऐसें पोटेसी खोवीति : मां घोडा गोसावी ऐसा करूनि दाखवीति : आणि घोड्यासि तेज ए : मां घोडा गगन कवळितु दीसे : ते म्हणति : " ऐसी वस्तु आमच्या हातासि एइल : " गोसावी सत्यावर्ती : हातासन दावीति : हेडाउवांतें गोसावी म्हणति : " एक सहस्रा ओपा : " बाहेरीलाकडोनि जे आले असति तेयातें म्हणति : " दो सहस्री घोडा : " ऐसें एरएरां घडवीती : बाहेरीलाकडोनि जे आले असति ते ऐसें म्हणति : जे " हा घोडा गोसावीं आम्हां दो सहस्री टकां देति तरि आम्हांसि सवंगु ए : " आणि हेडाउ ऐसें म्हणति : " हा घोडा सहस्रा टकेया जरि वीके तरि आम्हांसि थोरू लाभू होए : " ऐसें गोसावीयांसि हातासन होए : पाठीं गोसावीं " दीढा सहस्रा ओपा : " म्हणति : मग गोसावी तो घोडा पन्हरासेंया तेयां देति : मग बाहेरीलाकडुनि जे आले असति ते म्हणति : " हा घोडा आम्हां पांचांसेया सवंगु दीधला : आमचीं पांचसें पांचसें वाचलीं : " आणि हेडाउ म्हणति : " आमचीं पांचसें पांचसें अधिकें केलीं : आम्हां पांचसें फळलीं : " ऐसें एरएरां सुखचि होए : ॥',
+    explanation: 'तेलंगण देशातून घोड्यांचे तांडे (हेड) घेऊन जाणाऱ्या घोड्यांच्या व्यापाऱ्यांशी (हेडाऊ) झालेला प्रसंग. प्रभू त्यांना उत्तम जातीच्या घोड्यांची लक्षणे सांगतात आणि घोड्यांच्या व्यापारात मध्यस्थी करून दोन्ही पक्षांना (खरेदीदार व विक्रेता) आनंद होईल असा न्याय देतात।'
+  },
+  {
+    id: 'lc_p32',
+    bookId: 'leela_charitra',
+    number: 32,
+    title: 'लीळा ३२: वीव्हावो स्वीकारू',
+    titleEn: 'Leela 32: Vivhavo Sweekaru',
+    content: 'मां ऐसांही जे हेड उरे ते गावीचे वेव्हारे घेति : ऐसां एक वेव्हारे घोडे घेयावेया आले : तेहीं गोसावीयातें देखिलें : गोसावीयांचें सौंदर्य : लावण्य : बरवेपण : चातुर्यता : कुसळता : हातासन देखौनि तोखले : आणि गोसावीयांसि दंडवत घातलें : मां गोसावीयातें वीनवीलें : " जी जी : मातें कण्यारत्‍न एक असे जी : मी तीयाकारणें पाहे कांपडें बांधोनि बहुत दीस हींडीनलां जी : परि तीएजोगा वरू कव्हणी ठांई नाहीं जी : गोसावी होति : तरि तें माझें कण्यारत्‍न स्वीकारावें जी : आपुली दासि करावी जी : " सर्वज्ञें म्हणीतलें : " यांसि जातिकूळ नाहीं : " तीही म्हणीतलें : " गोसावी इस्वरू : गोसावीयांचां ठाईं काइ जातिकूळ पाहावें लागत असे ? इस्वरासि काइ जातिकूळ असे ? गोसाविचि जाति आणि गोसाविचि कुळ : गोसावी अकुळनाथांचां नाथ कीं : " सर्वज्ञें म्हणीतलें : " तरि एथ खूंटुडावें नाहीं : " तीहीं म्हणीतलें : " तेंही गोसाविचि : जी जी : गोसाविचि खूंटु आणि गोसाविचि दावें : " सर्वज्ञें म्हणीतलें : " तरि यांसि करावेया काहीँची वीत नाहीं : " तीहीं म्हणीतलें : " दोहींकडुनि व्‍हाड आम्हींच करूनि : " तवं अवघे हेडाउ उभे ठेले : तीही म्हणीतलें : " जी जी : इतुलें धनवीत आमचेें असे : आमचें तें गोसावीयांचें नव्हे ? तें अवधें आम्हीं करूनि जी : गोसावी वीव्हावो अंगिकारूं : मा द्रव्य लागेल तें आम्हीं वेचुनि : " मग गोसावीं मानिलें : सर्वज्ञें म्हणीतलें : " नाएको : एथ सकळें असे हो : एथ यासि जातिकूळ असे हो : हे लाड सामक : " ऐसी साखा सांघीतली : तरि प्रमाण जालें : सर्वज्ञें म्हणीतलें : " एथ सकळें असे हो : नाएको : " पाहाति तवं बरवें घटीत असे : मग तेणें वेव्हारेन वीनवीलें : " जी जी : मातें गोत्रिजें बहुत कुटुंब असे : अस्त्रीया माणूसे : एथ अओ नैए : तरि ते कुटुंबें वरू देखावा : तरि गोसावी तेयासि दरीसन देयावें जी : " गोसावीं वीनती स्वीकारिली : मग गोसावीयांतें हेडाउवीं श्रीघारीलें : मग गोसावीं हेडाउवांसहीत दांडीए बैसौनि तेथ बीजें केलें : तीएं अवघींची पाहावेया आलीं : तीहीं अवघांची गोसावीयातें देखौनि म्हणीतलें : " हे गोसावीयांचेया तळवेयासारिखी नव्हे : हे सदैव हो : या आपुलें दैव काढुनि घेतलें : " एकवंद ऐसें जालें : जें हां वरू होए : वीव्हावो प्रवतला : सर्वज्ञें म्हणीतलें : " बाइ : वेव्हारेयाची वासना ऐसी जें एथिचा कडु तो आम्हींचि करूनि : आणि हेडाउ ऐसें म्हणति : जें गोसावियांचा कडु तो आम्हीं करूनि : " हेडाउवीं गोसावीयांचे राणीएकारणें अळंकारभूसणें केलीं : साडेसांखळीया आवधींचे केलें : मग वेव्हारेनि आपुला कडु केला : आणि गोसावीयांचा कडु तो हेडाउवीं किया : मग गोसावीं वीव्हावो स्वीकारिला : गोधुळीचें लग्न जालें : च्यान्ही दी वीव्हावो जाला : साडेसांखळीया मुखकरूनि अवधें वाजलें : जैसा छापटी भीमकें जो सोहळा केला तैसाचि एथही जाला : मग हेडाउवीं गोसावीयातें वीनवीलें : " जी जी : दांडी करूं : मग गोसावी आणि गोसावीयांची राणी ऐसीं गोसावीं आमचेया देसासि बीजें करावें जी : " वेव्हारेयाची वासना ऐसी : जें गोसावीं एथचि राहावें : तवं गोसावीयांसि तेुतें बीजें करावेयाची प्रवृती नाही : सर्वज्ञें म्हणीतलें : " आतां हें एथ राहील : तेुतें नैए : " मग हेडाउबीं गोसावीयातें वीनवीलें : " जी जी : आम्हांसि बहुत दीस लागले : आमचीं कुटुंबें वाट पाहातें असती : तरि आम्हीं आपुलेया देसासि जाओं जी ? " सर्वज्ञें म्हणीतलें : " जा : हें एथ असैल : " मग गोसावीं तेयांसि अनोझा दीधली : मग ते आपुलेया देसासि नीगाले : \n\n गोसावीयांसि उपरीएवरि अवस्थान जालें : मग ते वेव्हारे भलेंतेहीं गोसावीयांतें पुसपुसों करीति : काहीँ बाहेरीलाकडुनि वस्तु ए : मां ते वेव्हारे जे वस्तु घेति ते गोसावीयातें पुसति : मग गोसावी घ्या म्हणति तरि घेति : गोसावी नको म्हणति तरि नेघति : मा गोसावी घेया म्हणति तीए वस्तुपाठीं थोरू लाभू होए : तो लाभु देखे : गोसावी नको म्हणति ते वस्तु आणीक घेति : तीए वस्तुपाठीं तेयांसि हानि ए : ते हानि देखे : ऐसें भलतें गोसावीयातें पुसपुसों करीति : एसें तेया वेव्हारेयासि बहुत द्रव्य जालें : \n\n ऐसां असतां एकु दीसू गोसावी : आणि गोसावीयांची राणी उपरीएवरि बैसोनि दोधें सारी खेळत असति : तवं अवधूतु एकु : माहात्मा अन्यमार्गी : संसारेसी पाठिमोर जाला ऐसा : मार्गें जात देखिला : आणि सर्वज्ञें म्हणीतलें : " आतां एथोनि एसेयां जाइैल : " म्हणौनि तेयांकडे ऐसा श्रीकरू करूनि दाखविलें : " जी जी : गोसावी कैसे एैसें होती ? " ऐसें आइकौनि मुळीं एउनि दडकरि पडलीं : " हें काइ : हें काइ : " म्हणौनि पडतपडतां गोसावीं वरच्यांवरि धरिलीं : मग फुटेयाचेनि पदरें वारा घालुनि साउपी केलीं : आंगेसीं धरुनि झाडिली : सांगळेचेनि उदकें नेत्र पुसिले : मग म्हणीतलें : " हें काइ : एथोनि ऐसेयां काइ होइर्जैल ? तुमते सांडौनि कें जाइर्जैल ? हें तुमते चाळवीताए कीं : " मग गोसावीं बीजें केलें तेव्हळि तेयांसि सरूपदरीसन वीद्या संक्रीमीली : मग गोसावीं तेथौनि बीजें केलें : सरीसें भगतही नीगाले : ॥',
+    explanation: 'घोड्यांच्या एका व्यापाऱ्याने प्रभूंच्या मनोहारी लावण्याने मोहीत होऊन आपली मुलगी प्रभूंस देण्याचा हट्ट धरला. प्रभू आणि हेडाउवांच्या साहाय्याने विवाह सोहळा पार पडला. नंतर एका संन्याशाचे दर्शन घेऊन प्रभू तेथून विरक्त होऊन निघाले।'
+  },
+  {
+    id: 'lc_p33',
+    bookId: 'leela_charitra',
+    number: 33,
+    title: 'लीळा ३३: डांकरामीं व्याघ्रवीद्रावण',
+    titleEn: 'Leela 33: Dankramin Vyaghravidravan',
+    content: 'गोसावीं डांकरामीं बीजें केलें : गावांनांव डांकरामु : देवतेनांव भीवेस्वरु : तेया गावां गोसावीं बीजें केलें : गोसावीयांसि पाणीपात्र जालें : आरोगण झाली : मग गोसावी वीळीचां वेळीं पहुडु स्वीकरावेया देऊळासि बीजें करीत होते : तवं गांविचे लोक पारीं बैसले होते : तेहीं म्हणीतलें : " देव हो : या देऊळां नको जाओं : एथ वाघु एत असे : " गोसावीं आगाधचक्रवर्ती : गोसावीं आइकिलें म्हणौनि yeवं मागुतें पाहुनि बीजें केलेंचि : गोसावीयांसि चौंक्रीं आसन जालें : पहुडु जाला : तवं मध्याने एकी रात्रीं वाघु आला : तेणें हाक दीधली : गोसावीं सीहनादु केला : तो पौळि उडौनि गेला : तें रान सांडोनि पळाला : गोसावीयांसि पहुडु जाला : उपहुडु जाला : तवं उदीयांसीचि गांवीचा लोकू टाळ : घोळ : काहाळा : कांसोळी : माढळ : वाजवीत : हाका बोंबा देतु आला : वाद्यांत्रें वाजवीतु : देवतेसि पुजा करावेया आला : नीच तेयांचा बोभाटु आइकोनि तो नीघे : ते दीसीं काहीँ नीगतां देखतीचि ना : मग म्हणों लागले : " कालि जे देव आले : तेयाचेया आविसावरि बैसला असैल : म्हणौनि न नीगे : " ऐसे भीतभीत दारवठेवारि आले : तवं गोसावीयांसि चौंक्रीं आसन असे : " आरे : इस्वरपुरूख रे : " ऐसें म्हणौनि अवघे साउमे भीतारी आले : दंडवतें घातलीं : श्रीचरणां लागले : मग यातें पुसिलें : " जी जी : एथ वाघु आला होता कीं ? " " आला होता " : " जी जी तरि तो कैसेनि गेला ?" सर्वज्ञें म्हणीतलें : "यातें देखिलें: तेणें हाक दीधली : आणि एथौनि सीहनादु केला : तो हे पौळि उडौनि पळाला : ते हे नव्हे पौळि पडली असे : तो हें रान सांडौनि पळाला : तो आतां एथ नैए हो : " गोसावीं म्हणीतलें: "बाइ: तीए दीउनि तें स्थान नीरुपद्रव वसतें जालें :" ॥',
+    explanation: 'डांकराम नावाच्या गावातील भिबेश्वर मंदिरात मुक्काम असताना प्रभूंच्या दर्शनाला आणि रक्षणाला वाघ आला. प्रभूंच्या सिंहनादाने तो वाघ मंदिराची भिंत उडी मारून पळून गेला. दुसऱ्या दिवशी गावकऱ्यांनी प्रभूंचे अलौकिक सामर्थ्य पाहून त्यांचे पाय धरले।'
+  },
+  {
+    id: 'lc_p34',
+    bookId: 'leela_charitra',
+    number: 34,
+    title: 'लीळा ३४: तैल्याकारयुगमा स्तीती',
+    titleEn: 'Leela 34: Tailyakaryugma Stiti',
+    content: 'गोसावीयांसि कटिप्रदेशीं सुडा : श्रीमुगुटप्रदेशीं सुडा : गोसावीं एका गांवांसि बीजें केलें : गोसावी उभीया हाटवटीया बीजें करीत असति : दोहीं ओळी तेलीयांचीं घरें : दोहीं ओळीं तेलिणी तेल वीकीती बैसलीया असति : त्यांतु एकीं गोसावीयांतें देखिलें : ते उठिली : अवघा पसारा माथां घेतला : त्या येउनि यातें श्रीकरीं धरीले : मग म्हणीतलें : " एइ गा बरवेया देवा : माझेया घरा जाओं : " ऐसें म्हणौनि यातें श्रीकरीं धरूनि आपुलेया घरासि नेलें : उंबरेयापासि श्रीकरू सोडीले : पसारा उतरिला : आपण भीतरि जाउनि उतरडीकडे गेली : गोसावी दोन्हीं दारसंका दोहीं श्रीकरीं धरूनि उभे ठेले : तवं तेली घाणा खेटीत होता : मग तेयातें गोसावीं म्हणीतलें : " आगा ए मेहरा : या तुझीया मेहरी यांतें कां बोलाविलें ? " तेणें ऐसें पाहिलें : आणि गोसावीयांतें देखिलें : पाहार सांडिली : घाणेयाखालुती उडी घातली : श्रीचरणांवरि माथा ठेविला : मग तेणें म्हणीतलें : " जी जी : मी तीळमारा तेली : ते माझेया पापा क्षेओ करावेयाकारणें बोलाविलें जी : " ऐसें म्हणौनि बाजुसुपवती घातली : गोसावीयांसि आसन जालें : श्रीचरण प्रक्षाळिले : मग तेणें आपुळीए स्त्रीएिस नीरोपु दीधला : " आजि जेतुके तुं रांधु जाणसि तेतुकें रांधि हो : " मग तो श्रीचरणां लागौनी घाणा लेटुं गेला : ते सूप घेउनि उत्तरडीसि गहूं : तांदुळ : काठुं गेलीं : गोसावीं तीयेतें अवलोकिलें : आणि तेयातेंहि अवलोकिलें : आणि दोघांही स्तीति जाली : एतुलेनि तेथोनि बीजें केलें : मग तीएं दोघें अद्यापि झाडिंमंडळी देवो आणि देिवि होउनि वर्तते असति : हें तेयांसि भेटलें : मुगुटें मुडुप झगटुनि : परि यातें तीएं ओळखतीचि ना : ओळखिचाही पाडु नाही : हे गोष्टि रावसगावी आबाइसां वाएनाएकाउपरि : संगमेस्वरी सांघीतली : ॥',
+    explanation: 'प्रभू एका गावातील तेली गल्लीतून जात असताना एका तेलिणीने त्यांना आदराने घरी बोलावले. तिच्या पतीने (तेली) प्रभूंचे पाय धरून प्रार्थना केली. प्रभूंच्या कृपेने दोघांनाही दिव्य स्तीती (सिद्धी) प्राप्त झाली, आणि ते झाडीमंडळात देव आणि देवी म्हणून राहू लागले।'
+  },
+  {
+    id: 'lc_p35',
+    bookId: 'leela_charitra',
+    number: 35,
+    title: 'लीळा ३५: पंचकुळ आचार्या ग्रहोनीवृत्ति',
+    titleEn: 'Leela 35: Panchkul Acharya Grahonivritti',
+    content: 'गोसावी वीहरणस्थाना बीजें करिताति : दक्षणेस्वराकडे : तवं सारस्वती भटीं गोसावीयांतें देखिलें : आणि आड पालौ करौनि गेले : तवं बाइसीं देखिलें : आणि म्हणीतलें : " हां बाबा : हा ब्राम्हणु : मागां बाबाचेया दरीसनासि ए : दंडवत करी : श्रीचरणां लागे : आतां बाबातें देखौनि आड पालु करूनि गेला : हें कां बाबा ? " सर्वज्ञें म्हणीतलें : " तेयाकारणें म्हेळीचेयापस्य सीक्षाचा अभिमानु थोरू : " मग यावरि पंचकौळ आचार्याची गोष्टि सांघीतली : ॥ "पंचकौळ आचार्या एकु : तो पांचें कुळीं आचार्या : तेयाचा सीख तो एकें आचारीएं चाळविला : तेणें अभिमानें तेयांसि तेणें वीखप्रळयो केला : तेया पापास्तव ग्रहो जाला : जाउनि वेव्हारेया एकाचा पुतु : तेयाचां आंगीं संचरला : अवघेया ग्रहांचा मुख नाएकु : तो खांबी सांकळीं आळिला असे : गांवोगांविचे गुणिए : जाणे : मंत्रवादी जे एति : तो तेयातें म्हणे : " एणें मंत्रें : या झाडनीयांतं माते धाडिसी : एणें मंत्रें : या झाडनीया मी जाइन : एणें वोखदें मातें धाडिसी : " आणि तो हात झाडुनि जाए : ऐसा तो काइसेनि कोन्हाचेहीनीं न वचे : मग एकु दीसु गोसावीं पाणीपात्रासि बीजें केलें : पाणीपात्र जालें : मां तेयांचेया दाराआड पन्हीवा होता : तो ठाओवरि गोसावीं बीजें केलें : पन्हीवा वोलांडीतचि नोलांडीतीचि : तो खांबी आळिला होता : तेणें यातें देखिलें : आणि म्हणीतलें : " आगा : मातें सोडा कां गा : मां मी पैला गोसावीयापाठीं जाइन : " तेहीं म्हणीतलें : " जी जी : हा सुटे ऐसेनि कीजो : " मग गोसावीं वीनवणी स्वीकारिली : गोमावीयांसि आरोगण जाली : गोसावीं तेथोनि उठीले : परतें सरौनि गुळुळा केला : उदक स्वीकारिलें : उदकासि वीनयोगु केला : आणि तेणें बुंडि सीतें उरलीं होतीं : तो एउनि ताटप्रसादु घेतला : सर्वज्ञें म्हणीतलें : " एयातें धरा गा : एन्हवीं आतां हा पडेल " : " ना जी : जैसा आला तैसा जाइल :" सर्वज्ञें म्हणीतलें : " तें आतां याचां ठाईं नाहीं कीं :" कींकोळी देउनि मूर्छीत पडिले : इतुकेंनि पडतपडतां तेहीं उचलुनि घरासि नेला : मग तीहीं गोसावीयां आवारसि नेलें : मर्दना जाली : मार्जनें जालें : पुजा केली : आरोगण जाली : मग गोसावीं बीजें केलें : ॥',
+    explanation: 'सारस्वती भट नावाचे गृहस्थ प्रभूंचे दर्शन टाळण्यासाठी आड पाऊल करून गेले. या प्रसंगावरून प्रभू नागदेवाला एका आचार्याचा भूतबाधा झालेल्या वेव्हारेयाच्या पुत्राला ग्रहबाधेतून मुक्त करण्याचा आणि त्याला प्रसादाद्वारे मुक्ती देण्याचा प्रसंग सांगतात।'
+  
+},
+  {
+    id: 'lc_p36',
+    bookId: 'leela_charitra',
+    number: 36,
+    title: 'लीळा ३६: घोडाचुडीसीक्षां सांगातु',
+    titleEn: 'Leela 36: Ghodachudisikshan Sangatu',
+    content: 'गोसावी ऐसे खीखींदा पर्वताकडुनि मार्गी बीजें करिताति : तवं घोडाचुडीचे सीख एक : ते उतरापथाकडोनि पर्वतासि जाताति : हें ऐसें दक्षणपथाकडोनि एत होतें : मध्ये गोसावीयांसी भेटि जाली : मग तेणें गोसावीयांतें पुसिलें : " देव हो : कवणीकडोनि एत असा ? : कवणीकडे जात असा ?" गोसावीं श्रीमुगुटाचेनि अनुकारेंचि दाखविलें : " हें ऐसें उतरापथाकडे जाइल :" मग तेणें गोसावीयांतें वीनवीलें : " जी जी : गोसावीं ऐसें दक्षणपथा वीवेकदेसा खीखींदपर्वतासि बीजें करावें : तेथ वालीसुग्रीवांची देऊळें बरवीं असति : तेथ अनेक सीधसाधक असति : तेथ आमचे गुरू घोडाचुडि असति : नीके नीके पुरूख असति : पुरुखांचें दरीसन होए : वरवीं वनें वनस्तळीया असति : तेथ घोडेया-एसणीं वानरें असेति जी : तरि गोसावीं तेथ बीजें करावें :" गोसावीयांसि रसु भरला : गोसावीं वीनवणी स्वीकारिली : मग गोसावीं तेयांसरिसें बीजें केलें : गोसावीयासि पाणीपात्र होए : ते गोसावीयांतें पुसोनि चाटणीये जाति : ऐसे केतुले एक दीस गोसावीं तेया सांगातें बीजें केलें : ॥ एकु दीसू एकी गावीं गोसावीयांसि पाणीपात्र जालें : वृक्षा एका खाली गोसावीयांसि आसन जालें होतें : ते दीसीं ते गोसावीयांतें न पुसत चाटणी करूं गेले : तवं बाइला एकी तेयांचें samथ्यु पाहिलें : चुलीवरि आंबीलि सीजत होती : ते कढतकढत चाटुभरि आंबीलि तेयांचे हातीं घातली : तेहीं चाटणी करूनि वळणी हातु पुसिले : आणि भडकरौनि उबाळा उठिला : ते आग लागली : आणि अवघा गाउं जळों लागला : अवघा गाउं जळे तवं पाहात होते : मग ते हासतहासत गोसावीयांपासि आले : तीहीं म्हणीतलें : " देव हो : हा बोभाटु काइसा : नेणा ?" गोसावी दृष्टीचेनि अनुकारें पुसिलें : तेहीं म्हणीतलें : " जी जी : आम्हीं चाटणी करूं गेलों : तवं बाइला एकी आमचें सामथ्यु पाहिलें : चुलीवरि आंबीलि सीजत होती : कढतकढत आंबीलि खवंडाळीया आमचां हातीं घातली : आम्हीं चाटणी करूनि वळणी हात पुसिले : तेथ भडकरौनि उबाळा उठिला : तो हा गांउं जळतु असे : पाहा ना ?" सर्वज्ञें म्हणीतलें : " माहात्मे हो : एसणी भूतहींसा केली परि तुम्हां खीणभरीही घृणा नुपजे : होए : आणि वरि हासत असां ? आतां हूं तुमचेंनि सांगातें नैए :" मग ते गोसावीयांसि वीसंबति ना : मग गोसावीं तेया नीडसुरेया सांडुनि बीजें केलें : ॥',
+    explanation: 'प्रभू घोडाचुडीच्या शिष्यांसह प्रवास करत असताना एका गावात शिष्यांच्या चुकीच्या कृत्यामुळे गाव जळून खाक झाले आणि ते त्यावर हसले. प्रभू हिंसा आणि अमानुषतेचा तीव्र निषेध करून त्यांचा सांगात सोडतात।'
+  },
+  {
+    id: 'lc_p37',
+    bookId: 'leela_charitra',
+    number: 37,
+    title: 'लीळा ३७: दीन त्रीं श्रीप्रभूदरीसना गमन',
+    titleEn: 'Leela 37: Din Trin Shree Prabhu Darsana Gaman',
+    content: 'मग गोसावीं तेयांचा सांगातु सांडुनि एकांकी बीजें केलें : राविदेओ करूनि तीनि अहोरात्रें गोसावीं प्रमेस्वरपुरा बीजें केलें : ॥',
+    explanation: 'घोडाचुडी शिष्यांचा सांगात सोडल्यानंतर प्रभू तीन अहोरात्र एकाकी प्रवास करून प्रमेस्वरपुरा (ऋद्धपूर) येथे पोहोचले।'
+  },
+  {
+    id: 'lc_p38',
+    bookId: 'leela_charitra',
+    number: 38,
+    title: 'लीळा ३८: श्रीप्रभूभेटि',
+    titleEn: 'Leela 38: Shree Prabhubheti',
+    content: 'दाभवीहीरीकडौनि आमचा गोसावीं बीजें केलें : पैलीकडौनि श्रीप्रभू आपवीहीरेया-कडौनि खेळतखेळत बीजें केलें : पीवळतळीयांमध्ये वेढे करीत होते : तेथ दोहीं देव भेटि जाली : खालीली तळौलीचीए वाव्य काठीं दोहीं देवा भेटि जाली : गोसावीं आपुलेयां आपण खेमाळींगण दीधलें : मस्करिलें : मग श्रीप्रभूगोसावीयांसि पीवळ-तळीचीए पाळीसि आसन जालें : आमचेयां गोसावीयांसि श्रीप्रभूपुढां माडेखुंटीं आसन जालें : मां एरएरां गोसावीं आपुलीया भासा काइ बोलत होते तें नेणिजे : तें देओचि जाणति : मग श्रीप्रभूगोसावीं रीधपुरासी बीजें केलें : आमचे गोसावीं अवलोकीत होते : श्रीप्रभूगोसावीं खेळु करीतकरीत बीजें केलें : जवं देखति तवं आमचे गोसावी पाळीवरोनि अवलोकीतचि होते : मग गोसावीं "जयजये" करूनि नमस्करिलें : मग आमचा गोसावीं दाभवीहीरी बीजें केलें : मग मलिनाथीं : बहीरवीं : अवस्थान जालें : ॥ दर्भेस्वराचीए देऊळीं अवस्थान : गोसावी पाणीपात्रासि बीजें करीति : उतरीली वेसिदारें नगराआंतु रीगति : पूर्वीले वेसिदारें नीगति : दर्भाळा घाटीं श्रीचरणेकरि चीरेयावरि उदक घालीति : श्रीकरिचें पाणीपात्र घालीति : आरोगण करीति : पाळीसि पींपळु : तेयांतळि आसन : वीळीचीए वेळीं : तरि पसीमीलीकडे आसन : उदीयांचीए वेळीं तरि पूर्वीलीकडे आसन : दीस स्थाळे : ओतपळीए बैसति : बहीरवीं पहुडु होए : ॥',
+    explanation: 'प्रभू चक्रधर आणि श्री गोविंदप्रभू (श्रीप्रभू) यांची दाभविहिरी आणि आपविहिरीदरम्यान झालेली अत्यंत भावपूर्ण भेट. दोघांनी एकमेकांना प्रेमाने आलिंगन दिले आणि मौन संवाद साधला।'
+  },
+  {
+    id: 'lc_p39',
+    bookId: 'leela_charitra',
+    number: 39,
+    title: 'लीळा ३९: क्षेत्रखाजें आरोगण',
+    titleEn: 'Leela 39: Kshetrakhajen Arogan',
+    content: 'मग आमचे गोसावी उदीयांचि श्रीप्रभूगोसावीयांसि सामोरें बीजें करीति : श्रीप्रभू पैलीकडौनि बीजें करीति : एरएरां गोसावीयांसी पाळीसि आसन होए : श्रीप्रभू खेळु करीति : कदाचीत खेतासी बीजें करीति : मार्गी मातांगे पानाची पातळि करूनि ठेविली : तीएवरि जीए वेळीं जे जो पदार्थु ते दोणे भरूनि ठेविले असती : एकी दोणां हुरूडा : १ : एकी दोणां आंबोया : २ : एकी दोणां चणेयांचे सोले : ३ : एकी दोणां घोळाणा : ४ : एकी दोणां तुरीचे सोले : ५ : एकी दोणां लांकांचे सोले : ६ : एकी दोणां वाटाणेयांचे सोले : ७ : एकी दोणां कोवळींकोवळीं वाळुकें : ९ : एकी दोणां उंसांचीया पेरीयां : १० : एकी दोनां उदक भरूनि ठेविलेें : ११ : ऐसें तो नीच ठेवी : वरि एकी पातळीया झांकी : श्रीप्रभूगोसावी बीजें करीती : श्रीप्रभू-गोसावी देखौनि चवकति : तेथ आसन होए : आरोगण होए : दोघांचें उदकपान करीति : मग ते दीसीं आमचेयां गोसावीयांसि प्रसादु होए : मग एरएरां दोहीं देवांचा प्रसादु तेया मातांगासि होए : एरी दीसीं तो दुणां दोणे ठेवी : ऐसे खेळतखेळत श्रीप्रभूगोसावीं दाभवीहीरीसि बीजें केलें : आमचा防गोसावीं श्रीप्रभूचा खेळु पाहातपाहात बीजें केलें : दर्भाळां खेळु : " मेला जाए :" म्हणौनि घरोघरीं आरोगण करूनि मग दर्भेस्वरी खेळु केला : मग श्रीप्रभू प्रमेस्वरपुरा बीजें केलें : पीवळतळीयावरि आमचे गोसावी बोळवीत आले : तेथ राहुनि भाळस्तळावरि श्रीकरू ठेवुनि जवं श्रीप्रभूगोसावी रीधपुराआंतु बीजें करीती तबंवेन्हीं पाहाती : मग मागुतें दाभवीहीरी बीजें करीती : ऐसे आमचे गोसावी नीच श्रीप्रभूसि साउमे जाति : मागुतें बोळावीत जाति : ऐसी प्रतदीनीं एरएरां गोसावीयांसि पीवळतळीयांसि भेटि होए : कदाचीत एकाधिये वेळी श्रीप्रभूगोसावी बीजें न करीति : तीए दीसीं आमचे गोसावी बीजें न करीती : मग प्रमेस्वरपुराकडे भाळस्तळावरि श्रीकरू ठेवुनि पाहातचि असती : मग गोसावी मागुतें दाभवीहीरी बीजें करीति : मग एउनि दाभवीहीरीसि पाणीपात्र करीति : दर्भाळां सीळेवरि श्रीचरणें उदक घालीति : मां पाणीपात्र घालीति : आरोगण होए : दर्भेस्वरीं उतरीलीकडे देऊळीं दक्षणामुख : तेथ अवस्थान : पहुडु होए : ऐसें वीस दीस दाभवीहीरीं अवस्थान : दर्भेस्वेरीचा बाळाणेयावरि आसन होए : ॥',
+    explanation: 'प्रभू आणि श्री गोविंदप्रभू यांच्यातील अलौकिक संबंध. गोविंदप्रभूंच्या खेळासाठी एका भक्ताने मांडलेली विविध फळे व खाद्यपदार्थ प्रभू स्वीकारतात आणि दोघा देवांच्या प्रसादाचा सोहळा पार घडतो।'
+  },
+  {
+    id: 'lc_p40',
+    bookId: 'leela_charitra',
+    number: 40,
+    title: 'लीळा ४०: रूपनाएकां भेटि',
+    titleEn: 'Leela 40: Rupnayakan Bheti',
+    content: 'हे गोष्टि गोसावीं सांधाप्रती जोगीस्वरीं सांघीतली : सर्वज्ञें म्हणीतलें : " साधं हो : मामेयांचां घरीं जेवाल कीं प्रमेस्वरपुरीं भीक्षा कराल ?" साधीं म्हणीतलें : " हां जी : गोसावीं मामेयातें केवि जाणति ?" यावरि हे गोष्टि सांघीतली : ॥ गोसावीयांसि दर्भेस्वराचेया बाळाणेयावरि आसन होतें : तवं रूपनाएकु आले : तीहीं गोसावीयांतें देखीलें : गोसावीयांसि दंडवत घातलें : श्रीचरणां लागले : तेव्हाळि रीगतां डावीये सोंडीएवरि आसन होतें : रूपनाएकें वीनवीलें : " जी जी : गोसावीं माझेया आवारा बीजें करावें जी : " गोसावीं मानिलें : वीनवणी स्वीकारिली : गोसावीयांतें घोडेया वाउनी दाभवीहीरीहुनि आपुलेया गावांसि नेलें : मग काटसरेयासि बीजें केलें : ओळणी दीधली : मग गोसावीयांसि मर्दनामादनें जाले : पुजा केली : साधीं म्हणीतलें : " हां जी : तो पुजा करूं केवि जाणे ?" सर्वज्ञें म्हणीतलें : " बाइ : ते आगमीक : पुजा करूं जाणति :" मग गोसावीयांसि ताट जालें : तद्भावींचें दुधातुपाभरूनि वाटी ताटावरि ठेविली : गोसावीयांसि आरोगण जाली : गुळुळा जाला : वीडा जाला : पहुडु जाला : मग गोसावीं उदीयांचि बीजें केलें : ॥',
+    explanation: 'प्रमेस्वरपूर येथील रूपनायक नामक भक्ताची प्रभू चक्रधरांशी झालेली भेट. भक्ताने प्रभूंची सवाद्य मिरवणूक काढली, पाद्यपूजा केली आणि दुग्ध-तुपाची आरोगण देऊन सेवा केली।'
+  },
+  {
+    id: 'lc_p41',
+    bookId: 'leela_charitra',
+    number: 41,
+    title: 'लीळा ४१: वींझीं गोंडवडां अवस्थान',
+    titleEn: 'Leela 41: Vinjhin Gondvadan Avasthan',
+    content: 'एकु दीस माहादाइसीं भीक्षा करूं गेलीं होतीं : तवं भूतानंदाची नाति ळळीताइसें आणि भवंतालीं लेकरूवें बैसलीं असति : तवं लेकरूवांतें चींचकरंटां भातु रांधितां देखिला : तो चटचटां कढे : तीएं बुडि जाळु करिताति : तें देखौनि माहादाइसां वीस्मो जाला : आलीं : मां गोसावीयापुढां सांघीतलें : " जी जी : मीं भीक्षा करूं गेलीएं : तवं लेकरूवें चींचकरंटां भातु रांधितें होतीं : तें काइ जी ?" गोसावीं म्हणीतलें : " बाइ : आति :" " हें पूर्वी वींझीं गोंडवडां होतें " : तेयां गोंडांसि याची प्रीति संचरली : तें तीएं यांसि ऐसेंचि करीति : वेळूवाचें कांडें तोडुनि आणीति : वींधिति : वींधौनि भीतरि तांदुळ घालीति : पाणीयांची सीर तीयेंचि जाणति : ऐसेंऐसें खणति : आणि बरवें नींझरें उदक नीगे : पाणी आणीति : तांदुळ आणि नीगुतेंच पाणी वेळूवाचां कांडा घालिती : मागुती डांबीरि घालीती : वरि सेणेमातीया बोंबीति : अग्नि पाडीति : मग अग्नीआंतु घालीति : मां होतें पदन तींएचि जाणति : मग काढीति : काढुनि चीरीति : चीरूनि माउळीचेया पानाची पातळी करिती : मां तेयांवरि नळांचा भातु घालीति : दोनि दोणे करिती : एकी दोणां आघाचा मधु घालीति : एकी दोणां पाणी घालीति : एक पातळीया वरि झांकीति : मग गोसावी वीहरणासि बीजें करिती : ऐसें तीएं गोसावीयांची वाट पाहाति : यासि उसीरू लागे : मां यातेंनेदखति : मां यातें कुवारीती : याचीए गिवसणीए रीगति : यातें झाडोझाडीं गीवसीती : " देवनें देवनें : " " कीलु कीलु " म्हणौनि बोलाविती : मग गोसावी बीजें करीती : मां यातें देखौनि हरीखैजति : दंडवतें घालीति : श्रीचरणां लागती : श्रीचरणांवरि माथा ठेविती : श्रीचरणांवरि लोळति : मोमे देति : गाति : नाचति : टाळीया वाति : नाना पुस्पें आणीति : गोसावीयांसि पुजा करीति : मग यासि आरोगण देति : ऐसें गोसावीयांसि नीच करीति : मग गोसावी तेथोनि बीजें करीति : ॥',
+    explanation: 'प्रभू पूर्वी वींझी गोंडवाड्यात वास्तव्य करत असताना वन्य गोंड जमातीच्या लोकांनी प्रभूंचे मनोहारी रूप पाहून त्यांच्यावर प्रेम केले आणि वेळूच्या कांडात भात रांधून प्रभूंची केलेली प्रेमळ सेवा।'
+  },
+  {
+    id: 'lc_p42',
+    bookId: 'leela_charitra',
+    number: 42,
+    title: 'लीळा ४२: ससीकरक्षण',
+    titleEn: 'Leela 42: Sasikaraxan',
+    content: 'एकी गावीं गोसावीयांसि वस्ति जाली : वीहरणा बीजें केलें : वृक्षा एकाखाली गोसावीयांसि आसन जालें होतें : दोहों पारधीयां होड पडली : " जेयाचीं सुनीं ससा टाकी तो होड जीके " : दोहों पारधीं ससा सोडिला : रानीं दरदरकुटा नाहीं : ओहळवोहोळ नाहीं : ऐसें समस्त भूमिका पाहिली : ससा सोडिला : तेयासवें सुनीं लागलीं : ससा पळतु जातु होता : तवं गोसावीयांतें देखिलें : आणि गोसावीयांतें टाकुनि आला : सर्वज्ञें म्हणीतलें : " माहात्मे हो : या " : म्हणौनि गोसावीं जानु उचलिली : तो एउनि गोसावीयांचिए जानुखालि रीगाला : श्रीमूर्ती अवलोकूं लागला : तवं मागीलाकडौनि सुनीयां आलीं : तीया पुढां उभीया राहीलीया : तीयामागिलाकडौनि पारधी आले : ते पुढां उभे राहिले : दंडवत केलें : श्रीचरणां लागले : मग तेहीं गोसावीयांतें वीनवीलें : " जी जी : ससा सोडावा " : सर्वज्ञें म्हणीतलें : " हा नेदिजे " : तेहीं म्हणीतलें : " हा होडेचा ससा : देयावा जी : याकारणें सुरीया काढणीयां होती " : सर्वज्ञें म्हणीतलें : " हां गा : एथ सरण आलेया काइ मरण असे ?" मग तीहीं श्रीमुखाची वास पाहिली : " जी जी : तरि हा गोसावीं राखिला " : ऐसें म्हणौनि ते नीगाले : मग नीगतां सर्वज्ञें म्हणीतलें : " हां गा : एं रानींवनीं असति : तृण खाति : नदीवाहाळाचीं उदकें पीति : यांतें तुम्ही कां मारा ? एं तुमचें काइ करीति ?" " जी जी तरि आजिलागौनि न मरूं : आणि काइ " : ऐसें म्हणौनि तेहीं दंडवत केलें : श्रीचरणां लागले : मग नीगाले : ते गेले : गोसावीं वरती जानु उचलीली : आणि तेयातें अवलोकुनि सर्वज्ञें म्हणीतलेें : " माहात्मे हो : आतां जा " : आणि नीगाला : ॥',
+    explanation: 'पारध्यांच्या कुत्र्यांपासून वाचण्यासाठी एक ससा प्रभूंच्या पायापाशी आश्रयाला आला. प्रभूने पारध्यांना अहिंसेचा उपदेश देऊन सशाचे रक्षण केले, आणि पारध्यांनी वन्य प्राण्यांची शिकार न करण्याची प्रतिज्ञा घेतली।'
+  },
+  {
+    id: 'lc_p43',
+    bookId: 'leela_charitra',
+    number: 43,
+    title: 'लीळा ४३: सेंदुरजनीं मासउपवासिनी स्तीति',
+    titleEn: 'Leela 43: Sendurjanin Masaupavasini Sthiti',
+    content: 'गोसावीं गोपाळाचेया देऊळासि बीजें केलें : दारसाखांपासि उभेया ठाउनि दोन्ही दारसाका श्रीकरें धरूनि भीतरि अवलोकिलें : तवं आवघीया मासउपवासिनी बैसलीया असति : तेयातें गोसावीं अवलोकिलें : गोसावीयांतें देखौनि तेयांतळी एकि उठिली : श्रीचरणां लागलीं : श्रीमुखिचें तांबोळ मागीतलें : " जी जी तांबोळ देयावें : " गोसावीं अनुकारेंचि दाखविलें : " या अवघीया देखत असति कीं : " " ना जी : तैसें कांहीँ नाही : याचें काइ ? गोसावीं देयावें : " गोसावीं गरुडाचेया साजेयापासि बीजें केलें : गरूडारा गोसावीयांसि आसन जालें : तेथ तांबोळासि तीया हातु ओडवीला : गोसावीं तांबोळ दीधलें : आणि तेयांसि स्तीति जाली : आणि आपुला ठांई जाउनि बैसलीं : मग गोसावीं बीजें केलें : ॥ तें आपुलें कर्म वीसरलीं : तवं तीची परिचारका आली : तीएपुढें तेहीं सांघीतलें : " इयेचा मासोपवासु भंगला : एक माहात्मे आले : तेयांचें उचीष्ट तांबोळ घेतलें : " आणि तीए दीउनि भूलली ऐसी ठाकली : एकीं म्हणीतलें : " वायो ढळला : " एक म्हणति : " पीसें लागलें : " तवंधाकुटा भाऊ आला : तो उचलुनि आपुलेया घरासि घेउनि गेला : देव्हारेयावरि बैसवीली : ऐसी बारा वरीखें स्तीति भोगीत बैसली होती : गोसावीयांसि आपणेयांपासि देखतीचि असे : बारा वरीखां स्तीति भंगली : आणि एकसरी बोबाउनि उठिली : " नागवलीए ओ : नागवलीए ओ : " आणि दुख करूं लागली : तवं तेहीं म्हणीतलें : " आवो : कैसी नागवलीसि ? " " आतांचि गोसावीं होते : आतांचि गेले : " तेहीं म्हणीतलें : " तरि आम्हीं देखों ना ?" तीया म्हणीतलें : " तुम्हीं देखा ना : परि मीं देखें कीं : ते जरि पुरूख भेटती तरि माझें देह वांचैल : एन्हवी देह त्येजीन :" तवं धाकुटा भाऊ कणवाळु : तेहीं पुसिलें : " ते कैसे असति ?" " ना गौर श्रीमूर्ती : लंबकर्ण : वीसाळनेत्र : अजानबाहु : डावीए भवॅवरि कांदि : ऐसे असति :" मग धाकुटा भाऊ नीगाला : तेयासि बहीण थोर पढीए : तवं गोसावीयांसि गावांबाहेरि वृक्षा एका तळीं आसन असे : तवं तेणें गोसावीयांतें देखिलें : दंडवत घातलें : श्रीचरणां लागला : मग अवधी गोष्ट गोसावीयांपुढां सांघीतली : मां गोसावीं तेथ बीजें केलें : घरासि घेउनि आला : गोसावीयांसि तीया दंडवत घातलें : श्रीचरणां लागली : आणि मागुती स्तीति सुभर जाली : घरील कीया संबंधीं केली : मग तेहीं पुसिलें : " जी जी : आतां काइ ?" सर्वज्ञें म्हणीतलें : " तुम्ही उठवाल तेव्हाळि उठिती : तुम्हीं बैसवाल तेव्हाळि बैसती : तुम्हीं जेववाल तेव्हाळि जेविती :" ऐसां गोसावीं तेयांसि एतुला वरू दीधला : मग गोसावीं बीजें केलें : बारा वरीखें तैसीचि स्तीति : एक म्हणीत : अनोदकें नाहीं : ॥',
+    explanation: 'सेंदुरजनी येथे एका मासउपवास करणाऱ्या स्त्रीने प्रभूंच्या तांबोळाचा प्रसाद ग्रहण केला आणि तिला दिव्य स्तीती प्राप्त झाली. बारा वर्षे प्रभूंच्या ध्यानात राहिल्यानंतर प्रभूंच्या कृपेने तिला पुन्हा भानावर आणले गेले।'
+  },
+  {
+    id: 'lc_p44',
+    bookId: 'leela_charitra',
+    number: 44,
+    title: 'लीळा ४४: भोगरामीं अवस्थान',
+    titleEn: 'Leela 44: Bhogaramin Avasthan',
+    content: 'गोसावीयांसि खडकुली अवस्थान : तवं भोगरामीचीया बाया : तेहीं गोसावीयांतें देखिलें : आणि तेहीं म्हणीतलें : " हे आमचे नगीनदेव मां :" तवं बाइसीं पुसिलें : " बाबा : नगीनदेव म्हणजे काइ ?" यापरि सर्वज्ञें म्हणीतलें : " बाइ : हें पूर्वी भोगरामीं होतें :" यावरि हे गोष्टि सांघीतली : भोगरामीं गोसावीयांसि ओटेयावरि अवस्थान : रामाचे देऊळीं : उदीयांचि गोसावीं आसनीं उपवीष्ट असति : तवं बोणेबाइया देवतेसि दंडवता आलीया : तेहीं गोसावीयांतें देखिलें : दंडवत केलें : श्रीचरणां लागलीया : मग गोसावीयांतें पुसिलें " बा : आपणेयांसि नांव काइ नगीनदेव ?" गोसावीं श्रीमुगुटेंचि मानीलें : मग तीया रामासि गेलीया : पुजा केली : मग मागुतीया आलीया : गोसावीयांतें वीनवीलें : " बा नगीनदेव हो : आमचीये गुंफे बीजें करावें :" गोसावीयांसि बीजें केलें : ॥',
+    explanation: 'प्रभू चक्रधरस्वामींचे खडकुली येथे वास्तव्य असताना, भोगराम येथील काही स्त्रियांनी प्रभूंना पाहून "हे आमचे नगीनदेव आहेत!" असे म्हटले. त्यावर बाईसांनी विचारले, "बाबा, नगीनदेव म्हणजे काय?" तेव्हा प्रभूंनी भोगराम येथील ही पूर्वकथा सांगितली: भोगराम येथे प्रभूंचे रामाच्या देवळातील ओट्यावर वास्तव्य होते. सकाळी प्रभू आसनावर बसले असताना बोणेबाई दर्शनाला आल्या. त्यांनी प्रभूंच्या चरणी लोटांगण घातले आणि विचारले, "प्रभू, आपले नाव नगीनदेव आहे का?" प्रभूंनी मस्तकाने होकार दिला. नंतर बोणेबाईंनी मंदिरात पूजा केली आणि परत येऊन प्रभूंना विनंती केली, "प्रभू नगीनदेव, आपण आमच्या गुहेत चलावे." त्यानुसार प्रभूंनी त्यांच्या गुहेत प्रस्थान केले।'
+  },
+
+
+  {
+    id: 'lc_p45',
+    bookId: 'leela_charitra',
+    number: 45,
+    title: 'लीळा ४५: मनसीळे ब्राम्हणां स्तीति',
+    titleEn: 'Leela 45: Manasile Brahmana Sthiti',
+    content: 'हे गोष्टि गोसावीं लुखदेवोबावरि हीवरळीये सांघीतली : सर्वज्ञें म्हणीतलें : " बाइ एथिचेया नामापासोनि वेधु : कां स्थानापासोनि वेधु :" सर्वज्ञें म्हणीतलें : " बाइ : ब्राम्हणु एकु ओटेयावरि एउनि बैसोनि अनुष्टान करूं बैसे कीं अनुष्टान करूं वीसरे : आणि सुखचि होए :" बडुवा वोटा उदकें सीं पीला : तुळसी वाडी : ओटेयावरि पुस्प ठेउनि धुपारती मंगळारती केली : वाधावणें केलें : पाठीं देवतेसि पुजा धुपारती मंगळारती केली : ब्राम्हणें बडुवातें पुसिलें : " तुम्हीं या वोटेयासि धुपारती मंगळारती करीत असा तें काइ ?" तीहीं म्हणीतलें : " एथ पुरूख एक होते : ते बरवे कैसे : सौंदर्यें लावण्यें आथिलें : ते येथ होते तवं तेयांसि करूं : ते गेले : तरि या ओटेयासि करूं : " तेहीं बडुवातें पुसिलें : " ते कवणीकडे गेले ?" " ना ते मनसीळेकडे गेले :" तैसाचि तो मनसीळेसि आला : तवं गोसावीयांसि तळेयाचीए पाळी आसन होतें : ब्राम्हणें एउनि गोसावीयांसि दंडवत घातलें : श्रीचरणां लागौनि पुढां बैसला : गोसावीं तेयातें पुसिलें : " भटो : हें तुम्हां श्रुत कीं दृष्ट ?" " ना जी : श्रुत जी : भोगरामीचां बडुवीं गोसावीयांचें बरवेपण : सौंदर्यें लावण्य सांघीतलें : तेयातें मीयां पुसिलें : ते कवणीकडे गेले ? \' ना ते मनसीळेकडे गेले : \' तैसाचि मी एथ आलां जी : " आणि तेयासि स्तीति जाली : " मग गोसावीं तेथोनि बीजें केलें : ॥',
+    explanation: 'मनसीळे येथे प्रभूंच्या दिव्य अस्तित्वाचा प्रभाव इतका होता की तेथील ओट्यावर बसणारा ब्राह्मण आपली उपासना विसरून प्रभूंच्या प्रेमात दंग होत असे, आणि त्याला प्रभूंच्या महात्म्याची प्राप्ती झाली।'
+  },
+  {
+    id: 'lc_p46',
+    bookId: 'leela_charitra',
+    number: 46,
+    title: 'लीळा ४६: भांडारेकारां भेटि',
+    titleEn: 'Leela 46: Bhandarekaran Bheti',
+    content: 'मग गोसावीं तेथोनि भांडारेयासि बीजें केलें : गोसावीयांचा कटिप्रदेशीं सुडा : श्रीमुगुटीं सुडा : गोसावीं भांडारेकारांच्या आवारासि पाणीपात्रासि बीजें केलें : तया नांवें नीळभट : ते काणव : तवं भांडारेकारांचीया ब्राम्हणीं भांडारेकारांलागि आंघोळी पाणी सारिलें होतें : भांडारेकारांसि अभ्यंगाची आइति होत असे : भांडारेकारीं उत्तरासंगें धोल घातलें असे : ओसरीएवरि बैसोनि पोथी वाचीत होते : तवं अर्थू अवगमे ना : तो अर्थू मागीलीए फाकीए असे : ते पुढील फाकी पाहात होते : तवं भांडारेकरांचेया ब्राम्हणीं गोसावीयांसि पाणीपात्र दीधलें : परि ते गोसावीयांची वास ऐसी धातीया दृष्टी न पाहातीचि : मग गोसावीं साउमेयां बीजें करूनि म्हणीतलें : " भटो : मागीली फाकी पाहा :" आणि तेहीं गोसावीयांकडे प्रत्तौनि पाहिलें : आणि गोसावीयातें देखिलें : मग पोटीं म्हणीतलें : " ज्ञाता होति : काळू रूसला : मां काळांतें बुझाऊं नीगाले : किं काळचािवरि रूसले : ऐसें दीसताति : अबेव गळले असति : तेया वार लाविले असेति : भोजनअर्थीया भोजन मीळे : मां यां न मीळे : तरि माझे हीतक्ष होति :" सर्वज्ञें म्हणीतलें : " बाइ : भांडारेकारां दरीसनासवेंचि ज्ञानत्व : सुहृदत्व : हीतक्षत्व एं तीन्ही उमटलीं :" ऐसें जाणीतलें : तैसेंचि गोसावीं बीजें केलें : तेही गोसावीयांसरिसे नीगाले : तेयांची ब्राम्हणि दारवठावरि आली : तेहीं म्हणीतलें : " काइ तुम्ही हीं नीगाले ? तुम्हां पाणी सारिलें असे : " गोसावीं एवं मागुती वास पाहिली : तेहीं म्हणीतलें : " हें इतुके दीस तुम्हांपासि होतें : आतां जेयांचें तेयासवें नीगालें : तुम्हीं राहा :" आणि तीएं या सबदासरिसींची राहिलीं : मग माहादाइसीं पुसिलें : " हां जी : तीएं राहिलीं : आणि सबदासरिसींची राहिलीं कैसी जी ?" सर्वज्ञें म्हणीतलें : " बाइ : तीएं आज्ञाधरें कीं : तेयांची काढिली रेख नोलांडीती :" मग तैसेंचि गोसावीं देवकी तळेयासि बीजें केलें : डावेनि श्रीचरणें सीळेवरि उदक घातलें : श्रीकरिचें पाणीपात्र घातलें : भांडारेकार सोळा हातेया साउलेयांचें धोत्र : उत्तरासंगें नेसले होते : तें अर्ध फाडिलें : गोसावीयांसि आसन रचिलें : गोसावी आसनीं उपवीष्ट जाले : भांडारेकार पुढां मांडेखुटी घालुनि बैसले असति : गोसावीयांसि आरोगण जाली : गुळुळा जाला : भांडारेकारीं प्रसादु घेतला : मग पोटीं मनौर्थु करूं लागले : जें \' माझें गोसावीयांचां ठाईं काहीँ प्रवेसन नव्हेंचि : मी काहीँचि घेउनि न नीगोंचि : \' ऐसें दूख करीत बैसले : सर्वज्ञें म्हणीतलें : " भांडारेकार हो : मनौर्थु करीत असा तो एथोनि सीधो नेइर्जल हो :" भांडारेकारा दरीसनासरीसेंचि ज्ञातृत्व : आप्तत्व : प्रतीति : तीन्ही अवधारिलीं : सर्वज्ञें म्हणीतलें : " भांडारेकार उठों बैसों जाणति : तैसें कोन्हीहि नेणति :" भांडारेकारां सोळा वरीसें संनधान : परि पुष्टिवीभाग कहीं देखिलाचि नाही : ॥',
+    explanation: 'भांडारे येथील नीळभट (भांडारेकर) प्रभूंच्या दर्शनाने कृतार्थ झाले. त्यांच्यात तात्काळ ज्ञानत्व, सुहृदत्व व हितक्षत्व प्रकट झाले. त्यांनी आपले वस्त्र अर्धे फाडून प्रभूंचे आसन रचले आणि त्यांची सेवा केली।'
+  },
+  {
+    id: 'lc_p47',
+    bookId: 'leela_charitra',
+    number: 47,
+    title: 'लीळा ४७: भांडारेकारां स्तुति करावेया आनोज्ञा',
+    titleEn: 'Leela 47: Bhandarekaran Stuti Karaveya Anojna',
+    content: 'भांडारेकारांची स्तुति गोसावी सांगीतली : भटांचीए स्तुतीवरि : सर्वज्ञें म्हणितलें : "कां गा : काहीँ आपुलें कीं एथिंचें?" भटीं म्हणितलें : "जी जी : गोसावीयांचें कीं :" सर्वज्ञें म्हणितलें : "एथिंचेचि एथ काइ बोलावें असे? स्तुति ऐसी भांडारेकारचि करूं जाणति :" भटीं म्हणितलें : "तें कैसें जी ?" सर्वज्ञें म्हणितलें : "हें भांडाराहुनि नीगाले : भांडारेकार भीक्षा करिती : यांसि आरोगण देति : मग आपण उचीष्ट प्रसादु घेति : स्वेष्ट ठाओ तो पहुडावेया यांसि : एथची सेवा करिती : हें नीदवीजे : मग आपण एकादी एकी कोणांतं : का देऊळाबाहेरि एकादीए देऊळीं : तेथ नीद्रा करिती :" ऐसें भांडारेकारांसि सोळा वरीखें संनधान : गोसावी मार्गे बीजें करिती : एकीं गावीं गोसावीयांसि वस्ति जाली : भांडारेकार गोसावीयांकारणें सवनासन रचुं गेले : तवं भांडारेकारातें वींगुळीं खादलेें : ते थोर दूख व्येथा हों लागली : मग गोसावीयांतें वीनवीलें : "जी जी : मातें वींगुळीं खादलेें : तें मज थोरि दुख व्येथा होताए जी : तरि मीं गोसावीयांची स्तुति करूं ?" सर्वज्ञें म्हणितलें : "करा :" मां एथिची स्तुति करूं लागले : मां जवंजवं स्तुति करिती तवंतवं दुखाची व्येथा उणी होए : ऐसी वींगुळी उतरली : दंडवतें घातलीं : श्रीचरणां लागले : मग गोसावी उदीयांची तेथौनि बीजें केलें : ॥',
+    explanation: 'प्रभूंच्या सांगण्यावरून भटांनी भांडारेकरांची स्तुती केली. प्रभूंच्या दिव्य दर्शनाने व स्तुतीने भांडारेकरांच्या पायातील विंचवाचे विष उतरून वेदना आणि दुःख तात्काळ दूर झाले।'
+  },
+  {
+    id: 'lc_p48',
+    bookId: 'leela_charitra',
+    number: 48,
+    title: 'लीळा ४८: अळजपुरीं अवस्थान ॥ धानुबाइआवारीं भांडारेकारां पुजा',
+    titleEn: 'Leela 48: Alajpurin Avasthan || DhanubaiAvarin Bhandarekaran Puja',
+    content: 'तैसेंचि गोसावी अळजपुरासि बीजें केलें : अळजपुरीं पींगळवहीरीं अवस्थान झालें : \'गोसावीयासि मीं बरवी पुजा न करीचि :\' ऐसें भांडारेकारांचां पोटीं उरलेंचि होतें : भांडारेकार तो अप्रतोखू भावितीचि असति : \'जें माझें कांहीं गोसावीयांचां ठाईं प्रवेसन नव्हेंचि :\' गोसावी जाणोनि भांडारेकारांची वास पाहुनि म्हणितलें : "भटो : तुम्हां करणीए एक असे :" भांडारेकारीं म्हणितलें : "तें तरि गोसावी जाणति असति कीं :" सर्वज्ञें म्हणितलें : "तूं उभा ठाकलासिचि पुरे : तें एथौनिचि तुमचें सीधी नेइजेल कीं :" मां एकु दीं गोसावीं नीर्वाणे बीजें केलें : चौकीं गोसावी उभे जाले : भांडारेकारातें सर्वज्ञें म्हणितलें : "भटो : तुम्ही ए देऊळीं बैसा" : हें पैला देऊळीं जाइल : " नीगतां सर्वज्ञें म्हणितलें : "कव्हणी काही म्हणैल तें कीजे हो : भटो :" ऐसें म्हणौनि गोसावीं नीर्वाणे मागिला बहीरवांचेया देऊळा बीजें केलें : ते नीर्वाणेसि बैसले : धानाबाइ हें पांचौळींची राणी : तीए सि नीर्वाणेची भगति : ते नीर्वाणेसि दांडीए बैसोनि आली : ते भीतरि देऊळाआंत गेली : नीर्वाणेसि पुजा केली : काहीँ ब्राम्हणा दीधलें : मग बाहिरि नीगाली : तवं चौकीं भांडारेकारातें बैसलेया देखिलें : तेयांसि नमस्कारु केला : मग म्हणितलें : "आमचेया आवारासि बीजें करावें :" "हो काँ :" म्हणौनि नीगाले : आपुलेया आवारा घेउनि गेलीं : तीयां तेयांसि पटिसाळे आसन घातलें : तेथ ते बैसले : मग तीयां ताट भरूनि पुजाद्रव्यें आणिलीं : बरवी पुजा करूं आदरिलीं : तीहीं पुसिलें : "हें काइ ?" तीयां म्हणितलें : "ना हें तुम्हांसि पूजा करूंनि :" भांडारेकारीं म्हणितलें : "हे पुजा आम्हांसि काइसी ? हे पुजा आमचेया गोसावीयांसि कीं :" धानाबाइया म्हणितलें : "ऐसें : तुम्हांही आणीक एक गोसावी असति ?" भांडारेकारीं म्हणितलें : "तरि काइ : आम्हांसि गोसावी असति :" धानाबाइया म्हणितलें : "ते कवणी ठाई असति ? सांघा : मां आम्हीं तेयातें बोलाउनि :" भांडारेकारें म्हणितलें : "ते तुमचेया बोलाविलेया नैएति : तेयातें आम्हींचि बोलाउनि :" इतुकेनि भांडारेकार बोलवावेया गेले : मग गोसावीयांपुढें सांघीतलें : गोसावीयांतें वीनवीलें : गोसावीं वीनवणी स्वीकारिली : मां गोसावीं तेथ बीजें केलें : गोसावीयांतें बोलाउनि घेउनि आले : धानाबाइया गोसावीयांतें देखिलें : मग बरवें आसन केलें : गोसावी आसनीं उपवीष्ट जाले : मग धानाबाइया गोसावीयांलागि : तेयाहीहुनि उंचें बरवीं पुजाद्रव्यें आणिलीं : ताट भरूनि गोसावीयांसि पुजा करूं आदरिली : सर्वज्ञें म्हणितलें : "बाइ : हें यांचें कीं : हें यांचां हातीं देया : मां हे एथ पुजा करिती : मां एथौनि एथ स्वीकारिजैल :" "हो कां जी :" म्हणौनि तेहीं भांडारेकारांचां हातीं दीधली : मग तीएं देती भांडारेकारांचां हातीं : आणि म्हणति : "हा पदार्थु अमुकीए अवएवीं वोळगवा : हा अमुकीए अवेवीं ओळखवा :" मग भांडारेकार ते ते पदार्थ तीए तीए अवेवीं ओळखविती : ऐसी भांडारेकारीं गोसावीयांसि बरवी पुजा केली : मग तेयांलागौनि ताटभरूनि पुजाद्रव्यें आणिली : तेहीं म्हणितलें : "हें काइ कराल ?" धानाबाइया म्हणितलें : "हे तुम्हांसि पुजा करूनि :" भांडारेकारीं म्हणितलें : "हें तवं आमचां हातीं देया : मां आपुली होतीं :" गोसावीयांसि पुजा करूनि : "हो कां :" म्हणौनि तेहीं तेयांहातीं दीधली : मां भांडारेकारीं गोसावीयांसि पुजा केली : ऐसीया दोन्ही पुजा गोसावीयांचां ठाईं केलीया : मां भांडारेकारां थोरू परीतोखू जाला : मां आवघे अळंकार गोसावीचि फेडवीले : तेयासि मागुतें धानाबाइसि देओं आदरीलेें : तीहीं नीराकारीलें : "हें काइ जी : इस्तरी वाइलें तें मागौतें कैसें घेइजे ?" सर्वज्ञें म्हणितलें : "बाइ : तुम्ही वाइलें यांसि : एथौनि एथ स्वीकारिलें : आतां एथौनि तुम्हांसि देइजत असिजे :" "ना जी : हें चंडीस :" सर्वज्ञें म्हणितलें : "हें जेया रायाचां भांडारीं असे तेयांचें भांडार थोर होए :" सर्वज्ञें म्हणितलें : "एथिंचें होतें घेया :" म्हणौनि दीधलें : मग तेहीं घेतलें : तेणें नीर्वाणेचेया देऊळा चुना पीटीला : पौळि केली : तीएं अस्तीकें : उदेसिलें द्रव्य भांडारीं न घालीतीचि : मग गोसावीं तेथौनि बीजें केलें : भांडारेकाराचेया खांदावरि श्रीकरू घालुनि सर्वज्ञें म्हणितलें : "भटो : एथौनि तुमचें करणीए चरीतार्थ हो : ॥',
+    explanation: 'अळजपूर येथे धानूबाईच्या आवारात भांडारेकरांनी प्रभूंची मनोभावे पूजा केली आणि त्यांना नैवेद्य समर्पण केला. धानूबाईच्या आग्रहावरून प्रभूंनी त्यांची ही सेवा गोड मानून घेतली।'
+  },
+  {
+    id: 'lc_p49',
+    bookId: 'leela_charitra',
+    number: 49,
+    title: 'लीळा ४९: नांदीएडीं भावतीर्थी अवस्थान',
+    titleEn: 'Leela 49: Nandiedin Bhavatirthi Avasthan',
+    content: 'मग गोसावीं तेथौनि नांदीएडासि बीजें केलें : नांदीएडीं भावतीर्थी उत्तराभीमुख नरसीहांचें देऊळ : उत्तरदखीण दोनि ओटे : तेथ गोसावीयांसि रीगतां डावेया हाताकडे ओटा : तेया ओटेयावरि गोसावीयांसि आसन : उजवीकडे ओटा : तेथ भांडारेकार असति : भांडारेकार भीक्षेसि जाति : भीक्षा करूनि एति : गोसावीयांसि आरोगण देति : ॥',
+    explanation: 'नांदीएड येथे भावतीर्थावरील नरसिंहाच्या मंदिरात प्रभूंचे वास्तव्य होते, जेथे भांडारेकर नेहमी भिक्षा मागून आणून प्रभूंची सेवा करत असत।'
+  },
+  {
+    id: 'lc_p50',
+    bookId: 'leela_charitra',
+    number: 50,
+    title: 'लीळा ५०: पटिसाळनीमीत्यें भांडारेकारां सीक्षापण',
+    titleEn: 'Leela 50: Patisalnimityen Bhandarekaran Sikshapan',
+    content: 'एकु दीस भांडारेकार भीक्षेसि गेले होते : तवं पटिसाळेसि लेंकरूवें पढतें होतीं : तवं पटिसाळ पडत देखिली : भांडारेकारीं म्हणितलें : "आरे आरे बटिकरें हो : उठा उठा : बाहिरि नीगा : पटिसाळ पडतीए :" ते अवघे उठिले : बाहिरि नीगाले : पैन्हां उभे राहिले : आणि तैसिचि पटिसाळ रीचवली : आणि तेयांसि आस्चर्य जालें : ते आपुलालेया घरा गेले : तीहीं आपुलालीए घरीं सांघीतलें : "आजि आमते एहीं माहात्मा राखिलें : एन्हवी आम्हांवरि पटिसाळ पडिती : सांघीतली : बाहिरि नीगालों : आणि पटिसाळ पडली :" मां घरोघरीं पाटपीढीं बैसों घालिती : पाए धूति : टीळे गंधाक्षता करीति : माळा : तांबोळें : सोपस्कर भीक्षा घालीती : ऐसी बरवी भीक्षा घेउनि भांडारेकार आले : गोसावीयांसि नरसीहांचां चौकीं आसन : गोसावीं तेयांतें देखौनि श्रीमुगुटाचेनि अनुकारें पुसिलें : तेहीं अवघा वृत्तांतु सांघीतला : "जी जी : मीं भीक्षेसि गेलां : तवं चाटे पटिसाळे पढत होते : मीया म्हणितलें : \'आरे : उठा उठा : पटिसाळ रीचवली\' : ऐसे आवघे बाहिरि उभे ठाकले : तवं पटिसाळ रीचवली : तेहीं घरोघरीं सांघीतलें : \'एहीं आमते राखिलें : जी जी : तीए मज पाटपीढीं बैसावेया घालीति : बरवी सोपस्कर भीक्षा सुति : टिळे गंधाक्षता :\'" सर्वज्ञें म्हणितलें : "हां गा : ऐसेही केलेया लोकु न भजे ? ऐसें न कीजे कीं : तुम्हां ऐसेंचि होईल : परि हें नव्हे :" तेव्हाळि भांडारेकारीं गोसावीयातें वीनवीलें : "जी जी : आजिलागोनि ऐसें मीं न करीं : मज हें न व्हावें :" सर्वज्ञें म्हणितलें : "ऐसें न करां तरि नव्हे :" ॥',
+    explanation: 'पाठशाळेत मुले शिकत असताना शाळा पडणार हे भांडारेकरांनी आधीच ओळखून त्यांना बाहेर काढले, ज्याने मुलांचे प्राण वाचले. प्रभूंनी त्यांना चमत्कार दाखवून लोकांमध्ये प्रसिद्ध न होण्याचा उपदेश दिला।'
+  },
+  {
+    id: 'lc_p51',
+    bookId: 'leela_charitra',
+    number: 51,
+    title: 'लीळा ५१: भांडारेकारां देहअवसान',
+    titleEn: 'Leela 51: Bhandarekaran DehAvasan',
+    content: '\'भांडारेकारांसि बाहीरीतीएचा उपद्रो : ते बाहिरि जाति तरि गोसावी श्रीकरू देति : ते गोसावीयांचा श्रीकरू धरीति : मग गोसावी तेयातें बाहिरि नेति : बाहीरूनि भीतरी आणीति : ऐसें तेयांचेया एरझारांचें दूख देखौनि मग गोसावी तेयांची सुस्रुका करीति : आपुलेनि श्रीकरें तेयांचीं वस्त्रें धूति : मागुती पांगुरवीति : बाहीरिती फेडीति : ऐसी तेयांची सुस्रुका करीति : गंधि सुटली : ते बडुवे आणि ब्राम्हण : नावेक ऐसी खंति करीति : आणि संन्यासी : तेथ जपत होते : ते खंति करीति : गोसावीं भांडारेकरातें खांदेसीं लाउनि गंगेपैललाडिला नांदेश्वरा नेलें : तेथ तीराति अवस्थान जालें : भांडारेकारां देहअवसानसमो मांडला : मग गोसावीं उसेया मांडी दीधली : गोसावीं म्हणितलें : "भटो काळवंचना कां करा ना ?" "ना जी : मज हें संनधान : ऐसी उसीसें मांडी कैची जी ? होआवें काहीँ तें आतांचि होआवें जी :" श्रीमुख अवलोकितां : मग देहअवसान जालें : बडुवांकरवि कुदळीपाउडें आणिंवीलें : खांच खणीतली : गोसावीं रीगौनि पाहिलें : डोइएकडे गोसावीं धरी लें : पायांकडे बडुवां धरिलें : मग ऐसा नीक्षेपू केला : मग सर्वज्ञें म्हणितलें : "मग बाइ : यांसि तेथ नसवेंचि :" मग गोसावीं तेथौनि बीजें केलें : ॥',
+    explanation: 'भांडारेकरांचे शेवटचे दिवस जवळ आले असता प्रभू स्वतः त्यांची सेवा करत असत. शेवटी त्यांच्या देहवसानानंतर प्रभूंच्या मांडीवर त्यांनी प्राण सोडले आणि प्रभूंच्या हस्ते त्यांना समाधी देण्यात आली।'
+  },
+  {
+    id: 'lc_p52',
+    bookId: 'leela_charitra',
+    number: 52,
+    title: 'लीळा ५२: गोपाळांतु खेळु',
+    titleEn: 'Leela 52: Gopalantu Khelu',
+    content: 'गोसावी मार्ग बीजें करिताति : तवं गोपाळ राणेभेरीयांचा खेळ खेळत होते : गोसावीं तेथ बीजें केलें : "हां गा गोपाळ हो : हें तुम्हांआंतु खेळों एओं ?" तीहीं म्हणितलें : "या कां जी :" सर्वज्ञें म्हणितलें : "हें राणे होइल : तुम्ही भेरी होआ :" "जी जी :" गोसावीं तेयांतु खेळों आदरिलें : तवं गोसावीयाचेया गडेयावरि पेणा आला : हें जाउनि तेयांचीए पाठीवरि बैसलें : आणि तेयांसि स्तीति जाली : पेणा उतरला : परि तो पाठीवरौनि नुतरी : एरें म्हणितलें : "हा रे : पेणा उतरला तरि तुं कां पाठीवरौनि नुतरसि ?" "आरे : माझीये पाठीं देओ बैसला : कीं मज सुख आनंदु होतु असे :" तवं एकें म्हणितलें : "आगा देवा : माझीये पाठीवरि बैस कां :" आणि हे तेयाचीए पाठीवरि बैसलें : तेयासि सुखचि जालें : मां आणीकें म्हणितलें : "माझीये पाठीवरि बैस कां :" म्हणौनि हाचि खेळु प्रवर्त्तला : ऐसें आघवीयांचीए पाठीवरि आरोहण केलें : आवघयांसि सुख आनंदु दीधला : मग गोसावीं बीजें करूं आदरीलेें : गोपाळीं गोसावीयातें वीनवीलें : "जी जी : गोसावीं आरोगण करावी : मग गोसावीं बीजें करावें :" मग आवघां मोटा सोडिलीया : गोपाळीं काळा केला : "एईं गा देवा : जेऊं :" आपुलालीए मोटेचा बरवा बरवा पदार्थु नीवडीला : मग गोसावीयांसि वोळगवीला : गोसावीयांसि आरोगण जाली : अवघें गोसावीयांचीए पांती जेविले : मग हें तेथौनि नीगालें : मग ते एकमेकांप्रति सुखानंदु म्हणौनि अनुमोंद लागले : एरू म्हणे : "आगा : माझीए पाठीवरि देओ बैसला : मां मज सुखानंदु काइ होए गा :" तवं मागें संन्यासी एक जात होते : तेहीं आइकिलें : मग तेहीं म्हणितलें : "काइ पां आनंदु सुख ? तें हे केवि जाणति ? ए गोवळरूएं : गोरूवें राखति : अनंदु हे ब्रम्हाचा : हा सबदु वेद्वांसाचा : हा सबदु हे गोवळें केवि जाणति ?" मग तेयांतें पुसति : "हा गा : गोवळे हो : सुखानंदु कैसा गा ?" तेहीं म्हणितलें : "आगा : आम्हांआंतु देवो एकु आला : आमसी खेळीनला : आमचीए पाठीवरि बैसला : तो जेयाचीए पाठीवरि बैसे तेया सुखानंदु होए : आम्हांआंतु जेविला : आम्हां सुखानंदु दीधला : मग गेला :" तेहीं पुसिलें : "तो देवो कवणीकडे गेला ?" "ना एणेंचि मार्गें जाताति :" तैसेचि ते तेणें मार्गें नीगाले : तवं एका वृक्षाखालि हें आसनीं बैसलें होतें : तीहीं एउनि दंडवत घातलें : श्रीचरणां लागले : आणि तेया स्तीति जाली : सर्वज्ञें म्हणितलें : "ते अद्यापि द्रावडदेसीं आचारीए होउनि वर्तत असति :" ॥',
+    explanation: 'गोपाळांसोबत खेळताना प्रभू त्यांच्या पाठीवर बसले, ज्यामुळे गोपाळांना अलौकिक ब्रह्मानंद आणि सुखाची अनुभूती झाली. प्रभूंच्या स्पर्शाने आणि कृपेने संन्याशांनाही दिव्य प्रचिती आली।'
+  },
+  {
+    id: 'lc_p53',
+    bookId: 'leela_charitra',
+    number: 53,
+    title: 'लीळा ५३: गोपाळ चोंढीए लपवणें',
+    titleEn: 'Leela 53: Gopal Chondhie Lapavane',
+    content: 'एकी गावीं वीहीरी एकीचीए रवणीवरि गोसावीयांसि आसन असे : तवं तेथ गोपाळ गाइ पाणीयांसि घेउनि आले : जो ए तो घोंगडें ठेवी : मोट ठेवी : डांग ठेवी : मोहरी ठेवी : पावा ठेवी : आणि वीहीरीआंत पव्हावेया रीगे : तो अदृस्य होए : आणीक ये तोही अदृस्य होए : ऐसे अवघेचि वीहीरीआंत पव्हावेया रीगाले : ऐसे आवघे अदृस्य जाले : गाइ पाणी पीयालीया : गोठणीं बैसलीया : गोठणीनि राना गेलीया : रानौनि गावांतु आलीया : आपुलालेया घरा गेलीया : तवं गोपाळ गाइंसवें नाहीं : एकीं म्हणितलें : "हा गा : गाइ आलीया : गोवळें नैएतीचि ?" मग एरू एरातें पुसे : "हा गा : तुमचा गोवळु आला ?" "ना : नाहीं आला :" "तरि चाला ना : गोवळांचीए सुधी जाओं :" मग ते अवघेचि गोवळांचीए सुधी नीगाले : रानवरि हींडीले : परि गोवळे तेदखतीचि : आले : तवं वीहीरीचीए कांठीं डांगा : कांबळें : मोटा : मोहरी : पावे : वाहाणा देखौनि म्हणीतलें : "हो जी : एथ गोवळे होते कीं ?" सर्वज्ञें म्हणितलें : "होते मा :" "कें असति जी ?" गोसावीं ऐसें श्रीकरें वीहीरीकडे दाखविलें : मग तेहीं म्हणितलें : "जी जी : तरि काइ देखिजति ना ?" सर्वज्ञें म्हणितलें : "जें जेयाचें नांव तें घेउनि बोलाबा : मां तो नीगैल :" "मां जेयाचा जो गोपाळु : तो तेयाचें नांव घे :" सांया : \'मायां : \' कांयां : \' ऐसें म्हणति : आणि तो उदकाआंतौनि निगे : जो नीगे तो घोंगे घे : कांबळि घे : मोट घे : मोहरि पावा घे : वाहाणा घे : आणि धाव घे : ऐसे अवघेचि नीगाले : जो नीगे तेयातें पुसति : "हां रे : तुं कोठें होतासि ?" तो म्हणे : "मीं या गोसावीयांपासि होतां :" ते म्हणति : "गोसावी तरि एथ बाहेरि असति :" ते म्हणति : "ना मां : गोसावी आम्हांपासि होते :" ऐसें अवघेयातें पुसिलें : मग माहादाइसीं पुसिलें : "जी जी : ते कवणी ठाईं होते ?" सर्वज्ञें म्हणितलें : "ते देवते एकीचीए अवगळां होते :" ॥',
+    explanation: 'गोपाळ विहिरीत पोहताना अदृश्य झाले होते. प्रभूंच्या सूचनेनुसार प्रत्येकाचे नाव घेऊन हाक मारताच सर्व गोपाळ विहिरीतून बाहेर आले आणि त्यांनी प्रभूंचे महात्म्य अनुभवले।'
+  },
+  {
+    id: 'lc_p54',
+    bookId: 'leela_charitra',
+    number: 54,
+    title: 'लीळा ५४: गोवारीयां ज्वरनीवृत्ति',
+    titleEn: 'Leela 54: Govariyan Jvarnivritti',
+    content: 'एकी गावीं गोसावीयांसि देऊळीं अवस्थान : गोवारी गोवारें राखावेया रानासि जाये : गोसावी वीहरणासि जाति : वीळचां गोसावी वीहरूनि एति : तो गोवारें राखौनि ए : एतां जातां तो गोसावीयांच्या दरीसनास ए : दंडवत करी : श्रीचरणां लागे : कव्हणी वेळे यातें पाणीपात्रासि घेउनि जाए : कव्हणी एकी वेळे आरोगणे वीनवीलें : गोसावीयांसि वीहरणीहुनि एउनि बैसे : ऐसी तेयासि सलगी पडली होती : ऐसां तेयासि एकु दीं ज्वरू आला : तेयाची माता धावांधावि करूं लागली : तवं तेणें म्हणितलें : "आवो : तुं आओ : पैल जे गोसावी आहाति ते बोलावि : आणि मज सुख होइल :" मग तेयाची म्हातारी गोसावीयांपासि सांघावेया आली : "काइ करीन गा देवा :" ऐसें दुख करीत आली : सर्वज्ञें म्हणितलें : "हें देऊळीं बैसलें होतें : एउनि यांसि दंडवत घातलें : श्रीचरणां लागलीं :" मग म्हणितलें : "जी जी : तुमचा सांगाती : मैतु : तेयासि ज्वरू आला कीं : आजिचि गोरूवें सुनीं गेलीं जी : गोवारें राखतें कोन्ही नाहीं : मागिला मासवडेयाचें आलें नाहीं जी : आणि पुढीलू मासवडा भरला जी : उदीयां ते आणीकु गोवारी उभा करिती : ऐसा तोंडा आला घांस काढला जी : आम्हीं दुबळीं : काइ खाउनि जी ? लेंकुरवाळी आतां काइ करूं जी ?" सर्वज्ञें म्हणितलें : "मग हें तेथ गेलें : तेयांची पासबडी पांघरोनि तेयांचीये पाठीशीं जाउनि नीजेलें : एतुलेन तेयांचा जरू गेला : तो एथ घेतला : तो न्हाला : जेविला : गोरूवांसांगातें गेला : मां एथ तीनि दी जरू स्वीकारिला : तेयाचें पथ्यपाणी स्वीकारिलें : मग जरू गेला : तीसरा दीं नीगों आदरीलेें : तीएं यासि जावों नेदीति : मां हें तेयांसी भांडौनि नीगालें :" हे गोष्टि गोसावीं भूतानंदाप्रति सांगीतली : तेही आपुलीए नातिचा जरू घेतला : तीएतें खेळों पाठवीलें : ॥',
+    explanation: 'एका गोवारी मित्राला तीव्र ज्वर (ताप) आला असता प्रभू स्वतः त्यांच्या घरी गेले आणि त्याचा ताप स्वतःवर घेऊन त्याला निरोगी केले।'
+  },
+  {
+    id: 'lc_p55',
+    bookId: 'leela_charitra',
+    number: 55,
+    title: 'लीळा ५५: खीरारीयां नेत्रपतन',
+    titleEn: 'Leela 55: Khirariyan Netrapatan',
+    content: 'एकु गाओ कान्हरदेयाचा : एकु तेयाचेया साहाणीयांचा : तीए गांवीं गोसावीयांसि अवस्थान : कान्हरदेयाचां खीरारीं साहाण्यांचीए गाविचेया साळिवनाआंतू दातुनि म्हैंसी सुदलीया : तो अवघा गाउ धावणेयां नीगाला : तेयांसवें फुटेयाची तळसुती करूनि गोसावींही बीजें केलें : सर्वज्ञें म्हणितलें : "जैसें हें तेयांचें आठावेठीचें पाइक : तैसें हें तेया पुढेंपुढें धावें :" सर्वज्ञें म्हणितलें : "हें सीष्टाइ करूं रीगालें : कान्हरदेयाचे खीरारी सीष्टाइ न मनीती : तेयांतु एकु पुढां वाढीनाला : तेणें म्हणितलें : \'जा : आपुलेया समर्थासि सांघा :\' ऐसें तेयाचा अधीकाओ देखौनि तो एथौनि चडकणा हाणीतला : थापेसरिसा डोळा खालि पडिला :" सर्वज्ञें म्हणितलें : "एथौनि डोळा श्रीकरें घेतला : आणि मागुता लाविला : श्रीमुखीं तांबोळ होतें तेयाची पीडि डोळां बांघली : इतुलेनि मागुता डोळा जैसा होता तैसा नीका जाला : तो म्हणे : \'गोसावीं हाणीतलें नाहीं : गोसावीं माझा डोळा दीधला :\' मग सीष्टाइ मानिली : ते आपुलेया गावां गेले : मग तेथौनि बीजें केलें : ॥',
+    explanation: 'कान्हरदेवाच्या खीराऱ्याने गैरवर्तन केले असता प्रभूंच्या थपडेने त्याचा डोळा खाली पडला, परंतु प्रभूंच्या हाताच्या स्पर्शाने व तांबुलाच्या वापराने त्याचा डोळा पूर्वस्थितीत निरोगी झाला।'
+  },
+  {
+    id: 'lc_p56',
+    bookId: 'leela_charitra',
+    number: 56,
+    title: 'लीळा ५६: कळावी बीरणें: देवी वीकारज्ञान',
+    titleEn: 'Leela 56: Kalavi Birane: Devi Vikarjnana',
+    content: 'नाथोबा घोगरगावां भीक्षेसि जाति : तेयाउपरी गोसावीं हे गोष्टि सांगीतली : सर्वज्ञें म्हणितलें : "आति : यातेही देखौनि प्राणीयांसि वीखो भोगु आवडे :" गोसावीयांसि कटिप्रदेशीं एकु सुडा : श्रीमुगुटीं एकु सुडा : गोसावीं ठाकुरा एकाचेया आवारासि पाणीपात्रासि बीजें केलें : तवं तेयां ठाकुराची राणी न्हाली होती : न्हाउनि चौरंगावरि बैसोनि केस वाळवीत होती : तीएजवळि बटीक होती : तीया गोसावीयांतें देखिलें : आणि तीया बटीकीतें म्हणितलें : "पुस गे : या देवासे काइ देवी असे कीं नसे ? देवीवीण देवासि गमे केवि ?" ऐसें म्हणौनि वाकडे पाहे : तेवीचि हातिची कळावी बीरी : गोसावीं श्रीकरीचेनि आंगुठेयाचेनि नखेंकरूनि दाविलें : ऐसें वेळा एकि दोनि : मग तेया परिचारका गोसावीयातें पुसिलें : "हो देव हो : तुम्हांसि देवी असे कीं नसे ?" गोसावीं श्रीमुगुटें नीराकारिलें : मग तेथौनि बीजें केलें : सर्वज्ञें म्हणितलें : "यातेंही देखौनि प्राणीयांसि वीखो भोगु आवडे :" ॥',
+    explanation: 'ठाकुराच्या राणीने प्रभूंच्या वैराग्यावर शंका घेतली असता प्रभूंच्या दिव्य दर्शनाने व कळावी बीरणेच्या प्रसंगाने तिला प्रभूंच्या विकाररहित आणि अलौकिक रूपाची प्रचिती आली।'
+  },
+  {
+    id: 'lc_p57',
+    bookId: 'leela_charitra',
+    number: 57,
+    title: 'लीळा ५७: चोरू सांगती सोडवणें',
+    titleEn: 'Leela 57: Choru Sangati Sodavane',
+    content: 'हे पुर्वी एळापुरीं देमाइसांप्रति : सारंगपंडितांउपरि सांगीतली : एकी गांवीं गोसावीयांसि देऊळीं आसन असे : तीए गांवीं घोडेयाकारणें वळघा जाला होता : अधीकारीयाची घोडी चोरीं नेली होती : तो एकु चोरू खोडां घालुनि ठाविला होता : गोसावीं देव्हारेया शेजारी पहुडु असे : तवं रात्रीचां माजघरासि चोरू वीनवीत असे : "बा देवा हो : सुरीए खांदी घालि : या देवा हो : मज सोडवा :" गोसावीं पोटीं दया उपजली : चौकीं गोसावी उभे ठाकले : "हां गा : कोण सोडवि ?" तवं चौकीचा रक्षक पहुडला होता : तो ऐकौनि म्हणितलें : "बा देवा हो : मीं सोडवीं :" गोसावीं म्हणितलें : "हां तरi सोडवा कीं :" तो उठिला : तेणें सुरीयेन खोडा कापिला : घातला होता : तराळ भवनीएसि आले : तवं गोसावीयांसि खांडेउळीएसि आसन असे : गोसावीयांतें देखिलें : "हा कोणु गा?" गोसावीयांसि मौनाची प्रवृति : गोसावी उगेचि होते : तिहीं म्हणीतलें : "आरे : धरा धरा : हा तेयातें काढु आला :" गोसावीयांतें धरीले : गोसावीयातें म्हणीतलें : "चाल गा :" गोसावीयांतें माणिकेयापासि आणिलें : "घालि घालि गा पाओ :" गोसावीं माणिकां श्रीचरणु घातला : गांविचे खीळि आफळुं बैसले : तवं हातु वरिचां वरि खीळिला राहिला : तो म्हणे : "आगा मज खीळि नाफळवे :" तवं एरू घे : ऐसें कवणाचेनही नाफळवे : मग अधीकार्यापुढें सांघों गेले : "तेया चोरातें आणीकु चोरु काढावेया आला : तो आम्हीं धरिला : तो आम्हीं खोडां घातला : खीळि आफळुं जातों तवं वरुतेचि हात जाताती : परि खालुतें नैएति :" ऐसी अवधी वेवस्था सांगीतली : मग तो घोडेयावरि बैसोनि कळदीवीयांसी आला : तवं गोसावीयांचें सौंदर्य देखौनि म्हणीतलें : "हें काइ रे पापीये चांडाळ हो : ऐसें तुम्हां करिव कवणें करिविलें ? हें काइ रे : गोसावीयातें कैसें घातलें?" घोडेयाखालुता उतरला : दंडवत घातलें : श्रीचरणासि लागला : गोसावीयांतें वीनवीलें : "जी जी काढिजो जी : श्रीचरणु :" सर्वज्ञें म्हणीतलें : "आधीं सांगाती :" "जी जी : एणें थोरु अन्याओ केला असे :" गोसावीं म्हणीतलें : "तरि न कढीं :" "खांडा गा याची खीळी :" म्हणौनि वाढै बोलाउनि तेयाची खीळी खांडविली : मग गोसावीं श्रीचरणु काढिला : मग आवारा नेयावेया वीनवीलें : "जी जी : माझेया आवाराभीतरि चालिजो जी :" सर्वज्ञें म्हणीतलें : "आधीं सांगाती :" "जी : हा चोरू कीं :" सर्वज्ञें म्हणीतलें : "तुमचा चोरू : परि येथिचा सांगाती :" "चाला गा :" तो पुढां : गोसावी मागां : ऐसें गोसावी भीतरि तेयाचेया आवारासि बीजें केलें : गोसावीयांसि आसन घातलें : गोसावी आसनीं उपवीष्ट जाले : सांगाती बैसवीला : गोसावीयांचे श्रीचरण प्रक्षाळिले : तेयांचेहीं पाए धुतले : मग गोसावीयांसि पडदणी देओं आदरिली : सर्वज्ञें म्हणीतलें : "आधीं सांगाती :" मग तेयांसि दीधली : तेयांचें आंग उटिलें : मग गोसावीयांसि मर्दना झाली : पाणी सारिलें : "चालिजो जी :" सर्वज्ञें म्हणीतलें : "आधीं सांगाती :" तेयां न्हाण जालें : मग गोसावीयांसि मादणें जालें : ताट केलें : "चालिजो जी :" सर्वज्ञें म्हणीतलें : "आधीं सांगाती :" मग तेयांसिही वाढिलें : तेयांसि पांती जेवण जालें : वीडा आणिला : सर्वज्ञें म्हणीतलें : "आधीं सांगाती :" गोसावीयांसि वीडा जाला : तेयांसि तांबोळ जालें : गोसावीयांलागि बाजुसुपवती घातली : तेयालागि बाजुले घातलें : गोसावीं पहुडु स्वीकारिला : तो नीजैला : ॥ \n\nमग मध्याने एकी रात्रीं तेणें चोरें गोसावीयांतें वीनवीलें : "जी जी : मीयां थोरु अन्यावो केला असे जी : गोसावी बीजें करिती आणि हे मातें मारिती : राखति ना : जी जी : तरि मी जाओं?" गोसावीं तेयांसि अनोज्ञा दीधली : "जी जी : कवाडें घातलीं असति : तरि मी कैसा जाओं?" गोसावीं तेयासि अनोज्ञा दीधली : "पाठीसीं घडी बांधा : आणि या वाटा नीगा : उतरा :" ऐसा गोसावीं उपाओ सांगीतला : मग तो गेला : मग तेहीं उदीयांचि पुसिलें : "जी जी : तो सांगाती कें?" गोसावीं म्हणीतलें : "तो तेधवांचि गेला :" मां ते गोसावीयातें हासों लागलीं : "गोसावीं आपुला सांगाती पळविला :" मग गोसावीं आपुलीं वस्त्रें वेढिलीं : तेयाचीं ठेविलीं : मग गोसावीं तेथौनि बीजें केलें : ॥',
+    explanation: 'एका गावात प्रभू चक्रधरस्वामींचे एका मंदिरात वास्तव्य होते. तेथील अधिकाऱ्याची घोडी चोरीला गेल्यामुळे एका संशयित चोराला खोड्यात (कैदेत) अडकवून ठेवले होते. रात्रीच्या वेळी चोराची करुण प्रार्थना ऐकून प्रभूंच्या मनात दया आली. प्रभूंच्या संमतीने रक्षकाने चोराचा खोडा कापून त्याला मुक्त केले, परंतु प्रभू स्वतः चोराच्या जागी खोड्यात पाय घालून बसले! सकाळी जेव्हा इतर रक्षक तेथे आले, तेव्हा त्यांनी प्रभूंना पाहिले आणि त्यांना दुसरा चोर समजून पकडले. त्यांनी प्रभूंचे पाय खिळ्यात ठोकून लॉक करण्याचा प्रयत्न केला, परंतु प्रत्येक वेळी त्यांचे हात हवेतच गोठून राहिले. हे ऐकून मुख्य अधिकारी तेथे आला. प्रभूंचे दिव्य तेज पाहून त्याला पश्चात्ताप झाला आणि त्याने प्रभूंचे चरण धरले. प्रभूंच्या सांगण्यावरून त्याने मूळ चोरालाही मुक्त केले आणि दोघांनाही आदराने आपल्या महालात नेले. महालात प्रभू चक्रधरस्वामींनी आपल्या "सांगाती" (चोर) ला स्वतःपेक्षा मोठे स्थान व मान दिला; त्याला आधी पाय धुणे, स्नान, भोजन, विडा आणि स्वतंत्र पलंगाची सोय करून दिली. मध्यरात्री चोराची भीती ओळखून प्रभूंच्या सूचनेनुसार तो सुरक्षित पळून गेला. सकाळी लोकांनी विचारले असता प्रभू मिश्कीलपणे हसले. प्रभूंची ही अद्भूत समता आणि कारुण्य दर्शवणारी ही एक अत्यंत हृदयस्पर्शी लीळा आहे।'
+  },
+  {
+    id: 'lc_p58',
+    bookId: 'leela_charitra',
+    number: 58,
+    title: 'लीळा ५८: अरण्णी महीखरोखेधरण',
+    titleEn: 'Leela 58: Aranni Mahikharokhedharan',
+    content: 'गोसावी मार्गे बीजें करिती : म्हैसा एकु अरण्णीं होता : तेया वाटा कोण्याहीं जावों नैये : गोसावीयांतें लोकें वारिलें : “ देव हो : या वाटा न वचा : एथ अरण्यम्हैसा असे : तो माणसांतें मारी : ” परि गोसावी नाइकतिया भासा बीजें केलें : तवं पुढां म्हैसा रोखेसीं आला : दृष्टी अवलोकिला आणि रोखू होता तो गेला : आणि भूईं उंघतु उंघतु गेला : तेयांची कुमति हरिली : सर्वज्ञें म्हणीतलें : “ हें तेया वाटां आलें म्हणौनि तैलागौनि ते वाट वसती जाली : ए्हवीं उदास होती : ” ॥',
+    explanation: 'प्रभू चक्रधरस्वामी जंगलातील मार्गाने प्रवास करत असताना वाटेत एक अत्यंत हिंस्त्र अरण्यम्हैसा (रानरेडा) होता. लोकांनी प्रभूंना त्या मार्गाने न जाण्याचा सल्ला दिला, कारण तो माणसांवर हल्ला करून त्यांना मारत असे. पण प्रभू स्वामींनी लोकांचे न ऐकता त्याच वाटेने प्रवास केला. समोरून तो रानरेडा प्रभूंच्या अंगावर धावून आला, पण प्रभूंनी त्याच्याकडे केवळ प्रेमाच्या दृष्टीने पाहिले. प्रभूंच्या दिव्य दृष्टीच्या स्पर्शाने त्याचा क्रोधावेश व हिंस्त्रपणा मावळला आणि तो जमिनीला हुंगत हुंगत निघून गेला. प्रभूंच्या कृपेने उसकी दुर्बुद्धी नष्ट झाली. प्रभू म्हणाले, "प्रभूंच्या या वाटेवरून जाण्यामुळे तो मार्ग लोकांसाठी निर्भय आणि वहिवाटीचा झाला, नाहीतर तो ओसाड होता।"'
+  },
+  {
+    id: 'lc_p59',
+    bookId: 'leela_charitra',
+    number: 59,
+    title: 'लीळा ५९: वेठी जांणें',
+    titleEn: 'Leela 59: Vethi Janane',
+    content: 'मोलकरीएं देऊळीं नीजैलीं होतीं : गोसावी नासीसि पहुडले होते : तीएं उदीयांचि अवघीं वेठीसि चालविलीं : तवं गोसावीयांसि देखिलें “ आरे : आरे : एथ एकु लुपाला असे : ” गोसावीयांतेंही चालवीलें : तेहीं आवघे मोलकै पांथेसि लाविले : चणेयाचीए पांथेसि : गोसावीयांसिही बैसवीलें : एराचीया पांथा चालति : गोसावीयांची पांथ राहिली : गोसावी कोरडा ऐसा टाहाळु पुढां ठेवीला : तवं एकु मुदलापासि सांघावेया गेला : तेयापुढां सांगीतलें : “ अवघेया मोलकैंयाचीया पांथा चालताति : एका मोलकैंयाची पांथ न चले : ” मग मुदलु ठाकुरु सेतासि आला : गोसावीयातें देखिलें : मग गोसावीयांपासि आला : “ आरे आरे पापीए हो : हें कोणे रे पापीएं केलें ? ऐसें काइ केलें ? गोसावीयांतें कैसे आणिलें ? ” घोडेयाखालुती उडी घातली : गोसावीयांसि दंडवत घातलें : श्रीचरणां लागला : गोसावीयातें वीनवीलें : रुंखा एका तळी घेउनि आला : श्रीचरण प्रक्षाळण केलें : सेतीचें खाजें आणिलें : तें गोसावीयांसि ओळखविलें : मग तेयासि जेवण आलें : तेथ गोसावीयांसि आरोगण दीधली : मग गोसावी बीजें केलें : ॥',
+    explanation: 'प्रभू चक्रधरस्वामी एका मंदिराच्या ओट्यावर विश्रांती घेत झोपले असताना, सकाळी मोलकरी व शेतावरील कामगारांना वेठीस (जबरदस्तीने कामाला) घेऊन जाणाऱ्या अधिकाऱ्यांनी स्वामींनाही एक सामान्य मजूर समजून कामावर नेले. त्यांना चण्याच्या पांथीवर (शेतात काम करण्यासाठी) बसवले. इतर सर्व मजुरांचे काम चालू झाले, पण प्रभू शांत बसून राहिले. त्यांच्यासमोर एक वाळलेली फांदी (टाहाळू) ठेवण्यात आली होती. मुख्य ठाकूर (मालक) जेव्हा शेतावर आला, तेव्हा त्याला समजले की एका मजुराचे काम चालत नाही. त्याने जवळ येऊन पाहिले तर ते साक्षात प्रभू चक्रधरस्वामी होते! ठाकूर अत्यंत पश्चात्तापाने व्याकुळ झाला आणि सेवकांना म्हणाला, "अरे पापी लोकांनो, हे दुष्कृत्य कोणी केले? अशा महापुरुषाला मजुरीला कसे आणले?" त्याने घोड्यावरून खाली उडी मारली, प्रभूंच्या चरणी लीन झाला आणि त्यांची माफी मागितली. प्रभूंचे चरण प्रक्षाळण करून त्यांना उत्तम भोजन देऊन त्यांची सेवा केली।'
+  },
+  {
+    id: 'lc_p60',
+    bookId: 'leela_charitra',
+    number: 60,
+    title: 'लीळा ६०: द्विजगोरक्षण',
+    titleEn: 'Leela 60: Dvijagorakshana',
+    content: 'एकी गांवीं गोसावीयांसि अवस्थान जालें : गोसावीं पाणीपातासि ब्राम्हणा एकाचेया घरासि बीजें केलें : ब्राम्हणें म्हणीतलें : “ मोटेघाटे : आडवेरुंद : उभेदीघ : भीक्षा कां मागत असा ? कोणाच्याही गाई कां राखा ना ? ” सर्वज्ञें म्हणीतलें : “ हें राखैल : परि याकरवि कव्हणी राखें ना : ” तेहीं म्हणीतलें : “ ना आम्हीं आपुलीया राखौनी : मोटे दहींभातु सुनि : व्याळीए दूधभात घालुनि : ” सर्वज्ञें म्हणीतलें : “ हैं राखैल : परि दोहे ना : सोडील परि बांधे ना : ” तेहीं म्हणीतलें : “ आम्हींचि सोडुनि आणि आम्हींचि दोहोनि : ” गोसावीं मानिलें : मग तेहीं म्हणीतलें : “ हो कां : तरि या ओटेयावरि राहा : आमचा गोवळु गेला : तेयाचां ठांई तुम्हीं राहा : ” मग तेयाची जाडि : वाहाणा : डांग : पागोटें : ऐसें गोसावीयांसि दीधलें : रात्रीं गोसावीयांसि दुधाभाताची आरोगण दीधली : इतुलेनि गोसावीं तेयांचीए दारीं ओटेयावरि पहुडु स्वीकारिला : उदैक गोसावीयांसि दहींभाताची मोट सुदली : गोसावीं गाइ सोडिलीया : गाइ रानासि नीगालीया : पुढां गोसावी : मागां गाइ : गोसावीयांसरिसा तोही अनुवर्जीता नीगाला : मग तो म्हणे : “ कोणाचीए सेतीं रीगों नेदावीया : कोणाचीए मेरु चारावीया ना : बरवीया रानावरि घालावीया : वेळे उदकासि मेळवावीया : बरवी साउली मेळवावीया : ” मग तो राहिला : गोसावी गाइ राना घेउनि गेले : रान पावले : आणि गोसावीयांसि खडका एकावरि आसन जालें : भवतीया गाइ श्रीमूर्ति अवलोकीति : आनंदु रोहंतीति बैसलीया असति : वाहाटीति डोळे : लाहाटीति पुस : ऐसीया बगटावरि बगट वाउनि श्रीमूर्त्ति अवलोकूं लागलीया : मग वीळिचांचीए अवसरीं गोसावी पुढां : मागां गाइ : मग गोसावीं वाडां गाइ घातलीया : मग गोसावीयांसि ओटेयावरि आसन जालें : तेहीं गाइ दोहीलीया : सवाया दूध दोहिलें : दहीं : लोणी : तुप बहुत हों लागलें : ऐसा थोर दूभों लागलीया : दोहतां दोहों हातां कांडार एति : मग गोसावीयांसि दूधभाताची आरोगण दिधली : मग तीएं आपुली ओरिसारि करूनि नीजैलीं : मग आंथूरणीं गोष्टी करूं लागलीया : ‘ आजि दुणा दुध जालें : ’ एकमेकां वीस्मो करूं लागलीं : जें ‘ आम्हांसि गोवळु नीका जोडला : ’ ऐसा गोसावी तेथ नीच बीजें करिती : आणि गाइ भवतीया आनंदु रोवंतीति बैसति : ऐसा तीनि दी अनुवर्जींत जाए : गांविचे गोवळ तेयापुढां सांघति : “ ऐसा कवणु गा राहाविला असे ? तृण नाहीं : उदक नाहीं : ना साउली नाहीं : एका खडकावरि घालिते : ” ऐसें दोनि दीसपर्येत सांघीतलें : मग तेणें म्हणीतलें : “ काइ पां : दुध तरि दुणा नीगताए : हैं ऐसें काइ सांगताति ? हे गोसावी असति आणि जाति : तरी कव्हणी ठांई कव्हणा राना चारावेया नेत असति तें पाहों : ” म्हणौनि तो तीसरं दीसीं पाहावेया राहिला : वृक्षा एकावरि : तवं जैसें गोपाळीं सांघीतलें तैसेंचि देखिलें : गोसावी आसनीं बैसले असति : भवतीया गाइ आनंदु रोवंतीती बैसलीया असति : “ ऐये रे : सामान्य पुरुख नव्हति : साक्षात श्रीकृष्णु मां : ” मग एउनि ब्राम्हणीतें म्हणीतलें : “ पैलु आमचीया गाइ राखे तो साक्षात श्रीकृष्णु : गोसावी एती : मां एकु पाओ तूं धरि : एकु पाओ मीं धरीन : मां गोसावीयांतें पुसों : ‘ तुम्हीं काइ ? ’ गोसावी रानौनि पाणीपात्रासि बीजें केलें : वीळीचां गाइ वाडेयाआंतु घातलीया : आणि बाहीरवाहिरेँ बीजें केलें : ॥',
+    explanation: 'एका गावी प्रभू चक्रधरस्वामी भिक्षेसाठी एका ब्राह्मणाच्या घरी गेले असता, ब्राह्मणाने प्रभूंच्या धष्टपुष्ट शरीराकडे पाहून विचारले, "तुम्ही इतके सशक्त असून भिक्षा का मागता? आमच्या गायी का राखत नाही?" प्रभू मिश्कीलपणे म्हणाले, "मी गायी राखेन, पण माझ्याकडून कोणी राखवून घेणार नाही. मी गायी सोडणार पण बांधणार नाही, आणि दूधही काढणार नाही." ब्राह्मणाने ही अट मान्य केली आणि प्रभूंना गुराखी (गोवळ) म्हणून ठेवले. प्रभू गायींना घेऊन रानात गेले आणि एका उघड्या खडकावर बसले. तिथे ना सावली होती, ना पाणी. पण प्रभूंच्या दिव्य सान्निध्यात सर्व गायी आनंदाने डोळे आणि शेपटी हलवत, रवंथ करत प्रभूंकडेच पाहत शांत बसल्या. प्रभूंच्या या अलौकिक अस्तित्वामुळे गायींनी नेहमीपेक्षा दुप्पट दूध दिले. गावातील इतर गुराख्यांनी ब्राह्मणाला सांगितले की नवीन गुराखी गायींना पाण्याविना खडकावर बसवून ठेवतो. म्हणून ब्राह्मण तिसऱ्या दिवशी स्वतः एका झाडावर लपून पाहू लागला. ते दृश्य पाहून त्याला खात्री पटली की हे सामान्य मनुष्य नसून साक्षात श्रीकृष्ण आहेत. प्रभू जेव्हा संध्याकाळी परतले, तेव्हा ब्राह्मण दाम्पत्य त्यांचे पाय धरण्यास पुढे सरसावले, पण प्रभू त्यांच्या हाताला न लागता तिथून निघून गेले।'
+  },
+  {
+    id: 'lc_p61',
+    bookId: 'leela_charitra',
+    number: 61,
+    title: 'लीळा ६१: लोणार्रीं कुंड्रीं राजेयां दरीसन',
+    titleEn: 'Leela 61: Lonari Kundi Rajeya Darisana',
+    content: 'गोसावियांसि लोणार्रीं कुंडीं बहीरवीं अवस्थान : रावो सोमवारीयेकारणे कुंडासि आला : सरिसा कोरवळीतें महादेवो होता : तेथिचेया बडुवेयातें पुसिलें : “ एथ कव्हणि सीधसाधक असति ? ” तवं कमळजैएचेनि बडुवेनि म्हणीतलें : “ बहीरवासि एक पुरुख आले असति : काइ सांघों तेयांचें सौंदर्यें : काइ सांघों तेयांचें चातुर्यें : काइ सांघों तेयांचें इस्वर्यें : काइ सांघों तेयांचें उदयें : ” ऐसा अनेगीं सबदीं गोसावीयातें वीसेखूं लागला : तवं कान्हरदेयासि ऐसें जालें : ते पुरुख कवणी ठांई भेटती : तैसाचि कान्हरदेवो तारातीर्थासि आला : तवं गोसावीयांसि तारातीर्थी एका वडाताळीं आसन असे : सरीसा तो बडुवा असे : तेणें म्हणीतलें : “ ते हे पुरुख : ” तैसाचि कान्हरदेवो साउमा आला : हडपीयातें आसूंची वाखारि मागीतली : ते पुढां ठेविली : दंडवत घातलें : भाटीं सासोलां म्हणीतलें : “ घेया घेया : सींगणाचा कान्हु तुम्हां प्रसंन जाला : ” तेव्हाळि राएं म्हणीतलें : “ सरा रे : यांसि रावो तैसा रंकु : सींगणाचा कान्हु तो तुम्हांसि कीं : ” मग गोसावीं तेयांची वास पाहिली : रायाचीही वास पाहिली : आणि भुईंची वास पाहिली : राएं म्हणीतलें : “ यांसि सोनें तैसी माती : द्रव्यासि : पाखाणासि : मज सरीची केली : ” मग तेणें जवळी गुंपैतैया राखणें घातलीं : नावेक गोसावी आसनीं उपवीष्ट होते : मग बीजें केलें : राखण होते ते आसुंची वाखारि घेउनि गेले : “ राया : ते पुरुख आसुंची वाखारि नेघतीचि : ” सर्वज्ञें म्हणीतलें : “ तो रावो आस्थीकु : तें उदेसिलें द्रव्य भांडारी न घलीचि : मग तेणें द्रव्यें कुमारेस्वरची पौळि केली : चुना सारिला : ” एक माहानुभाव म्हणति : धारेचा घाटु बांधला : ॥',
+    explanation: 'प्रभू चक्रधरस्वामींचे लोणार येथील बहिरीच्या कुंडाजवळ वास्तव्य होते. यादव घराण्यातील राजा कान्हरदेव (सिंहणदेवाचा नातू) सोमवारी स्नानासाठी तिथे आला होता. त्याने स्थानिक पुजाऱ्याला (बडुव्याला) विचारले की, "येथे कोणी सिद्ध साधक आले आहेत का?" तेव्हा पुजाऱ्याने प्रभूंच्या सौंदर्याचे, चातुर्याचे आणि ऐश्वर्याचे अद्भूत वर्णन केले. ते ऐकून राजाला प्रभूंना भेटण्याची तीव्र इच्छा झाली. प्रभू तारातीर्थावरील एका वडाच्या झाडाखाली बसले होते. राजाने तिथे येऊन प्रभूंसमोर सोन्याच्या मोहरांची थैली (आसूची वाखारी) ठेवली आणि साष्टांग दंडवत घातले. भाटांनी राजाची स्तुती सुरू केली तेव्हा राजा नम्रपणे म्हणाला, "दूर व्हा, या महापुरुषासाठी राजा आणि रंक सर्व समान आहेत." प्रभू स्वामींनी त्या मोहरांकडे, राजाकडे आणि जमिनीकडे अगदी तटस्थपणे पाहिले. राजाला समजले की प्रभूंच्या दृष्टीने सोन्याला माती आणि पाषाणाचेच मूल्य आहे. प्रभू तिथून निघून गेले आणि त्यांनी ती सोन्याची थैली स्वीकारली नाही. राजा श्रद्धाळू होता, त्याने प्रभूंच्या या अलौकिक विरक्तीची प्रशंसा केली आणि त्या नाकारलेल्या सोन्याचा उपयोग कुमारेश्वराचे मंदिर आणि पायऱ्या (धारेचा घाट) बांधण्यासाठी केला।'
+  },
+  {
+    id: 'lc_p62',
+    bookId: 'leela_charitra',
+    number: 62,
+    title: 'लीळा ६२: लांसिपीलीं खेळवणें',
+    titleEn: 'Leela 62: Lasipili Khelavane',
+    content: 'गोसावी मार्गे बीजें करीत होते : तवं जाळीं एकी लाहांसि वीयाली होती : तेथ गोसावी बीजें केलें : लाहांसि चारेया गेली होती : तीएचीं दोनि पीलीं होतीं : गोसावी दोन्ही कांखां घातलीं : खेळवीताति : तवं लाहांसि आली : ते गोसावीयांकडे घुरघुरीत पाहे : डोळे रोहोकी : गोसावीं अवलोकिलें : तवं तिथेचा रोखु निवर्त्तला : मग ते जाळीचां तोंडीं सुनेयाचेयापरी मोळी टेकोनि बैसली : ते जीभवरि आपुलीं आवाळुवें ओंठ चाटुं लागली : गोसावीं नावेक खेळवीलीं : “ सांभाळ बाइ : आपुलीं पीलीं घे : ” म्हणौनि दोन्ही तीकडे पुढां घातलीं : मग गोसावीं तेथौनि बीजें केलें : मग गोसावीयातें देखे जवं तवं गोसावीयातें पाहातीचि होती : ॥',
+    explanation: 'प्रभू चक्रधरस्वामी मार्गाने जात असताना वाटेत एका दाट झाडीमध्ये लांडगी (लांहास) व्याली होती. तिच्या जागी तिची दोन लहान पिल्ले होती आणि ती स्वतः चाऱ्याच्या शोधात बाहेर गेली होती. प्रभू तिथे थांबले आणि त्यांनी ती दोन्ही पिल्ले आपल्या कखेत घेऊन त्यांना खेळवण्यास सुरुवात केली. इतक्यात ती लांडगी तिथे परतली आणि प्रभूंच्या कखेत आपली पिल्ले पाहून संतापून घुरघुरू लागली, डोळे लाल करून पाहू लागली. पण प्रभू चक्रधरस्वामींनी तिच्याकडे अत्यंत करुणामय आणि प्रेमळ नजरेने पाहिले. प्रभूंच्या या दिव्य दृष्टीच्या स्पर्शाने तिचा सर्व राग आणि हिंस्त्रपणा शांत झाला. ती एखाद्या पाळीव कुत्र्याप्रमाणे नम्रपणे जाळीच्या तोंडाशी आपली हनुवटी जमिनीवर टेकवून शांत बसली आणि जीभ बाहेर काढून आपले ओठ चाटू लागली. प्रभू काही वेळ त्या पिल्लांशी खेळले आणि म्हणाले, "बाई, सांभाळ आपली पिल्ले घे," असे सांगून ती पिल्ले तिच्यासमोर ठेवली. प्रभू जेव्हा तिथून निघाले, तेव्हा ती लांडगी कृतज्ञतेने आणि प्रेमाने दूरपर्यंत प्रभूंकडेच पाहत राहिली।'
+  },
+  {
+    id: 'lc_p63',
+    bookId: 'leela_charitra',
+    number: 63,
+    title: 'लीळा ६३: ठाकुरभारीए पुत्रदान',
+    titleEn: 'Leela 63: Thakurbhariye Putradana',
+    content: 'गोसावीयांसि वृक्षा एका तळीं आसन असे : तवं तेथ ठाकुरु एकु भेटला : तेणें वीळीचां गोसावीयातें वीनविलेें : “ जी जी : माझेया आवारासि गोसावीं बीजें करावें जी : ” गोसावीं वीनवणी स्वीकारिली : मग गोसावी तेथ बीजें केलें : गोसावीयांसि आसन घातलें : गोसावी आसनीं उपवीष्ट जाले : श्रीचरण प्रक्षाळिले : मग गोसावीयांसि मादनेयालागि वीनवीलें : गोसावीयांसि पडदणी ओळखविली : मग मर्दनामादने जालें : पुजाअवसरू जाला : ताट केलें : मग गोसावीयांसि आरोगण जाली : गुळूळा जाला : वीडा ओळखवीला : मग शेजारी माचेयावरि सुपवती घातली : तेथ पहुडु स्वीकारिला : मग तेणें ठाकुरें आपुली वडीळ राणी श्रींधारू करूनि पाठवीली : पुरुखांचें अमोघ वीर्ये म्हणौनि : श्रीचरण प्रक्षाळण केलें : मग फोडी ओळखविल्या : वीडीय करूनि दीधलीया : मग श्रीचरण चुरू लागलीं : ऐसी नावेक सेवा केली : मग तीया म्हणीतलें : “ जी जी : मज पुत्रु होआवा जी : ” सर्वज्ञें म्हणीतलें : “ एथ प्रवृती नाहीं : ” मग सर्वज्ञें म्हणीतलें : “ बाइ आतां जा : ” तैसीचि तीया पाठवणी दीधली : तीएं आली : मग अवघी ब्येवस्था तेयापुढां सांगीतली : मग तेणें म्हणीतलें : “ एं म्हातारी : गोसावीयांसि न मनतीचि : ” मग तेणें आपुली धाकुटी राणी पाठवीली : “ तुं जाए : ” मग तीएं आली तेयांसि गोसावी भीतरि एओं नेदीतिचि : तीएचा एकु पाओ भीतरि : एकु पाओ उंबरेयाबाहेरि : गोसावीं तेयां बाहीरूनिचि पाठवणी दीधली : गोसावीं म्हणीतलें : “ बाइ : जा : एथ काही करणें न लगे : ” मग तीएं आलीं : मग तीया अवघी ब्येवस्था सांगीतली : मग आपण आला : गोसावीयांसि दंडवत घातलें : श्रीचरणां लागला : मग गोसावीयातें वीनवीलें : “ जी जी : गोसावी कां न स्वीकारितीच ? मी नीपुत्रीकू : मातें पुत्रु नाही : म्हणौनि पाठवीलीया : गोसावीं मज पुत्रदान देयावें जी : ” सर्वज्ञें म्हणीतलें : “ तुम्हांसि पुत्रु होईल हो : ” तेणेंचि दीसें मासें तेयांचीए वडीली अस्तीए पुत्र जाला : गर्भसंभूती होतीए समई गोसावीं बीजें केलें : ॥',
+    explanation: 'प्रभू चक्रधरस्वामी एका झाडाखाली विसावले असताना एका ठाकूराने (सरदाराने) प्रभूंना अत्यंत आदराने आपल्या महालात येण्याचे आमंत्रण दिले. प्रभूंच्या संमतीने त्याने प्रभूंचे पादप्रक्षालन करून त्यांना सुग्रास भोजन दिले आणि विश्रांतीसाठी सुसज्ज मंचाची व्यवस्था केली. तो ठाकूर निपुत्रिक होता. त्याने वंशवृद्धीसाठी आणि प्रभूंच्या अमोघ आशीर्वादासाठी आपल्या ज्येष्ठ राणीला प्रभूंच्या सेवेसाठी पाठवले. राणीने प्रभूंचे पाय चेपून सेवा केली आणि "मला पुत्रप्राप्तीचा आशीर्वाद द्यावा" अशी विनंती केली. प्रभू चक्रधरस्वामी हे परम वैराग्यमूर्ती असल्याने त्यांनी "येथे तशी प्रवृत्ती नाही, बाई आता जा" असे सांगून तिला परत पाठवले. ठाकूराला वाटले की ज्येष्ठ राणी आवडली नसावी, म्हणून त्याने धाकट्या राणीला पाठवले. प्रभू वैराग्याचे मूर्तिमंत रूप असल्याने त्यांनी धाकट्या राणीला उंबरठ्यातूनच बाहेरून परत पाठवले आणि म्हणाले, "बाई, जा, इथे अशी काही आवश्यकता नाही." शेवटी तो ठाकूर स्वतः प्रभूंच्या चरणी आला आणि रडून विनंती केली, "प्रभू, मी निपुत्रिक आहे. मला पुत्रप्राप्तीचा आशीर्वाद द्यावा." प्रभू चक्रधरस्वामींनी त्याच्या शुद्ध भावनेवर प्रसन्न होऊन "तुम्हासी पुत्र होईल" असा शुभाशीर्वाद दिला. प्रभूंच्या वचनानुसार यथावकाश त्याच्या ज्येष्ठ राणीला पुत्रप्राप्ती झाली आणि गर्भाची उत्पत्ती होताच प्रभू तिथून निघून गेले।'
+  },
+  {
+    id: 'lc_p64',
+    bookId: 'leela_charitra',
+    number: 64,
+    title: 'लीळा ६४: राएरीं पाणीपात्र : वामनपेदी मृत्यभार्या जीववणें',
+    titleEn: 'Leela 64: Rayeri Panipatra: Vamanpedi Mrutyabharya Jeevavane',
+    content: 'गोसावीं राएरासि पाणीपात्रासि बीजें केलें : गोसावीयांसि तेथ अवस्थान जालें : गोसावी वामन पेदीचेया आवारासि पाणीपात्रासि बीजें करिती : ऐसा वामन पेदीची अस्त्री सरली : समसाना नेतां वामन पेदी रडों लागला : “ आहा : आतां काइ करीं ? आतां गोसावीयांसि पाणीपात्र कोण देईल ? ” म्हणौनि दुख करी : पसेया पाइलीचीं लेंकुरूवें : तेयांचें काहीँ न वटे : तो गोसावीयांचेया पाणिपात्रासीचि रडे : दुख करी : स्त्री मसणासि आणिली : सरणावरि घालुं आदरिली : गोसावीयांसि पींपळांतळीं आसन असे : गोसावीयांतें देखिलें : मग गोसावीयांपासि आला : दंडवत घातलें : श्रीचरणां लागला : वामन पेदी म्हणीतलें : “ जी जी : आतां काइ जी ? आतां गोसावीयांसि पाणीपात्र कोण सुदेल ? ” गोसावीयांसि कणवा उपनली : सर्वज्ञें म्हणीतलें : “ चाला : ” गोसावीं तेथ बीजें केलें : उकड आसन जालें : श्रीकरें माथेयापासौनि पाएवरि स्परीसीलें : मग तेयांचा हातु श्रीकरें धरिला : आणि हनुवटी ऐसी धरिली : मग सर्वज्ञें म्हणीतलें : “ बाइ : उठा ना : तुम्हांसि एथ एक पाणीपात्र देणें असे : ” इतुकेनि ते खडपडौनि उठिली : आपुलेया आवारासि आली : मग पाणीपात्राची आइति केली : गोसावीयांतें वीनवीलें : “ जी जी : गोसावीं तेथ पाणीपात्रासि बीजें करावें : ” गोसावीं बीजें केलें : तीएं पाणीपात्र घेउनि आलीं : सर्वज्ञें म्हणीतलें : “ बाइ : तें असें कीं : ” आणि तीएं बीहालीं : मग वामन पेदीचां हातीं दीधलें : मग तीं गोसावीयांसि पाणीपात्र दीधलें : मग गोसावीं गंगेसि बीजें केलें : ॥',
+    explanation: 'प्रभू चक्रधरस्वामींचे रायेर (रायर) येथे वास्तव्य होते. ते तिथले रहिवासी वामन पेदी यांच्या घरी भिक्षेसाठी (पाणीपात्रासाठी) जात असत. दुर्दैवाने वामन पेदी यांची पत्नी मरण पावली. तिला स्मशानात नेताना वामन पेदी अत्यंत रडू लागला, पण त्याचे दुःख लहान मुलांसाठी किंवा घरासाठी नव्हते, तर त्याला चिंता होती की, "आता प्रभू स्वामींना भिक्षा कोण देईल? प्रभूंच्या पाणीपात्राची सेवा कोण करेल?" स्मशानात चितेवर मृतदेह ठेवला जात असताना प्रभू जवळच असलेल्या एका पिंपळाच्या झाडाखाली बसले होते. वामन पेदी प्रभूंच्या पाया पडला आणि म्हणाला, "प्रभू, आता आपल्या पाणीपात्राची सोय कोण करणार?" प्रभूंच्या अंतःकरणात त्याची ही निस्सीम भक्ती पाहून दया उत्पन्न झाली. प्रभू चितेजवळ आले, त्यांनी मृत पत्नीच्या डोक्यापासून पायापर्यंत स्पर्श केला, तिचा हात धरून हनुवटी उचलली आणि म्हणाले, "बाई, ऊठ ना! तुला इथे प्रभूंची पाणीपात्राची सेवा करायची आहे." प्रभूंच्या दिव्य स्पर्शाने आणि वचनाने ती मृत स्त्री जिवंत झाली आणि खडबडून उठून उभी राहिली! ती घरी गेली, तिने शुचिर्भूत होऊन प्रभूंच्या पाणीपात्राची तयारी केली आणि मोठ्या आनंदाने प्रभू स्वामींना भिक्षा (पाणीपात्र) अर्पण केली।'
+  },
+  {
+    id: 'lc_p65',
+    bookId: 'leela_charitra',
+    number: 65,
+    title: 'लीळा ६५: गोविंदस्वामी स्तीती',
+    titleEn: 'Leela 65: Govindaswami Stiti',
+    content: 'गोसावीयांसि नांदीएडीं अवस्थान जालें : गोसावीयांपासीनि एकां वेध होति : एकां स्तीती होति : ऐसें देखौनि विष्णुस्वामीं गोविंदस्वामीतें म्हणीतलें : “ गोविंदा : एथ एकु पुरुख आले असति : तेयांपासि तूं जासी हो : तेयांपासोनि एकां वेध होताति : एकां स्तीती होताति : तेयांकडे वास न पाहावी : तेयांकडे वास पाहासी तरि वेधसी : तरि कर्मासि मुंचसी हो : ” ते आपुलेया सीखांसि गोसावीयांकडे एओं नेदीति : ते भावतींथासि एति : गोसावीयांकडे पाहाति ना : एकु दीसीं गोसावीयांसि भावतीर्थीचीया पींपळांतळीं आसन असे : एकु दीसीं गोसावीयांसि पाराआड आसन असे : ते भावतीर्थासि आले : पाहो लागले : तवं तेही म्हणीतलें : “ काइ पां आजि ते पुरुख देखों ना ? तरि काइ गेले ? ” म्हणौनि वास पाहिली : आणि पाराआडोनि दृष्टी दृष्टि मीनली : आणि वेधले : आणि आले : आणि दंडवत घातलें : श्रीचरणां लागले : आणि गोसावीयांपासीं तेयां अस्तीति जाली : भोगिली : मंगली : वीनत कंदर होउनि गोसावीयांपासि बैसले : ऐसे नावेक बैसले होते : मग नीगाले : मग नीगतां सर्वज्ञें म्हणीतलें : “ एथौनि जें तुम्हांसि जालें तें कव्हणापुढें न संगावें हो : विष्णुस्वामि पुसती तरि म्हणावें : ‘ हें तुम्हांसिपासौनि : ’ तेयांपुढें सांगाल तरि हें तुम्हांसि दरीसन नेदी हो : ” मग ते गेले : मंग माहानावी आली : विष्णुस्वामि म्हणीतलें : “ गोविंदा : जाए हो : पुस्तकें आणि : राएौनि : ” ते देहेंचि दोनि पाहार न भरतां पुस्तकें घेउनि आले : विष्णुस्वामिसि आश्चर्य जालें : मग ते आलेयां कर्म जें करावें तें अवघेंचि ठाकलें : ते नीश्चळ बैसले असति : स्नान न करीती : देवपुजा न करीती : वीष्णुस्वामिसि नमस्कारू न करीती : मग वीष्णुस्वामी भकों लागले : “ हैं काइ जालें या गोवीदासि ? सांपें एथ ए ना : एथ उठी बैसे ना : देवा सि बोणें आणी ना : सांपें उदासु जाला : ते नमस्कार काइ जाले ? ” ऐसें भकों लागले : एक दीसु ते नीजैले होते : तवं तेयांचा नरसीहु तेयां दंडवतें घालुं लागला : तेणें पुसिलें : “ तुम्हीं कवण ? ” तेणें म्हणीतलें : “ मीं नरसीहु : ” आणि तो लवलवौनि उठिला : “ हें काइ जालें : हें काइ जालें ? तुम्हीं कैंसे मज दंडवतें घालीतसां ? ” तवं तेणें म्हणीतलें : “ तुं गोवींदाचीं दंडवतें इच्छितासि : तरि तेयांचीया वारीया मीं घालीतसें : गोवींडु केसना जाला असे : गोवींडु थोरु जाला असे ! थोराचा जाला असे ! ” सवळोचींचि उठिले : गोवींदापासि आले : तवं ते स्तीती भोगीत असति : तवं तेयांसि दंडवतें घालुं लागले : तवं ते लवलवौनि उठिले : ते म्हणों लागले : “ हें काइ जालें ? तुम्हीं कैंसें दंडवतें मज घालीत असा ? ” तेव्हाळि तेहीं तेयांतें पुसिलें : “ तुम्हांसि हें कव्हणापासौनि जालें ? ” तेहीं म्हणीतलें : “ हें तुम्हांसिपासौनि : ” तेहीं म्हणीतलें : “ हें आम्हांसिची नाहीं : मग तुम्हांसि कैंचें ? ” एतुलेनि ते अडले : तेव्हाळि तेहीं ते अवघीचि वेवस्था सांगीतली : “ गोसावीयांपासीनि : ” “ तरि ते गोसावी कें असति ? आम्हांसि सांघा ना कां ? तरि तेयांचें दरीसन मज करावें : ” तेव्हाळि ते दोघे गोसावीयांचेया दरीसना नीगाले : मग गोसावी तेयासि दरीसन नेदीतिचि : ॥',
+    explanation: 'प्रभू चक्रधरस्वामींचे नांदीएडी येथे वास्तव्य होते. त्यांच्या दिव्य सान्निध्यात अनेकांना भक्तीचा वेध लागत असे आणि ते समाधी अवस्थेत जात असत. हे पाहून एका संप्रदायाचे प्रमुख विष्णुस्वामी यांनी आपले शिष्य गोविंदस्वामी यांना बजावले की, "तिथे एक महान पुरुष आले आहेत, त्यांच्याकडे अजिबात पाहू नकोस, नाहीतर तुलाही वेध लागेल आणि तू तुझ्या कर्ममार्गातून भ्रष्ट होशील." ते आपल्या शिष्यांना प्रभूंकडे जाऊ देत नसत. एक दिवस प्रभू स्वामी भावतीर्थावरील पाराआड बसले होते. गोविंदस्वामी तिथे आले आणि त्यांची नजर चुकून प्रभूंच्या नजरेला भिडली. प्रभूंच्या त्या केवळ एका दृष्टीक्षेपाने गोविंदस्वामींना तीव्र भक्तीचा वेध लागला! ते धावत प्रभूंच्या चरणी लीन झाले आणि समाधी अवस्थेत गेले. प्रभू स्वामींनी त्यांना सांगितले की, "तुला झालेली ही अनुभूती कोणालाही सांगू नकोस. विष्णुस्वामींनी विचारले तर सांग की हे तुमच्यामुळेच झाले आहे." गोविंदस्वामी जेव्हा आपल्या आश्रमात परतले, तेव्हा ते अत्यंत शांत आणि समाधीस्त झाले. ते नित्यकर्म, स्नान किंवा देवपूजा करेनासे झाले, तसेच विष्णुस्वामींना नमस्कारही करेनासे झाले. विष्णूस्वामींना आश्चर्य वाटले आणि काळजी वाटू लागली. शेवटी गोविंदस्वामींनी ही प्रभू चक्रधरस्वामींची कृपा असल्याचे सांगितले. विष्णुस्वामींनी स्वतः प्रभूंच्या दर्शनाची इच्छा धरली, पण प्रभू स्वामींनी त्यांना दर्शन दिले नाही।'
+  },
+  {
+    id: 'lc_p66',
+    bookId: 'leela_charitra',
+    number: 66,
+    title: 'लीळा ६६: विष्णूभटां घुटिकासीधीनीखेदु',
+    titleEn: 'Leela 66: Vishnubhatan Ghutikasidhinekhedu',
+    content: 'माहादाइसीं भीक्षें गेलीं असति : लोकु म्हणे : “ हे वीष्णुस्वामि इस्वरपुरुख : ” मग एउनि गोसावीयांपुढें गोष्टि सांगीतली : मग माहादाइसीं पुसिलें : “ हां जी : हे वीष्णुस्वामि म्हणे इस्वरपुरुख ? ” सर्वज्ञें म्हणीतलें : “ बाइ : हा घुटिकासीधि जाणे : मुखीं घुटिका घाली आणि पौळी पागार उडे : लोकांचां दारीं उभा राहे : माळवधांतु कवाडां भीतींसीं लागौनि अवघी गोष्टि आइके : तेयांतें अवघें देखे : आणि उदीयांचि तेयांपुढें सांघे : सव्वोचि तीए एति : आणि म्हणे : “ तुम्हीं रात्रीं अमुकींची जेवीलींती : अमुकींचि बोलीलींती : अमुकीया गोष्टि केलीया : ” एतुकेनि तेयांसि आस्चर्य होए : एतुकेनि लोकु भजे : इस्वरत्वें मानी : ” ॥\n\nमंग सर्वज्ञें म्हणीतलें : “ बाइ : एकु दीं सोमवारीं परवणी पडली होती : दोहों थडीयां लोकु दाटला होता : मग लोकांसि आस्चर्य दाखवावें म्हणौनि तेहीं मुखीं घुटिका घातली : घालुनि गगनमार्गे जातां लोकें देखिला : म्हणति : ‘ हें घेया : वीष्णुस्वामि गगनमार्गे स्वर्गी जात असति : ’ म्हणौनि पाहों लागले : तवं वाहुंटुळी आली : तो नाकीं रजू रीगाला : ते सींक आली : तो सीकेसरिसा घुटिका पाणीयाआंतु पडिला : तोही पाणीयांतु पडिला : ” सर्वज्ञें म्हणीतलें : “ बाइ : पोरू पाणीयांतु पडिला म्हणौनि वांचला : खडकावरि पडता तरि हाडेंगडें नुरती : पाओ मोडला : परि मागिलीचि उपाधी लोकु माने : तेयांतें भजे : ” ॥',
+    explanation: 'महदाइसा भिक्षेसाठी गेली असताना लोकांनी तिला सांगितले की, "हे विष्णुस्वामी अत्यंत सिद्ध पुरुष आहेत." महदाइसेने प्रभू चक्रधरस्वामींना येऊन विचारले, "प्रभू, लोक विष्णुस्वामींना ईश्वरपुरुष म्हणतात, हे खरे आहे का?" त्यावर प्रभू स्वामी हसून म्हणाले, "बाई, तो केवळ घुटिका सिद्धी (एक प्रकारची क्षुद्र विद्या) जाणतो. तो तोंडात एक सिद्ध केलेली गोळी (घुटिका) ठेवतो, ज्यामुळे तो हवेत उडू शकतो आणि लोकांच्या दाराशी, खिडकीशी जाऊन त्यांचे गुपिते ऐकू शकतो. दुसऱ्या दिवशी तो लोकांना त्यांच्या घरातील रात्रीच्या गोष्टी सांगून थक्क करतो, त्यामुळे लोक त्याला चमत्कारी आणि देवपुरुष मानू लागतात." प्रभू पुढे म्हणाले, "एकदा सोमवारी नदीच्या दोन्ही तीरावर मोठी गर्दी जमली होती. लोकांना चमत्कार दाखवण्यासाठी विष्णुस्वामींनी तोंडात घुटिका ठेवून हवेत उडण्यास सुरुवात केली. लोक ओरडू लागले की विष्णुस्वामी स्वर्गात चालले आहेत. पण इतक्यात एक जोरदार वावटळ आली आणि त्यांच्या नाकात धूळ गेली. त्यांना जोराची शिंक आली आणि शिंकेसरशी ती घुटिका तोंडातून निघून नदीच्या पाण्यात पडली! घुटिका पडताच तेही हवेतून थेट नदीत पडले. सुदैवाने ते नदीच्या पाण्यात पडल्यामुळे वाचले, नाहीतर खडकावर पडून त्यांचे तुकडे झाले असते. त्यांचा केवळ पाय मोडला. पण लोक तरीही त्यांच्या पूर्वीच्या चमत्कारांनाच खरे मानून भजत राहिले।"'
+  },
+  {
+    id: 'lc_p67',
+    bookId: 'leela_charitra',
+    number: 67,
+    title: 'लीळा ६७: आंब उचारू',
+    titleEn: 'Leela 67: Amb Ucharu',
+    content: 'गोसावीयांसि नांदीएडीं भावतीर्थी आसन : देऊळीं राणेनि पुसिलें : “ देव हो : ए गांवीं वऱ्हाड जालें : तेथ तुम्हीं जेविलेति ? ” सर्वज्ञें म्हणीतलें : “ हो : ” “ काइ काइ जेविलेति ? ” सर्वज्ञें म्हणीतलें : “ वर्णभातु ” : पुढारें आंब जवं सांघावें तवं पूरू आला : राणेन म्हणीतलें : “ जी : चाला चाला : पूरू आला : ” राणो पळौनि गेला : गोसावीयांवरोनि पूरू गेला : देऊळ बुडालें : दीसां दोनि पूरू ओहटला : राणो आला : देऊळिचा पन्हा फेडीला : तवं गोसावीयांचा श्रीमुगुटु देखिला : मग सर्वज्ञें म्हणीतलें : “ राणे हो : आंब गोड जालें : ” राणेया वेस्मो जाला : मग माहादाइसीं म्हणीतलें : “ जी जी : ऐसे ते कोण होती ? ऐसे ते आमचेचि गोसावी होती : ” गोसावीं मानिलें : ॥',
+    explanation: 'प्रभू चक्रधरस्वामी नांदीएडी येथील भावतीर्थ मन्मथ मंदिरामध्ये बसले होते. तिथे राण्या (राणोदेव) नावाच्या भक्ताने प्रभूंना विचारले, "देवा, आज गावात एका लग्नाची पंगत (वऱ्हाड) होती, तुम्ही तिथे जेवायला गेला होता का?" स्वामी म्हणाले, "होय." राण्याने विचारले, "पंगतीत काय काय जेवलात?" स्वामींनी उत्तर दिले, "वरणभात." आणि पुढे त्यांनी आंब्याचा (आम्ररसाचा) उल्लेख करण्यास सुरुवात केलीच होती, इतक्यात गोदावरी नदीला प्रचंड महापूर आला! राण्या घाबरून म्हणाला, "प्रभू, लवकर चला, महापूर आला आहे!" राण्या जीव वाचवण्यासाठी पळून गेला, पण प्रभू स्वामी तिथेच समाधी अवस्थेत शांत बसून राहिले. पुराचे पाणी मंदिरावर गेले आणि संपूर्ण मंदिर पाण्यात बुडाले. दोन दिवसांनंतर जेव्हा पूर ओसरला, तेव्हा राण्या धावत मंदिरात परत आला. त्याने मंदिरातील चिखल आणि कचरा साफ केला, तेव्हा त्याला प्रभू स्वामी सुरक्षित आणि ध्यानस्थ बसलेले दिसले. प्रभू स्वामी डोळे उघडून शांतपणे राण्याला म्हणाले, "राण्या, आंबा गोड झाला!" हे ऐकून राण्याला अत्यंत विस्मय झाला की दोन दिवस महापुरात बुडूनही प्रभू स्वामींना केवळ आंबा खाण्याचा आनंद याद राहिला होता. महदाइसा कृतज्ञतेने म्हणाली, "असे सामर्थ्य असणारे आमचे प्रभू चक्रधरस्वामीच आहेत!"'
+  },
+  {
+    id: 'lc_p68',
+    bookId: 'leela_charitra',
+    number: 68,
+    title: 'लीळा ६८: वऱ्हाडीक करणें',
+    titleEn: 'Leela 68: Varhadik Karane',
+    content: 'गोसावी मार्गे बीजें करिताति : तवं एकी गांविचे वऱ्हाड महुताची वेळ होएतवं सेवतीएसी बैसले होते : गोसावीं तेयांतु बीजें केलें : तेथ आसन जालें : मग तीएं तेयांसि साउमी आलीं : गोसावीयांतें म्हणति : ‘ यांचे हे मान्य पुरूख : ’ म्हणौनि गोसावीयांसि आधीं तीळा लाविला : तांबोळें दीधलीं : मग एरां अवघेयांसि तीळे केले : तांबोळें दीधलीं : मग वऱ्हाडीयांतें घेउनि गेले : तेयांसरिसें गोसावी बीजें केलें : जानवसा दीधला : तळी उचलिली : आधीं गोसावीयांचे श्रीचरण प्रक्षाळिले : वीडा ओळखविला : मग लगीन लागिलें : मग जेवावेयाची आइति केली : ताटें केलीं : गोसावीयांसि धूरेसीरांता ताट केलें : तेथ गोसावीयांसि आसन होए : आरोगण जाली : गुळूळा जाला : गोसावीयांसि वीडा ओळखविला : मग नवै वधूवरांसि समस्तांसि वीडे दीधले : वऱ्हाडीयांतें मागुतें बोळवीत जाति : ते वऱ्हाडी : गोसावीं मागुतें देऊळासि बीजें केलें : एक म्हणति : ‘ हे गोसावी यांचे मान्यपूरूख : ’ एर म्हणति : ‘ हे गोसावी यांचे मान्य पुरूख : ’ ऐसे च्यान्ही दीस उभयांचें वऱ्हाड जालें : चौथां दीसीं नोवरेयासि नोवरीएसी साडे वाइले : मग दोन्ही पक्षांमथ्ये संभ्रमु जाला : एराएरीं वस्त्रें वाहिलीं : तीहीं पुसिलें : “ एं वस्त्रें तुमच्यां गोसावीयांजोगीं होति : ” तेहीं म्हणीतलें : “ आमचे कोण गोसावी ? आमचे ते अमुकेअमुके : ” “ तरि हे गोसावी कोणाचे ? ” “ ना हे आमचे नव्हति : हे तुमचे : ” ते म्हणति : “ हे आमचे नव्हति : हे तुमचे : ” सर्वज्ञें म्हणीतलें : “ हें तुमचेंही नव्हे : ना यांचेंही नव्हे : हें कव्हणाचेंही नव्हे : ” ऐसें म्हणौनि बीजें करूं आदरिलें : तवं तीही यातें राहाвилें : यासि लुगडीं वाइलीं : मग हें आपलीं वस्त्रें घेउनि नीगाले : मग गोसावीं बीजें केलें : ॥',
+    explanation: 'प्रभू चक्रधरस्वामी एका मार्गाने जात असताना एका गावी लग्नाचे वऱ्हाड मुहूर्त टळू नये म्हणून थांबले होते. प्रभू तिथे जाऊन बसले. वर पक्ष आणि वधू पक्ष दोघांनाही वाटले की हे तेजस्वी महापुरुष दुसऱ्या पक्षाचे "मान्य पुरुष" (अतिथी किंवा कुलाचार पुरुष) आहेत. त्यामुळे दोन्ही बाजूंनी प्रभूंचा प्रथम आदरसत्कार केला, त्यांना कपाळावर टिळा लावून विडा दिला. लग्नाच्या वऱ्हाडासोबत प्रभूही गेले. वधूपक्षाने प्रभूंचे पाय धुवून प्रथम पूजले, लग्नाच्या पंगतीत त्यांना मुख्य स्थानी बसवून भोजन दिले. प्रभूंच्या अगाध आणि दैवी व्यक्तिमत्त्वामुळे दोन्ही बाजूंचे लोक अतिशय प्रभावित झाले. चारही दिवस दोन्ही पक्षांच्या लोकांनी प्रभूंचे आदरातिथ्य केले. चौथ्या दिवशी जेव्हा अहेर (साडे) देण्याची वेळ आली, तेव्हा दोन्ही बाजूंचे लोक एकमेकांना विचारू लागले, "हे तुमचे मान्य पुरुष आहेत ना? तुम्ही त्यांना वस्त्रे का देत नाही?" त्यावर दुसरा पक्ष म्हणाला, "नाही, हे तुमचे पाहुणे आहेत!" अशा प्रकारे दोन्ही बाजूंच्या गोड संभ्रमातून प्रभू स्वामींना दोन्ही बाजूंनी अत्यंत आदराने मौल्यवान वस्त्रे अर्पण केली. शेवटी दोन्ही बाजूंनी चौकशी केली असता प्रभू कोणाचेही पाहुणे नसून साक्षात ईश्वर आहेत हे लक्षात आले. लोकांनी प्रभू स्वामींना तिथेच थांबवून घेतले, मौल्यवान वस्त्रे व साड्या अर्पण केल्या, आणि प्रभू त्यांचे कल्याण करून तिथून मार्गस्थ झाले।'
+  },
+  {
+    id: 'lc_p69',
+    bookId: 'leela_charitra',
+    number: 69,
+    title: 'लीळा ६९: सीधू रे सीधू म्हणणें',
+    titleEn: 'Leela 69: Seedhu Re Seedhu Mhanane',
+    content: 'एकी गांवी ब्राम्हणा एकाचें वऱ्हाड : ओसरीएसी वऱ्हाडीए अवघी : आणि वौहर बउलेयावरि बैसलें असे : तेथ गोसावीं बीजें केलें : मांडवाचां दारीं उभे जाले : आणि म्हणीतलें : “ सीधू रे सीधू : परि सीधातें कोणी नेणे : नेदखे : ” ओसरीए बैसले होते तेही म्हणीतलें : “ नेणों कैसें ? हे नव्हे : आम्हीं जाणत असों : मां नेदखों कैसें ? देखत असों मां : ” सर्वज्ञें म्हणीतलें : “ तरि बोलावा ना कां ? ” परि ते उगेचि : मागुतें सर्वज्ञें म्हणीतलें : “ सीधू रे सीधू : परि सीधातें कोणी ओळखें ना : ” तेहीं म्हणीतलें : “ हें नव्हे : आम्हीं ओळखतोंसों : ” सर्वज्ञें म्हणीतलें : “ ओळखा तरि कां बोलावा ना कां ? ” मागुतें सर्वज्ञें म्हणीतलें : “ सीधू रे सीधू : परि सीधातें कोणी जाणे ना : ” ते म्हणति : “ हे नव्हे : आम्हीं जाणतों : ” ऐसें बउलेयावरील उत्तरें करीती : तवं नोवरीएचा बापु घरांतु होता : तो बाहेरि नीगाला : तेणें म्हणीतलें : “ हा नव्हे मी देखतु असें : एइजो जी एइजो : ” म्हणौनि साउमा आला : दंडवत घातलें : श्रीचरणां लागला : गोसावीयांसि आसन घातलें : गोसावी आसनीं उपवीष्ट जाले : चरणक्षालण केलें : गोसावीयांसि आरोगणा दीधली : गोसावीयांसि गुळुळा जाला : वीडा जाला : मग गोसावीं तेथौनि बीजें केलें : ॥',
+    explanation: 'एका गावी लग्नाची वऱ्हाडी मंडळी आणि वधू-वर ओसरीवर बसले असताना प्रभू चक्रधरस्वामी तिथे आले. त्यांनी "सीधू रे सीधू (साक्षात सिद्ध पुरुष समोर आहे) पण सिद्धाला कोणी जाणत नाही, पाहत नाही" असे तीन वेळा सांगितले. वऱ्हाडी लोक गर्वाने म्हणाले, "आम्ही जाणतो, ओळखतो." पण त्यांनी प्रभूंचे आदरातिथ्य केले नाही. इतक्यात नवरीचा बाप घरातून बाहेर आला आणि त्याने प्रभूंचे दिव्य रूप ओळखून सांगितले, "हा सिद्धपुरुष नाही असे मी कसे मानू? प्रभू यावे, यावे." असे म्हणत तो प्रभूंचे स्वागत करण्यास पुढे आला. त्याने प्रभूंच्या चरणी लोटांगण घातले, त्यांना आसनावर बसवून पादप्रक्षालन केले आणि भोजन (आरोगणा) देऊन त्यांची मनापासून सेवा केली. प्रभू त्याचे कल्याण करून तिथून मार्गस्थ झाले।'
+  },
+  {
+    id: 'lc_p70',
+    bookId: 'leela_charitra',
+    number: 70,
+    title: 'लीळा ७०: उकरडां पहुडु',
+    titleEn: 'Leela 70: Ukarda Pahudu',
+    content: 'गोसावीं पाणीपात्रासि बीजें केलें : तेह्वळि नीरक्षण केलें : सुणी व्याली होती : तें उकरडा उकरुनि कोहकु केलें होतें : स्याळे दीस : सीत वाजत होतें : गोसावीं विळिचां एउनि तेथ पहुडु स्वीकारिला : उदेयांचि सकाळि एकी बाइला आणिली पुंजा : सेण : कडबाडें घातलीं : एकी आणिली उन्ह राख घातली : सर्वज्ञें म्हणीतलें : “ बाइ : जवंजवं सोहमीसोहमी उन्ह राख लागे तवंतवं हें खरखरां घोरे : ” उब नीगाली : माणूसें मांदी मीळाली : तेथ उभीं ठेलीं : तीएं गोष्टी करूं लागलीं : आणि यासि चेओ आला : हें उठीलें : आणि श्रीमूर्त्ति झाडुनि धावं घेतली : लोकु उभा होता : तेहीं म्हणीतलें : ‘ उकरडा माणूस वीयाला ’ : गावांसि अरीष्ट उठिलें : आतां सांतीक करूं या : ’ म्हणौनि अवघा गाउं मीळाला : उकरडा खणीतला : अवघा फेडीला : सवानु केला : झाडिला : माडौ घातला : सडेसमार्जन : चौकरंगमाळिका भरलीया : अवघीए गावीं कण मेळवीले : होमु केला : खीचु : पातीया : घुगरीया अवधा लोकु जेवीला : सेजीए गाउनि जोगी आणि जोगीणी एत होतीं : तीएं गोसावीयांसि मार्गी भेटलीं : तीहीं गोसावीयातें म्हणीतलें : “ माहात्मे हो एया : जाओं : ये गावीं उकरडा माणूस व्याला : गावांसि अरिष्ट म्हणौनि सांति करिताति : तेथ चाला भूगति करूं जाओं : ” ऐसें जोगींयें गोसावीयातें म्हणीतलें : गोसावीं बीजें केलें : “ बाइ : हें तेथ पातळीए घालुनि जेविलें : ” मग बीजें केलें : हे गोष्ट गोसावीं आउसांप्रति प्रतेस्थानीं सांघीतली : ॥',
+    explanation: 'हिवाळ्याच्या दिवसांत प्रभू चक्रधरस्वामी भिक्षेसाठी जात असताना त्यांनी एका उकरड्यावर (कचऱ्याच्या ढिगाऱ्यावर) विश्रांती घेतली, जिथे कुत्री व्याली होती आणि शेकोटीसाठी गरम राख टाकलेली होती. सकाळी जेव्हा महिला शेण व राख टाकण्यासाठी आल्या, तेव्हा त्यांनी प्रभूंच्या शरीराची उष्णता आणि घोरण्याचा आवाज ऐकला. लोक जमा झाले आणि त्यांना वाटले की उकरड्यातून माणूस जन्माला आला असून हे गावावर आलेले संकट (अरिष्ट) आहे. त्यांनी शांती करण्यासाठी पूर्ण उकरडा साफ केला, पूजा केली, यज्ञ (होम) केला आणि महाप्रसाद वाटला. वाटेत काही जोगी प्रभू चक्रधरस्वामींना भेटले आणि म्हणाले, "महात्मे, चला त्या गावी उकरड्यातून माणूस जन्माला आल्यामुळे तिथे शांती व महाप्रसाद आहे, तिथे भोजन करूया!" प्रभू मिश्कीलपणे हसले आणि त्यांनी तिथे जाऊन महाप्रसाद ग्रहण केला.'
+  },
+  {
+    id: 'lc_p71',
+    bookId: 'leela_charitra',
+    number: 71,
+    title: 'लीळा ७१: भगओ उदग्रहीणीकें उभयां जैत',
+    titleEn: 'Leela 71: Bhagao Udagrahinike Ubhaya Jaita',
+    content: 'भगओ म्हणीजेती सन्यासी : एका गावां गोसावीं बीजें केलें : तवं दोहा संन्यासीयां उभे देखौनि गोसावीं तेयांसि वीनती केली : तीहीं गोसावीयांतें मानु केला : उभयां संवादु जाला : गोसावीयांचेनि दरीसनें तेयांसि परम बोधु जाला : दंडवत घालुनि चरणां लागले : मग तेथौनि गोसावीं बीजें केलें : ॥',
+    explanation: 'या प्रसंगामध्ये प्रभू चक्रधर स्वामींनी एका गावात दोन संन्यासी (भगओ) उभे असलेले पाहिले. स्वामींनी त्यांना बोध दिला आणि त्यांच्याशी संवाद साधला. दोन्ही संन्याशांना स्वामींच्या दर्शनाने आणि मार्गदर्शनाने परम शांती व बोध प्राप्त झाला. त्यांनी स्वामींच्या चरणी नतमस्तक होऊन कृतज्ञता व्यक्त केली. स्वामींच्या या अपूर्व कारुण्याने त्याचा उद्धार झाला।'
+  },
+  {
+    id: 'lc_p73',
+    bookId: 'leela_charitra',
+    number: 73,
+    title: 'लीळा ७३: मार्गी अधीकारियां भेटि',
+    titleEn: 'Leela 73: Margi Adhikariyan Bheti',
+    content: 'एकी गांवी गोसावीयांसि वस्ति जाली : गोसावीं पाणीपात्रासि बीजें केलें : मां पाणीपात्र जालें : गोसावीयांच्या श्रीकरीं पाणीपात्र : गोसावी गांवाबाहेरि गंगेसि बीजें करिती होते : तवं मार्गी अधीकारिया गाउं रीगावेया मार्गे जातु होता : तेयाचे राउतपाइक पुढें एत होते : तवं तेयाचेनि एकें राऊतपाइकें : गोसावीयांतें भालेयांचीया बुडीयाकरूनि लोटिलें : तेणेंकरूनि श्रीकरिचें पाणीपात्र सांडिलें : मग तेथचि गोसावी आसनीं बैसौनि एकी श्रीकरें दोंदेंसीं पाणीपात्र धरिलें : उजवेनि श्रीकरें भूईंचीं सीतें वेंचिति : तवं मागिलाकडौनि तो अधीकारीया आला : तवं तेणें गोसावीयांतें सीतें वेंचाती देखोनि दांडीएखालुती उडी घातली : दंडवत घातलें : श्रीचरणासि लागला : मग म्हणीतलें : “ हैं काइ रे पापीए हो : ऐसें कवणें केलें रे ? गोसावीयातें कैसें लोटिलें ? ” गोसावीयातें वीनऊं लागला : “ हें असों दीजो जी : गोसावीं माझेया बीढारा आरोगणे बीजें करावें जी : ” गोसावी तेयांची वीनवणी न स्वीकारितीचि : मग तो सीतें वेंचूं लागला : सीतें वेंचलीं : श्रीकरीं ओळखविलीं : मग तो गोसावीयांसि दंडवत करूनि नीगाला : मग गोसावीयांसि आरोगण जाली : मग तेथौनि बीजें केलें : ॥',
+    explanation: 'प्रभू चक्रधरस्वामी भिक्षेचे अन्न घेऊन चालले असता वाटेत गावाच्या मुख्य अधिकाऱ्याचे सैनिक घोड्यावरून येत होते. एका उद्धट सैनिकाने प्रभू स्वामींना भाल्याच्या पाठीमागच्या भागाने धक्का दिला, ज्यामुळे प्रभूंच्या हातातील भिक्षापात्र जमिनीवर पडले आणि अन्न सांडले. प्रभू शांतपणे तिथेच जमिनीवर बसून सांडलेले अन्नाचे दाणे वेचू लागले. मागून अधिकारी आला, प्रभूंचे अलौकिक तेज आणि ते जमिनीवरचे अन्न वेचत असल्याचे पाहून तो तत्काल घोड्यावरून खाली उतरला. त्याने प्रभूंच्या चरणी क्षमायाचना केली आणि सैनिकांना खडसावले. त्याने प्रभूंना आपल्या घरी येण्याची विनंती केली, पण प्रभू स्वामींनी ती नाकारली. अधिकाऱ्याने स्वतः जमिनीवरचे सर्व अन्न गोळा करून प्रभूंच्या पात्रात ठेवले आणि प्रभूंच्या चरणी लीन झाला।'
+  },
+  {
+    id: 'lc_p74',
+    bookId: 'leela_charitra',
+    number: 74,
+    title: 'लीळा ७४: झाडी रामद्रणेया भेटि',
+    titleEn: 'Leela 74: Zhadi Ramadraneya Bheti',
+    content: 'गोसावीं हे गोष्टि सवै उपरि सांघीतली : भक्तिजनें सवेचीया गोष्टी सांगत होतीं : कोणी म्हणे : ‘ मज काइसेयाची सवे : ’ कोणी म्हणे : ‘ मज काइसेयाची सवे : ’ सर्वज्ञें म्हणीतलें : “ एथ एका झाडाची सवे होती : झाडि प्रदेशीं एकी गांवी असतां हें एका झाडाखालासि असे : ” गोसावीयासि तेया वृक्षाखाला अवस्थान असे : गोसावी गावांमाजि पाणीपात्रासि बीजें केलें होतें : तवं तेया झाडाभवंता रामद्रणेयाचा पाळो पडला : दुहें घातलीं : रामद्रणा कटिकैए झाडीवरि जातु होता : गोसावी नगराआंतु पाणीपात्र करूनि गंगेसि आरोगण केली : तवं झंजुरुकें जालें : ऐसें पीचडीएं मुडुपघसणी : घोडेयांचेया लाहासांवरोनि : दूसाचेया तणीयांवरि श्रीचरण देउनि सवेचीया झाडापासि बीजें केलें : झाडातळीं आसन जालें : दुस हालीनलें : तवं तेथ होते तेहीं म्हणीतलें : “ हा कोणु गा ? हा कोणु गा ? माणुस रे : माणुस रे : ” म्हणौनि धावीनले : गोसावीयांसि मौनाची प्रवृति : गोसावी बोलति ना : वास पाहाति ना : अवघेया कटकाआंतु हाहाकारू जाला : आले तवं यातें आसनीं उपवीष्ट देखिलें : एक धावंत रामद्रणेयापुढें सांघों गेले : “ कोण नेणों कटकाआंतु आला असे : तो बोले ना : वास पाहे ना : तो उगाचि नीवातु वडाताळीं एउनि बैसला असे : ” रामद्रणा देवीयां पोतसुनि आला : तवं गोसावीयातें देखिलें : “ आरे : परते सरा : हे गोसावी : ” दंडवत घातलें : श्रीचरणां लागला : मग गोसावीयांतें वीनवीलें : “ जी जी : माझेया दूसासि गोसावीं बीजें करावें : ” गोसावीं वीनवणी स्वीकारिली : गोसावीं तेयांच्या दूसासि बीजें केलें : आसन जालें : गोसावी आसनीं उपवीष्ट जाले : चरणप्रक्षाळण केलें : मग गोसावीयांसि पडदणी दीधली : तवं माल मर्दना देयावेया आला : तवं रामद्रणे वीनवीलें : “ सरा रे : एथ तुम्ही के रिगाल ? एसणी आटि काइ तुम्हाचिकारणें काढिली असे ? ” मग आपणचि गोसावीयांसि मर्दना देओं लागला : जवंजवं मर्दना दे तवंतवं पोटीं मनोरथू करी : जें “ ए वेळींचे कटकें परत्ती : कां तरि मीं आपुलेया गावा गोसावीयांतें नेतां : ” तवं राजादेसु नीगाला : जे ‘ कटकें लेतीवें : ’ ऐसीं लीखितें आलीं : गोसावीयासि मर्दना जाली : मादणें जालें : पुजा जाली : आरोगण जालेें : गुळुळा जाला : फोडी ओळखवीलीया : वीडीया करूनि दीधलीया : गोसावीयांसि पहुडु जाला : मग लीखितें वाचिलीं : जें ‘ ए वेळींचीं कटकें परतावीं ’ : रामद्रणा हरीखला : तैसाचि तो गोसावीयांजवळा आला : “ जी जी : रायाचीं लीखितें आलीं : जें कटकैं परतावी ” : रामद्रणा मग गोसावीयातें वीनउं आदरिलें : “ जी जी : अळजपुर नगर बरवें असे जी : सीधसाधकांजोगें : बरवें लाखारबन : बरवीं देऊळें असति : बरवीं वनें वनसतळीया असति : गोसावी तेथ बीजें करावें जी : ” सर्वज्ञें म्हणीतलें : “ तें येथ पुर्वी दृष्ट असे : ” रामद्रणे म्हणीतलें : “ तरि माझेया कुटुंबासि दरीसन देवें जी : ” एथ बीजें करावेयाची प्रवृती : मग तेयाची वीनती स्वीकारिली : मग तेणें गोसावीयांसि गरूडु घोडा ओळखविला : वेगळें दूस ओळखविले : हडपी : १ : सागळीया : २ : चवरूधरू : ३ : भोइ : ४ : मादुरी : ५ : सुआरु : ६ : बडुवा : ७ : वेचकरू : ८ : थापटें : ९ : मळिवंते : १० : ऐसें दाही जण गोसावीयांसि ओळखविले : मार्गी गोसावी बीजें करिती : गरूडा घोडेया अस्तीति होए : गति क्षाळे : उभे राहिलेयावांचौनि सरेचि ना : मग गोसावी एकाधी राजिकी गोष्टि सांघति : जें उभे राहिलेयावांचौनि आइकोंचि नैए : रामद्रणा गोसावीयांतें पुसे : गोसावीं सांघति : तें साच होए : तवं घोडेयाची अस्तीति भंगे : मग गोसावी साउमें बीजें करीती : देऊळवाडा काजळेश्वरामागां : ऐसें तें आइकती : पुराण होत असे तरि पुराण आइकति : पेखणें होत असे तरि पेखणें अवलोकीती : मग त्यागू देति : मग बीजें करिती : मग घोडेयावरि आसन होए : कानिची चामाठी श्रीकरीं घेति : मग वेदिकेसि बीजें करिती : तेथ बकुळाचेया वृक्षापासि घोडा उभा करिती : वेदिकेसि ब्राम्हणापासि नावेक आसन होए : मग गरूडा घोडेयावरि आसन होए : मग आवाराभीतरि बीजें करिती : देव्हारचौकीए मर्दना : मादणें : आरोगण होए : रामद्रणेयाची माता श्रीचरणां तुळसी वाए : मग जेवीती : गोसावीयांसि डोल्हारेयावरि पहुडु होए : ॥',
+    explanation: 'प्रभू चक्रधरस्वामींनी आपल्या भक्तांना एका वृक्षाची आवड (सवय) असल्याचा प्रसंग सांगितला. प्रभू एका घनदाट झाडी प्रदेशात एका झाडाखाली राहत असत. तिथे सरदार रामदेवराव (रामद्रणा) याचे लष्कर (कटक) येऊन तळ ठोकला. प्रभू भिक्षेसाठी नगरात गेले असता तिथे रामद्रण्याच्या सैनिकांनी वेढा घातला होता. प्रभू शांतपणे सैनिकांच्या घोड्यांवरून व दोऱ्यांवरून पाय ठेवून थेट आपल्या आवडत्या वृक्षाखाली जाऊन बसले. प्रभूंचे मौन आणि दुर्लक्ष पाहून सैन्यात गोंधळ उडाला. शेवटी रामद्रणा स्वतः तिथे आला. प्रभूंचे तेज पाहून त्याने सैनिकांना बाजूला केले आणि प्रभूंच्या चरणी लीन झाला. त्याने प्रभूंना आपल्या तंबूत (दूस) नेले आणि स्वतः प्रभूंची मालिश (मर्दन) व सेवा केली. सेवा करताना त्याने मनात इच्छा धरली की सैन्याची मोहीम रद्द व्हावी जेणेकरणे त्याला प्रभूंची अधिक सेवा करता येईल. तात्काळ राजाचा निरोप आला की मोहीम रद्द झाली आहे! रामद्रण्याला अतिशय आनंद झाला. त्याने प्रभूंना अचलपूर (अळजपुर) येथे येण्याची विनंती केली आणि प्रभूंच्या दिमतीसाठी आपला "गरुड" नावाचा घोडा आणि १० सेवक दिले. प्रवासात प्रभू गरुड घोड्यावर बसून प्रवास करत असत आणि वाटेत लोकांचे कल्याण करत अचलपूरला पोहोचले.'
+  },
+  {
+    id: 'lc_p75',
+    bookId: 'leela_charitra',
+    number: 75,
+    title: 'लीळा ७५: अळजपुरीं अवस्थान : प्रतिदिनीं अंबिनाथा गमन',
+    titleEn: 'Leela 75: Alajpurin Avasthan: Pratidini Ambinatha Gaman',
+    content: 'गोसावीयांसि मर्दनामादणें होए : पाटाउं पारावणं घेति : काढणी यां घोडा पालाणी : गरूडा घोडेयावरि आसन होए : मग गोसावी अंबिनाथासि बीजें करीती : दारवठां घोडेयाखालुतें उतरति : श्रीकरिची चामाठी घोडेयाचां कानीं घालीति : तो स्तीतिसुख भोगीतु राहे : गोसावी भीतरि बीजें करिती : बारवे जळभांडवीए श्रीमुख प्रक्षाळीति : इतुले ऐसें श्रीकरं श्रीचरण प्रक्षाळीति : मग अंबनाथापासि बीजें करिती : मांधानिचें उदक घेति : अंबिनाथावरि घालीति : श्रीकरंस्परीसति : हडपीयातें वीडा मांगोनि मांधानी तीमुनि अंबिनाथा वाति : मग गोसावी तीं दारामध्यें एकें दारें बाहेरि बीजें करिती : प्रदक्षिणा करिती : मग चौकीं आसन होए : तेथ वैष्णवांचें गाणें होत असे तें आइकति : पुराण होत असे तरि पुराण आइकति : पेखणें होत असे तरि पेखणें अवलोकीती : मग त्यागू देति : मग बीजें करिती : मग घोडेयावरि आसन होए : कानिची चामाठी श्रीकरीं घेति : मग वेदिकेसि बीजें करिती : तेथ बकुळाचेया वृक्षापासि घोडा उभा करिती : वेदिकेसि ब्राम्हणापासि नावेक आसन होए : मग गरूडा घोडेयावरि आसन होए : मग आवाराभीतरि बीजें करिती : देव्हारचौकीए मर्दना : मादणें : आरोगण होए : रामद्रणेयाची माता श्रीचरणां तुळसी वाए : मग जेवीती : गोसावीयांसि डोल्हारेयावरि पहुडु होए : ॥',
+    explanation: 'अचलपूर येथे वास्तव्य करत असताना प्रभू चक्रधरस्वामींचा नित्यक्रम कसा असे, याचे अत्यंत सुंदर वर्णन या लीळेत केले आहे. प्रभू सकाळी सुगंधी तेलाचे मर्दन व स्नान करून भरजरी वस्त्रे परिधान करत असत. त्यानंतर आपल्या "गरुड" घोड्यावर स्वार होऊन ते दररोज अंबिनाथ (अंबादेवी) मंदिरामध्ये दर्शनासाठी जात असत. मंदिराच्या प्रवेशद्वाराशी घोड्यावरून उतरून प्रभू आपल्या हातातील चाबूक घोड्याच्या कानात घालत असत, ज्यामुळे तो घोडाही समाधी सुखात शांत उभा राहत असे. प्रभू मंदिरात जाऊन विहिरीच्या पाण्याने आपले मुख आणि चरण प्रक्षाळण करत असत. नंतर गर्भगृहात जाऊन अंबिनाथावर पावन जल अर्पण करत असत आणि विडा अर्पण करत असत. मंदिरात चाललेले वैष्णवांचे कीर्तन, गायन आणि पुराणाचे श्रवण करून ते तिथल्या भक्तांना दान देत असत. परतताना रामद्रण्याची माता प्रभूंच्या चरणी तुळशीपत्र वाहून त्यांची पूजा करत असे आणि प्रभू मोठ्या आनंदाने भोजन करून झुल्यावर (डोल्हारा) विश्रांती घेत असत.'
+  },
+  {
+    id: 'lc_p76',
+    bookId: 'leela_charitra',
+    number: 76,
+    title: 'लीळा ७६: चुनेजाति नीरोपण',
+    titleEn: 'Leela 76: Chunejati Niropan',
+    content: 'एकु दीं गोसावीं अंबिनाथासि बीजें केलें : प्रदक्षिणेसि बीजें करिताति तवं चुनाडे चुना उखरडीत होते : देऊळाचीए नासीदखिणे गोसावी उभे राहिले : सर्वज्ञें म्हणीतलें : “ हा चुना कां उखरडीत असा ? ” “ ना जी : आणीकु बरवा चुना असे : तो सारूनि : ” “ तेयापरीस वर हाचि नीका असे : ” “ ना जी : आणीकु बरवा जाला असे : ” सर्वज्ञें म्हणीतलें : “ कैसा बरवा जाला असे ? जो करील असा तो कवणी कवणी करणीचा ? ” ते जाणति तिया सांगीतलीया : सर्वज्ञें म्हणीतलें : “ जाला चुना कैसे निजाणिजे ? ” तीहीं सांगीतलें : मग तीहीं चुनेयांची दडपणी सांगीतली : “ तेयापरीस वर हाचि नीका : ” “ जी जी : आमची चुनाडेयांची जाति : फेडी म्हणितलेयां फेडिजे : लावि म्हणितलेयां लाविजे : ” “ मग गोसावीयांचीया जाती नीरोपूं आदरिलीया : अमुकीए जातिचे खडे : अमुकीए जातिचे कोळसे : अमुकाचि काळुपपर्यंत भाजों देयावे : अमुकीएचि जातिचा तागु : अमुकाचि काथू : अमुकेचि उडीद : वांटिटी परि : द्रव्य मेळवीती परि : कुहीजवीती परि : मग सर्वज्ञें म्हणीतलें : “ जाला चुना तो ऐसेनि जाणिजे : काढुनि सुणेयांपुढें उंडा करूनि ठेविजे : तें दहींभाताचा उंडा म्हणौनि डबकरिं घांसु घे : खाए : आणीका दुसरीया घांसाचि वास पाहे : यातें स्वानभक्षी चुना म्हणिजे : तो जाला चुना ऐसें जाणिजे : ” मग तेहीं म्हणीतलें : “ जी जी : आम्ही परिसों नेणों : मग जागोनि काइ ? हा गोसावीं नीरोपावा आणि गोसावींची परिसावा : जी जी : हे आम्हीं भाखही नेणों जी : ” तेहीं म्हणीतलें : “ आम्ही केवि जाणों जी : या आमुचीया जीणी जी : आम्हांकरवि करवीत असति तरि करीत असों : ” सर्वज्ञें म्हणीतलें : “ तरि यापरीस उचडीत असा तोचि नीका : ” ॥',
+    explanation: 'एक दिवस प्रभू चक्रधरस्वामी अंबिनाथ मंदिराची प्रदक्षिणा घालत असताना काही गवंडी (चुनाडे) मंदिराचा जुना चुना खरवडून काढत होते. प्रभू स्वामींनी त्यांना विचारले, "हा चांगला जुना चुना का काढत आहात?" त्यांनी उत्तर दिले, "प्रभू, आम्ही यापेक्षा चांगला नवीन चुना लावणार आहोत." प्रभू म्हणाले, "नवीन चुना चांगला झाला आहे हे तुम्ही कसे ठरवणार?" गवंड्यांनी जुन्या पद्धतीची माहिती दिली. तेव्हा प्रभू स्वामींनी स्वतः चुना बनवण्याची अचूक शास्त्रोक्त प्रक्रिया सांगितली—कोणत्या प्रकारचे खडे, कोणते कोळसे, किती वेळ भाजायचे, कोणता ताग, उडीद आणि काथ किती प्रमाणात मिळवायचे आणि ते कसे कुजवायचे! प्रभूंच्या ज्ञानाने अचंबित होऊन गवंडी म्हणाले, "प्रभू, आम्ही तर फक्त मजुरी करणारे आहोत, आम्हाला हे शास्त्र माहित नाही." प्रभू पुढे म्हणाले, "नवीन चुना चांगला तयार झाला आहे हे ओळखण्याची एक सोपी परीक्षा आहे. तयार झालेल्या चुन्याचा गोळा कुत्र्यासमोर टाकावा. जर कुत्र्याला तो दहींभाताचा गोळा वाटला आणि त्याने तो खाण्याचा प्रयत्न केला, तर समजायचे की चुना अगदी उत्कृष्ट दर्जाचा झाला आहे! याला स्वानभक्षी चुना म्हणतात." प्रभूंच्या या अगाध व्यावहारिक ज्ञानाने सर्व गवंडी थक्क झाले आणि त्यांनी प्रभूंच्या चरणी नतमस्तक होऊन नवीन चुना न लावता जुनाच चुना तसाच ठेवला.'
+  },
+  {
+    id: 'lc_p77',
+    bookId: 'leela_charitra',
+    number: 77,
+    title: 'लीळा ७७: उदास्यस्वीकारें वस्त्रपुजास्वीकारू',
+    titleEn: 'Leela 77: Udasyasveekare Vastrapoojasveekaru',
+    content: 'ऐसें दाहा मास गोसावीयांसि अवस्थान जालें : एकु दीसीं रामद्रणेयांचा मनोधर्म्मु नेणों कैसा उणा जाला : गोसावीं राज्य सांडुनि उदास्य स्वीकारिलें : गोसावी उदीयांचि उठिले : अवघें वस्त्रें ठेविलीं : पासवडेयाचें वस्त्र होतें तें प्रावर्ण केलें : मग लाखारबनाआंतु बीजें केलें : तवं उदीयांचि मर्द्नीया आला : अवघे ओळगीए आले : तवं गोसावीयांतें देखतिचि ना : मग रामद्रणेयापासि सांघावेया गेले : “ गोसावीं उदास्य स्वीकारूनि बीजें केलें : ” ऐसा बोभाटु जाला : रामद्रणेनि चहुं वाटां राखणें घातलीं : दोघ दोघ : सर्वज्ञें म्हणीतलें : “ हें जैसें काहीँ तेयांचें काहीँ तेयांचें ” तवं एकें गोसावीयांतें सोमनाथापासि लाखारबनाआंतु आंबेयाखाली देखिलें : एक धावंत रामद्रणेयापासि सांघावेया गेला : मग रामद्रणा तेथ धावंत आला : तवं गोसावीयांचे ठांई उदास्य थोर : गोसावीयांचे दृष्टीपुढें रीगवे ना : रामद्रणा भीतभीत गोसावीयांतें वीनवावेया आला : दंडवत केलें : श्रीचरणां लागला : गोसावी वीनवणी न स्वीकारिती : मग गोसावीयांतें दुख करूनि आरोगणे वीनवीलें : गोसावीयांसि सोमनाथीं आरोगण जाली : तेथचि पहुडु जाला : मग तेणें दोघ दोघ राखण दृष्टीचीये आळवी घातले : सर्वज्ञें म्हणीतलें : “ बाइ : हे तेयांचें जैसें काहीँ लागे तैसीं यासि गुपीतया राखणें घातलीं : ” एरी दीसीं मागुतें गोसावीयांतें वीनवावेया आला : गोसावी वीनवणी न स्वीकारितीचि : मग दुख करूनि गोसावीयातें आरोगणेचें वीनवीलें : तेथचि ताट घेउनि ये : मग सोमनाथीं आरोगण होए : तेथचि पहुडु होए : तीसरं दीसीं मागुता आला : तवं गोसावीयांची दृष्टी प्रसंन ऐसी देखिली : मग रामद्रणेनि गोसावीयांसि दंडवत घातलें : श्रीचरणां लागला : पुढां पाए मोडुनि बैसला : “ जी जी : ऐसें काइ अव्हेरीलेें ? ” सर्वज्ञें म्हणीतलें : “ जवळािपासि यातें बुढीचें राखा : हें काइ तुमचें काहीँ घेउनि आलें असें ? ” तवं तेणें म्हणीतलें : “ हें काइ जी : गोसावी आमचें सर्वस्व घेउनि आले असती : ” मग गोसावीयांतें वीनउं लागला : परि गोसावी वीनवणी न स्वीकारितीचि : मग रामद्रणेनि म्हणीतलें : “ जी जी : माझीए मातेसि तीनि दी उपवासु : गोसावीं तेथ बीजें करावें : मग माझी माता गोसावीयांचेया श्रीचरणां तुळसी वाइल : तीचें वर्त्त सुफळ होइल : ” सर्वज्ञें म्हणीतलें : “ मागुतें तन्हीं तेंचि कीं : ” रामद्रणे म्हणीतलें : “ ना जी : अवघेयां दीसांचें एकें वेळें वाहाती : मग गोसावीयांसि जेउती प्रवृती तेउती बीजें करावें : ” एतुलेंनि गोसावीयांचें उदास्य प्रहरलें : मग गोसावीं वीनवणी स्वीकारिली : हातें हातु धरुनि नगराआंतु बीजें केलें : भीतरि मर्द्ना : मादणें : पुजा जाली : मांजिठी तीवडि ओळगविली : रामद्रणेयांचीया माता श्रीचरणां तुळसी वाइलीया : तेयांतें सर्वज्ञें म्हणीतलें : “ बाइ : ऐसें व्रत नेघिजे कीं : हें कव्हणीकडे जाईल तेह्वळि काइ करा ? ” मग गोसावीयांसि ताट केलें : आरोगण जाली : गुळुळा जाला : वीडा जाला : मग रामद्रणेयांची माता तेहीं जेविलीं : मग रामद्रणेयािंनि गोसावीयांतें वीनवीलें : “ जी जी : मीया गोसावीयांसि नीरोधू केला : आतां गोसावीयांसि प्रवृित तवं राहावें : जेह्वळि गोसावीयांसि बीजें करावेयाची प्रवृित उपजैल तेह्वळीचि बीजें करावें : ” मग गोसावीयांसि देहारचौकीए वस्ति जाली : मग एरी दीसीं गोसावीं तेथौनि बीजें केलें : ॥',
+    explanation: 'अचलपूर येथे प्रभू चक्रधरस्वामींचे दहा महिने वास्तव्य झाले होते. एके दिवशी रामदेवराव (रामद्रणा) याच्या मनात काहीसा गर्व किंवा उदासीनता निर्माण झाल्याचे पाहून, प्रभू स्वामींनी तिथले वैभव (राज्य) सोडून परम वैराग्य (उदास्य) स्वीकारले. त्यांनी आपली सर्व मौल्यवान वस्त्रे तिथेच ठेवून केवळ एक साधा पासवडा (वस्त्र) पांघरला आणि पहाटेच कोणालाही न सांगता जंगलात (लाखारबन) निघून गेले. सकाळी सेवक आणि रामद्रण्याला प्रभू महालात दिसले नाहीत तेव्हा एकच खळबळ उडाली. रामद्रण्याने चारी बाजूंना रक्षक पाठवले. अखेर प्रभू सोमनाथ मंदिराच्या मागे एका आंब्याच्या झाडाखाली ध्यानस्थ बसलेले दिसले. रामद्रणा अत्यंत पश्चात्तापाने तिथे धावत आला आणि प्रभूंचे पाय धरले, पण प्रभू ध्यानस्थ आणि उदासीन राहिले. रामद्रण्याच्या आत्यंतिक आग्रहाने आणि डोळ्यांतील अश्रूंनी प्रभूंचे मन विरघळले आणि त्यांनी तिथेच भोजन स्वीकारले. तिसऱ्या दिवशी प्रभू चक्रधरस्वामी प्रसन्न झाले. रामद्रणा प्रभूंसमोर नतमस्तक झाला आणि म्हणाला, "प्रभू, तुम्ही मला असे का सोडले? माझे काय चुकले?" प्रभू मिश्कीलपणे हसून म्हणाले, "मी काय घेऊन आलो होतो?" रामद्रणा म्हणाला, "प्रभू, तुम्ही तर माझे सर्वस्व घेऊन आला आहात." त्याने प्रभूंकडे महालात परतण्याची गळ घातली आणि सांगितले की त्याच्या वृद्ध मातेने प्रभूंच्या विरहाने तीन दिवसांचा उपवास केला आहे. प्रभू चक्रधरस्वामींनी तिचा शुद्ध भाव ओळखून तिचे व्रत सुफळ करण्यासाठी आपले उदासीनत्व सोडले आणि ते पुन्हा महालात परतले. महालात परतल्यानंतर प्रभूंचे पाय धुणे, पूजाविधी होणे आणि त्यांना मांजिष्ठा रंगाचे उत्तम वस्त्र (तीवडि) अर्पण करणे हे सर्व सोपस्कार पार पडले. रामद्रण्याच्या वृद्ध मातेने प्रभूंच्या पावन चरणांवर तुळशीपत्र वाहून तिची पूजा पूर्ण केली. तेव्हा प्रभू स्वामींनी तिला उपरोधाने विचारले, "बाइ, असे कठीण व्रत का करावे? उद्या आम्ही दुसरीकडे निघून गेलो तर काय कराल?" यावर तिने अत्यंत नम्रतेने आणि प्रेमाने प्रभूंच्या चरणी प्रार्थना केली. त्यानंतर प्रभूंच्या भोजनासाठी सुवर्ण ताट आणण्यात आले. प्रभूंनी भोजन केले, गुळण्या केल्या आणि विडा ग्रहण केला. प्रभूंच्या भोजनानंतर रामद्रण्याच्या मातेनेही प्रसाद म्हणून भोजन करून आपला तीन दिवसांचा उपवास सोडला. रामद्रण्याने अत्यंत कळकळीने प्रभू स्वामींना विनवणी केली की, "प्रभू, मी आपल्या गमनाला अडथळा आणला आहे, पण आता जोपर्यंत तुमची स्वतःची इच्छा होणार नाही, तोपर्यंत तुम्ही येथेच राहावे. जेव्हा तुमची मनापासून इच्छा होईल, तेव्हाच तुम्ही येथून प्रयाण करावे." प्रभू चक्रधरस्वामींनी ही विनंती मान्य केली आणि त्या रात्री त्यांचा मुक्काम देहारचौकीमध्ये झाला. दुसऱ्या दिवशी सकाळी प्रभू चक्रधरस्वामींनी तिथून पुढे मार्गक्रमण केले।'
+  
+},
+  {
+    id: 'lc_p78',
+    bookId: 'leela_charitra',
+    number: 78,
+    title: 'लीळा ७८: वडनरां कांठिवनीं पोतुकी खेळु',
+    titleEn: 'Leela 78: Vadanaran Kanthivanin Potuki Khelu',
+    content: 'कुकडेयापासिं तळें : तेथ चौं गाविचे गोपाळ गाइ पाणीयांसि घेउनि आले : गोसावीं तेथ बीजें केलें : तेथ गोपाळ बैसले असति : गोसावीयांसि कांटीएतळीं आसन जालें : मग गोसावीं तीवडीं होती ते फाडिली : एकु कटीप्रदेशीं सुडा : एकु श्रीमुगुटीं सुडा : एकु कौपीनु : एकु कडिदोरा : हें एतुलें वेगळें केलें : एरें पोतुकें केलीं : गोसावीं गोपाळांतें म्हणीतलें : " गोपाळ हो : हें दूसी होईल : तुम्ही ग्राहीकें हुआ : " तीहीं म्हणीतलें : " जी जी : आमतें दाम नाही : " सर्वज्ञें म्हणीतलें : " बाबुळेचेया सेंग चे दामौटेयांचे दाम करूं : चिंचोरेयांचीया आसु करा : " " हो कां जी : " मग ते चिंचोरे आणुं गेले : म्हणौनि दामिनीयांचे दाम केले : चिंचोरेयांचीया आसु केलीया : गोसावी दूसी जाले : पसारा घातला : तेयांचीये जाडीचा तडवा केला : तेयांचीये डांगेची आडदाडी केली : म्हणौनि श्रीकराचा अनुकारू दाखवीला : मग ते चिंचोरीया घेऊनि आले : गोसावी घडीया काढीति : दाखवीति : म्हणति : " पालवीं पाहा : प्रमाण पाहा : " तेयांसि हातासन करीति : मग ते वस्त्रें घेति : गोसावीयांसि दामणीयांचे दाम सारीति : सर्वज्ञें म्हणीतलें : " हे दाढें : कुडे : हे दूराही : " दाम देति ते मांडीए खाली घालीति : आसु सारीति : गोसावी चाळीति : " हे वाटकें : हे पूटक : हे सोप : " ऐसीयापरी अवघीं वस्त्रें देति : ऐसें चिंचोरेयांदा मोटेयांचे पुंजे जाले : मग गोपाळांतें म्हणीतलें : " तुम्ही दूसी हुआ : हें ग्राहीक होईल : " मग गोसावी ग्राहीक जाले : ते दूसी जाले : मग गोसावीं तेया अवघीया वस्त्रांच्या घडीया घेतलीया : मग तेयासि मागुतेया दीधलीया : ॥',
+    explanation: 'कुकडे गावाजवळील एका तलावावर चार गावांतील गोपाळ गाईंना पाणी पाजण्यासाठी आले होते. तिथे चक्रधरस्वामी एका बाभळीच्या काट्यांच्या सावलीत बसले. त्यांनी आपल्याकडील शेला (तीवडी) फाडून त्याचे लहान लहान तुकडे केले—काहींचा कमरेला गुंडाळण्याचा सुडा, डोक्यावर बांधण्याचा सुडा, लंगोट (कौपीन), आणि कंबरपट्टा (कडिदोरा) बनवले आणि उरलेल्या कपड्यांची छोटी छोटी खेळणी (पोतुकी) बनवली. प्रभू गोपाळांशी खेळताना म्हणाले, "गोपाळ हो! मी कापड विक्रेता (दूसी) होतो, तुम्ही ग्राहक व्हा." गोपाळांनी सांगितले, "आमच्याकडे पैसे नाहीत." प्रभू म्हणाले, "बाभळीच्या शेंगांचे आणि बियांचे पैसे करूं, आणि चिंचोक्यांचे नाणे (आसु) करू." गोपाळांनी चिंचोके आणले. प्रभूंनी खेळता-खेळता कापडाचा पसारा मांडून विविध कपडे दाखवले व गोपाळांना कापड विकले. नंतर गोपाळांना कापड विक्रेते केले व स्वतः ग्राहक बनले. शेवटी प्रभू चक्रधरस्वामींनी सर्व कपडे गोळा करून पुन्हा गोपाळांना खेळण्यासाठी वाटून दिले।'
+  },
+  {
+    id: 'lc_p79',
+    bookId: 'leela_charitra',
+    number: 79,
+    title: 'लीळा ७९: कांतीया सोंकरणें',
+    titleEn: 'Leela 79: Kantiya Sonkarane',
+    content: 'मग गोसावीं तें वस्त्रें फाडुनि चिंधीया केलीया : दोरीया वळीलीया : गोफण केली : मग बाबुळेवरि उभे राहिले : मग गोसावी भेलवंडी वस्त्रें गुंडीति : आणि \'झा\' भोरडीए म्हणौनि गोफणीत : ऐसीया अवघीया चीरटीया सांडीलीया : मग गोसावी खालि उतरले : मग गोपाळीं गोसावीयांसि आरोगणेचें वीनवीलें : " जी जी : गोसावीं आरोगण करावी : मग बीजें करावें : " मग वीनती स्वीकारिली : मग गोपाळीं आपुलालीया मोटा सोडिलीया : बरवा बरवा पदार्थू नीवडीला : तेयांची गोसावीयांसि आरोगण दीधली : गोसावीयांसि गुळुळा जाला : वीडा जाला : वीळीचां गोपाळ आपुलेया गांवां नीगाले : मग गोसावी वीळीचां वडनेरेयासि बीजें केलें : ॥',
+    explanation: 'प्रभू चक्रधरस्वामींनी कपड्यांचे तुकडे करून त्यांच्या चिंध्या केल्या आणि सुताच्या दोऱ्या वळवून एक गोफण तयार केली. मग ते बाभळीच्या झाडावर चढले आणि त्या चिंध्या गोळा करून गोफणीत ठेवून "झा भोरडीए" असे म्हणत हवेत भिरकावू (गोफणीत) लागले. अशा प्रकारे त्यांनी सर्व चिंध्या दूर फेकून दिल्या. खाली उतरल्यावर गोपाळांनी त्यांना प्रेमाने जेवण्याचे (आरोगण) विनंती केली. गोपाळांनी आपापल्या शिदोऱ्या सोडल्या आणि त्यातील सर्वोत्तम पदार्थ प्रभूंसमोर ठेवले. प्रभूंनी भोजन केले, गुळण्या केल्या आणि विडा स्वीकारला. संध्याकाळी गोपाळ आपापल्या गावी गेले आणि प्रभू वडनेर (वडनेर भजनी) येथे जाण्यास निघाले।'
+  },
+  {
+    id: 'lc_p80',
+    bookId: 'leela_charitra',
+    number: 80,
+    title: 'लीळा ८०: वडनेरां वटेश्वरां बीजें करणें : लींगाचां देऊळीं वस्ति',
+    titleEn: 'Leela 80: Vadaneran Vatesvaran Beejen Karane: Lingachan Deulin Vasti',
+    content: 'वीळीचां गोसावीं वटेश्वराचेया देऊळासि नीद्रास्थानासि बीजें केलें : तवं राणा धूपातीं करूनि नीगाला : राणेनि म्हणीतलें : " जी जी : एथ उपकरणें असति : तीएं जाती : म्हणौनि देऊळासि कुंचीताळें घातलें असे : तुम्ही पैलाडे देऊळासि उतरेस्वराचेया नीद्रास्थानासि जा : " तेथ गोसावीं बीजें केलें : मग उतरेस्वराचां देऊळीं गोसावीयांसि आसन जालें : पहुडू स्वीकारिला : राणा गांवाआंतु गेला : जेविला : नीजला : आणि मध्याने एकि रात्रीं आठवलें : " ते महात्मे मीयां तेया देऊळासि पाठविले : तेथ दोनि सर्प असति : " तैसाचि तो नीगाला : तवं वेसीसि कुंचीताळें पडिलें : मग तो मागुता घरासि आला : च्यान्ही पाहार नीद्रा नाहीं : दुख करीतु नीजला : चडफडीतु होता : " केधवां दीसु उगवैल : मां मी केधवा जाइन : " ॥',
+    explanation: 'संध्याकाळच्या वेळी प्रभू चक्रधरस्वामी वडनेर येथील वटेश्वर मंदिरामध्ये विश्रांतीसाठी गेले. तिथे मंदिराचा पुजारी (राणा) पूजा-आरती करून बाहेर पडत होता. तो म्हणाला, "महाराज, या देवळात पूजेची मौल्यवान उपकरणे आहेत, ती चोरीला जातील म्हणून मी या मंदिराला कुलूप (कुंचीताळ) लावले आहे. तुम्ही पलीकडच्या उतरेश्वर मंदिरामध्ये मुक्कामासाठी जा." प्रभू ते ऐकून उतरेश्वर मंदिरात गेले आणि तिथे निजले. पुजारी राणा घरी गेला, जेवला आणि झोपला. पण मध्यरात्री त्याला अचानक आठवले की ज्या उतरेश्वर मंदिरात त्याने महात्माजींना पाठवले आहे, तिथे दोन अत्यंत विषारी सर्प राहतात! तो घाबरून धावत निघाला, पण गावाच्या वेशीला कुलूप असल्याने त्याला बाहेर जाता आले नाही. पश्चात्ताप आणि भीतीने त्याला रात्रभर झोप लागली नाही आणि तो उजाडण्याची वाट पाहत राहिला।'
+  },
+  {
+    id: 'lc_p81',
+    bookId: 'leela_charitra',
+    number: 81,
+    title: 'लीळा ८१: उतरेश्वरीं सर्पद्वये पतन',
+    titleEn: 'Leela 81: Utaresvarin Sarpadvaye Patan',
+    content: 'तवं ते सर्प रात्रीं दोन्हीं भांडीनले : ते गोसावीयेच्या वक्षस्थळावरि पडिले : ते गोसावीं दोन्ही डोहीं श्रीकरीं धरिले : एकु एउता घातला : एकु एउता घातला : उदीयांचि झुंजुरूकां राणा आला : तवं गोसावी चौकीं आसनीं उपवीष्ट असति : मग तेणें गोसावीयांसि दंडवत घातलें : श्रीचरणां लागला : मग तेणें म्हणीतलें : " जी जी : एथ सापु असति तें मी गोसावीयांपुढां सांगों विसरलां : मी रात्रीं येत होतां तवं वेसीसि कुचिटाळें घातलें होतें जी : " " गोसावीं श्रीकराचीया आंगुळीया ऐसा अनुकारू केला : श्रीमुखें म्हणीतलें : " एथ दोनि साप असति : ते रात्रीं भांडीनले : एथिचेया उरावरि पडिले : " राणेनि म्हणीतलें : " जी जी : मग काइ केलें ? " सर्वज्ञें म्हणीतलें : " उरावरि पडे तेयासि काइ कीजे ? एकें हातें एकु टाकिला : एकें हातें एकु टाकिला : " मग तेयासि आश्चर्य जालें : गोसावीं बीजें करूं आदरिलें : राणेनि पुसिलें : " जी जी : गोसावी कवणीकडे बीजें करिती ? " सर्वज्ञें म्हणीतलें : " हें ऐसें अंबजैएकडे जाईल : " ॥',
+    explanation: 'रात्री उतरेश्वर मंदिरात दोन सर्प आपसात भांडू लागले आणि भांडता भांडता ते थेट प्रभू चक्रधरस्वामींच्या छातीवर पडले! प्रभू स्वामींनी शांतपणे दोन्ही हाती एक-एक साप पकडला आणि एक डावीकडे तर दुसरा उजवीकडे जमिनीवर टाकून दिला. पहाटे उजाडताच पुजारी राणा धावत आला, तेव्हा प्रभू स्वामी चौरंगावर शांतपणे बसले होते. राण्याने नतमस्तक होऊन सांगितले, "प्रभू, इथे दोन विषारी साप असतात हे मी काल रात्री सांगायला विसरलो, मला रात्रभर झोप लागली नाही." प्रभू हसले आणि आपल्या हाताच्या बोटांनी कृती दाखवत म्हणाले, "इथे दोन साप भांडत होते, ते आमच्या छातीवर पडले." राण्याने आश्चर्याने विचारले, "प्रभू, मग तुम्ही काय केले?" स्वामी म्हणाले, "अंगावर पडल्यावर काय करणार? एका हाताने एकाला फेकले, दुसऱ्या हाताने दुसऱ्याला फेकले!" हे ऐकून राण्याला अत्यंत विस्मय वाटला. प्रभू पुढे निघाले तेव्हा राण्याने विचारले, "प्रभू, आपण कुठे जात आहात?" स्वामींनी सांगितले, "आम्ही अंबेजोगाईकडे (अंबजैए) जात आहोत।"'
+  },
+  {
+    id: 'lc_p82',
+    bookId: 'leela_charitra',
+    number: 82,
+    title: 'लीळा ८२: अंबजैए रामदेवां भेटि : अस्तीति',
+    titleEn: 'Leela 82: Ambajaie Ramdevan Bheti: Astiti',
+    content: 'उदीयांचि गोसावीं अंबजैएकडे वीहरणा बीजें केलें : रामदेव वटेश्वरीचे कठीये होउनि वर्त्तत होते : वटेश्वरीची परिचरीया करीती : ते वटेश्वरासी आले : रामदेवां सि आणि राणेयासि मैत्र : राणेनि म्हणीतलें : " रामा रामा : मागां जैसीया पुरूखांचीया गोष्टी आइकिजति वैसे एथ इस्वरपुरूख आले होते : काइ सांगों तेयांचें सौंदर्य : काइ सांगों तेयांचें लावण्य : काइ सांगों तेयांचें इस्वर्य : काइ सांगों तेयांचें सामथ्र्य : उतरेस्वरीं दोनि सर्प भांडीनले : उरावरि पडिले : एकें हातें एकु टाकिला : एकें हातें एकु टाकिला : ऐसे ते सामथ्याचे : " रामदेवीं म्हणीतलें : " ते कवणीकडे गेले ? " " ना : आंबजैएकडे जाउनि : म्हणीतलें : ते आतांची आंबजैएकडे गेले : " मग रामदेव आंबजैएसी आले : तवं गोसावीयांसि वडाचीए पूर्वेली खांदीएवरि लोंबतां श्रीचरणीं आसन असे : एका श्रीचरणां दंडवत केलें : मग दूसरेयाकडे येउनि दूसरेया श्रीचरणां दंडवत केलें : गोसावी खांदीएवरोनि उतरले : तेयांचीए डोइवरि पांढरें घोंगडें होतें : तें बैसावेया घातलें : गोसावी आसनीं उपवीष्ट जाले : देव पुढं बैसले : गोसावीं कृपादृष्टी अवलोकिलें : आणि गोसावीयांपासाौनि तेयां स्तीति जाली : स्तीतिसुख भोगिलें : नावेक बैसले होते : मग स्तीति भंगली : मग रामदेवीं गोसावीयातें आरोगणें वीनवीलें : गोसावीं वीनवणी स्वीकारिली : रामदेव दधिभातु घेऊनि आले : मग रामदेवीं पासवडीएचे आसन रचिलें : गोसावी आसनीं उपवीष्ट जाले : आरोगण करितां सर्वज्ञें म्हणीतलें : " ऐसेया दधिभातेंसीं आलें होए तरि नीकें होए : " तवं तेयासी आठवलें : " जी जी : असे : परि मी विसरलां जी : " मग परीवटीं आलें खोविलें होतें : तें ओळगविले : मग आरोगण झाली : गुळुळा जाला : वीडा जाला : जाडि आंथुरावेया घेतली : वटेश्वरी पहुडु जाला : ॥',
+    explanation: 'प्रभू चक्रधरस्वामी सकाळी अंबेजोगाईकडे निघाले. रामदेव नावाचे भक्त, जे वटेश्वराचे पुजारी (कठीये) होते, ते देवळात आले. रामदेव आणि राणा मित्र होते. राण्याने सांगितले, "रामा, पूर्वीच्या काळात जशा अवतारी पुरुषांच्या गोष्टी ऐकायला मिळायच्या, तसेच एक ईश्वरपुरुष काल इथे आले होते. काय त्यांचे सौंदर्य, काय लावण्य, काय ऐश्वर्य आणि काय त्यांचे सामर्थ्य! काल उतरेश्वर मंदिरात दोन साप भांडत त्यांच्या छातीवर पडले, त्यांनी दोन्ही हातांनी त्यांना दूर फेकून दिले." रामदेवांनी विचारले, "ते कुठे गेले?" राण्याने सांगितले, "ते आत्ताच अंबेजोगाईकडे गेले." रामदेव लगेच अंबेजोगाईला आले, तेव्हा प्रभू चक्रधरस्वामी वडाच्या झाडाच्या पूर्वेकडच्या फांदीवरून पाय सोडून बसले होते. रामदेवांनी प्रभूंच्या एका पायावर डोके ठेवून दंडवत केले, मग दुसऱ्या बाजूला जाऊन दुसऱ्या पायाला दंडवत केले. प्रभू फांदीवरून खाली उतरले. रामदेवांनी आपल्या डोक्यावरचे पांढरे घोंगडे प्रभूंच्या बसण्यासाठी अंथरले. प्रभू त्यावर बसले. प्रभूंच्या पावन कृपादृष्टीने रामदेवांना तात्काळ समाधी अवस्था (स्तीतिसुख) प्राप्त झाली. काही वेळ समाधी सुखात राहिल्यानंतर रामदेवांनी प्रभू स्वामींना जेवणाची (आरोगण) विनंती केली. प्रभू चक्रधरस्वामींनी ती मान्य केली. रामदेवांनी दहीभात आणला आणि प्रभूंच्या बसण्यासाठी वस्त्र अंथरले. जेवताना प्रभू म्हणाले, "या दहीभातासोबत जर लिंबाचे लोणचे (आलें/आळें) असते, तर खूप छान झाले असते." रामदेवांना अचानक आठवले, "हो प्रभू, माझ्याकडे आहे पण मी विसरलो." त्यांनी कपड्याच्या गाठोड्यात ठेवलेले लिंबाचे लोणचे आणून अर्पण केले. भोजन पूर्ण झाल्यावर प्रभू वडनेर येथे वटेश्वर मंदिरात विश्रांतीसाठी गेले।'
+  },
+  {
+    id: 'lc_p83',
+    bookId: 'leela_charitra',
+    number: 83,
+    title: 'लीळा ८३: वासनीए लींगाचां देऊळीं वस्ति',
+    titleEn: 'Leela 83: Vasanie Lingachan Deulin Vasti',
+    content: 'गोसावीं बीजें करूं आदरिलें : तवं राणेनि पुसिलें : " जी जी : गोसावी कवणीकडे बीजें करीती ? " सर्वज्ञें म्हणीतलें : " हें जाईल ऐसें वासनीएकडे : " " जी जी : रामु पुसैल तरि काइ सांगों ? " सर्वज्ञें म्हणीतलें : " वटिकातें ऐसें म्हणावें : दीसां दों एइल : मागुतें दरीसन देिजैल : " मग गोसावीं बीजें केलें : नगराआंतु पाणीपात्र करूनि गंगेसि आरोगण होए : लींगाचां देऊळी पहुडु होए : मग मागोतें गोसावीं तेथोनि वडनेरेयासि बीजें केलें : ॥',
+    explanation: 'प्रभू चक्रधरस्वामी प्रवासाला निघाले तेव्हा पुजारी राण्याने विचारले, "प्रभू, आपण कुठे जात आहोत?" स्वामींनी सांगितले, "आम्ही वासनी (वासनीए) येथे जात आहोत." राण्याने विचारले, "प्रभू, जर रामदेव विचारतील तर काय सांगू?" स्वामींनी सांगितले, "त्याच्याशी म्हणावे, दोन दिवसांत आम्ही परत येऊ आणि तुला पुन्हा दर्शन देऊ." त्यानंतर प्रभू वासनी येथे गेले, नगरात पाणी प्राशन करून नदीकाठी भोजन केले, मंदिरातील महादेवाच्या पिंडीसमोर विश्रांती घेतली आणि दोन दिवसांनी परत वडनेरला आले।'
+  },
+  {
+    id: 'lc_p84',
+    bookId: 'leela_charitra',
+    number: 84,
+    title: 'लीळा ८४: वडातळीं रामदेवां भेटि',
+    titleEn: 'Leela 84: Vadatalin Ramdevan Bheti',
+    content: 'वटेश्वरा दळिणीला वडातळि आसन जालें : तवं रामदेव सेतोनि एत होते : क्षेत्र केलें होतें : दोनि वाळुकें हातीं होतीं : रामदेवीं गोसावीयांतें देखिलें : आले : दंडवत घातलें : श्रीचरणां लागले : दोन्हीं वाळुकें गोसावीयांच्या श्रीकरीं ओळगविली : गोसावीयांपुढां बैसले : मग गोसावीं भ्रूभंगीचीया खुणा पुसिलें : " तुम्ही क्षेत्र कांगा केलें ? " रामदेवीं म्हणीतलें : " जी जी : आमचे पीते ते भवारीए : ते उदीम करूं देसाउरां गेले होते : तेयांसवें चोर लागले : ते मार्गी एतां चोरीं उपद्रविले : ते वार्ता गावा सि आली जी : तें मी आचरतु असें : तेयांचें जी सुतक : एन्हवीं मीं गोसावीयांसि दधिधातु आरोगण देतां : " सर्वज्ञें म्हणीतलें : " तैसें एथ काहीँ नाही : " मग गोसावीयांसि वाटां दधिधातु आणिला : सागळें उदक आणिलें : धोवाचां पदरीं आलें बांधलें : तेथ वडातळि गोसावीयांसि आरोगण झाली : मग वटेश्वरी जाडी आंथुरिली : गोसावीं पहुडु स्वीकारिला : ॥',
+    explanation: 'प्रभू चक्रधरस्वामी वडनेर येथील वटेश्वर मंदिराच्या दक्षिणेला असलेल्या वडाच्या झाडाखाली बसले होते. त्याच वेळी रामदेव आपल्या शेतातून परत येत होते. त्यांच्या हातात दोन काकड्या (वाळुकें) होत्या. रामदेवांनी प्रभू स्वामींना पाहताच धावत येऊन साष्टांग दंडवत केले आणि दोन्ही काकड्या प्रभूंच्या हाती दिल्या. प्रभू स्वामींनी भुवया उंचावून खुणेने विचारले, "तू डोक्याचे मुंडन (क्षेत्र) का केले आहेस?" रामदेव म्हणाले, "प्रभू, माझे वडील व्यावसायिक (भवारीए/व्यापारी) आहेत. ते व्यापारासाठी परदेशी गेले होते. वाटेत त्यांना चोरांनी पकडले आणि मारून टाकले अशी बातमी गावात आली आहे, म्हणून मी सुतक पाळत असून मुंडन केले आहे. एरवी मी आपल्याला स्पर्श करू शकत नाही." प्रभू चक्रधरस्वामींनी हसून सांगितले, "असा कोणताच सुतक दोष आम्हाला स्पर्श करत नाही, तिथे तसे काहीही झालेले नाही." प्रभूंच्या सांगण्यावरून रामदेवांनी दहीभात आणला आणि नदीचे शुद्ध पाणी आणले. वडाच्या झाडाखाली प्रभूंचे भोजन झाले, आणि प्रभू पुन्हा वटेश्वर मंदिरात विश्रांतीसाठी गेले।'
+  },
+  {
+    id: 'lc_p85',
+    bookId: 'leela_charitra',
+    number: 85,
+    title: 'लीळा ८५: रात्रीं गोपाळीं वसति : आरोगण',
+    titleEn: 'Leela 85: Ratrin Gopalin Vasati: Aarogan',
+    content: 'मग वीळचां रामदेवीं म्हणीतलें : " जी जी : तेयांचे क्रीयोपाार करितां उसीरू लागैल : तरि रात्रीं मज एथ एतां अवघड : वेसि पडैल : मग एओं जावों नैए : तरि गावांआंतु गोपाळांचें देऊळ असे : तेथ गोसावीं बीजें करावें जी : " गोसावीं मानिलें : मग गावांआंतु बीजें केलें : रामदेवीं जाडी आणिली : गोसावीयांसि आसन रचिलें : गोसावी आसनीं उपवीष्ट जाले : मग रामदेवीं रात्रीं वाटां भातु : तांबीया दुधु : पापडू : तांबा उदकाभरूनि आणिला : गोसावीयांसि आरोगण जाली : गुळुळा जाला : वीडा ओळगविला : मग जाडिचें सयेनासन रचिलें : गोसावीं पहुडु स्वीकारिला : उदकें गोसावीं बीजें करूं आदरिलें : मग रामदेवीं म्हणीतलें : " जी जी : मी आचरतें तवं गोसावीं एथ राहावें : " सर्वज्ञें म्हणीतलें : " आतां हें एथ न राहे : " मग गोसावीं बीजें केलें : रामदेव वडनेरेयाची सीवंवरि बोळावीत आले : मग रामदेवीं गोसावीयातें पुसिलें : " जी जी : गोसावीं कवणीकडे बीजें करिती ? " सर्वज्ञें म्हणीतलें : " हें ऐसें मेहंकारकडे जाईल : " रामदेवीं वीनवीलें : " जी जी : मज गोसावी कवणी ठांई पुनरपि दरीसन देति जी ? " सर्वज्ञें म्हणीतलें : " वीसैएकडे देिजैल : " मग गोसावीं बीजें केलें : ॥',
+    explanation: 'संध्याकाळच्या वेळी रामदेवांनी विनंती केली, "प्रभू, वडिलांच्या अंत्यविधीचे सोपस्कार उशिरापर्यंत चालतील. रात्री वेशीचे दरवाजे बंद होतील, त्यामुळे मला रात्री इथे येणे-जाणे कठीण होईल. तर आपण गावात असलेल्या गोपाळ मंदिरात मुक्काम करावा." प्रभू स्वामींनी ती विनंती मान्य केली आणि गावात आले. रामदेवांनी आसन मांडले आणि रात्री भात, तांब्याभर दूध, पापड आणि पाणी आणून प्रभूंची आरोगण करवली. प्रभूंच्या विश्रांतीची सोय केली. सकाळी प्रभू पुढे जाण्यास निघाले तेव्हा रामदेवांनी विनंती केली, "प्रभू, माझे सुतकाचे दिवस संपेपर्यंत तुम्ही इथेच राहावे." प्रभू स्वामी म्हणाले, "आता आमचा मुक्काम इथे जास्त काळ राहणार नाही." प्रभू पुढे निघाले तेव्हा रामदेव त्यांना वडानेरच्या वेशीपर्यंत (शिव) सोडायला आले. त्यांनी विचारले, "प्रभू, आपण कुठे जात आहात?" स्वामींनी सांगितले, "आम्ही मेहकरकडे (मेहंकारकडे) जात आहोत." रामदेवांनी पुन्हा विचारले, "प्रभू, मला आपले दर्शन पुन्हा कुठे होईल?" स्वामी म्हणाले, "तुला बिड (वीसैए) येथे आमचे पुनरपि दर्शन होईल." असे सांगून प्रभू मार्गस्थ झाले।'
+  },
+  {
+    id: 'lc_p86',
+    bookId: 'leela_charitra',
+    number: 86,
+    title: 'लीळा ८६: पातुरडीं समसानवस्त्रनीखेडु',
+    titleEn: 'Leela 86: Paturadin Samasanavastranikhedu',
+    content: 'मग गोसावीं पातुरूडासि बीजें केलें : पातुरूडीं नइचीया थडियाथडिया बीजें करीत होते : तवं समसानीं माणुस जाळिलें होतें : तेयाचें वस्त्र गोसावीं श्रीचरणीचेनि आंगुठेकरूनि श्रीकरीं घेतलें : श्रीमुगुटावरि घातलें : सीआळे दीस : तें सीत वाजत असे : तेणें हातु फूटत असे : तेथ आणिक अंत्यजु एकु समसान राखतु होता : तो बोबाइला : " हां हां : आमुचें राखीचें वस्त्र : दीसवडिचां दीसवडी तुंचि नेसि देखों : सांडी सांडी : " म्हणौनि धांवीनला : तो जवळा आला : आणि गोसावीं तें वस्त्र उकलुनि दाखवीलें : पाईलें तवं झील ऐसें देखिलें : मग सांडिलें : मग तो ओळगूं लागला : पुढां ए : आड पडे : परि गोसावी मागुतें न स्वीकारितीचि : मग तीये दीसीं गोसावीयांसि वाळुकेस्वरीं वस्ति जाली : मग एरी दीसीं गोसावीं बीजें केलें : ॥',
+    explanation: 'प्रभू चक्रधरस्वामी पातुरूड येथे नदीच्या काठाने चालले होते. तिथे स्मशानात एक प्रेत जाळण्यात आले होते आणि त्याचे कफन (वस्त्र) तिथेच पडले होते. प्रभू स्वामींनी आपल्या पायाच्या अंगठ्याने ते वस्त्र वर उचलून हातात घेतले आणि डोक्यावर गुंडाळले. हिवाळ्याचे दिवस असल्याने कडाक्याची थंडी वाजत होती आणि हात गारठले होते. तिथे स्मशानाची राखण करणारा एक अंत्यज (डोम) होता, तो धावून आला आणि ओरडला, "अरे अरे! हे आमच्या वाटणीचे प्रेताचे वस्त्र तू रोज-रोज घेऊन जातोस, ठेव खाली ते!" तो जवळ आला आणि प्रभू स्वामींनी ते वस्त्र उघडून दाखवले, तेव्हा ते अत्यंत विरविरीत आणि जुने झालेले "झील" कापड निघाले. त्याने ते तसेच सोडले. प्रभूंची तेजस्विता पाहून तो नतमस्तक होऊन त्यांच्यापुढे लोटांगण घालू लागला, पण प्रभू स्वामींनी पुढे न थांबता मार्गक्रमण केले. त्या रात्री त्यांचा मुक्काम वाळुकेश्वर मंदिरात झाला।'
+  },
+  {
+    id: 'lc_p87',
+    bookId: 'leela_charitra',
+    number: 87,
+    title: 'लीळा ८७: आलेगावीं वस्ति',
+    titleEn: 'Leela 87: Aalegavin Vasti',
+    content: 'आलेगावीं वस्ति ॥',
+    explanation: 'प्रभू चक्रधरस्वामींचे आलेगाव येथे आगमन झाले आणि त्या रात्री त्यांचा मुक्काम आलेगाव येथे झाला।'
+  },
+  {
+    id: 'lc_p88',
+    bookId: 'leela_charitra',
+    number: 88,
+    title: 'लीळा ८८: प्वहैं रामदेवां भेटि',
+    titleEn: 'Leela 88: Pvahain Ramdevan Bheti',
+    content: 'मग गोसावीयांसि वीसैयाचीए वाटेसि प्वहैं आसन जालें : तवं तेथ रामदेव पानें : पोफळें : घेउनि आले : गोसावीयांसी दरीसन जालें : दंडवत केलें : श्रीचरणां लागले : पानेंपोफळें ओळगविलीं : मग गोसावी तेथौनि बीजें केलें : ॥',
+    explanation: 'प्रभू चक्रधरस्वामी बीडच्या (वीसैए) वाटेने जात असताना "पोहा" (प्वहैं) नावाच्या ठिकाणी विसाव्यासाठी बसले. त्याच वेळी रामदेव तांबूल (पाने आणि सुपारी) घेऊन तिथे आले. त्यांना प्रभूंचे पुनरपि दर्शन झाले. त्यांनी प्रभूंच्या चरणी साष्टांग नमस्कार केला, तांबूल अर्पण केला आणि प्रभू तिथून पुढे बीडकडे निघाले।'
+  },
+  {
+    id: 'lc_p89',
+    bookId: 'leela_charitra',
+    number: 89,
+    title: 'लीळा ८९: वीसैया ब्राम्हणाचे अन स्वीकारू',
+    titleEn: 'Leela 89: Visaiya Brahmanache An Sreekaru',
+    content: 'मग गोसावीं वीसैयेसि बीजें केलें : गावा पुर्वी तळें असे : तेया तळेयाचीये पसिमीली पाळी तीनि देऊळें : माझारिलां लींगाचां देऊळीं गोसावीयांसि आसन जालें : जवळें रामदेव उगेचि बैसले असति : काहीँ स्फुरे ना : आपुलेयाही जेवणाची चींता नाहीं : आणि गोसावींचीये आरोगणेची चींता नाही : तवं देऊळासि ब्राम्हणु एकु आला : गोसावीयांसि दंडवत घातलें : श्रीचरणां लागला : " जी जी : माझेया आवारासि बीजें कीजो : " सर्वज्ञें म्हणीतलें : " हे भूकैले असति : यांतें घेउनि जा : " " हो काँ जी : " मग ते तेयातें आपुलेया घरासि घेउनि गेले : ओसरीवरि पाटु बैसों घातला : तांबीया भरूनि दीधला : परूसा गेले : सोत्राआचमन केलें : ओसरीएवरि बैसोनि पाए धूतले : ब्राम्हणीतें म्हणीतलें : " यांसि वाढा हो : " तेहीं भीतरी ताट केलें : मग तेणें म्हणीतलें : " उठा : चाला : जेवा : " तवं रामदेवीं म्हणीतलें : " आधीची मीं नेजवीं : माझं धोवांचां पालवीं बांधौनि देया : मां मी तेथ घेउनि जाइन : आधीं गोसावीयांसि आरोगण देइन : मग आम्हीं जेउनि : " मग तेहीं आधीकु वर्णभातु घातला : तेयाचां धोत्राचां पदरीं बांधिला : मग दादोस घेउनि आले : मग गोसावीयांसि आरोगण दीधली : गुळुळा जाला : वीडा ओळगविला : मग आपण जेविले : मग तेथचि लींगाचीए देऊळीए पहुडु जाला : प्रभाते गोसावीं बीजें करूं आदरिलें : रामदेव गोसावीयांसरीसें नीगाले : गोसावीं दादोसातें वीसैयां प्रांतीं राहाविलें : मग दादोसीं गोसावीयांसि क्षेमाळींगन दीधलें : दंडवत घातलें : श्रीचरणां लागले : रामदेवीं म्हणीतलें : " जी जी : मज गोसावी पुनरपि दरीसन कोणी ठांई देती ? " सर्वज्ञें म्हणीतलें : " ऐसें प्रतेस्थाना प्रांतीं : " मग गोसावीं बीजें केलें : ॥',
+    explanation: 'प्रभू चक्रधरस्वामी बीड (वीसैए) येथे आले. गावाच्या पूर्वेला असलेल्या तलावाच्या पश्चिम तीरावर तीन मंदिरे होती. त्यांपैकी मधल्या महादेव मंदिरात प्रभू विसावले. तिथे रामदेव प्रभूंच्या शेजारी शांत बसले होते, त्यांच्या मनात काहीच सुचत नव्हते—स्वतःच्या जेवणाची किंवा प्रभूंच्या आरोगणाची चिंताही नव्हती. इतक्यात तिथे एक ब्राह्मण आला. त्याने प्रभूंच्या चरणी नमन केले आणि आपल्या घरी जेवणासाठी आमंत्रित केले. प्रभू म्हणाले, "हे (रामदेव) भुकेलेले आहेत, यांना घेऊन जा." ब्राह्मणाने रामदेवांना आपल्या घरी नेले, पाटावर बसवले, पाणी दिले. पण रामदेवांनी ब्राह्मणाला सांगितले, "मी इथे जेवणार नाही. माझ्या शेलाच्या पदरात जेवण बांधून द्या. मी आधी माझ्या प्रभूंकडे घेऊन जाईन, त्यांना आरोगण करवीन आणि मगच आम्ही जेवू." ब्राह्मणाने दहीभात व इतर अन्न रामदेवांच्या शेलाच्या पदरात बांधून दिले. रामदेव अत्यंत समाधानाने प्रभूंकडे आले, प्रभू स्वामींची आरोगण झाली. त्यानंतर रामदेवांनी भोजन केले. सकाळी प्रभू प्रवासाला निघाले तेव्हा रामदेव त्यांच्या सोबत निघाले. प्रभू स्वामींनी रामदेवांना बीडच्या हद्दीतच थांबवले. रामदेवांनी प्रभूंचे पाय धरले आणि विचारले, "प्रभू, आपले दर्शन मला पुन्हा कुठे होईल?" स्वामींनी सांगितले, "प्रतिष्ठान (पैठण) येथे पुनरपि दर्शन होईल." असे सांगून प्रभू पुढे मार्गस्थ झाले।'
+  },
+  {
+    id: 'lc_p90',
+    bookId: 'leela_charitra',
+    number: 90,
+    title: 'लीळा ९०: आंजने वस्ति',
+    titleEn: 'Leela 90: Anjane Vasti',
+    content: 'मग गोसावीं आंजनेसि बीजें केलें : गांवां पश्चिमे तळें असे : तळेया पश्चिमे पुर्वामुख लींगाचें देऊळ : तेथ गोसावीयांसि वस्ति जाली : ॥',
+    explanation: 'प्रभू चक्रधरस्वामी आंजने गावी आले. गावाच्या पश्चिमेला एक तलाव होता. त्या तलावाच्या पश्चिमेला पूर्वमुखी महादेवाचे देऊळ होते, तिथे प्रभू चक्रधरस्वामींचा मुक्काम झाला।'
+  },
+  {
+    id: 'lc_p91',
+    bookId: 'leela_charitra',
+    number: 91,
+    title: 'लीळा ९१: मेहंकारीं बोणेबाईया भेटि',
+    titleEn: 'Leela 91: Mehankarin Bonebaiya Bheti',
+    content: 'मग गोसावीं एरी दीसीं वीळिचां वेळीं मेहंकरासि बीजें केलें : गोसावीयांचां कटिप्रदेशीं सुडा : श्रीमुगुटीं सुडा : श्रीमुखीं तांबोल : बाणेश्वराचां देऊळीं जगतीचां पसीमीली दारवठां रीगतां डावेया हाता सोंडीएवरि गोसावी चरणचारी उभे असति : बोणेबाइयां भेटि जाली : भीक्षेसि जाति होतीया : तवं गोसावीयांतें सोंडीएवरि उभेया देखिलें : मग म्हणीतलें : " बाबा : कोणाचिये कुंसीसि होतासि ? बाबा : कोणाची कुंसि उसासिली ? बाबा : ऐसी कोणि पापिणी वीसंवली ? " " हें उगेंचि : " मग गोसावीयातें पुसिलें : " जी जी : आपण कवणीकडौनि एइजत असिजे ? " गोसावीं ऐसें श्रीमुगुटाचेनि अनुकारें आजनेकडे दाखविलें : " बाबा : आपण काइ वराडाकडुनि एइजत असिजे ? " गोसावीं श्रीमुगुटें मानिलें : " बाबा : आपलेयां नांव काइ ? : " " हें उगेंचि : " तवं तिहींचि म्हणीतलें : " जी जी : तरि आपलेयां नांव काइ मौन्यदेव ? " गोसावीं श्रीमुगुटाचेनि अनुकारें मानिलें : सारंगधरासि पांच लाडू ओगाचे फीटति : तो एकु लाडु भोपे बोणेबाइयांसि देति : तेहीं एकी वाटां लाडुवांची चुरि : साकर : तुप ओळगविलें : गोसावीयांसि आरोगण जाली : सागळ घेऊनि आलीं : गुळुळा जाला : वीडा जाला : एरू प्रसादु तेहीं घेतला : मग बोणेबाईं गोसावीयातें वीनवीलें : " जी जी : आमीचिए गुंफेसि बीजें करावें : " गोसावीं बीजें केलें : आसन जाउनि तेथ बैसलें : मग बोणेबाइं म्हणीतलें : " बा मौन्यदेव हो : आम्ही भीक्षा करूनि एउनि : तवं तुम्ही बीढार राखावें : " भीक्षा करूनि आली : गोसावीयांसि आरोगण दीधली : गुळुळा जाला : वीडा ओळगविला : मग बोणेबाइं गोसावीयातें वीनवीलें : " बा मौनिदेव हो : ये नगरीं जवं असाल तवं उदयां दूपाहारिची पाणीभाताची आरोगण करावी : वीळिचां भीक्षा करूनि : मग भीक्षेसि जैसें एइल तैसी आरोगण करावी : कव्हणी लोका न म्हणावे : आपुलेयां म्हणावें : " तें गोसावीं मानिलें : मग बोणेबाइया जेविलीया : गोसावीं नीद्रास्थानासि बाणेश्वरासि बीजें केलें : तवं राणेनि म्हणीतलें : " जी जी : देवाचीं उपकरणें असति : कुचीताळें घातलें असे : तुम्ही बहीरवांचेया देऊळासि जा : " बहीरवांचेया देऊळासि गोसावीं बीजें केलें : तेथ पहुडु स्वीकारिला : अवस्थान जालें : ॥',
+    explanation: 'प्रभू चक्रधरस्वामी मेहकर येथे आले. त्यांनी कमरेला आणि डोक्यावर साधा सुडा (वस्त्र) गुंडाळला होता आणि मुखात तांबूल होता. बाणेश्वर मंदिराच्या प्रवेशद्वाराजवळ ते उभे असताना, भिक्षा मागण्यासाठी बाहेर पडलेल्या बोणेबाईंनी त्यांना पाहिले. प्रभूंची दिव्य मूर्ती पाहून त्यांचे वात्सल्य उचंबळले. त्यांनी विचारले, "बाळा, तू कोणाच्या पोटी जन्म घेतलास? अशी कोणती पापिणी आहे जिने तुला असे सोडून दिले?" प्रभू शांत राहिले. त्यांनी विचारले, "तू कुठून आला आहेस?" प्रभूने डोक्याच्या खुणेने आंजने गावाकडे निर्देश केला. बोणेबाई म्हणाल्या, "तू वऱ्हाडातून आला आहेस का?" प्रभूने होकार दिला. नाव विचारल्यावर प्रभू शांत राहिले, तेव्हा त्या म्हणाल्या, "तुझे नाव मौन्यदेव आहे का?" प्रभूंनी मान डोलवून संमती दिली. बोणेबाईंनी प्रभू चक्रधरस्वामींना भिक्षा म्हणून लाडू, साखर आणि तूप अर्पण केले, प्रभूंची आरोगण झाली. बोणेबाईंनी प्रभू स्वामींना आपल्या गुहेत (बीढार) राहण्याची विनंती केली आणि म्हणाल्या, "बा मौन्यदेव, मी भिक्षेसाठी बाहेर जाते, तोपर्यंत तुम्ही इथेच थांबा." भिक्षा मागून आल्यावर त्यांनी पुन्हा प्रभूंची आरोगण करवली व विनंती केली की जोपर्यंत तुम्ही या शहरात आहात, तोपर्यंत दुपारचे भोजन माझ्याकडेच करावे. प्रभू स्वामींनी ती विनंती मान्य केली. रात्री विश्रांतीसाठी प्रभू बाणेश्वर मंदिरात गेले असता, पुजाऱ्याने मौल्यवान उपकरणांच्या सुरक्षेसाठी कुलूप लावल्याचे सांगून प्रभू स्वामींना पलीकडच्या भैरव मंदिरात (बहीरव) राहण्यास सांगितले. प्रभू चक्रधरस्वामींनी भैरव मंदिरात मुक्काम केला।'
+  },
+  {
+    id: 'lc_p92',
+    bookId: 'leela_charitra',
+    number: 92,
+    title: 'लीळा ९२: बहीरवीं अवस्थान : ज्वारी उपद्रो',
+    titleEn: 'Leela 92: Bahiravin Avasthan: Jvari Upadro',
+    content: 'बहीरवी लीरात्र अवस्थान जालें : मग गोसावीयांसि बहीरवी पहुडू होए : उदीयांचि गोसावीं सारंगधराकडे वीहरणासि बीजें करिती : वीहरणौनि गुंफेसि बीजें करिती : मग दों पाहारां बोणेबाइया पाणीभाताची आरोगण देति : वीळीचां तरि तैसी देति : मग गोसावी बहीरवी पहुडु स्वीकारिती : एकु दीसीं गोसावीं पहुडू स्वीकारिला होता : तवं माध्याने एकी रात्रीं जुआरीं जुं हारवीलें : ते तेथ आले : गोसावीयांची सुकुमार श्रीमुर्ति पांटसुत ऐसी देखौनि श्रीकंठीं नखें घातलीं : तवं गोसावीयांपासि काही देखतिचि ना : मग म्हणीतलें : " जी जी : गोसावीं आम्हांसि काही खावेया देयावें : " सर्वज्ञें म्हणीतलें : " यातें काइ असैल मां हें काइ देइल : " इतुलेनि ते गेले : ॥ उदीयांसिचि गोसावीं वीहरणासि बीजें केलें : वीहरणौनि बोणेबाइयांचे गुंफेसि बीजें केलें : आसन जालें : आरोगण करितां : तवं बोणेबाइं श्रीकंठींचीं नखें देखिलीं : " हां बाबा : श्रीकंठीं नखें : काइ जालें ? " सर्वज्ञें म्हणीतलें : " हें उगेंचि : " तवं तेयांसि आन जालें : सामान स्त्री एकादी एकी आली असैल : मग सर्वज्ञें म्हणीतलें : " बाइ : एथ रात्रीं जुआरीयांचा उपद्रो जाला : ते भवंते हात घालीति : तीएं नखें लागलीं : ते यांतें काहीँ खावेया मागती : एणें म्हणीतलें : \' यातें काइ असैल : मां हें काइ देइल : \' मग ते गेले : " यावरि मौन्य भंगलें : मग बोणेbाइं म्हणीतलें : " बा : मौनिदेव हो : हें घांटीए नख लागतें तरि पाणीएं दीवा पाजळता बा : आम्हीं राणेयातें म्हणौनि : मग तुम्ही बाणेश्वरी नीद्रा करावी : " ॥',
+    explanation: 'प्रभू चक्रधरस्वामींचा मुक्काम भैरव मंदिरात झाला. ते पहाटे सारंगधराच्या विहिरीकडे विहरणासाठी जात असत आणि दुपारी बोणेबाईंच्या गुहेत भोजनासाठी येत असत. एके दिवशी रात्री जुगारामध्ये पैसे हरलेले काही जुगारी चोरीच्या उद्देशाने देवळात आले. त्यांनी प्रभूंची अत्यंत सुकुमार मूर्ती पाहिली आणि त्यांच्या गळ्याला नखे लावून दागिने किंवा पैसे शोधू लागले. पण प्रभूंच्या जवळ काहीच नव्हते. त्यांनी विचारले, "महाराज, आम्हाला खायला काहीतरी द्या." प्रभू म्हणाले, "आमच्याकडे काय असणार आहे, आम्ही काय देणार?" इतक्यात ते तिथून निघून गेले. सकाळी प्रभू बोणेबाईंच्या गुहेत भोजनासाठी आले असता बोणेबाईंनी त्यांच्या गळ्यावर नखांचे व्रण पाहिले. त्यांनी काळजीने विचारले, "बाळा, गळ्यावर हे व्रण कशाचे?" प्रभू म्हणाले, "काही नाही." पण बोणेबाईंना वाटले की रात्री कोणी स्त्री तिथे आली होती. प्रभू चक्रधरस्वामींनी त्यांना स्पष्ट केले, "बाइ, रात्री मंदिरात जुगारी आले होते, त्यांनी गळ्यात हात घातल्याने नखे लागली आणि ते खायला मागत होते. मी सांगितले की आमच्याजवळ काहीच नाही, तेव्हा ते गेले." हे ऐकून बोणेबाईंना अत्यंत वाईट वाटले आणि त्यांचे मौन भंग पावले. त्या म्हणाल्या, "बाळा मौन्यदेव, तुझ्या कंठाला नख लागण्यापेक्षा देवाचा दिवा विझलेला परवडला असता! मी पुजाऱ्याशी बोलते, तुम्ही आजपासून बाणेश्वर मंदिरातच झोपत जा।"'
+  },
+  {
+    id: 'lc_p93',
+    bookId: 'leela_charitra',
+    number: 93,
+    title: 'लीळा ९३: बाणेश्वरीं अवस्थान',
+    titleEn: 'Leela 93: Banesvarin Avasthan',
+    content: 'बोणेबाइं बाणेश्वरचेया राणेयातें म्हणीतलें : " आमचे मौनिदेव बाणेश्वरीं नीजौ देयावें : " तवं तेणें म्हणीतलें : " एथचीं उपकरणें जाती कीं : " तवं बोणेबाइं म्हणीतलें : " उपकरणें जाति तरि आम्हीं देउनि : " मग बाणेश्वरी गोसावीयांसि मास दाहा अवस्थान जालें : गोसावी कवाडें घालीति : आगळ घालीति : मग पहुडू स्वीकारिती : ॥',
+    explanation: 'बोणेबाईंनी बाणेश्वर मंदिराच्या पुजाऱ्याला (राणा) सांगितले, "आमच्या मौन्यदेवांना बाणेश्वर मंदिरातच झोपू देत जा." त्यावर पुजारी म्हणाला, "पण मंदिरातील पूजेची उपकरणे चोरीला गेली तर?" बोणेबाई म्हणाल्या, "मौल्यवान उपकरणे चोरीला गेली तर मी त्याची नुकसानभरपाई देईन!" त्यानंतर प्रभू चक्रधरस्वामींचे बाणेश्वर मंदिरात तब्बल १० महिने वास्तव्य झाले. रात्री प्रभू गाभाऱ्याचे दरवाजे बंद करून, आतून कडी (आगळ) लावून शांतपणे विश्रांती घेत असत।'
+  },
+  {
+    id: 'lc_p94',
+    bookId: 'leela_charitra',
+    number: 94,
+    title: 'लीळा ९४: गुंफे चोरवीद्रावण',
+    titleEn: 'Leela 94: Gunfe Choravidravan',
+    content: 'ऐंसा एकु दीसु दाराठीयाहुनि बोणेबाइयांचीए गुंफे चोुरू रीगाला : भीतरी घांट ऐसा दीवा पाजळतु असे : तेणें आपली जाडि आंगणीं पसरीली : बोणेबाइयांची वाटी : परीवंट : आणुनि तेथ घातलीं : गुंफेआंतुल पदार्थ आंणुंआणुं तेथ घाली : बोणेबाइया देखति : परि बोलति ना : \' जरि कां हाणैल \' म्हणौनि : ऐसीं तेणें अवघीं मात्रा नेउनि तेथ घातली : तो बाहेरि नीगाला : मोट बांधों लागला : आणि बोणेबाइं कवाड घातलें : खीळि घातली : आणि बोबालीया : " धावा धावा बा मौन्यदेव हो : नागवलों : चोरू चोरू : " आणि गोसावी देऊळाचां कोन्ता उभे राहिले : इषीत खांखरैलें : तेणें मागीली वास पाहिली : तवं याचे थाए दोनि श्रीमुर्ति वाढीली : चोरू बीहाला : आणि मोट सांडुनि पौळि उडौनि पळाला : गोसावीं साउमेयां बीजें केलें : सर्वज्ञें म्हणीतलें : " काइ बाइ : कां बोबाता ? बाहेरि या : कवाड उघडा : " बोणेबाईं म्हणीतलें : " आओ : आमचे मौन्यदेव आले ओ : मौन्यदेव आले ओ : " कवाड उघडुनि बाहेरि आलीया : सर्वज्ञें म्हणीतलें : " बाइ : तुमचें काइ काइ गेलें ? " " सर्वस्व गेलें : बा मौन्यदेव हो : " " बाइ : तरि हे मोट कोणाची ? " बाहेरि आली : मोट सोडुनि पाहिली : तवं अवघेंचि आहे : हरीखैली : " बा मौन्यदेव हो : अवघेंचि आहे : " सर्वज्ञें म्हणीतलें : " बाइ : तरि हे जाडि कोणाची ? " " नेणों बा मौन्यदेव हो : हे जाडि चोराची : " सर्वज्ञें म्हणीतलें : " तरि उपराटा चोरचि नागवला म्हणा : " आणि गोसावीं हास्य केलें : तवं तीहीं म्हणीतलें : " आतां तो जाडिकारणें मागुता येइल : " सर्वज्ञें म्हणीतलें : " बाइ : आतां तो नैए : " " वा मौनिदेवा : तो काइसेयासि बीहाला ? " सर्वज्ञें म्हणीतलें : " बाइ : हें एवडें एक वाढीलेलें : तो तेयासि बीहाला : म्हणौनि मोट सांडुनि पळाला : " ॥',
+    explanation: 'एक दिवस बोणेबाईंच्या गुहेत दरवाजा उघडा असल्याने एक चोर घुसला. गुहेत एक दिवा जळत होता. चोराने बोणेबाईंची चादर अंगणात पसरली आणि बोणेबाईंची तांबे-पितळेची भांडी, कपडे आणि इतर मौल्यवान साहित्य आणून त्यात ठेवले. बोणेबाई जाग्या होत्या, पण "हा आपल्याला मारेल" या भीतीने त्या काहीच बोलल्या नाहीत. चोराने सर्व सामान बाहेर काढले आणि त्याची गाठोडे (मोट) बांधू लागला. तेवढ्यात बोणेबाईंनी झटकन दरवाजा बंद करून आतून कडी लावली आणि मोठ्याने ओरडल्या, "धावा धावा, मौन्यदेव हो! आम्ही लुटलो गेलो, चोर चोर!" त्याच वेळी प्रभू चक्रधरस्वामी मंदिराच्या कोपऱ्यात उभे होते. त्यांनी सावध करण्यासाठी खोकल्याचा (खांखरैलें) आवाज केला. चोराने मागे वळून पाहिले, तर त्याला प्रभूंची दिव्य मूर्ती अत्यंत विराट आणि द्विगुणित (दोन मूर्ती) स्वरूपात दिसली! चोर अत्यंत घाबरला आणि गाठोडे तसेच सोडून भिंत ओलांडून पळाला. प्रभू चक्रधरस्वामी बोणेबाईंच्या गुहेकडे आले आणि म्हणाले, "बाइ, का ओरडत आहात? बाहेर या, दरवाजा उघडा." बोणेबाई म्हणाल्या, "आमचे मौन्यदेव आले!" त्यांनी कवाड उघडले. प्रभूंनी विचारले, "बाइ, तुमचे काय गेले?" त्या म्हणाल्या, "सर्वस्व गेले प्रभू." प्रभूंनी अंगणात पडलेल्या गाठोड्याकडे बोट दाखवून विचारले, "तर मग हे गाठोडे कोणाचे आहे?" त्यांनी उघडून पाहिले तर सर्व भांडी सुरक्षित होती, त्या म्हणाल्या, "प्रभू, माझे सर्व सामान इथेच आहे." प्रभूंनी चोराच्या चादरीकडे बोट दाखवून विचारले, "तर मग ही चादर कोणाची?" त्या म्हणाल्या, "प्रभू, ही तर चोराची चादर आहे!" प्रभू हसून म्हणाले, "म्हणजे चोराने तुम्हाला लुटण्याऐवजी चोरच स्वतःची चादर इथे विसरून नागवला गेला!" बोणेबाई म्हणाल्या, "प्रभू, तो त्याची चादर घेण्यासाठी पुन्हा येईल." प्रभू म्हणाले, "आता तो कधीच परत येणार नाही." बोणेबाईंनी विचारले, "प्रभू, तो कशाला घाबरला?" प्रभू म्हणाले, "त्याला इथे विराट स्वरूप दिसले, त्यामुळे तो घाबरून पळाला।"'
+  },
+  {
+    id: 'lc_p95',
+    bookId: 'leela_charitra',
+    number: 95,
+    title: 'लीळा ९५: गोकुळअष्टमी पुजास्वीकारू',
+    titleEn: 'Leela 95: Gokulashtami Poojasveekaru',
+    content: 'एकु दीं गोसावीं उदीयांची नीद्रास्थानुनि बोणेबाइयांचीए गुंफेसि बीजें केलें : तवं तींही आधीली दीसीं माती आणिली होती : सर्वज्ञें म्हणीतलें : " बाइ : आजि तुमचें लवडसवड मोटीसी ? " " बा : मौन्यदेव हो : आजि गोकुळाष्टमी : " सर्वज्ञें म्हणीतलें : " बाइ : तरि हे माती काइसी ? " " बा मौन्यदेव हो : तुम्ही नेणा ? आजि गोकुळाष्टमी : आजि श्रीकृष्ण जन्मले : याचा श्रीकृष्ण करूनी : नंदु : एस्वदा : वसुदेवो : देवकी करूनी : गोकुळ करूनी बा : फुलवरा कीजे : व्रत कीजे : " सर्वज्ञें म्हणीतलें : " बाइ : श्रीकृष्णु तो काइ मातीएचा ? नंदु : एस्वदा : वसुदेवो : देवकी : तीएं काइ मातीएचीं ? गोकुळ काइ मातीए चें ? तीएं साचोकारीं माणुसें होतीं कीं : श्रीकृष्ण काइ मातीएचा होता ? हें होईल श्रीकृष्णु : तुम्ही हुआ देवकी देवी : एं व्रतस्तें होउनि एथ पुजा करीती : हे माती परती सांडा अवघी : " " हो कां बा मौन्यदेव हो : " माती परती सांडीली : मग गोसावीयांसि आरोगण दीधली : मग गोसावी वीहरणासि बीजें केलें : ॥ तवं तेहीं सोजी काढीली : वळिवटें वळीलीं : कडकणे पैंहीले केलें : पुरीया : घारीया : सोवाळी : सेंगळी : बुडुडी : ऐसा फुलवरा केला : तीए दीसीं गोसावीं सकाळींची वीहरगौनि बीजें केलें : मग गोसावीं आपुलेनि श्रीकरें फुलौरा बांधला : तीयें ओउंओउं देति : गोसावी बांधति : अवधी फळोवळी बांधली : अवघी आइति केली : मग वीळीचां गोसावीयांसि मर्दना : मादणें : आरोगण जाली : मग जेव्हढेया वेळा श्रीकृष्ण जन्मले तीए वेळे गोसावीं श्रीमुर्ति संकोचिली : गोसावीं कामाइसांचीए उसंगीए रीगाले : श्रीमुतींवर बाळकतत्वाची प्रव्हा जाली : नामाईसीं तीही व्रतस्तें होउनि बरवी पुजा केली : कामाइसीं ऐसा वरता पालो उपरतीनि दोहीं पदरीं माथा बांधला : खीरि रांधली : वाण दीधलें : गोसावीयांसि मर्दना : मादणें : पुजा : आरोगण येथ जाली : गुळुळा जाला : वीडा ओळगविला : तीएं उपवासु करितें होतीं : गोसावीं तेयातें म्हणीतलें : " बाइ : तुम्हीं जेवा : " " जी जी : आजि गोकुळअष्टमी : मी व्रत करीन : " सर्वज्ञें म्हणीतलें : " बाइ : देवकीए देवीसि श्रीकृष्ण जन्मले तै काइ तिहीं उपवासु केला ? पेज तन्हीं प्यालीची कीं : " मग तीएं गोसावीयांचीए पांतीसि जेविलीं : सवळेचीचि गोसावीं वीहरणा बीजें करूं आदरिलें : कामाइसीं म्हणीतलें : " बा मौन्यदेव हो : लवकरि या : मग हे तुमचीए पांती पारणें करील : " नामाईसें व्रतस्तें : तेहीं गोसावीयांसि पडदणी दीधली : मर्दना दीधली : मादणें जालें : पुजावसरू जाला : मग गोसावीयां आरोगण जाली : मग तेयांसि पांती पारणें जालें : ॥',
+    explanation: 'एक दिवस सकाळी प्रभू चक्रधरस्वामी बाणेश्वर मंदिरातील विश्रांतीस्थानावरून बोणेबाईंच्या गुहेत आले. त्यांनी पाहिले की बोणेबाईंनी आदल्या दिवशी खूप माती आणून ठेवली आहे. प्रभूंनी विचारले, "बाइ, आज तुझी कसली गडबड चालू आहे?" बोणेबाई म्हणाल्या, "बा मौन्यदेव, आज गोकुळाष्टमी आहे!" प्रभूंनी विचारले, "पण ही माती कशासाठी?" बोणेबाई म्हणाल्या, "प्रभू, आज श्रीकृष्ण जन्मोत्सव आहे. या मातीचे आम्ही श्रीकृष्ण, यशोदा, वसुदेव, देवकी आणि नंदराज बनवू, गोकुळ तयार करू, आणि पूजा करू." प्रभू चक्रधरस्वामी म्हणाले, "बाइ, श्रीकृष्ण काही मातीचा होता का? यशोदा, वसुदेव, देवकी सर्व मातीचे होते का? ते तर प्रत्यक्ष जिवंत मानवी अवतार होते! हा प्रत्यक्ष श्रीकृष्ण तुमच्यासमोर उभा आहे, आणि तुम्हीच देवकी माता आहात. हे मातीचे खेळ खेळणे बंद करा आणि ही माती दूर टाका." बोणेबाईंनी ती माती टाकून दिली. प्रभूंचे भोजन झाले. बोणेबाई आणि त्यांच्या सहकाऱ्यांनी (कामाइसा, नामाईसा) विविध पक्वान्ने जसे शेवया (वळिवटें), पुऱ्या, घारगे, करंज्या तयार करून गोकुळाष्टमीचा फराळ (फुलवरा) केला. प्रभूंनी स्वतः आपल्या हाताने तो सजवला. रात्री जन्मोत्सवाच्या वेळी प्रभू चक्रधरस्वामींनी आपल्या शरीराचे आकारमान अत्यंत लहान करून बाळकृष्णाचे रूप धारण केले आणि कामाईसांच्या मांडीवर (उसंगीए) विसावले! त्यांच्या शरीरातून लहान बाळाचे दिव्य तेज प्रकट झाले. कामाईसा आणि नामाईसांनी व्रतस्थ होऊन त्यांची मनोभावे पूजा केली. भोजनानंतर बोणेबाई उपवास करत असताना प्रभूंनी सांगितले, "बाइ, तू भोजन कर." बोणेबाई म्हणाल्या, "प्रभू, आज गोकुळाष्टमीचा उपवास आहे." प्रभू म्हणाले, "बाइ, प्रत्यक्ष देवकीने जेव्हा श्रीकृष्णाला जन्म दिला, तेव्हा तिने उपवास केला होता का? तिने सुंठवडा आणि पेय घेतलेच होते!" त्यानंतर प्रभूंच्या सांगण्यावरून सर्वांनी आनंदात महाप्रसाद घेऊन उपवास सोडला।'
+  },
+  {
+    id: 'lc_p96',
+    bookId: 'leela_charitra',
+    number: 96,
+    title: 'लीळा ९६: सप्त घटां हातु लावणें',
+    titleEn: 'Leela 96: Sapta Ghatan Hatu Lavane',
+    content: 'एकु दीस गोसावीं उदीयांसीचि वीहरणासि मार्कंडवीहीरीसि बीजें केलें : रीगतां डावेया हाता सीळेवरि आसन जालें : मार्कंडवाडीची बाइल एकि पाणीयांसि आली : तीया घागरि भरिली : गुडुघेयावरि ठेविली : मागांपुढां पाहिलें : तवं गोसावीयांतें सीळेवरि बैसलेया देखिलें : मग गोसावीयांजवळी आली : " बा : नावेक हातु लावा हो : " गोसावीं उठोनि घागरी श्रीकरू लाविला आणि डोइएवरि ठेविली : आणि जाए : मागौतीं आली : घागरि भरिली : गुडुघेयावरि ठेविली : गोसावीयांपासि आली : " बा : नावेक घागरीसि हातु लावा कां : " गोसावी उठोनि श्रीकरू लावीति : डोइए ठेवीति : आणि जाए : मागौती ए : ऐसा सातां घागरीं श्रीकरू लावीला : तवं तीएचा ब्राम्हणु वीहीरीसि संध्यावंदनासि आला : डोइए कड़बेयांचा भारा असे : तो ठेविला : हातपाए धोआवेया म्हणौनि वीहीरीसि आला : तवं गोसावीयांतें आसनीं उपवीष्ट देखिलें : साउमा आला : दंडवत केलें : श्रीचरणां लागला : मग गोसावीयांतें वीनवीलें : " जी जी : माझेया आवारासि बीजें करावें : " गोसावीं वीनवणी स्वीकारिली : मग गोसावीं तेयाचेया आवारासि बीजें केलें : ओसरीएवरि आसन रचिलें : गोसावी उपवीष्ट जाले : मग तेणें ब्राम्हणीतें म्हणीतलें : " ए हो : गोसावीयांसि दंडवत करि : " मग ते आलीं : गोसावीयांतें तीया देखिलें : आणि म्हणीतलें : " आही : मी म्हणते कोण गोसावी ? एहीं माझेया सातां घागरीं हातु लाविला : " तेणें म्हणीतलें : " पापीणी पापीणी : घालि घालि दंडवत : गोसावीयांकरवि कैसा हातु लाववीला ? " यावरि सर्वज्ञें म्हणीतलें : " पूर्वी देखिजे तें हेळवाटें : " आणि मग गोसावीयांसि मर्दना मादणें केलें : पुजाअवसरू जाला : आरोगण दीधली : गुळुळा जाला : वीडा ओळगवीला : मग गोसावीं तेथौनि बीजें केलें : ॥',
+    explanation: 'एक दिवस प्रभू चक्रधरस्वामी सकाळीच मार्कंड विहिरीवर गेले आणि डाव्या बाजूच्या शिळेवर बसले. तिथे मार्कंडवाडीतील एक स्त्री पाणी भरण्यासाठी आली. तिने घागर भरली, गुडघ्यावर ठेवली आणि पुढे-मागे पाहिले, तर प्रभू शिळेवर बसलेले दिसले. ती प्रभूंच्या जवळ आली आणि म्हणाली, "प्रभू, जरा घागरीला हात लावा ना (मदत करा)." प्रभूंनी उठून तिच्या घागरीला हात लावला आणि ती तिच्या डोक्यावर ठेवून दिली. ती गेली, परत आली, घागर भरली आणि पुन्हा गुडघ्यावर ठेवून प्रभूंकडे मदत मागितली. प्रभूंनी पुन्हा उठून घागरीला हात लावला. असे तिने सात वेळा केले आणि प्रभूंनी सातही वेळा तिच्या घागरीला हात लावला. तेवढ्यात her पती असणारा ब्राह्मण विहिरीवर संध्यावंदनासाठी आला. त्याच्या डोक्यावर पेंढ्याचा भारा होता. तो ठेवून हात-पाय धुण्यासाठी तो विहिरीवर आला, तेव्हा त्याने प्रभू चक्रधरस्वामींना आसनावर बसलेले पाहिले. तो जवळ आला, त्याने प्रभूंच्या चरणी लोटांगण घातले. नंतर त्याने विनंती केली, "प्रभू, माझ्या घरी चलावे." प्रभूंनी त्याची विनंती स्वीकारली आणि त्याच्या घरी गेले. ओसरीत प्रभूंचे आसन झाले. ब्राह्मणाने आपल्या पत्नीला सांगितले, "अग, प्रभू आले आहेत, त्यांना दंडवत घाल." तेव्हा ती स्त्री बाहेर आली आणि तिने प्रभूंना पाहिले. ती चकित होऊन पतीला म्हणाली, "अरे, हे कोणते प्रभू? यांनी तर माझ्या सात घागरींना हात लावून त्या माझ्या डोक्यावर चढवायला मदत केली!" हे ऐकून ब्राह्मण रागवला आणि म्हणाला, "पापिणी, आधी प्रभूंच्या चरणी लोटांगण घाल! तू देवाकडून घागरींना हात लावून घेतलास?" यावर प्रभू हसून म्हणाले, "ज्ञानाच्या अभावामुळे पूर्वी जे सामान्य रूपात पाहिले जाते, त्याची नंतर किंमत कळते (पूर्वी देखिजे तें हेळवाटें)." नंतर त्या ब्राह्मणाने प्रभूंची सेवा केली, भोजन दिले आणि पूजा केली. त्यानंतर प्रभू तेथून निघाले।'
+  },
+  {
+    id: 'lc_p97',
+    bookId: 'leela_charitra',
+    number: 97,
+    title: 'लीळा ९७: सामानअस्त्रीयां भेटि',
+    titleEn: 'Leela 97: Samanaastriyan Bheti',
+    content: 'गोसावी उदीयांचि उभीया हाटवटीया बीजें करीत होते : पूर्वपश्चिम हाटवटी : दक्षिणीली ओळीसि तेयांचीं घरें होतीं : गोसावीं वीहरणासि बीजें केलें : वीहरणौनि मागुतें गोसावी बीजें करिताति : तवं हाटवटीए दोघी सामानअस्त्रीया भेटलीया : एकीं गोसावियांतें देखिलें : सामोरी आलीं : दंडवत घातलें : श्रीचरणां लागलीं : मग तीयां गोसावीयांतें वीनवीलें : " जी जी : माझेया घरासि बीजें करावें : " गोसावीं वीनवणी स्वीकारिली : मग तेयाच्या घरासि बीजें केंलें : माचेयावरि आसन जालें : श्रीचरणप्रक्षाळण जालें : तीं गोसावीयांसि फोडी ओळगवीलीया : मग वीडीय करूरुनि दीधलीया : तवं दुसरी आली : तीयां म्हणीतलें : " जी जी : मातें द्रव्य आपार असे : परि वायां जातु असे : तें भोगी ऐसा पुरूष नाहीं जी : " गोसावीं एरिचेया तोंडाची वास पाहिली : तवं तीयां म्हणीतलें : " सर गे परती : ऐसें काइ म्हणतासि : गोसावी माए : गोसावी बापु : गोसावीयांचें सेवादास्य कीजे : " " मा मा काइ म्हणत असे ? " आणि गोसावी मागुती एरिचेया तोंडाची वास पाहाति : " जी जी : मातें द्रव्य आपार असे : परि वायां जातु असे : " आणि गोसावीं मागुती एरिचेया तोंडाची वास पाहिली : " सरओ परती : गोसावी माए : गोसावी बापु : गोसावीयांचें सेवादास्य कीजे : " सर्वज्ञें म्हणीतलें : " मा मा : काइ म्हणत असे ? " तवं एरीचे तोंडाची वास पाहाति : मागुती ते म्हणे : " जी जी : मातें द्रव्य बहुत असे : परि वायां जात असे : " तवं गोसावी एरिचेया तोंडाची वास पाहाति : तवं एरि म्हणे : " सर गे परती : गोसावी माए : गोसावी बापु : गोसावीयांचें सेवादास्य कीजे : " यावरi सर्वज्ञें म्हणीतलें : " बाइ : तुम्हीं म्हणतसा तें होए : एं म्हणत असति तें नव्हे : " ॥ मग सर्वज्ञें म्हणीतलें : " बाइ : एकीसि ऐसा भाऊ : एकाचा ऐसा भाऊ : " म्हणौनि सर्वज्ञें म्हणीतलें : " भावावरि देवो " ॥',
+    explanation: 'एक दिवस प्रभू चक्रधरस्वामी पूर्व-पश्चिम बाजारपेठेतून फिरत होते. बाजारातून परत येताना त्यांना दोन सामान्य स्त्रिया भेटल्या. त्यातील एका स्त्रीने प्रभूंचे दर्शन घेऊन चरणी लोटांगण घातले आणि प्रार्थना केली, "प्रभू, माझ्या घरी कृपा करावी." प्रभूंनी तिची नम्र विनंती स्वीकारून तिच्या घरी पाऊल ठेवले. तिथे तिने प्रभूंची उत्तम पूजा केली आणि विडा अर्पण केला. तेवढ्यात दुसरी स्त्री तिथे आली आणि प्रभूंच्या सौंदर्याने आकर्षित होऊन म्हणाली, "प्रभू, माझ्याजवळ अमाप संपत्ती आणि तारुण्य आहे, पण ते वाया जात आहे. त्याचा उपभोग घेणारा तुमच्यासारखा पुरुष मला लाभला नाही." हे ऐकून प्रभूंनी पहिल्या स्त्रीकडे पाहिले. पहिल्या स्त्रीने अत्यंत संतापून दुसऱ्या स्त्रीला खडसावले, "तू बाजूला हो, काय बोलतेस हे? प्रभू तर आपले माता-पिता आहेत, आपण त्यांची केवळ सेवा-चाकरी केली पाहिजे." प्रभूंनी पुन्हा दुसऱ्या स्त्रीकडे पाहिले, वळले, तरी तिने पुन्हा तिची तीच भोगलालसा व्यक्त केली. पहिल्या स्त्रीने पुन्हा तिला प्रभूंच्या परमेश्वर रूपाची आठवण करून देऊन बाजूला केले. प्रभूंनी विचारले, "बाइ, ही काय म्हणत आहे?" तेव्हा पहिल्या स्त्रीने पुन्हा दुसऱ्या स्त्रीला गप्प केले. यावर प्रभू चक्रधरस्वामी म्हणाले, "बाइ, तुझा जो शुद्ध सेवाभाव आहे तोच खरा आहे, ही जो भोगलालसा ठेवून बोलत आहे तो खरा भाव नव्हे." शेवटी प्रभूंनी उपदेश केला, "एकीचा भाव भक्तिमय आहे तर दुसरीचा संसारी आहे. म्हणूनच म्हणतात, \'भावावरि देवो\' (भावाप्रमाणे देव पावतो)।"'
+  },
+  {
+    id: 'lc_p98',
+    bookId: 'leela_charitra',
+    number: 98,
+    title: 'लीळा ९८: महीकयुद्धनिवारण',
+    titleEn: 'Leela 98: Maheekayuddhanivaran',
+    content: 'एकु दीस गोसावी वीहरणौनि बीजें करिताति : तवं हाटवटीए म्हैसे जुझत असति : तो अवघा लोकु माळवधांउपरीयांवरि : पटिसाळांवरि उभा ठाकूनि पाहातु होता : तवं गोसावी म्हैसेयाकडे बीजें करिताति : अवघा लोकु बोबाइला : " आहो आहो महात्मे हो : साउमे नको जाओं : म्हैसे जुझत असति : " गोसावीं आगाध- चक्रवर्ति बीजें केलें : दोहीमध्यें उभे राहिले : एकासि अवलोकिलें : आणि तेयाचा रोखू हरला : आणि तो भूइं उंघतु उंघतु नीगाला : आणि गोसावीं एरातें अवलोकिलें : आणि तेयाचा रोखू गेला : आणि तो भूइं उंघतु उंघतु नीगाला : अवघेया लोकासि आश्चर्य जालें : लोकु म्हणे : " जी जी : आजि गोसावीं आमतें राखिलें : एन्हीं हें आमतें नीपट मारिते जी : " मग गोसावीं गुंफेसि बीजें केलें : ॥',
+    explanation: 'एक दिवस प्रभू चक्रधरस्वामी बाजारातून विहरण करून परत येत होते, तेव्हा बाजारात दोन रानटी टोणगे (म्हैस/हेले) भयानक युद्ध करत होते. आजूबाजूचे सर्व लोक घाबरून आपापल्या घराच्या छतांवर आणि गच्चीवर जाऊन ही लढाई पाहत उभे होते. प्रभू चक्रधरस्वामी थेट त्या लढणाऱ्या टोणग्यांच्या दिशेने जाऊ लागले. हे पाहून सर्व लोक ओरडले, "अहो प्रभू, अहो महात्माजी, तिकडे जाऊ नका! ते टोणगे एकमेकांशी जुंपले आहेत, ते तुम्हाला मारतील!" परंतु प्रभू आपल्या शांत आणि तेजस्वी रूपात पुढे गेले आणि थेट त्या दोन्ही टोणग्यांच्या मध्ये उभे राहिले. प्रभूंनी पहिल्या टोणग्याकडे एका दृष्टीक्षेपाने पाहिले, त्याचा राग तात्काळ शांत झाला आणि तो डोके खाली घालून हळूहळू तेथून निघून गेला. नंतर प्रभूंनी दुसऱ्या टोणग्याकडे पाहिले, त्याचाही संताप नाहीसा झाला आणि तोही शांतपणे खाली पाहत निघून गेला. हे पाहून सर्व लोकांना मोठे आश्चर्य वाटले. लोक म्हणाले, "प्रभू, आज तुम्ही आमचे प्राण वाचवले, नाहीतर या टोणग्यांनी इथे मोठा अनर्थ केला असता आणि आम्हाला मारून टाकले असते." नंतर प्रभू आपल्या गुहेत परतले।'
+  },
+  {
+    id: 'lc_p99',
+    bookId: 'leela_charitra',
+    number: 99,
+    title: 'लीळा ९९: सोमवारीये लोणारा जाणें',
+    titleEn: 'Leela 99: Somavariye Lonara Jane',
+    content: 'एकु दीं गोसावी उदीयांचि वीहरणा बीजें करिताति : तवं बोणेबाई गोसावीयांतें वीनवीलें : " बा मौन्यदेव हो : अवघा लोकु लोणारासि सोमवारीeesi जातु असे : तरि तुम्ही चाला : जाओं : " गोसावीं वीनवणी स्वीकारिली : सर्वज्ञें म्हणीतलें : " बाइ : घेया मात्रा : " मग तेहीं मात्रा घेतली : गोसावीं उजुचि कुमारेस्वरा वीजें केलें : कुमारेस्वरीं स्नानें जालीं : मग तीया कुंडासि प्रदक्षिणा आलीया : परीवंट बांधले : आसन जालें : तेहीं गोसावीयांजवळी मात्रा ठेविली : मग तीएं अष्टतीर्थीया करावेया गेलीया : गोसावी तेयांची मात्रा राखते राहिले : मग तीया अष्टतीर्थीया करूनि आलीया : मग तेहीं मात्रा घेतली : गोसावीं धारेसि बीजें केलें : पटिसाळे आसन जालें : तेथ तेहीं मात्रा ठेविली : गोसावीं गौमुखीं श्रीचरण घातला : मग तेहीं स्नानें केलीं : अवघेया लोका घेतल्यी : " बा मौन्यदेव हो : आतां गावांतु चाला : " सर्वज्ञें म्हणीतलें : " बाइ चाला : " मग गावांतु गेलीया : दैत्यसुदनामागां वाव्य कोणी मढु : तेथ बीढार केलें : बीढार पाहुनि गोसावीं मागुतीं धारेसि बीजें केलें : आसन जालें : बोणेबाइं रंधन केलें : तेयांची धाकुटी बोणेbाइ आली : गोसावीयांतें वीनउनि घेउनि गेली : मग गोसावीयांसि आसन घातलें : आरोगण दीधली : गुळुळा जाला : वीडा ओळगविला : मग त्या जेवीलीया : रात्रीं दैत्यसुदनामागां वाव्य कोणी मढु : तेथ गोसावीयांसि पहुडू जाला : ॥ एरी दीसीं बोणेbाइया अष्टतीर्थीया करूनि आलीया : मग गोसावी वीहरणासि बीजें केलें : तीया दीसा हाटु : हाटवेळ होye तवं गोसावीं विहरणौनि बीजें केलें : दैत्यसुदनीं आसन जालें : बोणेbाइं रंधन केलीं : मग गोसावीयांतें वीनवावेया आलीया : गोसावीं वीनवणी स्वीकारिली : मग गोसावीं बीजें केलें : गोसावीयांसि आरोगण जाली : गुळुळा जाला : वीडा ओळगविला : तेथ नावेक पहुडु जाला : उपहुडु जाला : मग तीया हाटाआंतु गेलीया : पानें पोफळें घेतलीं : दूणीची आंगी टोपरें सीविलीं : उपाहणौ घेतलीया : तवं तेथ नावेक अवेळ जाली : मग तेहीं म्हणीतलें : " बा मौन्यदेव हो : चाला ना : अवघा लोकु नीगौनि गेला : " सर्वज्ञें म्हणीतलें : " बाइ घेया मात्रा : " तेहीं मात्रा घेतली : मग गोसावीं मेहंकरासि बीजें केलें : ॥',
+    explanation: 'एक दिवस सकाळी प्रभू चक्रधरस्वामी विहरणासाठी निघाले, तेव्हा बोणेबाईंनी प्रार्थना केली, "प्रभू, सर्व लोक सोमवारी लोणार तीर्थयात्रेला जात आहेत, तर आपणही तिथे जाऊया." प्रभूंनी त्यांची विनंती स्वीकारली. प्रभूंनी सांगितले, "बाइ, सामानाचे गाठोडे (मात्रा) घे." बोणेबाईंनी गाठोडे घेतले आणि प्रभू थेट कुमारेश्वर मंदिराकडे गेले. तिथे स्नान केल्यानंतर मंदिराच्या कुंडाला प्रदक्षिणा घातली. बोणेबाई अष्टतीर्थाच्या स्नानासाठी गेल्यावर प्रभू त्यांचे साहित्य सांभाळत बसले. बोणेबाई परत आल्यावर त्यांनी साहित्य घेतले आणि प्रभू धारेकडे गेले. तिथे गोमुखी कुंडात पाय ठेवून बसले. बोणेबाईंचे स्नान झाल्यावर त्या म्हणाल्या, "प्रभू, आता गावात चला." प्रभू गावातील दैत्यसुदन मंदिराच्या मागच्या एका मठात विसावले. रात्री तिथेच प्रभूंचा विश्राम झाला. दुसऱ्या दिवशी बोणेबाईंनी पुन्हा अष्टतीर्थ करून भोजन बनवले. प्रभूंनी भोजन केले आणि विडा घेतला. नंतर बोणेबाईंनी बाजारात जाऊन पाने, सुपाऱ्या आणि प्रभूंच्या अंगासाठी कपडे (टोपरें, आंगी) शिवले. तेव्हा उशीर झाल्यामुळे बोणेबाई म्हणाल्या, "प्रभू, चला, सर्व लोक निघून गेले आहेत." प्रभूंनी साहित्य घ्यायला सांगितले आणि प्रभू मेहकरकडे जाण्यास निघाले।'
+  },
+  {
+    id: 'lc_p100',
+    bookId: 'leela_charitra',
+    number: 100,
+    title: 'लीळा १००: लोणारमार्गी चोरूकुमति हरणें',
+    titleEn: 'Leela 100: Lonarmargi Chorukumati Harane',
+    content: 'मग गोसावीं अवळा वेळीं बीजें केलें : मार्गी जातां गोसावीं नावेक श्रमु स्वीकारिला : सेरेयापासि मार्गी वीहीरि : तेथ पींपळु : तेयातळीं आसन जालें : चरणक्षालण जालें : वीडा जाला : मग गोसावीं बीजें केलें : एणीएपरतें मार्गी कांतीएटळीं आसन जालें : चरणक्षालण जालें : गुळुळा जाला : वीडा ओळगविला : मग गोसावीं बीजें केलें : गोसावी जुक्षमालाचेया देऊळापासि पावले : पड्हेसि आसन जालें : श्रीचरणप्रक्षाळण जालें : गुळुळा जाला : वीडा जाला : मग गोसावीं बीजें केलें : तवं पींपळापासि चोर देखिले : बोणेबाईं म्हणीतलें : " वा मौन्यदेव हो : चोर आले : " सर्वज्ञें म्हणीतलें : " बाइ : भेओं नको : " तवं ते सामोरे आले : तवं गोसावीयांतें देखिलें : " आरे : हे गोसावी रे गोसावी : " म्हणौनि जुहारू करूनि भवंताले उभे राहिले : सर्वज्ञें म्हणीतलें : " काइ गा माहात्मे हो : जें होउनि आलेति तें कां कीजे ना ? " " ना जी : काइ गोसावीयांचा ठांई कैसें करावें ? " सर्वज्ञें म्हणीतलें : " ऐसें काइ पाहाता ? हें आहे तें तुम्हीं घेया : हें भीक्षु माहात्मे : यांसि आणीक कव्हणी देइल : " " जी जी : हें गोसावीचि नेसावें आणि गोसावीचि पांगुरावें : जी जी : गोसावी अबळा वेळीं कैसें बीजें केलें ? गोसावीयांसि सरिसें कव्हणी माणूस नाहीं ? " सर्वज्ञें म्हणीतलें : " माहात्मे हो : तुम्ही असा : नव्हे ? काइसी अवेळ ? " मग गोसावीं बोणेbाइयाकरवि वीडा देववीला : तींए च्यारिच्यारि पानें : एकएक पोफळ देत होतीं : मग गोसावीं पुडवाटुवा झाडुनि तांबोळ दीधले : मग तेथौनि गोसावीं बीजें केलें : ते गोसावीयांतें बोळवीत नीगाले : गोसावी तेयातें राहावीत होते : परि ते न व्हाति : तींही म्हणीतलें : " जी जी : आमचे पुढां आणीक असति : ते चांग ओखटे : ते गोसावीयांचां ठांई उपद्रो करिती : " सर्वज्ञें म्हणीतलें : " तैसें एथ कव्हणी काहीं न करी : " मग गोसावीयांसवेंचि आले : पुढां ते : मागां गोसावी : ते सौंदरासंगमाचीए लवणीसि होते : तेयां एरएरां खूण जाली : तवं तेही म्हणीतलें : " हे गोसावी रे गोसावी रे : " मग एरएरां तांबोळें जालीं : एरएर गोसावीया सरिसेचि नीगाले : मात्ह्वडेयांसि वाट फांके : तवं बोळवीत आले : तेथौनि ते मात्ह्वडेयाकडे गेले : गोसावी उजुचि बाणेस्वरासि बीजें केलें : ॥',
+    explanation: 'प्रभू चक्रधरस्वामींनी लोणारच्या मार्गावर सायंकाळी प्रवास सुरू केला. वाटेत थकवा आल्याने एका विहिरीजवळच्या पिंपळाच्या झाडाखाली त्यांनी विश्रांती घेतली. पाय धुऊन विडा घेतला. पुढे जुक्षमाल मंदिराच्या ओसरीत प्रभू थांबले, तिथे पाय धुऊन प्रभू पुढे निघाले. तेव्हा वाटेत एका पिंपळाजवळ काही चोर उभे असलेले दिसले. बोणेबाई घाबरून म्हणाल्या, "प्रभू, चोर आले आहेत!" प्रभू म्हणाले, "बाइ, घाबरू नकोस." ते चोर समोर आले आणि प्रभूंचे तेजस्वी रूप पाहून चकित झाले. ते म्हणाले, "अरे, हे तर महान प्रभू आहेत!" त्यांनी प्रभूंना नम्रपणे जुहार (प्रणाम) केला. प्रभू हसून म्हणाले, "काय बाबांनो, ज्या कामासाठी आला आहात ते का करत नाही? (लूटमार का करत नाही?)" चोर म्हणाले, "प्रभू, तुमच्यासारख्या देवाच्या माणसाला आम्ही कसे काय लुटणार?" प्रभू म्हणाले, "मग काय पाहत आहात? माझ्याजवळ जे काही आहे ते तुम्ही घ्या. या बोणेबाई भिक्षुक आहेत, त्यांना दुसरे कोणीतरी दान देईल." चोर म्हणाले, "नाही प्रभू, हे तुमचे वस्त्र तुम्हीच नेसावे. या अंधाऱ्या रात्री तुम्ही एकटेच का चालला आहात? सोबत कोणी सेवक नाही का?" प्रभूंनी चोरांना बोणेबाईंकडून विडा दिला. चोरांनी प्रभूंचे पाय धरले आणि प्रभूंच्या रक्षणासाठी सोबत चालू लागले. ते म्हणाले, "प्रभू, पुढे आमचे इतर साथीदार आहेत, ते खूप क्रूर आहेत, ते तुम्हाला त्रास देतील." परंतु प्रभूंच्या सानिध्यात आल्यामुळे त्या चोरांची दुष्ट बुद्धि नष्ट झाली (कुमति हरणें) आणि ते प्रभूंचे सेवक बनून त्यांना सुखरूप बाणेश्वर मंदिरापर्यंत पोहोचवून आले।'
+  },
+  {
+    id: 'lc_p101',
+    bookId: 'leela_charitra',
+    number: 101,
+    title: 'लीळा १०१: सींहस्ता यात्रे जाणें',
+    titleEn: 'Leela 101: Simhasta Yatre Jane',
+    content: 'सींहस्तु आला : तो अवघा लोकु त्री्यंबका सींहस्ता यात्रेसि नीगाला : बोणेबाई गोसावीयांतें वीनवीलें : " बा मौन्यदेव हो : अवघा लोकु त्री्यंबका सींहस्ता यात्रेसि जातु असे : तरि तुम्हीं चाला : जाओं : " सर्वज्ञें म्हणीतलें : " बाइ चाला : " मग गोसावीयांसि दुणीची आंगी : टोपरें सीविलीं : वाहणा बांधलीया : मग तेही कणीकितांदुळा पोतीं भरूं आदरिलीं : सर्वज्ञें म्हणीतलें : " बाइ : काहीं घेओं नको : वाटेसि मीळैल : " बोणेबाईं म्हणीतलें : " बा मौन्यदेव : साना गावी वेसजु न जोडे : तरि थोडेंबहुत तन्हीं घेओं : " सर्वज्ञें म्हणीतलें : " बाइ : हें पुढें जोडैल : " परि तेही काहीं काहीं घेतलेंचि : मग गोसावीं बीजें केलें : ॥',
+    explanation: 'सिंहस्थ पर्वकाळ आला होता, त्यामुळे संपूर्ण लोक त्र्यंबकेश्वर येथे यात्रेसाठी निघाले होते. बोणेबाईंनी प्रभू चक्रधरस्वामींना विनंती केली, "प्रभू, सर्व लोक त्र्यंबकेश्वरला सिंहस्थ यात्रेसाठी जात आहेत, आपणही तिकडे जाऊया।" प्रभू म्हणाले, "बाइ, ठीक आहे चला." बोणेबाईंनी प्रभूंच्या प्रवासासाठी कापडी अंगरखा (आंगी), टोपी आणि पायात बांधण्यासाठी चामड्याच्या वाहणा (पादत्राणे) शिवून घेतल्या. प्रवासाला निघताना त्यांनी कणीक आणि तांदूळ गोणीत भरू लागल्या. प्रभूंनी सांगितले, "बाइ, खाण्याचे सामान सोबत घेऊ नकोस, वाटेत सर्वकाही सहज मिळेल." बोणेबाई म्हणाल्या, "प्रभू, लहान गावांमध्ये अन्नधान्य किंवा औषधपाणी मिळाले नाही तर अडचण होईल, म्हणून थोडेफार सोबत ठेवूया." प्रभू म्हणाले, "बाइ, पुढे सर्व काही अनुकूल होईल, काळजी नको करू." पण बोणेबाईंनी त्यांच्या समाधानासाठी थोडे धान्य घेतले आणि प्रभूंसोबत प्रवासाला निघाल्या।'
+  },
+  {
+    id: 'lc_p102',
+    bookId: 'leela_charitra',
+    number: 102,
+    title: 'लीळा १०२: नदी उपानहौ त्यागु',
+    titleEn: 'Leela 102: Nadi Upanahau Tyagu',
+    content: 'मार्गी बोणेबाईया मागां चालति : गोसावी पुढां एति : एकु दीं गोसावी मागां राहिले : गोसावी पेणी पावले : पेणी बोणेबाईया उतरौनि पैलाडि गेलीया : गोसावी उपानहौ फेडूणि तेथचि प्रत्येकजुनि बीजें केलें : ऐसां मार्गी चालतां बोणेबाई मागुती वास पाहिली : तवं गोसावीयांचां श्रीचरणीं उपानहौ नाहींती : मग गोसावीयांतें पुसिलें : " बा मौन्यदेव हो : उपानहौ काइ केलीया ? " सर्वज्ञें म्हणीतलें : " बाइ : तीया नदीचीए पैली थडीए राहीलीया : " " कटकट बा : आम्हां पुढां सांगतेती कांतरि आम्ही घेतों : " सर्वज्ञें म्हणीतलें : " बाइ : जा : तिया तेथचि असति : " मग तिये मागोतीं गेलीं : उपाहणौ घेउनि धावंतें आलीं : गोसावीयांचा श्रीचरणीं उपानहौ ओळगविलीया : मग नदी देखति तेथ मागां राहाति : उपान्हौ घेति : मग नदी उतरलेया गोसावीयांचा श्रीचरणीं ओळगवीति : ऐसें प्रतीस्थानपर्यंत करीत आलीं : ॥',
+    explanation: 'वाटेने चालताना बोणेबाई प्रभूंच्या मागे चालत असत आणि प्रभू पुढे जात असत. एक दिवस प्रभू पाठीमागे राहिले. ते पेणी नदीजवळ पोहोचले. बोणेबाई आधीच नदी पार करून पलीकडच्या तीरावर गेल्या होत्या. प्रभूंनी आपल्या पायातील पादत्राणे (उपानहौ/वाहणा) नदीच्या काठावरच काढून सोडली आणि तसेच नदी पार करून पुढे गेले. पुढे चालताना बोणेबाईंनी मागे वळून पाहिले तर प्रभूंच्या पायात पादत्राणे नव्हती. त्यांनी विचारले, "प्रभू, तुमची पादत्राणे कुठे गेली?" प्रभू म्हणाले, "बाइ, ती नदीच्या पलीकडच्या काठावरच राहिली आहेत." बोणेबाई म्हणाल्या, "अरेरे प्रभू! आम्हाला आधी सांगायचे ना, आम्ही ती उचलून आणली असती." प्रभू म्हणाले, "बाइ, जा, ती तिथेच आहेत." बोणेबाई मागे धावत गेल्या, पादत्राणे आणली आणि प्रभूंच्या पायात घातली. यानंतर प्रवासात कुठेही नदी आली की बोणेबाई स्वतः मागे थांबत, प्रभूंची पादत्राणे हातात घेत आणि नदी पार केल्यावर पुन्हा प्रभूंच्या चरणी घालत असत. त्यांनी पैठण (प्रतिष्ठान) पोहोचेपर्यंत असा नियम चालू ठेवला।'
+  },
+  {
+    id: 'lc_p103',
+    bookId: 'leela_charitra',
+    number: 103,
+    title: 'लीळा १०३: मार्गी प्रतदिनीं बोणें',
+    titleEn: 'Leela 103: Margi Pratidini Bone',
+    content: 'गोसावी मार्गी बीजें करितां गाउ पावती : गावांबाहिरि देऊळीं आसन होए : तेथ पन्हा आपारू राहिला असे : तवं कव्हणी एकु लोकु गोसावीयांचें सौंदर्य देखौनि : तांदुळ : कणीक : तुप : दहीं : दूध : नारीएळें : पानें : पोफळें : आपार घेउनि एति : गोसावीयांसि ओळगवीति : गोसावी कहंती : " बाइ : तुम्हांसि लागें तें घेया : एर माघौतें देया : " मग तीएं लागे तेंचि घेति : एर माघौतें पाठवीति : बोणेबाईया उपाहरू नीफजवीति : मग गोसावीयांसि आरोगण होए : गुळुळा होए : वीडा ओळगवीति : मग आपण जेवीति : उदीयांसेया गोसावीयाकारणें ठेवीति : मग बोणेबाई म्हणीतलें : " बा मौन्यदेव हो : तुम्हां वारीतवारीं कणीकि तांदुळ घेतले : तें आम्हांसि ओझेंचि जालें बा : " सर्वज्ञें म्हणीतलें : " बाइ : एथौनि तुमचें वारिलें होतें कीं : कीं हें घेओं नको : पुढें मीळैल : " ॥',
+    explanation: 'सिंहस्थ यात्रेच्या प्रवासादरम्यान प्रभू चक्रधरस्वामी ज्या ज्या गावात जात, तिथे गावाबाहेरील मंदिरात विसावा घेत. प्रभूंच्या दर्शनासाठी मोठा जनसमुदाय जमत असे. प्रभूंचे अत्यंत तेजस्वी आणि सुंदर रूप पाहून गावातील अनेक भाविक कणीक, तांदूळ, तूप, दही, दूध, नारळ, विड्याची पाने इत्यादी भरपूर साहित्य घेऊन येत आणि प्रभूंच्या चरणी समर्पित करत. प्रभू बोणेबाईंना सांगत, "बाइ, आपल्याला जेवढे हवे तेवढेच घे आणि उरलेले साहित्य भाविकांना परत कर." बोणेबाई आवश्यक तेवढे साहित्य ठेवून बाकीचे साहित्य परत करत. मिळालेल्या अन्नातून त्या प्रभूंचे भोजन आणि फराळ तयार करत. उरलेले अन्न दुसऱ्या दिवशीसाठी जपून ठेवत. एकदा बोणेबाई हसून म्हणाल्या, "प्रभू, मी धान्याची पिशवी नको म्हणत होते, पण वाटेत लोक एवढे धान्य देतात की आता त्याचेच ओझे झाले आहे!" प्रभू हसून म्हणाले, "बाइ, म्हणूनच मी तुला आधीच सांगितले होते की प्रवासात खाण्याचे सामान न घेता निघ, पुढे सर्वकाही सहज मिळेल!"'
+  },
+  {
+    id: 'lc_p104',
+    bookId: 'leela_charitra',
+    number: 104,
+    title: 'लीळा १०४: रावंसगावीं महादेवि पाठकांचा पाणीभातु : बाबुळसेंगा आरोगण',
+    titleEn: 'Leela 104: Ravansgavi Mahadevi Pathakancha Panibhatu: Babulsenga Arogan',
+    content: 'मग रावंसगावां पन्हा गेला : गंगेचीए थडीए पन्हा राहिला : तो तीर्थाचा गांु : तेथ गोसावीयांसि आसन जालें : बोणेबाई मात्रा ठेविली : स्नान करूनि आलीया : संप्रयोगू होइल म्हणौनि आधीली दीसीं अवधेंचि वेचिलें : गोसावीयांलागि काहीं ठेवीतीचि ना : म्हणौनि लवकरि रंधन करूं रीगालीया : गोसावी क्षुधा स्वीकारिली : गोसावीं सीधनाथासि महादेवि पाठकांचीए गुंफेसि बीजें केलें : गोसावीं दारसेंका धरूनि ऐसें ओणवोंनि पाहिलें : तवं महादेवि पाठक गुंफेआंतु समोर बैसले होते : तेहीं गोसावीयांतें देखिलें : साउमे आले : " एइजो जी : एइजो जी : " म्हणौनि दंडवत केलें : श्रीचरणां लागले : गोसावीयांतें आपुलीए गुंफेआंतु घेउनि गेले : गोसावीयांसि आसन जालें : श्रीचरणप्रक्षाळण केलें : गोसावीयांसि पाणीभातु बाबुळसेंगा आरोगण दीधली : गुळुळा जाला : मग गोसावीयांसि तेथचि पहुडु जाला : बोणेबाईं रंधन केलें : धाकुटी बोणेबाई गोसावीयांतें बोलावूनि घेउनि गेलीं : गोसावीयांसि आसन घातलें : " बा मौन्यदेव हो : आजि भूकैलेति : जेउं बैसा : " गोसावीयांसि श्रीमुखप्रक्षाळण : आरोगण झाली : गुळुळा जाला : वीडा ओळगवीला : मग तीया जेवीलीया : सीधनाथा वाव्य पन्हा उतरला होता : तेथ वस्ति जाली : ॥',
+    explanation: 'प्रभू चक्रधरस्वामींचा मुक्काम पुढे रावसगाव येथे गंगा नदीच्या काठी एका तीर्थक्षेत्री पडला. तिथे बोणेबाईंनी सामान ठेवले आणि स्नानासाठी गेल्या. आदल्या दिवशी सर्व शिधा संपला असल्याने प्रभूंच्या भोजनासाठी काहीच उरले नव्हते, म्हणून बोणेबाई घाईघाईने स्वयंपाक करू लागल्या. प्रभू चक्रधरस्वामींना भूक लागल्यामुळे ते सिद्धनाथ मंदिराजवळ असलेल्या महादेवि पाठक यांच्या गुहेत गेले. प्रभूंनी दारातून थोडे वाकून पाहिले, तेव्हा आत महादेवि पाठक बसलेले होते. त्यांनी प्रभूंना पाहिले आणि धावत येऊन दंडवत घातले. प्रभूंना गुहेत आदराने बसवून घेतले आणि पाय धुवून घेतले. महादेवि पाठक यांनी प्रभूंना प्रेमाने भात आणि बाभळीच्या शेंगांचे कढण (पाणीभातु आणि बाबुळसेंगा) खायला दिले. प्रभूंनी त्याचा अत्यंत आवडीने स्वीकार केला. नंतर प्रभू तिथेच काही वेळ विसावले. इकडे बोणेबाईंनी स्वयंपाक केल्यावर प्रभू शोधत आल्या आणि म्हणाल्या, "प्रभू, आज तुम्हाला खूप भूक लागली असेल, जेवायला चला." प्रभूंनी बोणेबाईंच्या घरी जाऊन पुन्हा थोडे भोजन केले आणि विडा घेतला. त्या रात्री सिद्धनाथाच्या मठात प्रभूंचा मुक्काम झाला।'
+  },
+  {
+    id: 'lc_p105',
+    bookId: 'leela_charitra',
+    number: 105,
+    title: 'लीळा १०५: प्रतेस्थानीं बाइसां भेटि',
+    titleEn: 'Leela 105: Pratesthani Baisan Bheti',
+    content: 'मग तेथौनि प्रतेस्थानासि पन्हा आला : तेया पन्हया सांगतें गोसावीं प्रतेस्थानासि बीजें केलें : भोगावतीए चौकटीवरि गोसावीयांसि लोंबतां श्रीचरणीं आसन जालें : बोणेबाई मात्रास्नानें केलीं : अष्टतीर्थीया केलीया : मग मात्रा घेतली : मग गोसावीयांतें वीनवीलें : " बा मौन्यदेव हो : चाला गावांतु जाओं : " सर्वज्ञें म्हणीतलें : " बाइ तुम्हीं जा : हें मागिलाकडौनि एइल : " " ना बा मौन्यदेव हो : हें नगर थोर : एथें हातें हातु न पविजे : तुम्हीं चुकाल : " सर्वज्ञें म्हणीतलें : " बाइ : हें एइल ऐसें चोजवीत चोजवीत : " मग तीएं पुढां गेलीं : बाइसांचीए गुंफेसि आलीं : बाइसांसि तेयांसि ओळखि होती : बाइसांसी भेटि जाली : मग बाइसुंपुढां गोसावीयांचे गुणवीसेख सांगों लागलीं : " आओ नागुबाई : आम्हां सांघातें एक मौन्यदेव असति : " गोसावीयांचीया लीळा सांगों आदरिलीया : " काइ सांगों तेयांचें सौंदर्य : काइ सांगों तेयांचें लावण्य : काइ सांगों तेयांचें सामूथ्य : " ऐसीया गोसावीयांचीया आश्चर्याचीया गोष्टी सांगों लागलीं : चोरांची गोष्ट सांगीतली : म्हैसेयाची गोष्ट सांगीतली : इतुलेनि बाइसांसि वेधु संचरला : बाइसीं म्हणीतलें : " ते कवणी ठांइ असति ? " बोणेबाई म्हणीतलें : " ना भोगावतीए राहिले असति : " मग बोणेबाईया छायागोपाळीं बीढार घेतलें : मग बाइसें भीक्षेसि गेलीं : भीक्षा करूनi आलीं : तांबटीएसी तुळसी होतीया : वामदेवांचीए गुंफेसि नीगालीं : तवं गोसावी भोगावतीचीए खांडीहुनि बीजें करिताति : गोसावीयांचां श्रीचरणीं उपान्हौ : श्रीमुगुटीं दुणीची आंगी श्रीकरेंकरूनि ऐसी पुढां धरिली असे : तवं नरसींहांचीए पौळिपैलीकडे गोसावी पसीमीली वाटाचि बीजें करिताति : तेथ बाइसान्सी भेटि जाली : बाइसीं गोसावीयांतें देखिलें : आणि उभीं राहिलीं : बाइसीं म्हणीतलें : " हे पुरूख ए नगरीचे नव्हति : बोणेबाईं सांगीतले ते होती : " बाइसीं पुसिलें : " आपण काइ मेहंकराकडूंनि एइजत असिजे ? " गोसावीं श्रीमुगुटें मानिलें : " आपणेयां सांगातें काइ दोघी एकी बाया असति ? " गोसावीं श्रीमुगुटें मानिलें : " आपणेया नावं काइ मौनिदेव ? " पुढती गोसावीं श्रीमुगुटें मानिलें : " तरि चाला जाओं आमचीए गुंफेसि : " गोसावीं बीजें केलें : बाइसें पुढां : गोसावी मागां : बाइसीं पाएपुसणें ओटेया- खालि बैसावेया घातलें : गोसावीयांसि आसन जालें : मग हंसाबाइतें म्हणीतलें : " हंसाबाइ : माहात्म्यासि पाणीभातु देया : " दीधला : मग गोसावीयांसि दुधीकरंता पाणीभाताची आरोगण जाली : मग बाइसें गोसावीयांतें पुसों लागलीं : " बा मौन्यदेव हो : आपण माहात्म्या आपणसि काइसा त्रीयंबकु ? हें प्रतेस्थान नगर बरवें : एथ पींपळेश्वरासारिखें तीर्थ : आपण येथ असावें : येथ आपुलेया म्हणावें : कोन्ही लोकु न म्हणावें : येथ पाणीभातु घेयावा : भोगनाराएणीं नीद्रा करावी : आपणेयां काइ करावें असे त्रीयंबकु ? आपण राहिले तेथचि त्रीयंबकु : " मग गोसावीं भोगनाराएणीं बीजें केलें : गोसावीयांलागि आंथुरावेया बाइसीं जाडी दीधली : मग गोसावीं पहुडू स्वीकारिला ॥ एकांकि ॥',
+    explanation: 'प्रभू चक्रधरस्वामी पुढे पैठण (प्रतिष्ठान) येथे आले. गोदावरी नदीच्या (भोगावती) काठावर प्रभू विसावले. बोणेबाई स्नानासाठी गेल्या आणि स्नान उरकून प्रभूंना म्हणाल्या, "प्रभू, हे नगर खूप मोठे आहे, आपण गावात चला." प्रभू म्हणाले, "बाइ, तू पुढे जा, मी मागून येतो." बोणेबाई म्हणाल्या, "नको प्रभू, इथे गर्दीत आपण रस्ता चुकाल." प्रभू म्हणाले, "बाइ, मी रस्ता शोधत शोधत याईन." बोणेबाई पुढे गेल्या आणि त्यांच्या परिचयाच्या असलेल्या \'बाइसा\' (नागुबाई) यांच्या गुहेत गेल्या. तिथे त्यांनी प्रभूंच्या दिव्य गुणांचे वर्णन करायला सुरुवात केली - प्रभूंचे सौंदर्य, त्यांचे सामर्थ्य, चोरांची कथा आणि टोणग्यांची लढाई शांत करण्याची कथा! हे ऐकून बाइसांच्या मनात प्रभूंचे दर्शन घेण्याची तीव्र ओढ निर्माण झाली. बाइसा भिक्षेसाठी बाहेर पडल्या, तेव्हा त्यांना वाटेत गोदावरीच्या काठावरून येणारे प्रभू चक्रधरस्वामी दिसले. प्रभूंचा तो शांत आणि तेजस्वी चेहरा पाहून बाइसा क्षणभर थांबल्या आणि म्हणाल्या, "हे या गावातील पुरुष नसून बोणेबाईंनी ज्यांचे वर्णन केले तेच महान प्रभू असावेत." बाइसांनी विचारले, "आपण मेहकरवरून आलात का?" प्रभूंनी मान डोलवली. "तुमच्यासोबत दोन स्त्रिया आहेत का?" प्रभूंनी होकार दिला. "आपले नाव मौन्यदेव आहे का?" प्रभूंनी पुन्हा होकार दिला. बाइसा प्रभूंना आदराने आपल्या गुहेत घेऊन गेल्या. तिथे हंसाबाइंना सांगून प्रभूंना गरम कढी-भात (दुधीकरंता पाणीभातु) खायला दिला. बाइसा म्हणाल्या, "प्रभू, तुम्ही त्र्यंबकेश्वरला कशाला जात आहात? हे पैठण नगर खूप सुंदर आहे. तुम्ही इथेच राहावे, इथेच भोजन करावे आणि विसावा घ्यावा. जिथे तुम्ही आहात तिथेच सर्व तीर्थे आहेत!" प्रभूंनी त्यांची प्रार्थना मान्य केली आणि पैठण येथेच राहणे पसंत केले. या भेटीने महानुभाव पंथातील अतिशय महत्त्वाच्या शिष्या \'बाइसा\' प्रभूंच्या चरणी समर्पित झाल्या।'
+  },
+  {
+    id: 'lc_p106',
+    bookId: 'leela_charitra',
+    number: 106,
+    title: 'लीळा १०६: त्रीयंबका न वचणें',
+    titleEn: 'Leela 106: Triyambaka Na Vachane',
+    content: 'कवरिकडे बोणेबाईं रंधनें केलीं : गोसावीयांची मध्यानेकीं रात्रि वाट पाहिली : मग म्हणीतलें : " हें थोर नगर : मौन्यदेव चुकले : पारी चुकती कीरूं ना : तरि कवण्ही ठांइ जेविले असती : आणि काइ : " ऐसें व्यवस्तौनि आपण जेविलीया : मग उदीयाचि गोसावीं बाइसांचीए गुंफेसि बीजें केलें : बाइसीं कवाडाआड ओटेयाखालि पाएपुसणें बैसावेया घातलें : गोसावीयांसि आसन जालें : तवं सवळेचीचि बोणेबाईया आलीया : बाइसंतें म्हणों लागलीया : " नागुबाई नागुबाई : आमचे मौन्यदेव नैएतीचि : नीच रंधन होए : आणि एति : कालि न एतीचि : तरी काइ हें थोर नगर म्हणौनि चुकले : पारी चुकती कीरूं ऐसें नव्हति : तरी काइ कव्हणी जेवावेया नेलें ? " तवं बाइसीं म्हणीतलें : " ते पुरूख भलेतेथ असती : माहात्मे नव्हति ? जेथ गेले तेथचिचि : " ऐसें जवंजवं बाइसें म्हणति तवंतवं हंसराजु उंबरेयावरि बैसोनि भीतरि गोसावीयांकडे पाहाति : आणि तेयांकडे पाहाति : आणि मुखींमुखीं हांसति : तवं तीया उपान्हौ देखिलीया : सामोरीया आलीया : तवं तेहीं गोसावीयांतें देखिलें : आणि बाइसांवरि धागाइलीं : " हें काइ ओ नागुबाई : आमचे मौन्यदेव एथ असति : मा तरि तुं सांगसि ना ? आमचे मौन्यदेव तुम्हीं चाळवीले : " सर्वज्ञें म्हणीतलें : " बाइ हें एथ असे : " मग गोसावीयांतें म्हणीतलें : " चाला चाला बा मौनदेया : सांघातु नीगाला : " मग तेहीं श्रीचरणीं उपान्हौ मेळवीलीया : गोसावीं म्हणीतलें : " बाइ चाला : " मग बाइसीं म्हणीतलें : " बा मौन्यदेव हो : एथ एइजे हो : हें बीढार आपुलें म्हणिजे हो : आमतें पडिताळिजे हो : कोन्ही लोकु न म्हणिजे हो : " मग गोसावीं बीजें केलें : पुढें बोणेबाईया : तेया मागें गोसावी : गोसावीया मागें बाइसें : बाइसें गोसावीयांची व्यावृत्ति करिति : " बा : आपण माहात्म्या : आपणेयां काइसा त्रीयंबकु ? जेथचि माहात्मे तेथचि त्रीयंबकु : तेथचि सकळ तीर्थे : हें प्रतेस्थान नगर बरवें : पींपळ- स्वरासारिखें तीर्थ : धोरेस्वरासारिखें तीर्थ : मुधादैत्यासारिखें तीर्थ : " ऐसी व्यावृत्ति करितें लोणारखांडीवरि गेलीं : लोणारखांडीपासी राहिलीं : लोणार तीर्थी पन्हा उतरत होता : तेथ गुडघेया इतकेया पाणीयांतु गोसावीं बीजें केलें : आणि सर्वज्ञें म्हणीतलें : " बाइ : आतां हें वीयेंबकासि नैए : " तवं बोणेबाई म्हणीतलें : " कां बा नैया ? तुमचेनि आम्हांसि त्रीयंबकु होता : तीर्थ होतें : " सर्वज्ञें म्हणीतलें : " ना बाइ : आतां हें नैए : यालागि इतुका ऐसा त्रीयंबकु एथचि आणा : " म्हणौनि गोसावी मागुतें ऐलिथडीए बीजें केलें : मग धाकुटी बोणेबाई नागाइसें : तीएं ऐलि थडी- एसि उपान्हौ घेउनि आलीं : गोसावीयांचा श्रीचरणीं ओळगविलीया : मग म्हणीतलें : " बा मौन्यदेव हो : आमचें ओखटगोमटें पोटीं सामविजे हो : आम्ही येवों तवं एथचि असा : मग गावा जावों : " गोसावी उगेचि : मग तीया नीगालीया : मग गोसावीं बाइसांकडे बीजें केलें : बाइसीं गोसावीयांतें प्रतलेयां देखिलें : तीएं लोणारखांडीचेया टेकावरि उभीं ठाउनि पाहात होतीं : गोसावीयांतें देखिलें : आणि हरखैलीं : सामोरी आलीं : " भलें केलें बा मौन्यदेव हो : राहिलेति : आपण माहात्म्या : आपणयांसि काइसा त्रीयंबकु : जेथचि माहात्मे तेथचि त्रीयंबकु : हें प्रतेस्थान नगर बरवें : पींपळेश्वरू : धोरेस्वरू : चक्रपाणि : केदारू : मुधादैत्यु : एथिंचीं सकळें तीर्थे : " ऐसी व्यावृत्ति करितें पुढां तीयें मागां गोसावी ऐसी गुंफेसि घेउनि आलीं : पाएपुसणें घेउनि बैसावेया घातलें : मग हंसराजें बाइसांसि पुजा केली : बाइसें गोसावीयांचिए दृष्टीसमोर बैसलीं : मग गोसावीयांसि पाणीभाताची आरोगण दीधली : मग बाइसीं म्हणीतलें : " बा मौनदेया : आपण जवं ए नगरी असिजैल तवं एथ पाणीभातु घेयावा : वीळींचां भीक्षा मागोनि तैसें जेवावें : भोगनाराएणीं नीद्रा करावी : हें आपुलें ऐसें मानावें : " ऐसें पुढतीपुढती म्हणीतलें : गोसावीं मानिलें : मग भोगनाराएणी पहुडु स्वीकारिति ॥',
+    explanation: 'इथून पुढे प्रभू चक्रधरस्वामींनी त्र्यंबकेश्वरची यात्रा न करण्याचा निर्णय घेतला. पैठणमध्ये बोणेबाईंनी स्वयंपाक केला, पण रात्री उशिरापर्यंत प्रभू आले नाहीत म्हणून त्या जेवून झोपल्या. दुसऱ्या दिवशी सकाळी बोणेबाई प्रभूंचा शोध घेत बाइसांच्या गुहेत आल्या. त्यांनी बाइसांना विचारले, "नागुबाई, आमचे प्रभू काल रात्रीपासून परत आले नाहीत. ते रस्ता चुकले की त्यांना कोणी जेवायला नेले?" बाइसा काही न बोलता शांत बसल्या होत्या, पण हंसराज (बाइसांचे बंधू/सेवक) गालातल्या गालात हसत होते. तेवढ्यात बोणेबाईंना दाराजवळ प्रभूंची पादत्राणे दिसली! त्या आनंदात ओरडल्या, "अरे नागुबाई! आमचे प्रभू तर इथेच आहेत, आणि तू आम्हाला काहीच सांगितले नाहीस!" बोणेबाई प्रभूंना म्हणाल्या, "प्रभू, चला, सर्व यात्रेकरू निघाले आहेत." प्रभू उभे राहिले आणि चालू लागले. बाइसा आणि बोणेबाई प्रभूंच्या मागे चालल्या. बाइसा सतत म्हणत होत्या, "प्रभू, तुम्ही त्र्यंबकेश्वरला कशाला जाता? जिथे तुम्ही आहात तिथेच खरी त्र्यंबकेश्वर यात्रा आहे!" शेवटी प्रभू नदीच्या पात्रात गुडघाभर पाण्यात उभे राहिले आणि बोणेबाईंना म्हणाले, "बाइ, आता हा प्रभू त्र्यंबकेश्वरला जाणार नाही. आपण त्र्यंबकेश्वरचा सर्व महिमा याच पैठण नगरीत आणूया." प्रभूंनी त्र्यंबकेश्वरला जाणे रद्द केले (त्रीयंबका न वचणें). बोणेबाई यात्रेसाठी पुढे निघून गेल्या आणि प्रभू पैठणला बाइसांच्या गुहेत कायमचे मुक्कामास राहिले।'
+  },
+  {
+    id: 'lc_p107',
+    bookId: 'leela_charitra',
+    number: 107,
+    title: 'लीळा १०७: बाइसां स्तोति',
+    titleEn: 'Leela 107: Baisan Stoti',
+    content: 'मग एरी दीसीं सवळेसीसि हंसराजें सदांसमार्जने केलें : चौकरंगमाळिका भरिलीया : मग आपुलें आणि बाइसांचें : दोन्हीं धोतें घेउनि गंगेसि गेलीं : धोतें धुतलीं : सुचीएमतें जालीं : सागळ भरूनि घेउनि आलीं : धोतें वाळों घातलीं : मग पुजाद्रव्यें मेळवीलीं : मग ओटेयावरi आसनावरि आसन रचिलें : गोसावीं उदीयांसीचि बाइसांचे गुंफेसि बीजें केलें : पूर्वामुख मोकळवाळीचें देऊळ : तेथ बाइसांची गुंफा : ओटेयाखालि कवाडाआड दखिणीली भीतीसीं बाइसीं पाएपुसणें बैसावेया घातलें : गोसावीयांसि उत्तरामुखें आसन जालें : मग बाइसें : ओटेयावरि आसन : तेथ कानवडी ऐसीं बैसलीं होतीं : मग बाइसांसि हंसराजें पुजा करूं आदरिली : गोसावीं बाइसांतें दृष्टी अवलोकिलें : दीठी दीठी मीळे आणि बाइसां ऐसीं खालीं वास पाहाति : गोसावीयांची दृष्टी चेपे ना : मागुतें गोसावीं दृष्टी अवलोकिलें : आणि मागुतीं तेहीं खालीं वास दृष्टी केली : मागुतें गोसावीं अवलोकिलें : आणि तेहीं वरौती दृष्टी केली : आणि दृष्टी दृष्टी मीनली : आणि दृष्टी- सरिसें उत्तम प्रेम संचरीलें : ऐसें वेज दीधलें : आणि वेज घेतलें : आणि ऐसें आपणेयातें ओटेयाखालुतें दंडकरि श्रीचरणांवरि घातलें : " पापीणी बाबा : पापीणी बाबा : नेणेंचि चुकलीं बाबा : चांडाळि बाबा : सुळीं वळघलीं होतीं बाबा : " म्हणौनि श्रीचरणांवरि लोळण घातली : ओटेयावरि झाडुनि बरवें आसन रचिलें : गोसावी आसनीं उपवीष्ट जाले : श्रीचरणप्रक्षाळण जालें : श्रीचरणोदक घेतलें : मग बरवी पुजाद्रव्यें आणिकें आणिलीं : मग बरवा पुजाअवसरू केला : पालमां डां बरवा मंगळ दीवा उजळिला : स्तीतीमतें जालीं : आठै सात्वीक प्रकटिले : पालमांडें थरारिलें : रोमांच दाटले : मग पालमांडें खाली ठेवुनि पांच दंडवतें घातलीं : मग बाइसीं उत्तम तांदुळ वेढिले : सोजीची पोळी केली : ऐसा चोखटु उपाहरू नीफजविला : मग गोसावीयांसि पालमंडां आरोगण दीधली : मग बाइसीं गोसावीयांसि गुळुळा करूं घातला : मग गोसावीयांसि वीडा ओळगविला : मग तेथौनि बाइसें गोसावीयांचीए सेवेसि प्रवर्त्तली : मग प्रतदिनीं बाइसें तीन्हीं पुजाअवसर करिति : ऐसी गोसावीयांची सेवा करिती : गोसावीयांचां उचीष्टु प्रसादु घेति : मग बाइसें सोरठी जाडि : भोगनाराएणा नेति : भोगनाराएणीं जाडिचें सएनासन रचीति : गोसावी तेथ पहुडू स्वीकारिति ॥',
+    explanation: 'एका सकाळी हंसराज यांनी गुहेची स्वच्छता व सारवण केले. मंदिराच्या आवारात रांगोळी काढली. गंगेवरून स्वच्छ पाणी आणून प्रभूंच्या पूजेची सर्व तयारी केली. प्रभू चक्रधरस्वामी सकाळीच बाइसांच्या गुहेत आले. प्रभूंना उत्तरामुख आसन देण्यात आले. बाइसा ओट्यावर बसल्या होत्या. जेव्हा हंसराज यांनी प्रभूंची पूजा सुरू केली, तेव्हा प्रभूंनी बाइसांकडे आपल्या दिव्य व करुण दृष्टीने पाहिले. बाइसांनी मान खाली घातली, पण प्रभूंची ती भेदक आणि कृपामयी दृष्टी थेट त्यांच्या अंतःकरणात उतरली! प्रभूंनी सलग तीन वेळा बाइसांकडे पाहिले आणि तिसऱ्या वेळी बाइसांची नजर प्रभूंच्या नजरेला भिडली. त्या दृष्टीभेटीतच प्रभूंचे परमेश्वरी चैतन्य आणि अद्वितीय दिव्य प्रेम बाइसांच्या संपूर्ण शरीरात आणि मनात संचारले (वेज दीधलें, वेज घेतलें). बाइसा भारावून गेल्या आणि त्यांनी प्रभूंच्या चरणी लोटांगण घातले. त्या रडत म्हणाल्या, "प्रभू, मी अज्ञानी पापीण आहे, मला क्षमा करा!" त्यांनी प्रभूंचे चरण अश्रूंनी धुवून घेतले. या अद्भूत अनुभवाने बाइसांमध्ये अष्टसात्विक भाव प्रकट झाले आणि त्यांचे शरीर थरारले. यानंतर त्यांनी प्रभूंची मनोभावे महापूजा केली, सोजीची उत्तम पोळी आणि भाताचा नैवेद्य अर्पण केला. त्या दिवसापासून बाइसा प्रभूंच्या सेवेत अखंड मग्न झाल्या आणि त्यांचा उच्छिष्ट प्रसाद ग्रहण करू लागल्या।'
+  },
+  {
+    id: 'lc_p108',
+    bookId: 'leela_charitra',
+    number: 108,
+    title: 'लीळा १०८: हंसराजा स्तोति',
+    titleEn: 'Leela 108: Hansraja Stoti',
+    content: 'हंसराजु तींए भकों लागलीं : वामदेवा पांडेयापुढां सांगों लागलीं : " आमचा पयोवर्तीयांचा मार्ग या नागुबाइया नासिला : कवण नेणों माहात्मा येकु गुंफेआंतु घातला असे : तेयासि पुजा करिती असे : तेयाचें पाएवणी घेति असे : तेयाचें उचीष्ट घेति असे : " ऐसें नीच भकों लागलीं : मग एकु दीसीं बाइसीं म्हणीतलें : " बाबा : इयें हांसुबाईसि काही कीजो का : हे काही म्हणीए व्यापारू करूं न लगे : आणि पांडेयापासि जाउनि काही भकती असे : " मग एकु दीसीं गोसावीयांतें ओटेयावरi आसन असे : तवं बाहेरीलाकडौनि हंसराजु गुंफेसि आलीं : तवं सर्वज्ञें म्हणीतलें : " हंसराजा : या : " आणि तेया स्तीति जाली : सुख जालें : सर्वज्ञें बाइसातें म्हणीतलें : " बाइ : जीवासि बोध आणि बोधशक्ति ते एथौनीचि कीं : कव्हणा एका माहात्म्यांचे आधारीयेसि शब्दवेधीया रसु असे : तो वाटा जातु असे : रात्री नगरांतु तोवें तांबें घडत असे : रसातें स्पर्सौनि शब्दु ये : माघौता तेथचि विलय जाये : तोवें तांबें असे तें सोनें होए : तैसें परमेश्वराचेया शब्दापासोनी एका वेधु संचरति " हंसराजा स्तीति जाली : भोगिली : खंगली : मग तीएही गोसावीयांचें सेवादास्य करूं लागलीं : सागळ भरूनi आणीति : पुजा करूं लागति : ऐसी गोसावीयांची आवडि संचरली ॥',
+    explanation: 'हंसराज हे आधी प्रभूंचे आणि बाइसांच्या या भक्तीचे वामदेव पांडे यांच्यासमोर उपरोधाने आणि निंदेने वर्णन करत असत. ते म्हणत, "या नागुबाईने (बाइसांनी) आमचा पयोव्रताचा जुना मार्ग नष्ट केला आहे. तिने एका अज्ञात महात्माजींना आपल्या गुहेत ठेवले आहे, त्यांची ती पूजा करते, decorate करते, त्यांचे चरणतीर्थ पिते आणि त्यांचे उच्छिष्ट खाते." एक दिवस बाइसांनी प्रभूंना विनंती केली, "प्रभू, माझे बंधू हंसराज यांना काहीतरी उपदेश करून योग्य मार्ग दाखवा, ते वामदेव पांड्यांसमोर आपली निंदा करत फिरतात." एक दिवस प्रभू चक्रधरस्वामी ओट्यावर बसले असताना हंसराज गुहेत आले. प्रभू अत्यंत प्रेमाने म्हणाले, "हंसराज, या!" प्रभूंच्या या शब्दांमधील दिव्य तेज आणि चैतन्य थेट हंसराज यांच्या अंतःकरणात उतरले. प्रभू चक्रधरस्वामी बाइसांना उद्देशून म्हणाले, "बाइ, जीवाचा बोध आणि बोधशक्ती ही परमेश्वर कृपेनेच जागृत होते. ज्याप्रमाणे किमयागाराच्या कल्पनेतून साधे तांबेही सोन्यामध्ये रूपांतरित होते, त्याचप्रमाणे परमेश्वराच्या शब्दांच्या स्पर्शाने जीवाचे अंतःकरण बदलून जाते." प्रभूंचे हे ऐकून हंसराज यांचे परिवर्तन झाले, त्यांच्या मनातील शंका आणि निंदा नाहीशी झाली. तेही प्रभूंच्या चरणी लीन झाले आणि त्यांनी प्रभूंची मनापासून सेवा करण्यास सुरुवात केली. ते स्वतः पूजेचे पाणी व साहित्य आणू लागले।'
+  },
+  {
+    id: 'lc_p109',
+    bookId: 'leela_charitra',
+    number: 109,
+    title: 'लीळा १०९: पांडे स्वप्नी नामस्वीकारु',
+    titleEn: 'Leela 109: Pandeya Swapni Namasveekaru',
+    content: 'रात्रीचें वृतांतु सांगीतलें : "आओ नागुबाइ : हे गोसावी कवण ऐसें तुं जाणसि ना ?" तवं बाइसीं म्हणीतलें : " ना नेणों :" पांडे ते गोसावीयांवरि भकों लागले : "इतुके दी नागुबाइ चळळी : आतां हां सुबाईही चळळी : कवण कल्पनेचा असे तो गुंफेआंतु कोंडीला असे : " हंसराजु मागोती आलीं : " बाइ : पांडा तुमते बोलाविताए :" मग बािसें गेलीं : रात्रीचें वृतांतु सांगीतलेें : "आओ नागुबाइ : हे गोसावी कवण ऐसें तुं जाणसि ना ?" तवं बाइसीं म्हणीतलें : " ना नेणों : " मग पांडे म्हणीतलें : " बाह : हे द्रावतीकार श्रीचांगदेवोराउळ गोसावी : हे प्रतेक्ष ईश्वर : मज स्वप्नीं नामस्वीकारू दीधला असे : एहीं आजि मातें राखिलें : " मग पांडे बाळकांसवे बाइसांपासीं निरोप पाठविला : " पांडा बोलावीत असे तरि तेथ बीजें कीजो कां बाबा :" सर्वज्ञें म्हणीतलें : " हें काइ तेयाचिये नाथेचा बाळु : ऐसें तेयाचिआ बोलविल्यां येइल ?" " ना बाबा : बीजें करावें :" मग गोसावीं पांडेयाचेया घरा बीजें केलें : पांडेयांनीं उंबरेयाबाहिरि दोन्हीं श्रीचरण : ओटेयावरोनि सरळि घातली : श्रीचरणांवेरी माथा ठेविला : मग ओटेयावरi बरवें आसन रचिलें : गोसावी आसनीं उपवीष्ट जाले : दंडवत घातलें : श्रीचरणां लागले : मग गोसावीयांचें श्रीचरणप्रक्षाळण केलें : चरणोदक घेतलें : मग अवधी गोष्टि गोसावीयांपुढां सांगीतली : " आओ नागुबाइ : हे द्रावतीकार श्रीचांगदेवोराउळ गोसावी : एहीं आजि मातें राखिलें ओ : म्हणौनि वांचलों ओ : एन्हवी मारितें :" तवं बाइसीं म्हणीतलें : " हां बाबा : बाबा नांव काइ ?" सर्वज्ञें म्हणीतलें : " पांडा म्हणत असे तेंचि :" पांडेन वीनवीलें : " जी जी : मज दूधतुपेन मखता आपुला उचीष्ट प्रसादु पाठवावा : तें मज पथ्य : आणि श्रीचरणउदक तें मज उदक :" मग गोसावी दूधतुपेन मखता प्रसादु पाठवीति : तैसेंचि दीसां दो चौं सरले ॥',
+    explanation: 'पांडे यांनी स्वप्नात प्रभू चक्रधर स्वामींच्या नावाचा स्वीकार केल्याचे व प्रभूंच्या महात्म्याचे वर्णन यात आले आहे. प्रभूंनी त्यांच्या घरी जाऊन त्यांना दर्शन दिले आणि पांडे यांनी मनोभावे पूजा करून प्रभूंचे चरणतीर्थ घेतले व प्रसादाची मागणी केली।'
+  },
+  {
+    id: 'lc_p110',
+    bookId: 'leela_charitra',
+    number: 110,
+    title: 'लीळा ११०: भोगनारायणी मायेधुआं भेटि',
+    titleEn: 'Leela 110: Bhoganarayani Mayedhuan Bheti',
+    content: 'एकु दीं भोगनाराएणीं देउळाआंतु गोसावीयांसि आसन जालें : तवं तेथ मायेधुवा दर्शनासि आला : देउळाआंतु गोसावीयांतें देखिला : आणि वेधला : देवो पाहावया आले परि देवो पाहासीचि ना : " चाल गे जाओं :" तवं तेणें म्हणीतलें : " आइ : मज काहीँ करावें न लगे : भोगनाराएणीं जे पुरूख भेटले तेयांतें आणिसी तरि माझें देह वांचैल : एन्हवी जाइल :" मग तीहीं वीनवीलें : " जी जी : गोसावीं तेथ बीजें करावें जी :" सर्वज्ञें म्हणीतलें : " बाइ : मासळी असे : ते पाणीयांतु चीतुवीतु जाए : मागोतें परतोनि तेयातें दृष्टी पाहे : अमृत कळा असे ते संचरे : तथातव तीयें वाढती : तैसें परमेश्वराचिये दृष्टीपासोनि एका वेधु संचरति :" मग गोसावी तथांचेया बीढारा बीजें केलें : तवं मायेधुवा घराआंतु होता : तो देखौनि साउमा आला : दंडवतें घातलीं : श्रीचरणां लागला : मग उजवीकडे बैसला : स्तीति जाली : केतुला वेळु भोगिली : मग भंगली : आणि घरांतु गेउनि मातेसि म्हणीतलें : " आइ : तुं रांधि : गोसावीयांलागि बरवा उपाहारु नीफजवि : मी गोसावीयांसि मर्दना देइन :" मग गोसावी बीढारा बीजें केलें : मग मायेधुआन प्रतेस्थाना जावया आदरिलें : " जी जी : गोसावी तेथ वीजें करावेया जी :" मग गोसावीं प्रतेस्थाना बीजें केलें ॥',
+    explanation: 'भोगनारायण मंदिरात मायेधुवा नावाच्या भक्ताला प्रभू चक्रधर स्वामींचे दिव्य दर्शन घडले आणि तो प्रभूंच्या सौंदर्याने व तेजाने वेधला गेला. प्रभूंनी त्याच्या घरी जाऊन त्याला कृपाप्रसाद व स्थिती दान केली।'
+  },
+  {
+    id: 'lc_p111',
+    bookId: 'leela_charitra',
+    number: 111,
+    title: 'लीळा १११: ग्रहसारंगपाणी भेटि : तथा ग्रहो निवृत्ती',
+    titleEn: 'Leela 111: Grahesarangapani Bheti: Tatha Grahonivritti',
+    content: 'एकु दीं गोसावीयांसि भोगनाराएणीं आसन जालें : ग्रहसारंगपाणिभटांसांगातें चांगदेवोभट आले होते : गंगेसि गेले : तेथ सारंगपाणीचां आंगीं ग्रहो असे तो फेडी कां : " तवं एणें म्हणीतलें : " माझेनि याचा ग्रहो जाए ऐसेंही आति : आणि न वचे ऐसेंही आति : आमच्या गोसावीयांचेनि दरीसनें जाइलचि : " ते कथेला गेले : " ते कवणी ठाई असति ?" " ना ते प्रतेस्थानीं भोगनाराएणीं असति :" मग सारंगपाणी देउळाआंतु आले : गोसावीयांतें देखिले : आणि वेधले : आणि दंडवतें घातलीं : श्रीचरणां लागले : गोसावीं पुसिलें : " बाइ : या नांव काइ ?" " जी जी : याचां आंगीं ग्रहो असे म्हणीनि ग्रहेसारंगपाणिभट म्हणति :" तवं सारंगपाणी गोसावीयांतें देखौनि कम्पूं लागला : डोळे रोविले : बोंब मारू आदरिली : " जी जी : तरी याचां आंगीं ग्रहो असे तो फेडीजो जी :" सर्वज्ञें म्हणीतलें : " बाइ : तुमते पाणिभातु असे ?" " हो बाबा : असे :" " तरि तीन मुदा करूनि यातें ओवाळुनि सांडा :" मग बाइसीं तांदूळ घेतले : मुदा तिनी करूनि ओवाळुनि सांडीले : मग सारंगपाणीचा ग्रहो गेला : सुख जालें : " हां बाबा : हा बटीकु तरि सावडू ऐसा दीसतु असे : याचां आंगीं ग्रहो तरि काही देखिजे ना :" " बाइ : एकी वारीया दोघ असति : एथचेया दर्शनासि एतां एवो न ye म्हणीनि ते पेंल्हा महारवाडा बाबुळेशि राहिले असती :" तीहीं वीनवीलें : " जी जी : तरी आतां आंम्ही जाओं जी :" सर्वज्ञें म्हणीतलें : " बाइ : जया वाटा आलीती तया वाटा नको जाओं : आणीकी वाटा जा :" तीही म्हणीतलें : " कां जी ?" सर्वज्ञें म्हणीतलें : " बाइ : ते वाट पाहाताती : बाइ : दृष्ट वैरे चुकवीजे :" मग तीही गोसावीयांच्या बोलाप्रमाणें गेलें ॥',
+    explanation: 'ग्रहसारंगपाणी भट यांच्या अंगातील अनिष्ट ग्रहाची (भूतबाधेची) पिडा प्रभू चक्रधर स्वामींच्या केवळ दर्शनाने आणि साध्या उपायाने (तांदळाचे तीन मुद ओवाळून टाकून) प्रभूंच्या आज्ञेने दूर झाली।'
+  },
+  {
+    id: 'lc_p112',
+    bookId: 'leela_charitra',
+    number: 112,
+    title: 'लीळा ११२: देइभटां भेटि : स्तीती',
+    titleEn: 'Leela 112: Deibhatan Bheti: Sthiti',
+    content: 'एकु दीं भोगनाराएणीं देइभटां भेटि झालीं : देइभट दर्शनार्थ आले असतां त्यांनी प्रभूंच्या चरणी लोटांगण घातले आणि प्रभूंच्या सान्निध्यात त्यांनी अलौकिक आध्यात्मिक आनंद आणि उच्च मानसिक स्थितीची प्राप्ती झाली. प्रभूंच्या दर्शनाने㕧ंची मती प्रसन्न झाली आणि ते सुखी झाले. मग ते प्रभूंचे स्मरण करत आपल्या बिढारास गेले ॥',
+    explanation: 'भोगनारायण येथे देईभट यांना प्रभू चक्रधर स्वामींचे दर्शन झाले आणि त्यांच्या चरणी लीन होऊन त्यांना प्रभूंच्या कृपेने दिव्य स्थितीचा लाभ झाला।'
+  },
+  {
+    id: 'lc_p113',
+    bookId: 'leela_charitra',
+    number: 113,
+    title: 'लीळा ११३: लखुआइसां भेटि',
+    titleEn: 'Leela 113: Lakhuaisan Bheti',
+    content: 'एकु दीं गोसावीयांसि उदयांचा पुजाअवस्वरू जालेयानंतरें भोगनारायेणीं आसन जालें : लखुआइसां दर्शनासि आलीं : दंडवतें घातलीं : श्रीचरणां लागलीं : पासि बैसलीं : नावेक होतीं : प्रभूंच्या दिव्य स्वरूपाचे दर्शन घेऊन तृप्त झाली, प्रभूंच्या वचनांचे श्रवण करून कृतकृत्य झाली, मग प्रभूंचे आशीर्वाद घेऊन आपुल्या स्थानी गेलीं ॥',
+    explanation: 'लखुआईसा यांना भोगनारायण येथे प्रभू चक्रधर स्वामींच्या दर्शनाचा आणि प्रभूंच्या सान्निध्यात वेळ घालवण्याचा लाभ झाला।'
+  },
+  {
+    id: 'lc_p114',
+    bookId: 'leela_charitra',
+    number: 114,
+    title: 'लीळा ११४: वामदेवांचेये गुम्फे गमन',
+    titleEn: 'Leela 114: Vamadevancheye Gumphe Gaman',
+    content: 'एकु दीं गोसावी वामदेवांचिये गुंफेसि बीजें केलें : तीहीं गोसावीयांतें देखीलें : " येइजो जी : yeizoji : " म्हणौनि संभ्रमें साउमे आले : ओटेयावरि आसन रचिलें : गोसावी आसनीं उपविष्ट जाले : थोरु मानु केला : तें देखौनि तयांचिया सीष्यां आश्चर्यें जालें : ऐसे गोसावीं तथांचिये गुंफेसि भलतेधवां बीजें करिति : कव्हणी नमस्कारा ये तें आधीं गोसावीयांसि दंडवत करी : पाठीं तयांसि : मग ते आपुलीयां सीष्यांकरवि ऐसें आंधारीं आसन घालवीति : आपण समोर प्रकाशीं बैसति : आंधारीं पुजा करवीति : मग गोसावी बीढारा बीजें करिति ॥',
+    explanation: 'प्रभू चक्रधर स्वामींनी वामदेव पंडितांच्या गुहेत गमन केले. वामदेवांनी प्रभूंचा मोठा आदर केला, जे पाहून त्यांच्या शिष्यांना आश्चर्य वाटले. प्रभू अनेकदा तेथे जात असत आणि वामदेव आधी प्रभूंना व नंतर स्वतःला पूजण्याची व्यवस्था करत असत।'
+  },
+  {
+    id: 'lc_p115',
+    bookId: 'leela_charitra',
+    number: 115,
+    title: 'लीळा ११५: सारंगपंडीतां भेटि',
+    titleEn: 'Leela 115: Sarangapanditan Bheti',
+    content: 'देमटी गोसावीयांचें बरवेंपण : चातुर्ये : सुंदरें : सारंगपंडितांपुढां सांघीतलें : तीही पुसिलें : " ते कवणे ठाई असति : " " ना भोगनाराएणीं असति :" गोसावीयांसि उदेयांचा पुजाअवस्वरू जाला : श्रीकंठीं गळदंडा : आंगीयेचे मोकळे कसे : गोसावी भोगनाराएणाचीए पौळीसी ओतपळी घेत होते : तेथ गोसावीयांसी भेटि झाली : सारंगपंडीत गदोआळीएसी गदोनाएकांचीए मातेपुढां पुराण सांघों जात होते : सरीसे मोकानंद होते : सारंगपंडीतीं गोसावीयांसि दंडवत घातलें : श्रीचरणां लागले : मग पुसिलें : " जी जी : पुनरपि दरीसन कवणी ठाई दीजैल ?" सर्वज्ञें म्हणीतलें : " ऐसें चासाकडे :" सारंगपंडीत गदोआळीयेसी पुराण सांघों गेले : पोथी सोडिली : दोनि एक स्लोक वाखाणिले : आणि मागोती पोथी बांधली : तवं गदोनाएकाचीया माता म्हणीतलें : " आजि लवकरि पोथी बांधली ?" सारंगपंडीतीं म्हणीतलें : " आजि पाहुणे आले असति : मज काहीँ प्रयोजन असे :" म्हणौनि काखे पोथी घालुनि नीगाले : मोकानंदातें म्हणीतलें : " मोकानंदा : तुं घरासि जाए : उपाहाराची आइति करवावी :" आपण चासाकडे गोसावीयांपासि आले : तवं चासीं गोसावीयांसि आसन असे : दंडवत घातलें : श्रीचरणां लागले : मग प्रस्णु केला : " जी जी : द्वापॅरीं श्रीकृष्णचक्रवर्तीपासिौनि अक्रतीम अनंदू होए : तैसा आतां कव्हणी ठाई आथि ?" सर्वज्ञें म्हणीतलें : " पाहिजे : पुसिजे : चर्चिजे : मा आति तेथ आति :" मग गोसावीयांपासिौनि तेयां स्तीति झाली : केतुला एकु काळ भोगिली : मग भंगली : मग सारंगपंडीतीं गोसावीयांतें वीनवीलें : " जी जी : माझेया घरा गोसावीं बीजें करावें :" गोसावीं वीनती स्वीकरिली : मग गोसावीयांतें आपुलेया आवारा घेउनि आले : देव्हारचौकीएसी भीतरीलीकडे गोसावीयांसि आसन घातलें : गोसावीयांसि मर्दना देओं आदरिली : ओळणी तेल चीकसा आणिला : तवं सर्वज्ञें म्हणीतलें : " आतांचें तवं कपीलस्नान हों देया :" " अबेव गळले असति : तेया वार लाविले असेति : भोजनअर्थीया भोजन मीळे : मां यां न मीळे : तरि माझे हीतक्ष होति :" तवं सर्वज्ञें म्हणीतलें : " अबेव गळले असति..." मग गोसावीयांसि चौरंगावरi आसन जालें : दों गंगाळीं पाणी सारिलें : धुतलेया वस्त्राची चौरंगावरi घडी घातली : एकि गंगाळां आंगवसा तीमीति : श्रीमूर्ति परिमार्जितi : दुसरीये गंगाळीं आंगवसा धुति : ऐसें ऐसें कापडमादणें जालें : कपीलस्नान जालें : सोनेयांचीया मेखा जेया श्रीखंडासि मारिलीया होतिया तें चंदन गोसावीयांसि सर्वांगी वोळगवीलें : पूजा केली : धुपार्त्ती : मंगळार्त्ती केली : मग उमाइसंकरवि ताट करवीलें : गोसावीयांसि ताटावरi आसन जालें : आड लावणें लावीलें : सारंगपंडीतासि मुकुंदासि ताट खाली : ऐसी गोसावीयांसि आरोगण जाली : सारंगपंडीतासि प्रसादु जाला : उरला तो मोकानंदें घेतला : उमाइसीं मोकानंदातें म्हणीतलें : " हें काइ रे बा : मजलागि काहीँ ठेवाची ना ?" तेही म्हणीतलें : " काइ करूं आइ : तुझेया वरैता माने ना :" मग उमाइसीं उसिटें सांडिलें होतें तेथिंचीं सीतें वेंचिलीं : मग गोसावीयांसि गुळुळा जाला : वीडा जाला : मग गोसावीयांसि तेथचि पहुडु जाला : मग वीळीचां वेळीं गोसावीं बीढारा बीजें केलें : तवं बाइसीं म्हणीतलें : " कें बीजें केलें होतें बाबा ?" सर्वज्ञें म्हणीतलें : " बाह : पांडेयाच्या घरा :" " तरि मातें कां चुकवीलें बाबा ?" सर्वज्ञें म्हणीतलें : " आतां न चुकविजे :" ॥',
+    explanation: 'सारंगपंडित यांना प्रभूंचे दर्शन घडले. प्रभूंच्या सौंदर्याने थक्क होऊन त्यांनी प्रभूंच्या घरी येण्याच्या विनंतीचा स्वीकार केला. घरी आणून प्रभूंचे मंगल स्नान, विधीवत पूजा आणि गोड जेवण करून प्रभूंची मनोभावे सेवा केली।'
+  },
+  {
+    id: 'lc_p116',
+    bookId: 'leela_charitra',
+    number: 116,
+    title: 'लीळा ११६: तथा ज्वर निवृत्ती',
+    titleEn: 'Leela 116: Tatha Jwaranivritti',
+    content: 'रात्रीचा पांडा बोलावीत असे तरि तेथ बीजें कीजो कां बाबा : "पांडेया : हें देऊळ कवण करवीत असे गा ?" " जी जी : रायाची राणी वैजाए : जी जी : ते ब्राह्मणा वृत्ति देति असे जी : सेत : घर : आंथूरण : बाज : म्हैसि : बटीकि : साटि आसु : ऐसी वृत्ति देति असे जी :" "तुम्हीं कां जा ना ?" तवं तेहीं म्हणीतलें : " आम्ही काइ हो जी तेथ :" सर्वज्ञें म्हणीतलें : " जा : न पुसत तुमचें नांव वैंऱ्हे लीहीती : आम्ही पैठणकर सारंगपंडीत :" "पांडेया : केधवां आलेति गा ?" " जी जी : कालिआलां जी :" " एथ भेटों नैयाचि तें काइ ?" " जी जी : भागलां : न्हालां : जेविलां : तवं उसीरु जाला : मग नैएलां जी :" "पांडेया : ज्वरू वाट पाहातु असे गा ?" " जी जी : तो गेला कीं :" सर्वज्ञें म्हणीतलें : "तो भोगिलेयावांचौनि काइ जाइल ? तो भोगें क्षाळावा : तो काइ आतांचि कीं पाठीं :" " हो काँ जी : तरि आतांचि एओ : पेंन्हां तन्हीं मोगावाचि कीं : तरी सनिधानीचि भोगुं :" मग तेथचि पांडेयास ज्वर आला : पीडा भोगीली : मग ज्वर निवृत्त झाला ॥',
+    explanation: 'पांडे यांना प्रभू चक्रधर स्वामींच्या शब्दांनुसार ज्वर (ताप) आला. प्रभूंचे म्हणणे होते की प्रारब्ध कर्म भोगल्याशिवाय संपत नाही, ते भोगावेच लागते. पांडे यांनी प्रभूंच्या समोरच तो ताप भोगून पूर्ण केला आणि नंतर ते बरे झाले।'
+  },
+  {
+    id: 'lc_p117',
+    bookId: 'leela_charitra',
+    number: 117,
+    title: 'लीळा ११७: उपाध्यां भेटि',
+    titleEn: 'Leela 117: Upadhyan Bheti',
+    content: 'गृहसारंगपाणिभटांसांगातें चांगदेवोभट आले होते : गोसावीयांच्या दरीसनास : ते मागोती गांवांसि गेले : उदीयांसीचि गंगेसि गेले : तेथ उपाध्यांसि भेटले : मग तेहीं उपाध्यांतें म्हणीतलें : " जानो जानो : आम्ही जैसेया पुरूखांचीया गोष्टी करूं तैसे पुरूख प्रतेस्थाना आले असती : चांगदेवोराउळ गोसावी साक्षात इस्वरपुरूख : काइ सांगों तयांचें सौंदर्य ! काइ सांगों तयांचें लावण्य ! काइ सांगों तयांचें इस्वर्य ! काइ सांगों तयांचें सामूथ्य ! ऐसीं ? जाओ तयांच्या दरीसना :" "हो काँ : तरि तुं कै जासी ?" " ना पाहे :" तवं उपाधीं म्हणीतलें : " मां पाहेचा दीस राहे : माझी पासवडी धों घातली असे : ते एओ दें : मां जाओं :" तें नांगदेवोभटीं आइकिले : पासवडी धुतली आली : रात्री दोरा घालिताति : तवं लाहामाइसीं म्हणीतलें : " हां रे बा : yeव्हडेया वेळा दोरा घालितासि : उदयांचि घालि कां :" तवं नांगदेवोभटीं म्हणीतलें : " आवो : आतां हा उधळा : जाइल जोगीयांभवती का पाठीं :" तवं उद्यांचि उठिले : गोसावीयांच्या दरीसना नीगाले : उपाधीं म्हणीतलें : " आइ : सीदौरी घालि :" लाहामाइसीं म्हणीतलें : " सीदौरी काइ करिसि ?" " ऐसें पुससी तरि मीं एंचि ना :" "हो काँ रे बा : तरि कें एसी ?" " एइन दोन्हीं दीसां :" सीदौरी घातली : मग गोसावीयांच्या दरीसनास आले : गोसावीयांसि भोगनाराएणीं देऊळाआंतु आसन होतें : भीतरी आले : गोसावीयांसि पुजाअवसरू जाला : आसनीं उपवीष्ट असति : चांगदेवोभट : उपाध्ये : आले : दंडवतें घातलीं : श्रीचरणां लागले : गोसावीं पुसिलें " हा कवण ?" " जी जी : हा आमचा मित्र :" दुपाहारीचा पुजाअवसरू जाला : तवं उपाधीं बाइसांतें पुस्प मागीतलें : तेयाचीं पत्रें वेगळालीं केलीं : तांबटीए द्रभा होतीया : तीया घेतलीया : मग वेदीची रुचा म्हणीतलेें : \'सहस्रसीर्सा : पूरुखा :\' ऐसा मंत्र म्हणेति : आणि पत्र वाहिति : मग साष्टांगीं पुसपाअर्त्तन केलें : मग सर्वज्ञें म्हणीतलें : " बाइ : जीव जीवा अर्त्तन घडे : परि परमेस्वरअर्त्तन कहींचि न घडे :" आणि बाइसीं म्हणीतलें : " बाबा घडवीति तरि घडे :" ॥',
+    explanation: 'चांगदेव भट आणि उपाध्ये नावाचे मित्र प्रभूंच्या दर्शनास आले. प्रभूंच्या सौंदर्याने व दिव्यत्वाने प्रभावित होऊन उपाध्ये यांनी प्रभूंची वेद मंत्रांनी व पुष्पांनी पूजा केली. यावर प्रभू म्हणाले की खऱ्या अर्थाने परमेश्वराचे अर्चन ही प्रभूंच्या कृपेनेच घडून येते।'
+  },
+  {
+    id: 'lc_p118',
+    bookId: 'leela_charitra',
+    number: 118,
+    title: 'लीळा ११८: तथा तांबोळग्रहण',
+    titleEn: 'Leela 118: Tatha Tambolagrahan',
+    content: 'एकु दीसीं गोसावीयांसि वीळीचां पुजाअवस्वरू जाला : गोसावी वीडा घेतला होता : तीही गावा जावयाचें पुसिलें : बाइसें राहावीतें होतीं : तवं न व्हातीचि : सर्वज्ञें म्हणीतलें : " बटिका : बाइसें म्हणतें असति तें कां कीजे ना ?" " ना जी : गावीं अवसरु करिती :" सर्वज्ञें म्हणीतलें : " वीळीचां एकलेया जावो जाणाल ?" " जी जी : आम्ही एकलेया ना पाहे : " " मां पाहेचा दीस राहे : माझी पासवडी धुतली येल : मग परवां जावों :" तें नांगदेवोभटीं ऐकिलें : " एथ अखंड यवों जावों :" गोसावीं म्हणीतलें : " तरि तुम्ही धीरवीर म्हणा :" उगाळु परित्येजितां उपाधीं आंजुळि ओडवीली : सर्वज्ञें म्हणीतलें : "बटीका : हेंकाइ कवण : ऐसें म्हणीनि नेणों : एथचें उसिटें तांबोळ काइ म्हणीनि घेत असा ?" उपाधीं म्हणीतलें : " जी जी : आपुलेया भलेयाचीया चाडा :" " मां तुमचीं तीयें घरीं तुम्हांसि रीगों नेदिती कीं :" उपाधीं म्हणीतलें : " नेदिती तरि नेदिती : आणि काइ जी :" " तुम्हां थाळावाटीया जेउं न घालिती :" " न घालिती तरि न घालिती : आणि काइ जी :" सर्वज्ञें म्हणीतलें : " तीवेपुढां जेउं वाढिती :" उपाधीं म्हणीतलें : " वाढिती तरि वाढिती : आणि काइ जी :" सर्वज्ञें म्हणीतलें : " तुमचें गोळाकुटबावेळ घालिती :" उपाधीं म्हणीतलें : " जी जी : घालिती तरि घालिती : आणि काइ जी :" सर्वज्ञें म्हणीतलें : " ऐसें कां पां घेयावें ?" उपाधीं म्हणीतलें : " ना जी : तें आपुलेया भलेयाचीया चाडा : आणि काइ जी :" तेही आपुलें भलेंचि नीर्वाहिलेें : मग सर्वज्ञें म्हणीतलें : "बटीका : तुमते कव्हणीची काहीँ न म्हणे हो :" मां गोसावीं तेयांसि तांबोळ दीधलें : तेयांची आंजुळि भरली : आपार घेतलें : तोंडभरूनi : उरलें तें पासवडीचां पालवीं बांधलें : बाइसीं म्हणीतलें : " बटिका : पासवडी नासे ना ?" सर्वज्ञें म्हणीतलें : " बाइ : आवडीसि काइ आवांका असे ?" ॥',
+    explanation: 'प्रभू चक्रधर स्वामींच्या मुखातील तांबोळ (विडा) घेण्यासाठी भक्ताने केलेली तीव्र इच्छा आणि प्रभूंच्या प्रश्नांवर भक्ताने दिलेल्या भक्तीपूर्ण उत्तरांचे वर्णन. प्रभूंच्या अवशेषांचे (प्रसादाचे) भक्ताच्या जीवनातील महत्त्व यात स्पष्ट केले आहे।'
+  },
+  {
+    id: 'lc_p119',
+    bookId: 'leela_charitra',
+    number: 119,
+    title: 'लीळा ११९: कास्तान हरिदेव पंडितां गोपाळमंत्रभेद निरूपण',
+    titleEn: 'Leela 119: Kastan Harideo Panditan Gopalmantrabhed Niropan',
+    content: 'एकु दीं गोसावीयांसि भोगनाराएणीं आसन जालें : तेथ कास्तान हरिदेव पंडीत दर्शनासि आले : दंडवत घातलें : श्रीचरणां लागले : गोसावीयांपासि बैसले : " बैसिजो जी :" मग गोसावीयांनी त्यांच्याशी हितगूज केली : गोसावी म्हणाले : "बटिका : पासवडी मैळेल कीं गा :" " ना जी : माझी प्रसादाची होइल जी :" " आपणेयासि कवणी थांई परिचो ?" " जी जी : गोपाळमंत्रा :" "गोपाळमंतरीं भेद कीती ?" "दाहाएक" बोलिजे : परि आम्ही एकोदेनि जाणों : "गोपाळमंतीचे काइ हेचि भेद ? गोपाळमंतरीं सहस्रसंख्या भेद : परि एकू भेदू तो कव्हणीचि नेणे : रुक्मिणीदेवीप्रति श्रीकृष्णचक्रवर्ती निरूपिला : म्हणौनि रुक्मिणीदेवी जाणे : या श्रीकृष्णचक्रवर्ती जाणति : आणिक कव्हणीचि नेणे :" तवं हरिदेव पंडितांनी हात जोडले : " जी : हें गोसावीचि जाणावें : आणि गोसावींचि निरूपावें : आम्ही परिसो नेणों : मां निरूपूनि तें काइ ?" मग गोसावीयांनी त्यांना गोपाळमंत्राच्या अगाध रहस्याचे निरूपण केले, ज्यामुळे त्यांच्या मनातील सर्व संभ्रम दूर झाला ॥',
+    explanation: 'कास्तान हरिदेव पंडित यांना प्रभू चक्रधर स्वामींनी गोपाळमंत्राचे गुह्य आणि रहस्य समजावून सांगितले. प्रभूंच्या या निरूपणामुळे त्यांची संभ्रमावस्था संपली आणि त्यांना सत्यज्ञान प्राप्त झाले।'
+  },
+  {
+    id: 'lc_p120',
+    bookId: 'leela_charitra',
+    number: 120,
+    title: 'लीळा १२०: चांगदेवीं अवधुता तांबोळदान',
+    titleEn: 'Leela 120: Changadevi Avadhuta Tamboladan',
+    content: 'एकु दीं गोसावीयांसि भोगनाराएणीं आसन जालें : चांगदेव अवधूत दर्शनासि आले : त्यांनी प्रभू चक्रधर स्वामींना दंडवत घातले. गोसावींनी त्यांना अत्यंत प्रेमाने तांबोळ (विडा) दिला. त्यांनी प्रभूंचे चरण धरले. प्रभू चक्रधर स्वामींनी त्यांना उपदेश केला : " कव्हणा पुरूखाकारणें एसणें जन्म क्षेपीत असिजे बापेया ? ज्ञानेंवीण वैराग्य काइ करावें बापेया ?" प्रभूंच्या या हितोपदेशामुळे चांगदेवांचे डोळे उघडले आणि ते अत्यंत कृतज्ञतेने नतमस्तक झाले ॥',
+    explanation: 'चांगदेव अवधूत यांना प्रभू चक्रधर स्वामींनी तांबोळ देऊन, केवळ वैराग्यापेक्षा ज्ञानाचे महत्त्व समजावून सांगितले आणि खऱ्या भक्तीचा व ज्ञानाचा उपदेश केला।'
+  },
+  {
+    id: 'lc_p121',
+    bookId: 'leela_charitra',
+    number: 121,
+    title: 'लीळा १२१: पेखणीयां अवलोकणें',
+    titleEn: 'Leela 121: Pekhniyan Avalokane',
+    content: 'एकु दीसीं गोसावीं चांगदेवाच्या देऊळासि वीहरणासि बीजें केलें : आडवांगी न्हाणीकडे गोसावीयांसि आसन जालें : तवं तेथ देऊळी देवांची पेखणाइतें पेखण करावेया आलीं : नाचणी आवगावेया तेउती आलीं : गोसावीयांतें देखिलें : आणि वेधलीं : तीसी उसीरु लागला म्हणौनि आणीकी आली : त्यांही गोसावीयांतें देखिलें : आणि तेही वेधली : काहीळीआ आला : तोही वेधला : मादळी आला : तोही वेधला : एएरें ऐसी अवघींचि आलीं : अवघींचि वेधलीं : अवघें पेखणें गोसावीयांपासि आलें : मग तेथचि नाचो लागलीं : तवं गोसावीं म्हणीतलें : " तेथचि जा : मां हें तेथचि येइल :" मग गोसावीं चांगदेवाआंत बीजें केलें : चौकीं आसन जालें : तेथ पेखणें जालें : पेखणें अवलोकिलें : मांदळिया : काहीळीया : वंशाकरू : चाकीकरू : आळतीकरू : जें जेयाचें अंग तें तो दाखवी : तेया अंगा गोसावी तोखती : तेणें तया सूख होए : नाचणी नाचती होती : ते ताळासि चुकली : तेव्हळि गोसावी मुखीं गदगदां हांसति : आणि तीया जाणीतलें : " जी जी : जाणेवीण कळा माळवल्या जी : जाणेवीण कळा पोरटीया जालीया जी : आजि कळेचें माहेर भेटलें : गोसावी सकळ वीद्येचें माहेर :" मग तीया गौस्फुरण केलें : आणि गोसावीं तीएचीये कळेसि तोखले : मग गोसावीं तेयांसि पुडवाटुवा रीचविला : तांबोळ दीधलें : पाठवणी दीधली : परि तेयांसि जावेना : मग गोसावीं बीजें केलें : नाचणी दरवठांवरi आली : दख्णिली दारवठां गोसावीयांतें पदरीं धरिलें : " जी जी : माझेया बीढारा गोसावीं बीजें करावें जी :" सर्वज्ञें म्हणीतलें : " हें एकाचें नीमीतींलें असे :" मग गोसावीं भोगनाराएणासि बीजें केलें ॥',
+    explanation: 'मंदिरात नृत्य करणाऱ्या कलावंतांना प्रभू चक्रधर स्वामींचे दिव्य दर्शन घडले आणि त्या कलेच्या निमित्ताने सर्वजण प्रभूंकडे आकर्षित झाले. नर्तकीने प्रभूंच्या कलेचे आणि तिच्यातील त्रुटींचे कौतुक ऐकून प्रभू हेच कलेचे माहेरघर असल्याचे मानले।'
+  },
+  {
+    id: 'lc_p122',
+    bookId: 'leela_charitra',
+    number: 122,
+    title: 'लीळा १२२: धाइ सालादीं लपवणें',
+    titleEn: 'Leela 122: Dhai Saladin Lapavane',
+    content: 'एकु दीं गोसावीयांसि भोगनाराएणीं आसन जालें : बाइसें आणि धाई आपल्या बालकाला घेऊन आल्या. बाइसेने बालकाला सालदीमध्ये लपवून ठेवले होते, जेणेकरून तो शांत झोपेल. परंतु प्रभू चक्रधर स्वामींच्या केवळ एका दृष्टीने बालक हालचाल करू लागला. सर्वज्ञ म्हणाले : " बाइ : हें काइ हालतु असे ?" " जी जी : हें लेंकरू :" सर्वज्ञें म्हणीतलें : " बाइ : कडिये घेया : यांचिया अमृतकळा शोखती :" प्रभूंच्या वचनानुसार धाईने बालकाला कडेवर घेतले आणि बालकाला प्रभूंच्या सान्निध्यात अत्यंत सुख लाभले ॥',
+    explanation: 'धाईने आपल्या बालकाला सालदीत लपवून ठेवले असता, प्रभू चक्रधर स्वामींनी आपल्या दिव्य दृष्टीने त्याला ओळखले आणि बालकाला कडेवर घेण्यास सांगितले, जेणेकरून प्रभूंच्या अमृत दृष्टीचा त्याला लाभ होईल।'
+  },
+  {
+    id: 'lc_p123',
+    bookId: 'leela_charitra',
+    number: 123,
+    title: 'लीळा १२३: धनजीसांसीं कवडां खेळू',
+    titleEn: 'Leela 123: Dhanajisansin Kavadan Khelu',
+    content: 'एकु दीं गोसावीयांसि भोगनाराएणीं ओटेयावरi आसन जालें : तवं धाई आणि धनजी जवळ आले. गोसावी अत्यंत लीलाभावाने धनजीशी कवडीचा खेळ खेळू लागले. सर्वज्ञ म्हणाले : " धाइ : या : हें तुम्सीं कवडां खेळूं :" " हो काँ :" मग खेळ सुरू झाला. खेळता खेळता धनजी बालहट्टाने म्हणाला : " आपण चालते कवडे घेतले : मज न चलते कवडे दीधले :" प्रभू धनजीचा हा गोड हट्ट पाहून गदगदां हसले आणि खेळात त्याला आनंद दिला ॥',
+    explanation: 'प्रभू चक्रधर स्वामींनी लहान मुलांप्रमाणे धनजी नावाच्या बालकासोबत कवडीचा खेळ खेळून आपल्या अगाध लीलांचे दर्शन घडवले।'
+  },
+  {
+    id: 'lc_p124',
+    bookId: 'leela_charitra',
+    number: 124,
+    title: 'लीळा १२४: तथा आख्यायिका श्रवण',
+    titleEn: 'Leela 124: Tatha Akhyayika Shravan',
+    content: 'एकू दीं गोसावीं सारंगपंडीतांच्या आवारासि बीजें केलें : गोसावीयांसि ओळणी देओं आदरिली : आणि धानाइसां गोसावीयांची श्रीमुर्ति उघडी देखिली : आणि आग्रो घेतला : म्हणीति : " चांगदेवोराउळातें जीया हळदी उटिले तीया हळदी मातें उटावें :" ऐसा थाया घेतला : काइसेनही बुझावे ना : तेयासि काहीँ म्हणीए करूं नेदीती : उमाइसां धाकुटीएचि प्रव्हाइ लेंकरू जालें म्हणौनिया तीएं खेळऊं सकती : गोसावीं तेथ बीजें केलें : गोसावीं तेयातें म्हणीतलें : " धाइ : या : हें तुम्हां काहाणी सांघैल :" सर्वज्ञें म्हणीतलें : " काउळेयाचें घर शेणाचें : साळेंचे घर मेणाचें : पाउसू पडे : काउळेयाचें घर वाहात जाए : साळेंचें घर उरे : साळें आपुलेया घराआंतु रीगोनि म्हणे : \' काउळेया काउळेया : कानु कीं डोळा : \' ऐसें तीनि वेळां उच्चारिलें : मग तो थाया वीसरलीं : ॥',
+    explanation: 'धानाईसा यांनी चांगदेवराउळ गोसावी यांना लावलेल्या हळदीचा हट्ट धरला असता, प्रभू चक्रधर स्वामींनी त्यांना "कावळा आणि साळुंखी" यांची अत्यंत गोड बालकाहणी सांगून त्यांचा हट्ट शांत केला।'
+  },
+  {
+    id: 'lc_p125',
+    bookId: 'leela_charitra',
+    number: 125,
+    title: 'लीळा १२५: देवो साखरभातु आरोगण',
+    titleEn: 'Leela 125: Deo Sakharbhatu Arogan',
+    content: 'एकु दीं भोगनाराएणीं गोसावी आरोगण करत होते : बाइसीं साखरभात सिद्ध केला होता. गोसावी आरोगणीस बसले असता अत्यंत आवडीने साखरभात जेवू लागले. गोसावी म्हणाले : " बाइ : देओ साखरभातु जेवीतु असे :" तवं बाइसीं हात जोडले : " जी जी : मीं पेहीति घालुं वीसरलींए जी :" प्रभू अत्यंत तृप्ततेने जेवले आणि बाइसींच्या हातच्या गोड साखरभाताचे कौतुक केले ॥',
+    explanation: 'प्रभू चक्रधर स्वामींनी बाइसेने तयार केलेल्या गोड साखरभाताची अत्यंत आवडीने आणि तृप्ततेने आरोगण (भोजन) केली।'
+  },
+  {
+    id: 'lc_p126',
+    bookId: 'leela_charitra',
+    number: 126,
+    title: 'लीळा १२६: धाइसि कास घालणें',
+    titleEn: 'Leela 126: Dhaisi Kas Ghalane',
+    content: 'गोसावीं धाइसि कास घातली : सर्वज्ञें म्हणीतलें : " धाइ : कास कोणावरi घातली ?" तवं तेहीं म्हणीतलें : " जी जी : श्रीचांगदेवोराउळा गोसावीयांवरi घातली : " मागोतें सर्वज्ञें म्हणीतलें : " श्रीधारू कोणाकारणें केला ?" " ना श्रीचांगदेवोराउळां गोसावीयाकारणें : " तवं घरiचीं अवघीं हांसति : ॥',
+    explanation: 'प्रभू चक्रधर स्वामींनी धाईशी गमतीशीर संवाद साधत तिने कसलेल्या कासेबद्दल (वस्त्राबद्दल) व सेवेबद्दल प्रेमळ विचारणा केली, ज्यावर घरात सर्वजण हसले।'
+  },
+  {
+    id: 'lc_p127',
+    bookId: 'leela_charitra',
+    number: 127,
+    title: 'लीळा १२७: देमाइसां भेटि',
+    titleEn: 'Leela 127: Demaisan Bheti',
+    content: 'एकु दीं देमाईसा आपल्या मनात योग्य गुरू मिळवण्याच्या विचारात होत्या. त्यांनी विचार केला : " तरि कवण गुरू करूं पां ? ना एथ प्रतिस्थानीं वामदेव नांवें वीक्षात आइकजेति : ते गुरू करा :" परंतु त्या संकोचल्या : " आगे आइ : आम्ही स्त्रीया : यांपासि उठुं नैए : यांपासि बोलों पुसों नैए : दाउंमीरूं नैए : हे काइसे गुरू ?" बाइसेने त्यांना विचारले : " हें काइ देमाइसें : कें गेलीं होतीं ?" " ना आइ : गुरू करूं गेलीं होतीं : तवं ते नगीन देखिलें : मग नीगालीए :" मग बाइसेने सांगितले : " गुरू कराल तरि मी दाखवीन : जयाजवळi बैसों उठों ये : दाउंमीरूं ये : जेणें अवघेया संसाराची ली पुसे : जेणें संसारू तरीजे ऐसा गुरू मी दाखवीन :" मग त्यांनी प्रभू चक्रधर स्वामींपाशी देमाईसांना आणले. बाइसेने सांगितले : " बाइ : गुरूदेवांसि पाठि देओं नैए : यासि सन्मुखा बैसिजे : ऐसी बैसा :" देमाईसा प्रभूंच्या समोर बसल्या आणि प्रभूंचे अलौकिक तेज पाहून नतमस्तक झाल्या. सर्वज्ञ म्हणाले : " बाइ : एथ एओं आवडैल तेव्हळi यावें हो :" देमाईसांनी अत्यंत भक्तीने सांगितले : " जी जी : आतां एथचि एइन :" ॥',
+    explanation: 'देमाईसा यांना योग्य गुरूची प्राप्ती झाली नव्हती. बाइसेने त्यांना प्रभू चक्रधर स्वामींचे दर्शन घडवून दिले, ज्यांच्या दर्शनाने व प्रेमळ शब्दांनी भारावून जाऊन देमाईसा कायमच्या प्रभूंच्या चरणी शरण आल्या।'
+  },
+  {
+    id: 'lc_p128',
+    bookId: 'leela_charitra',
+    number: 128,
+    title: 'लीळा १२८: महादेवे पाठकां भेटि : स्तोति',
+    titleEn: 'Leela 128: Mahadevo Pathakan Bheti: Stoti',
+    content: 'एकु दीं भोगनाराएणीं महादेव पाठक दर्शनास आले. त्यांनी प्रभू चक्रधर स्वामींच्या श्रीचरणांवर मस्तक ठेवून लोटांगण घातले. प्रभू चक्रधर स्वामींनी अत्यंत मायेने विचारले : " निकेन ?" " जी जी : ऐसा कवण सदैव बोलिजे : बाबा आदर करूनi पुसताति :" पाठक प्रभूंच्या या प्रेमळ विचारण्याने भारावून गेले. बाइसेने सांगितले : " बाइ : हे एथिचे येजमान : एहीं येथें पुर्वी पाणीभात : बाभुळसेंगाची आरोगण दीघली :" महादेव पाठक यांनी प्रभूंचे स्तवन केले आणि प्रभूंचे आशीर्वाद घेऊन सुखी झाले ॥',
+    explanation: 'महादेव पाठक यांनी प्रभू चक्रधर स्वामींच्या दर्शनाचा लाभ घेतला. त्यांनी प्रभूंची स्तुती केली आणि जुन्या आठवणींना उजाळा देत प्रभूंच्या आशीर्वादाची प्राप्ती केली।'
+  },
+  {
+    id: 'lc_p129',
+    bookId: 'leela_charitra',
+    number: 129,
+    title: 'लीळा १२९: राघवदेवा भेटि',
+    titleEn: 'Leela 129: Raghavdevan Bheti',
+    content: '[ राघवदेव दोडविहीराहुनि पैठणासि आले : गोसावीयांसि भेटि झाली : दंडवतें घातलें : श्रीचरणां लागले : मग गेले : ॥]',
+    explanation: 'राघवदेव यांनी दोडविहीरावरून पैठण येथे होऊन प्रभू चक्रधर स्वामींचे दर्शन घेतले व प्रभूंच्या चरणी नतमस्तक झाले।'
+  },
+  {
+    id: 'lc_p130',
+    bookId: 'leela_charitra',
+    number: 130,
+    title: 'लीळा १३०: गदोनायकां भेटि',
+    titleEn: 'Leela 130: Gadonayekan Bheti',
+    content: '[गदोनाएकां भेटि झाली : दंडवतें घातलीं : श्रीचरणां लागले : मग गेले : ॥]',
+    explanation: 'गदोनायक यांना प्रभू चक्रधर स्वामींचे शुभ दर्शन झाले आणि प्रभूंच्या चरणांचे प्रक्षालन करून त्यांनी प्रभूंचे आशीर्वाद प्राप्त केले।'
+  },
+  {
+    id: 'lc_p131',
+    bookId: 'leela_charitra',
+    number: 131,
+    title: 'लीळा १३१: ब्रम्हचारीदेवा भेटि',
+    titleEn: 'Leela 131: Brahmacharidevan Bheti',
+    content: '[BRMHACHARIDEVA BHETI ZALI : DANDVATE GHATLI : SRICHARANAN LAGLE : MSG GELE : ǁ]',
+    explanation: 'ब्रह्मचारीदेव यांना प्रभू चक्रधर स्वामींचे दर्शन घडले आणि ते प्रभूंच्या अद्भुत आणि मनमोहक स्वरूपावर मोहित झाले।'
+  },
+  {
+    id: 'lc_p132',
+    bookId: 'leela_charitra',
+    number: 132,
+    title: 'लीळा १३२: कवाडीबा गायन श्रवण',
+    titleEn: 'Leela 132: Kavadimba Gaen Shravan',
+    content: 'एकु दीं कवाडीबा प्रभूंच्या ओट्यासमोर अत्यंत आर्त स्वरात गायन करत होते : " तुं गोसावी मी पाइकु तुझा : हरिहरि वाचा उच्चारण : नयेन निरीक्षण ध्यान : तुं एक हरी इतुलें देई : आन न मागें कृपासिंधु मुरारी :" तवं गोसावीं कवाडीबांचे ते भक्तीगीत लक्षपूर्वक ऐकत होते. बाइसेने विचारले : " बाबा भक्तु काइ म्हणत असे ?" सर्वज्ञें म्हणीतलें : " बाइ : भक्तु आणि मागें : \'त्वमेव माता\' ... " मग बाइसेने पुन्हा विचारले : " बाबा : भक्तु काइ म्हणत असे ?" सर्वज्ञें म्हणीतलें : " बाइ : ना हे शब्द म्हणतु असे : एकां ऐसेचि होउनि ठाके :" प्रभूंच्या शब्दांनी कवाडीबांच्या भक्तीचा थोर महिमा प्रगट झाला आणि प्रभू कवाडीबांच्या गायनाने अत्यंत तोषले ॥',
+    explanation: 'कवाडीबा यांनी गायलेल्या अगाध भक्ती गीतांचे श्रवण प्रभू चक्रधर स्वामींनी केले आणि त्यांच्या निस्सीम भक्तीचे कौतुक करून त्यांना आशीर्वाद दिला।'
+  },
+  {
+    id: 'lc_p133',
+    bookId: 'leela_charitra',
+    number: 133,
+    title: 'लीळा १३३: रवळो अध्यात्मगीत निषेध',
+    titleEn: 'Leela 133: Ravalo Adhyatmagit Nishedh',
+    content: 'गोसावीयांसि भोगनाराएणीं अवस्थान : एक वेळ गोसावीं चांगदेवा वीहरणा बीजें केलें : तेथ माडावरि आसन जालें : तवं रवळो कुंभार : तो डफगाणें जाणे : पदें बांधे : तो गोसावीयांचीया दर्शनासि आपुलेया मेळेंसीं आला : मग आध्यातम गावों लागला : उपनिषेधाचें रहस्य : जत पदीं बांधोनि गाइले : यावरि बाइसीं म्हणीतलें : " बाबा : हें ऐसें आध्यातमरहस्य हा गीतीं गाताए : तरि हें यासि काइ गावों येताये म्हणौनि गात असे ?" सर्वज्ञें म्हणीतलें : " बाइ : आत्मा आणि गीतीं गाइजे ? तेयातें कव्हणीचि नेणे कीं : मा तो दीदीत करावा ? हें ऐसें जो गाये तया वोखटें आति : देवतेचा क्षोभु होए :" ऐसें गोसावी बोलिले : आणि भीयाला : मग पुरें केलें : गोसावीं तेयासि तीनि दामेंसीं वीडा देववीला : मग तो गेला : ॥',
+    explanation: 'रवळो कुंभार याने डफावर अध्यात्म गीते आणि उपनिषदांचे रहस्य गाऊन दाखवले. बाइसेने विचारले की हा असे का गात आहे? तेव्हा स्वामींनी (चांगदेवराऊळांनी) सांगितले की, आत्मतत्व हे अशा साध्या गीतांतून गाता येत नाही, ते कोणाला समजत नाही. असे गाणे अयोग्य असून त्याने देवतेचा क्षोभ होतो. हे ऐकून रवळो घाबरला आणि गाणे थांबवले. प्रभूने त्याला तीन नाणी व विडा देऊन निरोप दिला।'
+  },
+  {
+    id: 'lc_p134',
+    bookId: 'leela_charitra',
+    number: 134,
+    title: 'लीळा १३४: वामदेवां भूतसृष्टि दाखवणें',
+    titleEn: 'Leela 134: Vamadevan Bhutasrishti Dakhavane',
+    content: 'एकू दीं गोसावी वीळीचेया वेळीं भोगावतीएकडे बीजें करिताति : सरिसे वामदेव असति : आणि कोणी नसे : गोसावी मार्गिचीया पींपळाचां पालवीं पूर्वीली ऊभे राहिले : मग वामदेवांतें पुसिलें : " आपणोया कांइ वैस्य ?" " जी जी : भूतसृष्टि :" " पाओं : एथ दाखवा :" " हो का जी :" मग तें अह्नातुं लागले : तवं कोणी नैएति : मग म्हणीतलें : " जी जी : तीयें न एति :" "कां न एति ?" " जी जी : एकें कोल्हापुरा गेलीं : एकें मातापुरा गेलीं :" सर्वज्ञें म्हणीतलें : " आपणोया वैस्य तीयें बोलावीलेयां कैसीं न एति ? एथौनि बोलावितु ?" " हो कां जी :" आणि गोसावी फुटेयाचेनि पालवेंकरूनि ऐसीं बोलाविलीं : आणि एओं लागलीं : पहिलीया दृष्टें तीएं आलीं : मग मृतें तीएं आलीं : मग मृतें नाहीं : दृष्टें नाहीं : तीएं आलीं : एकें नसुधीं सीसाळें : एकें नसुधीं घडें : एकांचे रक्तवटीयांसणे डोळे : एकें खांखाळें : एकें वेताळें : खाएगीळि करिती : व्रीकाळा दाढा : आवाळुवें चाटीती : एक आवाळुं आकासीं : एक आवाळुं पाताळीं : एक ब्रह्मांड गीळील एषणें : ऐसीं देखिलीं : आणि भीयाले : भीउनि गोसावीयांचीए पाठिसीं रीगाले : " अपाहारिजो जी : अपाहारिजो जी :" म्हणौनि गोसावीयांचेया फुटेयाचीया पालवा पीळु घेतला : मग गोसावीं फुटेयाचेनि पालवेंकरूनि मागोतीं पाठविलीं : इतुकेनि तीएं नीगालीं : सर्वज्ञें म्हणीतलें : " हैं काइ गा : इतुकियासीचि भीयालेति ? तुम्हां भूतसृष्टि वैस्य कीं : आणिकें दाखवीजती तरि काइ कराल ?" मग उगेचि राहिले : मग गोसावीं मठासि बीजें केलें : ॥',
+    explanation: 'वामदेव याला भूतसृष्टी पाहण्याची इच्छा होती. त्याने आवाहन केले पण ते आले नाहीत, कारण काही कोल्हापूरला तर काही माहूरला गेले होते. त्यानंतर चांगदेवराऊळांनी एका फाटलेल्या पानाच्या/डहाळीच्या साहाय्याने भूतांना बोलावले. ती भुते अत्यंत भयानक, अक्राळविक्राळ आणि भयानक रूपात आली—काही मुंडकी नसलेली, काही फक्त डोके असलेली, लाल डोळे, वेताळ इत्यादी. हे पाहून वामदेव अत्यंत घाबरला आणि प्रभूंच्या मागे लपून त्यांना दूर पाठवण्याची विनंती करू लागला. प्रभू चक्रधरांनी (चांगदेवराऊळांनी) त्यांना परत पाठवले आणि वामदेवाला विचारले की, तू तर भूतसृष्टीचा अधिपती म्हणवतोस, मग एवढ्याशानेच का घाबरलास?'
+  },
+  {
+    id: 'lc_p135',
+    bookId: 'leela_charitra',
+    number: 135,
+    title: 'लीळा १३५: वामदेवांचा नमस्कारु घेणें',
+    titleEn: 'Leela 135: Vamadevancha Namaskar Ghene',
+    content: 'मग तैलागौनि वामदेवा गोसावीयांवरि थोरि बुद्धि आली : अपार भाव करीति : नीत्य रात्रीं कांबळेयाचें कोंगंतें घालूनि दर्शनासि येति : दंडवतें घालीति : श्रीचरणां लागति : प्रसाद घेति : मग जाति : ॥',
+    explanation: 'या अद्भुत प्रसंगानंतर वामदेवाची प्रभू चक्रधर स्वामींवर (श्री चांगदेवराऊळ) अत्यंत श्रद्धा बसली. त्याच्या मनात प्रभूविषयी थोर आदर निर्माण झाला. तो दररोज रात्री घोंगडी पांघरून लपून दर्शनाला येत असे, साष्टांग दंडवत घालून, पाय धरून, प्रसाद घेऊन शांतपणे परत जात असे।'
+  },
+  {
+    id: 'lc_p136',
+    bookId: 'leela_charitra',
+    number: 136,
+    title: 'लीळा १३६: दाईंबा दुर्गावरि धावणें',
+    titleEn: 'Leela 136: Dayimba Durgavari Dhavane',
+    content: 'एकु दीसीं दायांबा गोसावीयांच्या दरूसना आले : गोसावीयांसि दंडवतें घातलीं : श्रीचरणां लागले : आणि दाईंबासि स्तीति जाली : ते दुर्गावरि चरीयांचरीयां धावों लागले : गावीचा लोकु अवधा पाहों ठेला : \' पडिले : पडिले : \' म्हणति : पारि पडति ना : गाविचेया लोकांसि आश्चर्य जालें : लोकु म्हणों लागला : " हे ऐसे कवण पुरूख ?" तेयांतु एकीं म्हणीतलें : " हा श्रीचांगदेओराउळांचा पींसा :" मग गोसावीं तेथ बीजें केलें : दाईंबाए गोसावीयातें एतां देखिलें : आणि दुर्गावरोनि उतरले : गोसावीयांचेया श्रीचरणां लागले : मग तेयाची स्तीति भंगली : ॥',
+    explanation: 'दाईंबा नावाचे भक्त प्रभूंच्या दर्शनाला आले आणि प्रभूंच्या चरणस्पर्शाने त्यांना दिव्य आध्यात्मिक समाधी अवस्था (स्थिती) प्राप्त झाली. या उन्मनी अवस्थेत ते गडाच्या (दुर्गाच्या) उभ्या कड्यांवरून वेगाने वर-खाली धावू लागले. लोक आश्चर्यचकित होऊन पाहत होते आणि म्हणत होते की हे पडतील, पण ते पडत नव्हते. लोकांनी विचारले हा कोण पुरुष आहे, तेव्हा समजले की हा चांगदेवराऊळांचा वेडा (पिसा) भक्त आहे. नंतर प्रभू तिथे आले, त्यांना पाहून दाईंबा खाली आले, त्यांनी प्रभूंचे पाय धरले आणि त्यांची ती समाधी अवस्था शांत झाली।'
+  },
+  {
+    id: 'lc_p137',
+    bookId: 'leela_charitra',
+    number: 137,
+    title: 'लीळा १३७: अनुसरलेयाचा देओ निरूपण',
+    titleEn: 'Leela 137: Anusarleyacha Deo Nirupan',
+    content: 'प्रतिस्थानीं भोगनाराएणीं अवस्थान : एक वेळ बाइसेन पुसिलें : " बाबा : हे आवघे वेदवक्ते श्रीकृष्णचक्रवर्तींतें परमेश्वरु म्हणौनि मानिती : पुजीति : तरि या काहीं गोमटें आति ?" सर्वज्ञें म्हणीतलें : " आति : बाइ :" "तें कवण बाबा ?" सर्वज्ञें म्हणीतलें : " बाइ : हे लोक श्रीकृष्णचक्रवर्तींतें मानिती : तेणें तया संपती जोडे : आव्हांतर मृत्यु चुके : देहांतीं आर्जिलेया फळा जाति : बाइ :" सर्वज्ञें म्हणीतलें : " बाइ : देव काइ गुरुवाचा ? गुरव म्हणे : देव माझा : देवो तो गुरुवाचा नव्हे कीं बाइ : देव तो एथीचीया भक्ताचा : तैसा ठावो : बाइ : अनुसरलेयाचा देवो :" "हो का जी : " ॥',
+    explanation: 'पैठण येथील भोगनारायण मंदिरात मुक्काम असताना, बाइसेने प्रभू चक्रधर स्वामींना विचारले: "बाबा, सर्व वेदवेत्ते लोक श्रीकृष्ण चक्रवर्तींना परमेश्वर मानतात आणि त्यांची पूजा करतात, तर याने काही कल्याण होते का?" स्वामी म्हणाले: "होय बाई, याने भौतिक संपत्ती मिळते, अकाल मृत्यू टळतो आणि मृत्यूसमयी त्यांनी केलेल्या कल्पनेनुसार फळ मिळते." पुढे स्वामींनी सुंदर निरूपण केले की, "देव काही पूजा करणाऱ्या पुजाऱ्याचा (गुरव) नसतो. पुजारी म्हणतो देव माझा आहे, पण देव पुजाऱ्याचा नसतो, तर तो खऱ्या भक्ताचा असतो. जो संपूर्ण शरण आला आहे, देव त्याचाच असतो (अनुसरल्याचा देव)." '
+  },
+  {
+    id: 'lc_p138',
+    bookId: 'leela_charitra',
+    number: 138,
+    title: 'लीळा १३८: चांगदेवोभटाची वीनती स्वीकारू',
+    titleEn: 'Leela 138: Changdevbhatachi Vinati Svikaru',
+    content: 'येकु दिसु गोसावीं बाइसातें म्हणीतलें : " बाइ : हें परमेश्वरपुरा जाइल : आइति करा :" तें चांगदेवोभटीं आइकी लें : मग बाइसातें म्हणीतलें : " बाइ : गोसावी परमेश्वरपुरा बीजें करीत असति : तरी मज आपणेयांसांघातें yeओं देती : ऐसें पुसा का ?" बाइसीं वीनवीलें : " बाबा : चांगो म्हणत असे : \'गोसावी परमेश्वरपुरा बीजें करीत असति : तरी आपणेयांसांघातें मज येओं देती ?\' " सर्वज्ञें म्हणीतलें : " ऐसें हां बटिका ?" "जी जी :" सर्वज्ञें म्हणीतलें : " तुम्हां गावां जाणे असे : गावा जा : सणु करूनी या : मग गांवा जाओं :" ऐसेंचि उपाधी चांगदेवोभटाकरवि पुसवीलें : सर्वज्ञें म्हणीतलें : " यासीं आळेंनीवणें असे : हा नां : " उपाधी गोसावीयांसि श्रीमुखींचें तांबोळ मागीतलें : मग नीगाले : बाइसीं म्हणीतलें : " बटीका उसीरू जाला :" सर्वज्ञें म्हणीतलें : " बाइ : तैसें हे धीरवीर असति : " ॥',
+    explanation: 'एक दिवस प्रभू चक्रधर स्वामींनी बाइसेला सांगितले की आपण आता परमेश्वरपुरास (रिद्धपूर) जाणार आहोत, त्याची तयारी कर. हे ऐकून चांगदेवभटांनी (श्री गोविंदप्रभू / गुंडम राऊळ) बाइसेला विनंती केली की मलाही प्रभूंसोबत येण्याची अनुमती मिळावी असे विचारा. प्रभू म्हणाले, "बटिका, तुला तुझ्या गावाला जायचे आहे. आधी तू गावाला जा, सण साजरा कर आणि मग आपण मिळून जाऊ." चांगदेवभटांनी प्रभूंचा प्रसाद (तांबूल) मागितला आणि ते आनंदाने निघाले. बाइसेने त्यांच्या उशिराविषयी विचारले असता प्रभू म्हणाले की ते अत्यंत धीर आणि वीर पुरुष आहेत।'
+  },
+  {
+    id: 'lc_p139',
+    bookId: 'leela_charitra',
+    number: 139,
+    title: 'लीळा १३९: रीधपुरा प्रयाण',
+    titleEn: 'Leela 139: Riddhapura Prayan',
+    content: 'मग चांगदेवोभट गावां गेले : सणु सारुनी आले : बाइसीं आइति केली : मग बािसें : हंसराज : चांगदेवोभट सरीसे नीगाले : मग गोसावीं परमेश्वरपुरा बीजें केलें : ॥',
+    explanation: 'सांगितल्याप्रमाणे चांगदेवभट आपल्या गावी गेले, सण साजरा करून परत आले. बाइसेने प्रवासाची सर्व तयारी केली. मग बाईसा, हंसराज, चांगदेवभट आणि प्रभू चक्रधर स्वामी एकत्र निघून परमेश्वरपूर (रिद्धपूर) येथे पोहोचले।'
+  },
+  {
+    id: 'lc_p140',
+    bookId: 'leela_charitra',
+    number: 140,
+    title: 'लीळा १४०: राहाटगावीं माहालखुमीए वस्ति',
+    titleEn: 'Leela 140: Rahatgavi Mahalakhumie Vasti',
+    content: 'मग गोसावीं राहाटगावासि बीजें केलें : माहालखुमीएचां देऊळीं दोंपाहारांचा : वीळिचांचा पुजाअवसूरू जाला : आरोगण जाली : वस्ति जाली : मग गोसावीं बीजें केलें : ॥',
+    explanation: 'प्रयाण करत असताना प्रभू चक्रधर स्वामी राहाटगाव येथे आले. तेथील महालक्ष्मी मंदिरात दुपारची आणि संध्याकाळची पूजा व नैवेद्य (आरोगण) पार पडले. रात्री तिथेच मुक्काम करून सकाळी पुढील प्रवासाला सुरुवात केली।'
+  },
+  {
+    id: 'lc_p141',
+    bookId: 'leela_charitra',
+    number: 141,
+    title: 'लीळा १४१: कडेठणीं माहालखुमीए वस्ति',
+    titleEn: 'Leela 141: Kadethani Mahalakhumie Vasti',
+    content: 'उदीयांचि गोसावीं कडेठणासि बीजें केलें : मार्गी आसन जालें : गोसावीं वाड्सरांकरवि सीळिका आणवीलीया : तवं सीळिका नाहीं : बोरि दीरेली होती : तींए हातुहातु कोंभ नीगाले होते : तींए पयोबर्तींए : तींए तोडू मोडु भीति : तींए भवतीं भवतीं परि मोडीति ना : कव्हणांसि गोष्टी लावीति : ऐसीयापरी गमितें असति : तेवीचि तेया भवतीं भवतीं : सर्वज्ञें म्हणीतलें : " भलेंतै कासीया भवतीं भवतीं ? तन्ही मोडूनि सीळीका आणिशी कीं :" मग बाइसें हांसिली : मोडूनि सीळीका घेऊन आली : गोसावीयांचां श्रीकरीं ओळगविली : गोसावीं दंतधवन केलें : गुळुळा केला : वाइसीं अर्धपदु टीळा केला : पुजा : धूपार्ती : मंगळार्ती केली : वीडा ओळगविला : मग गोसावीं बीजें केलें : ॥',
+    explanation: 'सकाळी कडेठण येथे जात असताना रस्त्यात विसावा घेतला. प्रभू चांगदेवराऊळांनी दात घासण्यासाठी दातावण (सीळिका) मागितले. तिथे बाभळीचे किंवा कडुनिंबाचे झाड नव्हते, फक्त बोरीचे लहान, कोमल कोंभ आलेले झाड होते. बाइसेला बोरीचे काटे टोचण्याची भीती वाटत होती आणि फांदी मोडताना संकोच होत होता, म्हणून ती झाडाभोवती रेंगाळत उभी राहिली. प्रभू म्हणाले, "कशासाठी तिथे फिरत आहेस? ती फांदी तोडून दातावण आण ना." बाईसा हसली, तिने ती फांदी तोडून प्रभूंच्या हाती दिली. प्रभूंचे दात घासणे व मुखमार्जन झाले, बाईसाने पूजेचा सर्व विधी आणि आरती करून विडा अर्पण केला।'
+  },
+  {
+    id: 'lc_p142',
+    bookId: 'leela_charitra',
+    number: 142,
+    title: 'लीळा १४२: भीवंडाउवांचां राजौरीं वस्ति',
+    titleEn: 'Leela 142: Bhivandauvanchan Rajauri Vasti',
+    content: 'भीवंडाउवांच्या राजौरी येथे प्रभू चक्रधर स्वामींनी मुक्काम केला आणि तेथील भक्तांना दर्शन देऊन तृप्त केले ॥',
+    explanation: 'या लीळेमध्ये प्रभूंच्या प्रवासातील राजौरी येथील पवित्र वास्तव्याचा निर्देश केला आहे।'
+  },
+  {
+    id: 'lc_p143',
+    bookId: 'leela_charitra',
+    number: 143,
+    title: 'लीळा १४३: सेंदुर्जनीं ब्राह्मणां स्तीति',
+    titleEn: 'Leela 143: Sendurjani Brahmanan Stiti',
+    content: 'मग गोसावीं सेंदुर्जनासि बीजें केलें : गावां इसान्य पींपळांतळीं गोसावीयांसि आसन असे : तवं ब्राह्मणु एकु नागझरीए सि संध्यावंदन करावेया आला : संध्यावंदन करीतु होता : तेणें गोसावीयातें देखिलें : आला : दंडवत केलें : श्रीचरणां लागौनि पुढां बैसला : आणि तेयासि गोसावीयांपासाौनि स्तीति जाली : स्तीति भोगुं सरली : मग गोसावीयातें वीनवीलें : " जी जी : गोसावीं माझेया आवारासि बीजें करावें जी :" गोसावीं तेयाचेया आवारासि बीजें केलें : मर्दनामादणें जालें : पुजाअवसूरू जाला : आरोगण जाली : भगतिजनां पांति जाली : पहुडु : उपहुडु जाला : वीळिचां पुजाअवसूरू जाला : मग एरी दीसीं गोसावीं उदीयांसीचि तेथौनि मेघंकरा बीजें केलें : तो ब्राह्मणु पींपळांतळीं ए : आणि तेथ गोसावीयातें देखतुचि असे : ॥',
+    explanation: 'स्वामी सेंदुर्जना येथे आले आणि ईशान्येकडील पिंपळाच्या झाडाखाली बसले. तिथे नागझरी नदीवर संध्यावंदन करण्यासाठी आलेला एक ब्राह्मण प्रभूंच्या दिव्य दर्शनाने अत्यंत प्रभावित झाला. प्रभूंच्या सानिध्यात त्याला गहन आध्यात्मिक समाधी अवस्था (स्थिती) प्राप्त झाली. समाधी उतरल्यानंतर त्याने प्रभू चक्रधर स्वामींना आपल्या घरी येण्याची कळकळीची विनंती केली. स्वामी त्याच्या घरी गेले, तिथे प्रभूंचे पूजन, महाप्रसाद आणि विधी संपन्न झाले. दुसऱ्या दिवशी स्वामी तिथून निघून मेघंकर (मेहकर) येथे गेले, पण तो ब्राह्मण अजूनही त्याच पिंपळाखाली बसून प्रभूंच्या दिव्य मूर्तीचे ध्यान करत राहिला।'
+  },
+  {
+    id: 'lc_p144',
+    bookId: 'leela_charitra',
+    number: 144,
+    title: 'लीळा १४४: मेघंकरीं बाइसें हाटा गमन',
+    titleEn: 'Leela 144: Meghankari Baisen Hata Gaman',
+    content: 'मेघंकरासि गोसावीं बीजें केलें : गावांबाहिए प्रदेसीं गोसावीयांसि आसन जालें : मग बाणेश्वरीं वस्ति जाली : चरणक्षाळण जालें : पहुडु जाला : तवं बाइसीं उपाहारू नीफजविला : मग गोसावीयांसि उपहडु जाला : पुजा : आरोगण : गुळुळा : वीडा जाला : मागीता पहुडु जाला : पुढील गावं धाकुटें : म्हणौनि बािसें मेहकराआंतु हाटवका काही वेसरु : घेयावेया गेलीं : वाणीया एकाचेया पसारेयासि गेलीं : वाणीएं म्हणीतलें : " आइ : या :" म्हणौनि माची बैसों घातली : बाइसें बैसलीं : " बा : काही वेचु देया :" तेणें म्हणीतलें : " आइ : बैसा : नावेक राहा : यां ग्राहीकांतें पाठवीन मग तुम्हीं मागाल तें देइन :" तेयासि थोरू वीक्री जाला : बाइसें बैसलींच होतीं : मग तेणें अवघीं ग्राहीकें पाठविलीं : मग बाइसातें पुसिलें : " आइ : काए देओं तें सांगा ?" बाइसीं म्हणीतलें : " कणीकी दे : १ : तांदुळ : २ : तुप : ३ : हींगु : ४ : मीरीएं : ५ : जीरें : ६ : साकर : ७ :" ऐसा सोळां दामांचा वेचु केला : बरवा सबंगु सुसासु हाटवका दीधला : बाइसें सोळा दाम देओं बैसलीं : तवं तेणें म्हणीतलें : " आइ : इतुकें माझें तुम्ही आपुलेया उपेगा नेयावें :" बाइसें आलीं : सर्वज्ञें म्हणीतलें : " बाइ : उसीरू कां लाविला ?" बाइसीं मागील अवघें वृतांत गोसावीयांपुढें सांगीतलें : " बाबा : मी हाटासि गेलीएं : तवं तेणें वाणीएं मज माची बैसावेया घातली : आणि म्हणीतलें : \'आइ : मज ग्राहीकें पाठउं देया : मग मी तुम्हांसि हाटवका देइन :\' मग ग्राहीकें पाठविलीं : मग बाबा : मज हाटवका दीधला : म्हणौनि उसीरू लागला : दाम देओं बैसलीएं परि तो नेघेचि : बाबा :" मग सर्वज्ञें म्हणीतलें : " बाइ : तुम्हां गेलेयां तुमचीं ठाई तेयांचें इतुलेंचि काइ बहुत ?" तवं बाइसीं म्हणीतलें : " मज ऐसें न व्हावें बाबा :" सर्वज्ञें म्हणीतलें : " तरि नव्हे : आणि काइ बाइ :" मग वस्ति जाली ॥',
+    explanation: 'मेहकर येथे बाणेश्वर मंदिरापाशी स्वामी मुक्कामाला राहिले. पुढील प्रवासातील गावे लहान असल्याने बाइसें मेहकर बाजारात किराणा सामान घेण्यासाठी गेली. तिथे एका व्यापाऱ्याने तिचा प्रचंड आदर केला आणि तिला एका आसनावर (माची) बसवले. तिच्या शुभ पावलांच्या स्पर्शामुळे त्या व्यापाऱ्याचा त्या दिवशी तुफान धंदा झाला. जेव्हा गर्दी कमी झाली, तेव्हा तिने पीठ, तांदूळ, तूप, हिंग, मिरी, जिरे आणि साखर असे १६ दामांचे सामान घेतले. व्यापाऱ्याने पैसे घेण्यास नकार दिला आणि सर्व सामान मोफत दिले. प्रभू चक्रधर स्वामींनी नंतर बाइसेला सांगितले की, तुझ्यासारख्या पवित्र आत्म्याच्या आगमनाने त्याला मिळालेल्या समृद्धीपुढे हा १६ दामांचा किराणा अतिशय क्षुल्लक आहे. बाइसेने प्रार्थना केली की माझ्यामुळे कोणाचे नुकसान होऊ नये, प्रभूने तिचे सांत्वन केले।'
+  },
+  {
+    id: 'lc_p145',
+    bookId: 'leela_charitra',
+    number: 145,
+    title: 'लीळा १४५: वीसैए रामदेवीं कमळीं पुजा',
+    titleEn: 'Leela 145: Visaie Ramadevin Kamalin Puja',
+    content: 'परमेस्वरपुरा गोसावीं बीजें करीत असति ऐसें दादोसीं आइकिलें : गोसावीयालागौनि वाटेसेया काही संभो मेळोनि मागिलाकडौनि टाकोनि घेउनि आले : तवं गोसावीं वस्ति देऊळां बीजें केलें : देऊळ पाहिलें : बाइसें तेथ उपाहारु करावेया राहिलीं : गोसावीं वीहरणा बीजें केलें : तळेयाचीए पसिमीली पाळीसि पींपळांतळीं गोसावीयांसि आसन जालें : तवं देव आले : दंडवत घातलें : श्रीचरणां लागले : गोसावीं क्षेमाळींगन दीधलें : देवी वेचू आणिला तो पुढें ठेविला : तळेयाआंतु प्व्हावेया रीगाले : तवं कमळें बरवीं देखिलीं : देवी म्हणीतलें : "जी जी : मीं कमळांची पुजा गोसावीयांसि करूं ?" सर्वज्ञें म्हणीतलें : "करा :" "जी जी : तरि कमळें कैसीयापरी काढुं ?" सर्वज्ञें म्हणीतलें : "आंकुडीया करूनि काढा :" मग देवी आकुडीया करूनि कमळें तोडिलीं : मग कमळांचीं अंगदें केलीं : बाहुभुषणें केलीं : गळदंडे : हातसर : माळ : मुगुटमाळ केली : ऐसी बरवी गोसावीयांसि लोहिवं कमळीं साष्टांग पुजा केली : स्रीखंडीं कमळें : मग रामदेवी म्हणीतलें : "जी जी : मज कोळ पुरूखू उधारूनi देयावा जी :" म्हणौनि रामदेवीं कमळाची पांकुळी गोसावीयांचां श्रीकरीं दीधली : गोसावीं कमळाचें पाते श्रीकरीं घेतलें : श्रीकरिचीया करांगुलिचेनि नखेंकरूनi उघारिला : सर्वज्ञें म्हणीतलें : "देसकाळिचे आचारीये इतुलेयामध्यें आचारीत्व करीत असति : एन्हवीं एथौनि देवताचक्र नीरोपितां पृथ्वीएसणीं कडती आणि मेरूएसणी खडी न पुरे : परि देवताचक्र उधारुं न सरे :" "जी जी : तरि सामान्याकारें निरोपिजो जी :" सर्वज्ञें म्हणीतलें : "द्वीधा शांभव : अष्टधा शाक्तेय : सवालाख नवकोडी मव्हान्व : बाहात्तरी कोडी आन्तव : इतुकीया देवता एकीं ब्रह्मांडों असति : ऐसीं अनंतें ब्रह्मांडें असति : " "होकां जी :" आणि मग गोसावीं उधारूनि रामदेवांसि दीधला : मग देवी कांगळीं उधारूनि तांब्रपात्रीं उधारिलें सर्वज्ञें म्हणीतलें : "खाजें खादलेयां क्षुधानिवृति तरी होए : परि भूक न वचे : तथा तृप्ति नव्हे : अन जेविलेया भूक तरि जाये : अमरां नव्हीजे : अमृत पीजे तरि अमरां होइजे : तैसी इंद्रादिकांचीं फळें च्युतिमंतें आणि दुखरूपें : चैतन्यफळ मोक्षतुल्य तरी होए : पारि तेथ च्युति हा दोषु : तैसा मोक्षु नव्हे : मोक्षु जालेया यातायात पारुखती :" मग गोसावीं देऊळासि बीजें केलें : पुजा आरोगण : पहुडु उपहडु जाला : वीळिचां पुजा जाली : उदीयांचि पुजाअवसूरू जाला : मग बीजें केलें : रामदेव वीसैएहुनि परतले : ॥',
+    explanation: 'रामदेव नामक भक्त जेव्हा समजले की स्वामी रिद्धपूरला जात आहेत, तेव्हा ते काही भेटवस्तू घेऊन आले. एका तलावाकाठी पिंपळाच्या झाडाखाली स्वामींचा मुक्काम थाटला. तलावात सुंदर कमळे पाहून रामदेवाने कमळांनी स्वामींची पूजा करण्याची परवानगी मागितली. स्वामींच्या अनुमतीनंतर त्याने कमळे काढून त्यापासून सुंदर आभूषणे (बाजूबंद, हार, मुकुट) बनवून साष्टांग नमस्कारासह दिव्य पूजा केली. रामदेवाने मोक्षप्राप्ती आणि देवतेच्या मुक्तीविषयी विचारले. स्वामींनी अगाध ज्ञान निरूपण केले की, साधे अन्न खाल्ल्याने भूक तात्पुरती शमते पण मोक्ष मिळत नाही. अमृत प्यायल्याने अमरत्व मिळते, पण खरा मोक्ष फक्त ईश्वरी शरणागती आणि अनन्य भक्तीनेच मिळतो, ज्यामुळे जन्म-मरणाचा फेरा कायमचा सुटतो।'
+  },
+  {
+    id: 'lc_p146',
+    bookId: 'leela_charitra',
+    number: 146,
+    title: 'लीळा १४६: आलेगावीं लींगाचां देऊळीं वस्ति',
+    titleEn: 'Leela 146: Alegavi Lingachan Deuli Vasti',
+    content: 'आलेगाव येथे शिवलिंगाच्या मंदिरात प्रभू चक्रधर स्वामींचा मुक्काम झाला आणि तेथे विधी पार पडला ॥',
+    explanation: 'प्रभूंच्या प्रवासातील आलेगाव येथील मंदिरातील मुक्कामाचे वर्णन या लीळेत आहे।'
+  },
+  {
+    id: 'lc_p147',
+    bookId: 'leela_charitra',
+    number: 147,
+    title: 'लीळा १४७: पातुरडीं वैजनाथीं वस्ति',
+    titleEn: 'Leela 147: Paturdi Vaijanathi Vasti',
+    content: 'पातुरडी येथे वैजनाथ मंदिरात प्रभू चक्रधर स्वामींचा मुक्काम झाला आणि भक्तजनांना दर्शन घडले ॥',
+    explanation: 'प्रभूंच्या प्रवासातील पातुरडी येथील वैजनाथ मंदिरातील मुक्कामाचा प्रसंग।'
+  },
+  {
+    id: 'lc_p148',
+    bookId: 'leela_charitra',
+    number: 148,
+    title: 'लीळा १४८: टाकळीए उतरेस्वरीं वस्ति',
+    titleEn: 'Leela 148: Takalie Utarasvari Vasti',
+    content: 'टाकळी येथे उत्तरेश्वर मंदिरात प्रभू चक्रधर स्वामींचा मुक्काम झाला आणि तेथील भक्तांना आनंद झाला ॥',
+    explanation: 'प्रभूंच्या टाकळी येथील उत्तरेश्वर मंदिरातील पावन वास्तव्याचे वर्णन।'
+  },
+  {
+    id: 'lc_p149',
+    bookId: 'leela_charitra',
+    number: 149,
+    title: 'लीळा १४९: वेळुवनीं वस्ति',
+    titleEn: 'Leela 149: Veluvani Vasti',
+    content: 'वेळुवन येथे प्रभू चक्रधर स्वामींनी रात्रीचा मुक्काम केला आणि तेथून पुढील प्रवासाला निघाले ॥',
+    explanation: 'प्रभूंच्या वेळुवन येथील मुक्कामाचा उल्लेख या लीळेत आता येतो।'
+  },
+  {
+    id: 'lc_p150',
+    bookId: 'leela_charitra',
+    number: 150,
+    title: 'लीळा १५०: लाखपुरीए लक्षणेस्वरीं वस्ति',
+    titleEn: 'Leela 150: Lakhapurie Lakshanesvari Vasti',
+    content: 'लाखपुरी येथे लक्षणेश्वर मंदिरात प्रभू चक्रधर स्वामींचा मुक्काम झाला आणि पूजा-आरोगण संपन्न झाले ॥',
+    explanation: 'प्रभूंच्या लाखपुरी येथील लक्षणेश्वर मंदिरातील मुक्कामाचा प्रसंग।'
+  },
+  {
+    id: 'lc_p151',
+    bookId: 'leela_charitra',
+    number: 151,
+    title: 'लीळा १५१: चांगदेओभटां खेळावेया परीक्षू',
+    titleEn: 'Leela 151: Changdevbhatan Khelaveya Parikshu',
+    content: 'गोसावी उदयांचा पाहारा एकु चालति : मग वसतीचां गावीं राहाति : गोसावी विहरणा बीजें करीती : आसन होए : गोसावी चांगदेओभतातें खेळों पाठवीती : "बटीका : खेळों जा " अमीचा संबंधु तवं पर्यंत करावा : जैसा पैन्हा गेलेल्या वात श्लेष्मे न बघिती : आणि खेळों जाति : ॥',
+    explanation: 'प्रभू चक्रधर स्वामी सकाळी काही अंतर पायी चालून मग एखाद्या गावात मुक्काम करत असत. विसावा घेतल्यानंतर ते आपल्या सोबत असलेल्या चांगदेवभटांना (श्री गोविंदप्रभू / गुंडम राऊळ) "बटिका, जा खेळायला जा" असे म्हणून खेळण्यासाठी पाठवत असत. हा खेळ खेळणे हा त्यांच्या बालसुलभ रूपाचा आणि प्रभूंच्या दिव्य लीलांचा एक भाग होता.'
+  },
+  {
+    id: 'lc_p152',
+    bookId: 'leela_charitra',
+    number: 152,
+    title: 'लीळा १५२: मार्गी चांगदेओभटांतें जाडि पांघुरवणें',
+    titleEn: 'Leela 152: Margi Changdevbhatante Jadi Panghuravane',
+    content: 'चांगदेओभटांतें गोसावी आपलेयापुढें नीजवीती : रात्रीं गोसावीयांपासि नैजैले असति : गोसावीयांसि पावो लागेल म्हणौनि ते परतेपरते सरति : गोसावी म्हणति : "बटिका : ऐसें आरुतें ठाका" म्हणौनि दोहीं श्रीकरीं ऐसें धरूनि आरुतें आणिताती : सीयाळे दीस : तें सीत वाजे : गोसावी जाडि पांगुरवीती : ॥',
+    explanation: 'प्रवासादरम्यान थंडीच्या रात्री प्रभू चक्रधर स्वामी चांगदेवभटांना आपल्या समोरच झोपवत असत. चांगदेवभट अत्यंत आदराने प्रभूंच्या पासून दूर सरकून झोपत जेणेकरून त्यांचे पाय प्रभूला लागू नयेत. पण प्रभू स्वामी दोन्ही हातांनी धरून त्यांना जवळ ओढून घेत असत आणि थंडी वाजू नये म्हणून स्वतःची उबदार घोंगडी (जाडि) त्यांच्या अंगावर घालत असत. प्रभूंचे भक्तांवरील असीम प्रेम या लीळेत दिसते.'
+  },
+  {
+    id: 'lc_p153',
+    bookId: 'leela_charitra',
+    number: 153,
+    title: 'लीळा १५३: जाडि परित्यागु',
+    titleEn: 'Leela 153: Jadi Parityagu',
+    content: 'सीयाळे दीस : उदीयांचि गोसावी बीजें करीती : बािसें जाडीचा कोंगता करूनि गोसावीयांचां श्रीमुगुटीं घालीती : मग गोसावी मार्गी बीजें करीती : उन्ह नीगे : सीत फीटे : मग गोसावी श्रीमुगुटु लववीती : परि : \'बाइ : घेया :\' ऐसें न म्हणति : आणि गोसावी मागुतवाणीं : श्रीमुगुटेंचि झाडुनि : जाडि खालि परित्येजीती : चांगदेओभतातें म्हणति : " बटिका : जाडि घेया :" मग चांगदेवोभट जाडी घेती : घडी करूनi खांदाहिर घालती : ऐसें व्रतवस्ती : ॥',
+    explanation: 'थंडीच्या दिवसांत सकाळी निघताना बाईसा प्रभूंच्या डोक्याभोवती घोंगडी गुंडाळत असे. जेव्हा ऊन पडून थंडी कमी होत असे, तेव्हा प्रभू स्वतःहून बाईसाला ती काढायला सांगत नसत. त्याऐवजी ते आपले डोके थोडे झुकवून ती घोंगडी खाली पडू देत असत. मग चांगदेवभटांना म्हणत, "बटिका, घोंगडी उचलून घे." चांगदेवभट ती उचलून, घडी करून आपल्या खांद्यावर ठेवत असत. हा त्यांच्या प्रवासातील नित्यक्रम होता.'
+  },
+  {
+    id: 'lc_p154',
+    bookId: 'leela_charitra',
+    number: 154,
+    title: 'लीळा १५४: सींगणापुरीं अवस्थान : कोडेस्वरी घाटेया हरिभटा भेटि',
+    titleEn: 'Leela 154: Singnapuri Avasthan: Kodesvari Ghateya Haribhata Bheti',
+    content: 'तैसेंचि गोसावी वीहरणासि बीजें केलें : कोडेस्वरीं चौकौी आसन जालें : घाटे हरीभट गंगेहुनि आले : हातीं तांबवटी : तांबवटीए उदक : तुळसी : देवतेसि तर्पण करावेया : गोसावीयातें देखोनि आले : दंडवत घातलें : श्रीचरणां लागले : तांबटीए उदक होतें : तेणें उदकें श्रीचरण प्रक्षाळिले : तुळसी वाईलीया : साष्टांगीं तुळसींचें अर्चन केलें : गोसावी तेयातें श्रीकरें स्पर्शिलें : आणि तेया स्तीति जाली : भोगिली भंगली : सर्वज्ञें म्हणीतलें : " बटिका : जीवांसि वेध आणि वेधशक्ति ते एथौनिचि कीं गा : कुकडी असे : तें आंडी घाली : पीलीं होती : तेयांसि पाखवा दे अमृतकळा असे ते संचरे : तयातवं तीयें वाढती : वैसे परमेश्वराचिये स्पर्शातव एका वेधु संचेरति :" हरीभट केतुला एकु काळु स्तीति भोगिली : भंगली : मग गोसावीयातें वीनवीलें : " जी जी : माझेया आवारा गोसावीं बीजें करावें जी :" गोसावी वीनवणी स्वीकारिली : मग बीजें केलें : मग घरासि घेउनि आले : गोसावीयांसि मर्दनामादणें जालें : पुजाअवसूरू जाला : भगतिजनांसहिकत : आरोगण जाली : गुळुळा जाला : वीडा जाला : ॥',
+    explanation: 'सिंगणापूर येथील कोडेस्वरी मंदिराच्या आवारात स्वामी बसले होते. नदीवरून पाणी व तुळशी घेऊन पूजेसाठी निघालेल्या हरिभटाने प्रभू चक्रधर स्वामींना पाहिले, आणि आनंदाने प्रभूंचे पाय धुतले व तुळशी वाहून साष्टांग नमस्कार केला. प्रभूने त्यांच्यावर हात ठेवताच ते अत्यंत उच्च आध्यात्मिक समाधी अवस्थेत गेले. स्वामींनी यावर निरूपण केले की, ज्याप्रमाणे कोंबडी आपल्या अंड्यांवर आणि पिलांवर पंख पसरून त्यांना उब व जीवन देते, त्याचप्रमाणे ईश्वराचा दिव्य स्पर्श जीवामध्ये भक्तीचा ओढा (वेध आणि वेधशक्ती) निर्माण करतो. समाधी उतरल्यावर हरिभटाने प्रभूला आपल्या घरी नेऊन त्यांची पूजा केली व महाप्रसाद दिला.'
+  },
+  {
+    id: 'lc_p155',
+    bookId: 'leela_charitra',
+    number: 155,
+    title: 'लीळा १५५: बाइसें : हंसराज रीधपुरा पाठवणें',
+    titleEn: 'Leela 155: Baisen Hansaraj Riddhapura Pathavane',
+    content: 'उदीयांचि उपहडू जाला : मग सर्वज्ञें म्हणीतलें : "बाइ : आजि वांकीएचा हाटु : श्रीप्रभूलागौनि एकि आसुचें एक वस्त्र घेयावें : तुम्हीं : हंसराजु : प्रमेस्वरपुरासि पुढें जा : एथ अवसूरू करा तैसाचि श्रीप्रभूचां ठाई करावा : बहीरवीं बीढार करा : दूरूनि श्रीप्रभूची दृष्टी सेवा करावी : बाइ : तुम्हीं परमेस्वरपुर पावा ना तवं हें मागीला-कडौनि एइल :" मग बािसें : हंसराजु : नीगालीं : गोसावी कोडेस्वरूवरि बोळवीत आले : बाइसें वांकीएसी गेलीं : वस्त्र घेतलें : मग रीधपुरा गेलीं : ॥',
+    explanation: 'सकाळी स्वामींनी बाईसाला सांगितले: "आज वांकी गावचा बाजार आहे. तेथून श्री गोविंदप्रभूंसाठी (गुंडम राऊळ) एक मौल्यवान वस्त्र खरेदी कर. तू आणि हंसराज परमेश्वरपुरास (रिद्धपूर) आधी जा आणि तिथे बाहेरच्या भागात मुक्काम ठेवा. तिथून लांबूनच श्री गोविंदप्रभूंचे दर्शन घ्या. तुमच्या मागे मागे मीही लवकरच तिथे पोहोचतो." प्रभूंच्या आज्ञेनुसार बाईसा आणि हंसराज वांकी बाजारातून वस्त्र घेऊन रिद्धपूरला पोहोचले.'
+  },
+  {
+    id: 'lc_p156',
+    bookId: 'leela_charitra',
+    number: 156,
+    title: 'लीळा १५६: चांगदेवभटां स्तीति',
+    titleEn: 'Leela 156: Changdevbhatan Stiti',
+    content: 'गोसावीं वीहरणासि बीजें केलें : कोडेस्वरीं चौंकी आसन जालें : चांगदेवोभट बहीरवांचां देऊळीं बैसले होते : हरीभट गोसावीयातें बोलाउं आले : सवें तेयांची लेंकि आली : हरीभटीं गोसावीयातें वीनवीलें : "जी जी : गोसावीं आरोगणेसि बीजें करावें जी :" सर्वज्ञें म्हणीतलें : "बाई : पैली देऊळीं बटीकु बैसला असे : तो बोलांवा :" तेया देऊळासि गेलीं : तवं तेयाचें आसन अंतरीक्ष उपमत असे : वरूतें जातें : खालुतें एतें : वरि कळसीं लागत असे : ऐसें उपमतं देखिलें : आणि तीयें भीयालीं : माघौंतीं आलीं : " जी जी : ते देऊळाचां कळसकळसां धांवत असति :" सर्वज्ञें म्हणीतलें : " बाइ : एथिचें नावं घेया : तुमते एथौनि बोलावीलें असे : ऐसें म्हणा :" माघौंती गेलीं : आणि म्हणीतलें : " आहो भटो : तुमते श्रीचांगदेवोरावुळ गोसावी बोलावीत असति :" आणि तेयांची स्तीति भंगली : मग गोसावीं हरीदेवोभटाचेया आवारासि बीजें केलें : आरोगण जाली : गुळुळा जाला : वीडा ओळगविला : मग गोसावीयांसि तेथचि पहुडु जाला : वीळिचांची आरोगण : पहुडु तेथचि होए : ॥',
+    explanation: 'कोडेस्वरी मंदिरात हरीभट आणि त्यांची मुलगी स्वामींना जेवणासाठी बोलवायला आले. स्वामींनी त्यांना सांगितले की आधी बाहेरील देवळात बसलेल्या "बटिका" (चांगदेवभट / गोविंदप्रभू) यांना बोलवा. ती मुलगी तिथे गेली तर चांगदेवभट हवेत तरंगत असून ते वर चालले होते आणि त्यांचे मस्तक मंदिराच्या कळसाला लागत होते! हे पाहून ती प्रचंड घाबरली आणि पळत येऊन स्वामींना म्हणाली की ते कळसावरून धावत आहेत. स्वामी हसले आणि म्हणाले की, "माझे नाव घेऊन सांग की तुला चांगदेवराऊळ स्वामी बोलवत आहेत." तिने जाऊन तसेच सांगितले आणि चांगदेवभटांची ती समाधी अवस्था लगेच उतरली.'
+  },
+  {
+    id: 'lc_p157',
+    bookId: 'leela_charitra',
+    number: 157,
+    title: 'लीळा १५७: खडखांबुलां खेळु',
+    titleEn: 'Leela 157: Khadakhambulan Khelu',
+    content: 'नीच चांगदेवोभट भीक्षा करूनि एति : झोळी दृष्टभुत करीति : मग जेवीति : तीये दीसीं चांगदेवोभट भीक्षा करूनि आले : झोळी काठीए घातली : काठी टॅकुनि ठेविली : आणि स्तीति जाली : तैसेचि खडखांबुलां खेळों लागले : एरा खांबाहूनि एरू खांबु सीवीति : व्यान्ही पाहार चहुं खांभांभवतें भवंत होते : ऐसी स्तीति भोगीत होते : तवं दीसु नीगाला : उदीयांचि गोसावीं परश्रेया बीजें केलें : तैसेंचि देऊळासि बीजें केलें : सर्वज्ञें म्हणीतलें : "बटिका : काइ गा खडखांबुलां खेळत असा ?" गोसावीयातें देखिलें आणि स्तीति भंगली : आले : श्रीचरणां लागले : आसन घातलें : गोसावी आसनीं बैसले : सर्वज्ञें म्हणीतलें : "बटिका : कव्हणी एकी माता असे : ते लेकरुवातें नीजौनि कांदुं जाए : कां दळों जाए : मोटका पान्हा ए : आणि ते जाणे : तें मुकैलें असैल : मग एउनि तयासि स्तनपान देइ :" मग पुसिलें : " बटीका : जेविलेति ?" " जी नाही :" "कां गा नाही ?" " जी जी : गोसावीयांसि झोळी दृष्टभुत करावी होती :" सर्वज्ञें म्हणीतलें : "आणा आरूती :" आणीली : गोसावीं अवलोकिली : तवं साधन काही आले नाही : सर्वज्ञें म्हणीतलें : " बटिका : रूक्ष असे : साधन काही नाही :" " जी जी :" सर्वज्ञें म्हणीतलें : "तरी एथ सांधाचि ना : एथ म्हणिजे हो : ऐसेयां सेवटीलीं घरीं एकाधा एकु ठाओ आपजविजे हो : बटीका : जेवा जा :" चांगदेवोभटीं म्हणीतलें : " पाणी नाही जी :" सर्वज्ञें म्हणीतलें : " तुम्ही माहात्मे कीं गा : एकीं गांवी जेविजे : एकी गावी आचवीजे :" ॥',
+    explanation: 'चांगदेवभट (गोविंदप्रभू) भिक्षा मागून आले पण अचानक समाधी लागल्यामुळे ते मंदिराच्या चार खांबांभोवती "खडखांबुला" (खांब शिवण्याचा खेळ) खेळू लागले. ते रात्रभर याच समाधी अवस्थेत खेळत राहिले. सकाळी स्वामी आले आणि म्हणाले, "बटिका, काय हा खेळ चालवला आहेस?" स्वामींना पाहताच त्यांची समाधी उतरली. स्वामींनी भक्ताच्या या आर्ततेची तुलना दळायला गेलेल्या आईशी केली जी मुलाच्या आठवणीने लगेच घरी परतते. जेव्हा विचारले की जेवलास का? चांगदेवभट म्हणाले नाही, कारण मला भिक्षेची झोळी आधी प्रभूला दाखवायची होती. स्वामींनी झोळीत पाहिले तर अतिशय सुके अन्न होते. स्वामींनी त्यांना प्रेमाने जेवायला सांगितले. पाणी नाही असे म्हणताच स्वामींनी सांगितले, "तुम्ही तर महात्मे आहात, एका गावी जेवावे आणि दुसऱ्या गावी हात धुवावे!" '
+  },
+  {
+    id: 'lc_p158',
+    bookId: 'leela_charitra',
+    number: 158,
+    title: 'लीळा १५८: रात्रीं भीक्षानव्याळी करणें',
+    titleEn: 'Leela 158: Ratrin Bhikshanavyali Kamane',
+    content: 'ऐसें त्रीरात्रि कीं पंचरात्रि गोसावीयांसि अवस्थान जालें : दोपाहारांचा पुजाअवसूरू आरोगण : प्रत्येकें हरीभटाचां घरीं होए : वीळचां चांगदेवोभट भीक्षा करीति : मग गोसावीयांसि व्याळी होए : ॥',
+    explanation: 'अशा प्रकारे तिथे तीन ते पाच रात्री स्वामींचा मुक्काम झाला. दररोज दुपारी हरिभटांच्या घरी महाप्रसाद होई, आणि संध्याकाळी चांगदेवभट भिक्षा मागून आणत, उसका उपयोग रात्रीच्या जेवणासाठी (व्याळी) प्रभूंच्या चरणी केला जाई।'
+  },
+  {
+    id: 'lc_p159',
+    bookId: 'leela_charitra',
+    number: 159,
+    title: 'लीळा १५९: वांकीए पांडेस्वरीं वस्ति',
+    titleEn: 'Leela 159: Vankie Pandesvari Vasti',
+    content: 'वांकी येथे पांडेश्वर मंदिरात प्रभू चक्रधर स्वामींचा मुक्काम झाला आणि भक्तजनांचे मनोरथ पूर्ण झाले ॥',
+    explanation: 'प्रभूंच्या वांकी येथील वास्तव्याचा आणि तेथील पांडेश्वर मंदिरातील वास्तव्याचा प्रसंग।'
+  },
+  {
+    id: 'lc_p160',
+    bookId: 'leela_charitra',
+    number: 160,
+    title: 'लीळा १६०: थूगावीं रामेस्वरीं वस्ति',
+    titleEn: 'Leela 160: Thugavi Ramesvari Vasti',
+    content: 'मग गोसावीं थुगावासि बीजें केलें : देऊळीं वस्ति जाली : मग एरी दीसीं गोसावीं उदेयांचि देऊळाउतरे परश्यासि बीजें केलें : मग परश्रयो सारूनि उदका वीनीयोगु जाला : पुर्वीली दारवठा वळु : तेया वडातळीं गोसावी नावेक उभे राहीले : जवं चांगदेवोभट एति तवं : मग गोसावीं बीजें केलें : ॥',
+    explanation: 'थुगाव येथे रामेश्वर मंदिरात स्वामी मुक्कामाला राहिले. दुसऱ्या दिवशी सकाळी उत्तर बाजूला शौचविधी उरकून जवळच असलेल्या एका वडाच्या झाडाखाली चांगदेवभटांची वाट पाहत उभे राहिले. चांगदेवभट आल्यानंतर तेथून त्यांनी पुढील मार्ग धरला।'
+  },
+  {
+    id: 'lc_p161',
+    bookId: 'leela_charitra',
+    number: 161,
+    title: 'लीळा १६१: रामां लींगाचां देऊळीं आसन',
+    titleEn: 'Leela 161: Raman Lingachan Deuli Asan',
+    content: 'रामा येथील शिवलिंग मंदिरात प्रभू चक्रधर स्वामींचे आसन झाले आणि तिथे विधी संपन्न झाला ॥',
+    explanation: 'प्रभूंच्या रामा येथील मुक्कामाचा निर्देश या लीळेत आढळतो।'
+  },
+  {
+    id: 'lc_p162',
+    bookId: 'leela_charitra',
+    number: 162,
+    title: 'लीळा १६२: साउरीं बाळसमुदृ अवलोकणें',
+    titleEn: 'Leela 162: Saurin Balsamudra Avalokane',
+    content: 'साउरीं अड अवळोकुनि चहूं दीसां : मग सर्वज्ञें म्हणीतलें : " हा बाळसमुद्र मां :" मग नावे कतीएचि चौबारां आसन जालें : मग बीजें केलें : ॥',
+    explanation: 'साउरी येथे तलाव/जलाशय (बाळसमुद्र) पाहून प्रभू खूप सुखावले आणि त्यांनी त्याच्या सौंदर्याची प्रशंसा केली. गावातील चौबारावर काही वेळ विसावा घेऊन ते पुढे निघाले।'
+  },
+  {
+    id: 'lc_p163',
+    bookId: 'leela_charitra',
+    number: 163,
+    title: 'लीळा १६३: तळबेलीं लींगाचां देऊळीं आसन',
+    titleEn: 'Leela 163: Talabelin Lingachan Deuli Asan',
+    content: 'तळबेली येथील शिवलिंग मंदिरात प्रभूंचे पवित्र आसन झाले आणि तिथे विसावा घेतला ॥',
+    explanation: 'तळबेली गावातील वास्तव्याविषयी या लीळेत सांगितले आहे।'
+  },
+  {
+    id: 'lc_p164',
+    bookId: 'leela_charitra',
+    number: 164,
+    title: 'लीळा १६४: खैराळां उपान्हौत्यागु',
+    titleEn: 'Leela 164: Khairalan Upanhautyaagu',
+    content: 'गोसावी खैराळें पावले : गावां पैलाकडे आसन जालें : मग गोसावीयांसि चरणक्षाळण जालें : गुळुळा जाला : वीडा ओळगविला : तेथौनि गोसावीं नावेक पुढारें बीजें केलें : तवं साळेचा कळसु देखिला : मग उपाहानौ फेडिलीया : सर्वज्ञें म्हणीतलें : " बटिका : हें देखिलें गा परमेस्वरपुर : साळेचा कळसु दीसतु असे : एथ श्रीप्रभू राज्य करीत असति :" म्हणौनि रीधपूर दाखविलें : ऐसें म्हणौनि दोन्ही श्रीकर जोडुनि जय केलें : आणि चांगदेवोभटींही जय केलें : सर्वज्ञें म्हणीतलें : " हें काइ गा बटिका : एथौनि जये केलें : आणि तुम्हीही जय केलें ? तुम्हां साष्टांग लाभे कीं : घाला घाला दंडवतें :" चांगदेवोभटीं दंडवतें घातलीं : मग गोसावी श्रीप्रभूची महीमा नीरोपीत बीजें केलें : ॥',
+    explanation: 'खैराळा येथे पोहोचल्यावर स्वामी विसावले. तिथून थोडं पुढे गेल्यावर त्यांना दुरून परमेश्वरपूर (रिद्धपूर) येथील मुख्य मंदिराचा कळस दिसला. कळस पाहताच प्रभू चक्रधर स्वामींनी अत्यंत आदराने आपल्या पायांतील पादत्राणे (उपान्हौ) काढून टाकली. चांगदेवभटांना म्हणाले, "बटिका, बघ ते परमेश्वरपूर! देवळाचा कळस दिसत आहे. तिथे श्री गोविंदप्रभू राज्य करत आहेत." असे म्हणून स्वामींनी दोन्ही हात जोडून कळसाला जयजयकार केला. चांगदेवभटांनीही जयजयकार केला. स्वामी म्हणाले, "बटिका, मी लांबून जयजयकार केला, पण तुला तर प्रत्यक्ष प्रभूंच्या साष्टांग चरणस्पर्शाचा आणि भेटीचा लाभ मिळणार आहे. जा, पूर्ण दंडवत घाल!" चांगदेवभटांनी कळसाच्या दिशेने साष्टांग नमस्कार घातला, आणि स्वामी गोविंदप्रभूंच्या अगाध महिमेचे गुणगान करत पुढे निघाले।'
+  },
+  {
+    id: 'lc_p165',
+    bookId: 'leela_charitra',
+    number: 165,
+    title: 'लीळा १६५: रीधपुरीं श्रीप्रभूदरिसन',
+    titleEn: 'Leela 165: Ridhapuri Shriprabhudarisan',
+    content: '\"ऐसे गा श्रीप्रभू :\" ऐसें नीरोपण करीतकरीत माल्हणदेवीसि बीजें केलें : तवं श्रीप्रभूंचीं पाऊलें देखिलीं : मग सर्वज्ञें म्हणीतलें : \" बटिका : देखिलें गा ? श्रीप्रभू आतांचि एथ बीजें केलें होतें : एं देखिलीं श्रीप्रभूचीं पाऊलें ?\" ऐसें म्हणीतलें : रज वंदिलें : तेथ नावेक आसन जालें : गुळुळा जाला : वीडा जाला : मग गोसावीं बीजें केलें : ऐसें प्रमेस्वरपुर पावले : ॥',
+    explanation: 'प्रभू चक्रधर स्वामी गोविंदप्रभूंच्या भेटीसाठी रिद्धपूरला आले. वाटेत माल्हणदेवीजवळ त्यांना गोविंदप्रभूंच्या पावलांचे ठसे दिसले. स्वामींनी चांगदेवभटांना ते दाखवले आणि त्या पवित्र धुळीला वंदन केले. रिद्धपूरला पोहोचल्यावर दोन्ही अवतारांचे अपूर्व मिलन झाले.'
+  },
+  {
+    id: 'lc_p166',
+    bookId: 'leela_charitra',
+    number: 166,
+    title: 'लीळा १६६: मठीं रोटी आरोगण',
+    titleEn: 'Leela 166: Mathin Roti Aarogan',
+    content: 'मग पुढां श्रीप्रभू : मागां आमचे गोसावी : तेया मागें बाइसें : हंसराजु : चांगदेवोभट : आमचां गोसावीं खोलबुंधि घालुनि : श्रीमुर्ति आछादूनि : ऐसें मढाउत्तरेली गोदरीया बीजें केलें : श्रीप्रभू नावेक पाइरीयांसीं खेळु खेळति : नावेक कवाडींसीं खेळु केला : नावेक वीनाएकेंसीं खेळु केला : मग मढांतु बीजें केलें : आमचे गोसावी माहाद्वारीं रीगतां डावेया हाताचीए खातां : कवाडाआड उभे राहिले : तवं सुतवणीयाचां मढीं चाटे होते : तेहीं श्रीप्रभूतें पुसिलें : \" राउळो : जेवाल ?\" श्रीप्रभू म्हणीतलें : \" मेला जाए : जेवावें म्हणें : नेजवावें म्हणें : मेला जाए : जेवील म्हणें : आओ : आणि आणि म्हणें :\" म्हणौनि आसन जालें : मग तेहीं तेलरोटी आणिला : ... ॥',
+    explanation: 'गोविंदप्रभू मठात आले आणि त्यांच्या मागे चक्रधर स्वामी आले. तिथे शिष्यांनी गोविंदप्रभूंना भोजनाविषयी विचारले असता त्यांनी तेलरोटी (तेलात कालवलेली भाकरी) आरोगण केली. चक्रधर स्वामींनी पाठीमागे कवाडाआड उभे राहून ही अद्भूत भोजनलीला पाहिली आणि नंतर उरलेला महाप्रसाद आनंदाने ग्रहण केला.'
+  },
+  {
+    id: 'lc_p167',
+    bookId: 'leela_charitra',
+    number: 167,
+    title: 'लीळा १६७: श्रीप्रभूसि वस्त्रपुजा',
+    titleEn: 'Leela 167: Shriprabhusi Vastrapuja',
+    content: 'एरां दीसीं उदीयांचीचि श्रीप्रभूसि बाइसीं मादणें केलें : तवं आमचे गोसावी आंगणीं चरणचारी उभे होते : श्रीप्रभूसि मादणें जालें : गोसावीं श्रीप्रभुलागि बाइसांकरवि वांकिये वस्त्र ठेवविले होतें : गोसावी बाइसांसि म्हणीतलें : \" बाइ : तें वस्त्र आणा : आरुतें :\" बाइसीं वस्त्र आणिलें : गोसावीं वस्त्र उकळोनि नीरीया केलीया : श्रीप्रभूसि दरूसन केलें :... ॥',
+    explanation: 'बाईसाने गोविंदप्रभूंचे स्नान घातल्यानंतर चक्रधर स्वामींनी पाठवलेले नवीन वस्त्र गोविंदप्रभूंना नेसवले. जुने वस्त्र झटकणाऱ्या बाईसाला स्वामी म्हणाले की, श्रीप्रभूंच्या वस्त्राला लागलेली धूळ साधी नसून ब्रह्मादी देवांनाही अत्यंत दुर्लभ आहे. स्वामींच्या सांगण्यावरून बाईसाने गोविंदप्रभूंच्या आवडीचे विविध गोड-आंबट अन्न तयार करून नैवेद्य दाखवला.'
+  },
+  {
+    id: 'lc_p168',
+    bookId: 'leela_charitra',
+    number: 168,
+    title: 'लीळा १६८: बहीरवीं श्रीप्रभुकुडा',
+    titleEn: 'Leela 168: Bahiravin Shriprabhukuda',
+    content: 'प्रतदीनीं आमचे गोसावी तीकोउपाध्यांच्या आवारासि बीजें करिति : ते दीसीं बीजें न करितीचि : एकु दीसीं गोसावीं आसनीं उपवीष्ट असति : तवं श्रीप्रभू खेळतखेळत बार्वेहुनि बहीरवांिस बीजें केलें : बहीरवीहुनि केसवासि बीजें केलें : मां केसवीचीया देऊळीयांचीया प्रतिमांसीं खेळु करूं आदरीला : तेयांच्या कानावरि आंगुळीया ठेवीति : नाकावरि ठेवीति : ... ॥',
+    explanation: 'गोविंदप्रभू खेळत खेळत बहिरव मंदिरात आले. तिथे त्यांनी मूर्तींच्या अवयवांवर बोट ठेवून खेळ केला आणि नंतर चक्रधर स्वामींच्या मस्तकावर हात ठेवून व मूर्तीकडे बोट दाखवून म्हणाले की, \"हा देव नाही, हा (चक्रधर स्वामी) खरा देव आहे!\" अशा प्रकारे गोविंदप्रभूंनी चक्रधर स्वामींच्या साक्षात ईश्वरी रूपाचा उलगडा केला.'
+  },
+  {
+    id: 'lc_p169',
+    bookId: 'leela_charitra',
+    number: 169,
+    title: 'लीळा १६९: बेलौरा संकनाथीं वस्ति',
+    titleEn: 'Leela 169: Beloura Sankanathin Vasti',
+    content: 'बेलौरा येथे संकनाथ मंदिरात प्रभू चक्रधर स्वामींचा मुक्काम झाला आणि भक्तांना दर्शन मिळाले ॥',
+    explanation: 'प्रभू चक्रधर स्वामींनी प्रवासादरम्यान बेलौरा येथील संकनाथ मंदिरात मुक्काम केला.'
+  },
+  {
+    id: 'lc_p170',
+    bookId: 'leela_charitra',
+    number: 170,
+    title: 'लीळा १७०: सीराळां नागनाथीं वस्ति',
+    titleEn: 'Leela 170: Siralan Naganathin Vasti',
+    content: 'सीराळा येथे नागनाथ मंदिरात प्रभू चक्रधर स्वामींचा मुक्काम झाला ॥',
+    explanation: 'प्रभूंचा पुढील मुक्काम सीराळा येथील प्रसिद्ध नागनाथ मंदिरात झाला.'
+  },
+  {
+    id: 'lc_p171',
+    bookId: 'leela_charitra',
+    number: 171,
+    title: 'लीळा १७१: टाकरखेडां वस्ति',
+    titleEn: 'Leela 171: Takarkhedan Vasti',
+    content: 'टाकरखेडा येथे प्रभू चक्रधर स्वामींचा पवित्र मुक्काम झाला ॥',
+    explanation: 'परिभ्रमणातील टाकरखेडा येथील शांत व भव्य वास्तव्याचा उल्लेख या लीळेत येतो.'
+  },
+  {
+    id: 'lc_p172',
+    bookId: 'leela_charitra',
+    number: 172,
+    title: 'लीळा १७२: आसुटीए द्रव्यकथन',
+    titleEn: 'Leela 172: Asutie Dravyakathan',
+    content: 'मग सर्वज्ञें आसुटीएसि बीजें केलें : माहालखूमीचीए देऊळीं आसन जालें : गोसावीं तीं दीसांचा वेचु आणिला होता : तो सरला : बाइसांजवळि तीनि रुवे उरले होते : ते मागांचि सरले : बाइसीं म्हणीतलें : \" बाबा : वेचु सरला : काही वेचावेया नाहीँ :\" \"बटीका : जा गा : सोळें दामीं पोफळफोडणा गाहाणु ठेवा : \" ... ॥',
+    explanation: 'आसुटी येथे खर्च संपल्यामुळे स्वामींनी आपला अडकत्ता (पोफळफोडणा) गहाण ठेवण्यास सांगितले. स्वामींनी आपल्या गुप्त ज्ञानाने मंदिरात जमिनीत पुरलेले सुवर्ण दाखवले, पण ते घेण्याचे नाकारले. स्वामींचे दिव्य तेज पाहून वाण्याने गहाण ठेवलेला अडकत्ता व नाणी सन्मानाने स्वामींना परत केली.'
+  },
+  {
+    id: 'lc_p173',
+    bookId: 'leela_charitra',
+    number: 173,
+    title: 'लीळा १७३: वांठवडां लाखमठीं वस्ति',
+    titleEn: 'Leela 173: Vanthavadan Lakhamathin Vasti',
+    content: 'वांठवडा येथे लाखमठ मंदिरात प्रभू चक्रधर स्वामींनी वस्ती केली ॥',
+    explanation: 'वांठवडा येथील लाखमठ मंदिरात प्रभूंचा मुक्काम झाला.'
+  },
+  {
+    id: 'lc_p174',
+    bookId: 'leela_charitra',
+    number: 174,
+    title: 'लीळा १७४: मांगळौरीं वन्हारदेवी वस्ति : चांगदेवोभटां खेळा अनुमोदन',
+    titleEn: 'Leela 174: Mangalaurin Vanhardevi Vasti : Changadevobhatan Khela Anumodan',
+    content: 'तेथौनि गोसावीं मांगळौरा बीजें केलें : मांगळौरीं वन्हारदेवी गोसावीयांसि वस्ति जाली : मग बाईसीं श्रीचरण प्रक्षाळिले : मां गोसावीं चांगदेवोभटांतें म्हणीतलें : \" बटिका : खेळों जा :\" तवं बाइसीं म्हणीतलें : \" बटिका : तेविचि बाबांचीं धोत्रें रुळीं असति : तींए नेया : मा धूनि घेउनि या :\" ... ॥',
+    explanation: 'मंगळूर येथे वन्हारदेवी मंदिरात मुक्काम असताना चांगदेवभट नदीघाटावर ओल्या मातीची दोन देवळे बनवून \"गोविंदप्रभूंची गुंफा\" आणि \"चक्रधर स्वामींची गुंफा\" असा दोन्ही अवतारांचा खेळ खेळत होते. स्वामींनी नदीघाटावर जाऊन त्यांच्या या सुंदर भक्तीमय खेळाचे कौतुक केले आणि आशीर्वाद दिला.'
+  },
+  {
+    id: 'lc_p175',
+    bookId: 'leela_charitra',
+    number: 175,
+    title: 'लीळा १७५: सेंदुर्जुनीं ब्राह्मणा आभासु कथन',
+    titleEn: 'Leela 175: Sendurjunin Brahmana Abhasu Kathan',
+    content: 'मग गोसावीं सेंदुर्जनासि बीजें केलें : गावांतरे अग्ने वडाखाली गोसावीयांसि आसन जालें : ते ब्राम्हण पींपळाखाली स्तीति भोगीत बैसले असति : तवं बाईसीं म्हणीतलें : \" बाबा : हा पैलु तो ब्राम्हणु नव्हे ?\" ... ॥',
+    explanation: 'सेंदुर्जना येथे एका ब्राह्मणाला पूर्वी प्रभूंच्या दर्शनाने समाधी लागली होती. तो समाधीतच मग्न राहिल्यामुळे स्वामींच्या सांगण्यावरून बाईसाने त्याचे खांदे हलवून त्याला जागे केले. भानावर आलेल्या ब्राह्मणाने धावत येऊन स्वामींचे पाय धरले आणि आपल्या घरी घेऊन जाऊन मोठे आदरातिथ्य केले.'
+  },
+  {
+    id: 'lc_p176',
+    bookId: 'leela_charitra',
+    number: 176,
+    title: 'लीळा १७६: डोडवीहीरां राघवदेवा भेटि',
+    titleEn: 'Leela 176: Dodavihiran Raghavadeva Bheti',
+    content: 'पुर्वी भोगनाराएणीं राघवदेवािस भेटि जाली होती : डोडवीहीरेया गोसावीं बीजें करीत असति : ऐसें राघोभटीं ऐकिलें : मोहोउच्छावो केला : मग घरोघरीं संमार्जनें : चौकरंगमाळिका भरिलीया : गुढीया उभलिया : ... ॥',
+    explanation: 'राघवदेवांनी (राघोभट) स्वामींच्या स्वागतासाठी मोठा महोत्सव केला आणि वाजत-गाजत नाचत त्यांना घरी नेले. त्यांच्या घरात देव्हाऱ्यावर स्वामींचे आसन झाले आणि सर्वांगी सुगंधी चंदनाचा लेप लावून पूजा केली. स्वामींनी राघवदेवांची समाधी अवस्था आणि गोविंदप्रभूंचे त्यांच्यावरील अनुग्रह याविषयी बाईसाला सांगितले.'
+  },
+  {
+    id: 'lc_p177',
+    bookId: 'leela_charitra',
+    number: 177,
+    title: 'लीळा १७७: फुलंबरीए मठीं वस्ति',
+    titleEn: 'Leela 177: Phulambarie Mathin Vasti',
+    content: 'फुलंबरीए गावांतु मढु असे : उत्तरामुख : तेथ गोसावीयांसि वस्ति जाली : तवं सर्वज्ञें म्हणीतलें : \" बाइ : जाण पां हा मढु कवणें केला ?\" बाईसीं म्हणीतलें : \" बाबा : नेणें :\" सर्वज्ञें म्हणीतलें : \" बाइ : कव्हणी एकु ब्राम्हणु वाटा जातु होता... \" ॥',
+    explanation: 'फुलंबरी येथील मठात वास्तव्यास असताना स्वामींनी बाईसाला या मठाचा इतिहास सांगितला की, एका प्रवाशाला गुप्तपणे मिळालेल्या सिद्धरसाने (पारसमणी सदृश रस) बनवलेल्या सोन्यातून हा भव्य मठ बांधला गेला होता. यातून स्वामींचे सर्वज्ञत्व सिद्ध होते.'
+  },
+  {
+    id: 'lc_p178',
+    bookId: 'leela_charitra',
+    number: 178,
+    title: 'लीळा १७८: गद्याणां वनदेवी वस्ति',
+    titleEn: 'Leela 178: Gadyanan Vanadevi Vasti',
+    content: 'गद्याणा गावां पश्चीमे टॅकावरि पुर्वामुखें वनदेवाचें देऊळ : तेथ गोसावीयांसि वस्ति जाली : ॥',
+    explanation: 'गद्याणा येथील डोंगरावरील शांत आणि निसर्गरम्य वनदेवी मंदिरात प्रभू चक्रधर स्वामींचा मुक्काम झाला.'
+  },
+  {
+    id: 'lc_p179',
+    bookId: 'leela_charitra',
+    number: 179,
+    title: 'लीळा १७९: एळापुरीं राजवीहारीं अवस्थान',
+    titleEn: 'Leela 179: Elapurin Rajaviharin Avasthan',
+    content: 'मग तेथौनि गोसावीं कटकावरोनि एळापूरा बीजें केलें : राजवीहारावरील वाट : तेथ गोसावी घाट उतरले : लेणां राजवीहारीं अवस्थान जालें : तेथ गोसावीयांसि माचेयावरि पुजाअवसूरू होए : आरोगण होए :... ॥',
+    explanation: 'स्वामी एळापूर (एलोरा) येथे आले. तिथल्या प्रसिद्ध राजविहार (लेण्यांच्या मुख्य मंचावर) त्यांचा मुक्काम झाला. चांगदेवभट गावातून भोजनाचा खर्च आणत असत. इथे प्रभूंचा ३ दिवस मुक्काम झाला.'
+  },
+  {
+    id: 'lc_p180',
+    bookId: 'leela_charitra',
+    number: 180,
+    title: 'लीळा १८०: घोर सब्द श्रवण',
+    titleEn: 'Leela 180: Ghor Sabda Shravan',
+    content: 'एकु दीस रात्रीं बाइर्सें नीजंलीं होतीं : तवं वसो डरों लागले : बाइला लेकरूवांतें परिंयदती : भालुवा भूंकति : एकें एकांतें गोष्टी सांगतें असतीं : पाखीरूवांचे सब्द : ऐसे नाना सब्द बाइर्सें आइकीत : आणि भीती : ... ॥',
+    explanation: 'एलोराच्या लेण्यांमध्ये रात्रीच्या वेळी ऐकू येणाऱ्या श्वापदांच्या व विविध अद्भूत आवाजांमुळे बाईसा घाबरली. स्वामींनी सांगितले की या तिथल्या वनदेवता आहेत ज्या रात्री स्वेच्छेने विहार करतात. बाईसाच्या विनंतीवरून स्वामींनी शेजारीच असलेल्या भव्य चतुर्विधांच्या मठात मुक्काम हलवला, जेथे त्यांचा १० महिने मुक्काम झाला.'
+  },
+  {
+    id: 'lc_p181',
+    bookId: 'leela_charitra',
+    number: 181,
+    title: 'लीळा १८१: उपाधीयां भेटि',
+    titleEn: 'Leela 181: Upadhiyan Bheti',
+    content: 'एकीं दीसीं बाईसीं म्हणीतलें : \" बाबा : सांपें कव्हणी बाबांचीं भगतिजनें नैएति ? मज अळसु लागु असे : बाबा :\" सर्वज्ञें म्हणीतलें : \" बाइ : एती : पाणीभातु सांचा :\" ... ॥',
+    explanation: 'बाईसाने जुने भक्त भेटायला न आल्याबद्दल चिंता व्यक्त केली असता स्वामींनी सांगितले की ते लवकरच येतील. देवगिरीहून आलेले दादोस आणि त्यांच्या सहकाऱ्यांनी उपाध्यांना (जानोपाध्ये) स्वामींचा शोध घेण्यासाठी मठात पाठवले. बंद दाराआड ध्यानस्थ प्रभूंच्या दिव्य तेजाने अंधारी खोली उजळून निघाली आणि जानोपाध्यांना दर्शन झाले.'
+  },
+  {
+    id: 'lc_p182',
+    bookId: 'leela_charitra',
+    number: 182,
+    title: 'लीळा १८२: तथा ईश्वरप्रतीति पुसणें',
+    titleEn: 'Leela 182: Tatha Ishwarapratiti Pusane',
+    content: 'सर्वज्ञें म्हणीतलें : \" बटीका : माहात्मा तुमचां गावीं असे कीं ?\" \" जी जी : असे :\" \" माहात्म्यातें सीक्षामुत्र वर्तें ?\" \" जी जी : वर्ते :\" \" तेथ तुम्ही जा ?\" \" जी जी : जाओं :\" गोसावीं पुसिलें : \" बटिका : एथ आणि माहात्म्यांवरि तुम्हां कैसी बुधि ?\" उपाधीये उगेचि राहिले : ... ॥',
+    explanation: 'स्वामींनी जानोपाध्यांना विचारले की, इतर महात्म्यांमध्ये आणि माझ्यामध्ये तुमच्या मनात काय फरक आहे? उपाध्यांनी सारखीच भावना असल्याचे सांगताच बाईसा चिडली. परंतु स्वामींनी शांतपणे जानोपाध्यांना उपदेश केला की, महात्मा हा एक जीव आहे, तर देव केवळ एक आणि अद्वितीय साक्षात ईश्वर आहे. नंतर स्वामींनी त्यांना टिळा लावून प्रसाद दिला.'
+  },
+  {
+    id: 'lc_p183',
+    bookId: 'leela_charitra',
+    number: 183,
+    title: 'लीळा १८३: आत्मतीर्थ प्रसंसा',
+    titleEn: 'Leela 183: Atmatirtha Prasansa',
+    content: 'सर्वज्ञें म्हणीतलें : \" बटीका : तुमचां गावीं आत्मतीर्थ एक असे कीं ?\" उपाधीं म्हणीतलें : \" जी जी : असे :\" \" तेथ तुम्हीं जा ?\" \" ना जी : पंचपवीं जाओं :\" सर्वज्ञें म्हणीतलें : \" बटीका : तेथ प्रतीहीं जाइजे हो... \" ॥',
+    explanation: 'स्वामींनी जानोपाध्यांच्या गावातील \"आत्मतीर्थ\" या पवित्र स्थानाची प्रशंसा केली आणि सांगितले की तिथे साक्षात पहिले अवतार श्री दत्तात्रय प्रभूंची अखंड प्रतिष्ठा असल्यामुळे रोज वंदन करण्यास जात जावे.'
+  },
+  {
+    id: 'lc_p184',
+    bookId: 'leela_charitra',
+    number: 184,
+    title: 'लीळा १८४: देवां: सीक्षां भेटि',
+    titleEn: 'Leela 184: Devan: Sikshan Bheti',
+    content: 'देवीं म्हणीतलें : \" जानोए उसीरू लाविला : \" म्हणौनि कोपों लागले : मग अवघे दर्शनासि नीगाले : तवं उपाधीए वाटे एत भेटले : देवीं म्हणीतलें : \" हैं काइ जानो ? गेलास तो गेलासिचि : तेथचि बैसोनि राहिलास... \" ॥',
+    explanation: 'जानोपाध्यांना उशीर झाल्यामुळे दादोस इत्यादी भक्त त्यांच्यावर रागावले. वाटेत जानोपाध्यांच्या अंगावर स्वामींची माळ व टिळा पाहून ते मठात दर्शनाला आले. स्वामींनी सर्वांना प्रेमाने मिठी मारून स्वागत केले आणि सर्वांनी मिळून एकत्र आनंदाने भोजन केले.'
+  },
+  {
+    id: 'lc_p185',
+    bookId: 'leela_charitra',
+    number: 185,
+    title: 'लीळा १८५: द्रोढ पुरूख नाम करणें',
+    titleEn: 'Leela 185: Drodh Purukh Nam Karane',
+    content: 'एरी दीसीं अवघे उदीयांच्या पुजाअवसूरासि आले : पुजाअवसूरू जाला : मग सर्वज्ञें म्हणीतलें : \" हा पैलु मढु रीता असे : एथ बीढार घेउनि या :\" ... ॥',
+    explanation: 'भोजनसमयी भाकरी भाजणाऱ्या जानोपाध्यांना विचारले की तू एका वेळेस किती भाकरी खाऊ शकतोस? तेव्हा त्यांनी दीड भाकरी (द्रोढ रोटी) खाणार असल्याचे सांगितले. हे ऐकून स्वामींनी हसत-खेळत त्यांचे नाव \'द्रोढ पुरुष\' असे ठेवले.'
+  },
+  {
+    id: 'lc_p186',
+    bookId: 'leela_charitra',
+    number: 186,
+    title: 'लीळा १८६: लेणां सायापुरूख दाखवणें',
+    titleEn: 'Leela 186: Lenan Sayapurukh Dakhavane',
+    content: 'गोसावीयांसि एकु दीं उदीयांचा पुजाअवसूरू जाला : मग वीहरीणासि बीजें केलें : एका लेणेयाचां चौकीं आसन जालें : सवें चांगदेवोभट : बाइसेमुखकरूनि समस्तें भगतीजनें असति : ... ॥',
+    explanation: 'लेण्यांच्या एका विशिष्ट भागात उभे राहिल्यावर भक्तांना भिंतीवर कमळाची आभूषणे घातलेल्या दिव्य पुरुषाची आकृती (छायापुरुष) दिसली. स्वामींनी निरूपण केले की, ज्या सिद्ध शिल्पकाराने या लेण्या कोरल्या, त्यांनी आपली सावली या भिंतीवर जतन करून ठेवली आहे.'
+  },
+  {
+    id: 'lc_p187',
+    bookId: 'leela_charitra',
+    number: 187,
+    title: 'लीळा १८७: आगमसमो कथन',
+    titleEn: 'Leela 187: Agamasamo Kathan',
+    content: 'एकु दीं उदीयांचा पुजाअवसूरू जाला : गोसावीं माणिकेस्वराचेया लेणेयासि वीहरणासि बीजें केलें : तीए लेणां वीवर : तेणें वीवरें गोसावीं बीजें केलें : बाईसीं म्हणीतलें : \" हैं काइ बाबा : आपण कें जाइजत असिजे ?\" सर्वज्ञें म्हणीतलें : \" भीया नको बाइ :\" ... ॥',
+    explanation: 'स्वामींनी भक्तांना माणिकेश्वर लेण्यांच्या एका गुप्त अंधाऱ्या विवरातून (बोगद्यातून) प्रवास करवला, जिथे सिद्ध सर्पांचे दर्शन झाले. गुप्त मार्गाने बाहेर पडल्यावर ते पुन्हा एलोरा गावातच आले. स्वामींनी सांगितले की हा संपूर्ण डोंगर आतून पोकळ करून अद्भूत शिल्प कोरले गेले आहे, जे केवळ सिद्ध पुरुषच जाणू शकतात.'
+  },
+  {
+    id: 'lc_p188',
+    bookId: 'leela_charitra',
+    number: 188,
+    title: 'लीळा १८८: चांगदेवोभटां लेणां परीखू',
+    titleEn: 'Leela 188: Changadevobhatan Lenan Parikhu',
+    content: 'गोसावीं वीहरणा एका लेणेयासि बीजें केलें : चांगदेवोभटातें कांटेवसैये पाठवीलें : सर्वज्ञें म्हणीतलें : \"बटिका : तुम्ही पैला लेणेया जा :\" चांगदेवोभट गेले : तवं एरांचे पाए एरांकडे : एकांचीं रुंडें : एकांचीं मुखें टकमकां वास पाहातीं : एकें वाजतें : कुंथतें : परीयेंदेतें : एन्हवीं तरि जडें : परि चेतनें ऐसीं वाटतीं : तैसें देखोनि भीयाले : ते माघौतें गोसावीयांपासि आले : दंडवत घातलें : श्रीचरणां लागले : सर्वज्ञें म्हणीतलें : \"कां गा बटिका : गेलेति : मां काइ देखिलें ?\" तेहीं जैसें देखिलें तैसी अवघी वेवस्था गोसावीयांपासि सांगींतली : सर्वज्ञें म्हणीतलें : \"बोलवीतेति तरि बोलती : साउमां मार्ग पुसतेति तरि सांगती : साउमे जातेति तरि आणिक आश्चर्यें देखतेति :\" ॥',
+    explanation: 'प्रभू चक्रधर स्वामी भक्तांसह एलोरा (एळापूर) येथील लेण्यांमध्ये विहार करत होते. त्यांनी चांगदेवभटांना (भटोबासांना) एका दूरवरच्या निर्जन लेण्यात पाठवले. चांगदेवभट तिथे गेले असतांना त्यांना अत्यंत अद्भूत व भयानक दृश्य दिसले—निर्जीव पाषाणमूर्तीचे पाय भलतीकडेच वळलेले होते, काही मूर्तींची केवळ मुंडकी (रुंडे) आणि मुखे डोळे विस्फारून टकमक पाहत होती, तर काही मूर्तींमधून वाद्य वाजवल्यासारखे, कुंथल्यासारखे किंवा ओरडल्यासारखे आवाज येत होते. पाषाणाची असूनही ती शिल्पे जणू काही सजीव (चेतन) असल्यासारखी भासत होती. हे पाहून चांगदेवभट अत्यंत घाबरले आणि घाबरून परत स्वामींपाशी आले. त्यांनी दंडवत घालून पाहिलेले सर्व प्रसंग स्वामींना सांगितले. त्यावर सर्वज्ञ प्रभू चक्रधर स्वामींनी या अद्भूत रहस्याचे उद्घाटन केले की, \"बटिका, जर तू त्यांना बोलते केले असतास तर त्या मूर्ती बोलल्याही असत्या, जर तू त्यांना पुढचा मार्ग विचारला असता तर त्यांनी तुला मार्गही दाखवला असता, आणि जर तू आणखी पुढे गेला असतास तर तुला यापेक्षाही मोठे दिव्य चमत्कार पाहायला मिळाले असते.\" या लीळेतून प्रभू चक्रधर स्वामींचे सर्वज्ञत्व आणि या प्राचीन लेण्यांच्या ठिकाणी असलेल्या सिद्ध शक्तींच्या अस्तित्वाचे दर्शन घडते।'
+  },
+  {
+    id: 'lc_p189',
+    bookId: 'leela_charitra',
+    number: 189,
+    title: 'लीळा १८९: आपदेवोभटां प्रल्हादवीद्यां नीखेडु',
+    titleEn: 'Leela 189: Aapadevobhatan Pralhadavidyan Nikhedu',
+    content: 'आपदेवोभट ऐसें एका लेणेया वस्त्रें धों गेले : वस्त्रें धूतलीं : वाळतें घातलीं : बैसले : तवं पुरूखु एकु आला : तो तेयां खांडेवरि घेओं लागला : जैसें पाणीयांतु खांडें वाहुनि जाए तैसें जाए : तवंतवं तेयांसि सुख होए : ऐसा उसीरू जाला : मग गोसावीयांपासि आले : दंडवत घातलें : श्रीचरणां लागले : मग गोसावीं पुसिलें : \" उसीरू कां गा लाविला : भागेया ?\" \" जी जी : मी एका लेणेयासि गेलां होतां : वस्त्रें धों : वस्त्रें धूनि वाळतें घातलीं : मग बैसालां : तवं पुरूखु एकु आला : तो मातें खांडेवरि घेओं लागला : खांडेवरि घे तवंतवं सुखचि होए : हां जी : तरि तें काइ ?\" सर्वज्ञें म्हणीतलें : \" ते प्रल्हादाचीं वीद्या गा :\" \" हां जी : तरि ते आम्हांसि जाली ?\"',
+    explanation: 'आपदेवभट वस्त्रे धुण्यासाठी एका शांत लेण्यात (ज्याला नागझरी किंवा प्रल्हादविद्या लेणे असेही म्हटले जाते) गेले होते. वस्त्रे धुवून आणि वाळत घालून ते तिथे विसावले असता, अचानक तिथे एक दिव्य पुरुष प्रकट झाला. त्या पुरुषाने आपदेवभटांना आपल्या खांद्यावर घेतले आणि जसे पाण्यात एखादे लाकूड (खांडे) हलकेच तरंगत वाहून जाते, तसे तो त्यांना तरंगवत घेऊन जाऊ लागला. त्या दिव्य स्पर्शाने आपदेवभटांना परम सुखाची आणि आनंदाची प्रचिती आली. या अलौकिक अनुभवामुळे त्यांना मठात परतण्यास उशीर झाला. स्वामींपाशी आल्यावर त्यांनी दंडवत घातला. स्वामींनी उशिरा यायचे कारण विचारले असता, आपदेवभटांनी घडलेला सर्व अद्भूत प्रसंग सांगितला आणि विचारले, \"स्वामी, तो पुरुष कोण होता आणि ते काय होते?\" त्यावर सर्वज्ञ प्रभूंनी स्पष्ट केले की, \"ती साक्षात भक्त प्रल्हादाची विद्या (प्रल्हादविद्या) होती.\" या लीळेतून स्वामी आपल्या भक्तांच्या ठिकाणी जागृत होणाऱ्या दिव्य शक्ती आणि अनुभूतींचे सहज निरूपण करतात, ज्याने भक्ताला अलौकिक ब्रह्मानंदाचा लाभ होतो।'
+  },
+  {
+    id: 'lc_p190',
+    bookId: 'leela_charitra',
+    number: 190,
+    title: 'लीळा १९०: सप्तदसकळानीक्षेपु',
+    titleEn: 'Leela 190: Saptadasakalanikshepu',
+    content: 'आपदेवोभट अणकौए धोतें धों गेले होते : धोतें धूनि वाळतें घातलीं : बैसले : आणि तेयां स्तीति जाली : आणि देखों लागले : तवं वरीखां सोळांची सोवासिनि एकि आली : खोडसवारिखी : खळिचा साउला : खळिची चोळी : हातीं सोनेयांचीं करे : तेयांच्या माथेयावरि धार घातली : तवंतवं तेयां सुखचि होए :ऐसी स्तीती केतुलु एकु काळु भोगिली : मग स्तीति भंगली : मग आले : गोसावीयांसि दंडवत घातलें : श्रीचरणां लागले : मग गोसावीं पुसिलें : \" उसीरू कां गा लाविला भागेया ?\" मग तेहीं मागील अवघें वृतांत गोसावीयांपुढां सांगींतलें : \" जी जी : मी अणकौए धोतें धों गेलां : धोतें धुतलीं : वाळतें घातलीं : बैसलां : तवं अस्त्री एकि आली : खळिचा साउला : खळिची चोळी : हातीं सोनेयांचीं करे : माझेया माथेयावरि धार घातली : तवंतवं मज सुखचि होए : हां जी : तरि ते काइ ?\" सर्वज्ञें म्हणीतलें : \" ते चंद्राची सतरावीं कळा गा :\" \" हां जी : तरि ते आम्हांसि जाली ?\" गोसावीं श्रीमुगुटु हालवीला : \" ते तुम्हां नाहीं :\" \" हां जी : तरि ते काइ ?\" सर्वज्ञें म्हणीतलें : \" ते एथौनि दीसे : कां एथचीया जवळीकां दीसे :\" ॥',
+    explanation: 'आपदेवभट पुन्हा एकदा वस्त्रे धुण्यासाठी गेले असताना, ध्यानस्थ बसले आणि त्यांना समाधी (स्तीति) लागली. त्या अवस्थेत त्यांना एक अपूर्व दृश्य दिसले—सुमारे सोळा वर्षांची एक अत्यंत देखणी युवती (सोवासिनि) आली, जिने खळ घातलेले पातळ आणि खळीची चोळी नेसली होती, आणि तिच्या हातात सोन्याची कडी होती. तिने आपदेवभटांच्या मस्तकावर अमृताची धार धरली, ज्याने त्यांना असीम ब्रह्मानंद व सुखाचा अनुभव आला. काही काळ या दिव्य समाधी सुखात घालवल्यानंतर त्यांची समाधी भंगली. मठात परतल्यावर त्यांनी स्वामींना दंडवत घालून ही हकीकत सांगितली व विचारले, \"स्वामी, ती स्त्री कोण होती आणि तिने माझ्या मस्तकावर धार का धरली?\" सर्वज्ञ प्रभूंनी सांगितले, \"ती चंद्राची सतरावी कळा (अमृताची सोळा कळांपलीकडची सतरावी अमृत संजीवनी कला) होती.\" आपदेवभटांनी विचारले, \"स्वामी, मग ती मला प्राप्त झाली का?\" तेव्हा स्वामींनी आपले डोके (श्रीमुगुट) हलवून हसत नकार दिला आणि सांगितले की, \"ती तुला स्वतंत्रपणे प्राप्त झालेली नाही; तर ती केवळ माझ्या (परमेश्वराच्या) सान्निध्यामुळे आणि माझ्या जवळीकीमुळे (सन्निधान महिमा) तुला प्रचितीस आली आहे.\" या लीळेतून परमेश्वर सान्निध्याचे अगाध सामर्थ्य आणि भक्ताला होणाऱ्या दिव्य प्रचितीचे रहस्य स्पष्ट होते।'
+  },
+  {
+    id: 'lc_p191',
+    bookId: 'leela_charitra',
+    number: 191,
+    title: 'लीळा १९१: सारंगपंडितां भेटि',
+    titleEn: 'Leela 191: Sarangapanditan Bheti',
+    content: 'सारंगपंडीत प्रतीष्ठानाहुनि नीगाले : सवें मोकानंद : एकाइसें : देमाइसें : घोडेँ ऐसी गोसावीयांच्या दरीसनास आंली : तीएं कटकावरोनि एतें होतीं : कटकीं हातांतुनि एताति : तवं ओलेया पोफळांची रासि देखिली : तीएं पोफळें घेतलीं : केळें वीकतें होतीं : तीएं केळें घेतलीं : आंबें घेतले : मोकानंदापासि दुरडीएसि दीधलीं : ऐसे नागझरीएसि आले : उतरले : सीळीया रोटीया होतीया : एकाइसें म्हणीतलें : \" पंडितो : एथ जेऊं : मग गोसावीयांच्या दरीसनास जाओं : \" तवं देमाईसीं म्हणीतलें : \" हें काइ एकाए ? गोसावीयांचां आखरीं गोसावीयांसि नेभटतां कैसीं जेऊँ ? जेऊं : मग कैसीं गोसावीयांच्या दरीसनास जाओं ?\" तवं एकाईसीं म्हणीतलें : \" सरा ओ परतीं : पंडित भुकाळू : पीत करपैल : गोसावीयांच्या दरीसनास ऐसाचि पुढां भूक सुनि जाओंनि तरि काइ बाइसें आम्हांसि लवकरि जेऊं घालितें असति ?\" मग देमाईसीं सारंगपंडितांतें म्हणीतलें : \" हें काइ पंडितो : एथियेचा एथ जेऊं : मां कैसे गोसावीयांच्या दरीसनास जाओ ?\" तवं सारंगपंडितीं म्हणीतलें : \" ना हें तैसे आमच्या गोसावीयांचां ठाईं कांही नाही : तीनि वेळ जेवावें : आणि दरीसनास जावें : तुम्ही गोसावीयांपुढें नको सांगों : \" देमाईसीं म्हणीतलें : \" हें काइ पंडितो : मा गोसावीयांपुढां काइ सांगावें लागत असे ? गोसावी काइ नेणति ?\" तेहीं म्हणीतलें : \" जाणति तें तैसेंचि : परि तुम्ही नको सांगों : \" ... ॥',
+    explanation: 'पैठणहून (प्रतिष्ठान) सारंगपंडित, मोकानंद, एकायसा आणि देमायसा हे घोड्यावरून स्वामींच्या दर्शनासाठी एळापूरकडे (एलोरा) निघाले. वाटेत बाजारात त्यांनी ओल्या सुपाऱ्या (पोफळे), केळी आणि आंबे विकत घेतले. ते भुकेले असल्यामुळे नागझरीजवळ विसावले असता, एकायसाने तिथेच शिळे अन्न जेवून मग स्वामींच्या दर्शनाला जाण्याचा विचार मांडला. त्यावर देमायसाने आक्षेप घेतला की, \"स्वामींचे दर्शन घेण्यापूर्वी आणि त्यांना भेटण्यापूर्वी आपण आधी कसे जेऊ शकतो? ते योग्य नाही.\" परंतु सारंगपंडित खूप भुकेले असल्याने त्यांनी एकायसाच्या मताला पाठिंबा दिला आणि म्हणाले की \"आपल्या स्वामींच्या ठायी असले कोणतेही कडक नियम किंवा सोवळे-ओवळे नाही. ते परम दयाळू आहेत. आपण आधी जेवून घेऊया आणि मग दर्शनाला जाऊया. फक्त तुम्ही हे स्वामींना सांगू नका.\" देमायसा म्हणाली, \"स्वामी तर अंतर्यामी आहेत, त्यांना न सांगताही सर्व समजते.\" शेवटी ते सर्व जेवले आणि मठात दर्शनाला आले. स्वामींनी हसतमुखाने विचारले, \"दमतीए (देमायसे), आज तुम्हाला येण्यास उशीर का झाला?\" या लीळेतून सारंगपंडितांचा स्वामींच्या उदार व प्रेमळ स्वभावावरील विश्वास आणि स्वामींचे अंतर्यामित्व स्पष्ट होते।'
+  },
+  {
+    id: 'lc_p192',
+    bookId: 'leela_charitra',
+    number: 192,
+    title: 'लीळा १९२: सारंगपंडितांसीं पोफळी खेळु',
+    titleEn: 'Leela 192: Sarangapanditansin Pophali Khelu',
+    content: 'मग गोसावी पोफळें पाहात होते : गोसावीं एकु पोफळ श्रीकरीं घेतलें : सर्वज्ञें म्हणीतलें : \"पांडेया : जाण पां गा : हें पोफळ कैसें ?\" तवं तेहीं म्हणीतलें : \"ना जी : नीकें : हें नवीए रासिचीं निवडुनि घेतलीं :\" \" एथौनि निकें नव्हे : म्हणिजत असिजे :\" \"ना जी : हें नीकें :\" गोसावीं एक पोफळ फोडणेनि फोडिलें : तवं आंतु काळें नीगालें : \" हैं काइ जी : नवी रासि आली होती : तेयांतु निवडुनि मीयां घेतलीं : तरि एथ पाणी मेलें असेल : आणि काइ जी :\" मग गोसावी मागौंतीं दोन्ही सकलें मेळविलीं : मग म्हणीतलें : \"पांडेया : जाण पां गा : हें पोफळ कैसें असे ?\" \" ना जी : काळेंकुहीट असे :\" सर्वज्ञें म्हणीतलें : \"एथौनि नीकें म्हणिजत असिजे :\" सारंगपंडितीं म्हणीतलें : \"ना जी : आतां नीकें काइ होइल ?\" सर्वज्ञें म्हणीतलें : \" नीकें होए तरि तुमचीए डोएचे जाए : ना तरि हें जाए :\" म्हणौनि गोसावी टोपरेयाची बालेंआंतु आसु होती तीएकडे श्रीकरू केला : तीहीं म्हणीतलें : \"हो काय जी : हें गोसावीयांचीचि नव्हें ?\" म्हणौनि आणिलें : मग गोसावीं ऐसें करूनि दाखविलें : तवं आंतु पीवळें ऐसें चोखट नीगालें : गोसावीं टोपरेयांकडे श्रीकरू घालुनि टोपरेयाचीए बालेंआंतु आसु होती ते घेतली : बाइसांकडे टाकुनि घातली : \" बाइ : हें घेया : एथियेया उपेगासि नेया :\" \" जी जी : हे गोसावीयांचीचि आसु गोसावीं घेतली : मीयां अभिळामू केला :\" ॥',
+    explanation: 'सारंगपंडितांनी आणलेली पोफळे (सुपाऱ्या) पाहून स्वामींनी त्यातील एक सुपारी हातात घेतली आणि विचारले, \"पांडेया (सारंगपंडित), सांग बघू ही सुपारी कशी आहे?\" सारंगपंडित म्हणाले, \"स्वामी, ही अगदी नवीन पिकातील उत्तम निवडून घेतलेली सुपारी आहे.\" स्वामी म्हणाले, \"ही आतून चांगली नाही.\" सारंगपंडित आपल्या मतावर ठाम राहिले. तेव्हा स्वामींनी अडकित्त्याने (फोडणे) ती सुपारी फोडली, तर ती आतून पूर्णपणे काळीकुट्ट निघाली. सारंगपंडित ओशाळले. मग स्वामींनी ती दोन्ही शकले पुन्हा एकत्र जोडली आणि विचारले, \"पंडिता, आता सांग ही सुपारी कशी आहे?\" पंडित म्हणाले, \"स्वामी, ही तर पूर्णपणे काळीकुट्ट आहे.\" स्वामी हसून म्हणाले, \"आता मी सांगतो की ही सुपारी आतून उत्तम निघेल. जर तसे झाले नाही, तर माझे डोळे जातील किंवा ही सुपारी तरी नष्ट होईल!\" असे म्हणून स्वामींनी आपल्या हाताने सुपारीवर दिव्य दृष्टी टाकली आणि ती पुन्हा उघडली असता, ती सुपारी आतून अत्यंत पिवळीधमक व चोखट (शुद्ध) निघालेली दिसली. त्यानंतर स्वामींनी सुपाऱ्यांमधील चांगल्या सुपाऱ्या निवडून बाईसांकडे दिल्या आणि मठात वापरण्यास सांगितले. या लीळेतून प्रभू चक्रधर स्वामींच्या संकल्पशक्तीचे, दिव्य चमत्काराचे आणि सृष्टीच्या नियमांनाही बदलण्याच्या अलौकिक ईश्वरी सामर्थ्याचे दर्शन घडते।'
+  },
+  {
+    id: 'lc_p193',
+    bookId: 'leela_charitra',
+    number: 193,
+    title: 'लीळा १९३: तथा अंब्रग्रहण',
+    titleEn: 'Leela 193: Tatha Ambragrahana',
+    content: 'सारंगपंडितीं आंबे गोसावीयांलागोनि आणिला होते : गोसावीयांसि ओळखविले होते : तेयांतुलु एकु आंबा श्रीकरीं घेतला : गोसावीं अवग्रहण केला : मागुता तेथ ठेविला : मग बाइसीं अवघी आइति केली : बाइसें पीळितें होतीं : तवं तेया आंबेया रसु न नीगे : मग बाईसीं पुसिलें : \" हां बाबा : अवघेयां आंबेया रसु नीगाले : या आंबेया रसु कां न नीगे ?\" सर्वज्ञें म्हणीतलें : \" बाइ : तो एथौनि स्वीकारिला होता :\" \" हैं काइ बाबा : याचार देदु नाचुकेंँ :\" तैसेंच सर्वज्ञें म्हणीतलें : \" बाइसे : वीखया वीखो तो ऐसा भोगी : बाइ : कळीयोगीं वीखो असे : परि वीखया नाही : विखो भोगूं कव्हणीचि नेणे : जेउं कव्हणीचि नेणे : घांसु घेओं कव्हणीचि नेणे : कीतीया फोडी घेयावीया : वीडिया घेओं कव्हणीचि नेणे\" : बाईसीं म्हणीतलें : \" तरि हे राएमंडळीक : काइ बाबा ?\" सर्वज्ञें म्हणीतलें : \" बाइसे : राएमंडळीक आदिकरूनि सकळें नीरोधपरीहारीए : \" यावरि सर्वज्ञें म्हणीतलें : \" नरवीर आति : परि वीखयवीर नाहीं : धर्मनष्ट आति : परि वीखयेनष्ट नाहीं : बाइ : वीखो भोगूं श्रीकृष्णचक्रव्रती जाणती : द्वापारीं वीखो होता : आणि वीखया होता : \" ॥',
+    explanation: 'सारंगपंडितांनी आणलेल्या आंब्यांपैकी एक आंबा स्वामींनी आपल्या हातात घेऊन त्याचा वास घेतला (अवग्रहण केले) आणि परत ठेवून दिला. नंतर जेव्हा बाईसाने सर्व आंब्यांचा रस काढण्यास सुरुवात केली, तेव्हा इतर सर्व आंब्यांचा रस निघाला, पण स्वामींनी वास घेतलेल्या आंब्यातून अजिबात रस निघाला नाही. बाईसाने आश्चर्याने विचारले, \"स्वामी, या आंब्याचा रस का निघत नाही?\" त्यावर सर्वज्ञ प्रभूंनी सांगितले, \"बाईसा, तो आंबा मी केवळ सुवासानेच ग्रहण (स्वीकार) केला होता, त्यामुळे त्याचे सत्त्व संपले आहे.\" या प्रसंगावरून स्वामींनी अत्यंत गहन अध्यात्म निरूपण केले की, कलियुगात लोक विषयांचे सेवन करतात पण खऱ्या अर्थाने विषय कसे भोगावेत हे कोणालाही ठाऊक नाही. विषयभोग कसा घ्यावा, त्याचा आस्वाद कसा घ्यावा, याचे ज्ञान कलियुगात कोणालाच नाही. \"कळीयुगीं वीखो असे : परि वीखया नाही\" म्हणजेच भोग्य वस्तू (विषय) आहेत, परंतु त्या भोगणारा खरा ज्ञाता पुरुष (विषया) नाही. पूर्वी द्वापारयुगात श्रीकृष्ण चक्रवर्ती हेच खऱ्या अर्थाने विषयभोगाचे मर्म जाणणारे दिव्य पुरुष होते. परमेश्वर हाच खऱ्या अर्थाने अलिप्त राहून भोगांचे नियमन करणारा एकमेव पुरुष आहे. या लीळेत मळमळीत प्रपंचातील अज्ञानाचा निषेध करून ईश्वरी ज्ञानभोगाचे श्रेष्ठत्व सांगितले आहे।'
+  },
+  {
+    id: 'lc_p194',
+    bookId: 'leela_charitra',
+    number: 194,
+    title: 'लीळा १९४: तथा श्रीप्रभू दाखवणें',
+    titleEn: 'Leela 194: Tatha Shriprabhu Dakhavane',
+    content: 'एकु दीसु गोसावी श्रीप्रभूगोसावीयांची महीमा नीरोपीत होते : तवं सारंगपंडितीं म्हणीतलें : \" जी जी : मज श्रीप्रभू दाखवावे :\" \" ते तेथ कीं गा पांडेया :\" \" ना जी : गोसावी येथ दाखवीती तरि काइ नेदखीजे ?\" यावरि गोसावी उगेचि होते : मग वीळिचांचीए वेळीं गोसावीं एणकैकडे बीजें केलें : मार्गी सर्वज्ञें म्हणीतलें : \" मघां काइ म्हणत होतेति गा पांडेया ?\" \" जी जी : श्रीप्रभू दाखवावे : ऐसें म्हणत होतां जी :\" सर्वज्ञें म्हणीतलें : \" तरि हे घेया गा श्रीप्रभू : एणकें डें टेंक उतरत असति :\" देखिलें : सर्वज्ञें म्हणीतलें : \" चांग पाहा : मग दंडवत घाला :\" तवं सावळी श्रीमुर्ति : नाभ चुंबीत खाड : मोकळे केशकलापु : मोकळा कासोटा : उत्तरासंगें धोत्र : हांस्य करीत : टाळी वांत : गगनाची वास पाहाति : आपणेयां आपण बोलति : ऐसे एत देखिले : दंडवतांचें मान जालें : तवं सर्वज्ञें म्हणीतलें : \" घाला घाला दंडवतें :\" मग दंडवत घातलें : श्रीचरणां लागले : उठीले : तवं काहीँ नेदखतीचि : मग गोसावीयांचेया श्रीचरणां लागले : ॥',
+    explanation: 'एके दिवशी प्रभू चक्रधर स्वामी आपल्या मठात श्री गोविंदप्रभूंची अगाध महिमा सांगत होते. ते ऐकून सारंगपंडितांनी अत्यंत व्याकुळतेने विनंती केली, \"स्वामी, मला श्री गोविंदप्रभूंचे दर्शन घडवा.\" स्वामींनी सुरुवातीला विषय टाळला, पण संध्याकाळच्या वेळी (विळिचांचीए वेळी) स्वामी भक्तांसह बाहेर फिरण्यास निघाले असता त्यांनी वाटेत सारंगपंडितांना विचारले, \"पंडिता, मघाशी तू काय म्हणत होतास?\" पंडितांनी पुन्हा दर्शनाची इच्छा व्यक्त केली. तेव्हा स्वामींनी समोरच्या टेकडीकडे बोट दाखवून म्हटले, \"पंडिता, बघ ते समोर टेकडीवरून श्री गोविंदप्रभू खाली उतरत आहेत. नीट न्याहाळून बघ आणि दंडवत घाल!\" सारंगपंडितांनी पाहिले तर सावळ्या रंगाची अत्यंत तेजस्वी आणि विलोभनीय श्रीमुर्ती, बेंबीपर्यंत रुळणारी दाढी (नाभ चुंबीत खाड), खांद्यावर सुटलेले मोकळे केश, सैलसर नेसलेला कासोटा, हसतमुख चेहरा, टाळ्या वाजवत आणि आकाशाकडे पाहत स्वतःशीच काहीतरी बोलत श्री गोविंदप्रभू चालले होते. स्वामींच्या सांगण्यावरून सारंगपंडितांनी त्यांना साष्टांग दंडवत घातला, पण जेव्हा ते जमिनीवरून उठले, तेव्हा तिथे कोणीच नव्हते. केवळ प्रभू चक्रधर स्वामी उभे होते. या लीळेतून दोन्ही अवतार हे स्वरूपतः एकच असून, प्रभू चक्रधर स्वामींनी आपल्या भक्ताला गोविंदप्रभूंचे साक्षात दर्शन घडवून त्यांचे सामर्थ्य आणि कृपा दाखवून दिली।'
+  },
+  {
+    id: 'lc_p195',
+    bookId: 'leela_charitra',
+    number: 195,
+    title: 'लीळा १९५: साळिवाहाना हट्ट नीरोपण',
+    titleEn: 'Leela 195: Salivahana Hatta Niropan',
+    content: 'साळिवाहानु तो माहादेया रायाचा राउत : तो गोसावीयांचेया दरीसनास आला : \" गोसावीयांसि कैसा अवसरू असे ?\" म्हणौनि कव्हणा एकांतें पुसिलें : तेहीं म्हणीतलें : \" ना गोसावीयांसि आरोगण होती असे :\" मग बाहिरि पटिसाळे बैसला : नाडी फूंकु लागला : तो नाडी फूंकुनि बैसे : नाडी फूंकोनि साठी आरोगण जाली : मग गोसावीं बाहिरि बीजें केलें : आसन जालें : तेणें दंडवत केलें : श्रीचरणां लागला : मग गोसावीयांतें पुसिलें : \" जी जी : हट्ट जाणा ?\" गोसावीं श्रीमुगुट नीराकारिलें : \" तरि गोसावी काइ जी ?\" सर्वज्ञें म्हणीतलें : \" हें नेणें : \" मग गोसावीं तेयातें पुसिलें : \" तुम्ही जाणा ?\" तेहीं म्हणीतलें : \" तरि काइ जी : हट्ट तो आम्हींचि जाणीं :\" सर्वज्ञें म्हणीतलें : \" पाओँ : एथ बोला पां :\" \" बोलों लागले : \" जारकु : १ : पुरुकु : २ : कुंभकु : ३ : वाहाटकु : ४ : हटातळि वळीतपळीत धरे :\" सर्वज्ञें म्हणीतलें : \" ऐसा जरि हट्ट तुम्ही जाणा तरि हें ऐसें काइ ?\" म्हणौनि श्रीकरिचीया आंगुळीया कानसुलांकडे दाखवीलें : तेयांचीं कानसुलें नावेक म्हांतारीं जालीं होतीं : तीहीं म्हणीतलें : \" ना जी : हा आमचा अप्रेतनु :\" यावरि गोसावी उगेचि राहिले : मग सर्वज्ञें म्हणीतलें : \" हट्ट तो काइ ऐसा ? : हट्ट तो ऐसा कीं :\" मग गोसावीं हट्ट नीरोपिली : \" हटें वय स्थंभे : वळीतपळीत वैसा जीणे : मृत्यु जींपति : हट्ट अभ्यासीतांचि वळीतपळीत धरे : मा अभ्यासी तया काहीँ म्हणवावें असे :\" साळिवाहानें म्हणीतलें : \" जी जी : हें आम्हीं परीसों नेणों : मां बोलौनि काइ ? हें गोसावींचि बोलावें आणि गोसावीचि परिसावें जी :\" एतुलेनि तेयाचा गर्वु गेला : मग गोसावीयांसि दंडवत घातलें : श्रीचरणां लागला : मग नीगाला : ॥',
+    explanation: 'देवगिरीचा राजा महादेव यादव याचा शूर सैनिक (राउत) शालीवाहन हा स्वतःला हठयोगाचा मोठा जाणकार समजत असे. तो स्वामींच्या दर्शनासाठी आला असता, बाहेर ओसरीवर बसून फुत्काराचे प्राणायाम करत आपली योगशक्ती दाखवू लागला. स्वामींचे भोजन झाल्यावर ते बाहेर आले आणि आसनावर बसले. शालीवाहनाने दंडवत घालून स्वामींना विचारले, \"स्वामी, आपण हठयोग जाणता का?\" स्वामींनी अत्यंत नम्रपणे डोके हालवून नकार दिला आणि म्हटले, \"आम्हाला हे माहीत नाही.\" तेव्हा शालीवाहनाने गर्वाने म्हटले, \"आम्हीच खरे हठयोगी आहोत आणि आम्हीच हा योग जाणतो.\" स्वामींनी त्याला हठयोगाविषयी सांगण्यास सांगितले असता त्याने काही तांत्रिक क्रियांची नावे घेतली (जारक, पूरक, कुंभक, वाहटक). स्वामींनी हसून त्याच्या वयाच्या खुणांकडे बोट दाखवून विचारले, \"जर तुम्ही एवढे मोठे हठयोगी आहात, तर तुमच्या कानशिलापाशी म्हातारपणाच्या सुरकुत्या आणि पांढरे केस का दिसत आहेत?\" शालीवाहन निरुत्तर झाला. मग स्वामींनी त्याला खऱ्या हठयोगाचे निरूपण केले की, \"खरा हठयोग हा शरीराचे वय स्थिर करतो, वळीतपळीत (वार्धक्य) दूर करतो आणि मृत्यूवर विजय मिळवतो. केवळ प्राणायाम करणे म्हणजे हठयोग नाही.\" स्वामींचे हे अलौकिक ज्ञान ऐकून शालीवाहनाचा गर्व गळून पडला आणि त्याने शरण येऊन स्वामींचे पाय धरले. या लीळेतून स्वामींनी बाह्य देखाव्यापेक्षा खऱ्या अध्यात्म आणि योगाचे महत्त्व पटवून दिले आहे।'
+  },
+  {
+    id: 'lc_p196',
+    bookId: 'leela_charitra',
+    number: 196,
+    title: 'लीळा १९६: चरणवीहीरां डखलेयां सीक्षापण',
+    titleEn: 'Leela 196: Charanvihiran Dakhaleyan Sikshapan',
+    content: 'एकु दीं डखले धोतें धुआवेया उपर कुंडीएसि गेले : धोतें धूनि चरणवीहीरेयावरोनि आले : तवं चरणवीहीरा देखिला : \" काइ पां ? वरि पाणी नाहीं : खाली पाणी नाहीं : मध्येंचि पाणी कैसें ?\" आणि म्हणीत : \" ए चरणवीहीरांचें उदक उपसिजे तरि जेतुके काही तेतुकेंचि : ऐसें आइकिजे : तें साच कीं लटिकें ऐसें पाहों पां :\" म्हणौनि पाणी उपसों रीगाले : पाणी उपसीतां दोहीं हातां कांडर आलें : घाटाखाली पाणी उतरलें : तरि पाणी तेतुकेंचि : मग भूकैलें कोमाइले ऐसे गोसावीयांपासि आले : दंडवत घातलें : श्रीचरणां लागले : सर्वज्ञें म्हणीतलें : \" उसीरू कांगा लाविला डखलेया ?\" \" जी जी : मी चरणवीहीरेयासि गेलां होतां : तवं चरणवीहीरांचें पाणी अनमीत म्हणति तें काइ साच ? म्हणौनि उपसों बैसलां : घाटाखाली पाणी उतरलें : दोहीं हातां कांडर आलें : परि पाणी तें तैसेंचि :\" सर्वज्ञें म्हणीतलें : \" ऐसा अंतु न पाहीजे कीं गा डखलेया :\" ॥',
+    explanation: 'एके दिवशी डखले (एका शिष्याचे नाव) हे आपले धोतर धुण्यासाठी टेकडीवरील एका कुंडापाशी गेले होते. तिथून परतत असताना त्यांनी \'चरणविहीर\' नावाची विहीर पाहिली, जिचे वैशिष्ट्य असे होते की विहिरीच्या वरील भागात किंवा खालच्या भागात पाणी नव्हते, तर केवळ मध्यभागीच पाणी तरंगत होते. तसेच या विहिरीचे पाणी कितीही उपसले तरी ते कधीच संपत नाही (अनंत पाणी) अशी श्रद्धा होती. डखल्यांच्या मनात शंका आली की हे खरे आहे की खोटे, हे तपासून पहावे. त्यांनी विहिरीचे पाणी उपसण्यास सुरुवात केली. खूप वेळ पाणी उपसल्यामुळे त्यांचे दोन्ही हात दुखून आले (कांडर आले) आणि घाटाखालचे पाणी कोरडे झाले, तरी विहिरीतील पाण्याचा स्तर तीळभरही कमी झाला नाही. शेवटी भुकेने व्याकुळ झालेले आणि थकून गेलेले डखले स्वामींपाशी आले. त्यांनी दंडवत घातल्यावर स्वामींनी उशिरा यायचे कारण विचारले. डखल्यांनी घडलेला प्रसंग सांगितला. त्यावर स्वामींनी त्यांना प्रेमाने समजावून सांगितले की, \"डखल्या, अशा पवित्र आणि चमत्कारी देवस्थानांच्या शक्तीचा अंत किंवा परीक्षा कधीही घेऊ नये.\" या लीळेतून भक्तीमध्ये संशयापेक्षा श्रद्धेचे स्थान श्रेष्ठ असल्याचे स्वामींनी प्रतिपादन केले आहे।'
+  },
+  {
+    id: 'lc_p197',
+    bookId: 'leela_charitra',
+    number: 197,
+    title: 'लीळा १९७: सुकररोखू हरण',
+    titleEn: 'Leela 197: Sukarorokhu Haran',
+    content: 'एकु दीं गोसावीयांसि उदीयांचा पुजाअवसूरू जाला : मग गोसावीं कान्हाळेयाकडें वीहरणासि बीजें केलें : माहादेराएं तें रान राखीव ठेवीलें होतें : तेथौनि सोरू नीगाला : तो गोसावीयां उजुचि आला : \" जी जी : सोरू आला :\" म्हणौनि भगतिजन भीयाले : ते अवघे पळाले : गोसावी उभेचि : तवं सोरू हरला : आणि तो भूईं उंघतुउंघतु ऐसा नीगोनि गेला : गोसावीयांसि जगतुकेचां देऊळीं आसन जालें : मग भगतिजनें आलीं : गोसावीयां समोरें हों लाजति : सर्वज्ञें म्हणीतलें : \" काइ गा बीहालेति ?\" मग तीहीं म्हणीतलें : \" काइ जी : आम्ही पापीए : गोसावीयांतें सांडोनि गेलों : गोसावीया असतां आम्हां काइसें भय ?\" मग गोसावीं मढासि बीजें केलें : भगतीजनीं बाइसांपुढां सांगींतलें : बाईसीं म्हणीतलें : \" पोरे हो : बाबांतें कैसें सांडूनि गेलेति ? बाबा असतां तुम्हांसि काइ होत असे ?\" बाइसां कोपों सरलें : मग सर्वज्ञें म्हणीतलें : \" बाइ : पळे तो काइ मागोता परतों न ल्हाए ? परतलें : पाहा नीकें :\" मग बाईसीं म्हणीतलें : \" पोरे हो : आजि पाणीए दीवा पाजळला होता :\" ॥',
+    explanation: 'एके दिवशी सकाळी पूजा आटोपल्यानंतर प्रभू चक्रधर स्वामी भक्तांसह कान्हाळे नावाच्या राखीव जंगलात (जे देवगिरीच्या राजाचे शिकार क्षेत्र होते) विहारासाठी गेले. अचानक झाडीमधून एक रानडुक्कर (सोरू) अत्यंत वेगाने थेट स्वामींच्या दिशेने धावत आले. ते पाहून सोबतचे सर्व भक्त अतिशय घाबरले आणि स्वामींना सोडून पळून गेले. परंतु स्वामी शांतपणे तिथेच उभे राहिले. स्वामींच्या दिव्य तेजाने आणि करुणामय दृष्टीने तो हिंस्र रानडुक्कर शांत (हरला) झाला आणि मस्तक टेकवून झोपल्यासारखा हळूच बाजूने निघून गेला. नंतर भक्त परत आले आणि स्वामींना संकटात सोडून पळून गेल्यामुळे शरमेने आणि पश्चात्तापाने मान खाली घालून उभे राहिले. स्वामींनी त्यांना प्रेमाने विचारले, \"का घाबरलात?\" भक्तांनी कबूल केले की, \"स्वामी, आम्ही अज्ञानी आहोत जे आपणास संकटात सोडून पळालो, पण तुमच्या सामर्थ्यापुढे रानडुक्कराचे काय चालणार?\" मठात परतल्यावर बाईसांनीही भक्तांना रागवले. त्यावर स्वामींनी भक्तांची बाजू घेत म्हटले, \"बाईसा, घाबरून पळालेला माणूस पुन्हा शरण येतोच की!\" बाईसांनी कृतज्ञतेने म्हटले, \"मुलांनो, आज स्वामींनी आपल्या अगाध कृपेने जणू पाण्याने दिवा पेटवला (अशक्य गोष्ट शक्य केली).\" या लीळेतून स्वामींचे सर्व प्राणिमात्रांवरील नियंत्रण आणि भक्तांवरील क्षमाशील वत्सलता दिसून येते।'
+  },
+  {
+    id: 'lc_p198',
+    bookId: 'leela_charitra',
+    number: 198,
+    title: 'लीळा १९८: अदंडीनाथासामूथ्य कथन',
+    titleEn: 'Leela 198: Adandinathasamuthya Kathan',
+    content: 'एकु दीं गोसावीयांसि उदीयांचा पुजाअवसूरू जाला : मग गोसावीं तेया मळेयासि वीहरणा बीजें केलें : तेथ आसन जालें : मग सर्वज्ञें म्हणीतलें : " देखिला गा : हा अदंडीनाथाचा मळा : " भगतिजनीं म्हणीतलें : " जी जी : अदंडीनाथु म्हणिजे काइ ? " सर्वज्ञें म्हणीतलें : " अदंडीनाथ ते नाथपंथीचे माहात्मे : ते \'डाक्रामांसि गेले होते : तेथ चौकीं बैसले होते : तवं तेथियेचेनि वीद्यार्थीएं म्हणीतलें : \' हें काइ देव हो : आमचेया देवासि नमस्कारू न करा तें काइ : \' तवं अदंडीनाथें म्हणीतलें : \' तुमचेया देवासि आमचा नमस्कारू घेववे ना : \' तवं तेहीं म्हणीतलें : \' कैसा नेघवे ? करा पां : \' तीहीं म्हणीतलें : \' तुम्ही अवघेचि मिळा : मग आम्ही करूं : \' मग ते अवघेचि मिळाले : अदंडीनाथू उठीले : मग म्हणीतलें : \' जये देवा : \' म्हणौनि दोन्हीं हात जोडिली : दंडवत घालुं आदरीलें : तवं लींग दोनि भाग जालें : अमुध वाहों लागलें : मग अदंडीनाथें म्हणीतलें : \' न डारी न डारी \' : मग तेणें जोगवटेयाचा बंध घातला : मग तेथौनि नीगाले : तवं वाटेसि गोरक्ष भेटले : तवं गोरक्षेन पुसिलें : \' कांहाथी आव्यो ? काहां जाव्यो ? \' तवं तेणें म्हणीतलें : \' डांक्रामु भेदीया : अब सोरठी सोमनाथू भेदन जाओं : \' तवं गोरक्षीं म्हणीतलें : \' आपु नहीं भेदिया : मग परू काइ भेदेल ? \' अदंडिनाथें म्हणीतलें : \' आपु नहीं भेदिला : ऐसें कैसेनि जाणिजे ? \' तवं गोरखीं म्हणीतलें : \' देहावरि खर्ग घालिजे आणि पाणीयांतौनि नीगौनि जाए ऐसें जाए : दोनीं धडें तैसींचि : यातें आपुभेदीया ऐसें म्हणिजे : \' मग अदंडिनाथें म्हणीतलें : \' हो काँ : \' मग गोरखीन स्वर्गुनि खर्ग इंद्राचें अव्हाणिलें : तें खळखळीत : धगधगीत ऐसें आलें : गोरखीं हातीं घेतलें : अदंडीतें पुसिलें : \' हाणसी कीं हाणों ? \' तो उगाचि : मग गोरखीं म्हणीतलें : \' घे खांडें : \' मग अदंडिनाथें खांडें घेतलें : गोरखीवरि घातलें : तें पाणीयाआंतौनि वाहुनि जाए तैसें गेलें : दोन्ही धडें तैसींचि मागोतीं मिळालीं : गोरखीं म्हणीतलें : \' पुता : देह जालें : तें ऐसें जाणिजे : \' मग अदंडिनाथें म्हणीतलें : \' आतां तुम्ही घेया : \' मग गोरखीं खांडें घेतलें अदंडिनाथावरि घातलें : तवं पाखाणीं खांडें लागे ऐसें लागे : तीडकीया उसळलीया : परि खांडें भेदे ना : मग गोरखीं म्हणीतलें : \' पिंडु काचा : घणाचां घाई चुरु होइल : \' देह करि जाए : तो वज्रओळिचा : गोरखि अमरओळिचा : दंडी होती ते गेली : मग अदंडीनाथू हें नांव पातला : मग तेणें पुसिलें : \' जैसा तुझा पिंडु जाला : तें साधन मज सांधावें : \' मग गोरखीं म्हणीतलें : \' तुं एळापुरासि जाए : तेथ खेपणीकीं वेदु उथापिला असे : तो स्थापावा : मग तेथ साधनीं रीगावें : \' मग ते एळापुरासि आले : हा रायाचीए राणीएचा आवधा मळा उपहतु जाला होता : ते एथ राहिले : ए मळांचें उलींग रायाचीए राणीएसि जाए : वीहीरीचें पाणीं आटलें होतें : मळांचीया अवधी पाणींएवीण वाळळीया होतीया : ते पुरूख राहिले तीए देउनि अवकाळीं अवधी सांसींनलीया : अवकाळीं फळांफुलांसी आलीया : वीहीरी पाणीए बोसांडलीया : मळांचें उलींग रायाचीए राणीएसि जाए : तवं रायाचीए राणीएसि माळिणी उलींग घेऊन आली : तवं तीया राणीया पुसिलें : \' हें काइ गे : जें नाहीं जीए काळीं तीएं फूलें : जें नाहीं जीए काळीं तीएं फळें कैंचीं आणिलीं ? \' तीया म्हणीतलें : \' ना आइ : अवळीया अवधी पाणींएवीण वाळळीया होतीया : वीळीचां आमच्या मळेयासि पुरूख एक आले : ते आले आणि तीए दीउनि अवकाळीं अवधीया अवधी फळींफुळीं सांसींनलीया असति : वीहीरी तोंडीं पाणीं सांडु लागलीया : तीए दीउनि ऐसें होत असे : \' राणीया म्हणीतलें : \' तरि तेया पुरूखांतें पुस गे : जें रायाची राणी तुमचेया दरीसनास एओ ? \' तेया म्हणीतलें : \' हो काँ : \' ते गेली : तेयातें पुसिलें : \' रायाची राणी तुमचेया दरीसनास एओ ? \' तीहीं म्हणीतलें : \' एती तरि एतु काँ : \' मग तीया माळिणी तीए राणीएपाशीं सांगींतलें : \' ते पुरूख म्हणताति : एतील तरि एतु काँ : \' मग तैसीचि ते नीगाली : पांइचि : बटीकीचीए डोइए एक परीएळु पुजाद्रव्यें : वाचा अंकाचा : हातीं झारी : ऐसीं आलीं : तयांचे पाए धूतले : पुजा केली : जेउं वाढिलें : तांबोळ दीधलें : मग म्हणे : \' मज उपदेसु देवावा : \' दीधला : मग बीढारासि नीगाली : ऐसें प्रतदीनीं करी : मग आपण जेवी : रावा खेपणीकांचा सीख : तो तेयांची भगति करी : राणी अदंडिनाथाची भगति करी : तें खेपणीकांस उमटलें : रावो तेयांस दंडवतासि आला : तवं खेपणीकीं म्हणीतलें : \' राया : तुं आमची सेवा करीस ते कपटें करीस : \' राएं म्हणीतलें : \' तें काइ ? \' \' ना तुझां ठाई दोनि भगती : तुझीए राणीएसी नाथपंथीचेया पुरूखांची भगति : आणि तुज आमची भगति : तुझी राणी आणि मळिचे पुरूखांची सेवा करी : तुं आमसी सेवा करीसि : \' खेपणीकीं म्हणीतलें : \' तुझी राणी मळां एक जोगी आले असति तेयांचेया ठाया जाति असे : तरि तुं वारीसि ना : तरि अस्त्रीपुरूखांचा एकु धर्मु होआवा कीं : \' तवं राएं म्हणीतलें : \' तें मी नेणें : \' तैसाचि रावो राणीएचेया घरासि गेला : राएं राणीएतें पुसिलें : \' तुम्ही म्हणें पुरूखांचेया दरीसना जात असां ? \' राणीया म्हणीतलें : \' जात असों मा : ना आमचे गुरू मळां असति : तेयांच्या दरीसना जात असों : \' तवं राएं म्हणीतलें : \' तरि आतां तेथ न वचावें : \' \' ना न वचें कैसी ? \' \' तुम्हां आम्हां एकुचि मार्गु होआवा कीं : तुम्ही तेयांचेया ठाया न वचावें : \' \' ना न वचें कैसी ? आम्हां तेयांचेया दरीसनास एणें गेलियावांचौनि जेवण नाहीं : आम्ही जाऊनिचि पाहा पां : \' म्हणौनि दारवठेयापासीनो दोन्ही सुरुकणी मळावरि राउत पाइक खेडे-भालेयांसी मारावेया राहाविले : ठाई ठाई राखणें घातलीं : चांगि नीवडी केली : तवं तीया राणीया माळिणीहातीं पुसों पाठवीलें : \' म्हणावें : आजि राएं नीवडी केली : तरि मज दरीसनास एओं एइल ? ऐसें पुसावें : \' गेली : तीया माळिणी पुसों पाठवीलें : तीहीं म्हणीतलें : \' एती तरि एओं एइल : \' एतुकेनि ते राणी नीगाली : बटीकीचीए डोइए ताट : हातीं तांबकळसा : ऐसीं नीगाली : दारवठेयापासि आली : तवं दोहीं सुरुकणी मारावेया राखणें : राउत : पाइक : ठाई ठाई ठेविले असति : तेहीं राणीयेतें देखिलें : आणि तेयांची गतिमति क्षाळली : वाचा खीळीलीया : हातीए उचलति ना : ते थकले ऐसे राहिले : तीए तेयांवरौनि गेली : दरीसन घेतलें : तेयांचे पाए धुतले : पुजा केली : जेउं वाढिलें : तांबोळ दीधलें : मग माघौती आली : मग राएं पुसिलें : \' आजि तुम्ही तेया पुरूखांचेया दरीसनास न वचाचि तें काइ ? \' तवं तेहीं म्हणीतलें : \' गेलों होतों मा : हें नव्हे आतांचि आहों : \' \' मा कैसी गेलींती ? \' तेहीं म्हणीतलें : \' हा नव्हे अमुकी अमुकीए ठाई असे : \' ऐसें अवघें सांगीतलें : मग राएं राखणाइत होते ते बोलाउं पाठविले : मग तेयांसि कोपला : \' ह्रां रे : हे गेली : तवं तुम्ही उगेचि राहिलेति ? \' \' ना राया : आम्हीं जातां देखिली : एतां देखिली : आमची वाचा खीळली : गतिमति क्षाळली : हातीेर वरते उचलति ना : \' एक म्हणति : \' देखों : परि आम्हां कांहीं करवे ना : थकले ऐसे राहिलों : \' मग रायासि आश्चर्य जालें : राएं म्हणीतलें : \' पुरूख सामान्य नव्हेति : \' मग राएं खेपणीकांपुढें सांगीतलें : तीहीं म्हणीतलें : \' राणीएतें पुसा : तें आमसी उघाणी करिती ? \' राएं राणीएतें पुसिलें : \' समझौते गुरू आमचेया गुरूसीं उघाणी करिती ? \' राणीया म्हणीतलें : \' करिती : परि मज पुसों देया : \' मग राणीयां पुसिलें : तीहीं म्हणीतलें : \' हो करुनि : तुम्ही बोलावाल तरि एउनि : रावो बोलावील तरि नैयों : \' मग राएं राणीएतें पुसिलें : \' कां तुम्ही तेया पुरूखांतें पुसिलें ? \' राणीयां म्हणीतलें : \' हो पुसिलें : \' मग राएं सभामंडपीं सभा केली : बैसों घातलें : मग तेयांतें बोलाउं धाडिलें : ते नैएतीचि : खेपणीकीं म्हणीतलें : \' होए : भीयाले : \' राणीयेसि अभीमानु चडला : \' जा : ऐसें म्हणा : तुमते राणीया बोलाविले असे : \' ऐसें सांघीतलें आणि आले : पाई गजरथांचीया पाउवा घातलीया : ऐसे आले : खेपणीकीं पुसिलें : \' अवकाळीं अवधी फळांफुळांस एति : वीहीरीसि उदकें बोसांडती : हें कार्य काइसेयाचें : काइसेयास्तव ? \' अदंडिनाथें म्हणीतलें : \' हें वेदास्तव : \' यावरि उघाणी प्रवर्तली : तवं तीहीं म्हणीतलें : \' हें काइ वागजाळ म्हणा : सबदु जैसा नेइजे तैसा जाए : आम्ही तुम्हीं सामूथ्यें भांडों : \' अदंडिनाथें म्हणीतलें : \' हो काँ : \' खेपणीकीं म्हणीतलें : \' आमची कुपी स्वर्गा जाइल : स्वर्गिंचें अमृत आणील : \' अदंडीनाथें म्हणीतलें : \' आमची पाउ आणुं नेदी : \' \' हो काँ : \' मग तेहीं कुपी आणिली : पुढां ठेविली : मंत्रेकरूनि अव्हाणिली : ते स्वर्गासि जात देखिली : स्वर्गुनि अमृत भरूनि मागोती एतां देखिली : आणि तेहीं डावीए पाउनि पाउ काढिली : पुढें ठेविली : अव्हाणिली : \' भीडि भीडि \' म्हणौनि प्रहरिली : ते पाउ चालिली : मध्यें भेटि जाली : पाउ तीएसी ठसठस करूनि लागली : ते पाउवा कुपी फोडिली : ते तीनि कोरें झालीं : वरीलें कोर उपरकुंडीएसी पडिलें : मधील कोर चरणविहीरां पडिलें : खालील कोर सीवाळां पडिलें : तीए तीनि तीर्थे जालीं : " सर्वज्ञें म्हणीतलें : " भटाचारीया मागां अदंडिनाथें वेदु प्रतीष्टीला : " ॥',
+    explanation: 'प्रभू चक्रधर स्वामी भक्तांसह फिरत असताना एका मळ्यात आले आणि म्हणाले, "हा अदंडीनाथाचा मळा आहे." भक्तांनी विचारले, "स्वामी, अदंडीनाथ कोण होते आणि त्यांची कथा काय आहे?" स्वामींनी सांगितले की, अदंडीनाथ हे नाथपंथातील अत्यंत सिद्ध महापुरुष होते. एकदा ते \'डाक्राम\' (एक धार्मिक स्थान) येथे गेले असता तिथल्या विद्यार्थ्यांनी आणि पुजाऱ्यांनी त्यांना तिथल्या मूर्तीला नमस्कार करण्यास सांगितले. अदंडीनाथांनी सांगितले की, "तुमची मूर्ती माझा नमस्कार सहन करू शकणार नाही, ती फुटेल." परंतु पुजाऱ्यांनी हट्ट धरला. शेवटी अदंडीनाथांनी दोन्ही हात जोडून जसे "जय देवा" म्हटले आणि दंडवत घातले, तसे ती मूर्ती (लिंग) मधोमध दुभंगली आणि त्यातून पाणी वाहू लागले. अदंडीनाथांनी "न डारी न डारी" (नुकसान करू नको) असे म्हणून जोगवटेयाचा बंध घालून मूर्तीची हानी थांबवली.\\n\\nतेथून निघाले असता वाटेत त्यांची भेट सिद्ध गोरक्षनाथांशी (गोरखनाथ) झाली. गोरक्षनाथांनी त्यांच्या देहाची (पिंडाची) सिद्धता तपासण्यासाठी स्वर्गातून इंद्राचे दैवी व धगधगीत खड्ग मागवले. गोरक्षनाथांनी ते खड्ग स्वतःवर चालवले, तेव्हा ते पाण्यातून जावे तसे सहज गेले आणि त्यांचे शरीर पुन्हा जोडले गेले (अमरओळीचा पिंड). परंतु अदंडीनाथांवर खड्ग चालवले असता दगडावर आदळल्यासारखा आवाज आला, ठिणग्या उडाल्या पण शरीर कापले गेले नाही. गोरक्षनाथ म्हणाले की तुझा देह पाषाणासारखा कडक (वज्रओळीचा) आहे, पण तो घणाच्या घावाने चूर होऊ शकतो (पिंड काचा आहे). याद्वारे अदंडीनाथांचा अहंकार (दंडी) नष्ट झाला आणि त्यांना "अदंडीनाथ" हे नाव मिळाले. गोरक्षनाथांनी त्यांना एळापूर (एलोरा) येथे जाऊन तिथे क्षपणकांनी (वेदांचे विरोधक) विस्कळीत केलेल्या वेदांची पुनर्स्थापना करण्याचे साधन सांगितले.\\n\\nअदंडीनाथ एळापूरला आले. तिथे देवगिरीच्या राजाच्या राणीचा मळा कोरडा पडला होता आणि विहीर आटली होती. अदंडीनाथांच्या वास्तव्यामुळे अवकाळी पाऊस पडल्यासारखा विहिरीला पाणी आले आणि मळा फळाफुलांनी बहरला. हे पाहून राणी त्यांची अनन्य भक्त झाली आणि रोज त्यांची मनोभावे पूजा-सेवा करू लागली. राजाला जेव्हा या भक्तीबद्दल संशय आला, तेव्हा त्याने मळ्यावर कडक सैनिकांचा पहारा बसवला. परंतु राणी जेव्हा अदंडीनाथांच्या दर्शनासाठी निघाली, तेव्हा त्या सैनिकांची हालचाल आणि वाचा पूर्णपणे खिळली (स्तंभित झाली). हे ऐकून राजा चकित झाला आणि अदंडीनाथांच्या सामर्थ्यापुढे नतमस्तक झाला.\\n\\nनंतर राजाच्या उपस्थितीत क्षपणक आणि अदंडीनाथ यांच्यात वाद (उघाणी) सुरू झाला. मळा बहरण्याचे कारण विचारले असता अदंडीनाथांनी सांगितले की, "हे वेदांमुळे (वेदास्तव) झाले आहे." क्षपणकांनी आव्हान दिले की, केवळ शब्दांनी काय होते, आपण सामर्थ्याची परीक्षा घेऊ. क्षपणकांनी मंत्रशक्तीने आपली अमृतकुपी स्वर्गातून अमृत आणण्यासाठी पाठवली. अदंडीनाथांनी सांगितले की, माझी लाकडी चप्पल (पाउ) त्या कुपीला स्वर्गातून अमृत आणू देणार नाही. त्यांनी आपली डावी चप्पल हवेत भिरकावली. तिने "भीडि भीडि" असा नाद करत कुपीला हवेतच गाठले व धडक देऊन तिचे तीन तुकडे केले. कुपीचे तीन भाग वेगवेगळ्या तीन ठिकाणी पडले (उपरकुंडी, चरणविहीर, सीवाळ) आणि तिथे तीन पवित्र तीर्थे निर्माण झाली. अशा प्रकारे अदंडीनाथांनी वेदांचे श्रेष्ठत्व सिद्ध केले आणि वेदांची पुनर्स्थापना केली ("भटाचारीया मागां अदंडिनाथें वेदु प्रतीष्टीला"). स्वामींनी या कथेद्वारे सिद्ध पुरुषांच्या अगाध सामर्थ्याचे आणि वेदांच्या श्रेष्ठतेचे सुंदर निरूपण केले आहे.'
+  },
+  {
+    id: 'lc_p199',
+    bookId: 'leela_charitra',
+    number: 199,
+    title: 'लीळा १९९: तथा भीड भीड सबदु कथन',
+    titleEn: 'Leela 199: Tatha Bhid Bhid Sabadu Kathan',
+    content: 'सर्वज्ञें म्हणीतलें : \" मग ते एथ पाताळगुंफेसि साधनां रीगाले असति : राणीया तींची प्रतीष्टा केली :\" गोसावीं तेथ बीजें केलें : तेथ धाकुटीऐसी देऊळी केली होती : गोसावीयांसि आसन जालें : सर्वज्ञें म्हणीतलें : \" हे अदंडीनाथाची गुंफा गा : एथ अद्यापि \'भीडि भीडि\' ऐसा सबदु वर्ते : एथ जोगी एति : \'भीड भीड\' ऐसा पुरुषाचा सबदु आंतुलीकडौनि होए : मग जाती :\" मग अवघीं भगतिजनें तीए देऊळिएपासि आले : मग अवघे भगतिजन आइकों ढाकले : नीजोनि तेथ कानु टेकीति : तवं तेथ \'भीडि भीडि\' ऐसा सबदु नीगे : मग तीएं एउनि गोसावीयांपासि सांगींतलें : सर्वज्ञें म्हणीतलें : \" पुरूखें आपली सकित नीक्षेपिली असे : तो अद्यापि \'भीडि भीडि\' ऐसा सबदु नीगे :\" ऐसी हे लीळा : गोसावीं आठे ठाईं सांगींतली : ॥',
+    explanation: 'स्वामींनी भक्तांना सांगितले की, अदंडीनाथ पुढे याच एळापूर (एलोरा) येथील पाताळगुंफेमध्ये गुप्त साधना करण्यासाठी गेले, जिथे राणीने त्यांचे मंदिर बांधले होते. स्वामींनी भक्तांसह त्या लहान मंदिरात (गुंफेत) प्रवेश केला आणि म्हणाले, \"ही अदंडीनाथांची गुंफा आहे, जिथे आजही \'भीड भीड\' (किंवा भीडि भीडि) असा अद्भूत नाद ऐकू येतो.\" स्वामींच्या सांगण्यावरून भक्तांनी गुंफेच्या भिंतीला कान लावून ऐकले, तर त्यांना खरोखरच गुंफेच्या आतून खोलवर \'भीड भीड\' असा एखाद्या दिव्य पुरुषाचा आवाज ऐकू आला. चकित झालेल्या भक्तांनी स्वामींना विचारले, \"स्वामी, हे कसे काय?\" त्यावर सर्वज्ञ प्रभूंनी सांगितले की, \"त्या महान सिद्धाने (अदंडीनाथांनी) आपली तपोशक्ती आणि नाद या गुंफेत कायमचा जतन करून (निक्षेपिली) ठेवला आहे, त्यामुळे हा ध्वनी आजही ऐकू येतो.\" ही लीळा स्वामींनी भक्तांना त्यांच्या विविध वास्तव्याच्या ठिकाणी अतिशय प्रेमाने सांगितली आहे।'
+  },
+  {
+    id: 'lc_p200',
+    bookId: 'leela_charitra',
+    number: 200,
+    title: 'लीळा २००: कुइरामा सीधि नोक्षेदु',
+    titleEn: 'Leela 200: Kuirama Sidhi Nokshedu',
+    content: 'एकु दीं वीळीचां वेळीं गोसावी चतुर्वीधांच्या मठावरि बीजें केलें : सरिसे भक्तजन असति : तेया मढावरि चरणचारी उभे जाले : दीसा अवलोकीलीया : गोसावी आपदेवोभटांतें पुसिलें : \" हां गा भागेया : हा कवणु कवणु गाउ गा ?\" \" हैं इटखेडें : हें माटखेडें : हें लासौर : हें सीउर जी : जी जी : हें सीउर नांदत होतें जी : यासि सुवर्णाचे कळस : ए गांवी कुइराम एक माहात्मे असति : तें \'कुइकुइ\' करीति : तेयांसि अनंता सीधी प्रगटति : जी :\" सर्वज्ञें म्हणीतलें : \" कळीयोगीं वीद्या नाहीं : या रीधीसीधी तिया कैचीया गा ?\" \" ना जी : ते कांबळेयाचीए मोटे बांधोनि पाणीयांतु घालीजाति : आणि तरंगति जी :\" सर्वज्ञें म्हणीतलें : \" हें पवनाचें कार्ये गा :\" \" जी जी : ते सरकाळांची पालकी करीति : सराडेयाची दांडी करी घेति : केळीचेया पानाचा पडिवा करिति : तेथ आपण बैसति : आणि लेंकुरूवांचीए खांदीं जाति :\" सर्वज्ञें म्हणीतलें : \" हेहं पवनाचें कार्ये गा :\" \" ना जी : ते देऊळाआंतु कोंडिजति : तवं बाहीरि खेळतां देखिजति :\" सर्वज्ञें म्हणीतलें : \" हें चेटकाचें कार्ये गा :\" जवळी भागवंत होते : तीहीं म्हणीतलें : \" आणि तेवीचि ते उधंरेते :\" सर्वज्ञें म्हणीतलें : \" तें कैसें गा भागेया ?\" भागवतीं म्हणीतलें : \" जी जी : उधं रेत घेति आणि बाहीरें सांडीति : अर्ध घेति : उधं जारीति :\" सर्वज्ञें म्हणीतलें : \" उधंरेते ते काइ गा ऐसें ? उधंरेते ते ऐसे कीं :\" म्हणौनि गोसावी सांगों आदरिलें : सर्वज्ञें म्हणीतलें : \" उधंरेते होति : ते बींदुची जारणा जाणति : उधं रेत घेति : तें भीतरि जारीति : भीतरि एक देह होए : वरिला देहा छेदभेद न प्रव्हाति : जैसें नारीएळ मुखें पाणी घे : तें वरौतें जाए : भीतरि आणीक देह होए : बाहेरील करटें नीबर होए : तेया छेदभेद न प्रव्हाति \" \" जी जी : तेयातें रीधीसीधी वोळगति :\" यावरि गोसावीं हांस्य केलें : सर्वज्ञें म्हणीतलें : \" कळीयोगीं वीद्या नाहीं : मां तंत्रजनीता रीधीसीधी तेया कैचीया ? कळीयोगी विदा तथा विद्यावंत असे तरि पुरूखु सृष्टिसंहारा समर्थ नव्हें ?\" सर्वज्ञें म्हणीतलें : \" कळीयुगीं विद्यावंत नाहीं : काळीयुगीं आगम न वर्तें : उत्तरापंथीं तंत्रशेषु वर्तें :\" यावरि गोसावीं फागडा म्हणीतला : \' कर्म करी तरी अंतरसार : कर्मे न तुटति भवपास हार : कर्म करितां गोरक्ष न दीसे : जेवि नारीएळीं पाणी पैसे : \' ॥',
+    explanation: '**लीळा भावार्थ व निरूपण:**\n\n**प्रसंग आणि पार्श्वभूमी:**\nएके दिवशी सायंकाळच्या वेळी प्रभू चक्रधर स्वामी चतुर्विधांच्या मठाच्या छतावर (चरणचारी) भक्तांसह फेरफटका मारत उभे होते. सभोवतालच्या परिसराचे निरीक्षण करत असताना स्वामींनी आपले परमभक्त आपदेवभट (ज्यांना स्वामी प्रेमाने \'भागेया\' म्हणत) यांना विचारले, "भागेया, हे समोर दिसणारे गावे कोणती आहेत?" त्यावर आपदेवभटांनी सभोवतालच्या गावांची नावे सांगितली—"इटखेडे, माटकेडे, लासूर आणि शिऊर."\n\n**शिऊर गाव आणि कुइराम महात्मा:**\nआपदेवभटांनी शिऊर गावाचा विशेष उल्लेख करत सांगितले की, "हे शिऊर गाव पूर्वी अत्यंत समृद्ध आणि वैभवशाली होते. येथील मंदिरांना सोन्याचे कळस होते. याच गावात सध्या \'कुइराम\' नावाचे एक अद्भूत महात्मा राहतात, जे केवळ \'कुइकुइ\' असा नाद करतात. त्यांच्याकडे अनेक प्रकारच्या अगाध ऋद्धी-सिद्धी प्रकट झाल्या आहेत."\n\n**सिद्धींच्या स्वरूपावर संवाद व प्रभूंचे निरूपण:**\nयावर सर्वज्ञ चक्रधर स्वामींनी स्पष्ट केले की, "कलियुगात खरी अध्यात्मविद्या किंवा दैवी सिद्धी अस्तित्वात नाही. मग या कुइराम महात्म्याकडे ऋद्धी-सिद्धी कुठून आल्या?" तेव्हा भक्तांनी कुइराम महात्म्यांच्या चमत्कारांची उदाहरणे देण्यास सुरुवात केली:\n\n१. **कांबळे पाण्यावर तरंगणे:** आपदेवभट म्हणाले, "स्वामी, ते आपले घोंगडे (कांबळे) गाठोड्यासारखे बांधून पाण्यावर टाकतात आणि त्यावर कोरडेच तरंगत बसतात!" त्यावर स्वामींनी हसून सांगितले, "हे कोणतेही दैवी सामर्थ्य नाही, तर हे केवळ प्राणायामाच्या (वायू-धारणा किंवा वायूवरील नियंत्रण) बळावर होणारे \'पवनाचे कार्य\' आहे."\n\n२. **बेंड (सरकाळाची) पालखीत बसणे:** भक्तांनी दुसरे उदाहरण दिले, "ते सरकाळाची (एका प्रकारच्या गवताची) पालखी करतात, हातात सरड्याची काठी धरतात, केळीच्या पानाचा द्रोण (पडिवा) करून त्यात बसतात आणि लहान मुलांच्या खांद्यावरून हवेत प्रवास करतात!" स्वामींनी पुन्हा स्पष्ट केले, "हे देखील वायूवरील नियंत्रणामुळेच शक्य होते, हेही केवळ \'पवनाचे कार्य\' आहे."\n\n३. **बंद देवळातून बाहेर येणे:** "स्वामी, त्यांना देवळाच्या आत कोंडून बंद केले जाते, तरीही ते बाहेर खेळताना दिसतात!" स्वामी म्हणाले, "हे कनिष्ठ विद्यांचे किंवा नजरबंदीचे काम आहे, म्हणजेच हे केवळ \'चेटकाचे कार्य\' आहे."\n\n**खरे उर्ध्वरेता आणि बिंदु-जारणा काय आहे?**\nजवळच उभे असलेल्या भागवंतभटांनी सांगितले, "स्वामी, ते उर्ध्वरेता (वीर्य धारण करणारे) आहेत." स्वामींनी विचारले, "ते कसे काय भागेया?" त्यावर भागवतांनी स्पष्ट केले की, ते वीर्य वर खेचून घेतात, अर्धभाग वर जिरवतात आणि अर्धा बाहेर टाकतात. यावर स्वामींनी खऱ्या उर्ध्वरेत अवस्थेचे आणि बिंदु-जारणा क्रियेचे अत्यंत वैज्ञानिक व अध्यात्मिक निरूपण केले. स्वामी म्हणाले:\n"खरे उर्ध्वरेता तेच असतात जे \'बिंदु-जारणा\' (वीर्याचे अंतःकरणामध्ये संपूर्ण उदात्तीकरण) जाणतात. ते वीर्य वर खेचून शरीराच्या आतच पूर्णपणे जिरवतात. त्यामुळे शरीराच्या आत एक अत्यंत सुदृढ, अभेद्य व दिव्य आंतरिक शरीर (सूक्ष्म देह) तयार होतो. अशा व्यक्तीच्या बाह्य शरीरावर शस्त्र किंवा कोणत्याही प्रकारच्या घाव-छेदाचा काहीही परिणाम होत नाही. जसे नारळ तोंडाने (डोळ्याने) पाणी शोषून घेते, ते पाणी वर जाऊन आत खोबरे आणि नवीन गाभा तयार करते. पाणी आत जिरल्यामुळे बाहेरची करवंटी अतिशय कठीण आणि टणक बनते, जिच्यावर बाहेरून मारा केला तरी आतील गाभ्याला कोणतीही इजा होत नाही. ही खरी उर्ध्वरेत अवस्था आहे, ज्याला ऋद्धी-सिद्धी आपोआप शरण येतात."\n\n**कलियुगातील विद्यांचा निषेध व प्रभूंचे हास्य:**\nहे ऐकून प्रभू चक्रधर स्वामींनी स्मितहास्य केले आणि म्हणाले, "कलियुगात खरी दैवी विद्या अस्तित्वात नाही, मग या तांत्रिक किंवा कनिष्ठ विद्यांमुळे प्राप्त होणाऱ्या सिद्धींना खरे कसे मानायचे? कलियुगात जर खरोखरच कोणी पूर्ण विद्यावंत असता, तर तो पुरुष सृष्टीचा संहार करण्यासही समर्थ झाला नसता का? कलियुगात खरी विद्या आणि आगम (शास्त्र) अस्तित्वात नाही. केवळ उत्तरापंथात (उत्तर देशाकडे) तंत्राचा काही भाग अवशिष्ट (तंत्रशेष) राहिला आहे."\n\n**स्वामींनी गायलेली फागडा (बोधपर ओवी):**\nसंवादाच्या शेवटी स्वामींनी एक अत्यंत सुंदर आणि बोधप्रद विचार (फागडा) मांडला:\n*\'कर्म करी तरी अंतरसार : कर्मे न तुटती भवपास हार :*\n*कर्म करितां गोरक्ष न दिसे : जेवि नारीएळीं पाणी पैसे :\'*\nअर्थात, माणसाने कोणतेही कर्म केले तरी त्यात आंतरिक शुद्धता आणि ईश्वरी भक्तीचा गाभा (अंतरसार) असणे आवश्यक आहे. निव्वळ बाह्य कर्मकांड, योगिक युक्त्या किंवा खोटे चमत्कार केल्याने जन्म-मरणाचा सांसारिक पाश (भवपास) कधीही तुटत नाही. खऱ्या आंतरिक कर्माशिवाय आणि ईश्वरी ज्ञानाशिवाय मोक्ष देणारा खरा रक्षक (गोरक्ष/ईश्वर) प्राप्त होत नाही; ज्याप्रमाणे नारळात पाणी कसे शिरते हे बाहेरून दिसत नाही, त्याचप्रमाणे खऱ्या भक्तीचा आणि ज्ञानाचा आंतरिक मार्ग अत्यंत सुप्त आणि गहन असतो, जो चमत्कारांच्या मागे धावून कधीही सापडत नाही.\n\n**निष्कर्ष:**\nया संपूर्ण लीळेतून प्रभू चक्रधर स्वामींनी भक्तांना बाह्य आणि फसव्या योगिक चमत्कारांना भुलू नये, असा बहुमूल्य उपदेश केला आहे. खरी सिद्धी ही चमत्कारांमध्ये नसून ईश्वराच्या भक्तीत आणि आंतरिक स्वरूपाच्या उदात्तीकरणात (बिंदु-जारणा) आहे, हाच या लीळेचा मुख्य सिद्धांत आहे.'
+  },
+
+  {
+    id: 'lc_p201',
+    bookId: 'leela_charitra',
+    number: 201,
+    title: 'लीळा २०१: वीद्यावंता भेटि',
+    titleEn: 'Leela 201: Vidyavanta Bheti',
+    content: 'उदीयांचा पुजाअवरू जाला : गोसावी आसनीं बैसले असति : तवं वीद्यावंतु जोगीयाचेनि वेखें गोसावीयांचेया दरीसनासि आले : गोसावी तेयांसि मानु केला : अर्धासन बैसों घातलें : बाइसांकरवि तेयांचे पाए ध्रुववीले : सागळेचेनि उदकें तेयां गुरूला करूं घातला : सर्वज्ञें म्हणीतलें : "बाइ : तुमंतें काही भातुकें असे ?" बाइसीं म्हणीतलें : "नाहीं बाबा :" मग दखले हाटवटीए पाठवीले : रांधवणहाटिचें खाजें आणवीलें : तेयांचें पात्र भरिलें : गोसावी आपुलेनि श्रीकरें टीळा लाविला : माळ : तांबोळ दीधलें : मां गोसावी अनोझा दीधली : एतुकेनि ते नीगाले : गोसावी अनुवर्जनांचेनि अनुकरण केलें : मग ते हाटाआंतु गेले : दोघी एकी सीमुरी मेळवीलीया : तेयांच्या खांदावरi हातु घालुनि : हातीं सुणेयांचा जवटु : हाटाआंतु बोरगाजर : उळिकांदा : माइणीचीं मुळें : पानेंपोफळें ऐसीं मागताति : तवं दखले हाटाआंतु गेले होते : तेहीं ऐसें मागतां देखिलें : बाइसीं दखलेयातें धाडिलें होतें : मग म्हणीतलें : "ऐसें गा आमचे गोसावी : ऐसेयासि मानु करीती :" ते हांसतहांसत आले : दखलां म्हणीतलें : "बाइ : ऐसे आमचे गोसावी : जेयासि मानु केला ते हाटवटीए ऐसे देखिले :" म्हणीनि अवघें सांगीतलें : सर्वज्ञें म्हणीतलें : "काइ गा हांसत असा दखलेया ?" "जी जी : गोसावी जेयासि मानु केला : तेहीं दोघीएकी सीमुरी मेळवीलीया असति : तेयांचेया खांदावरि हातु घालुनि : हातीं सुणेयांचा जवटु : उळि : कांदा : गाजर : बोर : माइणीचीं मुळें ऐसे मागत असति जी :" सर्वज्ञें म्हणीतलें : "ते तेयांची लीळा कीं गा : ऐसें न म्हणिजे कीं गा दखलेया : पुरूखीं क्षोभू उपजैल : मां कें रीगीजैल ?" मग बाइसीं पुसिलें : "बाबा : हे कवण ?" सर्वज्ञें म्हणीतलें : "बाइ हे द्वारावतीकारा श्रीचांगदेवोरावुळां गोसावीयांचे वीद्यावंत :" मग यावरi गोसावीं लुइपाइची गोष्ट सांगीकली : तेचि गोसावीं आउटें ठाई सांगीकली : ॥',
+    explanation: '**लीळा भावार्थ व निरूपण:**\n\n**प्रसंग आणि पार्श्वभूमी:**\nया लीळेत श्री चक्रधर स्वामींच्या दरबारात एका \'विद्यावंत\' नावाच्या योग्याचे जोगी वेशातील आगमन होते. स्वामींनी त्यांना अत्यंत आदराने वागवून त्यांचे पाय धुवून पूजले, त्यांच्या कपाळावर टिळा लावला आणि तांबूल देऊन त्यांचा आदर केला. पण ते योगी जेव्हा बाहेर बाजारात (हाटात) गेले, तेव्हा ते अत्यंत विचित्र व विद्रूप वर्तन करू लागले. त्यांनी दोन सामान्य स्त्रियांच्या खांद्यावर हात टाकले, हातात कुत्र्यांचे पिल्लू धरले आणि बाजारात कांदा, गाजर, मुळा यांसारख्या गोष्टी भिक्षेसाठी मागू लागले. हे पाहून दखले नावाच्या भक्ताने त्यांची थट्टा केली.\n\n**सिद्धांत आणि आध्यात्मिक संदेश:**\n१. **बाह्य वर्तन विरुद्ध आंतरिक अवस्था:** स्वामी चक्रधर दखल्याला समजावून सांगतात की, बाह्य वर्तन पाहून सिद्ध पुरुषांचे मूल्यमापन करू नये. ती त्यांची \'लीळा\' (स्वेच्छा वर्तन) असू शकते. सिद्ध पुरुष बाह्य समाजात वेड्यासारखे किंवा निंद्य वर्तन करून स्वतःचे मोठेपण लपवून ठेवतात, जेणेकरून सामान्य लोग त्यांच्या मागे लागून त्यांच्या साधनेत व्यत्यय आणणार नाहीत.\n२. **संत-निंदा टाळण्याचा सल्ला:** स्वामी म्हणतात की, "पुरूखीं क्षोभू उपजैल, मां कें रीगीजैल?" म्हणजेच सिद्ध पुरुषांचा अवमान केल्यास त्यांच्यात क्षोभ निर्माण होऊ शकतो, ज्यामुळे साधकाचे नुकसान होईल. म्हणून संतांच्या बाह्य स्वरूपावर किंवा वागण्यावर हसू नये.\n३. **श्री चांगदेव राऊळांचा संबंध:** हे विद्यावंत द्वारकेचे श्री चांगदेव राऊळ (स्वामींचे पूर्व अवतार) यांचे शिष्य होते. त्यांच्या महानतेची साक्ष स्वामी स्वतः देतात।'
+  },
+
+  {
+    id: 'lc_p202',
+    bookId: 'leela_charitra',
+    number: 202,
+    title: 'लीळा २०२: लुइपाइउपदेशें जाळांधरा सीक्षापण',
+    titleEn: 'Leela 202: Luipaipadeshe Jalandhara Sikshapana',
+    content: 'सर्वज्ञें म्हणीतलें : "लुइपाइ महात्मे ते मासदीयांचां घरीं असति : उकरडां असति : लुइ वेंचीती : खाती : कां वाडां लुइ वेंचीती : तोंडावरी गीवीगीवीकारी मासिंया : राओ आणि प्रधानु वैहाळीए नीगाले : ते मासदावाड्याहुनि जात होते : तवं लुइपाइ उकरडेयावरi लुइया वेंचीत होते : प्रधानु तो साही दरीसनाची भगति करी : तवं राएं प्रधानांतें म्हणीतलें : "यासि नमस्कारू न करा तें काइ ?" तवं प्रधानें म्हणीतलें : "हेवरखें करीत असति :" प्रधानु घोडेयाखालुता उतरला : लुइपाइसि नमस्कारू केला : तवं राओ हांसिला : लुइपाइन म्हणीतलें : "राया : तुं हांसिलास काइ तरि तुंचि हांसिलास : हउं हांसों तरी ते रासु हस्ती घोडा हांसे :" तवं राएं म्हणीतलें : "हांस हांस बापुडा :" आणि हांसिला : एतुकेनि परीवारू हांसे : घोडे हांसति : ऐसें हांसें प्रवर्तलें : क्षेणा एका देह जाइल ऐसें जालें : मग प्रधानें म्हणीतलें : "तुम्हीं तेया पुरूखांतें हांसलेस म्हणीनि हें हांसें प्रवर्तलें :" रायें म्हणीतलें : "तरि आतां यांसि काइ कीजे ?" तेणें म्हणीतलें : "तेया पुरूखांतें खेमावीजे :" "तरि चाला जाओं : तेयासि आड पडो :" तवं प्रधानें पायांवरi माथा ठेविला : "आतां कोपासि क्षेमा कीजो :" तेव्हळि तेहीं ते सक्ति आकर्षली : मग राएं आणि प्रधानें पायांवरi माथा ठेविला : "आतां आम्हांसि सीक्षा देयावी :" तेहीं म्हणीतलें : "जा क्षेउर करा : मडीची खापरी घेया : नगरिची भीक्षा घेउनि या :" ते गेले : क्षौरें केलीं : भीक्षा करावी तवं लाजिले : राएं म्हणीतलें : "मी राओ : तुं प्रधानु : एसणेयाचि वेळां भीक्षा कैसी करूं ? वीळू होईल : आणि भीक्षा करूं आणि काइ :" मग वीळू जाला : भीक्षा करूनi आले : पुढें खापरीया ठेविल्या : तवं लुइपाइं म्हणीतलें : "एती बार तुम्हीं काहां गया होतेति ? सीधी बारा बरीख दूरि गई :" मग तेहीं म्हणीतलें : "आतां काइ जाओं ? बारां घडीयांची चुकि : बारा वरीखें गेलीं : अंतरलीं : आतां जरi जाउनि तरि अवघें जन्म वायांचि जाइल :" म्हणीनि दोघे सर्वें असों लागले : प्रधानु तो ब्राह्मणु : तो वीकलपीया : राओ तो वीखैया : मग तो पुरूखू तेथौनि नीगाला : ते दोघें सर्वें नीगाले : एके ठाई तेहीं पुरूखीं मदिरापान केलें : तेथ काळळांचां घरीं प्रधानु गाहाण ठेविला एके ठाई सामास्तीएचां घरीं ते पुरूख वसीनले : रावो तो सामान्यअस्तीएचां घरीं गाहाण ठेविला : दोघै गाहाण ठेविले : ते पुरूख नीगौनि गेले : मग प्रधानु तो भाटी पोती : राओ तो सामान्यअस्तीएचां ग्रहीं पाणी सांडी : भरूनi आणी : ऐसी तीएची बहुत दीस सुस्रुका करीत होते : तवं एकु दीमु पुरू आला : तो तीएचा पढीएता पैलाडि राहिला : तवं ते अवस्थाभूत जाली : आळळसाफळ करूं लागली : ते राएं देखिली : मग राएं पुसिलें : "आई : तुं ऐसी कां ?" तीया म्हणीतलें : "एथिचा पढीएता तो पैलाडि राहिला :" तवं राएं म्हणीतलें : "तरi मी तो आणुं जाओं ?" तीया म्हणीतलें : "जाए :" मग तो आणुं गेला : उतपवन करूनi तेयाचेया घरासि गेला : तवं तो डोल्हारेयावरi बैसोनि आपुलीं लेंकुरूवें लाडवीत होता : तवं राएं म्हणीतलें : "हैं काइ गा : तुं एथ : आदिसि थोरि अवस्था :" "मां मी काइ करूं गा ? नदीसि पूरू आला : एकi आकासीं धार : एकi पाताळीं धार : मां मी काइ करूं ? कैसेनि एओं ?" तवं राएं म्हणीतलें : "चाल : मी नेइन :" म्हणीनि खांदीं घेतला : पाणीयांतु उतपवन करूनi घेउनि आला : तवं तीयाहीउनि आणीक नीउन म्हणीएं दीधलें : तवं तीएचेनि पढीएतेनि पुसिलें : "हा कवणु ?" तवं तीया म्हणीतलें : "महात्मे एक माझीए ठाई उतरले होते : तेही हे गाहाण ठेविले :" तवं तेणें म्हणीतलें : "ऐसें म्हणीएं याकरवि कैसें करवीतसि ? हे मातें पाठकुळीए वाउनि पाणीयांवरi चालत घेउनि आले :" एतुकेनि ते उठिलीं : तेयाचीया पायां पडलीं : हात जोडिले : "आतां तुम्हीं जा :" तवं तेहीं म्हणीतलें : "आमचे गुरू एती : तुमचें द्रव्य देती : मग आम्ही जाऊनि :" तेहीं म्हणीतलें : "तुमचे गुरू उतराइ : आतां तुम्हीं जा :" एतुकेनि तेयां सीधी जाली : मग तेथौनि नीगाले : प्रधानु तो काळळांचां घरीं भाती पोती : एकु दीसु तीएं नीजेंलीं होतीं : तवं मध्यानेकी रात्रीं तेयांचीए देहींहुनि प्रकासु नीगाला : तो अवघेया घराआंतु उजीएडु पडिला : भाटीएसी आगि लागली : म्हणीनि काळळें उठिलीं : तवं तो तेयाचीए देहिचा प्रकासु देखिला : एतुकेनि तेहीं दंडवत केलें : हात जोडुन बीनवीलें : "बा : आतां तुम्हीं जा :" तवं तेहीं म्हणीतलें : "आमचे गुरू एती : तुमचें द्रव्य देती : मग आम्ही जाऊनि :" तेहीं म्हणीतलें : "तुमचे गुरू उतराइ : आतां तुम्हीं जा :" एतुकेनि तेयांसि सीधी जाली : मग तेथौनि नीगाले : " ॥',
+    explanation: '**लीळा भावार्थ व निरूपण:**\n\n**प्रसंग आणि पार्श्वभूमी:**\nया अत्यंत दीर्घ व बोधप्रद लीळेत श्री चक्रधर स्वामी सिद्ध पुरुष \'लुइपाय\' आणि जालंधरनाथ (किंवा त्यांचे शिष्य) यांच्या कथेच्या माध्यमातून अहंकाराचा नाश आणि गुरूची महती स्पष्ट करतात. राजा आणि त्याचा प्रधान एकदा मासदावाड्यातून जात असताना त्यांनी लुइपायांना अत्यंत हीन अवस्थेत, उकरड्यावरील माशांचे अवशेष खाताना पाहिले. राजाने त्यांची थट्टा केली, पण साधक असलेल्या प्रधानाने त्यांना आदरपूर्वक नमस्कार केला. राजाने थट्टा केल्यामुळे लुइपायांच्या सामर्थ्यामुळे तिथे असा काही हास्याचा कल्लोळ माजला की सर्वांचा श्वास कोंडू लागला. अखेर राजा आणि प्रधानाला क्षमा मागावी लागली.\n\n**साधनेतील कसोट्या आणि सिद्धांत:**\n१. **बारा वर्षांची संधी आणि क्षणाची चूक:** लुइपायांनी राजा आणि प्रधानाला प्रायश्चित्त म्हणून नगरभिक्षा मागून आणण्यास सांगितले. पण राजाच्या अहंकारामुळे त्यांनी भिक्षा मागण्यास उशीर झाला. त्यामुळे बारा वर्षांची अनुकूल वेळ (सिद्धीची वेळ) हुकली. साधनेमध्ये क्षणभराचा आळस किंवा अहंपणा किती मोठा तोटा करू शकतो, हे यातून स्पष्ट होते.\n२. **अहंकार विसर्जन आणि सेवा:** राजाला एका सामान्य स्त्रीच्या घरी पाणी भरण्याचे काम करावे लागले आणि ब्राह्मणी प्रधानाला दारू गाळणाऱ्याच्या (कळाल) घरी भात्या ओढण्याचे कष्टाचे काम करावे लागले. ही त्यांच्या अहंकाराची आणि कर्माची शुद्धी करणारी कठोर साधना होती.\n३. **अलोकिक शक्तींचे दर्शन:** अनेक वर्षांच्या निष्ठेमुळे राजाने त्या स्त्रीच्या प्रियकराला पुरातून वाचवले, पाठीवर वाहून नेले आणि पाण्यातून चालण्याची सिद्धी प्राप्त केली. तसेच प्रधानाच्या शरीरातून रात्रीच्या वेळी दिव्य प्रकाश बाहेर पडू लागला. जेव्हा त्यांच्यातील राजा आणि ब्राह्मण असण्याचा अहंकार पूर्णपणे विरघळला, तेव्हाच त्यांना खऱ्या अर्थाने आत्मिक सिद्धी प्राप्त झाली।'
+  },
+
+  {
+    id: 'lc_p203',
+    bookId: 'leela_charitra',
+    number: 203,
+    title: 'लीळा २०३: ब्रह्मसानवीखस्तंब : वीखसवितस्वीकारू',
+    titleEn: 'Leela 203: Brahmasana Vikhastamba: Vikhasavitasweekaru',
+    content: 'गोसावीं आचाट वेधसक्ति स्वीकारिली : राजे तेतुकेही गोसावीयांचेया दरीसना एळापुरासि एति : साळिवाहानु : पाल्हाडांगीया : बोल्हाडांगीया : राणेराउत : पाइक हे मुख्यकरूनि अवघे राजीक : आणीकुही गांविचा लोकु : एक माहादाश्रमू आणि ब्रह्मसान हे वांचौनि एर अवघे दरीसना एति : दांडीया दांडी अडे : ऐसा लोकु एओं लागला : ब्रह्मसान ते रायाचे गुरू : ते फुलंबरीएसी गेले होते : तेहीं तेथ गोसावीयांची प्रसीधि ऐकौनि कटकासि आले : तवं कटकीचा लोकु अवघा गोसावीयांचेया दरीसनासि जाओं लागला : मग तीही म्हणीतलें : "आतां हे रायातेंही आदिकरूनि वेधिति : पाहाटे राओ जाईल तरि यांचाचि होईल :" म्हणीनि च्यान्हीं वीखें मेळउनि फोडी केलीया : वीखें घोळीलीया : आपुलेया सीक्षांहाती पाठवीलीया : "आधीं पुजा करावी : मग फोडी वोळगवावीया : मग तांबोळ देयावें :" ऐसा नीरोपु दीधला : मग ते एळापुरासि आले : तवं गोसावीयांसि उदीयांचा पुजाअवस्वरू जाला होता : बाइसीं पटिसाळे आसन केलें : गोसावी आसनीं उपवीष्ट जाले : तवं ते आले : गोसावीयांसि दरीसन जालें : तीहीं एउनि गोसावीयांसि पुजा केली : फोडी वोळगवीलीया : गोसावी श्रीकरें घेतलीया : दृष्टी अवलोकीलीया : नीवींखा केलीया : मग श्रीमुखीं घातलीया : मग तींहीं वीडीया करूनि दीधलीया : मग ते नीगाले : दीस तीनि गेलेया श्रीमुर्ति जैसीतैसीचि : मग ब्रह्मसानीं सीक्षांतें पुसिलें : "तुम्हीं गेलेति : मां काइ केलें ?" तेहीं मागील वृतांत सांगीतलें : मग ब्रह्मसानीं म्हणीतलें : "इस्वरपुरूख होति : तेयांचीए दृष्टीपुढां वीख न राहे : मग तीहीं आपुलेया सीक्षांतें म्हणीतलें : "आतां तुम्हीं जावें : मां आंधारीं आसन रचावें : पुजा करावी : आपुलेनि हातें फोडी श्रीमुखीं घालावीया :" मग ते आले : तवं गोसावीयांसि उदीयांचा पुजाअवस्वरू जाला होता : भीतरi आंधारीं आसन रचिलें होतें : मां पुजा केली : मग आपुलेनि हातें फोडी श्रीमुखीं घातलीया : वीडीया करूनि दीधलीया : मग सर्वज्ञें म्हणीतलें : "आतां तुमचें कार्ये जालें : आतां तुम्हीं जा :" मग तीही म्हणीतलें : "ऐया रे : पुरूखीं जाणीतलें :" आणि इखीत कपोळीं स्वेदबिंदू आले : नावेक श्रीमुर्ति घामैली : श्रीमुर्तिवरि तापु ऐसा जाणवला : सर्वज्ञें म्हणीतलें : "बाइ : वाटें आणा :" बाइसीं वाटें आणिलें : तेथ उगाळु घातला : "बाइ : हें एकी ठाई पुरा :" अवधा उगाळु हीरवा जाला : बाइसीं नेउनि एकांतीं पुरिलें : मग तेया तांबोळावारi आणीकें तीनि तांबोळें गोसावीं घेतलीं : ऐसीं तीनि तांबोळें पूरीलीं : तीसेरेया तांबोळाची फोडि दाडेसि धरिली होती : ते आपदेवोभटां दीधली : तेयां दाटूनi जरू आला : बाइसीं गोसावीयांतें एकांतीं पुसिलें : बाइसें थोर गजबजिली : भेवों लागली : बाइसीं म्हणीतलें : "हें काइ बाबा ?" सर्वज्ञें म्हणीतलें : "बाइ : एकाचें काइ एतुकें स्वीकरिजे ना ?" "तें काइ बाबा ?" "बाइ : हळाहाळ : १ : काळकुट : २ : रगतसींगी : ३ : बचनागु : ४ : एकासि एक वीरूधीएं : एकासि उपाओ कीजे तरi एक चढे : ऐसीं च्यान्हीं मेळवीलीं असति बाइ :" "तरi आतां काइ करावें बाबा ?" सर्वज्ञें म्हणीतलें : "बाइ : भेओं नको : आतांचi यासि काही नव्हें : हें राळेमवणी कीं बाइ : खांवी पुजा ते होआवी असे : एथौनि एकांतें नीमीत्य करूनi मग एथौनि बीजें कीजैल : बाइ : प्राणीया बहुत दीस जचतु असे : तरi काइ बाइ : तेयांचा उदीमु वाया जाओ ? तेयांचा मनोधर्मु एथौनि स्वीकरिला :" बाइसें भेवों लागलीं : "आतां काइ करूं बाबा ?" सर्वज्ञें म्हणीतलें : "बाइ : एथ करावें तें न लगे : एकाची धावणी : तरi एकाची चढावणी : एकाचा उपचारू तवं येकाचा अपकारू :" बाइसें थोर गजबजिलीं : मग सर्वज्ञें म्हणीतलें : "ना बाइ : तरi तीनि दी एकांतु देयावा :" मग तैसेंचि गोसावीं मल्हारवसैएसी बीजें केलें : तेथ तीनि दी अवस्थान जालें : गोसावीयांचें अलोहीत नेत्र : श्रीमुर्तिवरi पांढरीया फोडीया ऐसीया आलीया देखौनि बाइसीं पुसिलें : "बाबा : आतां काइ करूं ?" सर्वज्ञें म्हणीतलें : "बाड : दुधांतु सोजी आळा :" मग बाइसीं दुधांतु सोजी आळिली : गोसावीयांसि तीनि दी सोजीची आरोगण जाली : मग मागौती जैसी श्रीमुर्ति तैसीचि : मग मढासि बीजें केलें : ॥',
+    explanation: '**लीळा भावार्थ व निरूपण:**\n\n**प्रसंग आणि पार्श्वभूमी:**\nही महानुभाव संप्रदायातील अत्यंत महत्त्वपूर्ण आणि अद्भुत अशी लीळा आहे, ज्यामध्ये श्री चक्रधर स्वामींच्या अलौकिक ईश्वरी सामर्थ्याचे आणि कारुण्याचे दर्शन घडते. एलोपूर (वेरूळ) येथे स्वामींची कीर्ती ऐकून राजाचे गुरु \'ब्रह्मसान\' मत्सराने पेटले. स्वामी आपल्या शिष्यांवर आणि राजावर प्रभाव पाडतील या भीतीने त्यांनी स्वामींना मारण्यासाठी हलाहल, काळकूट, रक्तशृंगी आणि वचनाग ही चार अत्यंत तीव्र विषे एकत्र करून सुपारीच्या फोडीमध्ये (तांबुलात) घालून पाठवली. पहिल्यांदा स्वामींच्या केवळ दृष्टीक्षेपाने विषाचा प्रभाव नष्ट झाला. मत्सरापोटी ब्रह्मसानाने दुसऱ्यांदा अत्यंत कपटाने अंधाऱ्या खोलीत स्वतःच्या हाताने ती विषाची फोड स्वामींच्या तोंडात घातली.\n\n**तात्त्विक आणि आध्यात्मिक निरूपण:**\n१. **शत्रूच्या इच्छेचा स्वीकार (मनोधर्म स्वीकार):** स्वामींना माहित होते की यात विष आहे, तरीही त्यांनी ते आनंदाने खाल्ले. स्वामी म्हणतात, "प्राणीया बहुत दीस जचतु असे : तरि काइ बाइ : तेयांचा उदीमु वाया जाओ ? तेयांचा मनोधर्मु एथौनि स्वीकरिला :" म्हणजेच त्या जिवाने मला मारण्यासाठी एवढी मोठी मेहनत (उद्योग) केली, ती व्यर्थ का जावी? शत्रूचाही भाव पूर्ण करणे हे ईश्वराचे परम कारुण्य आहे.\n२. **विषाचे उदात्तीकरण आणि शरीराची प्रतिक्रिया:** विष पचवताना स्वामींच्या शरीराला अत्यंत ताप आला, कपाळावर घाम आला आणि लाळ हिरवी झाली. स्वामींनी विष एकांतात थुंकून जमिनीत पुरण्यास सांगितले. तसेच त्यांनी तीन विडे खाऊन विषाचा प्रभाव कमी केला.\n३. **ईश्वराचे अलिप्तत्व आणि रोगमुक्ती:** तीन दिवस स्वामींचे डोळे लाल झाले आणि अंगावर पांढरे फोड आले. बाईसांनी त्यांना दुधात सोजी शिजवून दिली (आरोगण केली) आणि स्वामी पूर्ववत निरोगी झाले. यातून स्पष्ट होते की ईश्वर मानवी देहात राहूनही सर्व विकारांच्या पलीकडे असतो आणि भक्तांच्या रक्षणासाठी कोणतीही परीक्षा देण्यास सिद्ध असतो।'
+  },
+
+  {
+    id: 'lc_p204',
+    bookId: 'leela_charitra',
+    number: 204,
+    title: 'लीळा २०४: दखलेयां चांगदेवोभटांतें श्रीदत्तात्रयोप्रभूचेया दरीसना पाठवणें',
+    titleEn: 'Leela 204: Sending Dakhale and Changadeobhat for Dattatreya Darshan',
+    content: 'मागौतें गोसावीयांसि चतुर्वीधांचां मढीं अवस्थान जालें : एकु दीं गोसावी श्रीदत्तात्रयोप्रभूची महीमा नीरोपीत होते : तवं दखलां आणि चांगदेवोभटीं म्हणीतलें : "जी जी : आम्हा श्रीदत्तात्रयोप्रभूचें दरीसन होआवें :" सर्वज्ञें म्हणीतलें : "तें कां गा होइल ? तें अमोघदर्शन कीं गा :" "ना जी : गोसावी करिती तरi होईल :" सर्वज्ञें म्हणीतलें : "श्रीदत्तात्रयप्रभूचेया दरीसना जाल तरi होइल : श्रीदत्तात्रप्रभू तुम्हां भेटती :ऐसी प्रवृति असे : कव्हणी एकि वर्तेंवरi चालें : ते डावेयाकडे न पाहे : उजवीयाकडे न पाहे : अपणेयांकडे न पाहे : समेकडे न पाहे : ऐसी ते ऐले शेवतुनि पैला शेवटा जाए मग तीएसी वर्त साधे : तीएसी दाएंपसाय होति : मा तेचि जारi डावेयाकडे पाहे : उजवीयाकडे पाहे : आपणेयाकडे पाहे : समेकडे पाहे : ते पडे : तीयेचें हाडगुड नुरे : आतां ऐसेचि नीगा : पेणोवेणा जावें : मार्गी उपेणें न करावें : संबंधीयांचेया गावां न वचावें : एक भीक्षा नेहावी : ऐसीयापरी मातापुरा जावें : पहिलें घातातळi संन्यास्याचेनि वेखें भेटती : ते तुमंतें पुसती : "तुम्हीं कें जाता ?" तुम्हीं म्हणाल : "आमीी श्रीदत्तात्रप्रभूचेया दरीसना जातों :" "श्रीदत्तात्रप्रभू ते आम्हीचि :" एसें म्हणती : परि ते नव्हति : दुसुरेया घातातळi ब्राह्मणाचेनि वेखें भेटती : ते म्हणती : "आम्ही श्रीदत्तात्रयप्रभू :" परि ते नव्हति : घाटाचां माथां मेरूवाळेयाचीए पाळीं दारवठां गोंधळापुढें : चौडुका वाजे : नीळीची आंगी : नीळीचाचि चळना : नीळीचें टोपेरें : कवडेयांचें आभरण : ते म्हणती : "आम्ही श्रीदत्तात्रयोप्रभू नव्हों :" परि तेचि होति :" ऐसा गोसावीं वीधि वीहीला : "हो कां जी :" म्हणीनि गोसावीयांसि दंडवत घातलें : श्रीचरणां लागले : मग तैसेचि ते नीगाले : कटकाचीया वाटा : हाटांतुनि नीगाले : ते देवगिरीसि गेले : हाटाआंतु अवघे पदार्थ देखिले : गाठीया : मुदीया : कडदोरे : चोळीया : तोड : भातुकीं : खाजें : घेतलें : "गांवासि कोन्हा हातीं खाजें पाठऊं ? सोएरेयांचा गाउ : ना गांवासि जाओं : उपरवाहीं देओं : मग नीगों : कोण जाणे : आतां कें एणें होइल : मा कें भेटौनि : तरi लेंकुरूवांसि खाजें पाठऊं :" म्हणीनि सोइरेयांचा गाउ वाटेसि होता : डाउवाडीयेसि गेले : ते उपरवाइयां भेटले : "धरा हो हें खाजें : आमचां घरीं देया :" तवं तेहीं म्हणीतलें : "तुम्हीचि कां साउमे नैंया ?" "ना आम्हांसि गोसावीं वीधि वीहीला असे :" "ऐसेंचि आंगणीं उभे ढाका : भेटा आणि जा : आणि काइ :" उभे ढाकले : भेटले : "बैसा बैसा :" म्हणीनि हातीं धरूनi बाजेवरi बैसवीलें : पाए धुतले : "आतां जेवा : मग जा :" मग पाणी ठेविलें : उटिलें : न्हाणिले : जेविले : तवं वीळू जाला : मग राहिले : नीजैले : सवळेसीचि उठिले : मग नीगाले : तवं चांगदेवोभटीं म्हणीतलें : "हैं काइ दखले हो : गोसावीं वरिलें तेंचि आम्हीं केलें : गोसावीं वीधि वीहीला तो आम्ही भंगीला : आतां काइ दरीसन होइल ? आतां काइ गोसावी आम्हां भेटi देत असति ? आतां जाऊनि काइ करूं ? आतां चाला माघौतें :" मग ते माघौतें गोसावीयांच्या दरीसनास आले : मग तेहीं अवघी वेवस्था सांगीकली : मग सर्वज्ञें म्हणीतलें : "श्रीदत्तात्रप्रभूचें दरीसन तें अमोघ कीं गा : तें तुम्हांसि काँ गा होइल : ऐसें कां गा घडैल ?" सर्वज्ञें म्हणीतलें : "कव्हणी एकi माता असे ते आपुलेया लेंकुरूवासि पेंहें दे ते डुळकी : माघौतें दे : ते डुळकी : माघौतें दे : ते डुळकी : मग सेजीया सायलीया म्हणति : "आव्हो : हे डुळकीताहे : तरi कां पाजीतीएिसि ?" ते म्हणे : "घेया आइ : आंतु तन्ही लीतैल" :" ॥',
+    explanation: '**लीळा भावार्थ व निरूपण:**\n\n**प्रसंग आणि पार्श्वभूमी:**\nया लीळेत श्री चक्रधर स्वामी आपले शिष्य दखले आणि चांगदेवभट्ट यांना श्री दत्तात्रेय प्रभूंच्या दर्शनासाठी माहूर (मातापूर) येथे पाठवतात. दत्तात्रेय दर्शन ही अत्यंत कठीण गोष्ट आहे, म्हणून स्वामी त्यांना साधना कडक करण्यासाठी एक नियम (\'विधी\') घालून देतात. प्रवासात डावीकडे वा उजवीकडे पाहू नये, नातेवाईकांच्या गावाला जाऊ नये, वाटेत कोणाशीही बोलू नये किंवा अन्न खाऊ नये, केवळ सरळ रेषेत चालावे. तसेच वाटेत संन्यासी किंवा ब्राह्मणाच्या वेषात भेटणाऱ्या बहुरूप्यांवर विश्वास ठेवू नये. घाटाच्या माथ्यावर जेव्हा निळ्या रंगाचे कपडे घातलेला, चौघडा वाजवणारा माणूस भेटेल जो म्हणेल की "मी दत्त नाही", तोच खरा दत्तात्रेय असेल.\n\n**आध्यात्मिक रहस्य व मानवी मन:**\n१. **मनाचे चांचल्य आणि नियमभंग:** दखले आणि चांगदेवभट्ट प्रवासाला निघाले, पण देवगिरीच्या बाजारात गेल्यावर त्यांचा नियम सुटला. त्यांनी नातेवाईकांच्या मुलांसाठी खाऊ घेतला, नातेवाईकांच्या गावी गेले, आग्रहाखातर पाय धुतले, जेवले आणि तिथेच मुक्काम केला. मानवी मन हे संसारातील मोहाकडे कसे लगेच आकर्षित होते आणि कडक आध्यात्मिक नियमांपासून कसे भरकटते, याचे हे उदाहरण आहे.\n२. **गुरूंच्या आज्ञेचे महत्त्व:** जेव्हा त्यांना जाणवले की आपण स्वामींनी दिलेला विधी मोडला आहे, तेव्हा whim पश्चात्ताप झाला आणि ते दत्तात्रेय दर्शन न घेताच माघारी आले. स्वामींनी त्यांना समजावले की ईश्वरी दर्शन हे \'अमोघ\' असते, ते नियमांचे काटेकोर पालन केल्याशिवाय आणि अंतःकरणाच्या स्थिरतेशिवाय प्राप्त होत नाही.\n३. **आईचे रूपक (कारुण्याची परिसीमा):** स्वामींनी शेवटी एका आईचे रूपक दिले. जसे लहान मूल दूध पिताना सतत तोंड फिरवून दूध सांडते (डुळकी घेते), तरीही माता त्याला पुन्हा पुन्हा जवळ घेऊन दूध पाजते; त्याचप्रमाणे परमेश्वर देखील भक्तांच्या चुका पोटात घालून त्यांना मोक्षाच्या मार्गावर मार्गदर्शनाचे अमृत पाजतो।'
+  },
+
+  {
+    id: 'lc_p205',
+    bookId: 'leela_charitra',
+    number: 205,
+    title: 'लीळा २०५: संतोखा भेटि',
+    titleEn: 'Leela 205: Meeting with Santokh',
+    content: 'एकु दीसु गोसावीं अनकँएचेया लेणेयांसि बीजें केलें : तेथ लींगाचें देऊळ दखीणामुख असे : तेथ जोगी माहात्मा एक बैसले होते : गोसावीं दोन्ही दारसंका धरूनi अवलोकिलें : गोसावीं पुसिलें : "माहात्मा : आपण एथ असिजे ?" तीहीं म्हणीतलें : "असों सुखें संतोखें :" "ए नगरीच भिक्षा कीजे ?" "कीजे सुखेंसंतोखें :" "एथ जेविजे ?" "जेउं सुखेंसंतोखें :" "एथ नीद्रा करा ?" "करूं सुखें संतोखें :" सर्वज्ञें म्हणीतलें : "तरi तुमचें नावं संतोखू म्हणा :" आणि तेयांसि अस्तीति जाली : एतुकेनि गोसावीं तेथौनि बीजें केलें : तेहीं आपुलें आलजुल होतें तें सांडिलें : जोगमार्गाची काठी : खापरी : मुद्रा : ऐसेनसी गोसावीयांसरिसे नीगाले : मग ते एतुकेन्सी गोसावीयांसरिसे असति : ॥',
+    explanation: '**लीळा भावार्थ व निरूपण:**\n\n**प्रसंग आणि पार्श्वभूमी:**\nश्री चक्रधर स्वामी एकदा \'अनकये\' येथील लेण्यांमध्ये गेले होते. तेथे एका मंदिराच्या दरवाज्यापाशी एक जोगी महात्मा शांतपणे बसले होते. स्वामींनी त्यांना त्यांच्या राहण्याबद्दल, भिक्षेबद्दल आणि विश्रांतीबद्दल काही सहज प्रश्न विचारले. त्या जोग्याने प्रत्येक प्रश्नाचे उत्तर "सुखे संतोखे" (म्हणे अत्यंत आनंदाने आणि समाधानाने) असे दिले. हे ऐकून स्वामींनी त्यांचे नाव \'संतोख\' (संतोष) असे ठेवले आणि त्यांच्यामध्ये ईश्वराबद्दल अपार श्रद्धा (अस्तीति) निर्माण झाली. स्वामींच्या एकाच भेटीने प्रभावित होऊन त्या जोग्याने आपले पूर्वीचे सर्व साहित्य व योगमार्ग सोडून दिला आणि स्वामींचे शिष्यत्व पत्करून त्यांच्यासोबत चालू लागले.\n\n**आध्यात्मिक संदेश:**\n१. **खरा संतोष हाच मुख्य गुण:** साधकाच्या जीवनात \'संतोष\' हा अत्यंत महत्त्वाचा गुण आहे. परिस्थिती कशीही असो, अन्न मिळो वा न मिळो, राहण्याची जागा कशीही असो, जो सदैव समाधानी राहतो, त्यालाच ईश्वराची प्राप्ती लवकर होते.\n२. **ईश्वरी सान्निध्याचा प्रभाव:** ईश्वराच्या केवळ सान्निध्याने आणि प्रेमळ शब्दांनी माणसाचे हृदयपरिवर्तन घडून येते, हे संतोखाच्या उदाहरणावरून सिद्ध होते. जुना योगमार्ग क्षणात सुटून ते स्वामींचे अनन्य भक्त बनले।'
+  },
+
+  {
+    id: 'lc_p206',
+    bookId: 'leela_charitra',
+    number: 206,
+    title: 'लीळा २०६: तथा अभ्यासकरणीं सीक्षापण',
+    titleEn: 'Leela 206: Testing and Training of Santokh',
+    content: 'संतोखू ऐसें माणीकेस्वराकडे गेले होते : तीकडौनि एताति : तवं गाविचां जोगीं धरिले : "हें काइ रे : जोगु नाहीं : जुगुति नाहीं : सीक्षा नाहीं : आदेसु नाहीं : काठी खापरी : मुद्रा तरी आमची : आणि तुं गोसावीयांपासि राहीलासि :" तवं संतोखें म्हणीतलें : " कैसीं नाहीं जोगु जुगुति ? या पां रे मासीं अभ्यासु घालूं :" तवं तेहीं म्हणीतलें : "या घालूं :" एतुकेनि संतोखांसि अस्तीति जाली : एतुकेनि : च्यान्हीं कणे प्रगटलीं : नाना परीचीं आसनें घालुं लागले : तवं संतोखाचें तें गोसावीयांचेया स्तीतीचें : ते घालीतचि होते : एर अडले : मग तीहीं म्हणीतलें : "आरे : साक्षातु गोरक्षी :" म्हणीनि घरासि घेउनि गेले : उटिले : न्हाणिले : जेउं सुदलें : रांधवणहाटिचे पदार्थ आणिले : पात्र पुजिलें : तांबोळ दीधलें : टीळा गंधाक्षता केलीया : पासवडी वाडली : सीक्षा केली : ॥ मग संतोखू गोसावीयांपासि आले : एतांचि गोसावीं दृष्टीचीकरूनi भ्रूभंगी पुसिलें : तवं तेहीं पात्र पुढां ठेउनि अवघी गोष्टि गोसावीयांपुढां सांगीकली : "जी जी : मी हाटांतु वाटे जात होतां : तवं एकीं माहात्मा मातें म्हणीतलें : \'आरे : तुं आम्हांसि सीक्षा न करिसी : आदेसु न करिसी : काही न करिसी :\' तवं म्या म्हणीतलें : \'ए पां रे मासीं अभ्यासु घालुं :\' तेहीं म्हणीतलें : \'या घालुं :\' ते घालुं लागले : माझें तें गोसावीयांचें : ते अडले : मग म्हणीतलें : \'गोरक्ष रे :\' म्हणीनि तेहीं सीक्षा केली : गोरक्षू म्हणीनि माझें पात्र पुजिलें : ऐसें जी तेहीं केलें :" मग सर्वज्ञें म्हणीतलें : "हां गा : तें तुमचें रहस्य कीं गा : आपुलें रहस्य आणीकाप्रति प्रगटीए न कीजे कीं गा : मोदळा असे : तेयाचें घेतें द्वार सानें : सांडीतें द्वार थोरै :" "जी जी : आजिलागौनि न करीं जी :" ॥',
+    explanation: '**लीळा भावार्थ व निरूपण:**\n\n**प्रसंग आणि पार्श्वभूमी:**\nस्वामींचे नवीन शिष्य संतोख एकदा माणिकेश्वराकडे जात असताना त्यांना काही जुन्या हठयोगी मित्रांनी अडवले. त्यांनी संतोखाला चिडवले की, "तू चक्रधरांकडे गेल्यापासून तुझा योग सुटला आहे, तुझ्याकडे अब कोणतीही सिद्धी राहिली नाही." यावर संतोखाने त्यांना योगाच्या परीक्षेचे (अभ्यासाचे) आव्हान दिले. स्वामींच्या कृपेने संतोखाने अशी अद्भूत आसने करून दाखवली, जी इतर योगी करू शकले नाहीत. ते योगी थक्क झाले आणि त्यांनी संतोखाला साक्षात गोरक्षनाथ मानून त्यांची पूजा केली, पाय धुतले आणि मोठा सन्मान केला.\n\n**आध्यात्मिक रहस्य:**\n१. **रहस्य राखण्याची आवश्यकता (गुप्त साधना):** संतोखाने जेव्हा हा सर्व प्रसंग स्वामींना सांगितला, तेव्हा स्वामींनी त्याला एक अत्यंत महत्त्वाचा उपदेश केला. स्वामी म्हणाले की, ईश्वरी कृपेने मिळालेले अनुभव किंवा सिद्धीचे \'रहस्य\' इतरांसमोर प्रगट करू नये.\n२. **मोदळाचे रूपक:** स्वामींनी मोदळाचे (एका धान्याच्या साठवणीचे साधन) उदाहरण दिले. मोदळाचे आत घेण्याचे तोंड लहान असते आणि बाहेर काढण्याचे तोंड मोठे असते. उसीप्रमाणे साधकाने ज्ञान आत घेताना शांत राहावे आणि सिद्धीचे प्रदर्शन करून शक्ती वाया घालवू नये. साधनेतील अनुभव गुप्त ठेवल्यानेच आध्यात्मिक प्रगती टिकून राहते।'
+  },
+
+  {
+    id: 'lc_p207',
+    bookId: 'leela_charitra',
+    number: 207,
+    title: 'लीळा २०७: तथा साडाक्रमज्ञान',
+    titleEn: 'Leela 207: Sadakrama Knowledge of Santokh',
+    content: 'आणीक एक माहात्मे गांवासि आले : तेहीं म्हणीतलें : "हा गोसावीयांपासि काइ असे ? काठी खापरी आमची : मुद्रा आमचीया :" तवं गांविचां जोगीं म्हणीतलें : "आम्हीं धरिले होते : तवं नानापरीचीं वीचीत्रें आसनें घालुं लागले :" मग म्हणीतलें : "हे साक्षातु गोरक्षू :" तवं तेहीं म्हणीतलें : "हा अभ्यासु जाला : तेयां साडाक्रम पुसों :" म्हणीनि अवघेचि गोसावीयांसी आले : मग तेहीं माहात्मां गोसावीयांतें पुसिलें : "जी जी : या नावं संतोखू काइसें ?" सर्वज्ञें म्हणीतलें : "संतोखा : हे तुमंतें साडाक्रम पुसताति :" "जी जी : पुसताति तरi पुसतु : आणि काइ :" "हां गा : तुमची काठीखापरी हीरती ना ?" "जी जी : हीरती तरi हीरती : आणि काइ :" "तुमचीया जटे उपडीती :" "जी जी : उपडीती तरi उपडीती : आणि काइ :" "तुमचीया मुद्रा हीरती ना ?" "जी जी : हीरती तरi हीरती : आणि काइ जी :" "तुमंतें तोंडिचां तोंडीडी मारिती :" "जी जी : मारिती तरi मारिती : आणि काइ :" "तुमंतें पाई धरूनi फरफरां काढिती :" "जी जी : काढिती तरi काढिती : आणि काइ :" सर्वज्ञें म्हणीतलें : "म्हणीनिचि संतोखू कीं : आतां सतेव संतोखू :" मग तेहीं माहात्मां म्हणीतलें : "जी जी : संतोखू नावं हें यासीचि साजे :" एतुकेनि तेहीं गोसावीयांसि दंडवत घातलें : श्रीचरणां लागलें : मग नीगाले : मग नीगतां तेहीं म्हणीतलें : "आम्सीं साडाक्रमु घाला :" मग सर्वज्ञें म्हणीतलें : "तो तुम्ही नेणा गा : चंद्राइ माहात्मा : तो साडाक्रमु जाणे :" एतुकेनि ते उगेचि नीगाले : ॥',
+    explanation: '**लीळा भावार्थ व निरूपण:**\n\n**प्रसंग आणि पार्श्वभूमी:**\nकाही इतर महात्मा (योगी) संतोखाची अंतिम परीक्षा घेण्यासाठी आले. त्यांनी विचार केला की आसन प्राविण्य (अभ्यास) तर ठीक आहे, पण या संतोखाची सहनशीलता आणि मानसिक तयारी किती आहे, हे तपासण्यासाठी ते त्याला \'साडाक्रम\' (अत्यंत कठीण आणि मानहानीकारक शारीरिक परीक्षा) बद्दल विचारू लागले. स्वामींच्या समोर त्यांनी संतोखाला विचारले, "जर कोणी तुझी काठी आणि खापरी हिरावून घेतली, जटा उपटून टाकल्या, तुझ्या मुद्रा काढून घेतल्या, तुला तोंडावर मारले आणि पायाला धरून जमिनीवर फरफटत ओढले, तर तू काय करशील?"\n\n**सहनशीलता आणि निरहंकारिता:**\n१. **"आणि काइ" (तटस्थ वृत्ती):** संतोखाने प्रत्येक भयानक छळाच्या प्रश्नावर अत्यंत शांतपणे उत्तर दिले: "ते तसे करतील, तर करू देत, आणि काय?" (म्हणे मला त्याचा काहीही फरक पडत नाही). संतोखाची ही निरहंकारी आणि अत्यंत तटस्थ वृत्ती पाहून सर्व योगी थक्क झाले.\n२. **खरा संतोष (सतेव संतोखू):** स्वामींनी अभिमानाने सांगितले की, ज्याच्या मनात शरीराविषयी आणि मान-अपमानाविषयी पूर्ण उदासीनता निर्माण झाली आहे, तोच खरा \'सतेव संतोखू\' (अविचल संतोषी) आहे.\n३. **साधकाचा खरा विजय:** संतोखाच्या या विरागी आणि सहनशील वृत्तीमुळे त्या सर्व अहंकारी योग्यांचे डोके झुकले आणि त्यांनी स्वामींचे दर्शन घेऊन पराभव स्वीकारला।'
+  },
+
+  {
+    id: 'lc_p208',
+    bookId: 'leela_charitra',
+    number: 208,
+    title: 'लीळा २०८: उपाध्यां म्हणीए',
+    titleEn: 'Leela 208: Instructions to Upadhye',
+    content: 'बाइसीं उपाध्यांतें म्हणीतलें : "बटीका : जाए पां : पत्रसाख घेउनि ए :" गेले : घेउनि आले : "बटीका : जाए पां : तेल घेउनि ए :" गेले : आणिले : "बटीका : वीसरलीएं : सांबरू घेउनि ए हो :" सर्वज्ञें म्हणीतलें : "काइ जालें ए म्हांतारीएसी ? एक वेळ न पुरे : दोनि वेळ न पुरे : ऐसी विसुगी लावा : मां उबाचि असेल :" उपाध्ये उगेचि राहिले : सर्वज्ञें म्हणीतलें : "कां वाटिका : जाल ?" "तरi काइ जी : बाइसांचें म्हणीएं तें गोसावीयांचेचि कीं :" सर्वज्ञें म्हणीतलें : "जा जा : बाइसें कोपती :" ॥',
+    explanation: '**लीळा भावार्थ व निरूपण:**\n\n**प्रसंग आणि पार्श्वभूमी:**\nया अत्यंत रंजक आणि कौटुंबिक वाटाव्या अशा लीळेत भक्तांची सेवावृत्ती आणि स्वामींचे त्यांच्यावरील प्रेम दिसून येते. बाईसा (स्वामींच्या प्रमुख शिष्या) यांनी उपाध्यांना (शारंगधर देव किंवा उपाध्येभट) घरगुती कामासाठी सारखे कामाला लावले होते. पहिल्यांदा त्यांनी पळसाची पाने (पत्रसाख) आणायला सांगितली, नंतर तेल आणायला पाठवले, आणि तिसऱ्यांदा पुन्हा आठवून मसाल्याचे पदार्थ (सांबर) आणायला सांगितले. वारंवार कामाला लावल्यामुळे स्वामींनी बाईसांवर विनोद करत उपाध्यांना विचारले की, "या म्हातारीला काय झाले आहे? एक काम एकदाच का सांगत नाही?"\n\n**सेवा आणि अनन्य भाव:**\n१. **गुरूशिष्यांमधील अद्वैत भाव:** उपाध्यांनी अत्यंत गोड आणि समर्पक उत्तर दिले. ते म्हणाले, "बाइसांचे सांगणे म्हणजेच तुमचेच सांगणे आहे. त्यांच्या सेवेत आणि तुमच्या सेवेत काहीही फरक नाही." हे उत्तर ऐकून स्वामी प्रसन्न झाले.\n२. **सहज जीवन आणि भक्ती:** महानुभाव पंथात सेवा हे भक्तीचे प्रमुख साधन मानले गेले आहे. बाईसांच्या आज्ञेचे पालन करणे ही देखील स्वामींचीच सेवा आहे, हा निस्सीम आदरभाव उपाध्यांनी आपल्या कृतीतून आणि शब्दांतून व्यक्त केला आहे।'
+  },
+
+  {
+    id: 'lc_p209',
+    bookId: 'leela_charitra',
+    number: 209,
+    title: 'लीळा २०९: नागदेओभटां वेदुदान',
+    titleEn: 'Leela 209: Bestowing Vedic Knowledge on Nagadeobhat',
+    content: 'पदकर नागदेओभट म्हणति : "मज संध्यातुल्य वेदु होए : ऐसें मी गोसावीयांतें मागेन :" दरीसना एति आणि वीसरती : एकु दीं : नागदेओभट गोसावीयांचेया दरीसनासि आले : तवं गोसावी दानासि पुढांले : सर्वज्ञें म्हणीतलें : "भटो : काइ मागा :" "हो का जी : सबद संक्रमण : वेदध्वनि होआवी जी :" सर्वज्ञें म्हणीतलें : "होइल हो :" एतुकेनि संक्रमणासहीत वेदू एओं लागला : गांवोगाविचे ब्राह्मण पद चुकति : ते तेयांतें पुसावेया एति : मग पदकर नागदेओभट हें नावं जालें : अचाट सामग्री जाली : अखंड बोलतचि असति : उभीए गंगातटीं तेयांचीए परक्षे उतरे ऐसा ब्राह्मणुचि नाहीं : अर्थसहीत वेदू बोलति : ॥ मग गोसावीं बीजें केलेंयावरi तेहीं ऐसें सपन देखिलें : स्वप्नीं एउनि गोसावीं म्हणीतलें : "काइ आजुनि तुझी वडवड न सरे ?" एतुकेनि ते उगेचि राहिले : मग ते कव्हणासींही बोलति ना : माहात्मे आमची जाति : तेयांसि सबद दोनि बोलति : ॥',
+    explanation: '**लीळा भावार्थ व निरूपण:**\n\n**प्रसंग आणि पार्श्वभूमी:**\nया लीळेत महानुभाव पंथाचे प्रमुख आचार्य आणि स्वामींचे अत्यंत प्रिय शिष्य नागदेवाचार्य (नागदेवभट्ट) यांना मिळालेल्या अद्भुत ज्ञानदानाचे वर्णन आहे. नागदेवभट्टांच्या मनात इच्छा होती की आपल्याला वेदांचे संपूर्ण आणि अत्यंत शुद्ध असे ज्ञान प्राप्त व्हावे, पण स्वामींच्या दर्शनाला आल्यावर ते ही गोष्ट विसरून जात असत. शेवटी एका प्रसंगी स्वामींनी स्वतःहून त्यांना विचारले, "भट, तुला काय पाहिजे ते माग." तेव्हा नागदेवांनी मागितले की, "मला वेदध्वनी आणि वेदांचे शब्द संक्रमण (ज्ञान) प्राप्त व्हावे."\n\n**ज्ञानाची प्राप्ती आणि प्रभाव:**\n१. **शब्दे संक्रमण (अलौकिक ज्ञान प्रसार):** स्वामींनी "होईल हो" म्हणून त्यांना आशीर्वाद दिला. त्यानंतर नागदेवांच्या मुखातून वेदांचे इतके उत्कृष्ट आणि अलौकिक स्तोत्र व मंत्र बाहेर पडू लागले की मोठमोठे विद्वान ब्राह्मणही थक्क झाले. विद्वानांचे काही चुकल्यास ते नागदेवांकडे दुरुस्त करण्यासाठी येऊ लागले.\n२. **\'पदकर\' ही उपाधी:** या अफाट ज्ञानामुळे त्यांना \'पदकर नागदेवभट्ट\' हे नाव मिळाले. संपूर्ण गोदावरी (गंगा) तीरावर त्यांच्या विद्वत्तेला आव्हान देणारा एकही ब्राह्मण उरला नाही. ते वेदांचा अर्थ केवळ सांगत नव्हते तर तो जगून दाखवत होते. ईश्वरी कृपेने सामान्य मानवालाही कसे अगाध ज्ञान प्राप्त होऊ शकते, याचे हे ज्वलंत उदाहरण आहे.\n\n**स्वप्न आणि मौन साधना (वडवड न सरे):**\nज्ञानप्राप्तीनंतर नागदेवांमध्ये वादविवाद करण्याचा आणि सतत बोलण्याचा थोडा गर्व निर्माण झाला होता. एकदा स्वामींनी त्यांच्या स्वप्नात येऊन विचारले, "काय नागदेवा, तुझी बडबड (वडवड) अजून संपत नाही का?" या एकाच वाक्याने नागदेवांच्या मनातील उरलासुरला अहंकारही नष्ट झाला आणि त्यांनी मौन पत्करले. ते कोणाशीही फालतू चर्चा करत नसत; केवळ आपल्या पंथातील सन्माननीय महात्म्यांशी मोजकेच दोन शब्द बोलत असत. यातून समजते की ज्ञानाचे रूपांतर अंतिम मौनात आणि अंतर्मुखतेत झाले पाहिजे, हाच ईश्वराचा नागदेवांना खरा उपदेश होता।'
+  },
+
+  {
+    id: 'lc_p210',
+    bookId: 'leela_charitra',
+    number: 210,
+    title: 'लीळा २१०: पारधि निरोपणें',
+    titleEn: 'Leela 210: Paradhi Niropane',
+    content: 'गोपाळपंडीत ते सारंगपंडीतांचे मैत्र : ते कटकिये : ते सारंगपंडीतांसवें गोसावीयांच्या दरीसनास आले : तीटकीकारें बैसले : मग गोसावी पुसिलें : "आपणेया कवणा ठाई परीच्यो ?" "जी जी : मी पारधीचें वगतृत्व जाणें :" सर्वज्ञें म्हणीतलें : "सास्वाआधारू : कीं उबेणें ?" सर्वज्ञें म्हणीतलें : "सावजाचा यावा आणि धुरेचा लाठु बोला पां :" तवं तीं सावजाचा यावा बोलिला : धुरेचा लाठु बोलिला : परि कोणी रहस्य अभिनवे ना : मग सर्वज्ञें म्हणीतलें : "पारधि ते काइ इतुकीचि गा ?" मग ते उगेचि राहिले : मग गोसावी पारधि निरोपुं आदरीलीं : सर्वज्ञें म्हणीतलें : "जाड : वाड : कोड : कवतीक : जाड पारधि सोराची : हस्तीचीं : वाड पारधि वाघाची : कोड पारधि हरणारोहीयांचीतळांची : मेडळांची : कवतीक पारधि ससेयाची : तीतीरांची : लावेयांची : मासेयाची : जाड पारधि कैसी जाणिजे ?" मग गोसावी सावजाचा यावा बोलों आदरीला : हळुहळुकरि सावज ए : तवं बाइसें भुतकरूनि अवघीं भगतिजनें मठाआंतूं पळों आदरिलें : राणेराउत होते तेही पालखती मोडिलीया : पळावेयाची आइति केली : मग गोसावी तो रसु आखूडिला : मग गोसावी धुरेचा लाठु बोलों आदरिला : ते राणाराउतांचे हात परजांवारि पडिले : बाइसें मुखकरूनि अवघेया भगतिजनां लाठु उपजला : मग तेही म्हणीतलें : "जी जी : हें आम्हीं परिंसों नेणों : मां बोलींनि काइ जी ? हें गोसावींची निरोपणें आणि गोसावींची परिसावें :" ॥',
+    explanation: '**लीळा भावार्थ व निरूपण:**\n\n**प्रसंग:**\nसारंगपंडितांचे मित्र गोपाळपंडित (जे कटकचे/लष्करातील होते) स्वामींच्या दर्शनासाठी आले. ते तिथे \'तीटकीकार\' (अभिमानाने किंवा एका विशिष्ट पद्धतीने) बसले. स्वामींनी त्यांना विचारले, "तुम्हाला कोणत्या विषयाचे ज्ञान किंवा परिचय आहे?" त्यावर गोपाळपंडित म्हणाले, "मला पारधीचे (शिकारीचे) शास्त्र आणि वक्तेपण (वगतृत्व) माहित आहे." स्वामींनी विचारले, "ते शास्त्राच्या आधारावर आहे की अनुभवावरून?" आणि म्हणाले, "सावजाचा यावा (प्राणी कसा येतो) आणि धुरेचा लाठु (शिकारीची ताकद/उत्साह) याबद्दल सांगा." परंतु गोपाळपंडितांना त्याचे रहस्य सांगता आले नाही.\n\n**स्वामींचे निरूपण:**\nत्यानंतर श्रीचक्रधर स्वामींनी स्वतः शिकारीचे (पारधीचे) चार प्रकार सांगत निरूपण केले: \'जाड\' (मोठी शिकार - हत्ती इत्यादींची), \'वाड\' (क्रूर शिकार - वाघाची), \'कोड\' (कौतुकास्पद/चातुर्याची शिकार - हरिण, रोही, मेंढे इत्यादींची), आणि \'कवतीक\' (लहान किंवा कौतुकाची शिकार - ससे, तीतर, लावे, मासे इत्यादींची). \n\n**अद्भूत प्रसंग आणि रसनिर्मिती:**\nस्वामींनी जेव्हा प्रत्यक्षात सावज येण्याचा प्रसंग अभिनित करून दाखवला, तेव्हा तिथे इतका भयानक आणि प्रत्यक्ष शिकारीचा आभास निर्माण झाला की, बाळसे आणि इतर सर्व भक्तगण घाबरून मठात पळू लागले. तिथे असलेले राजे-रावतही पळाले. त्यानंतर स्वामींनी वीररस (धुरेचा लाठु) प्रकट केला, तेव्हा सर्वांच्या अंगात वीरश्री संचारली, राजे-रावतांचे हात तलवारीच्या मुठीवर गेले.\n\n**निष्कर्ष:**\nया लीळेतून प्रभू चक्रधर स्वामींच्या अभिनयकला, शब्दांचे सामर्थ्य आणि कोणत्याही प्रसंगाला जिवंत उभे करण्याची अलौकिक ईश्वरी शक्ती दिसून येते।'
+  },
+  {
+    id: 'lc_p211',
+    bookId: 'leela_charitra',
+    number: 211,
+    title: 'लीळा २११: बाइस्यांच्या देवां होणें',
+    titleEn: 'Leela 211: Baisyanchya Deva Hone',
+    content: 'एकु दीं दोपाहारांचा पुजाअवसरू जाला : आरोगण : पहुडु जालेयाअनंतरें गोसावी वीळिचां वेळीं मढाचीए जगतीआंतु भगतिजनांसी खेळु मांडिला : पाटाउ पाग : काळीं धारी : ते उभी घाटिया वेढीली : आणि लाहानीसीवनी खेळत होते : एरांतें डवंचीति : एरांतें डवंचीति : उघडी श्रीमुर्ति : ऐसेया बाइसें वीळिचांचेया पुजाअवसराची आइति करिती : तेविचि म्हणति : "पुरे कीजो बाबा :" गोसावी उगेचि : नाइकेतया भाभा खेळत असति : तवं पुजाअवसरासि उसीरू जाला : आरोगणेसि उसीरू जाला : गोसावी खेलों आदरिलें : बाइसीं वेळां दोनि म्हणीतलें : "बाबा : खेळु पुरों देइझो : पुजाअवसरासि उसीरू जाला :" परि गोसावी खेलोंचि आदरिलें : मग बाइसें भगतिजनासि कोपलीं : बाइसीं म्हणीतलें : "आरे वटुकुरेंहो : आतां खेळु पुरों देया ना : बाबासि उसीरू होतु असे :" मग सर्वज्ञें म्हणीतलें : "पुरे गा आतां : बाइसें कोपत असति : आतां एथूनि बाइस्यांचेया देवां होआवें लागेल :" पटिसाळे ओळणीची वस्त्रें घेतलीं : बाहिरिवासु होता तो घेतला : वेढिला फुटा प्रावर्ण केला : गोसावी ओटेयावरि आसनीं बैसले : सर्वज्ञें म्हणीतलें : "बाई : आतां तुम्चेया देवां होआवें : आतां पुजा करा :" मग बाईसीं पुजा केली : धूपातीं मंगळार्ती केली : आरोगण झाली : गोसावीयांसि पहुडु जाला : ॥',
+    explanation: '**लीळा भावार्थ व निरूपण:**\n\n**प्रसंग आणि लीला:**\nएकदा दुपारच्या पूजेनंतर आणि विश्रांतीनंतर (पहुड) संध्याकाळच्या वेळी श्रीचक्रधर स्वामी मठाच्या अंगणात (जगती) भक्तगणांसोबत खेळ खेळू लागले. स्वामींनी डोक्याला काळ्या धारीचा पागोटा (पाग) बांधला होता आणि ते लहान मुलांसारखे आनंदाने सर्वांना शिवत, खेळत होते (एरांतें डवंचीति). स्वामींची उघडी, सुंदर श्रीमूर्ती पाहून आणि खेळात दंग झालेले पाहून आऊसा (बाइसा) पूजेची तयारी करत होत्या.\n\n**आईचा लडिवाळ राग आणि स्वामींचे देव रूप:**\nखेळात वेळ निघून गेल्यामुळे पूजेला आणि आरोगणेला (जेवणाला) उशीर होत होता. बािसानी दोन-तीनदा सांगितले, "बाबा, आता खेळ संपवा, उशीर झाला आहे." पण स्वामी खेळतच राहिले. शेवटी बािसानी इतर भक्तगणांवर आणि बटूंवर रागावून म्हटले, "अरे पोरांनो, खेळ संपवा की आता! बाबांना उशीर होतोय." बािसांचा हा प्रेमळ कोप पाहून स्वामी हसले आणि म्हणाले, "चला, आता पुरे! बाइसा रागावत आहेत. आता आपल्याला बाइसांच्या \'देव\' व्हावे लागेल." स्वामींनी पूजेची वस्त्रे परिधान केली, ओट्यावर येऊन बसले आणि म्हणाले, "बाई, आता आम्ही तुमचे देव झालो आहोत, आता पूजा करा." मग बािसानी मनोभावे पूजा, आरती केली.\n\n**निष्कर्ष:**\nया लीळेतून स्वामींचे भक्तवत्सल रूप आणि बािसांचे आईसारखे लडिवाळ प्रेम दिसून येते. ईश्वर भक्ताच्या प्रेमापोटी स्वतः बालक बनून खेळतो आणि भक्ताच्या हट्टापायी तात्काळ देव बनून पूजा स्वीकारतो।'
+  },
+  {
+    id: 'lc_p212',
+    bookId: 'leela_charitra',
+    number: 212,
+    title: 'लीळा २१२: संकरेश्वरीं बोणें कथन',
+    titleEn: 'Leela 212: Sankaresvari Bone Kathana',
+    content: 'एकु दीसु गोसावीयांसि उदीयांचा पुजाअवसरू जालेयाअनंतरें वीहरणासि संकरेश्वराचेया लेणेयासि बीजे केलें : बाइसीं पुसिलें : "बाबा : या लेणेयांचा एसणा दारवठा काइसा ?" सर्वज्ञें म्हणीतलें : "ए देवतेसि हस्तीवरि बोणें ए गा :" ॥',
+    explanation: '**लीळा भावार्थ व निरूपण:**\n\n**प्रसंग:**\nएक दिवशी सकाळी स्वामींची पूजा उरकल्यानंतर ते फिरण्यासाठी (विहरणासाठी) संकरेश्वर (शंकेश्वर) येथील लेण्यांमध्ये गेले. तिथे असणारा मोठा भव्य दरवाजा पाहून बािसांनी स्वामींना विचारले, "बाबा, या लेण्यांचा एवढा प्रचंड मोठा दरवाजा (दारवठा) कशासाठी आहे?"\n\n**निरूपण:**\nस्वामींनी त्यावर उत्तर दिले, "या देवतेला हत्तीवर बसवून नैवेद्य (बोणें) आणला जातो, म्हणून हा हत्ती मावेल एवढा मोठा दरवाजा बनवला आहे."\n\n**निष्कर्ष:**\nस्वामींचे पूर्वइतिहास आणि स्थानिक देवतेच्या पूजेच्या पद्धतींचे अगाध ज्ञान या लीळेतून प्रकट होते।'
+  },
+  {
+    id: 'lc_p213',
+    bookId: 'leela_charitra',
+    number: 213,
+    title: 'लीळा २१३: रितुपणें कथन',
+    titleEn: 'Leela 213: Ritupane Kathana',
+    content: 'सारंगपंडीत गोसावीयांचेया दरीसनास आले : तेहीं दोनि फळें गोसावीयांसि ओळखविलीं : गोसावी पुसिलें : "पांडेया : एं काइसेयाचीं फळेंगा ? यां नांव काइ गा ?" "जी जी : याचें नांव नेणिजे : मागां माहादेवोरायाचीए सभेसी आणिलीं होतीं : परि तेथ यांचे नांव नेणिजे : मग माहादेवोरायें गदोभांडारीयासि दीधलीं : गदोभांडारीएं मज दीधलीं : मीयां गोसावीयांसि ओळखविलीं :" मग सर्वज्ञें म्हणीतलें : "यांचें नांव रितुपणें गा :" ॥',
+    explanation: '**लीळा भावार्थ व निरूपण:**\n\n**प्रसंग:**\nसारंगपंडित स्वामींच्या दर्शनाला आले तेव्हा त्यांनी सोबत आणलेली दोन अपूर्व फळे स्वामींना दाखवली (ओळखविली). स्वामींनी विचारले, "पांड्या (सारंगपंडितांचे टोपणनाव), ही कशाची फळे आहेत? यांचे नाव काय आहे?" सारंगपंडितांनी नम्रपणे सांगितले की, "मला यांचे नाव ठाऊक नाही. पूर्वी देवगिरीचे राजे महादेवराव यांच्या राजसभेत ही फळे आणली होती, पण तिथेही कोणाला नाव माहित नव्हते. म्हणून राजांनी ती गदोभांडारी (खजिनदार) यांना दिली, त्यांनी ती मला दिली आणि मी ती आपल्या चरणी आणली आहेत."\n\n**फळाचे नामकरण:**\nसर्वज्ञ श्रीचक्रधर स्वामींनी त्या फळांचे परीक्षण करून सांगितले, "या फळांचे नाव \'रितुपणें\' (ऋतुपर्ण) असे आहे."\n\n**निष्कर्ष:**\nया लीळेतून स्वामींची सर्वज्ञता आणि सृष्टीतील अपूर्व वनस्पती व फळांविषयीचे सखोल ज्ञान दिसून येते, जे तत्कालीन मोठ्या विद्वानांना व राजसभेलाही ठाऊक नव्हते।'
+  },
+  {
+    id: 'lc_p214',
+    bookId: 'leela_charitra',
+    number: 214,
+    title: 'लीळा २१४: माणिकेश्वरीं पेखणें चोरीं नेणें',
+    titleEn: 'Leela 214: Manikesvari Pekhane Chori Nene',
+    content: 'एकु दीं गोसावी माणिकेश्वरासि बीजे केलें : चौकीं आसन जालें : मग तैसेंचि वीवरापासि बीजे केलें : सर्वज्ञें म्हणीतलें : "एथौनि : गात : वात : पेखणें चोरीं नेलें :" वीवर दाखवीलें : ॥',
+    explanation: '**लीळा भावार्थ व निरूपण:**\n\n**प्रसंग:**\nएका दिवशी स्वामी माणिकेश्वर येथे गेले. तिथे चौकात त्यांचे आसन मांडण्यात आले. त्यानंतर स्वामी तिथल्या एका गुहेपाशी (विवरापाशी) गेले आणि म्हणाले, "या विवरातून पूर्वी गायन, वाद्य आणि नृत्यकला (गात, वात, पेखणें) चोरीला गेले (किंवा अदृश्य झाले) आहेत." असे म्हणून त्यांनी ते विवर सर्वांना दाखविले.\n\n**निष्कर्ष:**\nप्राचीन संस्कृती, कला आणि रहस्यमयी स्थानांविषयीची माहिती स्वामींच्या वचनातून या लीळेत व्यक्त होते।'
+  },
+  {
+    id: 'lc_p215',
+    bookId: 'leela_charitra',
+    number: 215,
+    title: 'लीळा २१५: चांगदेवोभटां स्मरण वीधान कथन',
+    titleEn: 'Leela 215: Changadeobhatan Smarana Vidhana Kathana',
+    content: 'परमेश्वरपुरा पासोनि चांगदेवोभट गावां गेले नाहिति : मग महाजनीं गोसावीयांतें वीनवीलें : "जी जी : चांगोसि बहुत दीस जाले : याची माता खंति करीत असे जी :" सर्वज्ञें म्हणीतलें : "बाटिका : जा : भेटौनि या :" "हो कां जी :" मग चांगदेवोभट गावां निघाले : गोसावी बोळवीत नीगाले : गोसावी चांगदेवोभटाचेया खांदावरि श्रीकरू घातला : मग सर्वज्ञें म्हणीतलें : "बटिका : एथौनि तुम्ही श्रीप्रभूचेया ठाया गेलेति : यासवें : श्रीप्रभूचीए ठाउनि यासवें सांगातें आलेति : आतां गावां जात असा : तरि तुम्ही यांतें आठवाल ?" तवं चांगदेवोभटीं म्हणीतलें : "तरि काइ जी :" सर्वज्ञें म्हणीतलें : "बटिका : यातें आठवीजे हो : दाहा वीस वेळ तरीं आठवीजे हो : दाहावीस वेळ नाहीं तरि सातपांच वेळ आठवीजे : सातपांच वेळ नाहीं तरि दोनच्यारि वेळ तरीं आठवीजे हो : दोनच्यारि वेळ नाहीं तरि एकदोनि वेळ तरीं आठवीजे हो : परि वीझूं दीसु जाओं नेदिजे :" सर्वज्ञें म्हणीतलें : "पसु असे : ते आडीदरडी चरे : पोट भरे : मग एकी ठाई बैसोनि रोवंती : तेणें तेयाचीया सप्त धातु नीवती : तुष्टि होए : पुष्टि होए : बळ होए :" सर्वज्ञें म्हणीतलें : "बटिका : भींगुरटी असे : ते कीटकियेतें पाहे : धरी : कांटा रोवी : मग नेउनि आपुलेया घरांतु घाली : दार लीपूनि जाए : एउनि माघौती मातें खाइल म्हणौनि भेणें तीइतें चींती : चींतितचींतित चींतता तीइसीही पाख नीगति : तेही तीसरिखीचि होए : तैसें ईश्वराचेया वीयोगतातव ईश्वरातें चींतितचींतता ईश्वरासारिखा होए : ॥',
+    explanation: '**लीळा भावार्थ व निरूपण:**\n\n**प्रसंग आणि उपदेश:**\nचांगदेवभट बरेच दिवस झाले तरी आपल्या गावी गेले नव्हते. त्यांच्या आईला काळजी वाटत होती, म्हणून महादजींनी स्वामींना विनंती केली. स्वामींनी चांगदेवभटांना गावी जाऊन आईला भेटण्याची आज्ञा दिली. स्वामी स्वतः त्यांना निरोप देण्यासाठी (बोळवीत) निघाले. चालताना स्वामींनी चांगदेवभटांच्या खांद्यावर आपला श्रीहस्त ठेवला आणि विचारले, "बटिका (शिष्याला उद्देशून), आता तुम्ही गावी जात आहात, तर तिथल्या व्यवहारात गुंतल्यावर तुम्ही या ईश्वराचे स्मरण कराल का?" चांगदेवभट म्हणाले, "होय प्रभू, नक्कीच करेन."\n\n**स्मरणाचे विज्ञान आणि महत्त्व:**\nस्वामींनी स्मरणाचे अप्रतिम विज्ञान सांगताना सांगितले, "बटिका, ईश्वराचे नित्य स्मरण करावे. दिवसातून दहा-वीस वेळा आठवण काढावी, जमले नाही तर सात-पाच वेळा, नाहीतर दोन-चार वेळा, अगदीच नाही तर निदान एक-दोन वेळा तरी आठवावे. पण एकही दिवस स्मरण चुकवू नये (वीझूं दीसु जाओं नेदिजे).\n\n**दोन अद्भुत दृष्टांत:**\nस्वामींनी स्मरणाची प्रक्रिया स्पष्ट करण्यासाठी दोन सुंदर दृष्टांत दिले:\n१. **पशूचा दृष्टांत (रोमंथन):** ज्याप्रमाणे पशू (गाय/म्हैस) रानावनात चरतो, पोट भरतो आणि नंतर एका शांत ठिकाणी बसून ते अन्न रवंथ करतो (रोवंती), ज्यामुळे त्याच्या शरीराचे पोषण होते आणि त्याला बळ मिळते; त्याचप्रमाणे ईश्वराकडून मिळालेल्या ज्ञानाचे आणि दर्शनाचे शांतपणे नित्य स्मरण (रवंथ) केल्याने आत्म्याचे पोषण होते.\n२. **भृंग-कीटकाचा दृष्टांत (ध्यासाचे परिवर्तन):** ज्याप्रमाणे कुंभारमाशी (भींगुरटी/भृंगी) एखाद्या किड्याला पकडून आपल्या घरात कोंडते. तो किडा \'ती माशी येऊन मला खाईल\' या भीतीने सतत त्या माशीचेच ध्यान (चिंतन) करत राहतो. सततच्या ध्यासाने त्या किड्याला देखील पंख फुटतात आणि तो स्वतः कुंभारमाशीसारखाच बनतो. त्याचप्रमाणे ईश्वराच्या विरहात ईश्वराचे अखंड ध्यान व चिंतन केल्याने जीव ईश्वरासारखा (सायुज्यता प्राप्त) बनतो.\n\n**निष्कर्ष:**\nमहानुभाव संप्रदायातील \'स्मरण विधी\' आणि \'चिंतन\' या साधनेचा हा अत्यंत महत्त्वाचा मूळ गाभा आहे. ईश्वराचे स्मरण जीवाचे उद्धरण कसे करते, याचे सखोल अध्यात्म या लीळेत अत्यंत सुलभ दृष्टांतांसह सांगितले आहे।'
+  },
+  {
+    id: 'lc_p216',
+    bookId: 'leela_charitra',
+    number: 216,
+    title: 'लीळा २१६: तथा जळमांडवीए क्रीडा',
+    titleEn: 'Leela 216: Tatha Jalabandavie Krida',
+    content: 'एकु दीं गोसावीयांसि उदेयांचा पुजाअवसर जालेयाअनंतरें सर्वज्ञें म्हणीतलें : "बाइ : उपाहारू सवें घेया :" "हो बाबा :" बाइसीं उपाहारू सवें घेतला : मग गोसावी माणिकेश्वरासि वीहरणासि बीजें केलें : तेथ चौकीं आसन जालें : गोसावी घडी येकि परअवर नीरोपण केलें : मग वरि बीजें केलें : तेथ जळमांडवी खेळों आदरिलीं : ऐसा पाहार दोनि खेळु प्रवर्तला : मग बाइसीं वीनवीलें : "बाबा : आतां खेळु पुरों देइझो : आरोगणेसि उसीरू जाला :" ऐसें बाइसीं तीसुधी म्हणीतलें : गोसावी नाइकति : मग बाइसें भगतिजनांसि कोपलीं : "पोरे हो : आतां खेळु पुरों देया : बाबासि आरोगणें उसीरू जाला :" मग सर्वज्ञें म्हणीतलें : "आतां खेळु पुरों देया गा : आतां बाइस्यांचे देवां होइजैल :" मग तीएचि पटिसाळेवरि गोसावीयांसि आसन रचिलें : गोसावीयांसि चरणक्षाळण जालें : मग पुजा आरोगण जाली : मग गोसावी मढासि बीजें केलें : ॥',
+    explanation: '**लीळा भावार्थ व निरूपण:**\n\n**प्रसंग आणि क्रीडा:**\nएके दिवशी सकाळी पूजेनंतर स्वामींनी बाइसांना खाण्यासाठी उपाहार सोबत घेण्यास सांगितले. त्यानंतर स्वामी माणिकेश्वर येथे विहरणासाठी गेले. तिथे थोडा वेळ निरूपण केल्यानंतर स्वामींनी जवळच असलेल्या जळमांडवी (जलक्रीडा किंवा पाण्याचा हौद/जलाशयाजवळ) खेळ खेळण्यास सुरुवात केली. खेळ जवळजवळ एक प्रहर (तीन तास) चालला.\n\n**भक्ताची काळजी आणि ईश्वरी प्रतिसाद:**\nजेवणाची (आरोगणेची) वेळ टळून चालली होती, म्हणून बािसानी काळजीपोटी तीन वेळा सांगितले, "बाबा, आता खेळ संपवा." पण स्वामी ऐकत नव्हते. शेवटी बाइसानी इतर भक्तांना ओरडून खेळ थांबवण्यास भाग पाडले. तेव्हा स्वामी हसून म्हणाले, "चला खेळ संपवा, आता पुन्हा बाइसांचे देव व्हावे लागेल." त्यानंतर तिथेच ओट्यावर स्वामींचे चरण धुऊन पूजा व आरोगण करण्यात आली आणि स्वामी परत मठात आले.\n\n**निष्कर्ष:**\nपुन्हा एकदा स्वामींची बालसुलभ क्रीडावृत्ती आणि बािसांचे आईप्रमाणे असलेले ममत्व व वात्सल्य या लीळेतून हृदयस्पर्शी रितीने प्रकट होते।'
+  },
+  {
+    id: 'lc_p217',
+    bookId: 'leela_charitra',
+    number: 217,
+    title: 'लीळा २१७: सांतिबाइसां भेटि',
+    titleEn: 'Leela 217: Santibaisan Bheti',
+    content: 'सांतिबाइसें तीं वसन्तीएसी होतीं : तीया नांव माइबाइसें : तेयांचा वरैतु सरला : लेंकु फीटला : धन होतें तें राउळें नेलें : वडील लेंकि एकाइसें : तेयांचे हात रीतले : धाकुटी लेंकि जसमाइ सें : तेयां कांबरें लागलें : वरैता नावडति : सासुसासुरेया नावडति : देरा नावडति : तेहीं दवडिलीं : माइबाईसीं आपणेयांपासि आणिलीं : ऐसीं माइबाइसें थोर दुखीएं जालीं : द्वारावतीसि लोकु नीगाला : माइबाईसीं म्हणीतलें : "आतां द्वारावतीएसी जाइन : एकि पाठीसि बांधेन : एकि पोटेंसीं बांधेन : मां रीगेन समुद्रामध्यें :" ऐसा द्वारावतीएसी पन्था नीगाला : तेया पन्थेयासवें नीगालीं : तीएं प्रठिष्ठानासि आलीं : सारंगपंडीत सोएरे : तेया भासे होति : तेयांसि भेटलीं : दुख करिती : ते अवघी गोष्टि तेयांपुढां सांघीतली : "आतां द्वारावतीएसी जाइन : एकि पोटेंसीं बांधेन : एकि पाठीसीं बांधेन : मग समुद्रआंतु रीगेन :" मग सारंगपंडीतीं तेयांची दुग्रनीवृत्ति केली : मग उदीयांचि नीगता सारंगपंडीतीं म्हणीतलें : "माइबाइ : द्वारावतीए तुम्ही जाल तरि एळापुरेंहूनi जा : तेथ आमचे गोसावी श्रीचांगदेवोरावु राज्य करीत असति : तेयांचें दरीसन घेया : मग सामोरी जा : मग तुमचें दूख जाईल : आणि यांचें कांवरे जाईल : मग द्वारावतीएसी जा :" तैसींची नीगालीं : मग तीएं एळापुरासि आलीं : गोसावीयांसि उदीयांचा पुजाअवसरू जाला : गोसावी वीहरणासि बीजें केलें : वीहरणींहुनि माघौतें मढासि बीजें केलें : गोसावीयांसि चरणक्षाळण जालें : पुजाअवसराची आइति होति असे : गोसावीयांचीए ओळगेसि अवघे भक्तजन आले असति : ते पाटाउवें सुताउवें लेइलीं असति : अवघे गोसावीयांसारिखेचि दीसताति : कोणु गोसावी : ऐसा नोळखति : मग सर्वज्ञें म्हणीतलें : "बाइ : ऐसीं या :" म्हणौनि श्रीकराचा अनुकारू दाखवीला : मग माइबाईसें साउमी आलीं : दंडवत घातलें : श्रीचरणां लागलीं : एकि आसु दरीसनास केली : मग बैसलीं : सर्वज्ञें म्हणीतलें : "बाइ : कोणीकडौनि एत असिजे ?" माइबाईसीं म्हणीतलें : "जी जी : वसन्तीए कडूनि :" मग अवघी गोष्टि गोसावीयांपुधें सांघीतली : "जी जी : भातारू सरला : पुत्रु सरला : धनकुळवाडि राउळीं नेली : वडिली लेंकिचे हात रीतले : धाकुटीएसी कांवरे लागलें : ते सासुरीचां दवडिली : तेव्हाळि मीं जी द्वारावतीएसी नीगालीं : एकि पाठीसीं बांधेन : एकि पोटेंसीं बांधेन : मग गोमतीएसी रीगेन : ऐसें म्हणौनि प्रठिष्ठानासि आलीएं : तेथ भाचे सारंगपंडीत भेटले : तींही गोसावीयांपासि पाठवीलें : जी जी : माझेया पुत्राचे ऐसेचि हात : ऐसेचि डोळे : ऐसेंचि तोंड :" म्हणौनि दुख करूं लागलीं : "जी जी : बरवा होता : गुणाचा होता : गोसावीयांसारिखाचि होता :" ऐसे तेयाचे गुण अनमोदोंअनमोदों दुख करूं लागलीं : सर्वज्ञें म्हणीतलें : "बाइ : दुख न कीजे : दुख म्हणिजे पाप : दुखातव नरकें होति : सोनेयाचि फळी पोटेंसीं बांधोनि उदकमध्यें रीगालेया काइ तरिजैल बाइ ? ते बुडोलचि कीं :" तैसें बाइ : दुख न कीजे कीं :" आणि तेयांचें दूख ऐसें नीरपोनि गेलें : गोसावीयांसि चरणक्षाळण जालें : बाइसीं चरणोदक दीधलें : तें आपुलेंही आणि तेयांचें जसुबाइसांवरि घातलें : मां पुजाअवसरु जाला : तोही पाहीला : मग बाईसीं ताट केलें : गोसावीयांसि आरोगण जाली : तेयासि प्रसादू दीधला : मग तीएं बीढारासि गेलीं : वीळिचांचेया पुजाअवसरासि आलीं : माघौतें चरणोदक जसमाइसांसि पाजिलें : माथेयावरि घातलें : पुजाअवसरु पाहीला : मग बीढारासि गेलीं : उदीयांचि आलीं : सर्वज्ञें म्हणीतलें : "बाइ : रात्रीं कांही उपद्रो जाला ?" "ना जी : जी जी : देहांतूं वीस वेळां ए : तीस वेळां ए : आजि तें नैएचि जी :" सर्वज्ञें म्हणीतलें : "बाइ : तें आतां नैए हो : तें आतां गेलें हो बाइ :" तेयांचें दुख गेलें : एरांचें कांवरें गेलें : मग सर्वज्ञें म्हणीतलें : "बाइ : द्वारावतीए पन्था नीगाला : आतां तुम्ही द्वारावतीए जा ना ?" माइबाईसीं म्हणीतलें : "ना जी : जी जी : आमची द्वारावती हेचि : आमचा कान्हैया एथचि भेटला जी :" मग सर्वज्ञें म्हणीतलें : "बाइ : आतां तुम्ही यांतें सासुरेया बोळवा ना ?" "ना जी : हे दुहव : सासुसासुरेया नावडे : वरैता नावडे : देरांभावेया नावडे : कोन्हाहीं पढीए ना : तीहीं दवडिलीं : आतां इतें कवण पतकरीत ना :" सर्वज्ञें म्हणीतलें : "जा : आतां पढीएती : पतकरिती : माझी वडील सुन आलीं म्हणौनि साउमी एतीं : सडेसंमार्जन गुढीया उभिती : पाटु पासवडीती : दोघां सेस भरिती : आतां तीं यांची वाट पाहात असति :" बीढारासि गेलीं : मग माइबाईसीं एकाइसेंतें म्हणीतलें : "एइ : तुं जाए कां जसुमाएतें बोळवीत :" तवं एकाइसीं म्हणीतलें : "हें काइ ओ : तुज गोसावीयांचा संन्यधानीं असो आवडे : मज काइ नावडे ?" तीएं म्हणति : "मज न वचवे :" उदीयांचि दरीसनास आलीं : सांघीतलें : "जी जी : एइतें म्हणीतलें : \'जाए कां जसमाएतें बोळवीत :\' हे म्हणे \'मज न वचवे\' :" सर्वज्ञें म्हणीतलें : "बाइ : तुम्ही जा : मीं गोसावीयांचें संन्यधान सांडुनि न वचें :" सर्वज्ञें म्हणीतलें : "बाइ : तुम्ही जा : जेंचि यां एथ असतां होइल तेंचि तुम्हां तेथ असतां होइल : जैसी सव्यापाळना :" सर्वज्ञें म्हणीतलें : "बाइ : कव्हणी एकि सैयापाळना असे : तीचीए सेजे कव्हणूं रीगावा नाहीं : तीचीया देखीवेखी सुदौही करी : तरि जेचि लोक तीएसी होति तेचि तीएसी होती :" "हो कां जी :" मग नीगालीं : तीएं पैठणासि गेलीं : बोळावा मागीतला : सारंगपंडीतीं चीरचोळी : तोडु : घोडें : जतु दीधला : मग गावांसि गेलीं : तवं तींए वाट पाहात होतों : \'वडील सुन आली\' म्हणौनि साउमीं आलीं : हरीखेलीं : तेयातें घेउनि गेलीं : आदरु केला : गोसावीं सांघीतलें होतें तेतुकें तैसेंचि केलें : तेयांसि भांगार केलें : असों लागलीं : मग एकाइसीं म्हणीतलें : "आतां मीं गांवासि जाइन :" तवं तेहीं म्हणीतलें : "जाल कैसी ? आमची वाप धाईल : मां तुम्हांसि वस्त्र घेउनि : मग बोळवीत घालुनि :" मग एकु दीसु माइबाइसांसि गोसावीयांपासोनि भीति जाली : तीएचि दीसीं तेथ एकाइसीं जाली : एकाइसें देव्हारेयावरि बैसलीं होतीं : आणि तेयांसि तेथ स्तीति जाली : आणि तींए तैसींचि नीगालीं : तीएं म्हणों लागलीं : "इचें पींसें गेलें : तें इसि लागलें :" मग एकाइसीं म्हणीतलें : "मातें बोळवा" : तीएं म्हणति : "सेतासींवाराचे दीस : गहुंवांची पेरणं : आम्हीं आराओं ना : राहा : मां साउलें घेउनि : मग बोळवीत एउनि :" तीएं न व्हातीची : नीगालीं : गोसावीं सांतिबाइसांतें म्हणीतलें : "बाइ : तुमची एइ एति असे मा :" "हें काइ जी : माझीं लेकरूवें माझी काढिली रेघ मोलांडीती : मां एइ कैसी एइल ?" यावरि गोसावी उगेचि होते : पैठणातुकेयां आलीं : सर्वज्ञें म्हणीतलें : "बाइ : तुमची एइ आली मा :" "ना जी : मीयां म्हणीतलें : \'एइ : मी एइन : कां नीरोपु पाठवीन : तेयावांचौनि नैंयावें\' :" मग जीए दीसीं एतील तीए दीसीं माघौतें सर्वज्ञें म्हणीतलें : "बाइ : तुमची एइ आली मा :" ऐसें गोसावीं लीसुधी म्हणीतलें : "हें काइ जी ? एइ कैसी एइल ? : ऐसेंचि गोसावीं तैं तन्हीं म्हणीतलें : आतां तरि म्हणीतलें : माझी एइ माझी काढिली रेघ मोलांडी :" सर्वज्ञें म्हणीतलें : "बाइ : चंद्राचां रश्मीकरूनि सीळापाषाण नीवति : पारि द्रवति ना : तैसा सोमकांतु नव्हें : तो द्रवे :" तवं एकाइसें एळापुर पांतलीं : द्वारा आलीं : सर्वज्ञें म्हणीतलें : "हे नव्हे तुमची एइ आलीं :" तवं एकाइसें आलीं : आंगणीं उभीं ठेलीं : तीएं बाहिरि नीगालीं : तवं एकाइसें देखीलीं : "हें काइ गे एइ : एकली कैसी आलीसि ? मीं गोसावीयातें मघांलागौनि उरोधीत असें : एइ : मीं गोसावीयातें ऐसें म्हणे :" मागील अवघें सांघीतलें : स्तीति जाली : ते सांघीतली : "हो गे : ते दीसींचि मज स्तीति जाली : आइ : मीं देव्हारेयावरि बैसलीं होतीं : मज स्तीति जाली : आणि मीं न पुसत आलीएं : तीएं म्हणति : \'इचें पींसें फीटलें : मां इसि लागलें\' : ऐसें हांसों लागलीं" : ॥',
+    explanation: '**लीळा भावार्थ व निरूपण:**\n\n**प्रसंग आणि पार्श्वभूमी:**\nसांतिबाई (ज्यांचे मूळ नाव माईबाइसे होते) या वसंती गावच्या राहणाऱ्या होत्या. त्यांच्यावर दुःखाचे डोंगर कोसळले होते—पती आणि मुलाचे निधन झाले होते, संपत्ती राजसभेने जप्त केली होती. त्यांची मोठी मुलगी एकाइसी विधवा झाली होती आणि धाकटी मुलगी जसुमाई हिला फेफरे किंवा कावरे (एक प्रकारचा आजार/झटका) येत असे. सासरच्या लोकांनी त्यांना घरातून हाकलून दिले होते. अशा प्रचंड नैराश्यातून माईबाइसांनी निर्णय घेतला की मुलींना पाठीशी व पोटाशी बांधून द्वारकेच्या समुद्रात जीव द्यायचा.\n\n**स्वामींचे दर्शन आणि दुःख निवारण:**\nया प्रवासात त्या पैठणला आल्यावर त्यांचे नातेवाईक सारंगपंडित यांनी त्यांना चक्रधर स्वामींविषयी सांगितले आणि त्यांना एळापूर (एलोरा) येथे स्वामींच्या दर्शनासाठी जाण्यास सांगितले. स्वामींच्या दर्शनाला आल्यावर, त्यांनी पाहिले की सर्व भक्तगण पीतांबर नेसलेले होते आणि स्वामींसारखेच तेजस्वी दिसत होते. स्वामींनी ओळखले आणि आपल्या हाताने त्यांना जवळ बोलावले. माईबाइसांनी रडत-रडत आपले सर्व दुःख आणि मृत पुत्राविषयी सांगितले, "माझा मुलगा हुबेहूब आपल्यासारखाच सुंदर होता."\n\n**अध्यात्मिक उपदेश:**\nस्वामींनी त्यांना मोलाचा उपदेश केला, "बाई, अति दुःख करू नये. दुःख हे पाप आहे आणि त्याने नरकप्राप्ती होते. समजा आपण सोन्याची फळी पोटाशी बांधून पाण्यात उडी घेतली, तर ती सोन्याची असली तरी आपल्याला बुडवणारच. तसेच संसारातील मोहाचे आणि दुःखाचे ओझे माणसाला बुडवते." स्वामींच्या या अमृतवचनांनी करण्याचे दुःख आणि मुलीचे \'कावरे\' पूर्णपणे नष्ट झाले. \n\n**अद्भुत अनुभूती व सांतिबाई नामकरण:**\nमाईबाइसांच्या मुलीने जेव्हा सासरच्या घरी परत जाण्यास नकार दिला, तेव्हा स्वामींनी सांगितले की "आता तुम्ही सासरी जाल, तेव्हा ते तुमचे भव्य स्वागत करतील आणि तुम्हाला मान देतील." स्वामींच्या कृपेने तसेच घडले.\nपुढे, त्यांची मोठी मुलगी एकाइसी घरात देव्हाऱ्यापाशी बसलेली असताना तिला देखील स्वामींच्या कृपेने ईश्वरस्थिती (भावसमाधी) प्राप्त झाली आणि ती घरदार सोडून स्वामींच्या दर्शनासाठी पायी निघाली. लोक तिला वेडी समजू लागले, पण ती स्वामींच्या ओढीने मठात पोहोचली.\n\n**निष्कर्ष:**\nया दीर्घ आणि अत्यंत भावस्पर्शी लीळेतून स्वामींची कारुण्यमूर्ती, दुःखितांचा उद्धार करण्याचे सामर्थ्य आणि ईश्वर भक्तीने जीवनाचा समूळ पालट कसा होतो, याचे उत्कृष्ट दर्शन घडते. माईबाइसांना दुःखमुक्ती आणि शांती लाभल्यामुळे करण्याचे नाव \'सांतिबाइसा\' पडले।'
+  },
+  {
+    id: 'lc_p218',
+    bookId: 'leela_charitra',
+    number: 218,
+    title: 'लीळा २१८: तथा बोरिबाबुळ सींपवणें',
+    titleEn: 'Leela 218: Tatha Boribabula Simpavane',
+    content: 'एकु दीसु गोसावीं ऐसें बाहिरि बीजें केलें : वीहीरीचीएकडे बोरिबाबुळ होती : माइबाइसांतें सर्वज्ञें म्हणीतलें : "बाइ : या : तुम्ही मासुदीसु ओलीया पडदणीयां हे बोरिबाबुळ सींपा : मां तुमचीया सातां जनमाचेया कर्मांचें एथौनि हस्तउदक घेइजैल : मग तुम्हांसि सांतिनगरिचा पाटा दीजैल : तुम्हां सांतिबाइसें ऐसें नावं ठेविजैल :" तीं म्हणीतलें : "हो कां जी :" मग उदीयांचि उठिती : ओलीया पडदणीयां बोरिबाबुळ सींपिती : ऐसें मासुदीसु केलें : सर्वज्ञें म्हणीतलें : "देखीले गा : म्हांतारीएचीं सातां जनमाचीं कर्मै जाळितांहीं परि न जळेति : तें एथौनि जाळिलीं :" म्हणौनि श्रीकरीं हस्तउदक घेतलें : ॥',
+    explanation: '**लीळा भावार्थ व निरूपण:**\n\n**प्रसंग आणि सेवा विधी:**\nएका दिवशी प्रभू चक्रधर स्वामी बाहेर विहरणासाठी गेले असता विहिरीजवळ एका बोरी व बाभळीचे (बोरिबाबुळ) काटेरी झाड होते. स्वामींनी माईबाइसांना (सांतिबाइसा) सांगितले, "बाई, तुम्ही रोज सकाळी उठून ओल्या वस्त्राने (पडदणीने) या काटेरी बोरी-बाभळीच्या झाडाला पाणी शिंपडा (सींपा). असे केल्याने तुमच्या सात जन्मांचे कर्म आम्ही धुवून काढू (हस्तउदक घेऊ) आणि तुम्हाला शांतीनगराचे पट्टशिष्यत्व बहाल करून \'सांतिबाई\' (सांतिबाइसा) नाव देऊ."\n\n**साधना आणि निष्ठा:**\nमाईबाइसांनी अत्यंत निष्ठेने रोज सकाळी ओल्या कपड्याने त्या काटेरी झाडाला पाणी शिंपडण्याची सेवा महिनाभर (मासुदीसु) केली. अनेक काटे टोचले तरी त्यांनी ही सेवा सोडली नाही.\n\n**कर्मनाश व मुक्ती:**\nमहिनाभरानंतर स्वामींनी माईबाइसांच्या निष्ठेवर प्रसन्न होऊन इतर भक्तांना दाखवून सांगितले, "पाहिलेत का, या माउलींचे सात जन्मांचे जे संचित कर्म इतर कोणत्याही साधनांनी किंवा अग्नीने जळाले नसते, ते आम्ही या सेवेद्वारे नष्ट केले आहे." असे सांगून स्वामींनी हस्तोदक (आशीर्वाद) दिले.\n\n**निष्कर्ष:**\nईश्वराप्रती असलेली अनन्य निष्ठा, कठीण प्रसंगातील सेवा आणि आज्ञापालन यामुळे जीवाच्या अनेक जन्मांच्या कर्मांचा नाश कसा होतो, हा महानुभाव संप्रदायातील \'सेवा\' सिद्धांताचा सुंदर धडा या लीळेतून मिळतो।'
+  },
+  {
+    id: 'lc_p219',
+    bookId: 'leela_charitra',
+    number: 219,
+    title: 'लीळा २१९: तथा परमेश्वरपुरा पाठवणें',
+    titleEn: 'Leela 219: Tatha Parameshwarpura Pathavane',
+    content: 'मग सर्वज्ञें म्हणीतलें : "बाइ : तुम्ही परमेश्वरपुरा जा :" "हो कां जी :" मग गोसावी तेयांसि वीधि वीहीला : सर्वज्ञें म्हणीतलें : "गाउनि गांवां जावें : उपेणें न करावें : संबंधा न वचावें : नवें वस्त्र नेनसावें : एकि भीक्षा नेघावी : इंद्रीयार्थू रसु नेसवावा : मीठाचेया खडेया साक्ष न ठकावें : श्रीप्रभूचे तीन्ही पुजाअवसर पाहावे : श्रीप्रभूची दूरूनि सेवा करावी : श्रीप्रभूचा प्रसादू तीं बोटांआंतु सामावे इतुका घेयावा : वायां जाइल तरि जाओं देयावें : परि तेथिची चीमुटी मीठही नेघावी" ऐसा वीधि वीहीला : सर्वज्ञें म्हणीतलें : "श्रीप्रभू नीर्गुण ब्रह्म :" ॥\n\nमग सांतिबाइसीं म्हणीतलें : "जी जी : माझी एइ गोसावीयांसि लागे हो :" सर्वज्ञें म्हणीतलें : "बाइ : तुमचीए एइसि एथौनि तल्हाताची साइली कीजैल :" तीयें उगींची ठेलीं : सर्वज्ञें म्हणीतलें : "देमतीए : या आरुतीं :" आलीं : सर्वज्ञें म्हणीतलें : "बाइ : तुमचीए एइसि सांगातु देमतीएचा हो :" सांतिबाइसीं म्हणीतलें : "होए जी :" सर्वज्ञें म्हणीतलें : "देमती : तुम्ही एइसि सांगातु देयावा :" देमाइसीं सांगातु दीधला : मग तीहीं दंडवतें घातलीं : श्रीचरणां लागलीं : मग तीएं परमेश्वरपुरासि नीगालीं : ॥\n\nसांतिबाइसीं पुसिलें : "पैठणाहुनि जाओं जी? जी जी : इतुलें गोमटें होए तें सारंगपंडीतांचेनि :" सर्वज्ञें म्हणीतलें : "बाइ : जा : पांडेयासि भेटा : ते तुमचें नीमीत्य : बाइ : नीमीत्य मानिजे :" आणि इतुकेनि तीएं नीगालीं : पैठणासि गेलीं : सारंगपंडीताँ भेटलीं : तीहीं अभ्यागता म्हणोनि आदरीलेें : तवं तीहीं म्हणीतलें : "पांडेया : मज गोसावीं एकि भीक्षा वारिली असे :" मग दोंएकां घरां भीक्षेसि गेलीं : वरिचील भीक्षा तेयांची घेतली : तीएं पांती जेउं बैसलीं : तुप वाढुं आदरीलेें : "पांडेया : मज गोसावीं इंद्रीयार्थरसु वारिला असे :" मग सारंगपंडीतीं नवें वस्त्र देओं आदरीलेें : सांतिबाइसीं म्हणीतलें : "पांडेया : मज गोसावीं नवें वस्त्र नेसों वारिलें असे :" तेहळि आधजुनीए पासवडीएचें पाटुंगें दीधलें तें घेतलें : मग एरी दीसीं राहावीत होते : सांतिबाइसीं म्हणीतलें : "पांडेया : गोसावीं म्हणीतलें : \'उपेणें न करावें\' ऐसें वारिलें असे :" मग परमेश्वरपुरासि गेलीं : बहुत दी श्रीप्रभूची सेवा केली : ॥\n\nमग केतुलेयां एकां दीसां तेयांसि रूजा उपनली : एतुकेनि तेहीं तैसा मनोधू केला : जे ऐसां समै एइ एति कां : मग सर्वज्ञें एकाइसांतें म्हणीतलें : "बाइ : तुमचीए मातेसि रूजा उपनली असे : तींए तुमची वाट पाहात असति : तुम्ही जा : तेयातें म्हणावें : \'रूचेल तें जेवावें\' : नेघती तरि ऐसें म्हणावें : येथोनि तुमर्ते घेयावें ऐसें म्हणीतलें असे :" एतुकेनि तीएं नीगालीं : रीधपुरासि आलीं : भेटि जाली : सांतिबाइसीं म्हणीतलें : "एइ आलीसि ?" तीं म्हणीतलें : "हो आइ : आलीएं :" "गोसावीं पाठवीलीसि कीं तुंचि आलीसि ?" "ना आइ : मातें गोसावीं पाठवीलें : आइ : तुज काइ रूचे तें गोसावीं सुववीलें असे :" सांतिबाइसीं म्हणीतलें : "एइ : मज श्रीचक्रधरूवांचौनि आणीक काहीचि न रूचे : जरि घेओं ए तरि मज गोसावीं कां वारिलें ? गोसावीयांसि माझी कणव : म्हणौनि वारिलें :" एतुकेनि तेयांचें देह गेलें : एतुकेनि तेयांचा संस्कारू केला : मग एकाइसें तेयांची अस्ती घेउनि गोसावीयांपासि आलीं : ॥\n\nगोसावी प्रतीष्ठानीं राज्य करीत असति : पीठजैएचेया नींबातळि गोसावीयांसि आसन जालें होतें : तवं एकाइसें आलीं : दंडवत घातलें : श्रीचरणां लागलीं : मग गोसावीयांपुढें अवघी बेवस्ता सांतितली : सर्वज्ञें म्हणीतलें : "एथौनि म्हणीतलें तें म्हांतारीएसी घडलें गा :" मग गोसावीं पुसिलें : "बाइ : पैल काइ ?" "जी जी : या आइचीया अस्ती :" सर्वज्ञें म्हणीतलें : "एथ कां आणिलिया ? अनेत्र मरे तेयाचीया अस्ती वाराणसी नेइजेति : वाराणसी मरे तेयांचीया अस्ती नेइजेति ? रीधपुर म्हणिजे कासीएचा वासु किं बाइ : तें आणीका जडा पाथिवासारिखें न्हवें कीं बाइ : तेथिचीया अस्ती मा एथ आणिजति ?" तवं सारंगपंडीतीं म्हणीतलें : "जी जी : एं काइ जाणताति ?" सर्वज्ञें म्हणीतलें : "घाला पैलीं लोणारतीर्थीं :" ॥',
+    explanation: '**लीळा भावार्थ व निरूपण:**\n\n**प्रसंग आणि स्वामींची आज्ञा:**\nस्वामींनी सांतिबाईंना परमेश्वरपूर (ऋद्धिपूर) येथे श्रीप्रभूंच्या (गोविंदप्रभू) सेवेसाठी जाण्याची आज्ञा दिली. जाताना स्वामींनी त्यांना कडक विधी (नियम) घालून दिले: "गावागावातून जावे, उपास करू नये, कोणाशीही संबंध ठेवू नये, नवीन वस्त्र नेसू नये, एकाच घरी भिक्षा घ्यावी, इंद्रियांचे चोचले पुरवू नयेत, मिठाच्या खड्यालाही स्पर्श करू नये. श्रीप्रभूंचे तिन्ही पूजावसर पाहावेत, प्रभूंची लांबूनच सेवा करावी आणि प्रभूंचा प्रसाद फक्त तीन बोटात मावेल एवढाच घ्यावा, उरलेला वाया गेला तरी चालेल पण तिथली चिमूटभर मीठही घेऊ नये." श्रीप्रभू हे \'निर्गुण ब्रह्म\' आहेत, अशी स्वामींची शिकवण होती.\n\n**ऋद्धिपूर प्रयाण व आज्ञापालन:**\nसांतिबाईंनी आपल्यासोबत जाण्यासाठी त्यांची कन्या एकाइसी हिला मागितले, परंतु स्वामींनी त्यांच्यासोबत देमतीला पाठवले. पैठणला आल्यावर त्या सारंगपंडितांना भेटल्या. सारंगपंडितांनी त्यांना नवीन वस्त्र आणि गोड जेवण (तूप) देण्याचा प्रयत्न केला, पण सांतिबाईंनी स्वामींच्या नियमांचे कडक पालन करून ते नाकारले आणि जुनेच वस्त्र स्वीकारून ऋद्धिपूरला गेल्या व तिथे श्रीप्रभूंची मनोभावे सेवा केली.\n\n**सांतिबाईंचे महानिर्वाण व अस्ती विसर्जन:**\nकाही दिवसांनी सांतिबाई आजारी पडल्या आणि त्यांनी मुलीची (एकाइसीची) आठवण काढली. अंतर्ज्ञानी स्वामींनी एकाइसीला ऋद्धिपूरला पाठवले. एकाइसीने विचारले की स्वामींनी पाठवले की तू स्वतः आलीस? तेव्हा तिने सांगितले की स्वामींनीच मला पाठवले आहे. सांतिबाईंनी प्राण सोडताना सांगितले, "मला श्रीचक्रधरांशिवाय काहीही आवडत नाही." सांतिबाईंच्या निधनानंतर त्यांच्या अस्ती (राख) घेऊन एकाइसी पैठणला स्वामींकडे आली. स्वामींनी विचारले, "यात काय आहे?" तेव्हा ती म्हणाली, "आईच्या अस्ती." स्वामी म्हणाले, "इथे का आणल्या? ऋद्धिपूर हे तर स्वतः काशीसमान पावन स्थान आहे. तिथे मृत झालेल्यांच्या अस्ती कुठे इतरत्र नेण्याची गरज नसते. जा, या अस्ती लोणार तीर्थात विसर्जित करा."\n\n**निष्कर्ष:**\nया लीळेतून स्वामींनी आपल्या प्रिय शिष्या सांतिबाईंना घातलेले कठोर नियम, त्यांची स्वामींवर असलेली परम भक्ती आणि ईश्वरी सान्निध्यात मिळालेली सद्गती यांचे सुंदर दर्शन घडते. तसेच ऋद्धिपूर (परमेश्वरपूर) या स्थानाचे अलौकिक आध्यात्मिक महत्त्वही अधोरेखित होते.'
+  },
+  {
+    id: 'lc_p220',
+    bookId: 'leela_charitra',
+    number: 220,
+    title: 'लीळा २२०: आपदेओभटातें एनकैए पाठवणें',
+    titleEn: 'Leela 220: Aapadeobhataten Enkaie Pathavane',
+    content: 'एकु दीसीं गोसावीं आपदेओभटातें म्हणीतलें : "भागेया : तुम्ही अनकैए जा गा : तेथ बैसा : कव्हणी काही देइल तें घेया :" "हो कां जी :" मग ते अनकैएसी गेले : बैसले : तवं एकु देवतेसि परीएळु घेउनि आला : देवतेसि परीएळु दाखवीला : मग आपदेओभटांतें म्हणीतलें : "भटो : घेया :" तेहीं घेतला : घेउनि आले : मग गोसावीयांपुढें दाखवीन : मग तुम्हांसि देइन :" देवतेसि नीवदु दाखविला : मग तेयातें म्हणीतलें : "भटो : घेया :" तेयांचीए झोळीए घातला : "तूप घेयावेया नाही :" "हे तांबवटी घेया :" तांबवटीए तूप घेतलें " मग घेउनि आले : मग गोसावीयांपुढं सांघीतलें : सर्वज्ञें म्हणीतलें : "पोरा : वेळोवेळां टीळेयाजानिवेयांपासि कां जासि ? आणि काइ एकु उपवासु पडिला कीं दोनि उपवास पडिले ? हां गा नावेक तन्ही पाहातासि का : मां काइ होतें तें पाहीजतें :" ॥',
+    explanation: '**लीळा भावार्थ व निरूपण:**\n\n**प्रसंग आणि भिक्षा सेवा:**\nएके दिवशी स्वामींनी आपदेवभटांना सांगितले, "भागेया (भाग्यवाना), तुम्ही अनकै (एक गाव) येथे जा आणि तिथे बसा. तिथे कोणी काही देईल ते घ्यावे." ते स्वामींच्या आज्ञेनुसार तिथे गेले आणि बसले. तिथे एका देवालयात पूजेसाठी एक ब्राह्मण नैवेद्याचे ताट (परिएळु) घेऊन आला. त्याने देवाला नैवेद्य दाखवून झाल्यावर आपदेवभटांना म्हटले, "भटो, घ्या." त्यांनी तो नैवेद्य स्वीकारला.\n\n**भक्ताची श्रद्धा आणि स्वामींचा उपदेश:**\nत्या ब्राह्मणाने त्यांना तूप देण्यास सांगितले, पण भटांनी सांगितले की तूप घेण्यासाठी माझ्याजवळ काही नाही. तेव्हा ब्राह्मणाने त्यांना तांब्याची वाटी (तांबवटी) दिली आणि त्यात तूप दिले. आपदेवभट तो सर्व प्रसाद घेऊन स्वामींकडे आले आणि सर्व हकीकत सांगितले. तेव्हा स्वामी प्रेमाने त्यांना उपदेश करत म्हणाले, "पोरा, तू वारंवार पूजा-अर्चा किंवा इतर लोकांच्या मागे का धावतोस? तुला एक किंवा दोन उपवास घडले म्हणून काय झाले? थोडा वेळ धीर धरून देवावर विश्वास ठेवून थांबत का नाहीस? ईश्वर सर्व काही पाहतो आणि योग्य वेळी सर्व काळजी घेतो."\n\n**निष्कर्ष:**\nया लीळेतून ईश्वरावरील श्रद्धा आणि संयमाचे महत्त्व स्पष्ट होते. साधकाने केवळ ऐहिक सुखासाठी किंवा तात्कालिक भुकेसाठी धीर सोडू नये, तर ईश्वराच्या इच्छेवर विश्वास ठेवावा, हा संदेश मिळतो.'
+  },
+  {
+    id: 'lc_p221',
+    bookId: 'leela_charitra',
+    number: 221,
+    title: 'लीळा २२१: रांकेयां लक्ष्मीद्रभटां जीव्हामळप्रसादनीराकरण',
+    titleEn: 'Leela 221: Rankeyan Lakshmidrabhatan Jivhamalaprasadanirakarana',
+    content: 'एकु दीं गोसावीयांसि गुळुळा जाला : तवं बाइसीं जीव्हामळ सांडवेया लक्ष्मीद्रभटांहातीं दीधलें : ते पन्हां गेले : आणि तोंडीं लाविलें : आणि आले : सर्वज्ञें म्हणीतलें : "ऐसें घेवों नैए कीं गा :" "जी जी : कां घेवों नैए जी ?" सर्वज्ञें म्हणीतलें : "ना घृणा जन्हेंी उपजे तरि वोखटें : ना घृणा जन्हेंी नुपुजे तन्हिं हाडगडलेंयां पापां पुरश्चरण होए : जनु देखे तन्हि अपवादु भके : तरि दोखू : वोखटेयासि कारण होए : परि आणीकी वेळे ऐसें न करावें :" "जी जी :" ॥',
+    explanation: '**लीळा भावार्थ व निरूपण:**\n\n**प्रसंग आणि भक्ताचा भाव:**\nएके दिवशी सकाळी प्रभू चक्रधर स्वामींनी तोंड धुताना जीभ साफ केली (गुळुळा केला). तेव्हा बाईसांनी स्वामींच्या जिभेचा मळ (जीव्हामळ) टाकण्यासाठी लक्ष्मीधरभटांच्या हातात दिला. लक्ष्मीधरभटांना स्वामींविषयी इतकी अनन्य भक्ती आणि आदर होती की त्यांनी तो मळ कचरा फेकायच्या जागी फेकून देण्याऐवजी पवित्र प्रसाद समजून तोंडात टाकला (प्राशन केला).\n\n****स्वामींचा उपदेश आणि मार्गदर्शन:**\nजब स्वामींना हे समजले, तेव्हा स्वामी त्यांना म्हणाले, "असे करू नये." लक्ष्मीधरभटांनी विचारले, "स्वामी, असे का करू नये?" तेव्हा स्वामींनी सुंदर आणि गहन आध्यात्मिक स्पष्टीकरण दिले: "मनामध्ये किळस (घृणा) उत्पन्न झाली तर ते वाईटच आहे. पण जर मनात किळस वाटली नाही आणि भक्तीने ते केले, तर अनेक जन्मांच्या घोर पापांचे प्रायश्चित्त होते आणि पाप नष्ट होते. परंतु, सामान्य लोकांनी (जगाने) जर असे करताना पाहिले तर ते निंदा करतील आणि त्यामुळे लोकांना पाप लागेल, जो की एक दोष आहे. यामुळे हा वाईट प्रसंग ठरेल. म्हणून यापुढे पुन्हा कधीही असे करू नका." लक्ष्मीधरभट म्हणाले, "होय स्वामी."\n\n**निष्कर्ष:**\nया लीळेतून भक्ताची ईश्वराप्रती असलेली पराकोटीची, अतर्क्य भक्ती दिसून येते. तसेच स्वामींचा व्यावहारिक आणि सामाजिक दृष्टिकोनही स्पष्ट होतो, जिथे ते सांगतात की भक्ती वैयक्तिक पातळीवर कितीही उच्च असली, तरी जगाला अनिष्ट किंवा अपवादास्पद वाटेल असे वर्तन करू नये जेणेकरून लोकांच्या मनात गैरसमज किंवा निंदा निर्माण होईल.'
+  },
+  {
+    id: 'lc_p222',
+    bookId: 'leela_charitra',
+    number: 222,
+    title: 'लीळा २२२: नाथोबाकरवि टीळाजानिवें पुरवणें',
+    titleEn: 'Leela 222: Nathobakaravi Tilajaniven Puravane',
+    content: 'गोसावीयांसि उदेयांचा पुजाअवसर जालेयाअनंतरें गोसावी पणिकैए वेहरणा बीजें केलें : तेथ नावेक आसन जाले : जवळे नाथोबां होते : गोसावी नाथोबातें म्हणीतलें : "वटिका : तुम्ही तीळा कां लावा ? जाणिवें कां घाला ?" "जी जी : भीक्षा यावेया कारणें :" सर्वज्ञें म्हणीतलें : "तुम्हांसि काइ टीळेयाजानिवेशिवाय भीक्षा नैए ? जा पां : आजि टीळेयाजानिवेविण भीक्षा करा :" "मां आजि भीक्षा एइल कीं नैए ऐसें पाहा :" "हो कां : जी जी : तरि टीळाजानिवेयाचें काइ करूं ?" सर्वज्ञें म्हणीतलें : "टीळाजानिवें पुरूनि पणिकैए बैसा :" "हो कां जी :" मग तेहीं टीळा जाणिवें पुरिलें : तेथ बैसले : गोसावीं बीडारा बीजें केलें : ॥\n\nनावेक बैसति आणि माघौते उठति : पाुलें दोनि चालति : आणि माघौते एति : तेथवरि जाति आणि माघौते एति : क्षेणु एकु बैसति : माघौते उठति : दीसाची वास पाहाति : माघौते तेथवरि एति : टीळेयाजानिवेयाची वास पाहाति : काढुं पाहाति : आणि दीसाकडे पाहाति : ऐसीया एरझारा करिती : तवं कोन्हातें एतां देखति ना : मग टीळा काढिला : जानिवें काढिलें : टीळा लाविला : जानिवें गळां घातलें : तवं एकु ब्राह्मणू परीएळु घेउनि आला : तेयातें म्हणीतलें : "भीक्षेसि नको जाओं : हा भी परीएळु देवतेसि समर्पीन आणि तुम्हांसि देइन :" "हो कां :" म्हणौनि राहिले : तेणें देवतेसि परीएळु समर्पिला : आणि आणिले तेयांचिए झोळीए घातला : तूप घेयावेया कांही नाहीं : तेहळि तेणें म्हणीतलें : "हें वाटें घेउनि जा : मग घरासि आणिपुनि देया :" तें घेउनि आले : मग सर्वज्ञें म्हणीतलें : "तरि तुम्ही कैसे गा म्हणा : जें टीळेयाजानिवेयावीण भीक्षा नाहीं ?" ॥',
+    explanation: '**लीळा भावार्थ व निरूपण:**\n\n**प्रसंग आणि स्वामींचे प्रश्न:**\nएके दिवशी सकाळी पूजा झाल्यानंतर स्वामी विहरणासाठी पणिके (एक ओटा किंवा विश्रामस्थान) येथे गेले. तिथे नाथोबा त्यांच्याजवळ होते. स्वामींनी त्यांना विचारले, "वटिका (ब्रह्मचारी), तुम्ही कपाळाला टिळा का लावता आणि जनाव (जानवे) का घालता?" नाथोबांनी प्रामाणिकपणे उत्तर दिले, "स्वामी, लोकांनी ब्राह्मण समजून भिक्षा द्यावी म्हणून." स्वामी हसून म्हणाले, "टिळा व जानव्याशिवाय काय तुम्हाला भिक्षा मिळणार नाही? जा, आज हे न वापरता भिक्षा मागा. बघूया भिक्षा मिळते की नाही." नाथोबांनी विचारले, "तर मग मी आज या टिळा-जानव्याचे काय करू?" स्वामी म्हणाले, "ते मातीत पुरून ठेव आणि इथेच बस." नाथोबांनी तसेच केले.\n\n**भक्ताची अधीरता आणि ईश्वरी लीला:**\nनाथोबा टिळा व जानवे पुरून तिथे बसले, पण त्यांचे मन अस्वस्थ झाले. ते थोड्या थोड्या वेळाने उठायचे, थोडे चालून पाहायचे, वेळ किती झाली हे सूर्याकडे बघून ठरवायचे. भिक्षा मिळत नाही असे पाहून त्यांची अधीरता वाढली. शेवटी कोणालाही येताना न पाहून त्यांनी पुरलेला टिळा आणि जानवे पुन्हा बाहेर काढले, टिळा लावला आणि जानवे गळ्यात घातले. तितक्यात एक ब्राह्मण तिथे प्रसादाचे ताट (परीएळु) घेऊन आला आणि म्हणाला, "तुम्ही भिक्षेसाठी कुठे जाऊ नका. मी हा नैवेद्य देवाजवळ ठेवून तुम्हाला देतो." त्याने प्रसादासोबत त्यांना वाटीत तूपही दिले. नाथोबा तो प्रसाद घेऊन आनंदात स्वामींकडे आले. तेव्हा स्वामी हसून म्हणाले, "आते सांगा, तुम्ही तर म्हणत होता की टिळा-जानव्याशिवाय भिक्षा मिळत नाही. तुम्ही धीर धरला नाही, पण ईश्वराने तुमच्यासाठी भोजनाची व्यवस्था आधीच करून ठेवली होती."\n\n**निष्कर्ष:**\nया सुंदर लीळेतून स्पष्ट होते की परमेश्वर आपल्या भक्तांची काळजी घेण्यास सदैव तत्पर असतो. भिक्षेसाठी किंवा उदरनिर्वाहासाठी बाह्य चिन्हांची किंवा ढोंगाची गरज नसते, तर ईश्वरावर दृढ विश्वास आणि संयम असणे आवश्यक आहे.'
+  },
+  {
+    id: 'lc_p223',
+    bookId: 'leela_charitra',
+    number: 223,
+    title: 'लीळा २२३: मंडळीका झोळी देणें',
+    titleEn: 'Leela 223: Mandalika Zoli Dene',
+    content: 'गोसावीं नाथोबाकरवि टीळाजानिवें परित्यजविलें : मग ते आले : नाथोबायें गोसावीयातें म्हणीतलें : "जी जी : मज भीक्षाविधी नीरूपावा :" मग गोसावीं बाइसांसि झोळी मागीतली : गोसावीं आपुलेनि श्रीकरें झोळीएसी गांठी दीधलीया : ते झोळी गोसावीं आपुलेनि श्रीकरें नाथोबांसि दीधली : सर्वज्ञें म्हणीतलें : "मंडळीका : एथौनि एझोळीएसी आणि तुम्हांसि प्रयेण कीजैल गा : हे तुम्हां लागे हो : देहपर्यंत प्रतिपाळिजे :" ऐसें म्हणौनि मग विधी विहीला : सर्वज्ञें म्हणीतलें : "मंडळीका : चातुर्वर्ण्यं चरेद् भैक्षं : या शास्त्रासि अनुसरीजे : घर न निवडीत भीक्षा कीजे : ओळखीतयाचेया घरा न वचावें : एकीकडूनि रीगिजे : एकीकडूनि नीगिजे : नगरांत कां पात्रांत : नगरांत जाणे आणि पात्रांत नव्हे तरि आपजविजे :" नाथोबाएं म्हणीतलें : "जी जी : आपजवितां न मिळे तरि काइ ?" सर्वज्ञें म्हणीतलें : "ना तरि खुंट गिळिजे :" यावरि चांगदेवोभेटी पुसिलें : "जी जी : इंद्रियार्थे रससाधन सेविलेया काइ होए ?" सर्वज्ञें म्हणीतलें : "वटिका : कव्हणा एका रायाचा डींगरा असे : तो वोलिसाउला ने : तें उपसाहे : साखळें ने तें उपसाहे : तथा साखळें ने तें उपसाहेचि : भांडार फोडोनि वाखारि ने तें नुपसाहे : तैसें पुरुष आवडी साधन सेवी ते उपसाहाति : रस सेवी ते नुपसाहाति : तथा रसु उपसाहाति : पारि मुख्य वीखो नुपसाहाति :" "हो कां जी :" म्हणौनि श्रीचरणां लागले : ॥',
+    explanation: '**लीळा भावार्थ व निरूपण:**\n\n**प्रसंग आणि झोळी प्रदान:**\nनाथोबांनी स्वामींना विनंती केली, "स्वामी, मला संन्यासाचा भिक्षाविधी निरूपण करावा (सांगावा)." तेव्हा स्वामींनी बाईसांकडून एक भिक्षेची झоळी मागवून घेतली. स्वामींनी स्वतःच्या हाताने त्या झोळीला गाठ मारली आणि ती नाथोबांच्या स्वाधीन केली. स्वामी म्हणाले, "मंडळीका (नाथोबांचे कौतुकाचे नाव), आजपासून या झोळीद्वारे तुमचे कल्याण होईल. ही तुमच्यासाठी अत्यंत महत्त्वाची आहे, हिचा देह असेपर्यंत सांभाळ करावा."\n\n**भिक्षेचे नियम (आचारधर्म):**\nस्वामींनी त्यांना भिक्षेचे नियम समजावून सांगितले: "मंडळीका, \'चातुर्वर्ण्यं चरेद् भैक्षं\' या शास्त्रवचनानुसार वागावे. भिक्षा मागताना घरामध्ये श्रीमंत-गरीब असा भेदभाव न करता भिक्षा मागावी. ओळखीच्या लोकांच्या घरी मुद्दाम जाऊ नये. गल्लीच्या एका तोकाकडून प्रवेश करून दुसऱ्या टोकाकडून बाहेर पडावे. पात्रात किंवा झोळीत जे मिळेल तेच प्राशन करावे. जर भिक्षा मागूनही काही मिळाले नाही, तर उपास करावा." नाथोबांनी विचारले, "स्वामी, भिक्षा मागूनही काहीच मिळाले नाही तर काय करावे?" स्वामी म्हणाले, "तशा प्रसंगी लाकडाचा खांब (खुंट) गिळावा, म्हणजेच उपास करावा पण नियमांचे उल्लंघन करू नये."\n\n**इंद्रिय संयमाविषयी उपदेश (डींगरा दृष्टांत):**\nचांगदेवभटांनी स्वामींना प्रश्न केला, "स्वामी, इंद्रियांच्या सुखासाठी रसांचे सेवन केल्याने काय होते?" स्वामींनी एका सुंदर उदाहरणाने (डींगराचा दृष्टांत) उत्तर दिले: "एखाद्या राजाचा अत्यंत विश्वासू सेवक (डींगरा) जर किरकोळ वस्त्र किंवा लाकडे घेऊन गेला तर राजा ते सहन करतो. साखळी घेऊन गेला तरी राजा सहन करतो. परंतु, जर त्याने थेट राजाचा खजिनाच (भांडार) लुटला तर राजा ते कधीही सहन करत नाही. त्याचप्रमाणे, साधकाने छोट्या-मोठ्या सुखांचा उपभोग घेतला तर ईश्‍वर क्षमा करू शकतो, परंतु जर त्याने मुख्य विकारांचे (काम-क्रोधादि) सेवन केले, तर मात्र अध्यात्माचा नाश होतो आणि ईश्‍वराचा कोप सहन करावा लागतो." हे ऐकून सर्वजण स्वामींच्या चरणी लीन झाले.\n\n**निष्कर्ष:**\nया अत्यंत महत्त्वाच्या लीळेतून संन्यासी साधकाचा आचारधर्म, भिक्षेचे नियम आणि इंद्रिय संयम यांचे उत्कृष्ट मार्गदर्शन मिळते. ईश्वराच्या मार्गात राहताना साधकाने आपल्या मनावर आणि इंद्रियांवर ताबा ठेवणे किती आवश्यक आहे, हे स्पष्ट होते.'
+  },
+  {
+    id: 'lc_p224',
+    bookId: 'leela_charitra',
+    number: 224,
+    title: 'लीळा २२४: इंद्राइ महात्मेया सांडाक्रमु अनुवादु',
+    titleEn: 'Leela 224: Indrai Mahatmeya Sandakramu Anuvadu',
+    content: 'एकु दीं गोसावीयांसि उदेयांचा पुजाअवसर जालेयाअनंतरें गोसावी आसनीं बैसले असति : तवं इंद्राइ महात्मे आले : अदेसु केला : सीक्षा केली : बैसले : नावेक होते : मग नीगाले : बाइसीं म्हणीतलें : "जी जी : हे काइ जाणति ?" सर्वज्ञें म्हणीतलें : "इंद्राइ जोगी : सांडाक्रमु जाणति :" ॥',
+    explanation: '**लीळा भावार्थ व निरूपण:**\n\n**प्रसंग आणि भेट:**\nएके दिवशी सकाळी प्रभू चक्रधर स्वामींचा पूजा विधी उरकल्यानंतर स्वामी आपल्या आसनावर विराजमान झाले होते. त्याच वेळी तिथे \'इंद्राई\' नावाचे एक महानुभाव योगी/महात्मा आले. त्यांनी स्वामींना आदराने वंदन (आदेश/शिक्षा) केले आणि ते तिथे काही काळ बसले. थोडा वेळ घालवून ते तिथून निघून गेले.\n\n**स्वामींचे उत्तर:**\nत्यांच्या जाण्यानंतर बाईसांनी स्वामींना कुतूहलाने विचारले, "स्वामी, हे योगी काय जाणतात? (त्यांचे आध्यात्मिक ज्ञान काय आहे?)" तेव्हा स्वामींनी उत्तर दिले, "बाई, हे इंद्राई जोगी आहेत आणि ते \'सांडाक्रम\' (मनाचा निग्रह किंवा वैराग्याची साधना/इंद्रिय त्यागाचा मार्ग) जाणतात."\n\n**निष्कर्ष:**\nया छोट्याशा लीळेतून स्वामी इतर पंथातील किंवा साधनेतील योग्यांच्या गुणांचे आणि त्यांच्या ज्ञानाचे कौतुक करतात. \'सांडाक्रम\' म्हणजे मनातील सांसारिक वासनांचे पूर्ण विसर्जन करण्याची विद्या, ज्याचे इंद्राई जोगी जाणकार होते.'
+  },
+  {
+    id: 'lc_p225',
+    bookId: 'leela_charitra',
+    number: 225,
+    title: 'लीळा २२५: राजेया दरीसन स्वीकारु',
+    titleEn: 'Leela 225: Rajeya Darisana Svikaru',
+    content: 'गोसावीयांची प्रसीधी आइकौनि असके राणेराउत वेधले : ते प्रतदींनीं गोसावीयांचेया दरीसनासि एजों लागले : गोसावीयांचा पुजाअवसरू पाहाति : मग रायापासि जाति : एकु दीं राओ सभामंडपासि आला : तवं नावरूचा एकुही सभामंडपीं नाहीं : तवं कोपैंनि महादेोरायें पुसिलें : "जो जीए ओळगेचा तो तीए ओळगे ने देखों :" तवं पाल्हाडांगीया मुशकरुनि अवघे राणेरपुत ओळगेसि आले : तवं महादेोराएं पुसिलें : "हां गा : तुम्ही अवघे कें जात असा ? तुमर्ते कीं मीं प्रसंन ऐसें देखत असें :" तीहीं म्हणीतलें : "राया : अचल नाभि देसी तरि सांघोंनि :" तवं राएं म्हणीतलें : "सांघा :" "ना एळापुरा एक पुरूख आले असति : तेयांचीया दरीसनासि जात असों : मग तुमचीए ओळगेसि एओं :" राएं म्हणीतलें : "तेयांचे नावं काइ ?" "ना श्रीचांगदेवोराळु गोसावी :" तीं गोसावीयांचे गुणवीसेख सांघीतले : इतुकेनि वेधु संचरला : मग तेणें म्हणीतलें : "हां गा : मां आमतें कां चुकवीता ? आमतें तेयाचेया दर्शना नेया :" तेहीं म्हणीतलें : "हो का : ना तेयातें पुसों देया : मग नेओं :" एरी दीसीं गोसावीयांच्या दरीसनासि आले : मग तें गोसावीयांपुढां सांघीतलें : "जी जी : महादेोराओ गोसावीयांचेया दरीसनासि एतु असे :" सर्वज्ञें म्हणीतलें : "एइल तरि एओ कां :" ॥',
+    explanation: '**लीळा भावार्थ व निरूपण:**\n\n**प्रसंग आणि राजाची अस्वस्थता:**\nस्वामी चक्रधर महाराजांची कीर्ती ऐकून देवगिरीचे अनेक राजे-रजवाडे, सेनापती (राणे-राऊत) त्यांच्या भक्तीने वेधले गेले. ते दररोज सकाळी स्वामींच्या दर्शनासाठी एळापूरला येऊ लागले. दर्शन घेऊनच ते राजदरबारात जात असत. एके दिवशी यादव राजे महादेवराव हे सभामंडपात आले असता, दरबारात नेहमी असणारे महत्त्वाचे सरदार आणि मानकरी तिथे उपस्थित नव्हते. राजाने क्रोधाने विचारले, "दरबारातील सर्व लोक कुठे गेले आहेत? कोणीच का दिसत नाही?"\n\n**सरदारांची कबुली आणि स्वामींचे नाव:**\nतितक्यात पाल्हाडांगिया (राजाचा एक मुख्य अंगरक्षक किंवा सरदार) हा पुढे आला आणि दरबारात उपस्थित झाला. राजाने त्याला विचारले, "तुम्ही सर्वजण रोज कुठे जाता? आजकाल तुमच्या चेहऱ्यावर वेगळाच आनंद आणि तेज दिसते आहे." सरदारांनी सांगितले, "महाराज, जर आपण अभय द्याल (रागावून शिक्षा करणार नसाल) तर आम्ही सांगू." राजाने संमती दिली. तेव्हा ते म्हणाले, "एळापूर येथे एक महान अलौकिक पुरुष आले आहेत. आम्ही सर्वजण रोज सकाळी त्यांच्या दर्शनाला जातो आणि मग आपल्या दरबारात येतो." राजाने विचारले, "त्यांचे नाव काय आहे?" त्यांनी सांगितले, "त्यांचे नाव \'श्रीचांगदेवराव स्वामी\' (चक्रधर स्वामी) आहे." त्यांनी स्वामींच्या गुणांचे आणि दिव्य स्वरूपाचे कौतुक केले.\n\n**राजाची ओढ आणि स्वामींचे उत्तर:**\nस्वामींचे महात्म्य ऐकून राजा महादेवराव यांच्या मनातही दर्शनाची तीव्र ओढ निर्माण झाली. राजा म्हणाला, "अरे, मग मला का सांगितले नाही? मलाही त्यांच्या दर्शनाला घेऊन चला." सरदारांनी सांगितले, "होय महाराज, पण आधी आम्ही स्वामींना विचारून त्यांची संमती घेतो आणि मग आपल्याला घेऊन जाऊ." दुसऱ्या दिवशी सरदारांनी स्वामींकडे येऊन विनंती केली, "स्वामी, देवगिरीचे राजे महादेवराव आपल्या दर्शनासाठी येऊ इच्छित आहेत." तेव्हा स्वामी अत्यंत सहजतेने म्हणाले, "येत असतील तर येऊ द्या."\n\n**निष्कर्ष:**\nया लीळेतून स्वामींच्या अलौकिक स्वरूपाचे आणि देवगिरीच्या यादवांच्या राजघराण्यावर व सरदारांवर असलेल्या त्यांच्या प्रभावाचे दर्शन घडते. ईश्वरी ओढ राजा असो वा रंक, सर्वांनाच कशी वेधून घेते, हे यातून स्पष्ट होते.'
+  },
+  {
+    id: 'lc_p226',
+    bookId: 'leela_charitra',
+    number: 226,
+    title: 'लीळा २२६: राजेयागमनीं वार्ता',
+    titleEn: 'Leela 226: Rajeyagamni Varta',
+    content: 'मग आइती केली : महादेोराय गोसावींचेया दरीसना नीगाला : तवं पाटाचा हाति पडिला : तवं हातिसाहाणी सांघावेया आला : "पाटाचा हाति सरला : अपसगुणु जाला :" म्हणौनि राहीला : तैसेचि एउनि गोसावीयांपुढां सांघीतलें : "जी जी : आजि महादेोराओ गोसावींचेया दरीसनासि एतु होता : तवं हाति पडला : अपसगुणु जाला : म्हणौनि राहीला :" गोसावी उग्याचि आइकीलें : माघौता नीगाला : तवं पाउसु आला : ते राओ पाणीएं पीटौनि मागुता दुगींआंतु घातला राहीला : तैसेंचि एउनि गोसावीयांपुढें सांघीतलें : तैंही गोसावीं उग्याचि आइकीलें : ॥',
+    explanation: '**लीळा भावार्थ व निरूपण:**\n\n**प्रसंग आणि अपशकुन:**\nस्वामींच्या संमतीनंतर देवगिरीचे राजे महादेवराव यादवांनी स्वामींच्या दर्शनासाठी जाण्याची पूर्ण तयारी (आइती) केली. परंतु, राजे निघाले असता राजवाड्याचा पट्टशिष्य असलेला मुख्य हत्ती (पाटाचा हत्ती) अचानक खाली कोसळला. हत्तीच्या प्रमुखाने (हातीसाहाणी) येऊन सांगितले की हत्ती कोसळल्यामुळे हा मोठा अपशकुन झाला आहे. त्यामुळे राजाने त्या दिवशी निघण्याचे रद्द केले आणि तो थांबला. सरदारांनी (पाल्हाडांगियाने) स्वामींकडे येऊन सांगितले, "स्वामी, आज राजे आपल्या दर्शनासाठी निघत होते, पण त्यांचा मुख्य हत्ती कोसळल्याने अपशकुन झाला, म्हणून ते थांबले." स्वामींनी हे शांतपणे ऐकून घेतले, पण काहीच प्रतिक्रिया दिली नाही.\n\n**पाउसु आणि निसर्गाचा अडथळा:**\nदुसऱ्या दिवशी राजे पुन्हा दर्शनासाठी निघाले, परंतु अचानक एवढा प्रचंड पाऊस आला की राजा पावसाने पूर्ण भिजला आणि त्याला परत आपल्या महालात (दुगी/किल्ल्यात) जावे लागले. सरदारांनी पुन्हा स्वामींकडे येऊन ही हकीकत सांगितली. स्वामींनी हे देखील अत्यंत शांतपणे ऐकून घेतले.\n\n**निष्कर्ष:**\nया लीळेतून दिसून येते की ईश्वरी भेटीसाठी केवळ संपत्ती किंवा सत्तेची गरज नसते, तर अनुकूल वेळ आणि ईश्वरी संकेतही अनुकूल असावे लागतात. राजा महादेवरावांना दर्शनासाठी निघालेल्या अडथळ्यांमागे काहीतरी पूर्वसंकेत किंवा निसर्गाचा अडथळा होता, ज्याकडे स्वामींनी मौन बाळगून केवळ साक्षीभावाने पाहिले.'
+  },
+  {
+    id: 'lc_p227',
+    bookId: 'leela_charitra',
+    number: 227,
+    title: 'लीळा २२७: राजेयागमनीं प्रायेण',
+    titleEn: 'Leela 227: Rajeyagamni Prayena',
+    content: 'तीसर्रां दीसीं राएं म्हणीतलें : "आजि राज्य जाओ : परि मीं गोसावीयांचेया दरीसनासि जाइनचि :" गोसावीं प्रश्च्यासि बीजें केलें होतें : प्रश्चयो सारूनि आले : सर्वज्ञें म्हणीतलें : "बाइ : महादेोराओ कैसे पात्र :" "बाबा : इदल तरि एओ का :" सर्वज्ञें म्हणीतलें : "बाइ : एथिलें दरीसन होतखेओ आपुलें सकळें राज्य एथ संपादील : आपण एथिचा काठीया कांबीया सेवकु होउनि व्रतैल :" बाइसीं म्हणीतलें : "तरि एओं कां नेदिजे बाबा : वर्तैल तरीं वर्तों कां : बाबा ?" सर्वज्ञें म्हणीतलें : "पोरें हो : मग तुम्ही बोडिकीं कें रीगों लाहाल ?" "तरि असो परूता :" सर्वज्ञें म्हणीतलें : "तरि आइति करा : आतां तो एथ दीसु काढील" : मग गोसावीं बीजें केलें : माटखेड्यासि : तवं तो आला : ॥',
+    explanation: '**लीळा भावार्थ व निरूपण:**\n\n**प्रसंग आणि राजाचा निश्चय:**\nतीसऱ्या दिवशी राजे महादेवरावांनी ठाम निश्चय केला, "आज माझे राज्य गेले तरी चालेल, पण मी स्वामींच्या दर्शनासाठी नक्कीच जाणार!" इकडे स्वामी आपल्या सकाळच्या विधीसाठी (प्रश्च्यासि/शौचाचमन) गेले होते. विधी उरकून आल्यावर स्वामींनी बाईसांना विचारले, "बाई, देवगिरीचा राजा महादेवराव दर्शनासाठी कसा पात्र आहे?" बाईसा म्हणाल्या, "बाबा, येऊ द्या ना त्याला, काय हरकत आहे?"\n\n**स्वामींची भविष्यवाणी आणि बाईसांची काळजी:**\nस्वामींनी अत्यंत गंभीरपणे सांगितले, "बाई, जर राजाने इथे येऊन आमचे दर्शन घेतले, तर तो क्षणात त्याचे संपूर्ण राज्य, संपत्ती आणि राजवैभव आमच्या चरणी अर्पण करून टाकेल! तो स्वतः राजपद सोडून आमचा साधा काठी आणि कांबळे घेऊन फिरणारा सामान्य सेवक होऊन जाईल." हे ऐकून बाईसा काळजीने म्हणाल्या, "तर मग बाबा, त्याला इथे येऊ देऊ नका. जर त्याने सर्व काही सोडून दिले, तर आम्ही (भक्त आणि स्त्रिया) कुठे जाणार? आमचा सांभाळ कसा होणार? त्यामुळे त्याचे राजवैभव त्याच्यापाशीच राहू द्या, तो तिथेच बरा आहे." स्वामींनी हसून सांगितले, "हो, म्हणून आपण आता इथून निघण्याची तयारी करूया. कारण तो आता इथे दर्शनासाठी येतच असेल."\n\n**माटखेडा प्रस्थान:**\nस्वामींनी राजाला प्रत्यक्ष दर्शन देणे टाळण्यासाठी ताबडतोब तिथून विहारासाठी माटखेडा गावाकडे प्रस्थान केले. राजा दर्शनासाठी आला, परंतु त्याला स्वामी तिथे मिळाले नाहीत.\n\n**निष्कर्ष:**\nया अत्यंत महत्त्वाच्या लीळेतून स्वामींचे अलौकिक आकर्षण आणि त्यांचे भविष्य ओळखण्याचे सामर्थ्य दिसून येते. स्वामींच्या केवळ दर्शनाने महाप्रतापी राजाचेही हृदयपरिवर्तन होऊन तो वैराग्य धारण करू शकला असता. परंतु, भक्तांच्या (बाईसांच्या) विनंतीवरून आणि त्यांच्या व्यावहारिक काळजीपोटी स्वामींनी राजाला प्रत्यक्ष दर्शन देणे टाळले.'
+  },
+  {
+    id: 'lc_p228',
+    bookId: 'leela_charitra',
+    number: 228,
+    title: 'लीळा २२८: माटखेडां वसति',
+    titleEn: 'Leela 228: Matakhedan Vasati',
+    content: 'बाइसें उदकपात्र भरूं गेलीं : दहींकरिणी दहींएं दूंधें तुपें वीकावेया गेलीया होतीया : तै ती लवकरि आलीया : तवं पाणिपवांतचीया बाइला पुसों लागलीया : "हें काइ ओ : आजि लवकरि आलीयाती ?" तीं सांघीतलें : "ना राओ आजि पुरूखांचेया दरीसना एळापुरासि आला : तेथ कटक आलें : म्हणौनि आमचीं दहींएं दूधें तुपें तेथचि वीकलीं : म्हणौनि लवकरि आलीं :" मग बाइसीं पुसिलें : "मग पुरूख भेटले ?" "ना नाहीं भेटले : लेगेनि लेणें सोधिलें : परि नेभटतीचि :" बाइसीं एउनी गोसावीयांपुघें सांघीतलें : सर्वज्ञें म्हणीतलें : "बाइ : तें तुम्हापुढें सांघीतलें कीं : दीसु एथ काढील" : " ॥',
+    explanation: '**लीळा भावार्थ व निरूपण:**\n\n**प्रसंग आणि गवळणींची भेट:**\nस्वामी जेव्हा माटखेडा येथे आले, तेव्हा बाईसा पाण्याचे भांडे भरण्यासाठी विहिरीवर गेल्या. तिथे दही, दूध आणि तूप विकण्यासाठी गेलेल्या गवळणी खूप लवकर बाजारातून परत आल्या होत्या. विहिरीवर पाणी भरणाऱ्या इतर स्त्रियांनी त्यांना विचारले, "काय ग, आज तुम्ही इतक्या लवकर कशा परत आल्या?"\n\n**सैन्याची गर्दी आणि राजाची शोधमोहीम:**\nगवळणींनी सांगितले, "अग, आज देवगिरीचा राजा महादेवराव एका सिद्ध पुरुषाच्या (स्वामींच्या) दर्शनासाठी एळापूरला आला होता. त्याच्यासोबत त्याचे मोठे सैन्य (कटक) देखील आले होते. त्या सैन्यातील लोकांनी आमचे सर्व दही, दूध आणि तूप तिथेच विकत घेऊन टाकले, त्यामुळे आमची लवकर विक्री झाली आणि आम्ही लवकर आलो." बाईसांनी कुतूहलाने विचारले, "मग राजाची आणि त्या पुरुषाची भेट झाली का?" गवळणी म्हणाल्या, "नाही, त्यांची भेट झाली नाही. सैन्याने संपूर्ण एलोरा आणि लेणी शोधून काढली, पण स्वामी कुठेही आढळले नाहीत."\n\n**स्वामींचा प्रतिसाद:**\nबाईसांनी परत येऊन ही सर्व हकीकत स्वामींना सांगितली. तेव्हा स्वामी हसून म्हणाले, "बाई, मी तुला आधीच सांगितले होते ना की तो राजा तिथेच शोधत राहील आणि दिवस घालवेल, पण आम्ही त्याला भेटणार नाही."\n\n**निष्कर्ष:**\nया लीळेतून स्वामींचे अंतर्ज्ञान आणि राजाच्या आगमनाची वार्ता अगदी सहजपणे कशी पसरली, हे स्पष्ट होते. स्वामींनी आधीच वर्तवल्याप्रमाणे राजाला त्यांचे दर्शन मिळाले नाही आणि स्वामींनी आपले वास्तव्य सुरक्षितपणे माटखेडा येथे हलवले.'
+  },
+  {
+    id: 'lc_p229',
+    bookId: 'leela_charitra',
+    number: 229,
+    title: 'लीळा २२९: इटखेडां वसति',
+    titleEn: 'Leela 229: Itakhedan Vasati',
+    content: '२२९ इटखेडां वसति ॥',
+    explanation: '**लीळा भावार्थ व निरूपण:**\n\n**प्रसंग आणि वास्तव्य:**\nप्रभू चक्रधर स्वामी माटखेड्याहून निघून \'इटखेडा\' या गावी आले. तिथे स्वामींनी काही काळ वास्तव्य केले आणि भक्तांना दर्शन व सान्निध्य लाभले.\n\n**निष्कर्ष:**\nस्वामींच्या परिभ्रमणातील हे एक पावन स्थान असून, स्वामींचा चरणस्पर्श इटखेडा या गावाला लाभल्यामुळे हे स्थान पवित्र झाले.'
+  },
+  {
+    id: 'lc_p230',
+    bookId: 'leela_charitra',
+    number: 230,
+    title: 'लीळा २३०: लासौरीं जोगेस्वरीं वसति',
+    titleEn: 'Leela 230: Lasaurin Jogesvarin Vasati',
+    content: '२३० लासौरीं जोगेस्वरीं वसति ॥',
+    explanation: '**लीळा भावार्थ व निरूपण:**\n\n**प्रसंग आणि वास्तव्य:**\nप्रभू चक्रधर स्वामी इटखेड्याहून पुढे प्रवास करत \'लासूर\' (लासौरी) या गावी असलेल्या जोगेश्वरी मंदिरामध्ये आले. तिथे स्वामींचे पावन वास्तव्य झाले.\n\n**निष्कर्ष:**\nया प्रवासात स्वामींनी लासूर येथील जोगेश्वरीच्या सान्निध्यात वास्तव्य करून तिथल्या मुमुक्षूंना आणि भक्तांना भक्तीचा मार्ग दाखवले.'
+  },
+  {
+    id: 'lc_p231',
+    bookId: 'leela_charitra',
+    number: 231,
+    title: 'लीळा २३१: घोगरगांवीं वसति',
+    titleEn: 'Leela 231: Ghogaraganvin Vasati',
+    content: '२३१ घोगरगांवीं वसति ॥',
+    explanation: '**लीळा भावार्थ व निरूपण:**\n\n**प्रसंग आणि वास्तव्य:**\nस्वामी लासूरहून पुढे मार्गक्रमण करत \'घोगरगाव\' येथे आले. या गावी स्वामींचे पावन वास्तव्य झाले.\n\n**निष्कर्ष:**\nघोगरगाव हे स्थान स्वामींच्या चरणांनी पुनित झाले आणि येथील भक्तांना स्वामींच्या दर्शनाचा अलौकिक लाभ मिळाला.'
+  },
+  {
+    id: 'lc_p232',
+    bookId: 'leela_charitra',
+    number: 232,
+    title: 'लीळा २३२: डोंबेग्रामीं वसति : दाइभागवंतांकरवि ओटा करवणें',
+    titleEn: 'Leela 232: Dombegramin Vasati: Daibhagavantankaravi Ota Karavane',
+    content: 'दाइभागवंतीं गोसावीयांतें वीनवीलें : "जी जी : मज जरु एतु असे :" सर्वज्ञें म्हणीतलें : "एथ ओटा करा : मग तुमचा जरु जाइल :" "हो कां जी :" तींही ओटा केला : मग तेयांचा जरु गेला : परि नीसेखू न वचेचि : ॥',
+    explanation: '**लीळा भावार्थ व निरूपण:**\n\n**प्रसंग आणि भक्ताची व्याधी:**\nस्वामी घोगरगावहून डोंबेग्राम (डोमग्राम) येथे आले. तिथे दाईभागवंत (स्वामींचे एक परम भक्त) यांनी स्वामींना व्याकुळतेने विनंती केली, "स्वामी, मला खूप ताप (जरु) येत आहे, माझी तब्येत अत्यंत खराब झाली आहे."\n\n**स्वामींची आज्ञा आणि उपाय:**\nस्वामींनी त्यांना उपाय सांगताना म्हटले, "दाइभागवंत, तुम्ही इथे माझ्यासाठी एक सुंदर मातीचा ओटा तयार करा. सेवा केल्याने तुमचा ताप निघून जाईल." दाईभागवंतांनी स्वामींच्या आज्ञेचे पालन करून अत्यंत श्रद्धेने ओटा तयार केला. ओटा पूर्ण होताच त्यांचा ताप गायब झाला, परंतु थोडी कणकण (निसेखू) शिल्लक राहिली, जी नंतर हळूहळू पूर्ण बरी झाली.\n\n**निष्कर्ष:**\nया लीळेतून दिसून येते की ईश्वराची सेवा आणि आज्ञापालन हे केवळ आध्यात्मिक उन्नतीच करत नाही, तर शारीरिक व्याधींचेही निवारण करते. \'सेवा\' हाच आरोग्याचा आणि मुक्तीचा खरा मार्ग आहे.'
+  },
+  {
+    id: 'lc_p233',
+    bookId: 'leela_charitra',
+    number: 233,
+    title: 'लीळा २३३: मार्गी पोफळफोडणा गाहण ठेवणें',
+    titleEn: 'Leela 233: Margi Pophalaphodana Gahana Thevane',
+    content: 'गोसावीयांचा वेचु सरला : मग बाइसीं म्हणीतलें : "बाबा : वेचु सरला :" सर्वज्ञें म्हणीतलें : "बाइ : पोफळफोडणा गाहणु ठेवा :" पोफळफोडणा गाहणु ठेविला : मग वेचु आणिला : तवं डखले पोटीं म्हणों लागले : "गावां जातां तरि गांवीं बीटीया दोन असति तीया आणितां : तरि गोसावीयांचेया विनोगा जातीया :" ऐसा मनोधू करूं लागले : तवं सर्वज्ञें म्हणीतलें : "काइ गा डखलेया : मनोधूं राज्य करीत असिजे ?" "जी जी : मातें गांवीं बीटीया दोनि असति : तीया आणितां तरि गोसावीयांचां ठांई वेचावेया होतीया :" सर्वज्ञें म्हणीतलें : "एथ प्रवृत्ति नाहीं : एन्हवीं अवधी राहाटि सोनेयांची न कीजे ?" तवं तेहीं म्हणीतलें : "जी जी : कीजो जी :" सर्वज्ञें म्हणीतलें : "पोरें हो : तरि तुम्ही उरों न ल्हा" : ॥',
+    explanation: '**लीळा भावार्थ व निरूपण:**\n\n**प्रसंग आणि आर्थिक अडचण:**\nस्वामींच्या प्रवासात दैनंदिन खर्चाचे पैसे (वेचू) संपले. तेव्हा काळजीयुक्त स्वरात बाईसा स्वामींना म्हणाल्या, "बाबा, घरातील सर्व पैसे संपले आहेत, आता पुढे काय करायचे?" स्वामींनी अत्यंत सहजतेने सुचवले, "बाई, आपल्याजवळ असलेला पोफळफोडणा (सुपारी कापण्याचा कातर/अडकित्ता) गहाण ठेवा आणि खर्च भागवा." स्वामींच्या आज्ञेनुसार बाईसांनी तो अडकित्ता गहाण ठेवून भोजनाचा व प्रवासाचा खर्च आणला.\n\n**डखलेयांचा विचार आणि स्वामींचे निरूपण:**\nहे पाहून भक्त डखलेयांच्या मनात विचार आला, "जर मी माझ्या गावी गेलो, तर तिथे माझ्या दोन सोन्याच्या विटी (विटीया/नाणी) आहेत, त्या घेऊन आलो तर स्वामींच्या उपयोगाला येतील." अंतर्ज्ञानी स्वामी डखलेयांना म्हणाले, "डखलेया, मनातल्या मनात विचारांचे राज्य काय लढवतोस?" डखलेयांनी हात जोडून सांगितले, "स्वामी, माझ्या गावी सोन्याच्या दोन विटी आहेत. त्या आणल्या तर आपल्या खर्चासाठी उपयोगी पडतील, असा विचार माझ्या मनात आला."\nतेव्हा स्वामींनी अतिशय सुंदर उपदेश केला, "डखलेया, इथे आमची सोन्या-नाण्यांची प्रवृत्ती (लोभ) नाही. जर आमची तशी इच्छा असती, तर आम्ही ही संपूर्ण पृथ्वीच सोन्याची केली नसती का?" डखलेया म्हणाले, "होय स्वामी, करून दाखवा की." तेव्हा स्वामी हसून म्हणाले, "अरे पोरांनो, जर आम्ही ही सृष्टी सोन्याची केली, तर तुम्ही सोन्याच्या मोहापायी इथे जिवंत उरणार नाही (आपसात भांडून नसाल)."\n\n**निष्कर्ष:**\nया अत्यंत बोधप्रद लीळेतून स्वामींचे कंचन-कामिनीविषयीचे पूर्ण वैराग्य स्पष्ट होते. ईश्वराला भौतिक सोन्याची गरज नसते, तो केवळ भक्ताचा शुद्ध भाव पाहतो. अतिसंपत्ती माणसाचा आध्यात्मिक आणि भौतिक नाश करते, हा अत्यंत मोलाचा उपदेश स्वामींनी यातून दिला आहे.'
+  },
+  {
+    id: 'lc_p234',
+    bookId: 'leela_charitra',
+    number: 234,
+    title: 'लीळा २३४: एरंडबन कथन',
+    titleEn: 'Leela 234: Erandabana Kathana',
+    content: 'गोसावी मार्गी बीजें करीत असति : तवं पुढां एके वोसे गांवीं : बाइसीं दुरूनि एक एरंडाचें बन देखिलें : मग बाइसीं म्हणीतलें : "बाबा : पैल केसुणें आंबैयांचें बन देखिलें : कवणीं गांवींचे ?" गोसावी उगेचि होते : नावेक जवळी पातले : आणि सर्वज्ञें म्हणीतलें : "देखिलें गा डखलेया : बाइसांचें बन ? कैस सांतितलें असे :" तवं डखलीं म्हणीतलें : "जी जी : बाइसांची आंबैयांची बनें तीं एैसींची कीं :" डखले म्हणति : "बाइ बाइ : हा आंबा वाणिचा : हें देखिलें पैल के सुणे आंबे लागले असति ?" ऐसें विपुलाउं लागले : बािसें म्हणति : "पोरा : बाबा पां म्हणेति : मा तुं कां म्हणौनि म्हणसि ?" ऐसे गोसावीं नावेक हास्य केलें : सर्वज्ञें म्हणीतलें : "डखलेया : कव्हणी एकु वाटा जातु असे : तो दुरौनि वृक्षातें देखे : परि अमुकेयाचा वृक्षु ऐसें नेणे : नावेक साउमा जाए : मग म्हणे : हा अमुकेयाचा वृक्षु : पारि तेयाचे असेख विसेख न देखे : तेयाखालि उभा ठाके : मग तेयाचे असेख विसेख देखे" : ॥',
+    explanation: '**लीळा भावार्थ व निरूपण:**\n\n**प्रसंग आणि बाईसांचा गैरसमज:**\nस्वामी आपल्या भक्तांसह रस्त्याने चालले होते. वाटेत एका ओसाड गावाजवळ बाईसांना दुरून एक एरंडाचे झाड आणि त्याचे दाट जंगल (एरंडबन) दिसले. बाईसांना वाटले की ते आंब्याची सुंदर झाडे आणि त्यांचे घड आहेत. त्या आनंदाने म्हणाल्या, "बाबा, पहा दुरून आंब्याचे किती सुंदर बन (जंगल) दिसत आहे! हे कोणत्या गावाचे आहे?" स्वामी हसले पण काही बोलले नाहीत.\n\n**स्वामींचे हास्य आणि डखलेयांची मस्करी:**\nजेव्हा ते थोडे जवळ पोहोचले, तेव्हा स्वामी डखलेयांना हसत म्हणाले, "डखलेया, पाहिलेत का बाईसांचे आंब्याचे बन? कशा सांगतात पहा." डखलेयांनी बाईसांची चेष्टा करत म्हटले, "होय स्वामी, बाईसांचे आंब्याचे बन असेच असते!" डखलेयांनी बाईसांना चिडवत म्हटले, "बाई, हा पहा तुमचा आंबा! किती सुंदर आंबे लागले आहेत ना!" बाईसांना आपली चूक उमजली आणि त्या लाजल्या. त्या डखलेयांना म्हणाल्या, "अरे पोरा, बाबा थट्टा करत आहेत, तू मध्ये कशाला बोलतोस?" स्वामींनी त्यांच्यातील हा गोड संवाद पाहून स्मितहास्य केले.\n\n**दूरदृष्टाचा दृष्टांत आणि उपदेश:**\nस्वामींनी या प्रसंगावरून एक अत्यंत गहन आध्यात्मिक उपदेश (दूरदृष्टाचा दृष्टांत) दिला: "डखलेया, रस्त्याने जाणारा एखादा वाटसरू जेव्हा दुरून झाड पाहतो, तेव्हा त्याला फक्त झाड दिसते पण ते कशाचे झाड आहे हे समजत नाही. जेव्हा तो थोडे जवळ जातो, तेव्हा त्याला समजते की हे अमुक झाड (उदा. आंब्याचे किंवा एरंडाचे) आहे, तरीही त्याला पाना-फुलांचे बारकावे दिसत नाहीत. परंतु, जेव्हा तो थेट त्या झाडाच्या खाली उभा राहतो, तेव्हाच त्याला त्या झाडाची फळे, पाने आणि सर्व वैशिष्ट्ये (अशेख-विशेष) स्पष्टपणे दिसतात."\n\n**निष्कर्ष:**\nया अत्यंत रंजक आणि व्यावहारिक लीळेतून स्वामींनी \'ज्ञानाची प्रक्रिया\' स्पष्ट केली आहे. संसारात या अध्यात्मात जोपर्यंत आपण ईश्वराच्या आणि ज्ञानाच्या अगदी जवळ जात नाही, तोपर्यंत आपल्याला त्याचे पूर्ण सत्य समजत नाही. दुरून भासणारे सत्य जवळ गेल्यावरच उमजते, हा मोलाचा संदेश यातून मिळतो.'
+  },
+    {
+    id: 'lc_p235',
+    bookId: 'leela_charitra',
+    number: 235,
+    title: 'लीळा २३५: श्रीनगर दाखवणें',
+    titleEn: 'Leela 235: Shreenagar Dakhavane',
+    content: 'गोसावी श्रीनगरानजिक पातले : तेथौनि सीनरीचे कळस दाखविले : हस्तीचे कींकाट आइकिले : घोडेयांचे हींस : नीसाणांचा नीनादू : माणुसांचा गजंबु ऐसा देखिला : मग बाईसीं पुसिलें : "बाबा : हें नगर कवण ?" सर्वज्ञें म्हणीतलें : "बाइ : हें श्रीनगर : " ॥',
+    explanation: '**लीळा भावार्थ व निरूपण:**\n\n**प्रसंग:** श्री चक्रधर स्वामी आपल्या भक्त परिवारासह प्रवास करत असताना श्रीनगर (सिन्नर) जवळ आले. तिथून त्यांना सिन्नर शहराचे उंच सुवर्ण कळस, हत्तींचे ओरडणे, घोड्यांचे खिंकाळणे, वाद्यांचे आणि डफांचे घुमणारे आवाज, आणि माणसांची प्रचंड गर्दी व वर्दळ ऐकू आणि दिसू लागली.\n\n**स्वामींचे निरूपण:** हा सगळा राजेशाही थाट आणि गर्दी पाहून थक्क होऊन बाईसांनी स्वामींना प्रश्न विचारला, "बाबा, हे एवढे मोठे आणि सुंदर नगर कोणते आहे?" त्यावर अंतर्यामी आणि सर्वज्ञ स्वामींनी शांतपणे व मधुर स्वरात उत्तर दिले, "बाई, हेच ते प्रसिद्ध \'श्रीनगर\' (सिन्नर) आहे."\n\n**निष्कर्ष:** या लीळेतून स्वामींचे निसर्ग आणि मानवी वस्तीचे सूक्ष्म निरीक्षण, आणि भक्तांच्या बालसुलभ कुतूहलाला अतिशय आपुलकीने आणि प्रेमाने दिलेले उत्तर दिसून येते. सिन्नरच्या प्राचीन समृद्धीची आणि वैभवाची साक्ष या प्रसंगातून मिळते।'
+  },
+  {
+    id: 'lc_p236',
+    bookId: 'leela_charitra',
+    number: 236,
+    title: 'लीळा २३६: श्रीनगरीं भीलमहठीं अवस्थान',
+    titleEn: 'Leela 236: Shreenagari Bheelmahati Avasthana',
+    content: 'मग गोसावीं श्रीनगरसि बीजें केलें : तेथ भीलमहठीं मास दाहा अवस्थान जालें : ॥',
+    explanation: '**लीळा भावार्थ व निरूपण:**\n\n**प्रसंग:** श्रीनगर (सिन्नर) येथे आगमन झाल्यावर स्वामींनी तेथे मुक्काम करण्याचे ठरविले. त्यांनी तेथील प्रसिद्ध भील मठात (भीलमहठ) आपले वास्तव्य केले.\n\n**स्वामींची कृपा व अवस्थान:** स्वामींनी या मठात सलग दहा महिने (मास दाहा) वास्तव्य केले. या काळात अनेक मुमुक्षू, साधक आणि भक्तांनी स्वामींच्या दिव्य सहवासाचा, मार्गदर्शनाचा आणि ब्रह्मविद्येचा लाभ घेतला.\n\n**निष्कर्ष:** ईश्वराचे वास्तव्य हे कोणत्याही मोठ्या राजवाड्यात किंवा ऐश्वर्यात नसून, भक्तांच्या शुद्ध भावाने युक्त अशा साध्या मठात किंवा झोपडीतही असू शकते. स्वामींचा हा प्रदीर्घ मुक्काम सिन्नरच्या भक्तांसाठी सुवर्णकाळ ठरला।'
+  },
+  {
+    id: 'lc_p237',
+    bookId: 'leela_charitra',
+    number: 237,
+    title: 'लीळा २४७: राजेया प्रेक्षीत पुरुष स्वऐंनामगोपन',
+    titleEn: 'Leela 237: Rajeya Prekshita Purusha Svanamagopana',
+    content: 'माहादेओ राउ जैसा एळापुरावरौनि : ठाणेंया महीबा कटकैए गेला होता : तो एतएतां श्रीनगरानजीक आला : तवं तेथ ऐसें आइकिले : \'ना एळापुरीं जे पुरुष होते ते एथ असति : \' मग पाल्हेयाडांगीयेंातें माहादेओराएं म्हणीतलें : "पाल्हेया : जाए पां पाहावेया : " पाल्हाडांगीया अवघी देऊळें पाहुनि भीलमहठासि आला : \'एथ काइ असति : हा धाकुटा मढु : \' म्हणोनि भीलमहठाचां दारवठां आपण राहिला : बटीकु पाहावेया भीतोरि साउमा पाठवीला : गोसावीं जाडी पारावरण केली : गुजरु वेखू घेतला : गुजर दौंडि घेतली : पटिसाळेवरि खांबाआड उभे राहिले : तेण्हें गोसावीयातें पुसिलें : "एथ श्रीचांगदेओराउळ गोसावी असति कीं ?" सर्वज्ञें म्हणीतलें : "चांगदेओराउळ नेणों : ना वांगदेओराउळ नेणों : म्हांतारी एकि छे : ते गांवामाहिं भीक्ष मागों गै छे : यौ यौ यौ सहो छो : " इतुकेनि तो गेला : पाल्हेयापुढें सांतितलें : "एथ चांगदेओराउळ नाहीं : एकु झांजणु असे : तेयासि गुजरु वेखू असे : " मग पाल्हाडांगीया गेला : रायापुढें सांतितलें : "चांगदेओराउळ नाहीं : झांजणु एकु उभा असे : " मग राउ म्हणों लागला : "तै तन्हीं तेया पुरूखांचे दरीसन नव्हेचि : आतांहीं तेया पुरूखांचे दरीसन नव्हेचि : " मग तो गेला : ॥',
+    explanation: '**लीळा भावार्थ व निरूपण:**\n\n**प्रसंग:** देवगिरीचे यादव राजे \'महादेवराव\' (महादेवराणा) हे एलोरावरून परत येत असताना श्रीनगर (सिन्नर) जवळ आले. त्यांनी तिथे ऐकले की एलोरा येथील प्रसिद्ध आणि चमत्कारी दिव्य पुरुष (श्री चक्रधर स्वामी) सध्या इथेच भील मठात राहत आहेत. राजाने आपल्या गुप्तहेराला आणि सेवकाला (पाल्हाडांगिया) शोध घेण्यासाठी पाठवले.\n\n**स्वामींचे स्वनामगोपन आणि लीला:** पाल्हाडांगिया भील मठाजवळ आला. मठाचा लहान आकार पाहून तो स्वतः दारातच थांबला आणि त्याने आपल्या सेवकाला (बटीक) आत खात्री करण्यासाठी पाठवले. स्वामींना राजाचे लोक आल्याचे समजले. स्वामींनी लगेच आपले रूप लपवण्यासाठी अंगावर एक जाड घोंगडी ओढली, हातात गुजराती व्यापार्‍यासारखी काठी घेतली, आणि व्हरांड्यातील खांबाच्या आडोशाला उभे राहिले. जेव्हा सेवकाने आत येऊन विचारले, "इथे श्रीचांगदेवरावूळ (स्वामींचे पूर्वायुष्यातील नाव) गोसावी राहतात का?" तेव्हा स्वामींनी गुजराती भाषेच्या हेलकाव्यात (गुजर वेष/बोली) उत्तर दिले, "आम्ही चांगदेवरावूळ नेणों (माहित नाही), वांगदेवरावूळ नेणों. इथे एक म्हातारी राहते, ती गावात भिक्षा मागायला गेली आहे. तुम्ही परत जा!" सेवक ती गुजराती बोली ऐकून निघून गेला.\n\n**राजेयाचा पश्चात्ताप:** सेवकाने आपल्या प्रमुखाला सांगितले की तिथे चांगदेवरावूळ नाहीत, एक साधा गुजराती मनुष्य उभा आहे. प्रमुखाने राजाला कळवले की तिथे कोणी दिव्य पुरुष नाही, केवळ एक म्हातारा उभा आहे. हे ऐकून राजा महादेवराव अत्यंत खिन्न झाला आणि म्हणाला, "अरेरे! त्या दिव्य महापुरुषाचे दर्शन माझ्या नशिबात नव्हते आणि आजही मला त्यांचे दर्शन झाले नाही!" असे म्हणून तो निघून गेला.\n\n**निष्कर्ष:** ईश्वरा हा केवळ अधिकाराने किंवा केवळ राजसत्तेच्या बळावर प्राप्त होत नाही. जोपर्यंत भक्तामध्ये पूर्ण शरणागती आणि अनन्य भाव नसतो, तोपर्यंत परमेश्वर त्याच्या समोर असूनही आपले मूळ रूप प्रकट करत नाही. स्वामींनी राजसत्तेचा मान न ठेवता स्वतःचे नाव आणि रूप गोपन करून दाखवले की अध्यात्म हा प्रसिद्धीचा किंवा अधिकाराचा विषय नाही।'
+  },
+  {
+    id: 'lc_p238',
+    bookId: 'leela_charitra',
+    number: 238,
+    title: 'लीळा २३८: माहादाइसां : उमाइसां भेटि',
+    titleEn: 'Leela 238: Mahadaisan Umaisan Bheti',
+    content: 'आबैसाचा वडील पुतु सारंगपाणि : तो देसाउरासि गेला होता : तो वाटे एतां चोरीं उपद्रविला : तेणें दुःखें आबैसीं क्षेत्रसंन्यास घेतला : रांणसगांवी मढी बांधली : जवळी माहादाइसे : उमाइ सें मासोपवास करिति : तवं तेथ देव आले : ते आबैसांसी काही बरवें बोलेति : तेणें दादोसांपासीलौनि तेयांसि स्तीति जाली : तीएं दादोसांचीं सीखें जालीं : एकु दीस दादोस आबैसांचीए मढीएसी बैसले असति : बाहिरि वाहाणा उचा असति : काही बरवें बोलत असति : तवं तेथ भट पडिताळावेया आले : मोकळा कासोटा : आडवी वेणी : खांडावरि खांडें : ऐसे भट पटिसाळेवरि आले : तवं बाहिरि वाहाणा देखिलीय : ऐसें ओणवौनि खालुतें पाहाति : तवं दादोसातें मढीएआंतु बैसलेया देखति : आणि वाहाणा खांडेनि सारिलीया : पौळीबाहेरि टाकिलीया : तीया दादोसीं सांडितां देखिलीया : आणि दादोस बीहाले : हळुचि उठिले : घोंगडें घेतलें : दंडु घेतला : कुमंढलु घेतला : बाहिरि गेले : वाहाणा पाहुनि घेतील्या : जाउनि तेयाचि मागिला वडाखालि बैसले : महदाइसे उमाइसे तेयातें देखोनि पळालीं : भटीं म्हणीतलें : "हें काइ आबै : माहात्मे काइसे ? नीरोपण काइसें ? दादुलेयाचा प्रवेसु एथ काइसा ? हे रूपें धाकुटि : हे उमै धाकुटि : याचि कारणे तुंआ एथ मढी बांधली ?" तवं आबैसीं म्हणीतलें : "सर नागदेया : हें तुज काइ जालें ? यां माहात्म्यातें तुं जाणसि ना : हे नीके : यांपासीौनि गोमटें : स्तीतिआनंदु होति : " भटीं म्हणीतलें : "तरी काइ : पुरुखांपासोनि स्त्रीयांसि आनंदू होएची कीं : हे उमै धाकुटि : हे रूपें धाकुटि : यांसि गोमटें होआवें कीं : एथ मढी याचिसागि बांधली ?" तवं आबैसीं म्हणीतलें : "सर नागदेया : न बोल : न बोल तोंडें : तोंडें पाप नको घेऊं : हे माहात्मे नीके : यांतें मीयां जेवावेया म्हणीतलें होतें : भाणेयावरौनि उठवीजे तरी आउक्ष भवीक्ष उणें होए : तेयां कारणे अन्न रांधीलें असे : " मग भटीं म्हणीतलें : "आतां बोलावीलेयां एती ?" तवं आबैसीं म्हणीतलें : "एती : " भटीं म्हणीतलें : "आतां एती तरि कार माहात्मे होती : जाओं बोलाउं ?" "ना जाए : बोलावि : " भटीं म्हणीतलें : "काइ म्हणों ?" "ना आबैसीं तुमंतें बोलाविले असे ऐसें म्हणा : " भटीं म्हणीतलें : "आतां पाहों पां : माहात्मे होती तरि उगेचि एती : " भट गेले : तवं ते वडाखालि बैसले असति : देवांतें म्हणीतलें : "माहात्मे हो : चाला : तुमंतें आबैसें बोलावीतें असति : " "हो कां : चाला : " दादोस उभे ठाकले : तवं भटीं वाहाणा हातीं घेतीलीया : दोधें नीगाले : मग भटीं म्हणीतलें : "माहात्मे होति : रागु नाहीं : " आले : मग दोधें पांती सांधातें जेविले : मग वीळीचां वेळ्ळीं दादोस गंगाकडे गेले : आबाईसीं म्हणीतलें : "नागदेया : ऐसा दादोसांकडे जाए : " गेले : तवं ते बैसले असति : जाउनि तेयाजवळी बैसले : मग भटीं पुसिलें : "हां हो : तुम्हांपासौनि म्हणे आकृतीमु आनंदु होताए ?" दादोसीं म्हणीतलें : "आम्हांपासौनि होताए ऐसेंही आति : नव्हे ऐसेंही आति : आमचेया श्रीचांगदेओराउळा गोसावीयांपासाौनि होएची : ऐसें सर्वथा आति : " आणि भटां स्तीति जाली : स्तीति भोगीत होते : मग दादोसीं म्हणीतलें : "आतां चाला जाओं नागदेओ भटो : " आणि स्तीति भंगली : उठिले : दादोसांचें घोंगडें घेतलें : कमंडलु घेतला : बीढारा आले : आबैसीं माहादाइसीं देखिलें आणि सुख जालें : भाटा दादोसांची आवडी संचरली : मग वीळीचां दोधें पांती जेविले : मग भटीं पुसिलें : "तुम्ही आतां कोठें जात असा ?" "ना मीं आपुलेया गोसावीयांचेया दरीसना पर्वाकरणें : गुरूपासि जाइन : " "बा : तुमचे गुरू कें असति ?" "ना श्रीनगरणीं असति : " "तरि आम्ही एओं" "ना यां : " यावरि आबैसांसि थोर सुख जालें : भट दादोसांसि अनुश्रले : मग अवधींची साडेगावांसि आलीं : मग दादोस गंगाकडे गेले : आबैसीं भटांतें पुसिलें : "माहात्मे कें गेले ?" भटीं म्हणीतलें : "गंगेसि गेले : " आबैसीं म्हणीतलें : "बोलावीसीचि ना : टीळा गंधाक्षेता कीजतीया : जाए : बोलाउनि घेउनि ए : " भट गेले : बोलाउनि घेउनि आले : टीळा गंधाक्षेता केलीया : मग अवर्ची जेउं बैसलीं : दादोस गोसावीयाचेया दरीसना जात होते : तवं माहादाइसीं आबैसातें म्हणीतलें : "आबै : म्हणा कां नागदेयातें : हा एइल तरि आम्हांसि गोसावीयांचें दरीसन होइल : " मग आबैसीं भटांतें म्हणीतलें : "नागदेया : दादोस आपुलेया गोसावीयांचेया दरीसनासि जात असति : तरि तुं एसी ? जाओं ?" "ना हो कां : तरि आद्नित करा : " मग तेहीं आद्नित केली : आबाइसें : उमाइसें : महदाइसें : भट : येळ्हभट ऐसीं तीएं गोसावीयांचेया दरीसनासि नीगालीं : ऐसीं अवघीं श्रीनगरसि आलीं : एकी ठांई बीढार केलें : दादोस आणि भट हाटाआंतु गेले : पानें : पोफळें : पुजाद्रव्यें घेतीली : एतएतां दादोसीं म्हणीतलें : "नागदेया : आम्ही गोसावीयांचें उचीष्ट घेउनि : आमचे गुरू म्हणौनि : परि तुआं नेघावें हो : गोसावी काइ म्हणौनि नेणिजे : " ऐसीं मार्गी एतां व्यावृत्ति केली : तवं भटीं म्हणीतलें : "हो कां : " तवं माहादाइसीं म्हणीतलें : "उमै : दादोसांचे गुरू पैली देऊळीं असति : चाल जाओं पाहों : " "चाला पां : " पांचपांच पोफळें घेतीलीं : दोघी भीलमहठासि आलीया : गोसावीयांसि दूपाहारिचा पुजाअवसरू जाला : पहुडु जाला : भीतरि आसनी उपवीष्ट असति : आलीया : दोन्ही दारसाखा धरूनि भीतरि पाहिलें : गोसावीयातें देखिलें : आणि गोसावीयांची श्रीमुर्ति पाहातोंची ठेलीं : तवं सर्वज्ञें म्हणीतलें : "बाइ : या : " आलीया : आसनावरि पोफळें ठेविलीं : दंडवतें घातलीं : श्रीचरणां लागलीया : मग सर्वज्ञें म्हणीतलें : "बाइ : कवणीकडौनि yeतीया असति ?" "जी जी : रांवसगांवाकडौनि : " "कवणीकडे जाइजतु असिजे ?" "जी जी : ऐसें त्रीएंबकाकडे : " सर्वज्ञें म्हणीतलें : "बाइ : रांवसगांवी माहादेओ पाठक नांवें ब्राह्मणु असे कीं ?" "जी जी : असे : " सर्वज्ञें म्हणीतलें : "नीकेनि असति ?" "जी जी : " सर्वज्ञें म्हणीतलें : "जाल तें ऐसें म्हणावें : हें तुमंतें पुसत होतेें :" तवं बाईसीं म्हणीतलें : "बाबा : बाबा पुसे ऐसा कवणु ब्राह्मणु बाबा ?" सर्वज्ञें म्हणीतलें : "बाइ : तो एथिचा ए जमानु : " "तो कैसा बाबा ?" सर्वज्ञें म्हणीतलें : "बाइ : हें बोणेबाइयां सांगातें आलें : तैं एथ पाणीधातु : बाभुळसेंगांची आरोगण दीधली : " मग माहादाइसे : उमाइसे दंडवत घालुनि नीगालीया : आबैसांपासि गेलीया : तवं दादोस हाटाआंतुनि आले : ॥',
+    explanation: '**लीळा भावार्थ व निरूपण:**\n\n**प्रसंग:** आबैसा (महदाइसा व उमाइसा यांच्या मोठ्या बहीण) यांच्या मुलाचे नाव सारंगपाणि होते. तो परगावी गेला असता चोरांनी त्याला लुटले व त्रास दिला. या दुःखामुळे आबैसांनी वैराग्य धारण केले आणि रांजणगावी मढी बांधून राहू लागल्या. त्यांच्याजवळ महदाइसा आणि उमाइसा या मासोपवास (महिन्याचा उपवास) करत होत्या. तिथे महानुभाव संप्रदायाचे ज्येष्ठ साधक \'दादोस\' (कान्हभट) आले आणि त्यांनी त्यांना मार्गदर्शन केले. त्यामुळे दादोसांविषयी आबैसा व इतरांना आदर निर्माण झाला आणि त्या दादोसांच्या शिष्या झाल्या.\n\n**भटोबासांचे आगमन आणि परीक्षा:**\nएक दिवस दादोस आबैसांच्या मढीत बसून उपदेश करत होते. तेवढ्यात तिथे तरुण भटोबास (नागदेवभट, जे त्यावेळी अत्यंत तापट, विद्वान आणि कडक धार्मिक कर्मकांडी ब्राह्मण होते) दादोसांची परीक्षा घेण्यासाठी आले. त्यांच्या अंगावर सैल कासोटा, कपाळावर आडवी वेणी (आडवे गंध) आणि खांद्यावर शस्त्र होते. मढीच्या दाराबाहेर दादोसांच्या पादुका पाहून त्यांनी वाकून पाहिले आणि आपल्या शस्त्राने त्या पादुका बाहेर फेकून दिल्या. हे पाहून दादोस घाबरले आणि हळूच आपली घोंगडी, कमंडलू व दंड घेऊन बाहेर आले आणि वडाच्या झाडाखाली बसले. महदाइसा व उमाइसाही भटोबासांच्या क्रोधाला घाबरून पळून गेल्या. भटोबासांनी आबैसांना रागाने विचारले, "हें काइ आबै : माहात्मे काइसे ? नीरोपण काइसें ? दादुलेयाचा प्रवेसु एथ काइसा ? हे रूपें धाकुटि : हे उमै धाकुटि : याचि कारणे तुंआ एथ मढी बांधली ?" आबैसांनी त्यांना समजावले, "सर नागदेया : हें तुज काइ जालें ? यां माहात्म्यातें तुं जाणसि ना : हे नीके : यांपासीौनि गोमटें : स्तीतिआनंदु होति :"\n\n**अन्नदान आणि आदरभाव:**\nभटोबासांनी विचारले, "आतां बोलावीलेयां एती ?" आबैसांच्या सांगण्यावरून भटोबास वडाच्या झाडाखाली गेले आणि त्यांनी दादोसांना आदराने मढीत भोजन करण्यासाठी बोलावले. दादोस कोणताही राग न धरता शांतपणे आले आणि त्यांनी भोजन केले. भटोबासांना त्यांचे हे शांत, निरभिमानी वर्तन पाहून खूप आश्चर्य वाटले.\n\n**भटोबासांना अनुभूती व श्रीनगरचा मार्ग:**\nसंध्याकाळी भटोबास गंगेकाठी गेले आणि दादोसांच्या शेजारी बसले. त्यांनी विचारले, "हां हो : तुम्हांपासौनि म्हणे आकृतीमु आनंदु होताए?" दादोसांनी अत्यंत नम्रपणे उत्तर दिले, "आम्हांपासौनि होताए ऐसेंही आति : नव्हे ऐसेंही आति : आमचेया श्रीचांगदेओराउळा गोसावीयांपासाौनि होएची : ऐसें सर्वथा आति :" हे ऐकताच भटोबासांना एक दिव्य स्फूर्ती आणि आत्मानंदाची अनुभूती (स्तीति) झाली. दादोसांविषयी आणि त्यांच्या गुरूविषयी भटोबासांच्या मनात आत्यंतिक आदर व ओढ निर्माण झाली. भटोबासांनी दादोसांचे पाय धरले आणि त्यांच्यासोबत श्रीनगरला जाण्याची इच्छा व्यक्त केली.\n\n**श्रीनगरकडे प्रस्थान आणि स्वामींचे दर्शन:**\nआबैसा, महदाइसा, उमाइसा, भटोबास व इतर सर्व मिळून दादोसांसोबत श्रीनगरला आले. दादोसांनी भटोबासांना सावध केले, "नागदेया : आम्ही गोसावीयांचें उचीष्ट घेउनि : आमचे गुरू म्हणौनि : परि तुआं नेघावें हो : गोसावी काइ म्हणौनि नेणिजे :" दरम्यान, महदाइसा आणि उमाइसा स्वामींच्या भील मठात आल्या. स्वामी त्यावेळी दुपारी भोजन करून मठात विश्रांती घेत होते. दोन्ही बहिणींनी दाराच्या सांध्यातून आत पाहिले आणि स्वामींची मनोहर मूर्ती पाहताच त्या मंत्रमुग्ध होऊन तिथेच थांबल्या. स्वामींनी त्यांना बोलावून विचारले, "बाइ : या :" त्यांनी रांजणगाव आणि त्र्यंबकेश्वरचा प्रवास सांगितला. स्वामींनी त्यांच्या गावातील महादेव पाठकाबद्दल प्रेमाने विचारपूस केली आणि म्हणले की, "तो एथिचा ए जमानु..." त्यानंतर महदाइसा व उमाइसा आबैसांकडे परत आल्या.\n\n**निष्कर्ष:**\nया ऐतिहासिक आणि प्रदीर्घ लीळेतून नागदेवाचार्यांच्या (भटोबास) गुरुभेटीची आणि त्यांच्या परिवर्तनाची पूर्वपीठिका स्पष्ट होते. भटोबासांसारख्या एका कर्मठ आणि तापट पंडिताचे मन दादोसांच्या शांततेने आणि स्वामींच्या दिव्य कीर्तीने कसे प्रभावित झाले, हे यातून सुंदर रितीने चित्रित केले आहे।'
+  },
+  {
+    id: 'lc_p239',
+    bookId: 'leela_charitra',
+    number: 239,
+    title: 'लीळा २३९: देवा : भटों भेटि',
+    titleEn: 'Leela 239: Deva Bhaton Bheti',
+    content: 'मग देव : भट : आबैसे : माहादाइसे : उमाइसे : अवडळभट : एल्हभट : ऐसीं अवघींची गोसावीयांचेया दरीसनासि आलीं : दादोस गोसावीयातें जेथौनि देखति तेथौनि दंडवती एति : दंडवतें घालीती : श्रीचरणां लागले : गोसावीं दादोसांसि क्षेमाळीगन दीधलें : तीएं श्रीचरणां लागलीं : श्रीचरणां लागतां सर्वज्ञें माहादाइसातें हळुचि म्हणीतलें : "त्रींबकबाईया एथचीयाचि मा :" तें गोसावी आणि तीएं चि जाणति : बैसोनि पानें : पोफळें : पुजाद्रव्यें आसनावरी ठेविलीं : मग बाईसीं फोडी केलीया : गोसावीयांसि फोडी ओळगवीलीया : बीडीडा करूनि दीधलीया : शेवटीलीए वीडीयें गोसावीं तांबोळ प्रतेजु आदरी लें : बाईसीं वाटा तांबोळ धरिलें : मग बाईसीं गोसावीयांचें तांबोळ अवघेया भग्तजनां दीधलें : तैसेंचि भटांसि दीधलें : दादोसीं मार्गाचि भटांतें वारिलें होतें : "नागदेया : गोसावी आमचे गुरू : म्हणौनि आम्ही तांबूळ घेउनि तुवां नेघावें हो :" भटीं हातीं घेतलें : आणि वीचारिलें : "जरि पुरुख होती तरि आम्हांसि गोमटें होइल : ना तरि आम्ही केतीयांचीं उसिटीं खादलीं असति :" म्हणौनि घेतलें : आणि भटां स्तीति जाली : भोगिली : मग केतुलेया एका वेळा भंगली : मग गोसावीं भटांतें पुसिलें : "माहात्मैयांपासीौनि जालें तें तैसेंचि : कीं एथ कांहीं सुखवीसेख आगळा असे ?" "जी जी : एथौनि सुखवीसेख आगळा असे : " सर्वज्ञें म्हणीतलें : "भटो : एथौनि तुम्हां स्तीत्यांतर गा : " ॥',
+    explanation: '**लीळा भावार्थ व निरूपण:**\n\n**प्रसंग:** दादोस, भटोबास, आबैसा, महदाइसा (बाइसा), उमाइसा आणि इतर सर्व भक्तगण मिळून श्रीनगर येथील भील मठात श्री चक्रधर स्वामींच्या दर्शनासाठी आले. दादोसांनी स्वामींना दुरून पाहताच साष्टांग दंडवत घालायला सुरुवात केली. स्वामींनी दादोसांना प्रेमाने जवळ घेऊन आलिंगन (क्षेमाळिंगन) दिले. सर्वजण स्वामींच्या चरणी लीन झाले.\n\n**भटोबासांची परीक्षा व प्रसाद ग्रहण:**\nसर्व भक्तांनी आणलेली पाने, सुपारी व पूजाद्रव्ये स्वामींसमोर ठेवली. महदाइसांनी विडा तयार करून स्वामींना अर्पण केला. स्वामींनी तांबूल (विडा) ग्रहण केला आणि प्रसाद म्हणून तो तांबूल सर्व भक्तांना वाटला. जेव्हा महदाइसांनी तो प्रसाद भटोबासांना (नागदेवभट) दिला, तेव्हा भटोबासांच्या मनात विचार आला (कारण रस्त्यात दादोसांनी स्वामींचे उच्छिष्ट घेण्यास नकार दिला होता) की, "जर हे खरोखरच साक्षात परमेश्वर असतील, तर मला या तांबुलाने नक्कीच काहीतरी अलौकिक अनुभूती होईल; आणि जर नसतील, तर मी आजवर कित्येकांचे उच्छिष्ट खाल्ले आहे, तसे हेही असेल." असा विचार करून भटोबासांनी तो प्रसाद तोंडात टाकला.\n\n**अलौकिक अनुभूती (स्तीति):**\nप्रसाद ग्रहण करताच भटोबासांना अत्यंत गहन, अलौकिक अशा समाधीवस्थेची (दिव्य स्तिथी) अनुभूती झाली. त्यांचे बाह्यभान हरपले. काही वेळाने जेव्हा त्यांची ती स्तिथी शांत झाली, तेव्हा स्वामींनी त्यांना अत्यंत कौतुकाने विचारले, "भटो : एथौनि सुखवीसेख आगळा असे ?" त्यावर भटोबास अत्यंत नम्र होऊन म्हणाले, "जी जी : एथौनि सुखवीसेख आगळा असे :" स्वामींनी त्यांना सांगितले, "भटो : एथौनि तुम्हां स्तीत्यांतर गा :"\n\n**निष्कर्ष:**\nया लीळेत नागदेवाचार्यांचे स्वामींच्या चरणी झालेले प्रत्यक्ष समर्पण आणि पहिल्याच दर्शनात त्यांना मिळालेली ईश्वरी प्रचिती अत्यंत प्रभावीपणे मांडली आहे. ईश्वरी प्रसादाचे महात्म्य आणि त्यातून घडणारे अंतःकरण परिवर्तन यातून स्पष्ट होते।'
+  },
+  {
+    id: 'lc_p240',
+    bookId: 'leela_charitra',
+    number: 240,
+    title: 'लीळा २४०: भटां श्लेष्महरणीं परीहासुनी सुककथन',
+    titleEn: 'Leela 240: Bhatan Shleshmaharani Parihasuni Sukakathana',
+    content: 'भट गंगेकडे गेले होते : तीकडौनि एत होते : तवं गोसावीं वीहरणासि बीजें केलें : गोसावीं भटांतें पुसिलें : "कें गेले होतेति गा ?" "जी जी : स्लेष्मा झाडुं गेलां होतां जी : " सर्वज्ञें म्हणीतलें : "माहात्मैयांपासीलें जालें तेणें मुंगीं रांड नव्हे : मां तुमचीं स्लेष्मा काइ झडेलें ? एतुका योगु जाला होता : तो एथिचीया स्तीती गेला : आम्हीचि केलें : ऐसेंचि होतें तेंही गेलें : " मग सर्वज्ञें म्हणीतलें : "तुम्हां सुखस्तीति कवणापासीलौनि ?" "जी जी : दादोसांपासीलौनि : " सर्वज्ञें म्हणीतलें : "तेयाचेन आड गेलेया तण न मोडे : " सर्वज्ञें म्हणीतलें : "ते तुम्हां एथौनि स्तीति जाली : ते आतां प्रगटली : " ॥',
+    explanation: '**लीळा भावार्थ व निरूपण:**\n\n**प्रसंग:** भटोबास (नागदेवभट) गंगेकाठी गेले होते. तिथून परत येत असताना वाटेत स्वामी विहरणासाठी (फिरण्यासाठी) बाहेर पडले होते. स्वामींनी त्यांना पाहिले आणि विचारले, "कें गेले होतेति गा ?"\n\n**स्वामींचा परिहास व उपदेश:**\nभटोबासांनी उत्तर दिले, "जी जी : स्लेष्मा झाडुं गेलां होतां जी :" यावर स्वामींनी त्यांच्याशी विनोद (परीहास) करत म्हटले, "अरे नागदेवा, आधीच्या म्हातार्‍या महात्म्यांच्या ज्ञानाने मुंगीसुद्धा विरक्त होत नाही, मग तुझे काय कफ झडणार आहे? तुला जो आत्मानंदाचा योग आधी मिळाला होता, तो माझ्या पहिल्या दर्शनातील स्तिथीतच विरघळून गेला. आम्हीच ती पूर्वीची तुझी अपूर्ण स्तिथी घालवून तुला खरी आत्मस्थिती दिली आहे." स्वामींनी पुढे विचारले, "तुम्हां सुखस्तीति कवणापासीलौनि ?" भटोबासांनी सांगितले, "जी जी : दादोसांपासीलौनि :" त्यावर स्वामी म्हणाले, "तेयाचेन आड गेलेया तण न मोडे :" तुला जी खरी चिरंतन स्तिथी प्राप्त झाली आहे ती केवळ इथून प्राप्त झाली आहे आणि ती आता पूर्ण प्रकट झाली आहे.\n\n**निष्कर्ष:**\nया लीळेत स्वामींनी भटोबासांच्या जुन्या समजुती आणि अर्धवट ज्ञानाचा गोड परिहास करत त्यांना पूर्णत्वाकडे नेले. खरे गुरु किंवा ईश्वर कोण, आणि खरी चिरंतन आत्मस्थिती कशी प्राप्त होते, याचे दिग्दर्शन स्वामींनी विनोदाच्या माध्यमातून केले आहे।'
+  },
+  {
+    id: 'lc_p241',
+    bookId: 'leela_charitra',
+    number: 241,
+    title: 'लीळा २४१: दवनीका पर्वी डखलेया स्तीति',
+    titleEn: 'Leela 241: Davanika Parvi Dakhaleya Sthiti',
+    content: 'गोसावीयांसि तेथ दवणे पर्व जालें : पर्वाचां दीसीं गोसावीयांचां ठाई सडेसंमार्जन चौकरंगमाळिका भरीलीया : आवघां पानें : पोफळें : दवणा आणीला : आवघीं न्हालीं : गोसावीयांसि मर्दनामादणें जालें : पुजा जाली : धूपातीं : मंगळार्ती जाली : देउमूक्षकरूनि अवघीं भग्तजनें गोसावीयांचां ठाई पर्व करीत होतीं : डखले चांगदेओभट उगेचि दूख करीत बैसले असति : सर्वज्ञें म्हणीतलें : "डखलेया : तुम्ही एथ कां गा पर्व न करा ?" "जी जी : मातें दवणा नाहीं : यें दैवाचीं : यांतें करावेया असे : मातें करावेया कांहीं नाहीं जी : " गोसावीं बाइसांकरवि दवणा देववीला : बीडा देववीला : मग तेही गोसावीयांसि दवणा वाइला : वीडा ओळगविला : दंडवतें घातलीं : श्रीचरणां लागले : आणि बैसले : ॥\nगोसावीं आधीं डखलेयातें अवलोकिलें : आणि तेया स्तीति जाली : जेयातें अवलोकीती तेया स्तीति होए : ऐसीया अवघेया स्तीती जालीया : एळ्हभटां नव्हेचि : तीहीं गोसावीयातें म्हणीतलें : "जी जी : इतुकेयांतु मीची एकु अवडळु ऐसा दीसतु असें जी : " सर्वज्ञें म्हणीतलें : "ऐसें तरि तुम्हां नांव अवडळभट म्हणा : " आणि तेयां स्तीति जाली : मग अवघे भग्तजन स्तीति भोगूं लागले : तेयां लावण्यअमृताची धवधणि घेत असति : आनंदें भरीत अन्मीख लोचनीं श्रीमुर्ति अवलोकीत असति : ॥\nमग सर्वज्ञें म्हणीतलें : "डखलेया : ऐसेंचि उगें असिजे ऐसा कवणु धर्मु गा ?" तवं तेहीं म्हणीतलें : "जी जी : उगेयांचि असिजे ऐसा एकु धर्मु असे : आणि काइ ?" सर्वज्ञें म्हणीतलें : "द्रीट कीं अढीतू ?" गोसावी द्रीत प्रतीष्टीती : ते अढीत प्रतीष्टीति : सर्वज्ञें म्हणीतलें : "द्रीत तें प्रतक्षाकारें द्रीत असे गा : " आणि स्तीति भंगली : मग गोसावीयांसि सपरिवारी आरोगण जाली : गुळुळा जाला : वीडा जाला : ॥',
+    explanation: '**लीळा भावार्थ व निरूपण:**\n\n**प्रसंग:** श्रीनगर (सिन्नर) येथे स्वामींच्या उपस्थितीत \'दवणा उत्सव\' (दवनीका पर्व) साजरा केला जात होता. मठाची स्वच्छता करून सडा-रांगोळी घालण्यात आली. सर्व भक्तांनी पाने, सुपारी आणि सुगंधी दवणा आणला होता. सर्वांनी स्नान केले. स्वामींचे पाय धुवून, पूजा व आरती करण्यात आली. सर्व भक्त आनंदाने उत्सव साजरा करत होते, मात्र डखले चांगदेवभट एकीकडे उदास व दुःखी होऊन बसले होते.\n\n**डखलेयांवर आणि एलभटांवर कृपा:**\nस्वामींनी डखलेयांना विचारले, "डखलेया : तुम्ही एथ कां गा पर्व न करा ?" डखलेयांनी गरिबीच्या आणि अगतिकतेच्या भावनेतून उत्तर दिले, "जी जी : मातें दवणा नाहीं : यें दैवाचीं : यांतें करावेया असे : मातें करावेया कांहीं नाहीं जी :" स्वामींनी त्यांचे हे उद्गार ऐकून अत्यंत करुणेने बाईसांना बोलावले आणि डखलेयांना दवणा व विडा देण्यास सांगितले. डखलेयांनी तो दवणा स्वामींच्या चरणी अर्पण केला आणि विडा देऊन साष्टांग दंडवत घातले. स्वामींनी डखलेयांकडे प्रेमाने पाहिले (अवलोकन केले) आणि त्यांना तात्काल दिव्य समाधीवस्था (अतिशय उच्च स्तिथी) प्राप्त झाली.\nया दरम्यान एळ्हभट यांना कोणतीही अनुभूती झाली नाही. त्यांनी स्वामींना काकुळतीने म्हटले, "जी जी : इतुकेयांतु मीची एकु अवडळु ऐसा दीसतु असें जी :" स्वामींनी हसून म्हटले, "ऐसें तरि तुम्हां नांव अवडळभट म्हणा :" असे म्हणताच त्यांच्यावरही स्वामींनी कृपा केली आणि त्यांनाही दिव्य स्तिथी प्राप्त झाली.\n\n**धर्म आणि ज्ञानाचे स्वरूप:**\nसर्व भक्तगण स्वामींच्या दर्शनाचा आणि प्रसादाचा परमानंद घेत असताना स्वामींनी डखलेयांना विचारले, "डखलेया : ऐसेंचि उगें असिजे ऐसा कवणु धर्मु गा ?" त्यावर डखलेयांनी उत्तर दिले, "जी जी : उगेयांचि असिजे ऐसा एकु धर्मु असे : आणि काइ ?" त्यावर स्वामींनी विचारले, "द्रीट कीं अढीतू ?" स्वामींनी स्पष्ट केले की, खरी शांतता आणि खरी समाधी ही प्रत्यक्ष अनुभूतीवर आधारलेली आणि दृढ असावी लागते.\n\n**निष्कर्ष:**\nया लीळेतून स्वामींची गरिबांबद्दलची आणि अगतिक भक्तांबद्दलची अपार करुणा दिसून येते. ईश्वराची कृपा केवळ श्रीमंत किंवा मौल्यवान वस्तू वाहणाऱ्यांनाच मिळते असे नाही, तर भक्ताच्या शुद्ध आणि अगतिक भावाला देव धावून जातो.'
+  },
+  {
+    id: 'lc_p242',
+    bookId: 'leela_charitra',
+    number: 242,
+    title: 'लीळा २४२: डखलेयांसीं खेळु',
+    titleEn: 'Leela 242: Dakhaleayansi Khelu',
+    content: 'एकु दीं गोसावीं वीहरणासि बीजें केलें : गांवां पश्चिमे पाटु असे : तेथ गोसावीं बीजें केलें : गोसावीं डखलेयातें म्हणीतलें : "डखलेया : यांतें सीवाल ?" गोसावी : एकमेकांतें सीवावें : ऐसा खेळु खेळत होते : गोसावी पाटु उडति : आणि डखलेही उडति : गोसावी पाटु उडाले : आणि डखले उडों बैसले : गोसावी डखलेयातें ऐसें लोटिलें : तवं ते पाणीयांतु पडिले : तें पाणी उसळलें : तेणें गोसावीयांची श्रीमुर्ति सीतोडली : तवं दादोसीं म्हणीतलें : "डखलेया : जो खेळु खेळत असा तेण्हें तुम्ही नर्कासि जाल : गोसावी ईश्वरू : गोसावीयांसि खेळु काइसा ?" तवं डखलां म्हणीतलें : "दादो : तुम्ही उगे कां नसा ? आम्ही हांसी खेळतों : आम्ही काइसेया नर्का जाउनि ?" सर्वज्ञें म्हणीतलें : "तुम्ही यांसि कां गा कोपत असा ? हें एथौनिचि यांसि खेळों आवडत असे : " ॥',
+    explanation: '**लीळा भावार्थ व निरूपण:**\n\n**प्रसंग:** एके दिवशी श्री चक्रधर स्वामी गावाच्या पश्चिमेला वाहणाऱ्या पाण्याच्या पाटाजवळ (कालव्याकाठी) विहरणासाठी गेले होते. तिथे स्वामींनी भक्त डखलेयांना खेळण्यासाठी आवर्जून बोलावले आणि विचारले, "डखलेया : यांतें सीवाल ?" स्वामी आणि डखले एकमेकांना शिवण्याचा बालसुलभ खेळ खेळू लागले.\n\n**खेळ व पाटात पडण्याचा प्रसंग:**\nखेळताना स्वामी पाटावरून उड्या मारत होते आणि डखलेही त्यांच्यामागे उड्या मारत होते. खेळता खेळता स्वामींनी डखलेयांना हलकेच ढकलले, ज्यामुळे डखले पाटाच्या पाण्यात पडले. ते पाण्यात पडल्यामुळे पाण्याचे तुषार उडाले आणि स्वामींच्या अंगावर उडाले. हे पाहून तिथे उभे असलेले ज्येष्ठ शिष्य दादोस डखलेयांवर संतापले आणि म्हणाले, "डखलेया : जो खेळु खेळत असा तेण्हें तुम्ही नर्कासि जाल : गोसावी ईश्वरू : गोसावीयांसि खेळु काइसा ?" डखले निडरपणे म्हणाले, "दादो : तुम्ही उगे कां नसा ? आम्ही हांसी खेळतों : आम्ही काइसेया नर्का जाउनि ?" स्वामींनी दादोसांना समजावून सांगितले, "तुम्ही यांसि कां गा कोपत असा ? हें एथौनिचि यांसि खेळों आवडत असे :"\n\n**निष्कर्ष:**\nया अत्यंत हृद्य लीळेतून ईश्वराचा भक्ताशी असलेला अत्यंत जवळचा, सख्याभावाचा संबंध स्पष्ट होतो. ईश्वराला मोठेपणा किंवा भीतीचे वंदन नको असते, तर त्याला भक्ताचा अत्यंत निर्मळ, निष्पाप आणि निर्भय असा बालभाव आवडतो.'
+  },
+  {
+    id: 'lc_p243',
+    bookId: 'leela_charitra',
+    number: 243,
+    title: 'लीळा २४३: तथा पादवेथा संबोखू',
+    titleEn: 'Leela 243: Tatha Padavetha Sanbokhu',
+    content: 'मागुतें खेळत होते : तो भों उडतां पाओ अवटळला : तेणें तीडीकि नीगाली : येतुलेनि खेळु पुरे केला : गोसावीं तैसेंचि बीढारासि बीजें केलें : नारायणाचीए देऊळी भीलमहठापुढें होती : तेथ डखले होते : वीळीचांचेया पुजाअवसरा नैएतीचि : रात्रींच्याही पाहार वीवळत होते : वीळीचांचेया पुजाअवसरा नैएतीचि : सवळेचेया पुजाअवसरा नैएतीचि : मग गोसावीयांसि उदीयांचा पुजाअवसरू जालेयाअनंतंर गोसावीं बाहिरि बीजें केलें : डखलां गोसावीयातें देखिलें : दंडवत केलें : सर्वज्ञें म्हणीतलें : "हें काइ गा डखलेया ? रात्रीं तंही एथिचेया पुजाअवसरा नैयाचि : आतां पुजाअवसरा नैयाचि : " "जी जी : रात्रीं माझा पाओ दुखतु होता : मज नीद्रा नाहीं : तरि गोसावी मातें पडिताळुं नैएतीचि : ना कोन्हातें पाठवीतीचि ना : तरि मी गोसावीयांवरि रूसलों असें : " सर्वज्ञें म्हणीतलें : "तुम्ही माहात्मे कीं गा : माहात्मेनि सकळें भोगें नीमानावें कीं : " ॥',
+    explanation: '**लीळा भावार्थ व निरूपण:**\n\n**प्रसंग:** गेल्या खेळाच्या प्रसंगी पुन्हा खेळत असताना डखलेयांचा पाय अचानक वळला (अवटळला) आणि त्यांच्या पायाला मोठी दुखापत (तीडीक/कळ) झाली. त्यामुळे खेळ थांबवून स्वामी आपल्या मठात निघून गेले. डखले भील मठासमोरील नारायणाच्या देवळात पडून राहिले. पायाच्या प्रचंड वेदनेमुळे ते स्वामींच्या संध्याकालच्या आणि रात्रीच्या कोणत्याही पूजेच्या वेळेला हजर राहू शकले नाहीत. रात्रभर ते वेदनेने विव्हळत होते.\n\n**डखलेयांचा रुसवा आणि स्वामींची शिकवण:**\nदुसर्‍या दिवशी सकाळी स्वामींची पूजा झाल्यानंतर स्वामी मठाबाहेर आले. डखलेयांनी स्वामींना पाहिले आणि वेदनेतच नमस्कार केला. स्वामींनी त्यांना विचारले, "हें काइ गा डखलेया ? रात्रीं तंही एथिचेया पुजाअवसरा नैयाचि : आतां पुजाअवसरा नैयाचि :" डखलेयांनी रुसवा व्यक्त करत म्हटले, "जी जी : रात्रीं माझा पाओ दुखतु होता : मज नीद्रा नाहीं : तरि गोसावी मातें पडिताळुं नैएतीचि : ना कोन्हातें पाठवीतीचि ना : तरि मी गोसावीयांवरि रूसलों असें :" त्यावर स्वामींनी त्यांना अत्यंत प्रेमळ उपदेश केला, "तुम्ही माहात्मे कीं गा : माहात्मेनि सकळें भोगें नीमानावें कीं :"\n\n**निष्कर्ष:**\nया लीळेतून स्वामींनी भक्ताच्या गोड रुसव्याचा कौतुकाने स्वीकार करत असतानाच त्याला सुख-दुःख सहन करण्याची अत्यंत मोलाची शिकवण दिली आहे.'
+  },
+  {
+    id: 'lc_p244',
+    bookId: 'leela_charitra',
+    number: 244,
+    title: 'लीळा २४४: दाईंबा जवळीक कथन',
+    titleEn: 'Leela 244: Daimba Javalika Kathana',
+    content: 'एकु दीसु दाईंबां गोसावीयातें पुसिलें : "जी जी : इस्वरी काइ अद्ए असे ?" सर्वज्ञें म्हणीतलें : "ना नसे : " "तरि हें वीस्वरूप भ्रमण तें कां पां ?" सर्वज्ञें म्हणीतलें : "ना तें एथिचीया जवळीकावीण : " तेहीं म्हणीतलें : "हें काइ जी ? तरि आम्हांसि काइ नव्हे ? आम्हां इस्वरेंसी जवळीक असे : " सर्वज्ञें म्हणीतलें : "कर्मभुमीचीयां देवतांसि आणि तुम्हांसि केतुली जवळीक ? कर्मभुमीचीयां आणि अष्टदेवयोनीचेया देवतांसि केतुली जवळीक ? अष्टदेवयोनीसि आणि अंताळीचेया गणगंधर्वांसि केतुली जवळीक ? अंताळीचेया गणागंधर्वांसि आणि स्वर्गीचां इंद्रचंद्रादीकांसि केतुली जवळीक ? इंद्रचंद्रादीकां आणि कवीळासवैकुंठीचेया हरिहराब्रह्मादीकांचे केतुली जवळीक ? हरीहरब्रह्मादीकांसि आणि क्षीराब्धीचेया सेखसैयासि केतुली जवळीक ? क्षीराबधीचेया सेखसैयासि आणि अष्टभैरवांसि केतुली जवळीक ? अष्टभैरवांसि आणि वीस्वरूपेसि केतुली जवळीक ? वीस्वरूपेसि आणि चैतन्यासि केतुली जवळीक ? मा चैतन्यापरू परमेस्वरू : तेयासि जवळीक होइल तरि होइल : आणि काइ गा भोजेया :" ॥',
+    explanation: '**लीळा भावार्थ व निरूपण:**\n\n**प्रसंग:** एका प्रसंगी दाईंबांनी (भोजदेव) श्री चक्रधर स्वामींना ईश्वर आणि जीवाच्या संबंधाविषयी प्रश्न विचारला, "जी जी : इस्वरी काइ अद्ए असे ?" त्यावर स्वामींनी तात्काळ उत्तर दिले, "ना नसे :"\n\n**जीवांचे अज्ञान आणि जवळीकीचा प्रश्न:**\nत्यावर दाईंबांनी पुन्हा विचारले, "तरि हें वीस्वरूप भ्रमण तें कां पां ?" स्वामींनी स्पष्ट केले, "ना तें एथिचीया जवळीकावीण :" यावर दाईंबांनी काहीशा अभिमानाने विचारले, "हें काइ जी ? तरि आम्हांसि काइ नव्हे ? आम्हां इस्वरेंसी जवळीक असे :"\n\n**ईश्वराची अथांगता आणि जवळीकीची श्रेणी:**\nस्वामींनी दाईंबांच्या मनातील हा सूक्ष्म अहंकार दूर करण्यासाठी सृष्टीच्या विविध पातळ्यांवरील देवतांची आणि ईश्वराच्या अथांग अंतराची जाणीव करून देणारे एक महान निरूपण केले: "कर्मभुमीचीयां देवतांसि आणि तुम्हांसि केतुली जवळीक ? कर्मभुमीचीयां आणि अष्टदेवयोनीचेया देवतांसि केतुली जवळीक ? अष्टदेवयोनीसि आणि अंताळीचेया गणगंधर्वांसि केतुली जवळीक ? ... मा चैतन्यापरू परमेस्वरू : तेयासि जवळीक होइल तरि होइल : आणि काइ गा भोजेया :"\n\n**निष्कर्ष:**\nया अत्यंत महत्त्वपूर्ण तात्विक लीळेत स्वामींनी ब्रह्मविद्येतील \'ईश्वर जवळीक\' आणि जीवाच्या वास्तविक मर्यादेचे दर्शन घडविले आहे.'
+  },
+  {
+    id: 'lc_p245',
+    bookId: 'leela_charitra',
+    number: 245,
+    title: 'लीळा २४५: गोंदेश्वरापुढें पदमेस्वरू कथन',
+    titleEn: 'Leela 245: Gondeshvarapudhe Padamesvaru Kathana',
+    content: 'एकु दीसीं गोसावीं गोंदेश्वराचेया देऊळासि वीहरणासि बीजें केलें : भग्तजनासहीत : तेथ गोसावीयांसि आसन जालें : सर्वज्ञें म्हणीतलें : "जाणा पां गा : या देऊळापुढें देऊळ कां ?" भग्तजनीं म्हणीतलें : "जी जी : नेणों : गोसावीं सांगावें : " सर्वज्ञें म्हणीतलें : "बाइ : हा गोंदेस्वरू : हें मागां गोविंदें नामें वेव्हारा तेणें केलें : पुढौ पदमेस्वरू : तेया नांव पदुमा : मषांतारी एकीचा पुतु : तो आपुला घरीं न्हातु होता : हाटा जावयाचीया लवडसवडा लवकरि पाणीं सारवीलें : माथां भोगी लावीतु होता : तवं भाऊजें : वहीलें पाणीं नाणीचि : तेणें म्हणीतलें : "हां ओ : डोइ खरकटली : वेगां पाणीं का नाणीसि ? आवो वहीलें पाणी आणि" तवं माता म्हणीतलें : "हो रे : लाहों करतासि ? काइ गोंदेस्वरापुढें पदमेस्वरू करिसी ?" आणि तैसीचि तेणें डोइ बांधली : आणि तो तैसाचि नीगाला : तेलंग देसासि गेला : बहुत द्रव्य जोडीलें : घेऊन आला : मग गोंदेस्वरापुढें पदमेस्वरू केला : देऊळ करवीलें : उद्यापन जालें : मग मायेतें म्हणीतलें : "गोंदेस्वरापुढें पदुमेस्वरू केला : आतां मातें न्हाणी : " सर्वज्ञें म्हणीतलें : "बाइ : हे अभिमान कायें : " ते दोधें भावे मेहुणे : ॥',
+    explanation: '**लीळा भावार्थ व निरूपण:**\n\n**प्रसंग:** श्रीनगर (सिन्नर) येथील सुप्रसिद्ध आणि विशाल गोंदेश्वर मंदिरात श्री चक्रधर स्वामी आपल्या भक्तजनांसह विहरणासाठी गेले होते. स्वामींनी मंदिरासमोरील दुसरे एक लहान देऊळ पाहून भक्तांना विचारले, "जाणा पां गा : या देऊळापुढें देऊळ कां ?" भक्तांनी सांगितले, "जी जी : नेणों : गोसावीं सांगावें :"\n\n**पद्मेश्वराचा रंजक इतिहास:**\nस्वामींनी सांगितले, "बाइ : हा गोंदेस्वरू : हें मागां गोविंदें नामें वेव्हारा तेणें केलें : पुढौ पदमेस्वरू : तेया नांव पदुमा..." आईने चिडवल्यामुळे पद्मने प्रतिज्ञा केली आणि तेलंगणात जाऊन प्रचंड संपत्ती मिळवून गोंदेश्वराच्या समोर स्वतःचे पद्मेश्वर उभे केले आणि आईला म्हणाला, "गोंदेस्वरापुढें पदुमेस्वरू केला : आतां मातें न्हाणी :"\n स्वामींनी कथेचा समारोप करताना म्हटले, "बाइ : हे अभिमान कायें :"\n\n**निष्कर्ष:**\nया लीळेतून सिन्नर येथील प्रसिद्ध गोंदेश्वर आणि पद्मेश्वर मंदिरांच्या निर्मितीचा ऐतिहासिक आणि सामाजिक संदर्भ स्पष्ट होतो. मानवी मनातील स्वाभिमान आणि जिद्द याचे उत्तम दर्शन घडते।'
+  },
+  {
+    id: 'lc_p246',
+    bookId: 'leela_charitra',
+    number: 246,
+    title: 'लीळा २४६: माहादाइसातें राहावणें',
+    titleEn: 'Leela 246: Mahadaisate Rahavane',
+    content: 'मग देवभट मुख्य अवधीचि गावा निगालीं : गोसावीं माहादाइसातें म्हणीतलें : "बाइ : एथ राहों आवडे : तरि राहा ना कां ?" माहादाइसीं म्हणीतलें : "जी जी : मज सांधातु नाहीं :" सर्वज्ञें म्हणीतलें : "बाइ : वृद्धाबाइसां आणि तुम्हां सांधातु : एतेया-सरिसें एणें : जातेयासरिसें जाणें :" माहादाइसीं म्हणीतलें : "जी जी : जातां सांधातु नाहीं :" सर्वज्ञें म्हणीतलें : "एथौनि कोणी बोळवीत धाडिजैल :" मग माहादाइसीं म्हणीतलें : "ना जी : मजवीण घरिचें काहींचि चाले ना : घरिचें करणें : सवरण मीचि करी : मजवीण घरिचें कवाड कोणी उघडी ना : ना जी : मी न व्हाएं :" सर्वज्ञें म्हणीतलें : "तें जें करा तें एथिचें सेवादास्य करा : एथिचें सेवादास्य तुम्हीं असंसितें होतीति :" "ना जी : मज दादोसांवीण राहावे ना : जी जी : मी न व्हाएं :" ॥',
+    explanation: '**लीळा भावार्थ व निरूपण:**\n\n**प्रसंग:** श्री चक्रधर स्वामींच्या सिन्नर येथील वास्तव्यादरम्यान, चांगदेवभट (देवभट) आणि इतर सर्व भक्त आपापल्या गावाकडे परत जाण्यासाठी निघाले. तेव्हा स्वामींनी महदाइसा (महादाइसा) यांना तिथेच राहण्यास सुचविले: "बाइ: एथ राहों आवडे: तरि राहा ना कां?"\n\n**महादाइसांची द्विधा मनःस्थिती व स्वामींचा उपदेश:**\nमहादाइसांनी सांगितले की त्यांच्यासोबत परत जाण्यासाठी कोणी सोबती (सांधातु) नाही. स्वामींनी त्यांना आश्वस्त केले की थोरल्या बाईसा आणि तुमच्यात आधीच सख्य आहे; एकत्र येणे-जाणे हा तर संसाराचा नियम आहे. जर जाण्याची अडचण असेल, तर आम्ही कोणालातरी तुम्हाला सोडवायला पाठवू ("एथौनि कोणी बोळवीत धाडिजैल").\n\n**संसाराची ओढ आणि स्वामींचा मोलाचा संदेश:**\nमहादाइसांनी घरच्या जबाबदाऱ्यांचे कारण पुढे केले: "माझ्याशिवाय घरचे काही चालत नाही, घरचे सगळे काम, आवराआवर मीच करते. माझ्याशिवाय घराचे दारही कोणी उघडणार नाही. म्हणून मी इथे राहू शकत नाही." तेव्हा स्वामींनी त्यांना अत्यंत महत्त्वाचा संदेश दिला: "तें जें करा तें एथिचें सेवादास्य करा : एथिचें सेवादास्य तुम्हीं असंसितें होतीति :" म्हणजेच, तुम्ही संसारात जे काही काम करता, ते ईश्वराचे सेवादास्य समजून करा. असे केल्याने तुम्ही संसाराच्या बंधनांपासून मुक्त (असंसिते - असंसारिक) व्हाल.\n\nपरंतु महादाइसांचा ओढा त्यांचे पती दादोस यांच्याकडे होता, त्यांनी सांगितले: "मज दादोसांवीण राहावे ना."\n\n**निष्कर्ष:**\nया लीळेत स्वामींनी संसारी माणसाला संसारात राहूनही ईश्वराची भक्ती कशी करावी, याचा अत्यंत सुंदर आणि सुलभ मार्ग दाखविला आहे. संसारातील कर्मे ईश्वराला अर्पण करून \'सेवादास्य\' भावाने केली, तर ती बंधनाला कारणीभूत ठरत नाहीत, ही या लीळेची मुख्य शिकवण आहे।'
+  },
+  {
+    id: 'lc_p247',
+    bookId: 'leela_charitra',
+    number: 247,
+    title: 'लीळा २४७: नासिकीं अवस्थान : उदास्यस्वीकारें गंगा उतरणें',
+    titleEn: 'Leela 247: Nasiki Avasthana : Udasyasvikare Ganga Utarane',
+    content: 'मग गोसावीं नासिकासि बीजें केलें : पंचवटिये रामनाथीं दीस पांचसहा अवस्थान : पंचायतनीं उदास्य स्वीकारिलें : गोसावीं भगतिजनातें म्हणीतलें : "तुम्हीं अवघे एथौनि जा गा : हें एकांकी असेल : एथिचीए प्रवृत्ती वीखो होआ ना : तुम्हां एथ असतां अनीष्टीचि होत असे :" भगतिजन उगेचि होते : सर्वज्ञें म्हणीतलें : "तुम्हीं न वचा तरि हेंचि जाइल :" तैसेंचि सौंदरासि बीजें केलें : सौंदरीं नावेक गोसावीयांसि आसन जालें : मग तेथौनि गोसावीं घाटासि बीजें केलें : घाटीं देऊळीएपासि उभे जाले : मग उदकांतु बीजें केलें : सवेंचि बाइसें रीगालीं : बाइसीं गोसावीयांचा फूटा धरिला : बाइसांचा पाळव अवघां भगतजनीं धरिला : ऐसें गोसावी उदकाआंतु बीजें केलें : बाइसांसि गळेया इतुके पाणी जालें : बाइसें नावेक बुडकळों लागलीं : आणि \'बाबा बाबा :\' ऐसें बोबावों लागलीं : गोसावीं मागील वास पाहिली : आणि म्हणीतलें : "या बाइसां हातीं केंहीं जाओं न ल्हाइजे गा :" मग गोसावी परतले : गंगा उतरौनि चासासि आले : चासापासि नावेक उभे होते : मग कपाळेश्वरासि बीजें केलें : देऊळीएपासि ओलीं वस्त्रें फेडिलीं : कोरडीं वस्त्रें वेढिलीं : अवघी भक्तजनें उगींची बैसलीं : गोसावीयांचां ठांई उदास्य देखीले : पुढां रीगवे ना : गोसावीं गुंफेसि नावेक पहूडू स्वीकारिला : मग उपहूडू स्वीकारिला : बाइसीं आरोगणेलागि विनवीलें तवं सर्वज्ञें म्हणीतलें : "बाइ : एथ प्रतदीनीं करा तैसें कां न करा ?" "हो का बाबा :" मग कपाळेश्वरा आडवांगीं दक्षिणे गुंफा होती : तेथ बाईसीं पूजाअवस्वरू केला : ताका-भाताची आरोगण जाली : मग पंचवटिये गुंफे वस्ति जाली : ॥',
+    explanation: '**लीळा भावार्थ व निरूपण:**\n\n**प्रसंग:** श्री चक्रधर स्वामी नाशिक येथे आले. त्यांनी पंचवटीतील रामनाथ मंदिरात ५-६ दिवस मुक्काम केला. तेथे स्वामींनी अत्यंत उदास (उदास्य - विरक्ती/मौन) भाव स्वीकारला.\n\n**मौन आणि विरक्ती:**\nस्वामींनी भक्तजनांना सांगितले, "तुम्ही सर्व इथून निघून जा, मला एकांतात राहायचे आहे. माझ्या प्रवृत्तीत (साधनेत) व्यत्यय आणू नका. तुमच्या इथे राहण्याने अनिष्ट होत आहे." भक्तजन शांत राहिले. स्वामींनी पुन्हा सांगितले, "तुम्ही गेला नाहीत तर मीच निघून जाईन." त्यानंतर स्वामी सुंदर नारायण देवळाकडे गेले आणि तिथून गोदावरीच्या घाटाकडे गेले. घाटावरील एका देवळाजवळ उभे राहून स्वामी थेट नदीच्या पात्रात चालू लागले!\n\n**भक्तांचे समर्पण आणि स्वामींची कृपा:**\nस्वामींना नदीत जाताना पाहून बाईसा तात्काळ त्यांच्या मागे गेल्या. त्यांनी स्वामींचे धोतर (फूटा) धरले, आणि इतर भक्तांनी बाईसांचा पदर धरला. स्वामी जसे पाण्यात पुढे गेले, तसे बाईसांच्या गळ्यापर्यंत पाणी आले. बाईसा पाण्यात बुडू लागल्या आणि घाबरून "बाबा बाबा!" अशी हाक मारू लागल्या. स्वामींनी मागे वळून पाहिले आणि अत्यंत करुणेने म्हणाले, "या बाईसांना सोडून मला कुठेही जाता येणार नाही" ("या बाइसां हातीं केंहीं जाओं न ल्हाइजे गा").\n\n**कपाळेश्वर मुक्काम व भोजन:**\nस्वामी मागे फिरले आणि गंगा पार करून चास येथे आले. त्यानंतर त्यांनी कपाळेश्वराच्या मंदिरात प्रवेश केला. तिथे भक्तांनी ओले कपडे बदलून कोरडे कपडे नेसले. स्वामींचा उदास भाव पाहून भक्तजन संकोचले होते. स्वामींनी कपाळेश्वराजवळील गुंफेत विश्रांती घेतली. नंतर बाईसांनी भोजनासाठी (आरोगणा) विनंती केली. स्वामींनी सांगितले, "बाई, रोज करतो तशी पूजा आणि आरोगणा इथे का करत नाही?" बाईसांनी आनंदात तिथेच स्वामींची पूजा केली आणि ताक-भाताचा नैवेद्य अर्पण केला. त्यानंतर पंचवटीतील गुंफेत मुक्काम झाला.\n\n**निष्कर्ष:**\nया लीळेतून स्वामींचे आपल्या भक्तांवरील, विशेषतः बाईसांवरील असीम प्रेम आणि कारुण्य दिसून येते. ईश्वराला भक्तांच्या प्रेमाचे बंधन किती प्रिय असते, हे या प्रसंगातून अधोरेखित होते।'
+  },
+  {
+    id: 'lc_p248',
+    bookId: 'leela_charitra',
+    number: 248,
+    title: 'लीळा २४८: सौंदर्यनिवाडु',
+    titleEn: 'Leela 248: Saundaryanivadu',
+    content: 'एकु दीं उदयांचा पूजाअवस्वरू जालेयानंतरें गोसावी सौंदरासि बीजें केलें : सवें बाइसे : डखले चांगदेओभट : दाईबा असति : दायंबायें म्हणीतलें : "जी जी : गोसावीयांहूनi कव्हणी बरवें असे ?" सर्वज्ञें म्हणीतलें : "त्रेतीं सीता बरवी : द्वापारीं श्रीकृष्णचक्रवर्ति बरवे : कळीयुगीं हें बरवें :" मग बाईसीं म्हणीतलें : "बाबा : त्रेतीं सीता बाबांयें वानीली : ते पतिव्रता कीं ?" सर्वज्ञें म्हणीतलें : "तीसि व्येभिचारू घडला :" मग गोसावीं तीचि गोष्ट सांघीतली : सर्वज्ञें म्हणीतलें : "बाइ : सकळ देवतांचा पळू पळू बरवेपण काढीलें : मग सीता रचीली : ऐसी ते जनकतनया : तीचेया कानांतु गुढरला हस्ति सामाय : ऐसी ते षोडशवरुषी :" सर्वज्ञें म्हणीतलें : "स्त्रीयांतु सीता बरवी : पुरुषांतु हें बरवें : देवतांतु सुंदरू बरवा :" मग गोसावीं बाइसांपुढें सुंदरू दाखवीला : सोन्याचें जानीवें : सोन्याचा कडीदोरा : सोन्यांची उतरी : सोन्याचा मूगूटू : पाटाउ कास घातली असे : इतुकेनि बाइसें मानवलीं : "बाबा : कोणें भक्तें केली ?" "बाइ : हे सारंग माहालेनि केली :" ॥',
+    explanation: '**लीळा भावार्थ व निरूपण:**\n\n**प्रसंग:** एके दिवशी सकाळी पूजाविधी झाल्यानंतर स्वामी सुंदर नारायण (सौंदर) मंदिराकडे गेले. सोबत बाईसा, डखले, चांगदेवभट आणि दाईंबा होते. दाईंबांनी स्वामींना विचारले, "जी जी: आपल्यापेक्षा सुंदर या जगात कोणी आहे का?" ("गोसावीयांहूनि कव्हणी बरवें असे?")\n\n**त्रियुगातील सौंदर्याचे निरूपण:**\nस्वामींनी सांगितले, "त्रेतायुगात सीता सर्वात सुंदर होती, द्वापारयुगात श्रीकृष्णचक्रवर्ती सर्वात सुंदर होते, आणि कलियुगात \'हे\' (स्वतः श्रीचक्रधर स्वामी) सौंदर्य लाभले आहे."\n\n**सीतेच्या सौंदर्याचे अलौकिक वर्णन:**\nबाईसांनी विचारले, "बाबा, त्रेतायुगात तुम्ही सीतेचे वर्णन केले, ती खरोखरच परम पतिव्रता होती ना?" स्वामींनी होकार देत सीतेच्या अलौकिक सौंदर्याचे गुपित सांगितले: "बाई, विधात्याने सर्व देवतांचे थोडे-थोडे सौंदर्य एकत्र करून सीतेची रचना केली होती. ती जनकनंदिनी अत्यंत सुकुमार, सोळा वर्षांची (षोडशवर्षा) तरुणी होती. तिच्या कानाच्या पाळीची रचना इतकी नाजूक आणि सुंदर होती की त्यात गुढरलेला (लहान खेळण्यातील) हत्ती सामावून जाईल अशी ती कलाकुसर होती."\n\n**सौंदर्याची परिसीमा आणि सुंदराचे दर्शन:**\nस्वामींनी पुढे सांगितले, "स्त्रियांमध्ये सीता सर्वात सुंदर, पुरुषांमध्ये \'हे\' रूप सर्वश्रेष्ठ, आणि मूर्तींमध्ये \'सुंदर नारायण\' (सौंदरू) देवतेची मूर्ती सर्वात देखणी आहे." त्यानंतर स्वामींनी बाईसांना सुंदर नारायणाची मूर्ती दाखविली. त्या मूर्तीला सोन्याचे जनाव (जानीवे), सोन्याचा कडीदोरा, सोन्याची उतरी (हार/माळ), सोन्याचा मुकुट आणि पीतांबर (पाटाउ कास) परिधान केलेला होता. हे अद्भुत सौंदर्य पाहून बाईसा थक्क झाल्या आणि त्यांनी विचारले, "बाबा, ही देखणी मूर्ती कोणी घडवली?" स्वामींनी सांगितले, "बाई, हे शिल्प सारंग महालाने (सिन्नरचा यादव राजा गोविंददेव यांचा प्रधान सारंगपंडित) तयार करून घेतले आहे."\n\n**निष्कर्ष:**\nया लीळेतून सिन्नर येथील सुप्रसिद्ध \'सुंदरनारायण\' मंदिराच्या भव्यतेचे आणि शिल्पसौंदर्याचे दर्शन घडते. तसेच स्वामींनी तीनही युगांतील सर्वश्रेष्ठ सौंदर्याचे तात्विक निरूपण करून भक्तांची जिज्ञासा तृप्त केली आहे।'
+  },
+  {
+    id: 'lc_p249',
+    bookId: 'leela_charitra',
+    number: 249,
+    title: 'लीळा २४९: गोवर्धनं गदाधरौ वस्ति',
+    titleEn: 'Leela 249: Govardhanam Gadadharau Vasti',
+    content: 'गोवर्धनं गदाधरौ वस्ति',
+    explanation: '**लीळा भावार्थ व निरूपण:**\n\n**प्रसंग:** श्री चक्रधर स्वामींनी गोवर्धन (नाशिकजवळील गाव) येथील \'गदाधर\' मंदिरात वस्ती (मुक्काम) केली.\n\n**विवरण:**\nप्रवासादरम्यान स्वामी गोवर्धन गावी गेले आणि तेथील भगवान विष्णूंच्या गदाधर स्वरूप मंदिरात त्यांनी मुक्काम केला. हे ठिकाण गोदावरी नदीच्या तीरावर वसलेले अत्यंत पवित्र स्थान आहे. स्वामींच्या पदस्पर्शाने हे मंदिर पावन झाले.\n\n**निष्कर्ष:**\nमहानुभाव पंथात गोवर्धन येथील गदाधर स्थान अत्यंत पवित्र मानले जाते. स्वामींच्या नाशिक परिसरातील भ्रमणाचा आणि विद्वानांशी झालेल्या भेटींचा हा एक महत्त्वाचा टप्पा आहे।'
+  },
+  {
+    id: 'lc_p250',
+    bookId: 'leela_charitra',
+    number: 250,
+    title: 'लीळा २५०: तीएंबकीं अवस्थान : वीडा वारणें',
+    titleEn: 'Leela 250: Tianbakin Avasthana : Vida Varane',
+    content: 'गोसावीं तीएंबकाच्या देऊळासि बीजें केलें : मांधाणीं वीडा धूतला : तीएंबकासि वीडा वाइला : जगतीआंतु वाव्यकोणा आश्राइत गुंफा : तेथ गोसावीयांसि अवस्थान जालें : दीस पांच : ॥',
+    explanation: '**लीळा भावार्थ व निरूपण:**\n\n**प्रसंग:** श्री चक्रधर स्वामी त्र्यंबकेश्वर (तीएंबक) येथे गेले. त्यांनी तेथील मंदिरात प्रवेश केला.\n\n**त्र्यंबकेश्वर येथील आचरण व मुक्काम:**\nस्वामींनी त्र्यंबकेश्वर मंदिराच्या बाहेरील मंडपात (मांधाणीं) पानाचा विडा धुतला आणि तो महादेवाच्या मंदिरात अर्पण केला. त्यानंतर मंदिराच्या आवारातील (जगतीआंतु) वायव्य कोपऱ्यात असलेल्या एका गुंफेत स्वामींनी पाच दिवस मुक्काम (अवस्थान) केला.\n\n**निष्कर्ष:**\nत्र्यंबकेश्वर या पवित्र ज्योतिर्लिंग क्षेत्रात स्वामींचे पाच दिवसांचे वास्तव्य आणि त्यांचे ईश्वरी आचरण भक्तांच्या दृष्टीने अत्यंत पावन आणि महत्त्वपूर्ण ठरले।'
+  },
+  {
+    id: 'lc_p251',
+    bookId: 'leela_charitra',
+    number: 251,
+    title: 'लीळा २५१: गंगाद्वारीं बडूवासि संबोखू',
+    titleEn: 'Leela 251: Gangadvari Baduvasi Sambokhu',
+    content: 'गोसावी गंगाद्वारासि बीजें केलें : तेथ गोसावीयांसि आसन जालें : तवं गंगाद्वारासि डखले गेले : तेहीं धाकुटें कुंड उपसिलें कोळायेचीये बोंबीहुनि पाणी नीगे : तेथ डखलां आंगुळी सूदली : "खालीलीकडे तरि गावं नेसि : माणसें नेसि : गोरूवें नेसि : शेळीया नेसि : मेंढीया नेसि : सेतें नेसि : आतां माझें बोट ने पां :" तवं राणा आला : तो बोबावों लागला : "माझें पाणी टाकिलें" तवं डखलां म्हणीतलें : "तुझें पाणी काइसें ? तुं गुरडु : तुं गौतमाचा काइ दाइज ? तुज गौतमु काइ होए : आणि आम्हांसि काइ नव्हे ?" राणा तो गोसावीयांपासि आला : गान्हाणें दीधलें : सर्वज्ञें म्हणीतलें : "तुम्हांसि याचें काही ए :" "जी जी : कव्हणी दीसीं दामु ए : कव्हणी दीसीं सरू दामु ए :" गोसावीं बाइसांकरवि दामु देववीला : मग गोसावी डखलेयांसि कोपले : सर्वज्ञें म्हणीतलें : "ऐसें न म्हणिजे कीं गा डखलेया : देवतेसि नीरोधू न कीजे कीं :" ॥',
+    explanation: '**लीळा भावार्थ व निरूपण:**\n\n**प्रसंग:** श्री चक्रधर स्वामी ब्रह्मगिरी पर्वतावरील गंगाद्वार येथे गेले. तिथे स्वामींचे आसन झाले. तेव्हा डखले जवळच असलेल्या एका छोट्या कुंडाजवळ गेले.\n\n**डखलेयांचा बालस्वभाव आणि गंगेला आव्हान:**\nडखले यांनी गंगेच्या पात्रातील एका लहान कुंडातील पाणी उपसून काढले. तिथे दगडाच्या छिद्रातून (कोळायेचीये बोंबीहुनि) गंगा नदीचे पाणी वेगाने बाहेर पडत होते. डखले यांनी त्या वाहत्या पाण्यात आपले बोट घातले आणि गंगेला आव्हान दिले: "तू खाली वाहून जाताना संपूर्ण गावे वाहून नेतेस, माणसे, गुरेढोरे, शेळ्या, मेंढ्या आणि शेते वाहून नेतेस; आता ताकद असेल तर माझे हे छोटे बोट वाहून नेऊन दाखव पाहू!"\n\n**बडूव्याचा (राणाचा) विरोध आणि स्वामींकडे तक्रार:**\nतेव्हा तिथला बडूवा या रक्षक (राणा) आला आणि ओरडू लागला की "तुम्ही माझे पाणी अशुद्ध केले/टाकले!" डखले यांनी त्याला सुनावले, "तुझें पाणी काय? तू तर केवळ गुरव (गुरडु) आहेस. तू काय गौतमाचा वारसदार (दाइज) आहेस का? गौतम ऋषी तुझे कोण लागतात? आणि आमचे कोण लागत नाहीत?" राणाने तात्काळ स्वामींकडे जाऊन डखले यांची तक्रार केली.\n\n**स्वामींचे न्यायदान आणि डखलेयांना समज:**\nस्वामींनी राणाला विचारले, "या पाण्याच्या बदल्यात तुला काही उत्पन्न मिळते का?" राणाने सांगितले, "जी जी, काही दिवशी १ दाम (पैसा) मिळतो तर काही दिवशी अर्धा किंवा पूर्ण दाम मिळतो." स्वामींनी बाईसांकडून त्याला पैसे (दाम) देववले आणि डखले यांच्यावर रागावले. स्वामी डखले यांना म्हणाले, "असे बोलू नये डखलेया! देवतेच्या पूजेत किंवा व्यवहारात कधीही अडथळा (नीरोधू) आणू नये."\n\n**निष्कर्ष:**\nया लीळेतून डखलेयांचा निष्पाप पण काहीसा खोडकर स्वभाव समोर येतो, तर दुसरीकडे स्वामींचा न्यायप्रिय आणि व्यवहारी दृष्टिकोन स्पष्ट होतो. देवतेचा आदर करावा आणि कुणाच्याही उपजीविकेत अडथळा आणू नये, ही स्वामींची शिकवण आहे।'
+  },
+  {
+    id: 'lc_p252',
+    bookId: 'leela_charitra',
+    number: 252,
+    title: 'लीळा २५२: ब्रह्मगीरीवरि गौतमाळां उदंबरें आरोगणें',
+    titleEn: 'Leela 252: Brahmagirivari Gautamalayan Udambare Arogane',
+    content: 'गोसावीं ब्रह्मगीरीवरि बीजें केलें : गौतमाळयाचीए पुर्वीली पाळीवरि गोसावीयांसि आसन जालें : सर्वज्ञें म्हणीतलें : "एं उदंबरें वेंचा गा :" मग भगतिजनीं उदंबरें वेंचुनि बरवी रासि केली : मग गोसावीं श्रीकरीं उंबर घेतलें : आरोगिलें : प्रसादू केला : इतुकेनि अवघां भगतिजनीं तृप्तपर्यंत उदंबरें खादलीं : मग सर्वज्ञें म्हणीतलें : "पुरे करा गा : पोटें दूखतीं :" मग न खातीचि : मग गोसावीं बीजें केलें : ॥',
+    explanation: '**लीळा भावार्थ व निरूपण:**\n\n**प्रसंग:** श्री चक्रधर स्वामी ब्रह्मगिरी पर्वतावर गेले. तेथील गौतमाळा (गौतम ऋषींचा आश्रम/तलाव) च्या पूर्व बाजूच्या पाळीवर स्वामींचे आसन झाले.\n\n**उंबरांचे आरोगण आणि भक्तांना प्रसाद:**\nस्वामींनी भक्तजनांना सांगितले, "ही उंबराची फळे गोळा करा." भक्तांनी सर्व गोड आणि पिकलेली उंबरे वेचून त्याची एक सुंदर रास (ढीग) केली. स्वामींनी आपल्या हाताने (श्रीकरीं) उंबर उचलले, त्याचे भक्षण केले (आरोगिले) आणि तो प्रसाद भक्तांना दिला. त्यानंतर सर्व भक्तांनी तृप्त होईपर्यंत भरपूर उंबरे खाल्ली. जेव्हा भक्तांनी जास्त प्रमाणात खायला सुरुवात केली, तेव्हा स्वामींनी त्यांना प्रेमाने थांबवले: "आता पुरे करा, नाहीतर पोट दुखू लागेल." त्यानंतर भक्तांनी उंबरे खाणे बंद केले. मग स्वामी तिथून पुढे प्रवासाला निघाले.\n\n**निष्कर्ष:**\nया लीळेतून स्वामींचे निसर्गाशी असलेले जवळीक आणि भक्तांसोबतचे साधे, सहज नाते व्यक्त होते. भक्तांच्या आरोग्याची काळजी घेणारा प्रेमळ सद्गुरू या प्रसंगातून दिसतो।'
+  },
+  {
+    id: 'lc_p253',
+    bookId: 'leela_charitra',
+    number: 253,
+    title: 'लीळा २५३: गुपीततीएंबका बीजें करणें',
+    titleEn: 'Leela 253: Gupitatianbaka Bije Karane',
+    content: 'आदि तीएंबकीं नावेक आसन जालें : चरणक्षाळण जालें : टीळा वीडा जाला : मग गोसावीं बीजें केलें : ॥',
+    explanation: '**लीळा भावार्थ व निरूपण:**\n\n**प्रसंग:** श्री चक्रधर स्वामी मूळ त्र्यंबकेश्वर किंवा \'गुप्त त्र्यंबकेश्वर\' (गुपीततीएंबक - ब्रह्मगिरीवरील मूळ स्थान) येथे गेले.\n\n**पूजा आणि पुढील प्रस्थान:**\nतिथे स्वामींचे थोडे वेळ आसन झाले. भक्तांनी त्यांचे पाय धुतले (चरणक्षाळण जालें), कपाळावर टिळा लावला आणि विडा अर्पण केला. ही छोटी पूजा झाल्यानंतर स्वामी तेथून पुढे मार्गस्थ झाले.\n\n**निष्कर्ष:**\nगुप्त त्र्यंबकेश्वर येथील स्वामींच्या वास्तव्याची आणि भक्तांनी केलेल्या सेवेची ही संक्षिप्त पण भक्तीपूर्ण नोंद आहे।'
+  },
+  {
+    id: 'lc_p254',
+    bookId: 'leela_charitra',
+    number: 254,
+    title: 'लीळा २५४: गौतमाची भातौडि दाखवणें',
+    titleEn: 'Leela 254: Gautamachi Bhataudi Dakhavane',
+    content: 'तेथौनि एतएतां गोसावीं गौतमाचीया भातौडीया दाखवीलीया : सर्वज्ञें म्हणीतलें : "या देखिलीया गा गौतमाचीया भातौडी :" सर्वज्ञें म्हणीतलें : "दीहेंचि साळि पेरी दीहेंचि सांवंगी : मळी : देहेंचि आणी : देहेंचि अठ्यासीसहस्रां रीखेस्वरांसि जेउं सुए उरे भात तें एथ सांडवीति : तीया भातवडीया गा :"',
+    explanation: '**लीळा भावार्थ व निरूपण:**\n\n**प्रसंग:** श्री चक्रधर स्वामी ब्रह्मगिरी पर्वतावरून खाली उतरत असताना त्यांनी भक्तांना गौतम ऋषींच्या काळच्या \'गौतमाच्या भातोड्या\' (भात साठवण्याच्या किंवा सुकवण्याच्या जागा) दाखविल्या.\n\n**विवरण आणि निरूपण:**\nस्वामींनी भक्तांना म्हटले, "या पाहिल्या का गौतम ऋषींच्या भातोड्या!" त्यांनी पुढे या जागेचा दिव्य इतिहास सांगताना म्हटले की, गौतम ऋषी एकाच दिवसात (दीहेंचि) भाताची (साळी) पेरणी करत, त्याच दिवशी त्याची कापणी आणि मळणी करत आणि त्याच दिवशी तो तयार केलेला भात ८८,००० (अठ्यांशी हजार) ऋषीमुनींना (रीखेस्वरांसि) भोजन घालत असत. जेवणातून उरलेला भात ज्या ठिकाणी टाकला किंवा साठवला जात असे, त्यालाच \'भातवडीया\' (भातौडी) म्हणतात.\n\n**निष्कर्ष:**\nया लीळेतून प्राचीन काळातील ऋषीमुनींच्या तपोबलाची आणि समृद्धीची जाणीव होते. स्वामींनी या ऐतिहासिक आणि धार्मिक स्थळाचा संदर्भ देऊन भक्तांना प्राचीन काळातील दिव्यतेची अनुभूती दिली आहे।'
+  },
+  {
+    id: 'lc_p255',
+    bookId: 'leela_charitra',
+    number: 255,
+    title: 'लीळा २५५: तथा सीता देवीचें कोथळेंमोथळें दाखवणें',
+    titleEn: 'Leela 255: Tatha Sita Deviche Kothalemothale Dakhavane',
+    content: 'तेथौनि गोसावीं बीजें केलें : तवं पुढां सीतेचें कोथळें देखिलें : सर्वज्ञें म्हणीतलें : "हें देखिले गा सीतेचे कोथळेंमोथळें :"',
+    explanation: '**लीळा भावार्थ व निरूपण:**\n\n**प्रसंग:** ब्रह्मगिरी पर्वतावरून पुढे प्रवास करताना श्री चक्रधर स्वामींनी सीतादेवींचे \'कोथळे-मोथळे\' (धान्य साठवण्याचे कोठार किंवा अन्नपूर्णा स्थान) भक्तांना दाखविले.\n\n**विवरण आणि निरूपण:**\nस्वामींनी पुढे मार्गस्थ होत असताना एका ठिकाणी थांबून भक्तांना म्हटले, "हे पाहिले का सीतादेवींचे कोथळे-मोथळे (धान्य साठवण्याची विस्तीर्ण जागा)!" वनवास काळात सीतादेवी येथे धान्य साठवून ठेवत आणि ऋषीमुनींना अन्नदान करत असत, अशी श्रद्धा आहे. स्वामींनी या पवित्र आणि ऐतिहासिक स्थानाचा निर्देश करून भक्तांना त्रेतायुगातील आठवणींची आणि सीतादेवींच्या दातृत्वाची आठवण करून दिली.\n\n**निष्कर्ष:**\nप्राचीन पवित्र स्थानांचे दर्शन घडवून स्वामी भक्तांमध्ये भक्ती आणि इतिहास या दोन्हींविषयी आदरभाव निर्माण करत असत, हे या लीळेतून स्पष्ट होते।'
+  },
+  {
+    id: 'lc_p256',
+    bookId: 'leela_charitra',
+    number: 256,
+    title: 'लीळा २५६: आंजनैरीं वंसैए वस्ति',
+    titleEn: 'Leela 256: Anjanairin Vasaiye Vasti',
+    content: 'आंजनैरीं वंसैए वस्ति ॥',
+    explanation: '**लीळा भावार्थ व निरूपण:**\n\n**प्रसंग:** श्री चक्रधर स्वामींनी अंजनेरी पर्वतावरील \'वंसैए\' (बौद्ध किंवा जैन मठ/लेणी अथवा विशिष्ट वस्तीस्थान) येथे वस्ती (मुक्काम) केली.\n\n**विवरण आणि निरूपण:**\nनाशिकजवळील हनुमानजींचे जन्मस्थान मानल्या जाणाऱ्या प्रसिद्ध अंजनेरी (आंजनैरी) पर्वतावर स्वामी गेले. तेथील एका सुरक्षित आणि शांत गुहेत किंवा मठात (वंसैए) स्वामींनी मुक्काम केला. हे ठिकाण निसर्गरम्य आणि ध्यानधारणेसाठी अत्यंत उपयुक्त होते.\n\n**निष्कर्ष:**\nअंजनेरी पर्वतावरील स्वामींची वस्ती ही त्यांच्या एकांतवास आणि ध्यानशील जीवनशैलीचे प्रतीक आहे. महानुभाव पंथात अंजनेरी येथील हे स्थान अत्यंत वंदनीय मानले जाते।'
+  },
+  {
+    id: 'lc_p257',
+    bookId: 'leela_charitra',
+    number: 257,
+    title: 'लीळा २५७: नासिकीं पंचवटिये अवस्थान : दीस पांच : चांगदेओभटां पाठवणी',
+    titleEn: 'Leela 257: Nasikin Panchavatiye Avasthana : Dis Panch : Changadeobhatan Pathavani',
+    content: 'गोसावीयांसि रामनाथीं आसन जालें : सर्वज्ञें म्हणीतलें : "तुम्हीं अवघे एथौनि जा गा : हें एकांकी असेल : एथौनि म्हणीतलें तें न करा : एथिचीए प्रवृत्ती वीखो होआ ना : तरि तुम्हीं एथौनि जा :" परि भगतिजनें न वचति : गोसावीं चांगदेओभटातें म्हणीतलें : "बटिका : तुम्हीं तन्हीं जा : तुम्हीं तन्हीं एथिचीए प्रवृत्ती वीखो होआ : तुम्हीं आंगवलि काढा :" मग चांगदेओभटीं गोसावीयांसि दंडवत केलें : श्रीचरणां लागले : मग नीगाले : बाईसीं म्हणीतलें : "तें कव्हणी न वचतीचि तरी यातें कां पाठवीजत असिजे बाबा ?" गोसावी उगेचि : मग ते गेले : सर्वज्ञें म्हणीतलें : "बाइ : एथ प्रतदीनीं करा तैसें कां न करा ?" बाईसें कोमाइलीं ऐसीं बैसलीं होतीं : मग गोसावीयांसि पुजा केली : आरोगण दीधली : मग एरी दीसीं सर्वज्ञें म्हणीतलें : "तुम्हीं कव्हणी न वचाचि : तरि चांगोयेंचि काइ केलें : डखलेया : जा गा : तेयांतें बोलाउनि घेउनि या :" "जी जी :" सर्वज्ञें म्हणीतलें : "हे जाडि घेया : जेथ राहाल तेथ जाडि बांधावी :" तवं बाईसीं म्हणीतलें : "बाबा : तो बटीकु कालि गेला : हा आतां जाइल : मा तेणेंसीं कोणी ठाई भेटि होईल ?" सर्वज्ञें म्हणीतलें : "बाइ : तरि याची एरझार काइ नीर्फळ जाइल ? बाइ : बापुडीं बटीकें डोंगरेडोंगर गीवसीतें असति : एथिचें दर्शन घेयावें : मग गावा जावें : ऐसा परिछेदु केला असे :" इतुकेनि ते चांदौरीसि गेले : अग्नीष्टीकेसि राहिले : आड जाडि बांधली : तवं नाथोपाध्ये बळ्हेग्रामोनि सीनरासि आले : भीलमढासि आले : तेथ संन्यासि राहिले होते : तेयांतें पुसिलें : "एथ गोसावी होते की ?" तेहीं म्हणीतलें : "काइ कराल ? गोसावीयांतें ब्रह्मवीद्या पुसाल तरि आम्हिंचि सांगोनि : बापुडीं बटिकुरें कैसीं वेधीं लाविलीं असति :" तवं तेहीं म्हणीतलें : "आम्ही काइ तुमर्ते ब्रह्मवीद्या पुसतु असों ? आम्ही आपुलेया गोसावीयातें पुसत असों :" ऐसें तेही तीसुधी पुसिलें : आणि संन्यासीं तैसेंचि तीसुधी म्हणीतलें : मग तेणें म्हणीतलें : "तरि आम्हांसि दंडवत करा : मग आम्ही गोसावीयातें सांगोनि :" तीही म्हणीतलें : "मागें दंडवत करूनि :" "कैसी गा बटिकुरें आयहाचीं :" एतुकेनि तेही एकमेकांच्या तोंडाची वास पाहिली : "दंडवतासि जरि गोसावीयातें सांगती तरि कां करा ना कां ?" मग तेही तेयासि दंडवत केलें : एतुकेनि तेहीं सांगीतलें : "तुमचे गोसावी सत्रसींगाकडे गेले असति :" मग उपाध्ये म्हणीतलें : "चांदौरीं जाओं : तेथ वस्त्रें ठेउं : फाटकीं वस्त्रें नेसों : मग सत्रसीगासि जाओं : मग आपुलेया गोसावीयातें झाडोझाडीं गीवसों :" मग चांदौरीसि गेले : वेसीजवळि आले : तवं गोसावीयांची जाडि देखिली : "बांधली जाडि तरि गोसावीची : गोसावी काइ एथ आले असति ?" सामोरे आले : तवं डखले हांसतहासिंत उठिले : "चाला चाला : मातें गोसावीं तुम्हां साउमेयां पाठवीलें :" मग उपाधीं पुसिलें : "डखलेया : गोसावी कवणी ठाई राज्य करीत असति ?" "ना हे नव्हे नासिकीं :" याउपरि डखलां म्हणीतलें : "ऐसे गा आमचे गोसावी : आपुलें इश्वरीए असौनि लोपीति : आमंतें ऐसें कां न म्हणावें : ‘अमुके एताति : तेया साउमे जा :’ ऐसें कां न म्हणावें ?" ॥',
+    explanation: '**लीळा भावार्थ व निरूपण:**\n\n**प्रसंग:** नाशिक येथील पंचवटीत ५ दिवस मुक्काम केल्यानंतर स्वामींनी एकांताचा स्वीकार केला आणि चांगदेवभट (देवभट) व इतरांना परत पाठवले. तसेच नाथोपाध्यायांची आणि स्वामींची चांदोरी येथे भेट झाली.\n\n**विवरण आणि निरूपण:**\n१. **एकांतवासाची इच्छा आणि चांगदेवभटांची पाठवणी:**\nस्वामींनी पंचवटीतील रामनाथ मंदिरात असताना भक्तांना सांगितले की, त्यांना पूर्णपणे एकांतात राहायचे आहे, म्हणून सर्वांनी येथून निघून जावे. परंतु भक्त जाण्यास तयार नव्हते. शेवटी स्वामींनी चांगदेवभटांना (देवभट) विशेष आज्ञา देऊन जाण्यास सांगितले: "बटिका, तुम्ही तरी जा आणि इतरांना वाट दाखवा." चांगदेवभटांनी अत्यंत जड अंतःकरणाने स्वामींच्या चरणांना स्पर्श करून निरोप घेतला. बाईसांनी विचारले, "बाबा, इतर कोणी जात नसताना तुम्ही यांनाच का पाठवले?" स्वामी शांत राहिले. चांगदेवभटांच्या जाण्याने बाईसा उदास झाल्या.\n\n२. **डखलेयांची रवानगी व \'जाडी\' (आडोसा/निशाणी) बांधणे:**\nदुसऱ्या दिवशी स्वामींचा राग शांत झाला. त्यांनी डखले यांना सांगितले, "डखलेया, जा आणि चांगदेवभटांना परत बोलावून आण." स्वामींनी डखले यांना जातेवेळी सोबत एक \'जाडी\' (बांबूची किंवा गवताची आडोशी/चटई/निशाणी) दिली आणि सांगितले, "जिथे मुक्काम कराल तिथे ही जाडी बांधावी." बाईसांना काळजी वाटली की चांगदेवभट काल गेले आणि डखले आज चालले आहेत, त्यांची भेट कशी होणार? स्वामी म्हणाले, "बाई, याची डोंगर-डोंगरात नक्की भेट होईल, ते स्वामींचे दर्शन घेऊनच आपापल्या गावी जातील." डखले चांदोरी येथे गेले आणि एका आडोशात (अग्नीष्टीकेसि) राहिले व त्यांनी तिथे स्वामींनी दिलेली जाडी बांधली.\n\n३. **नाथोपाध्यायांचा शोध आणि संन्याशांचा खोडसाळपणा:**\nदुसरीकडे, नाथोपाध्याय सिन्नरच्या भिलमठात आले. तिथे काही संन्यासी राहत होते. नाथोपाध्यायांनी त्यांना विचारले, "इथे श्री चक्रधर स्वामी आले होते का?" त्यावर ते संन्यासी चेष्टा करत म्हणाले, "तुम्हाला जर ब्रह्मविद्या शिकायची असेल तर आम्हीच सांगतो. स्वामींनी या बिचाऱ्या भोळ्या लोकांना (बटिकुरें) कसले वेड लावले आहे!" नाथोपाध्यायांनी बाणेदारपणे उत्तर दिले, "आम्ही तुमच्याकडे ब्रह्मविद्या विचारत नाही, आम्ही आमच्या स्वामींचा पत्ता विचारत आहोत." संन्याशांनी पुन्हा तीच टर उडवली आणि अट घातली, "जर तुम्ही आम्हाला दंडवत घातला तरच आम्ही स्वामी कुठे गेले ते सांगू." नाथोपाध्यायांनी विचार केला की जर केवळ नमस्कार केल्याने स्वामींचा शोध लागत असेल तर नमस्कार करायला काय हरकत आहे! त्यांनी संन्याशांना दंडवत घातला. तेव्हा संन्याशांनी सांगितले की तुमचे स्वामी \'सत्रशृंगा\'कडे (सप्तशृंगी) गेले आहेत.\n\n४. **चांदोरी येथे पुनर्भेट आणि डखलेयांचे कौतुक:**\nनाथोपाध्याय चांदोरी येथे आले. वेशीजवळ येताच त्यांना तिथे बांधलेली \'जाडी\' दिसली. ती पाहून ते ओरडले, "अरे, ही तर आमच्या स्वामींचीच जाडी आहे! स्वामी इथेच आले आहेत की काय?" डखले त्यांना हसत हसत सामोरे आले आणि म्हणाले, "या या, स्वामींनी मला तुम्हांला सामोरे पाठविले आहे!" नाथोपाध्याय थक्क झाले आणि म्हणाले, "आमचे स्वामी कसे अंतर्यामी आहेत! आपले ईश्वरत्व लपवूनही ते भक्तांची कशी काळजी घेतात आणि अगाध लीला करतात!"\n\n**निष्कर्ष:**\nया दीर्घ आणि रंजक लीळेत स्वामींच्या सर्वज्ञतेचे, डखलेयांच्या स्वामीभक्तीचे आणि नाथोपाध्यायांच्या निस्सीम श्रद्धेचे सुंदर चित्रण आहे. संन्याशांच्या अहंकारापुढे भक्तांची नम्रता कशी श्रेष्ठ ठरते आणि ईश्वरी लीला कशी अकलनीय असते, हे या प्रसंगातून अधोरेखित होते।'
+  },
+  {
+    id: 'lc_p258',
+    bookId: 'leela_charitra',
+    number: 258,
+    title: 'लीळा २५८: उपाध्यां : नाथोबां भेटि',
+    titleEn: 'Leela 258: Upadhyan : Nathoban Bheti',
+    content: 'मग वैसेचि तीघें नासिकासि गोसावीयांच्या दरीसनास आले : गोसावीयांसि दंडवतें घातलीं: श्रीचरणां लागले : डखलां म्हणीतलें : "जी जी : मी आड जाडि बांधौनि आहे : तवं हे आले :" ऐसी अवघी गोष्ट सांघीतली : मग उपाध्ये सांगों लागले : "जी जी : आम्ही श्रीनगरसि आलों : भीलमढासि गेलों : तेथ संन्यासी होते : संन्यासीयांतें पुसिलें : ‘एथ गोसावी असति की ?’ तवं तेहीं म्हणीतलें : ‘काइ कराल गोसावीयांतें ? ब्रह्मवीद्या तरी आम्हींच सांगोनि : बापुडीं बटिकुरें वेधीं लाविलीं असति :’ तवं तेहीं म्हणीतलें : ‘आम्ही काइ तुमर्ते ब्रह्मवीद्या पुसतु असों ? आम्ही आपुलेया गोसावीयातें पुसत असों :’ ऐसें तेही तीसुधी पुसिलें : आणि संन्यासीं तैसेंचि तीसुधी म्हणीतलें : मग तेणें म्हणीतलें : ‘तरि आम्हांसि दंडवत करा : मग आम्ही गोसावीयातें सांगोनि :’ तीही म्हणीतलें : ‘मागें दंडवत करूनि :’ एतुकेनि तेही एकमेकांच्या तोंडाची वास पाहिली : ‘दंडवतासि जरि गोसावीयातें सांगती तरि कां करा ना काय ?’ मग तेही तेयासि दंडवत केलें : एतुकेनि तेहीं सांगीतलें : ‘तुमचे गोसावी सत्रसींगाकडे गेले असति :’ मग उपाध्ये म्हणीतलें : ‘चांदौरीं जाओं : तेथ वस्त्रें ठेउं : फाटकीं वस्त्रें नेसों : मग सत्रसीगासि जाओं : मग आपुलेया गोसावीयातें झाडोझाडीं गीवसों :’ मग चांदौरीसि आलों : तवं गोसावीयांची जाडि देखिली :" ऐसें उपाधीं अवधें सांगीतलें : मग सर्वज्ञें म्हणीतलें : "देखिलें बाइ : बापुडीं बटिकुरें चाळवीलीं आहाति :" गोसावी मागोतें पुसति : "मग बटिका : भगवा काइ म्हणे ?" उपाध्ये मागोतें तैसेंचि गोसावीयापुढें सांगति : आणि भगवा आपुली ब्रह्मवीद्या नीरोपी : "बाइ : देखिलें कीं : बटिक यातें पुसती : आणि भगवा आपुली ब्रह्मवीद्या नीरोपी :" सर्वज्ञें म्हणीतलें : "ऐसी गा ब्रह्मवीद्या बापुडी : जे सुपीं सुनि वीकिजे :" ॥',
+    explanation: '**लीळा भावार्थ व निरूपण:**\n\n**प्रसंग:** नाथोपाध्याय आणि त्यांचे सोबती नाशिक येथे स्वामींच्या दर्शनासाठी आले आणि त्यांनी सिन्नर येथील संन्याशांशी झालेला सर्व वृत्तांत स्वामींना ऐकवला.\n\n**विवरण आणि निरूपण:**\n१. **स्वामींचे दर्शन आणि वृत्तांत कथन:**\nनाथोपाध्याय, डखले आणि इतर भक्त नाशिक येथे स्वामींच्या दर्शनास आले. त्यांनी स्वामींना साष्टांग दंडवत घातले. डखले यांनी सांगितले, "बाबा, मी चांदोरी येथे जाडी बांधून थांबलो होतो, तिथेच हे लोक मला येऊन मिळाले." त्यानंतर उपाध्यायांनी भीलमठातील संन्याशांचा सर्व प्रसंग स्वामींना तपशीलवार सांगितला.\n\n२. **संन्याशांचा अहंकार आणि भक्तांची निष्ठा:**\nसंन्याशांनी भक्तांची टवाळी करत \'ब्रह्मविद्येचा\' अहंकार बाळगला होता. त्यांनी स्वतःला श्रेष्ठ दाखवण्यासाठी भक्तांकडून नमस्कार (दंडवत) मागून घेतला. नाथोपाध्याय व इतरांनी केवळ स्वामींच्या भेटीची तळमळ असल्यामुळे कसलाही संकोच न बाळगता संन्याशांना दंडवत घातला.\n\n३. **ब्रह्मविद्येची मूल्यहीनता (सुपातील मालासारखी):**\nस्वामींनी संन्याशांच्या या आचरणावर मार्मिक भाष्य केले. ते बाईसांना म्हणाले, "पाहिले का बाई, या बिचाऱ्या भक्तांना संन्याशांनी कसे त्रास दिले." स्वामींनी पुन्हा विचारले, "मग तो संन्यासी (भगवा) ब्रह्मविद्येविषयी काय म्हणत होता?" उपाध्यायांनी तो वृत्तांत पुन्हा सांगितला की संन्यासी स्वतःहून ब्रह्मविद्या उपदेश करू पाहत होता. तेव्हा स्वामी म्हणाले, "बघा बाई, हा भक्त केवळ स्वामींचा पत्ता विचारत होता, पण तो संन्यासी जबरदस्तीने आपली ब्रह्मविद्या त्याच्या गळ्यात मारू पाहत होता. अशी ही ब्रह्मविद्या बिचारी (बापुडी) झाली आहे, जणू काही सुपात (धान्य पाखडण्याच्या सुपात) घालून रस्त्यावर विकली जावी इतकी ती स्वस्त आणि मूल्यहीन झाली आहे!"\n\n**निष्कर्ष:**\nया लीळेतून स्वामींनी संन्याशांच्या ढोंगी आणि अहंकारी ब्रह्मविद्येवर प्रहार केला आहे. खरी ब्रह्मविद्या ही बाजारात ओरडून विकण्याची गोष्ट नसून ती प्राप्त करण्यासाठी अंतःकरणात शुद्ध भक्ती आणि पात्रता असावी लागते, ही स्वामींची मुख्य शिकवण आहे।'
+  },
+  {
+    id: 'lc_p259',
+    bookId: 'leela_charitra',
+    number: 259,
+    title: 'लीळा २५९: नाथोबाकेसदरिसनीं वीस्मो',
+    titleEn: 'Leela 259: Nathobakesadarisani Vismo',
+    content: 'चांगदेओभट भीक्षे गेले होते : तेयातें बाइला देखिलें होतें : मग नाथोबा गाउनि आले : उदयाचा पुजाअवस्वरू जालेयानंतरें गोसावी वीहरणां बीजें केलें : गोसावीयांसि आबेया तळीं आसन : नाथोबा गोसावीयांजवळि बैसले होते : तवं तेथ बाइला पाणीयासि आलीया होतीया : तेहीं नाथोबातें देखिलें : आणि म्हणीतलें : "हें काइ ओ maae : याची डोइ कालि भादरिली होती : आजि इतुके केस कैचे ?" तवं सर्वज्ञें म्हणीतलें : "बाइ : हे दोघै भाउ जावळंचे : सारिखेचि : तो कालि गावांनि गेला : हा आजि आला :" तेह्वि तेयांचें अन्यथाज्ञान फीटलें : ॥',
+    explanation: '**लीळा भावार्थ व निरूपण:**\n\n**प्रसंग:** चांगदेवभट (देवभट) आणि नाथोबा हे हुबेहूब एकमेकांसारखे (जुळे भाऊ) असल्यामुळे एका दासीला (बाईला) झालेल्या भ्रमाचे (अन्यथाज्ञानाचे) स्वामींनी केलेले निवारण.\n\n**विवरण आणि निरूपण:**\nचांगदेवभट जेव्हा भिक्षेसाठी गेले होते, तेव्हा तिथल्या एका दासीने (बाइने/स्त्रीने) त्यांना पाहिले होते. चांगदेवभटांचे डोके नुकतेच मुंडण केलेले (भादरिली होती) होते. त्यानंतर नाथोबा (ज्यांच्या डोक्यावर लांब केसं होते) गावाहून नाशिकला आले. सकाळी पूजा संपल्यानंतर स्वामी आंब्याच्या झाडाखाली विहरणासाठी बसले होते. नाथोबा स्वामींच्या अगदी जवळ बसले होते.\nतेव्हा ती दासी तिथे पाणी भरण्यासाठी आली. तिने नाथोबांकडे पाहिले आणि ती आश्चर्यचितून आपल्या मैत्रिणीला म्हणाली, "अग बाई! कालच तर या माणसाचे डोके मुंडण केले होते, आणि आज इतके मोठे केस कुठून आले?" तिची ही द्विधा मनःस्थिती आणि आश्चर्य पाहून स्वामी हसले आणि म्हणाले, "बाई, हे दोघे जुळे भाऊ (जावळंचे) आहेत. दोघे हुबेहूब सारखे दिसतात. जो काल मुंडण केलेला होता तो कालच गावाला निघून गेला आणि हा दुसरा भाऊ आज गावाहून आला आहे." स्वामींचे हे उत्तर ऐकल्यावर त्या स्त्रीचा गैरसमज (अन्यथाज्ञान) दूर झाला.\n\n**निष्कर्ष:**\nया लीळेतून स्वामींचा खेळकर आणि व्यवहारचतुर स्वभाव दिसून येतो. भक्तांच्या रूपातील साधर्म्यामुळे निर्माण झालेले अन्यथाज्ञान स्वामींनी किती सहज आणि विनोदी पद्धतीने दूर केले, हे येथे स्पष्ट होते।'
+  },
+  {
+    id: 'lc_p260',
+    bookId: 'leela_charitra',
+    number: 260,
+    title: 'लीळा २६०: मार्गी चौरंगी वीड्या नीरोपणें',
+    titleEn: 'Leela 260: Margi Chaurangi Vida Niropane',
+    content: 'अडगावां जातां मार्गी पब्हे : तेथ गोसावीयांसि आसन जालें : मग पब्हेपुढां सेत होतें : तेथ गोसावी बीजें करिताति : तवं तेथ बोरिचें खोड पाल्हैलें होतें : तें गोसावीं देखिलें : सर्वज्ञें म्हणीतलें : "हें देखिलें गा : हा तरि याचा स्वभाओ : ऐसें माणसाचां ठांई दीसे तरि चौरंगिची वीद्या जाली म्हणिजे :" [बाईसीं पुसिलें : "चौरंगीची वीद्या म्हणजे काइ बाबा ?" सर्वज्ञें म्हणीतलें : "कव्हणी एकु राओ सवसींगाatळीं राज्य करी : तेयांसि दोघीं राणीया : वडिली राणीयेसि पुत्रु होता : तो रूपें स्वरूपू बरवा : तो शेजारीं एकला नीजैला होता : तवं धाकुटी राणी आली : तेयासि विखएवासना झोंबों लागली : तेणें म्हणीतलें : ‘ते माए : तैसिचि तुं माए :’ ऐसें तेणें नीराकरीलें : तीसि दैन्य जाली : मग तीया आपुलां सर्वांगीं नखें घातलीं : जाउनि शेजारीं नीजैली : तवं रावो पारधीहुनि आला : शेजारांआंतु गेला : तीएतें पुसिलें : ‘तुं कां नीजैलीसि ?’ तवं ते न बोले : रायें म्हणीतलें : ‘सांगिसि कां ना ?’ ‘ना काइ सांगों ? तुमचेनि पुत्रें ऐसेनि ऐसेनि केलें :’ म्हणोनि नखें दाखवीलीं : तैसाचि रावो संभामंडपासि आला : तेयातें बोलाविलें : परिवारू बोलावीला : वीद्वांस बोलावीले : जाणते पुराणीक : ऐसे बोलावीले : तेयापुढें सांगीतलें : ‘तरि ऐसेयासि काइ कीजे ?’ ‘ना ऐसेयासि चौरंगु कीजे :’ मग गावाबाहेर चौरंगु करवीला : तवं तेया वाटा मळींद्रु आला : तेणें तेयातें पुसिलें : ‘पुता : हें ऐसें काइ ?’ तेणें अवधें सांगीतलें : मग नेउनि कपाटीं सीळतळीं घातला : तेयातें म्हणीतलें : ‘पुता : ए सीळकडे पाहातुचि अस : आणीककडे पाहासी तरि हे सीळा तुजवरि पडैल : मीं ऐसा एतें हो :’ म्हणौनि नीगाला : गोपाळातें म्हणीतलें : ‘तुम्हीं मोटा जेवाल तेव्हळि याचीए तोंडी कूरूंधनें पीळायें हो :’ ‘ना हो का : हो :’ मग तो नीगोनि गेला : मग बारा वरिषां तेयासि हातपाय नीगाले : मग तोही गेला : तो चौरंगी सीधु वाई :" ॥]',
+    explanation: '**लीळा भावार्थ व निरूपण:**\n\n**प्रसंग:** अडगावला जात असताना वाटेतील एका बोरीच्या सुकलेल्या खोडाला फुटलेली पालवी पाहून स्वामींनी बाईसांना \'चौरंगी विद्या\' आणि चौरंगीनाथांचा रंजक इतिहास सांगितला.\n\n**विवरण आणि निरूपण:**\n१. **बोरीच्या खोडाला पालवी आणि चौरंगी विद्या:**\nस्वामी अडगावला जात असताना वाटेत पळसाच्या झाडाजवळ विसावले. तिथे शेतात एक बोरीचे सुकलेले खोड होते, ज्याला नवीन पालवी फुटली होती. ते पाहून स्वामी म्हणाले, "पाहिलेत का, हा तर या झाडाचा स्वभाव आहे की सुकल्यानंतरही त्याला पुन्हा पालवी फुटते. पण असे चैतन्य जर माणसाच्या बाबतीत घडले, तर त्याला \'चौरंगी विद्या\' सिद्ध झाली असे म्हणतात."\n\n२. **चौरंगीनाथांची कथा:**\nबाईसांनी विचारले, "बाबा, चौरंगी विद्या म्हणजे काय?" त्यावर स्वामींनी चौरंगीनाथांची कथा सांगितली:\n- सप्तशृंगी गडाच्या पायथ्याशी एक राजा राज्य करत होता. त्याला दोघी राण्या होत्या. थोरल्या राणीला एक अत्यंत सुंदर आणि गुणवान मुलगा होता (सारंगदेव/चौरंगीनाथ).\n- एके दिवशी तो मुलगा निजला असताना धाकुटी सावत्र आई तिथे आली आणि ती विकाराच्या आहारी जाऊन त्याच्याशी अयोग्य वर्तन करू लागली. मुलाने तिला नम्रपणे नाकारले: "तू माझी आई आहेस, आणि आईसारखीच राहशील."\n- सावत्र आईला राग व अपमान वाटला. तिने स्वतःच्या अंगावर नखांचे ओरखडे ओढले आणि राजा शिकारीहून परत आल्यावर मुलावर खोटा आळ घातला.\n- राजाने रागाच्या भरात सभा भरवून सल्ला विचारला. सर्वांच्या सल्ल्याने मुलाचे हात-पाय तोडण्याची कठोर शिक्षा दिली (ज्याला \'चौरंग करणे\' म्हणतात) आणि त्याला जंगलात सोडून दिले.\n- तिथे जंगलात मच्छिंद्रनाथ (मळींद्र) आले. त्यांनी मुलाची करुण अवस्था पाहून त्याला एका गुहेत (कपाटी) शिळेखाली सुरक्षित ठेवले आणि सांगितले, "बाळा, तू केवळ या शिळेकडेच लक्ष ठेवून ध्यान कर. जर दुसरीकडे पाहिलेस तर ही शिळा तुझ्यावर पडेल. मी परत येईपर्यंत ध्यान कर." मच्छिंद्रनाथांनी तिथल्या गुराख्यांना सांगितले की जेव्हा ते जेवतील, तेव्हा या मुलाच्या तोंडात कोरूंधने (धान्याचा रस किंवा दूध) पिळावे. गुराख्यांनी तसे केले.\n- तब्बल १२ वर्षे कठोर साधना केल्यानंतर, त्या मुलाला पुन्हा हात आणि पाय फुटले! तो दिव्य सिद्ध पुरुष बनला, joys आपण \'चौरंगी सिद्ध\' किंवा चौरंगीनाथ म्हणून ओळखतो.\n\n**निष्कर्ष:**\nया लीळेतून निष्पाप मनाची ताकद, गुरूंची अथांग कृपा आणि हठयोगातील \'चौरंगी विद्या\' (नष्ट झालेले अवयव किंवा चैतन्य पुन्हा प्राप्त करणे) स्पष्ट होते. सुकलेल्या लाकडाला पालवी फुटण्यासारखीच ही अशक्य वाटणारी गोष्ट साधनेने शक्य होते, हा या लीळेचा मुख्य भावार्थ आहे।'
+  },
+  {
+    id: 'lc_p261',
+    bookId: 'leela_charitra',
+    number: 261,
+    title: 'लीळा २६१: नाथोबा माहात्मेयां वीज्ञान कथन : पब्हे आरोगण',
+    titleEn: 'Leela 261: Nathoba Mahatmeyan Vijnan Kathan : Pabhe Arogan',
+    content: 'तेथौनि गोसावीं सामोरेयां बीजें केलें : सर्वज्ञें म्हणीतलें : "बाइ : एथ आसन घाला :" "बाबा : एथ आसन कीजत असिजे : परि एथ पाणी नाहीं :" गोसावीं उपाध्यांतें म्हणीतलें : "बटिका : जा गा : सागळ भरूनि आणा :" उपाध्ये गेले : तवं पाणी नाहीं : आले : "जी जी : एउती पाणी नाहीं :" सर्वज्ञें म्हणीतलें : "बटिका : ऐसे ऐसे जा गा : ऐसें हान होईल :" गेले : तवं सरवरू भरला आहे : सागळ भरूनि आणिला : मग म्हणीतलें : "ऐसें गा आमचे गोसावी : आपुलें इश्वरीए लोपिति :" उदक आणिलें : मग गोसावीयांसि चरणक्षाळण जालें : गुळुळा जाला : पुजा आरोगण जाली : मग सर्वज्ञें म्हणीतलें : "बाइ : एकि सीळीकि आणा :" ओली म्हणीनि तोडिमोडि न करिति : सर्वज्ञें म्हणीतलें : "बाइ : भवती भवाल : परि सीळीका आणालचि कीं :" मग तेथौनि अडगावां बीजें केलें : गावामसिप पातले : सर्वज्ञें म्हणीतलें : "बटिका : तुम्हीं पुढीं गावा जा : तेथ भीक्षा करा : मां हे तुम्हां उदयां दर्शन देईल :" मग ते नीगाले : ॥',
+    explanation: '**लीळा भावार्थ व निरूपण:**\n\n**प्रसंग:** अडगावच्या प्रवासात पाण्याचे दुर्भिक्ष असताना स्वामींनी नाथोबा आणि उपाध्यायांना एका गुप्त जलाशयाचा मार्ग दाखवून पाणी आणण्यास सांगितले, आणि त्यानंतर पळसाच्या पानांवर (पब्हे/पिटले) आरोगणा झाली.\n\n**विवरण आणि निरूपण:**\n१. **पाण्याचा शोध आणि स्वामींचे ऐश्वर्य:**\nप्रवासात एका ठिकाणी थांबल्यावर स्वामींनी आसन घालण्यास सांगितले. बाईसांनी सांगितले की इथे जागा चांगली आहे पण पिण्यासाठी पाणी नाही. स्वामींनी नाथोपाध्यायांना सांगितले, "बटिका, जा आणि भांडे (सागळ) भरून पाणी घेऊन ये." उपाध्ये शोधून परत आले आणि म्हणाले, "बाबा, आसपास कुठेही पाणी नाही." स्वामींनी त्यांना विशिष्ट दिशा दाखवून सांगितले, "अशा अशा मार्गाने जा, तिथे पाणी नक्की मिळेल." उपाध्ये त्या देशाने गेले, तर तिथे पाण्याचा एक सुंदर जलाशय पूर्ण भरलेला दिसला! त्यांनी आनंदात भांडे भरून आणले आणि उद्गारले, "आमचे स्वामी किती थोर आहेत, आपले ईश्वरत्व लपवूनही ते कशी कृपा करतात!"\n\n२. **आरोगणा आणि \'शिळिक\' (पळसाची काडी/सळई):**\nत्या पाण्याने स्वामींचे पाय धुतले गेले, गुळण्या केल्या आणि पूजा करून आरोगणा (भोजन) झाली. भोजनानंतर स्वामींनी दात कोरण्यासाठी किंवा विशिष्ट विधीसाठी \'शिळिक\' (पळसाची वाळलेली काडी/सळई) आणायला सांगितली. बाईसा ओल्या झाडाची फांदी तोडण्यास कचरत होत्या. स्वामींनी त्यांना आश्वस्त केले की निसर्गाचे नुकसान न करता वाळलेली काडी शोधावी.\n\n३. **भक्तांना पुढील प्रवासाची आज्ञा:**\nत्यानंतर अडगावच्या वेशीवर पोहोचल्यावर स्वामींनी भक्तांना सांगितले, "तुम्ही पुढे गावात जा, तिथे भिक्षा मागून विश्रांती घ्या. हे रूप (स्वामी) तुम्हाला उद्या सकाळी पुन्हा दर्शन देईल." भक्त आज्ञेनुसार पुढे गेले.\n\n**निष्कर्ष:**\nया लीळेतून स्वामींचे अंतर्यामित्व आणि निसर्गाप्रती असलेली संवेदनशीलता दिसून येते. पाणी नसलेल्या ठिकाणी जलाशय दाखवणे आणि ओल्या फांद्या न तोडण्याचा संदेश देणे यातून स्वामींची करुणा व निसर्गप्रेम स्पष्ट होते।'
+  },
+  {
+    id: 'lc_p262',
+    bookId: 'leela_charitra',
+    number: 262,
+    title: 'लीळा २६२: अडगावीं लींगाचां देऊळीं वस्ति',
+    titleEn: 'Leela 262: Adagavin Lingachan Deulin Vasti',
+    content: 'अडगावीं लींगाचां देऊळीं वस्ति ॥',
+    explanation: '**लीळा भावार्थ व निरूपण:**\n\n**प्रसंग:** श्री चक्रधर स्वामींनी अडगाव येथील महादेवाच्या (लिंगाच्या) मंदिरात मुक्काम केला.\n\n**विवरण आणि निरूपण:**\nस्वामी अडगाव येथे आले आणि त्यांनी गावातील अत्यंत शांत आणि पवित्र अशा शिवालय (लिंगाचे देऊळ) परिसरात मुक्काम केला. महानुभाव पंथात या स्थानाला अनन्यसाधारण महत्त्व आहे.\n\n**निष्कर्ष:**\nशिवालयातील वस्ती स्वामींच्या ध्यानमग्न आणि विरक्त आचरणावर प्रकाश टाकते.'
+  },
+  {
+    id: 'lc_p263',
+    bookId: 'leela_charitra',
+    number: 263,
+    title: 'लीळा २६३: मार्गी उपासन्यां स्तीति',
+    titleEn: 'Leela 263: Margi Upasnyan Stiti',
+    content: 'अडगावीहुनि गोसावी मार्गे बीजें करिताति : तवं पुढां वाटेसि उपासनीया स्तीति जाली होती : तवं भगतिजनीं देखिलें : "हें काइ ? हे तवं रीधपुरासि पाठवीले होते :" तवं ते म्हणति : "मार्गु काइ तुमचा ?" एउनि गोसावीयांपुढें धनुकाकारें उभे राहाति : बाईसीं म्हणीतलें : "बाबा : हे काइ सांभव ?" सर्वज्ञें म्हणीतलें : "बाइ : सांभावीचा रश्मि होए तरि जीउ सकळें आत्मत्वें नेदखे ? हा अणवीचा एकु रस्मि :" गोसावीं ऐसें भ्रूभंगें केलें : आणि मागुतें चालति : मागुतें एउनि गोसावीयांपुढें एणुकैया एका धनुकाकारें उभे राहाति : मागुतें गोसावी भ्रूभंगें ऐसीं करीति : आणि मागुतें चालति : ऐसें होतीं तो ढाओवेंन्हीं गेले : तेथ वस्त्रें वेढिलीं : आणि स्तीति भंगली : गोसावीयांपासि आले : दंडवत घातलें : श्रीचरणां लागले : मग सर्वज्ञें म्हणीतलें : "हें काइ गा : तुमर्ते रीधपुरा पाठविलें होतें कीं ?" तेहीं म्हणीतलें : "हें नव्हे आतां जात असों :" ॥',
+    explanation: '**लीळा भावार्थ व निरूपण:**\n\n**प्रसंग:** अडगावहून पुढे प्रवास करताना वाटेत \'उпасनी\' (एक साधक/भक्त) यांना समाधी किंवा ध्यान लागणे (स्थिती होणे) आणि त्यांनी स्वामींसमोर धनुष्यासारखे वाकून भाव प्रकट करणे.\n\n**विवरण आणि निरूपण:**\n१. **वाटेत उपासनीची \'स्थिती\' (भावसमाधी):**\nस्वामी अडगावहून निघाले असताना वाटेत \'उпасनी\' नामक साधकाला स्वामींचे दर्शन घेताच तीव्र भाव समाधी (स्थिती) लागली. तो आपले भान हरपून रस्त्यात उभा राहिला. भक्तांनी पाहिले आणि आश्चर्य व्यक्त केले, कारण या साधकाला आधीच रिद्धपूरला जाण्याची आज्ञा दिली होती.\n\n२. **धनुष्यासारखे वाकून उभे राहणे आणि \'आणवी रश्मी\' चे निरूपण:**\nतो साधक धावत येऊन स्वामींच्या समोर धनुष्यासारखा (धनुकाकारें) वाकून उभा राहिला. बाईसांनी विचारले, "बाबा, ही काय शांभवी स्थिती (सांभव) आहे का?" स्वामींनी अतिशय खोल आध्यात्मिक उत्तर दिले: "बाई, जर ही शांभवी स्थिती असती, तर आत्म्याला सर्वत्र आत्मत्व दिसले असते (भेद नष्ट झाला असता). हा तर केवळ \'आणवी\' (आणव मळाशी संबंधित किंवा प्राथमिक स्तराचा) किरकोळ रश्मी (अनुभूतीचा अंश) आहे."\n\n३. **स्वामींचा भ्रूभंग (नकार) आणि स्थितीचा भंग:**\nस्वामींनी आपल्या भुवया उंचावून (भ्रूभंग करून) त्याला पुढे जाण्यास सुचवले. तो पुन्हा पुढे जाऊन स्वामींसमोर तसाच वाकून उभा राहिला. स्वामींनी पुन्हा भ्रूभंगाने त्याला बाजूला केले. शेवटी एका ठिकाणी गेल्यावर त्याचे वस्त्र व्यवस्थित करून त्याची ती समाधी अवस्था (स्थिती) उतरवण्यात आली. शुद्धीवर आल्यावर त्याने स्वामींना साष्टांग दंडवत घातले. स्वामींनी विचारले, "तुम्हाला तर रिद्धपूरला पाठवले होते ना, मग इथे कसे?" साधकाने नम्रपणे सांगितले, "बाबा, आता मी त्यातकाळ तिकडे निघतो."\n\n**निष्कर्ष:**\nया लीळेतून महानुभाव पंथातील विविध आध्यात्मिक अवस्थांचे (शांभवी, आणवी इत्यादी) वर्गीकरण स्पष्ट होते. स्वामींनी केवळ भक्तांच्या भावाचे कौतुक केले नाही, तर त्यांना योग्य मार्ग दाखवून कर्तव्याची (रिद्धपूरला जाण्याची) आठवण करून दिली।'
+  },
+  {
+    id: 'lc_p264',
+    bookId: 'leela_charitra',
+    number: 264,
+    title: 'लीळा २६४: धाकुटां सुंकियाणां वस्ति',
+    titleEn: 'Leela 264: Dhakutan Sunkiyanan Vasti',
+    content: 'धाकुटां सुंकियाणां वस्ति ॥',
+    explanation: '**लीळा भावार्थ व निरूपण:**\n\n**प्रसंग:** श्री चक्रधर स्वामींनी \'धाकुटे सुंकिये\' (लहान सुंकिये गाव) येथे वस्ती केली.\n\n**विवरण आणि निरूपण:**\nप्रवासादरम्यान स्वामी एका लहान खेड्यात म्हणजेच धाकुट्या सुंकिये गावी थांबले. तेथील निसर्गरम्य आणि शांत वातावरणात त्यांनी रात्रीचा मुक्काम केला.\n\n**निष्कर्ष:**\nस्वामींचे ग्रामीण भागातील भ्रमण आणि तेथील सामान्य लोकांवर झालेली कृपा यातून अधोरेखित होते।'
+  },
+  {
+    id: 'lc_p265',
+    bookId: 'leela_charitra',
+    number: 265,
+    title: 'लीळा २५५: तथा सीता देवीचें कोथळेंमोथळें दाखवणें', // Wait, this is 265: नीफाडे आत्मेयारामां पयोवर्त देणें
+    titleEn: 'Leela 265: Niphade Atmeyaraman Payovart Dene',
+    content: 'तेथौनि गोसावीं नीफाडेसि बीजें केलें : कोंकणगाएसि गोसावीयांसि नावेक आसन जालें : मग तेथौनि डखलेयांतें बीढार पाहों पाठवीलें : ते मढासि गेले : तवं लींगाचीए देऊळीए आत्मारामु बैसला होता : डखलेयांतें देखिलें : आणि ते बोबावों लागले : "ऐसेंया पापीयां चांडाळांचेया गावांसि गोसावी कें आले ?" पुसिलें : "तुम्हीं कवण ?" डखलां सांगीतलें : "आम्ही श्रीचांगदेवराउळा गोसावीयांचे :" "मी मुका आरोळीया देत असे : मी पयोव्रती आत्मारामु : मज तीनि उपवास पडिले : परि कोणी पयोवर्त नेदीती :" मग डखले मागुतें गोसावीयांपासि आले : मग तीहीं गोसावीयांपासि सांगीतलें : "जी जी : आत्मारामु भूका आरोगीया देतु असे :" सर्वज्ञें म्हणीतलें : "हें काइ गा डखलेया : आत्मारामु आणि भूका आरोगीया दे : हें अति वीरूध मा :" मग गोसावीं नारायेणमढा बीजें केलें : मढाचिये पटिसाळे गोसावीयांसि आसन जालें : तवं ते गोसावीयांतें देखौनि अधिकांचि आरोगीया देवों लागले : गोसावीं बाइसातें पुसिलें : "बाइ : हे कवण ?" बाईसीं म्हणीतलें : "बाबा : हे वामदेवांचे प्रथम सीष्य आत्माराम" : मग सर्वज्ञें म्हणीतलें : "माहात्मेयां पयोवर्त देया गा :" मग बाइसातें मागौनि एकु दामु दीधला : तवं डखलां म्हणीतलें : "जी जी : यांसि पयोवर्त काइसें ?" सर्वज्ञें म्हणीतलें : "एह्वीं बाइसां नीरोधु कीं गा :" ॥',
+    explanation: '**लीळा भावार्थ व निरूपण:**\n\n**प्रसंग:** निफाड येथे वामदेवांचे शिष्य \'आत्माराम\' या पयोव्रती (केवळ दूध पिऊन राहणाऱ्या) साधकाला स्वामींनी ओळखले आणि त्याला पयोव्रतासाठी दान (पैसे) देऊन तृप्त केले.\n\n**विवरण आणि निरूपण:**\n१. **डखले आणि आत्माराम यांची पहिली भेट:**\nस्वामी निफाड येथे आले. डखले यांना मुक्कामाची जागा (बिढार) शोधण्यासाठी नारायण मठात पाठवले. तिथे महादेवाच्या मंदिरात \'आत्माराम\' नावाचे साधक बसले होते. डखले यांना पाहताच ते जोरात ओरडले (आरोगिया देणे/हाक मारणे), "अशा पापी लोकांच्या गावी आमचे स्वामी कसे आले?" डखलेंनी विचारले, "तुम्ही कोण आहात?" त्यांनी सांगितले, "मी वामदेवांचा शिष्य आत्माराम आहे, मी पयोव्रती असून मला तीन दिवसांपासून उपवास घडला आहे, पण कोणीही मला दूध (पयोवर्त) देत नाही."\n\n२. **स्वामींची मार्मिक टिप्पणी आणि मठात आगमन:**\nडखलेंनी स्वामींकडे येऊन सांगितले, "बाबा, तिथे मठात आत्माराम नावाचे साधक भुकेने व्याकुळ होऊन ओरडत आहेत." स्वामी हसून म्हणाले, "डखलेया, हे काय बोलतोस? जो स्वतः \'आत्माराम\' (आत्म्यात रमनारा) आहे, तो भुकेने कसा व्याकुळ होऊ शकतो? हे तर अत्यंत परस्परविरोधी (वीरूध) आहे!"\n\n३. **आत्माराम साधकाची ओळख आणि पयोव्रत दान:**\nस्वामी नारायण मठात आले. स्वामींना पाहताच आत्माराम अधिकच ओरडू लागले. बाईसांनी स्वामींना सांगितले कि हे प्रसिद्ध वामदेवांचे प्रथम शिष्य आत्माराम आहेत. स्वामींनी दयार्द्र होऊन बाईसांना सांगितले, "या महात्म्याला दूध घेण्यासाठी काहीतरी द्या." बाईसांनी त्यांना एक दाम (पैसा) दिला. डखले म्हणाले, "बाबा, यांना कशाला द्यायचे?" स्वामींनी समजावले, "डखलेया, कोणाच्याही नियमात किंवा साधनेत आपण अडथळा (नीरोधु) आणू नये. त्यांना त्यांचे व्रत पूर्ण करू दे."\n\n**निष्कर्ष:**\nया लीळेतून स्वामींची भूतदया, संवेदनशीलता आणि उदारता दिसून येते. \'आत्माराम\' नावाच्या साधकाच्या भूकेची चेष्टा न करता, स्वामींनी त्याच्या व्रताचा आदर केला आणि त्याला मदत केली, हा या लीळेचा मुख्य गाभा आहे।'
+  },
+  {
+    id: 'lc_p266',
+    bookId: 'leela_charitra',
+    number: 266,
+    title: 'लीळा २६६: मार्गी आरोगण',
+    titleEn: 'Leela 266: Margi Arogan',
+    content: 'गोसावीं नीफाडेहुनि बीजें केलें : मार्गी पव्हे होती : तेथ पुजा आरोगण जाली ॥',
+    explanation: '**लीळा भावार्थ व निरूपण:**\n\n**प्रसंग:** निफाडहून पुढे जाताना वाटेत पळसाच्या वनात (पव्हे) स्वामींची पूजा आणि भोजन (आरोगण) झाले.\n\n**विवरण आणि निरूपण:**\nस्वामींचा प्रवास सुरू असताना वाटेत एका रद्दणीय ठिकाणी भक्तांनी स्वामींचे आसन मांडले. निसर्गाच्या सान्निध्यात स्वामींची षोडशोपचारे पूजा करून त्यांना नैवेद्य अर्पण करण्यात आला.\n\n**निष्कर्ष:**\nनिसर्गाच्या कुशीतील साधे आणि भक्तीपूर्ण आरोगण स्वामींच्या प्रवासाची सहजता दर्शवते।'
+  },
+  {
+    id: 'lc_p267',
+    bookId: 'leela_charitra',
+    number: 267,
+    title: 'लीळा २६७: नांदौरीं जळकुडा',
+    titleEn: 'Leela 267: Naandaurin Jalkuda',
+    content: 'गोसावीं नांदौरासि बीजें केलें : गोसावीयांसि जळक्रीडेची प्रवृत्ती : मध्यमेस्वरा अन्ने चास : तेथ बीजें केलें : सर्वज्ञें म्हणीतलें : "या गा : या गा : हें तुम्हांसि सीवैल : तुम्हीं यातें सीवा :" "हो कां जी :" म्हणौनि जळकुडेसि पाणीयांतु रीगाले : गोसावी : उपाध्ये : नाथोबा : डखले : एरांतें डवंचीति : एरांतें डवंचीती : ऐसी जळकुडा खेळत होते : मग पव्हत पव्हत थडियाथडिया बीजें केलें : तवं बाईसीं म्हणीतलें : "बाबा : खेळु पुरों देइजो : आरोगणेसि उसीरू जाला :" तवं डखलां म्हणीतलें : "बाइ : गोसावी नैएति : तुम्हीं जा : आम्ही आणि गोसावी ऐसे पव्हतपव्हत जाउनि : पैली गावीची भीक्षा करूनि : मग गोसावीयांसि आरोगण देउनि :" तवं बाईसीं म्हणीतलें : "पोरा डखलेया : उगा अससि कीं नससि ? बाबा : पुरे कीजो बाबा :" सर्वज्ञें म्हणीतलें : "आतां पुरे करा गा डखलेया : बाइसे सीणतें असति :" ॥',
+    explanation: '**लीळा भावार्थ व निरूपण:**\n\n**प्रसंग:** नांदूर येथे गोदावरी पात्रात (जळकुडा) स्वामींनी भक्तगणांसोबत मनसोक्त जळक्रीडा (पाण्यात पोहण्याचा खेळ) खेळल्याचा आनंददायी प्रसंग.\n\n**विवरण आणि निरूपण:**\n१. **जळक्रीडेचा प्रारंभ:**\nस्वामी नांदूर येथे आले. तिथे गोदावरीच्या पात्रात (जळकुडा) स्वामींना जळक्रीडा करण्याची लहर आली. त्यांनी उपाध्ये, नाथोबा आणि डखले यांना पाण्यात बोलावले: "या, पाण्यात या! हे पाणी तुम्हाला स्पर्श करेल, तुम्ही या पाण्याचा आनंद घ्या!" सर्वजण मोठ्या उत्साहाने पाण्यात उतरले.\n\n२. **पाण्यातील मस्ती आणि डखलेयांचा विनोद:**\nस्वामी, उपाध्ये, नाथोबा आणि डखले पाण्यात एकमेकांना बुडवणे, पाणी उडवणे (डवंचीत जाणे) असा जळक्रीडेचा आनंद घेऊ लागले. सर्वजण पोहत पोहत किनाऱ्याजवळ आले. तेव्हा बाईसा म्हणाल्या, "बाबा, आता खेळ पुरे करा. स्वयंपाक आणि आरोगणेला (जेवणाला) उशीर होत आहे." त्यावर डखले चेष्टेने म्हणाले, "बाई, तुम्ही जा. आम्ही आणि स्वामी पोहत पोहत पुढच्या गावी जाऊ, तिथेच भिक्षा मागू आणि स्वामींना आरोगण देऊ!"\n\n३. **स्वामींची संवेदनशीलता:**\nबाईसा डखलेयांवर प्रेमाने रागावल्या, "पोरा डखलेया, तू शांत बसतोस की नाही? बाबा, आता पुरे करा ना!" स्वामींनी डखलेयांना खेळ थांबवण्याची आज्ञा दिली: "डखलेया, आता खेळ पुरे कर, बाईसा खूप थकल्या आहेत (शीणत असती)." त्यानंतर खेळ थांबला.\n\n**निष्कर्ष:**\nया अत्यंत सुंदर आणि जिवंत लीळेतून स्वामींचे मानवी रूप, भक्तांसोबतचे सख्य आणि बालसुलभ खेळकरपणा दिसून येतो. ईश्वर आपल्या भक्तांच्या आनंदात कसा सहभागी होतो, याचे हे उत्तम दर्शन आहे।'
+  },
+  {
+    id: 'lc_p268',
+    bookId: 'leela_charitra',
+    number: 268,
+    title: 'लीळा २६८: नाथोबाची ग्रहोनीवृत्ती',
+    titleEn: 'Leela 268: Nathobachi Grahonivritti',
+    content: 'गोसावीं थडीएसि एउनि उभे राहिले : वस्त्रें वेढीत होते : दोहीं श्रीचरणांवरतें पाणी होतें : तवं सर्वज्ञें म्हणीतलें : "बोलावा गा मंडळीकातें : मां ते आपुलेया पीतयाचें एथ स्नान करितिल : ते ग्रहो जाले असति : ते एथौनि मुंचवीजत असिजे :" तवं उपाधीं म्हणीतलें : "पोरा : उठि उठि : तुझा पीता पुरूषोतमु होता : तो ग्रहो जाला असे : तेयातें गोसावी गृहत्वापासौनि मुचूं पाहात असति :" मग नाथोबा आले : गोसावीयांच्या श्रीचरणांपासि स्नान केलें : सर्वज्ञें म्हणीतलें : "तुमचे पीते ग्रहो जाले असति : ते गृहत्वापासौनि मुचवीले हो :" ॥',
+    explanation: '**लीळा भावार्थ व निरूपण:**\n\n**प्रसंग:** जळक्रीडेनंतर गोदावरीच्या तीरावर उभे असताना स्वामींनी नाथोबांच्या (मंडळीक) दिवंगत पित्याला पिशाचबाधा किंवा गृहत्वापासून (ग्रहांच्या बंधनातून) मुक्त केल्याचा प्रसंग.\n\n**विवरण आणि निरूपण:**\n१. **स्वामींची आज्ञा आणि पित्याचा उद्धार:**\nनांदूर येथील जळक्रीडेनंतर स्वामी नदीच्या तीरावर (थडीएसि) उभे राहून ओले कपडे बदलत होते. त्यांच्या दोन्ही चरणांवरून पवित्र गंगेचे पाणी वाहत होते. अचानक स्वामी नाथोबांना उद्देशून म्हणाले, "मंडळीकाला (नाथोबांचे दुसरे नाव) बोलवून आणा. त्यांनी त्यांच्या मृत पित्याच्या नावाने येथे मेरे चरणांजवळ स्नान करावे. त्यांचे वडील ग्रहांच्या (भूत/पिशाच योनीच्या) बंधनात अडकले आहेत, त्यांना आज आम्ही त्यातून मुक्त करत आहोत."\n\n२. **उपाध्यायांची नाथोबांना हाक आणि स्नान:**\nउपाध्यायांनी तात्काळ नाथोबांना बोलावले आणि सांगितले, "बाळा, लवकर उठ आणि स्नान कर. तुझे वडील पुरुषोत्तम गृहत्व पावून ग्रहांच्या बंधनात अडकले आहेत. स्वामी स्वतः त्यांना या कष्टातून सोडवत आहेत!" नाथोबांनी तात्काळ धावत येऊन स्वामींच्या चरणांना स्पर्श करणाऱ्या प्रवाहात स्नान केले.\n\n३. **पितृमुक्तीची घोषणा:**\nस्नान पूर्ण झाल्यावर स्वामींनी नाथोबांना आश्वस्त केले, "तुझे वडील ग्रहांच्या बंधनातून पूर्णपणे मुक्त झाले आहेत."\n\n**निष्कर्ष:**\nया लीळेतून स्वामींचे अलौकिक सामर्थ्य आणि पितृलोकातील जीवांचा उद्धार करण्याची शक्ती दिसून येते. भक्ताच्या पूर्वजांनाही मुक्ती देणारा कृपाळू सद्गुरू या प्रसंगात प्रकट झाला आहे।'
+  },
+  {
+    id: 'lc_p269',
+    bookId: 'leela_charitra',
+    number: 269,
+    title: 'लीळा २६९: मध्मेस्वरा वीडा वारणें',
+    titleEn: 'Leela 269: Madhmesvara Vida Varane',
+    content: 'मध्मेस्वराचां चौकीं आसन जालें : गोसावीं उपाध्यांतें म्हणीतलें : "बटिका : मध्मेस्वरा वीडा वा गा :" "जी जी :" मग उपाधीं मध्मेस्वरासि वीडा वाइला : गोसावीयांसि चौकीं पुजा जाली ॥',
+    explanation: '**लीळा भावार्थ व निरूपण:**\n\n**प्रसंग:** श्री चक्रधर स्वामींनी मधमेश्वर (मध्यमेश्वर) मंदिरात मुक्काम करून तिथल्या महादेवाला विडा अर्पण केला.\n\n**विवरण आणि निरूपण:**\nनांदूर जवळ असलेल्या प्रसिद्ध मध्यमेश्वर महादेवाच्या मंदिराच्या आवारात (चौकीत) स्वामींचे आसन झाले. स्वामींनी उपाध्यायांना आज्ञा दिली, "बटिका, जा आणि मध्यमेश्वराला पानाचा विडा अर्पण कर." उपाध्यायांनी मोठ्या भक्तीभावाने महादेवाला विडा वाहिला. त्यानंतर भक्तांनी मंदिराच्या चौकीतच स्वामींची पूजा केली.\n\n**निष्कर्ष:**\nपवित्र शिवक्षेत्री देवाचा आदर करण्याची स्वामींची पद्धत आणि त्यांचे पूजनीय वास्तव्य यातून स्पष्ट होते।'
+  },
+  {
+    id: 'lc_p270',
+    bookId: 'leela_charitra',
+    number: 270,
+    title: 'लीळा २७०: नांदौरीं आदीतीं वस्ति जाली',
+    titleEn: 'Leela 270: Naandaurin Aditin Vasti Jali',
+    content: 'नांदौरीं आदीतीं वस्ति जाली ॥',
+    explanation: '**लीळा भावार्थ व निरूपण:**\n\n**प्रसंग:** श्री चक्रधर स्वामींनी नांदूर येथील \'आदीती\' (एक विशिष्ट देवस्थान किंवा नदीचा तीर) येथे वस्ती केली.\n\n**विवरण आणि निरूपण:**\nनांदूरच्या वास्तव्यात स्वामींनी तिथल्या अत्यंत निसर्गरम्य आणि पवित्र मानल्या जाणाऱ्या \'आदीती\' स्थानावर रात्रभर मुक्काम केला.\n\n**निष्कर्ष:**\nनांदूर परिसरातील स्वामींच्या वास्तव्याची ही संक्षिप्त पण महत्त्वाची नोंद आहे।'
+  },
+  {
+    id: 'lc_p271',
+    bookId: 'leela_charitra',
+    number: 271,
+    title: 'लीळा २७१: कांदळदीं एल्हणेश्वरीं वस्ति',
+    titleEn: 'Leela 271: Kandaladin Elhaneshvarin Vasti',
+    content: 'कांदळदीं एल्हणेश्वरीं वस्ति ॥',
+    explanation: '**लीळा भावार्थ व निरूपण:**\n\n**प्रसंग:** श्री चक्रधर स्वामींनी कांदळगाव (कांदळदी) येथील \'एल्हणेश्वर\' मंदिरात वस्ती केली.\n\n**विवरण आणि निरूपण:**\nप्रवासादरम्यान स्वामी कांदळदी गावी गेले आणि तेथील पुरातन एल्हणेश्वर महादेवाच्या मंदिरात मुक्काम केला.\n\n**निष्कर्ष:**\nस्वामींच्या परिभ्रमणातील प्राचीन मंदिरांचे महत्त्व आणि तेथील वास्तव्याची ही एक सुंदर साक्ष आहे।'
+  },
+  {
+    id: 'lc_p272',
+    bookId: 'leela_charitra',
+    number: 272,
+    title: 'लीळा २७२: अग्नीष्टीकेसि वस्ति',
+    titleEn: 'Leela 272: Agnishthikesi Vasti',
+    content: 'अग्नीष्टीकेसि वस्ति ॥',
+    explanation: '**लीळा भावार्थ व निरूपण:**\n\n**प्रसंग:** श्री चक्रधर स्वामींनी \'अग्नीष्टीका\' (शेक शेकण्याची शेकोटीची जागा किंवा विशिष्ट धार्मिक स्थान) येथे वस्ती केली.\n\n**विवरण आणि निरूपण:**\nथंडीच्या दिवसांत किंवा प्रवासादरम्यान स्वामींनी एका शेकोटीच्या आडोशात (अग्नीष्टीकेसि) वस्ती केली, जिथे भक्तांनी त्यांना ऊब देण्याची सोय केली होती.\n\n**निष्कर्ष:**\nस्वामींच्या साध्या आणि खडतर प्रवासाचे हे प्रकटीकरण आहे।'
+  },
+  {
+    id: 'lc_p273',
+    bookId: 'leela_charitra',
+    number: 273,
+    title: 'लीळा २७३: चासुमाणिकेस्वरीं लींगाचां देऊळीं वस्ति',
+    titleEn: 'Leela 273: Chasumanikeshvarin Lingachan Deulin Vasti',
+    content: 'चासीं नावेक आसन जालें : माणिकेस्वरीं जगतीमध्यें लींगाचां देऊळीं वस्ति जाली : माणिकेस्वरीं चौकीं आसन जालें : ॥',
+    explanation: '**लीळा भावार्थ व निरूपण:**\n\n**प्रसंग:** श्री चक्रधर स्वामींचा चास येथील माणिकेश्वर देवळात मुक्काम आणि आसन विधी.\n\n**विवरण आणि निरूपण:**\nप्रवासादरम्यान स्वामी चास गावी आले. तिथे काही काळ त्यांचे आसन झाले. त्यानंतर गावातील प्रसिद्ध माणिकेश्वर मंदिराच्या आवारात (जगतीमध्यें) असलेल्या मुख्य महादेवाच्या मंदिरामध्ये स्वामींची वस्ती झाली. मंदिराच्या बाहेरील किंवा आतील चौक सभामंडपात स्वामींचे आसन मांडून भक्तांनी सेवा केली.\n\n**निष्कर्ष:**\nचास आणि माणिकेश्वर येथील वास्तव्यातून स्वामींच्या परिभ्रमणकाळातील विविध शिवमंदिरांतील भेटींचा एक महत्त्वाचा टप्पा दिसून येतो।'
+  },
+  {
+    id: 'lc_p274',
+    bookId: 'leela_charitra',
+    number: 274,
+    title: 'लीळा २७४: सुरेगावीं आदीतीं वस्ति',
+    titleEn: 'Leela 274: Suregavin Aditin Vasti',
+    content: 'सुरेगावीं आदीतीं वस्ति ॥',
+    explanation: '**लीळा भावार्थ व निरूपण:**\n\n**प्रसंग:** श्री चक्रधर स्वामींनी सुरेगाव येथील \'आदीती\' (नदीचा तीर किंवा विशिष्ट पवित्र स्थान) येथे वस्ती केली.\n\n**विवरण आणि निरूपण:**\nस्वामींनी आपल्या भ्रमणादरम्यान सुरेगाव गावी मुक्काम केला. तेथील नदीच्या तीरावर (आदिती) किंवा आदिती नावाच्या देवस्थान परिसरात त्यांचे शांत आणि प्रसन्न वातावरणात वास्तव्य झाले.\n\n**निष्कर्ष:**\nसुरेगाव येथील या पवित्र स्थानाला लाभलेले स्वामींचे सान्निध्य भक्तांसाठी अत्यंत मंगलमय आणि स्मरणीय ठरले।'
+  },
+  {
+    id: 'lc_p275',
+    bookId: 'leela_charitra',
+    number: 275,
+    title: 'लीळा २७५: सोनारीए आदीतीं वस्ति',
+    titleEn: 'Leela 275: Sonarie Aditin Vasti',
+    content: 'सोनारीए आदीतीं वस्ति ॥',
+    explanation: '**लीळा भावार्थ व निरूपण:**\n\n**प्रसंग:** श्री चक्रधर स्वामींनी सोनारी येथील \'आदीती\' (नदीतीरावरील पवित्र जागा) येथे वस्ती केली.\n\n**विवरण आणि निरूपण:**\nसोनारी गावच्या सीमेवर वाहणाऱ्या नदीच्या तीरावर (आदिती) स्वामींचा मुक्काम झाला. निसर्गरम्य आणि एकांत वातावरणात स्वामींचे रात्रभर वास्तव्य राहिले.\n\n**निष्कर्ष:**\nसोनारी येथील मुक्काम स्वामींच्या सहज आणि शांत भ्रमणाचा एक भाग आहे।'
+  },
+  {
+    id: 'lc_p276',
+    bookId: 'leela_charitra',
+    number: 276,
+    title: 'लीळा २७६: सवछरीं सींगेस्वरीं आसन : आदीतीं वस्ति : दूसरां सींगेस्वरीं आसन',
+    titleEn: 'Leela 276: Savachharin Singeshvarin Asana : Aditin Vasti : Dusaran Singeshvarin Asana',
+    content: 'सवछरीं सींगेस्वरीं आसन : आदीतीं वस्ति : दूसरां सींगेस्वरीं आसन ॥',
+    explanation: '**लीळा भावार्थ व निरूपण:**\n\n**प्रसंग:** संवत्सर (सवछर) येथील सिंगेश्वर मंदिरात आसन, नदीतीरावर मुक्काम आणि दुसऱ्या दिवशी पुन्हा सिंगेश्वर मंदिरात आसनाची सेवा.\n\n**विवरण आणि निरूपण:**\nस्वामी संवत्सर गावी आले. तेथील सिंगेश्वर मंदिरात त्यांचे आसन मांडले गेले. रात्री त्यांनी नदीच्या तीरावर (आदिती) वस्ती केली. दुसऱ्या दिवशी पुन्हा ते सिंगेश्वर मंदिरात आले आणि तिथे त्यांचे आसन झाले.\n\n**निष्कर्ष:**\nसंवत्सर येथील सिंगेश्वर देवस्थान व नदीतीरावरील हे वास्तव्य अत्यंत भक्तीपूर्ण वातावरणात पार पडले।'
+  },
+  {
+    id: 'lc_p277',
+    bookId: 'leela_charitra',
+    number: 277,
+    title: 'लीळा २७७: कुंकुमठार्णी अग्नीष्टीके वस्ति',
+    titleEn: 'Leela 277: Kunkumatharni Agnishthike Vasti',
+    content: 'दामोदरा बीजें करणें : तथा माड आवळोकणें : गोसावीं माड ऐसें श्रीकरीं धरिलें आणि हालवीलें : ॥',
+    explanation: '**लीळा भावार्थ व निरूपण:**\n\n**प्रसंग:** श्री चक्रधर स्वामींनी कुंकुमठाण (कोकमठाण) येथे शेकोटीजवळ मुक्काम केला, दामोदर मंदिराकडे प्रस्थान केले आणि तेथील नारळाचे झाड (माड) हलवले.\n\n**विवरण आणि निरूपण:**\nस्वामी कुंकुमठाण येथे आले आणि थंडीत त्यांनी शेकोटीजवळ (अग्नीष्टीका) वस्ती केली. त्यानंतर दामोदर मंदिराकडे प्रस्थान केले (दामोदरा बीजें करणें). तिथे त्यांनी एक माडाचे (नारळाचे) झाड पाहिले. स्वामींनी त्या माडाच्या झाडाला आपल्या पवित्र हातांनी (श्रीकरीं) धरून जोरात हालवले.\n\n**निष्कर्ष:**\nकुंकुमठाण येथील मुक्काम आणि स्वामींचा वनस्पतींशी असलेला विलोभनीय संवाद या लीळेतून स्पष्ट होतो।'
+  },
+  {
+    id: 'lc_p278',
+    bookId: 'leela_charitra',
+    number: 278,
+    title: 'लीळा २७८: पुणताबां पाताळगुंफे वस्ति',
+    titleEn: 'Leela 278: Puntaban Patalgunphe Vasti',
+    content: 'पुणताबां पाताळगुंफे वस्ति ॥',
+    explanation: '**लीळा भावार्थ व निरूपण:**\n\n**प्रसंग:** श्री चक्रधर स्वामींनी पुणतांबा (पुणतांबे) येथील प्रसिद्ध पाताळगुंफेत (पाताळेश्वर) वस्ती केली.\n\n**विवरण आणि निरूपण:**\nगोदावरी नदीच्या तीरावर वसलेल्या पुणतांबे या पवित्र क्षेत्रात स्वामी आले. तेथील एका अत्यंत शांत, भुयारी आणि ध्यानधारणेसाठी पूजनीय असलेल्या पाताळगुंफेत स्वामींनी रात्रीचा मुक्काम केला.\n\n**निष्कर्ष:**\nपाताळगुंफेतील स्वामींचे वास्तव्य त्यांच्या तपःपूत आणि एकांतप्रिय जीवनशैलीची प्रचिती देते।'
+  },
+  {
+    id: 'lc_p279',
+    bookId: 'leela_charitra',
+    number: 279,
+    title: 'लीळा २७९: नावूरीं कंटकेस्वरीं वस्ति',
+    titleEn: 'Leela 279: Naurin Kantakeshvarin Vasti',
+    content: 'अग्नीष्टीके क्षेडर : गोसावीयांचें क्षेडर जालें होतें : तें अग्नीष्टीकेसि केलें : ॥',
+    explanation: '**लीळा भावार्थ व निरूपण:**\n\n**प्रसंग:** श्री चक्रधर स्वामींनी नावूर येथील कंटकेश्वर मंदिरात वस्ती केली आणि अंगातील हुडहुडी (क्षेडर) शेकोटीच्या साहाय्याने दूर केली.\n\n**विवरण आणि निरूपण:**\nस्वामी नावूर येथील कंटकेश्वर महादेवाच्या देवळात वास्तव्यास होते. तिथे त्यांना अतिशय थंडी वाजून हुडहुडी (क्षेडर) भरली होती. भक्तांनी तात्काळ शेकोटी (अग्नीष्टीका) तयार केली, आणि स्वामींनी त्या शेकोटीजवळ बसून आपली थंडी दूर केली.\n\n**निष्कर्ष:**\nप्रवासातील शारीरिक कष्ट सहन करत स्वामींनी भक्तांनी केलेल्या शेकोटीच्या सेवेचा स्वीकार केला, हे यातून स्पष्ट होते।'
+  },
+  {
+    id: 'lc_p280',
+    bookId: 'leela_charitra',
+    number: 280,
+    title: 'लीळा २८०: नाएगावीं दाईंबा भेटि',
+    titleEn: 'Leela 280: Naegavin Daimba Bheti',
+    content: 'गावां पश्चिमेसि देऊळीएसि गोसावीयांसि नावेक आसन जालें : तवं तेथ दाईंबा आले : गोसावीयांसि भेटि जाली : दंडवत घातलें : श्रीचरणां लागले : ॥',
+    explanation: '**लीळा भावार्थ व निरूपण:**\n\n**प्रसंग:** नायगाव येथे स्वामींचे पश्चिमेकडील मंदिरात आसन झाले आणि तिथे निस्सीम भक्त दाईंबा यांची भेट झाली.\n\n**विवरण आणि निरूपण:**\nस्वामी नायगाव येथे आले आणि गावच्या पश्चिम बाजूच्या एका देवळात (देऊळीएसि) काही काळ विश्रांतीसाठी बसले. तेवढ्यात तिथे त्यांचे भक्त दाईंबा आले. स्वामींना पाहताच त्यांनी आनंदाने साष्टांग नमस्कार (दंडवत) घातला आणि प्रभूंच्या पावन चरणांना स्पर्श केला.\n\n**निष्कर्ष:**\nभक्त आणि भगवंताच्या सुखद भेटीचा हा प्रसंग अत्यंत भक्तीपूर्ण आहे।'
+  },
+  {
+    id: 'lc_p281',
+    bookId: 'leela_charitra',
+    number: 281,
+    title: 'लीळा २८१: पुनरपि पुणताबां पाताळगुंफे अवस्थान',
+    titleEn: 'Leela 281: Punarapi Puntaban Patalgunphe Avasthan',
+    content: 'कारत मढासि बीजें केलें : कामेस्वरा बीजें करणें : वीस्वेस्वरा बीजें करणें : जळसेनीं आसन : साळकातीर्थीं आसन* : [गोसावीं साळतीर्थासि बीजें केलें : पुढें खडकावरि आसन जालें : भक्तिजनीं पुसिलें : "जी जी : साळतीर्थ म्हणिजे काइ ?" सर्वज्ञें म्हणीतलें : "एथ एकु पींपळु होता : तेया पींपळासि साळोंकी गूपली होती : तीएची कोरडि जाली होती : तीचा एकु पाखो एथ पडिला : तेया पूण्यास्तव तीसि ब्राह्मणाचां ठांई जन्म जालें : त्यासि जात्यस्मरत्व* जालें : \'मी अमुकी :\' ऐसी मागील अवघी वेवस्था सांगीतली : \'तीये पींपळीं अद्यापि कोरडि असे :\' मग अवघा लोकु तेथ पाहावेया आला : तवं ते कोरडि तैसीचि देखिली : मग कावडी* : तेथ घातली : मग तीएची एथ स्थापना केली : तें हें साळतीर्थ गा :" कामेस्वरू : वीस्वेस्वरू : वाराणसी : ऐसी लोकीं आज्ञा प्रगटली : तें हें साळतीर्थ गा : " ॥]',
+    explanation: '**लीळा भावार्थ व निरूपण:**\n\n**प्रसंग:** पुणतांबे येथे पुन्हा पाताळगुंफेत आगमन, कामेश्वर-विश्वेश्वर दर्शन आणि साळुंखी तीर्थाचा अद्भूत इतिहास सांगण्याचा प्रसंग.\n\n**विवरण आणि निरूपण:**\n१. **मंदिरांना भेटी:**\nस्वामी पुन्हा पुणतांबे येथे आले. त्यांनी कारत मठात, कामेश्वर मंदिरात आणि विश्वेश्वर मंदिरात दर्शन घेतले. गोदावरी नदी पात्रातील जळसेनी येथे त्यांचे आसन झाले.\n२. **साळुंखी तीर्थाचा इतिहास:**\nसाळुंकी तीर्थाजवळ खडकावर स्वामींचे आसन झाले असताना भक्तांनी विचारले, "बाबा, या साळतीर्थाचा इतिहास काय आहे?"\nस्वामींनी सांगितले की, येथे पूर्वी एक पिंपळाचे झाड होते, ज्यात एक साळुंकी पक्षी राहत होती. ती तिथेच मरण पावून तिचे शरीर वाळून कोरडे झाले. तिचे एक पंख या तीर्थात पडले. त्या पुण्यामुळे त्या साळुंकीला पुढील जन्मात ब्राह्मणाच्या घरात मुलगी म्हणून जन्म मिळाला. तिला पूर्वजन्माचे स्मरण (जात्यस्मरत्व) होते. तिने पूर्वजन्माची हकीकत सांगितल्यावर लोकांनी तपास केला असता पिंपळाच्या झाडात साळुंकीचे वाळलेले शरीर आढळले. त्यानंतर गंगेचे पाणी कावडीने आणून तिथे घातले गेले आणि तिची स्थापना झाली. म्हणूनच याला साळतीर्थ म्हणतात. येथे कामेश्वर, विश्वेश्वर व वाराणसीचे पुण्य लाभते.\n\n**निष्कर्ष:**\nया लीळेतून स्वामींनी पूर्वजन्माच्या स्मृती (जात्यस्मरत्व) आणि तीर्थक्षेत्रांच्या निर्मितीमागील आध्यात्मिक कार्यकारणभाव स्पष्ट केला आहे।'
+  },
+  {
+    id: 'lc_p282',
+    bookId: 'leela_charitra',
+    number: 282,
+    title: 'लीळा २८२: ठाकुरउपद्रवीं हींगुणीए प्राएण',
+    titleEn: 'Leela 282: Thakurupadravin Hingunie Praen',
+    content: 'एकु दीसीं गोसावीं प्रश्रयासि बीजें केलें : tवं तेथ ठाकूरू मारूनि घातला होता : सर्वज्ञें म्हणीतलें : "हींसा वर्ते तीए स्थानीं माहात्मेयां असों नैए :" गोसावीं तैसेंचि तेथौनि बाहिरवाहिरें बीजें केलें : सर्वज्ञें म्हणीतलें : "जा गा मंडळीका : बाइसेांतें मात्रा घेउनि बोलाबा :" गोसावीं तेथौनि बीजें केलें : ॥',
+    explanation: '**लीळा भावार्थ व निरूपण:**\n\n**प्रसंग:** ठाकुर (भील किंवा लुटारू) लोकांच्या हिंसाचारामुळे स्वामींनी तिथून तात्काळ मुक्काम हलवला आणि हिंसेच्या ठिकाणी महात्म्यांनी राहू नये, असा उपदेश केला.\n\n**विवरण आणि निरूपण:**\nएके दिवशी श्री चक्रधर स्वामी प्रश्रयास गेले. तिथे एका ठाकुराला मारून टाकण्यात आले होते. तिथे रक्तापात झालेला पाहून स्वामींनी सांगितले, "ज्या ठिकाणी हिंसा घडते, जीवहत्या होते, अशा हिंसेच्या ठिकाणी महात्म्यांनी राहू नये." स्वामी बाहेरच्या बाहेरूनच पुढे मार्गस्थ झाले. त्यांनी नाथोबांना (मंडळीक) सांगितले, "जा मंडळीका, बाईसांना सर्व साहित्यासह (मात्रा घेऊन) बोलावून घे." आणि स्वामी तिथून पुढे गेले.\n\n**निष्कर्ष:**\nअहिंसा हा महानुभाव पंथाचा मुख्य पाया आहे. हिंसेचे स्थान तात्काळ सोडणे आणि तिथले अन्न-पाणी न घेणे, हे स्वामींच्या आचरणातून स्पष्ट होते।'
+  },
+  {
+    id: 'lc_p283',
+    bookId: 'leela_charitra',
+    number: 283,
+    title: 'लीळा २८३: हींगुणीए वस्ति',
+    titleEn: 'Leela 283: Hingunie Vasti',
+    content: 'हींगुणीए वस्ति ॥',
+    explanation: '**लीळा भावार्थ व निरूपण:**\n\n**प्रसंग:** श्री चक्रधर स्वामींनी हिंगणी (हींगुणी) येथे वस्ती केली.\n\n**विवरण आणि निरूपण:**\nप्रश्रयासी येथील हिंसेच्या वातावरणामुळे स्वामी पुढे निघून आले आणि त्यांनी हिंगणी या सुरक्षित व शांत गावी मुक्काम केला.\n\n**निष्कर्ष:**\nहिंगणी येथील मुक्काम हा स्वामींच्या प्रवासातील एक सुरक्षित आणि शांत विसावा ठरला।'
+  },
+  {
+    id: 'lc_p284',
+    bookId: 'leela_charitra',
+    number: 284,
+    title: 'लीळा २८४: पुर्णगावीं सोमनाथीं आसन : महीं वस्ति',
+    titleEn: 'Leela 284: Purnagavin Somnathin Asan : Mahin Vasti',
+    content: 'पुर्णगावीं सोमनाथीं आसन : महीं वस्ति ॥',
+    explanation: '**लीळा भावार्थ व निरूपण:**\n\n**प्रसंग:** पूर्णगाव येथील सोमनाथ मंदिरात आसन आणि मठात (महीं) वस्ती केल्याची नोंद.\n\n**विवरण आणि निरूपण:**\nस्वामी पूर्णगाव येथे गेले. तेथील प्राचीन सोमनाथ महादेवाच्या मंदिरात त्यांचे आसन झाले. रात्रीचा मुक्काम त्यांनी तिथल्याच एका मठात (मही) केला.\n\n**निष्कर्ष:**\nसोमनाथ मंदिर व मठातील वास्तव्याने तेथील भक्तांच्या भक्तीभावाची सुंदर साक्ष मिळते।'
+  },
+  {
+    id: 'lc_p285',
+    bookId: 'leela_charitra',
+    number: 285,
+    title: 'लीळा २८५: सांवेखेडां सीधनाथीं वस्ति',
+    titleEn: 'Leela 285: Sanvekhedan Sidhanathin Vasti',
+    content: 'सांवेखेडां सीधनाथीं वस्ति ॥',
+    explanation: '**लीळा भावार्थ व निरूपण:**\n\n**प्रसंग:** श्री चक्रधर स्वामींनी सांवेखेड (सांवेखेडा) येथील सिद्धनाथ मंदिरात वस्ती केली.\n\n**विवरण आणि निरूपण:**\nप्रवासादरम्यान स्वामी सांवेखेडा गावी गेले आणि तेथील सिद्धनाथ मंदिरात त्यांनी मुक्काम केला.\n\n**निष्कर्ष:**\nसांवेखेडा येथील सिद्धनाथ देवस्थान स्वामींच्या पावन वास्तव्याने आणि पदस्पर्शाने पवित्र झाले।'
+  },
+  {
+    id: 'lc_p286',
+    bookId: 'leela_charitra',
+    number: 286,
+    title: 'लीळा २८६: वांजरगावीं महीं वस्ति',
+    titleEn: 'Leela 286: Vanjargavin Mahin Vasti',
+    content: 'वांजरगावीं महीं वस्ति ॥',
+    explanation: '**लीळा भावार्थ व निरूपण:**\n\n**प्रसंग:** श्री चक्रधर स्वामींनी वांजरगाव येथील मठात (महीं) वस्ती केली.\n\n**विवरण आणि निरूपण:**\nस्वामी वांजरगाव येथे आले. तेथील एका शांत मठात (मही) त्यांनी आपला मुक्काम केला.\n\n**निष्कर्ष:**\nवांजरगाव येथील वास्तव्याने तेथील साधकांना स्वामींचे सान्निध्य आणि कृपाप्रसाद लाभला।'
+  },
+  {
+    id: 'lc_p287',
+    bookId: 'leela_charitra',
+    number: 287,
+    title: 'लीळा २८७: जुना नागमठाणीं आदीतीं वस्ति',
+    titleEn: 'Leela 287: Juna Nagamathanin Aditin Vasti',
+    content: 'जुना नागमठाणीं आदीतीं वस्ति ॥',
+    explanation: '**लीळा भावार्थ व निरूपण:**\n\n**प्रसंग:** श्री चक्रधर स्वामींनी जुना नागमठाण येथील \'आदीती\' (नदीचा तीर) येथे वस्ती केली.\n\n**विवरण आणि निरूपण:**\nनागमठाण येथील प्राचीन ऐतिहासिक आणि धार्मिक महत्त्व असलेल्या नदीच्या तीरावर (आदिती) स्वामींचे रात्रभर वास्तव्य झाले.\n\n**निष्कर्ष:**\nजुना नागमठाण येथील मुक्काम भक्तांच्या आठवणीत अत्यंत महत्त्वाचा ठरला।'
+  },
+  {
+    id: 'lc_p288',
+    bookId: 'leela_charitra',
+    number: 288,
+    title: 'लीळा २८८: तपोवनीं माणिकेस्वरीं आसन',
+    titleEn: 'Leela 288: Tapovanin Manikeshvarin Asan',
+    content: 'तपोवनीं माणिकेस्वरीं आसन ॥ पुजा आरोगण जाली ॥',
+    explanation: '**लीळा भावार्थ व निरूपण:**\n\n**प्रसंग:** तपोवनातील माणिकेश्वर मंदिरात स्वामींचे आसन झाले आणि तिथे पूजा व आरोगण (भोजन) झाले.\n\n**विवरण आणि निरूपण:**\nस्वामी तपोवन येथील माणिकेश्वर मंदिरात आले. तिथे त्यांचे आसन मांडले गेले. भक्तांनी त्यांची विधीवत पूजा केली आणि अत्यंत आनंदाने व भक्तीभावाने नैवेद्य (आरोगण) अर्पण केला.\n\n**निष्कर्ष:**\nतपोवनातील शांत आणि ध्यानशील वातावरणातील ही पूजा स्वामींच्या दिव्य सान्निध्याची साक्ष देते।'
+  },
+  {
+    id: 'lc_p289',
+    bookId: 'leela_charitra',
+    number: 289,
+    title: 'लीळा २८९: खातिगावीं आदीतीं वस्ति : वामाचा उपहारू स्वीकारू',
+    titleEn: 'Leela 289: Khatigavin Aditin Vasti : Vamacha Upaharu Svikaru',
+    content: 'गोसावीयांसि आदीतीं आसन जालें : तवं वामु आला : तेणें गोसावीयांतें आरोगणे वीनवीलें : "जी जी : माझैया आवांरासि बीजें करावें : " सर्वज्ञें म्हणीतलें : "एथचि आणा : " मग तीहीं उपहारू तेथचि आणिला : गोसावीयांसि पुजाअवस्वरू जाला : गोसावीयांसि ताट जालें : गोसावी ताटावरि बीजें केलें : बाईसीं दंडवत केलें : मां वामदेवेहीं दंडवत केलें : गोसावीयांसि आरोगण जाली : गुळूळा जाला : वीडा जाला : उरला प्रसादू भगतिजनासि जाला : ॥',
+    explanation: '**लीळा भावार्थ व निरूपण:**\n\n**प्रसंग:** खातीगाव येथे आदिती तीरावर वास्तव्य आणि तेथे वाम (वामन नावाचा ब्राह्मण) नावाच्या भक्ताने आणलेला नैवेद्य (उपहार) स्वामींनी स्वीकारल्याचा प्रसंग.\n\n**विवरण आणि निरूपण:**\nस्वामी खातीगाव येथे नदीच्या तीरावर (आदिती) मुक्कामी होते. तिथे त्यांचे आसन झाले असताना \'वाम\' (वामन नावाचा ब्राह्मण भक्त) तिथे आला. त्याने स्वामींना भोजनासाठी आपल्या घरी (आवाऱ्यासि) येण्याची आग्रहाची विनंती केली: "बाबा, माझ्या घरी प्रसादासाठी चला."\nस्वामींनी सांगितले, "भोजन इथेच घेऊन ये" (एथचि आणा). वामने घरी जाऊन तयार केलेला नैवेद्य नदीच्या तीरावरच आणला. त्यानंतर स्वामींची पूजा करण्यात आली आणि नैवेद्याचे ताट मांडले गेले. स्वामी जेवायला बसले. बाईसांनी स्वामींना दंडवत घातले, आणि सोबत वामदेवानेही (वामने) साष्टांग नमस्कार केला. स्वामींचे आरोगण शांततेत पार पडले. तोंड धुण्यासाठी गुळूळा (पाणी) आणि मुखवासासाठी विडा देण्यात आला. जो शिल्लक राहिलेला प्रसाद होता, तो सर्व भक्तगणांना वाटण्यात आला.\n\n**निष्कर्ष:**\nभक्ताचा निस्सीम भाव पाहून स्वामींनी त्याच्या घरी न जाताही त्याच्या नैवेद्याचा नदीतीरावरच प्रेमाने स्वीकार केला, हे या लीळेतून स्पष्ट होते।'
+  },
+  {
+    id: 'lc_p290',
+    bookId: 'leela_charitra',
+    number: 290,
+    title: 'लीळा २९०: भामाठाणीं अग्नीष्टीके वस्ति',
+    titleEn: 'Leela 290: Bhamathanin Agnishthike Vasti',
+    content: 'भामाठाणीं अग्नीष्टीके वस्ति ॥',
+    explanation: '**लीळा भावार्थ व निरूपण:**\n\n**प्रसंग:** श्री चक्रधर स्वामींनी भामाठाण (भामाठाण गाव) येथे शेकोटीजवळ (अग्नीष्टीके) वस्ती केली.\n\n**विवरण आणि निरूपण:**\nथंडीच्या किंवा प्रवासाच्या काळात स्वामी भामाठाण येथे आले. तेथे भक्तांनी त्यांच्यासाठी शेकोटीची (अग्नीष्टीका) सोय केली आणि तिथेच रात्रीचा मुक्काम झाला.\n\n**निष्कर्ष:**\nभामाठाण येथील मुक्काम स्वामींच्या प्रवासाचा सुखद टप्पा ठरला।'
+  },
+  {
+    id: 'lc_p291',
+    bookId: 'leela_charitra',
+    number: 291,
+    title: 'लीळा २९१: रामनाथां मागां आसन : दाएभागवता ज्वरनीवृत्ति : ओटा करवणें',
+    titleEn: 'Leela 291: Ramanathan Magan Asan : Daebhagavata Jvarnivritti : Ota Karavane',
+    content: '[एकु दीं मठीं दायंभागवतासि सीतज्वरू आला : तीहीं वीनवीलें : "जी जी : माझा ज्वरु फेडावा :" सर्वज्ञें म्हणीतलें : "आधीं एथ ओटा करावा : मग फेडीजैल :" "हो कां जी :" म्हणोनि ओटा केला : ज्वर फीटोला : ॥]',
+    explanation: '**लीळा भावार्थ व निरूपण:**\n\n**प्रसंग:** रामनाथ मंदिराच्या मागे असताना दाईभागवत (दायभागवत) साधकाला ताप (सीतज्वर) आला, तेव्हा स्वामींनी त्यांना मठात ओटा (पार/ओटा) बांधण्याची आज्ञा दिली आणि त्यांचा ताप दूर केला.\n\n**विवरण आणि निरूपण:**\nरामनाथ मठात राहत असताना दाईभागवत यांना अत्यंत थंडी वाजून ताप (शीतज्वर) आला. त्यांनी स्वामींकडे येऊन कळकळीची विनंती केली, "बाबा, माझा हा ताप घालवून मला बरे करा."\nस्वामींनी त्यांना सांगितले, "आधी इथे एक ओटा (बैसण्यासाठी ओटा) तयार कर, मग तुझा ताप नक्की दूर होईल." दाईभागवतांनी तात्काळ स्वामींच्या आज्ञेचे पालन करत ओटा बांधला. जसा ओटा पूर्ण झाला, तसा त्यांचा ताप नाहीसा झाला.\n\n**निष्कर्ष:**\nसद्गुरू आपल्या भक्तांच्या व्याधी दूर करताना त्यांच्याकडून सेवा करून घेतात. ओटा बांधण्याच्या शारीरिक श्रमामुळे आणि स्वामींच्या आशीर्वादाने दाईभागवतांचा आजार दूर झाला।'
+  },
+  {
+    id: 'lc_p292',
+    bookId: 'leela_charitra',
+    number: 292,
+    title: 'लीळा २९२: डोंबेग्रामीं अवस्थान : दाईभागवंताकरवी ओटेया चुना पीटवणे',
+    titleEn: 'Leela 292: Dombegramin Avasthan : Daibhagavantakaravi Oteya Chuna Pitavane',
+    content: 'दाईभागवतीं गोसावीयांतें म्हणीतलें : "जी जी : माझा जरू गेला : परि नीसेख न वचेचि :" सर्वज्ञें म्हणीतलें : "यां ओटेयासि चुना पीटा : मग जाइल :" "हो कां जी :" मग तेहीं ओटेयासि चुना पीटीला : मग नीसेख जरू गेला ॥',
+    explanation: '**लीळा भावार्थ व निरूपण:**\n\n**प्रसंग:** डोंबेग्राम (डोमेगाव) येथील वास्तव्यात दाईभागवतांचा राहिलेला सुप्त ताप (नीसेख जरू) दूर करण्यासाठी स्वामींनी त्यांच्याकडून ओट्याला चुना कुटून घेण्याची सेवा करवून घेतली.\n\n**विवरण आणि निरूपण:**\nडोंबेग्राम येथे स्वामींच्या मठात असताना दाईभागवतांनी स्वामींना सांगितले, "बाबा, माझा ताप तर गेला आहे, पण शरीरातील मरगळ आणि सुप्त ताप अजूनही पूर्णपणे गेला नाही."\nस्वामींनी सांगितले, "इथे मठात जो ओटा आहे, त्याला चुना कुटा (चुना पीटा), म्हणजे तुझा उरलेला तापही पूर्णपणे जाईल." दाईभागवतांनी तात्काळ ओट्याला चुना लावण्याचे काम केले. त्या कष्टाने आणि स्वामींच्या कृपेने त्यांचा तो सुप्त तापही समूळ नष्ट झाला.\n\n**निष्कर्ष:**\nशारीरिक सेवा आणि कष्टाच्या माध्यमातून सद्गुरू भक्तांचे शारीरिक आणि मानसिक विकार कसे दूर करतात, याचे हे उत्तम उदाहरण आहे।'
+  },
+  {
+    id: 'lc_p293',
+    bookId: 'leela_charitra',
+    number: 293,
+    title: 'लीळा २९३: दाईबां डखलेयां पाठवणी',
+    titleEn: 'Leela 293: Daiban Dakhaleyan Pathavani',
+    content: 'दाईबां डखलेयां पाठवणी ॥',
+    explanation: '**लीळा भावार्थ व निरूपण:**\n\n**प्रसंग:** श्री चक्रधर स्वामींनी दाईबा आणि डखले यांना काही विशिष्ट कामासाठी परत पाठवले.\n\n**विवरण आणि निरूपण:**\nडोंबेग्राम येथील वास्तव्यात स्वामींनी आपले दोन प्रमुख शिष्य दाईबा आणि डखले यांना पुढील कार्यासाठी किंवा निरोपासाठी पाठवले.\n\n**निष्कर्ष:**\nस्वामींच्या आज्ञेने शिष्यांचे हे प्रस्थान त्यांच्या आज्ञापालनाचे उत्तम प्रतीक आहे।'
+  },
+  {
+    id: 'lc_p294',
+    bookId: 'leela_charitra',
+    number: 294,
+    title: 'लीळा २९४: बीडौं आटवलीए माहालखूमीए अवस्थान',
+    titleEn: 'Leela 294: Beedon Atavalie Mahalakhumie Avasthan',
+    content: 'गोसावीं बींडीं माहालखूमीचेया देऊळासि बीजें केलें : चौकीं नावेक अवलोकीत उभे होते : देऊळामागें प्रसनाएकाचीया गुंफा होतीया : तेउतें गोसावीं बीजें केलें : गुंफेचीया दोन्हीं दारसका धरूनि भीतारीं अवलोकी लें : तवं प्रसनाएक गुंफेआंतु बैसले असति : तवं तेहीं पुसिलें : "जी जी : काइ पाहिजेत असिजे ?" सर्वज्ञें म्हणीतलें : "बीढार पाहिजेत असिजे :" "जी जी : एथ भीतरी बीढार कीजो जी : मी एथ बाहेरी असैन :" मग तीं आपुला परिग्रहो परता ठेवुनि गोसावीयांसि वोटा संपादिली : ते पटिसाळेवरि राहिले : गोसावीयांसि गुंफे मास च्यारि अवस्थान जालें : ॥',
+    explanation: '**लीळा भावार्थ व निरूपण:**\n\n**प्रसंग:** बीडजवळील आटवली येथील महालक्ष्मी मंदिरात स्वामींचे ४ महिने वास्तव्य आणि तिथे प्रसनायक (प्रसन्नायक) या साधकाशी झालेली भेट व गुंफेतील चातुर्मास मुक्काम.\n\n**विवरण आणि निरूपण:**\n१. **महालक्ष्मी मंदिरात आगमन:**\nस्वामी आटवली येथील महालक्ष्मी मंदिराच्या आवारात आले. मंदिराच्या मंडपात (चौकीत) काही काळ उभे राहून त्यांनी परिसर पाहिला. मंदिराच्या पाठीमागे \'प्रसनायक\' नावाच्या साधकाची गुंफा होती. स्वामी त्या गुंफेकडे गेले.\n२. **प्रसन्नायक साधकाशी संवाद आणि जागा सोडून देणे:**\nस्वामींनी गुंफेच्या दोन्ही बाजूंचे उंबरठे (दारसका) धरून आत पाहिले. आत प्रसनायक बसले होते. स्वामींना पाहून त्यांनी विचारले, "बाबा, आपल्याला काय हवे आहे?" स्वामींनी सांगितले, "आम्हाला राहण्यासाठी जागा (बिढार) हवी आहे." प्रसनायक अत्यंत उदार मनाचे साधक होते. त्यांनी तात्काळ सांगितले, "बाबा, आपण या गुंफेत राहा. मी बाहेर राहीन." त्यांनी स्वतःचे सर्व साहित्य बाजूला केले आणि स्वामींना राहण्यासाठी गुंफेत जागा (वोटा/ओटा) स्वच्छ करून दिली. प्रसनायक स्वतः मंदिराच्या पडवीत (पटिसाळेवरि) राहू लागले. स्वामींनी या गुंफेत चार महिने मुक्काम केला.\n\n**निष्कर्ष:**\nया लीळेतून भक्ताचे किंवा साधकाचे सद्गुरूंप्रती असलेले समर्पण आणि त्याग दिसून येतो।'
+  },
+  {
+    id: 'lc_p295',
+    bookId: 'leela_charitra',
+    number: 295,
+    title: 'लीळा २९५: प्रसनाएकां भेटी : स्तीति',
+    titleEn: 'Leela 295: Prasanaekan Bheti : Stiti',
+    content: 'प्रसनाएक पुढां बैसले होते : तेयांसि गोसावीयांपासोनि स्तीति जाली : स्तीति भोगुं सरली : मग परसनायक म्हणति : "गोसावीयांपासोनि आम्हां ब्रम्हस्तीति जाली :" मग तेहीं गोसावीयांसि ओटेयावरि आसन रचीलें : चरणक्षाळण केलें : चरणोदक घेतलें : टीळागंधाक्षता केलीया : रेमनाएकें* अपरपक्षीं वरवी दुटी वाइली होती : ते धूनि ठेविली होती : ते गोसावीयांसि ओळगविली : ॥',
+    explanation: '**लीळा भावार्थ व निरूपण:**\n\n**प्रसंग:** प्रसनायकांनी स्वामींच्या सान्निध्यात ब्रह्मावस्था (ब्रह्मस्थिती) प्राप्त केली आणि भक्तीभावाने स्वामींची पूजा करून त्यांना वस्त्र अर्पण केले.\n\n**विवरण आणि निरूपण:**\n१. **ब्रह्मस्थितीची प्राप्ती:**\nप्रसनायक स्वामींच्या समोर बसले होते. स्वामींच्या दिव्य सान्निध्यामुळे आणि अपार कृपेने प्रसनायकांना अध्यात्मिक स्थिती (स्थिती/समाधी) प्राप्त झाली. तो दिव्य अनुभव भोगल्यानंतर ते समाधीतून जागे झाले. त्यांनी अत्यंत आनंदाने उद्गार काढले, "स्वामींच्या दिव्य कृपेने मला प्रत्यक्ष ब्रह्मस्थितीची प्राप्ती झाली!"\n२. **स्वामींची षोडशोपचारे पूजा व वस्त्र समर्पण:**\nप्रसन्नायकांनी अत्यंत कृतज्ञतेने स्वामींसाठी मठाच्या ओट्यावर सुंदर आसन मांडले. स्वामींचे पाय धुतले (चरणक्षाळण केले), ते पवित्र तीर्थ प्राशन केले (चरणोदक घेतले), आणि कपाळावर टिळा, गंध व अक्षता लावून पूजा केली. तसेच, रेमनायकांनी (त्यांच्या सहकाऱ्याने) पितृपक्षात (अपरपक्षी) आणून धुवून ठेवलेली पांढरी शुभ्र चादर (वरवी दुटी) स्वामींच्या चरणी वस्त्र म्हणून अर्पण केली (ओळगविली).\n\n**निष्कर्ष:**\nसद्गुरूंच्या प्रत्यक्ष दर्शनाने आणि सान्निध्याने भक्ताला तात्काळ ब्रह्मसाक्षात्कार कसा होतो, हे प्रसनायकांच्या या अद्भूत अनुभवातून स्पष्ट होते।'
+  },
+  {
+    id: 'lc_p296',
+    bookId: 'leela_charitra',
+    number: 296,
+    title: 'लीळा २९६: पद्मनाभी भेटि : स्तीति',
+    titleEn: 'Leela 296: Padmanabhi Bheti : Stiti',
+    content: 'मग रेमनाएका : जोगनाएका : पद्मनाभी : सारस्वतभटांपुढें : प्रसनाएकें सांगीतलें : जें गोसावी आले असति म्हणौनि : एतुकेनि ते अवघे गोसावीयांचेया दरीसनासि आले : गोसावीयांसी भेटि जाली : नावेक बैसले होते : मग गोसावीं तेयांसि पाठवणी दीधली : सारस्वतभटां भोगनारायेणाचे देऊळी दरीसन जालें होतें : म्हणौनि ते गोसाविचेया दरीसनां येती : तेयासवें पद्मनाभीदेव yeती : ते नावेक चळवळे : बाईसां कांही म्हणीयें करूं लागती : बाइसे म्हणती : "बटिका : yeइजो हो : बाबा नीके :" मग एक्लेयां एवों लागले* : मग पद्मनाभीदेवांसि गोसावीयांपासीनी स्तीति जाली : मग पद्मनाभीदेव गोसावीयांचि पासी राहिले : गोसावीयांचे शेवादास्य करूं लागले : मग सारस्वतभट दीहां yeका आड yeती : मग ते दीसा आडा yeती : मग म्हणती : "मी अमुकेया तमुकेयाचा ठाया गेला होतां : तो आरायेंचि ना* :" गोसावीं वीहरणासि बीजें केलें : बनीं आसन जालें : पासी पद्मनाभिदेव बैसले असति : तवं सारस्वतभट गंगेकडौनि गावांकडे एताति : गोसावीयांतें देखिलें : आणि आडपाळउ ओडउनि गोसावीयांवरोनि कानवडे गावांकडे नीगाले : तवं बाईसीं म्हणीतलें : "बाबा : पैल सारस्वतभट नव्हति ?" सर्वज्ञें म्हणीतलें : "होति बाइ" : बाईसीं म्हणीतलें : "बाबा हा ब्राह्मणु आधीं बाबापासि ए : उठी बैसे : दंडवत करी : आतां आडपालउ ओडउनि कां जातु असे ?" सर्वज्ञें म्हणीतलें : "बाइ : हा बटीकु एथ राहिला म्हणौनि :" तवं बाईसीं म्हणीतलें : "बाबा : हा येथ असे : तरी यासी आडवे जावेया कारण काइ ?" सर्वज्ञें म्हणीतलें : "बाइ : हा याचा सीखू : यासि सीक्षाचा सीखू : यासि सीक्षाचा अभिमानु वर्तत असे : तेयाचा तुम्ही अतिसो न करावा हो : सीक्षाचा अभिमानु म्हेळीएचेयापासौनि अधीकु :" याउपरि गोसावी पंचकौळ आचार्याची गोष्टि सांगीतली* : मग बाईसीं म्हणीतलें : "बटिका : तरि तुं एथें न ये : " ॥',
+    explanation: '**लीळा भावार्थ व निरूपण:**\n\n**प्रसंग:** पद्मनाभदेव यांची स्वामींशी झालेली भेट, त्यांना प्राप्त झालेली ब्रह्मस्थिती, त्यांचे सेवादास्य आणि सारस्वतभटांच्या मनातील शिष्याभिमानाचे (अभिमानाचे) स्वामींनी केलेले निरूपण.\n\n**विवरण आणि निरूपण:**\n१. **भेट आणि ब्रह्मस्थितीची प्राप्ती:**\nप्रसन्नायकांनी रेमनायक, जोगनायक, पद्मनाभदेव आणि सारस्वतभट यांना स्वामींच्या आगमनाविषयी सांगितले. ते सर्वजण स्वामींच्या दर्शनासाठी आले. स्वामींनी त्यांची भेट घेतली व निरोप दिला. परंतु सारस्वतभटांना आधी भोगनारायण मंदिरात स्वामींचे दर्शन लाभले होते, म्हणून ते स्वामींच्या दर्शनासाठी वारंवार येऊ लागले. सोबत पद्मनाभदेवही येत असत. पद्मनाभदेव सुरुवातीला थोडे संकोची होते. बाईसांनी त्यांना धीर देत सांगितले, "बटिका, येत जा, बाबा अत्यंत दयाळू आहेत." नंतर पद्मनाभदेव एकटेच येऊ लागले आणि स्वामींच्या सान्निध्यात त्यांना परम शांती व ब्रह्मस्थिती प्राप्त झाली. ते स्वामींजवळच राहून त्यांचे सेवादास्य करू लागले.\n२. **सारस्वतभटांचा मत्सर व अभिमान:**\nदुसरीकडे, सारस्वतभट काही दिवसांच्या अंतराने येत असत. एके दिवशी स्वामी जंगलात बसले होते, जवळ पद्मनाभदेव बसले होते. तेवढ्यात सारस्वतभट नदीवरून गावाकडे येताना दिसले. स्वामींना पाहून त्यांनी मार्ग बदलला आणि तोंडावर वस्त्र ओढून (आडपाळउ ओडउनि) तिरपे निघून गेले. बाईसांनी विचारले, "बाबा, ते आधी तुमच्यापाशी येत असत, दंडवत घालत. आता मार्ग का बदलत आहेत?" स्वामींनी सांगितले की, पद्मनाभदेव (त्यांचा पूर्वीचा शिष्य) आता माझ्यापाशी सेवेला राहिला आहे, म्हणून ते असे वागत आहेत. गुरुला आपल्या शिष्याचा अभिमान असतो. तो संसारी आसक्तीपेक्षाही तीव्र असतो.\n\n**निष्कर्ष:**\nया प्रदीर्घ लीळेतून सद्गुरूंची अगाध कृपा आणि मानवी मनातील अभिमान व अहंकाराचे सूक्ष्म विश्लेषण पाहायला मिळते।'
+  },
+  {
+    id: 'lc_p297',
+    bookId: 'leela_charitra',
+    number: 297,
+    title: 'लीळा २९७: पद्मनाभीचा उपहारू : वस्त्रपुजा',
+    titleEn: 'Leela 297: Padmanabhicha Upaharu : Vastrapuja',
+    content: 'मग पद्मनाभीं मोटका गोसावीयांचिपुरता उपहारू नीफजवीला : गोसावीयांसि वस्त्रपुजा केली : ॥',
+    explanation: '**लीळा भावार्थ व निरूपण:**\n\n**प्रसंग:** पद्मनाभदेवांनी स्वामींसाठी अल्प नैवेद्य (उपहार) तयार केला आणि वस्त्रपूजा करून त्यांचे पूजन केले.\n\n**विवरण आणि निरूपण:**\nपद्मनाभदेवांनी केवळ स्वामींपुरताच (गोसावीयांचिपुरता) लहानसा नैवेद्य/उपहार तयार केला आणि तो स्वामींना अर्पण केला. त्यानंतर त्यांनी स्वामींच्या चरणी वस्त्र अर्पण करून त्यांची वस्त्रपूजा केली.\n\n**निष्कर्ष:**\nभक्ताचे लहानसे पण अत्यंत मनापासून केलेले समर्पण स्वामींना किती प्रिय असते, हे या लीळेतून स्पष्ट होते।'
+  },
+  {
+    id: 'lc_p298',
+    bookId: 'leela_charitra',
+    number: 298,
+    title: 'लीळा २९८: रेमनाएकां अवसरूअनअवसरू कथन',
+    titleEn: 'Leela 298: Ramanathan Avasarunavasaru Kathan',
+    content: 'एक वेळ पद्मनाभिदेवीं रेमनाएकापुढें गोसावीयांची प्रसंसा केली* : रेमनाएकु गोसावीयांचेया दरीसनासि आले : तवं गोसावीयांसि भीतरi मर्दना होति असे : भीतारी रेमनाएक आले : आणि पटिसाळेवरि उभे ठेले : कव्हणा एकांतें पुसिलें : "गोसावीयांसि कैसा अवसरू असे ?" तेहीं म्हणीतलें : "गोसावीयांसि मर्दना होत असे : " "तरि गोसावीयांपुढां जाणावा कां : जें रेमनाएक आले असति :" तेहीं जाणीवलें* : गोसावीयांसि जीए जाडीवरि मर्दना होत होती* तीएचि जाडीचें गोसावीं कोंगंतें घेतले : आणि बाहिरि बीजें केलें : रेमनाएकें पुसिलें : " श्रीचांगदेवेराउळा गोसावीयांसि कैसा अवसरू असे ?" सर्वज्ञें म्हणीतलें : " एथ ऐसा अवसरू असे : " गोसावीं जाडी फेडौनि अवधी श्रीमुति उघडौनि दाखवीली आणि मग रेमनाएकें म्हणीतलें : " जी जी : मी अनअवसरौं आलां जी : मीयां गोसावीयांसि कैसा अवसरू असे म्हणौनि सोधावें : मग मीयां यावें किं : तें नेणेंचि जी : आतां मर्दना हों दीजो : मी मागोता एइन : " सर्वज्ञें म्हणीतलें : " तुम्हांसि* अवसरूअनअवसरू नाहीं हो : " ॥',
+    explanation: '**लीळा भावार्थ व निरूपण:**\n\n**प्रसंग:** रेमनायक आले तेव्हा स्वामींचे अंगमर्दन चालू होते. स्वामींनी आडोसा (जाडी) दूर करून संपूर्ण श्रीमूर्तीचे दर्शन दिले आणि भक्तासाठी वेळ-अवेळ (अवसर-अनअवसर) काही नसते, असा दिव्य उपदेश केला.\n\n**विवरण आणि निरूपण:**\n१. **प्रशंसा ऐकून आगमन:**\nपद्मनाभदेवांनी रेमनायकांजवळ स्वामींच्या दिव्य स्वरूपाची प्रशंसा केली. ती ऐकून रेमनायक स्वामींच्या दर्शनासाठी मठात आले.\n२. **अंगमर्दन आणि आडोसा:**\nत्या वेळी गुंफेत स्वामींचे अंगमर्दन (मालिश) चालले होते. रेमनायक आत आले आणि पडवीत (पटिसाळेवरि) उभे राहिले. त्यांनी विचारले, "स्वामींना दर्शन घेता येईल का?" त्यांना समजले की आत स्वामींना अंगमर्दन चालू आहे. रेमनायकांनी सांगितले, "कृपया स्वामींना सांगा की रेमनायक दर्शनासाठी आले आहेत."\n३. **आडोसा बाजूला करून दर्शन:**\nस्वामींनी स्वतःच तो आडोसा (जाडी) अंगाभोवती लपेटला आणि ते बाहेर आले. रेमनायकांनी विचारले, "दर्शनाची काय वेळ (अवसर) आहे?" स्वामींनी हसतमुखाने सांगितले, "इथे असा अवसर आहे!" असे म्हणून स्वामींनी अंगावरील तो आडोसा बाजूला केला आणि आपली संपूर्ण तेजोमय श्रीमूर्ती रेमनायकांसमोर उघडून दाखवली. रेमनायक अत्यंत संकोचले व म्हणाले, "बाबा, मी अत्यंत चुकीच्या वेळी (अनअवसरौं) आलो." स्वामींनी सांगितले, "रेमनायका, तुमच्यासारख्या भक्तासाठी वेळ आणि अ वेळ असा कोणताही भेद नसतो."\n\n**निष्कर्ष:**\nभक्ताच्या भक्तीपुढे ईश्वराचे सर्व नियम आणि संकोच कसे गळून पडतात, याचे हे अत्यंत सुंदर दर्शन आहे।'
+  },
+  {
+    id: 'lc_p299',
+    bookId: 'leela_charitra',
+    number: 299,
+    title: 'लीळा २९९: कोले घाएखंडि दाखवणें',
+    titleEn: 'Leela 299: Kole Ghaekhandi Dakhavane',
+    content: 'गोसावी वीहरणासि बीजें करीत होते : तवं राजगुरू* ऐसा गरूडीकडौनि सीक्षांसी एतु होता : तवं गोसावीं ऐसा सराउवांचा अनुकारू केला : आणि तेणें जाणीतलें : आपुला कोलू गोसावीयांचा श्रीकरीं ओळगविला : आणि तेणें आपुलेया सीक्षाचा कोलू घेतला : गोसावीं* ऐसें कोलें करौनि परिजीलें : आणि तेणेंही परिजीलें : सर्वज्ञें म्हणीतलें : "हाणा हाणा : नाएका : " ऐसें म्हणोनि गोसावीं तेयांसि* चौरंगी घाओ केला : आणि गोसावीं कोलू ठेविला : आणि नीगाले : तेणें म्हणीतलें : "जी जी : एकु वेळु घाएखंडि दाखवीजो जी :" सर्वज्ञें म्हणीतलें : "आता न दाखविजे :" ऐसें तेणें तीसुधी म्हणीतलें : गोसावीं तीसुधी नीराकारिलें : बाईसीं म्हणीतलें : "बाबा : बापुडा वीनवीत असे : तरि कां दाखवीजे ना ?" सर्वज्ञें म्हणीतलें : "बाइ : पोह प्रान्नु असे : एक वेळु दाखवीजैल आणि एइल* : आणि घायाघाया प्राणीयातें ठेवील : " ॥',
+    explanation: '**लीळा भावार्थ व निरूपण:**\n\n**प्रसंग:** स्वामी विहरणासाठी चालले असताना एका जादूगाराने (राजगुरू/गारुडी) शस्त्राचे खेळ करताना स्वामींशी स्पर्धा केली. स्वामींनी त्याला चौरंगी घाव मारला आणि त्याचा घाव दाखवण्याचा (घाएखंडि) हट्ट फेटाळून लावला.\n\n**विवरण आणि निरूपण:**\n१. **शस्त्र खेळ आणि स्पर्धा:**\nस्वामी जंगलात विहरणासाठी गेले होते. तिथे एक राजगुरू आपल्या शिष्यांना शस्त्रांचा सराव देऊन परत येत होता. स्वामींनी त्याच्या खेळ चालवण्याचा अनुकरण करत त्याला आव्हान दिले. त्या राजगुरूने स्वामींचे सामर्थ्य ओळखून आपल्या हातातील भाला (कोलू) स्वामींच्या चरणी अर्पण केला आणि आपल्या शिष्याकडून दुसरा कोलू घेतला. स्वामींनी तो कोलू हातामध्ये फिरवून व चमकवून पाहिला.\n२. **चौरंगी घाव व पराभव:**\nस्वामींनी म्हटले, "नायका, आता प्रहार कर!" आणि स्वामींनी अत्यंत वेगाने तो शस्त्र फिरवून त्या राजगुरूवर \'चौरंगी घाव\' केला. त्यानंतर स्वामींनी तो कोलू खाली ठेवला आणि पुढे निघून गेले.\n३. **घाएखंडि पाहण्याचा हट्ट:**\nतो राजगुरू थक्क झाला आणि स्वामींच्या पाठीमागे येत म्हणाला, "बाबा, एकदा मला तो घाएखंडी दाखवा ना!" स्वामींनी त्याला स्पष्ट नकार दिला. त्याने तीन वेळा हाच हट्ट केला, पण स्वामींनी तीनही वेळा नकार दिला.\n४. **स्वामींचा नकार आणि कारण:**\nबाईसांनी विचारले, "बाबा, तो बिचारा कळकळीने विनंती करत आहे, मग त्याला ती विद्या का दाखवत नाही?" स्वामींनी सांगितले, "बाई, हा मुलगा अजून अज्ञानी आणि चंचल आहे. त्याला जर एकदा ही विद्या दाखवली आणि ती त्याला साध्य झाली, तर तो लोकांवर नाहक वार करत सुटेल आणि निष्पाप प्राण्यांना व माणसांना जखमी करून संकटात टाकेल."\n\n**निष्कर्ष:**\nएखादी शक्ती किंवा विद्या चुकीच्या माणसाच्या हाती गेल्यास काय अनर्थ घडू शकतो, याचे स्वामींचे दूरगामी आणि समाजकल्याणकारी ज्ञान यातून स्पष्ट होते।'
+  },
+  {
+    id: 'lc_p300',
+    bookId: 'leela_charitra',
+    number: 300,
+    title: 'लीळा ३००: सुकीयां जोगनाएकां दूखा उपनोति',
+    titleEn: 'Leela 300: Sukiyan Joganaekan Dukha Upanoti',
+    content: 'एकु दीसु गोसावीं वीहरणाहुनि बीजें केलें : गोसावीयांसि चरणक्षाळण होत होतें : तवं सुकीया जोगनाएकू* आले : दंडवत घातलें : श्रीचरणां लागले : चरणोदक घेतलें : आणि माथा सींपिला : भीतारि घेतलें : "जी जी : नीवालां जी : जळत* होतां जी :" सर्वज्ञें म्हणीतलें : "नाएका : जळात* कां ?" "जी जी : मी मीरजेकढील उभेया मार्गीचा सुकीं* : मी तेलंग देसासि गेला होतां : अवचीए मार्गीचें मज सुंक होतें : द्रव्य बहुत जोडीलें होतें जी : आतां देसासि जाउनि सोइरेयाधाइरेयाआंतु वेचुं : वेओव्हाडु करूं : ऐसें म्हणौनि बैलु भरूनि घेऊन एत होतां : मी मार्गा राहीलां : जनु* होता तो बैलु घेउनि पळाला : तें द्रव्य गेलें : मग गावांसि आलां : गांठी* मुदी वीकुनि वडीलु पुतु पसारा* बैसवीला : मग तेंचि भांडवल धाकुटेयाचां हातीं देउनि पसारां बैसवीला : तवं तोही सरला : मग ब्राह्मणि सरली : तें दूख पडिलें : तेणें दूखें मी जळतूचि असें : मग मी देऊळासि जाएं : देऊळी सुख नाहीं : पुराणासि जाएं : तवं तेथ सुख नाहीं : संतामहंतां संन्यास्यांपासि* बैसें : तेथही सुख नाहीं : ऐसा जळतुचि असें जी : गोसावीयांपासि आलां तेह्वळीचि नीवालां जी :" सर्वज्ञें म्हणीतलें : "द्रव्यसोखू : पुत्रासोखू : घरभंगू : एं तीन्ही पुरुषासि असाहीए कीं नाएका :" नावेक होता : मग गोसावीं पाठवणी दीधली : नीगतां सर्वज्ञें म्हणीतलें : "नायको : एथ एओं आवडैल तरि एइजे हो :" तवं तेहीं म्हणीतलें : "तरि काइ जी : आतां मी एथचि एइन :" मग नीगाले : ॥',
+    explanation: '**लीळा भावार्थ व निरूपण:**\n\n**प्रसंग:** सुक्या जोगनायक यांच्यावर कोसळलेल्या दुःखाचा डोंगर (संपत्तीची चोरी, मुलांचे व पत्नीचे मृत्यू) आणि स्वामींच्या सान्निध्यात मिळालेली परम शांती (शीतलता).\n\n**विवरण आणि निरूपण:**\n१. **शरण आणि मनाची तगमग:**\nएके दिवशी स्वामी जंगलातून फिरून मठात परतले. भक्तांकडून त्यांचे पाय धुणे चालले होते. तेवढ्यात तिथे सुक्या जोगनायक आले. त्यांनी स्वामींच्या चरणांवर डोके ठेवून दंडवत घातले आणि म्हणाले, "बाबा! आपल्या पाशी येताच माझे मन शांत झाले. आतापर्यंत मी दुःखाच्या आगीत जळत होतो!" स्वामींनी विचारले, "नायका, तू कोणत्या चिंतेने जळत होतास?"\n२. **दुःखाचा इतिहास:**\nजोगनायकांनी आपले करुण वृत्त सांगितले: "मी मिरज जवळील सुक गावचा आहे. मी तेलंगण देशात व्यापारासाठी गेलो होतो. तिथे अमाप संपत्ती कमावून बैलावर लादून गावी येत असताना, माझ्या सोबत असलेला माणूस तो संपत्तीचा बैल घेऊन पळून गेला! संपत्ती गेल्यावर मी गावी परतलो. शेवटची अंगठी व दागिने विकून मोठ्या मुलाला व्यापार सुरू करून दिला, पण तो मरण पावला. उरलेले भांडवल धाकट्या मुलाला दिले तर तोही मरण पावला! काही दिवसांनी पत्नीही देवाघरी गेली. या संकटांमुळे माझे मन सतत जळत होते. मी देवळात, पुराणात आणि संन्याशांकडे गेलो पण कुठेही सुख मिळाले नाही. पण बाबा! आज आपल्या चरणांशी येताच माझे मन शांत झाले!"\n३. **स्वामींचे सांत्वन:**\nस्वामींनी अत्यंत कारुण्याने सांत्वन करताना म्हटले, "नायका, पैशांचे नुकसान (द्रव्यसोखू), पुत्रांचा वियोग (पुत्रासोखू), आणि संसाराचा नाश (घरभंगू) या तीन गोष्टी पुरुषासाठी सहन करण्यापलीकडच्या (असाहीए) असतात." निघताना स्वामी म्हणाले, "नायका, पुन्हा येत जा." त्यांनी सांगितले, "बाबा, आता मी कायमचा आपल्या चरणीच येईन!"\n\n**निष्कर्ष:**\nसंसारातील दुःखांनी गांजलेला मनुष्य जेव्हा ईश्वरी सान्निध्यात येतो, तेव्हा त्याला खरा शाश्वत विसावा मिळतो, हे या भावस्पर्शी लीळेतून दिसून येते।'
+  },
+  {
+    id: 'lc_p301',
+    bookId: 'leela_charitra',
+    number: 301,
+    title: 'लीळा ३०१: बाईसीं माहात्मेयांची वाट पाहणें',
+    titleEn: 'Leela 301: Baisin Mahatmeyanchi Vat Pahane',
+    content: 'एकु दीसु बाईसीं गोसावीयातें म्हणीतलें : "वावा : सांपें कोणीही माहात्मे नैएती कीं : खंति लागति असे : " सर्वज्ञें म्हणीतलें : "बाइ : तैसेंचि एथ होत असे : हें एथ असे ऐसें कोणी जाणे ना : आजि पाहे एती बाइ : पाणीभातु सांचुनि ठेवा : " ॥',
+    explanation: '**लीळा भावार्थ व निरूपण:**\n\n**प्रसंग:** बाईसांनी मठात नवीन साधक (महात्मे) न आल्यामुळे काळजी व्यक्त केली, तेव्हा स्वामींनी त्यांना सांगितले की आज नवीन साधक नक्की येतील, म्हणून जेवण व पाणी तयार ठेवण्यास सांगितले.\n\n**विवरण आणि निरूपण:**\nबीड येथील वास्तव्यात अनेक दिवसांपासून मठात नवीन भक्त किंवा साधक आले नव्हते. त्यामुळे बाईसांनी काळजीपोटी स्वामींना सांगितले, "बाबा, बरेच दिवस झाले, मठात कोणीही नवीन महात्मे आलेले नाहीत. मला वाईट (खंति) वाटत आहे." स्वामींनी सांगितले, "बाई, आपण इथे बीडमध्ये वास्तव्याला आहोत, हे अजून अनेकांना माहीत नाही. त्यामुळे ते आले नाहीत. पण काळजी करू नको, आज नक्कीच काही लोक येतील. तू त्यांच्यासाठी जेवण-पाणी तयार ठेवून दे."\n\n**निष्कर्ष:**\nस्वामींच्या अंतर्ज्ञानी आणि त्रिकालदर्शी स्वरूपाची प्रचिती या लीळेतून येते।'
+  },
+  {
+    id: 'lc_p302',
+    bookId: 'leela_charitra',
+    number: 302,
+    title: 'लीळा ३०२: देवां : भटां भेटि',
+    titleEn: 'Leela 302: Devan : Bhatan Bheti',
+    content: 'एकु दीसु देव आणि भट कांबखेडेयासि आले होते : तेथ भटीं पर्वाकारणें दोनि वस्त्रें वीणवीलीं : दामीं दों आगळें तें दादोसाकारणें वीणवीलें : दामीं दों उणे तें आपणेयांसि वीणवीलें : मग ते कांबखेडांहुनि बीडासि आले : वीळीचां हाटवटीएसि आले : तवं वीळीचांची गोदरी भरली देखिली : दोहीं सुरकोनीं दिवे लागले असति* : बरवीं पानें : पोफळें : केळें : नारीएळें : बरवीं फळें ऐसीं देखिलीं : तवं भटीं म्हणीतलें : "दादो : कैसीं बरवीं पानें : पोफळें : फुलें गोसावीयांजोगीं : " देवीं म्हणीतलें : "हो नागदेया : गोसावी कवणी ठाई राज्य करीत असती ऐसें जाणिजति ना : एह्नीं घेतों : " मग ते yeकी ठाई वसिनले : उदीयांची घाटासि* आले : भट धोत्रें धूत असति : देव उजाइ करीत असति : गोसावीयांसि उदीयांचा पुजाअवस्वरू जालेयानंतरें गोसावी आसनीं उपविष्ट असति : सर्वज्ञें म्हणीतलें : "बाइ : माहात्मेयांचेया ऐसी उजाइ कवण करीत असे ?" बाईसीं म्हणीतलें : "बाबा : माहात्मा एथ काइ असेल ? बाबा : माहात्मा एथ नेणों केती असती : " गोसावीं प्रसनाएकाची दूटि प्रावर्ण केली असे : उपान्हौ* श्रीचरणीं घातलीया* : सामोरें खीडकीएपासि बीजें केलें : दोन्ही दारसका धरूनि उभे असति : गोसावीं अवलोकिलें : तवं देवांभटांतें देखिलें : खांकारिले आणि इखीत हांस्य केलें : गोसावीयांचीए श्रोमुर्तिचेनि : आणि दूटिएचेनि : आणि सुर्याचेनि तेजें : ऐसा प्रकासु उदकाआंतु पडिला : आणि भटीं मागील वास पाहिली : तवं गोसावीयांतें देखिलें : आणि म्हणीतलें : "दादो दादो : गोसावी गोसावी : " "ना कें असति ?" "ना हे नव्हति* : " तैसेचि देव धावीनले : गोसावीं पाइरीया दोनि उतरौनि सामोरेया बीजें केलें : दादोसां क्षेमाळींगन* दीधलें : मागिलांकडौनि भटींही क्षेमाळींगन दीधले : गोसावीं एकु श्रीकरू काढुनि भटांचीए पाठीवरि घातला : ऐसें दोघां क्षेमाळींगन दीधलें : मग गोसावीं बीढारासि बीजें केलें : देव म्हणों लागले : "नागदेया : कालि तुं म्हणत होतासि तें करि : जाए : " भटोबास पुजाद्रव्यें घेओं गेले : पानें : पोफळें : फूलें : केळें : पुजाद्रव्यें घेऊन आले : चंदनाचीया गोळीया प्रतिलीया : मग गोसावीयांसि आडा रेखिला : पूजा केली : मग देवीं गोसावीयांतें वीणवीलें : "जी जी : गोसावी कवणी ठाई राज्य करीत असति : ऐसें तीएं कोन्हीं अवघीं जाणति ना : तरि पर्वाकारणें तीएं एथचि बोलाउं ? मग एथचि गोसावीयांचां ठांई पर्व करिती :" सर्वज्ञें म्हणीतलें : "बोलावा : " मग भटोबास पाठवीलें : भट साडेगावा गेले : आबैसें : उमैसे : भट : ऐसीं बळ्हेग्रामा आले : तेथ उपाध्ये : चांगदेवोभट : गोंदो : सोभागें : दाईबा : ऐसीं बीडासि पर्वाकारणें आलीं : गोसावीयांसि दंडवतें घातलीं : श्रीचरणां लागलीं : मग दादोसां भेटलीं : दादोसाचां बीढारीं राहिलीं : ॥',
+    explanation: '**लीळा भावार्थ व निरूपण:**\n\n**प्रसंग:** रामदेव (दादोस) आणि नागदेवाचार्य (भट) यांची कांबखेड्याहून बीडला आल्यावर नदी घाटावर स्वामींशी झालेली अद्भूत आणि अत्यंत भावस्पर्शी भेट, क्षेमालींगन (मिठी) आणि बीड येथे सण (पर्व) साजरा करण्यासाठी सर्व भक्तांचे एकत्र येणे.\n\n**विवरण आणि निरूपण:**\n१. **वस्त्रे विणणे व बीडमध्ये आगमन:**\nदादोस आणि नागदेवाचार्य कांबखेड्याहून बीड येथे आले. नागदेवाचार्यांनी सणाच्या प्रसंगासाठी दोन नवीन वस्त्रे विणवून घेतली. त्यापैकी थोडे महाग वस्त्र दादोसांसाठी आणि थोडे स्वस्त वस्त्र स्वतःसाठी तयार करून घेतले. बीडच्या बाजारात उत्तम पानांची व फळांची दुकाने पाहून नागदेवाचार्य म्हणाले, "दादो, किती सुंदर पाने, सुपारी व फळे आहेत! आपल्या स्वामींच्या पूजेसाठी ही योग्य आहेत." दादोसांनी सांगितले की, आपले स्वामी सध्या कुठे आहेत हे आपल्याला माहीत नाही, तरीही आपण ही सर्व सामग्री खरेदी करूया.\n२. **घाटावरील दृश्य आणि स्वामींचा प्रकाश:**\nदुसऱ्या दिवशी सकाळी दोघे नदी घाटावर आले. नागदेवाचार्य तिथे नदीपात्रात कपडे धूत होते, तर दादोस सूर्याची पूजा (उजाइ) करत होते. मठात स्वामींची सकाळची पूजा झाली होती. नदी घाटावरून येणारा आवाज ऐकून स्वामींनी बाईसांना विचारले, "बाई, बाहेर नदीवर महात्म्यासारखी सूर्याची पूजा कोण करत आहे?" बाईसा म्हणाल्या, "बाबा, या बीडमध्ये आपले कितीतरी भक्त आले असतील, मला माहीत नाही."\n३. **अद्भूत भेट व क्षेमालींगन:**\nत्यानंतर स्वामींनी प्रसनायकांनी दिलेली पांढरी चादर अंगाभोवती लपेटली, पायात पादत्राणे घातली आणि मठाच्या खिडकीपाशी उभे राहिले. स्वामींनी पाहिले तर समोर दोघे जण होते. स्वामींनी खाकरणे केले आणि हसले. उगवत्या सूर्याचे तेज, स्वामींची सुंदर श्रीमूर्ती आणि पांढऱ्या चादरीचे तेज यांचा अद्भूत प्रकाश गोदावरीच्या पाण्यात पडला. पाण्यात पडलेला तो दिव्य प्रकाश नागदेवाचार्यांनी पाहिला आणि मागे वळून पाहिले तर प्रत्यक्ष श्री चक्रधर स्वामी खिडकीत उभे असलेले दिसले! नागदेवाचार्य आनंदाने ओरडले, "दादो दादो! गोसावी! गोसावी!" दोघे धावत गेले. स्वामींनी पायऱ्या उतरून सामोरे येत दादोसांना व नागदेवाचार्यांना प्रेमाचे कडकडून आलिंगन (क्षेमाळींगन) दिले.\n४. **सर्व भक्तांचे एकत्र येणे:**\nमठात आल्यावर नागदेवाचार्यांनी आणलेल्या साहित्याने स्वामींची विधिवत पूजा केली. दादोसांनी स्वामींना विनंती केली की, सणासाठी (पर्वकाल) आपण सर्व भक्तांना इथेच बोलावून घेऊया का? स्वामींनी संमती दिली. नागदेवाचार्यांना निरोप देण्यासाठी पाठवले गेले. साडेगाव व बळ्हेग्रामहून आबैसा, उमैसा, उपाध्ये, चांगदेवभट, गोंदो, सोभागे आणि दाईबा हे सर्वजण बीडला सणासाठी एकत्र आले. सर्वांनी स्वामींचे दर्शन घेतले व दादोसांच्या बिढारात मुक्कामास राहिले.\n\n**निष्कर्ष:**\nहा प्रसंग नागदेवाचार्य व दादोस यांचे स्वामींप्रती असलेले असीम प्रेम आणि नदी घाटावरील त्या दिव्य आलिंगनाचे अप्रतिम व भावस्पर्शी चित्र उभे करतो।'
+  },
+  {
+    id: 'lc_p303',
+    bookId: 'leela_charitra',
+    number: 303,
+    title: 'लीळा ३०३: पर्वी पुजा',
+    titleEn: 'Leela 303: Parvi Puja',
+    content: 'पर्वांचां दीसीं गोसावीयांचां ठाई सडेसमार्जनें चौकरंगमाळिका : गोसावीयांसि मर्दनामादणें जालें : देवाचां बीढारीं उपाधीं सीदौरी ठेविली होती : ते आणावेया गेले : सीदौरी घेऊन आले : बाईसीं पुसिलें : "जानो : माहात्मेयांचेया बीढारा गेला होतासि ?" उपाधीं म्हणीतलें : "हो बाइ : गेलां होतां : माहात्मेयांचां ठाई पर्व होत असे हो बाइ :" तवं बाईसीं म्हणीतलें : "देखीले कीं बाबा : या रामासि काइ जालें : एथींचां एथ बाबा असति : आणि आधीं आपुलां ठाई पर्व केलें :" सर्वज्ञें म्हणीतलें : "बाइ : दोनिव्यारी भातवेळिती जालीं तरि पोरा जीवाचे माथैया डोळे जातां वेळुचि न लगे :" मग बाईसीं उपाधीतें पुसीलें : "माहात्मेयांचां ठाई पर्व होत असे तरि तुं आलासि हें काइ ?" सर्वज्ञें म्हणीतलें : "बाइ : चांगो आणि हे एथिचेचि कीं : हे तेथ कां जाती ?" मग बाईसीं : उपाधीं : चांगदेवोभटीं : प्रसनाएकीं : पद्मनाभीं गोसावीयांचां ठाई पर्व केलें : ॥',
+    explanation: '**लीळा भावार्थ व निरूपण:**\n\n**प्रसंग:** बीड येथे सणाच्या दिवशी (पर्वकाल) स्वामींची झालेली विशेष पूजा आणि इतर भक्तांच्या ऐवजी स्वतःच्याच ठिकाणी सण साजरा करण्याचे स्वामींचे निरूपण.\n\n**विवरण आणि निरूपण:**\n१. **सणाची तयारी व पूजा:**\nसणाच्या दिवशी स्वामींच्या मठात सडा-संमार्जन करून सुंदर रांगोळ्या (चौकरंगमाळिका) काढण्यात आल्या. स्वामींना सुवासिक तेलाने अंगमर्दन (मर्दनामादणें) करण्यात आले.\n२. **शिदोरी आणणे व बाईसांचा प्रश्न:**\nदादोसांच्या (देव) बिढारात उपाध्ये (जानो) यांनी शिदोरी ठेवली होती, ती आणण्यासाठी ते तिथे गेले. ते शिदोरी घेऊन आल्यावर बाईसांनी त्यांना विचारले, "जानो, तू इतर महात्म्यांच्या बिढारात गेला होतास का?" उपाध्यांनी सांगितले, "हो बाई, तिथे गेलो होतो. तिथे इतर महात्मे आपापल्या ठिकाणी सण साजरा करत आहेत."\n३. **रामाचा (दादोसांचा) विसर व स्वामींचे निरूपण:**\nयावर बाईसा म्हणाल्या, "बाबा, पाहिलेत का या रामाला (दादोसांना) काय झाले आहे? प्रत्यक्ष परमेश्वर (बाबा) इथे असताना ते आधी स्वतःच्याच बिढारात सण साजरा करत आहेत!" स्वामींनी यावर अत्यंत सुंदर निरूपण केले, "बाई, लहान बालकाला दोन वेळा जेवण वेळेवर मिळाले की त्याचे लक्ष पालकांकडे जात नाही (डोळे डोक्यावर जातात). त्याचप्रमाणे संसारी जीव थोड्या सुख-सोयी मिळाल्या की मूळ परमेश्वराला विसरून स्वतःच्या सुखात मग्न होतो."\n४. **सण साजरा करणे:**\nबाईसांनी उपाध्यांना विचारले, "जर तिकडे सण साजरा होत आहे, तर तू इथे का आलास?" स्वामींनी सांगितले, "बाई, चांगदेव आणि उपाध्ये हे इथलेच (आपलेच) आहेत. ते तिथे का जातील?" त्यानंतर बाईसा, उपाध्ये, चांगदेवभट, प्रसन्नायक आणि पद्मनाभदेव या सर्वांनी मिळून प्रत्यक्ष स्वामींच्या चरणी मोठा सण साजरा केला.\n\n**निष्कर्ष:**\nया लीळेतून बाह्य सण आणि विधींपेक्षा प्रत्यक्ष सद्गुरूंच्या चरणी सण साजरा करण्याचे खरे महत्त्व स्पष्ट होते, तसेच मानवी मनाच्या क्षणभंगुर आसक्तीवर स्वामींनी केलेला मार्मिक प्रहार दिसून येतो।'
+  },
+  {
+    id: 'lc_p304',
+    bookId: 'leela_charitra',
+    number: 304,
+    title: 'लीळा ३०४: देवशाळीत वस्त्रस्वीकारू',
+    titleEn: 'Leela 304: Devshalit Vastrasvikaru',
+    content: 'देवी आपणेयांसि पुजा करवीली : गळां मुठि एकि पवितेंया : सर्वांगीं चंदनाची भोरि : टीळा गंधाक्षेत : भटीं आपणेयांसि वस्त्र वीणवीलें होतें तें दादोसांसि वाडलें : देवांकारणें वीणवीलें होतें तें गोसावीयांकारणें ठेविलें : देवी आपणेयांसि पवितें वाववीलें : मग दादोस सीष्यांसहीत नीगाले : गोसावीयांसि पवितें वावेया : वाटेसि म्हणीतलें : "नागदेया : तुझीए काखेसि काइ ?" "दादो : हें वस्त्र :" "वस्त्र काइसें ?" "ना तुम्हांकारणें वीणवीलें होतें तें गोसावीयांकारणें ठेविलें : आपणेयांकारणें जे वीणवीलें तें तुम्हांसि वाडलें :" दादोसीं म्हणीतलें : "मा तुज गोसावी काइ होति ? तुआं अवघें तें आम्हांसीचि करावें : आम्हीं गोसावीयांसि करावें कीं :" वाटेसीचि बैसले : आपणेयांसीचि वस्त्र वाववीलें : मग तेंचि वस्त्र गोसावीयांसि वावेया घेउनि गेले : गोसावीयांच्या ठायासि गेले : दंडवत केलें : श्रीचरणां लागले : पवितें वाडलें : तेंचि वस्त्र ओळगउं गेले : तवं गोसावीं डावेनि श्रीकरें नीराकारिलें : मग श्रीचरणांपासि घडी ठेविली : गोसावीं डावेन श्रीचरणीचेनि आंगुठेंनि घडी ऐसी परती केली : देवी ऐसें आडवेंतीडवें पाहिलें : आणि बाईसांस पवितें वाडलें : दंडवत करूनि नीगाले : बीढारा गेले : ॥ सर्वज्ञें म्हणीतलें : "पोरु इतुलेही नेणे कोण कोणां वडील : जाणा पां गा : एणें आधीं बाईसांस पवितें कां वाडलें ?" "ना" नेणोंचि जी : गोसावीं सांगावें :" सर्वज्ञें म्हणीतलें : "तुम्हीं अवघे यांसि बाल म्हणीन :" मग सर्वज्ञें म्हणीतलें : "बटिका : हें वस्त्र ओळ्हळींत आण गा :" तवं बाईसीं म्हणीतलें : "बाबा : नवें वस्त्र ओळ्हवीलेया वीसाइल ऐसें होइल : काइसेया धुवावें बाबा : एकदोनि दीस तन्हीं नवें वसंत पांघुरि जो कीं :" तवं सर्वज्ञें म्हणीतलें : "बाइ : पोरु आपुलें उवेळें एथ वाओं आला : एथ वाओं ए कीं नैए : ऐसें प्राणीयांसि वीथीअवीधीचे ज्ञान नाही : काइ करीतां काइ होइल ऐसेंही नेणे :" मग तें वस्त्र ओळ्हुनि आले : मग गोसावीं प्रावर्ण केलें : ॥',
+    explanation: '**लीळा भावार्थ व निरूपण:**\n\n**प्रसंग:** रामदेव (दादोस) यांनी नागदेवाचार्यांनी आणलेले वस्त्र स्वतः न स्वीकारता स्वामींना देण्यास लावणे, आणि स्वामींनी त्या नवीन कोरड्या वस्त्राचा "ओळ्हळी" (ओली किंवा धुतलेली) करून स्वीकार करणे.\n\n**विवरण आणि निरूपण:**\n१. **दादोसांचे पूजन व वस्त्र अर्पण:**\nदादोस (देव) यांनी आपल्या शिष्यांकडून स्वतःची पूजा करून घेतली. त्यांच्या गळ्यात पवित्र सुताच्या माळा घातल्या गेल्या, संपूर्ण अंगाला सुवासिक चंदनाचा लेप लावण्यात आला, व कपाळावर गंधाक्षता लावल्या. नागदेवाचार्यांनी स्वतःसाठी जे थोडे स्वस्त वस्त्र विणले होते, ते दादोसांना पूजेच्या वेळी परिधान करण्यासाठी दिले. आणि दादोसांसाठी जे उत्तम वस्त्र विणले होते, ते गोसावींसाठी (स्वामींसाठी) बाजूला ठेवून दिले.\n२. **वाटेतील संवाद व दादोसांचा अधिकार:**\nपूजेनंतर दादोस आपल्या शिष्यांसह स्वामींच्या दर्शनासाठी निघाले. वाटेत दादोसांनी नागदेवाचार्यांच्या काखेतील वस्त्र पाहून विचारले, "नागदेवा, तुझ्या काखेत हे काय आहे?" नागदेवांनी सांगितले, "दादो, हे वस्त्र आहे. जे तुमच्यासाठी विणले होते ते मी स्वामींना देण्यासाठी ठेवले आहे, आणि माझ्यासाठी विणलेले वस्त्र तुम्हाला दिले." दादोसांनी यावर अत्यंत महत्त्वाचे भाष्य केले, "तुझ्यासाठी स्वामी काय आहेत? तू तुझ्या सर्व अर्पण विधी मलाच केले पाहिजेस, आणि मी ते स्वामींना अर्पण केले पाहिजे." असे म्हणून दादोस रस्त्यातच बसले आणि त्यांनी ते वस्त्र नागदेवाचार्यांकडून स्वतःला परिधान करवून घेतले. त्यानंतर तेच वस्त्र घेऊन ते स्वामींकडे गेले.\n३. **स्वामींचा नकार आणि पायठणा:**\nदादोसांनी स्वामींच्या चरणी लोटांगण घातले आणि ते वस्त्र स्वामींना अर्पण केले. परंतु स्वामींनी डाव्या हाताने त्या वस्त्राचा स्वीकार करण्यास नकार दिला. दादोसांनी ती वस्त्राची घडी स्वामींच्या पायाजवळ ठेवली, तेव्हा स्वामींनी डाव्या पायाच्या अंगठ्याने ती घडी दूर सारली. दादोसांनी हे पाहून कपाळावर हात मारला आणि बाईसांना पवित्र सुताची माळ अर्पण करून तेथून निघून गेले.\n४. **वडिलकीचे ज्ञान व वस्त्र ओळ्हविणे:**\nस्वामींनी भक्तांना विचारले, "हा मुलगा (दादोस) इतकेही समजत नाही की कोण मोठे आहे आणि कोण लहान. त्याने आधी बाईसांना पवित्रे (माळ) का अर्पण केले?" भक्तांनी सांगितले, "आम्हाला माहीत नाही देवा, आपणच सांगावे." स्वामींनी सांगितले, "तुम्ही सर्वजण याला बालक समजता, म्हणूनच याला अजून श्रेष्ठ-कनिष्ठतेचे भान नाही."\nत्यानंतर स्वामींनी नागदेवाचार्यांना (बटिका) सांगितले, "हे वस्त्र पाण्यात ओले करून (ओळ्हळीत) घेऊन ये." बाईसा म्हणाल्या, "बाबा, नवीन वस्त्र ओले केले तर ते जुन्यासारखे निस्तेज होईल. कशाला धुवायचे? दोन दिवस तरी नवीन वस्त्र पांघरून घ्या." स्वामींनी समजावले, "बाई, हा मुलगा (दादोस) अज्ञानातून आपले उष्टे किंवा अशुद्ध वस्त्र इथे घेऊन आला. येथे काय आणावे व काय आणू नये, याचे मानवाला ज्ञान नसते. कोणती कृती केल्याने काय परिणाम होईल, हे प्राण्याला समजत नाही." नंतर ते वस्त्र धुतले गेले (ओळ्हविले) आणि स्वामींनी ते पांघरले.\n\n**निष्कर्ष:**\nया लीळेतून सद्गुरूंकडे अर्पण करावयाच्या वस्तूंचे पावित्र्य आणि भक्तांचे अज्ञान दूर करून स्वामींनी आचारधर्माचे केलेले प्रकटीकरण दिसून येते।'
+  },
+  {
+    id: 'lc_p305',
+    bookId: 'leela_charitra',
+    number: 305,
+    title: 'लीळा ३०५: एकादशीसि सोभागाकरवि केळें खाववणें',
+    titleEn: 'Leela 305: Ekadashisi Sobhagakaravi Kele Khavavane',
+    content: 'एकु दीसु गोसावीयांसि दुपाळाहारुचा पुजाअवस्वरू जाला : आरोगण जाली : पहुडु : उपहुडु जालेयानंतरें गोसावी आसनीं उपविष्ट असति : बाईसीं म्हणीतलें : "बाबा : केळें बहुतें सांचलीं असति : नासती : वेचिजतु का :" सर्वज्ञें म्हणीतलें : "बाइ : आणा आरैती :" आणीलीं : मग वाटि केलें : गोसावीं सोभागातें म्हणीतलें : "बाइ : केळें खाल ?" तवं सोभागीं म्हणीतलें : "जी जी : मज एकादसि : मी न खाएं :" गोसावीं वृधाबाइसातें म्हणीतलें : "बाइ : तुम्ही केळें खाल ?" "जी जी : मज एकादसि : आम्हां बारमासिया एकादसि : मी न खाएं :" सर्वज्ञें म्हणीतलें : "मासउपवासिनीसि तरी काहीं म्हंणोंचि नैए :" ऐसें अवघांचि नीराकारिलें : नावेक जवं जालें तवं सोभागासि भूक लागली : तीए बाईसांपासि आलीं : तींए म्हणों लागलीं : "बाइ : मातें गोसावीं म्हणीतलें होतें : \'केळें खाल ?\' तवं मीयां म्हणीतलें : \'मज एकादसि :\' आतां मज भूक थोर लागली असे :" सर्वज्ञें म्हणीतलें : "बाइ : एं काइ म्हणतें असति ?" तवं बाईसीं म्हणीतलें : "बाबा : हें ऐसें म्हणते : \'मघां मज गोसावी केळें देत होते : तेह्वळि मी नेघेंचि : आतां मज भूक थोर लागली असे :\' ऐसें म्हणति असे :" सर्वज्ञें म्हणीतलें : "बाइ : या : " सोभागें आलीं : गोसावीयांपासि बैसलीं : गोसावीं बाईसातें म्हणीतलें : "बाइ : केळें आणा : मग एथ सोलसोलुं देया :" गोसावीं आपुलीए मांडीएवरि तेयांचा माथा ठेविला : ऐसीं नीजेलीं : सर्वज्ञें म्हणीतलें : "बाइ : आ करा :" तेहीं आ केला : गोसावी ऐसें केळें दाखवीलें : आणि आपुलीए श्रीमुखीं सुदले : मागीतें सर्वज्ञें म्हणीतलें : "बाइ : आ करा :" मग तेहीं आ केला : गोसावी म्हणति : "बाइ : केळें देया :" बाईसीं गोसावीयांचां श्रीकरीं केळें सोलूनि दीधलें : बाईसीं वाटा साखर घातली : तीए साकरेसी केळें ऐसें घोळिलें : गोसावीं ऐसें केळें दाखवीलें : आणि आपुलां श्रीमुखीं सुदलें : आणि तेही मांडीएवरोनि माथा काढिला : "नां गे आइ : केळें आपण आरोगण करीत असिजे : आणि मातें आपण चाळवीत असिजे :" सर्वज्ञें म्हणीतलें : "आतां न चळवीजे : आतां चाळवीजे : तरि मातुहाईची आण :" मग गोसावीं तेयाकरवि तृप्तपर्यंत केळें खावविलीं : ॥',
+    explanation: '**लीळा भावार्थ व निरूपण:**\n\n**प्रसंग:** एकादशीचा उपवास करणाऱ्या सोभागा (सौभाग्या) यांना स्वामींनी आपल्या लीला विनोदाने उपवास सोडवून तृप्त होईपर्यंत केळी खाऊ घातल्याचा प्रसंग.\n\n**विवरण आणि निरूपण:**\n१. **केळी वाटण्याचा प्रसंग:**\nएके दिवशी स्वामींचे दुपारचे भोजन झाले आणि विश्रांतीनंतर ते आपल्या आसनावर बसले होते. बाईसा म्हणाल्या, "बाबा, मठात खूप केळी जमा झाली आहेत. ती सडून खराब होतील, तर त्यांचे वाटप करूया का?" स्वामींनी सांगितले, "बाई, घेऊन ये." केळी आणली गेली व त्यांचे भाग केले गेले. स्वामींनी तिथे असलेल्या सोभागा यांना विचारले, "बाई, केळी खाणार का?" सोभागा म्हणाल्या, "नाही बाबा, आज माझी एकादशी आहे. मी खाणार नाही." स्वामींनी दुसऱ्या एका वृद्ध बाईसांना विचारले, "बाई, तुम्ही खाणार का?" त्यांनीही सांगितले, "नाही बाबा, आमचा तर बारा महिन्यांचा एकादशीचा नियम आहे, मी खाणार नाही." स्वामींनी हसतमुखाने सांगितले, "अशा कडक उपवास करणाऱ्यांना तर काही बोलताच येत नाही." अशा प्रकारे सर्वांनी केळी खाण्यास नकार दिला.\n२. **भूक लागणे व गोड विनोद:**\nकाही वेळानंतर सोभागा यांना खूप भूक लागली. त्या बाईसांकडे गेल्या आणि म्हणाल्या, "बाई, मघाशी स्वामी मला केळी विचारत होते, तेव्हा मी माझा उपवास असल्याचे सांगितले. पण आता मला खूप तीव्र भूक लागली आहे." स्वामींनी बाईसांना विचारले, "बाई, सोभागा काय म्हणत आहे?" बाईसांनी सांगितले, "बाबा, ती म्हणत आहे की मघाशी तुम्ही केळी देत होतात तेव्हा तिने नाही म्हटले, पण आता तिला खूप भूक लागली आहे."\n३. **लीलेने उपवास सोडवणे व तृप्ती:**\nस्वामींनी प्रेमाने बोलावले, "बाई, इकडे ये." सोभागा स्वामींजवळ आल्या. स्वामींनी सोभागांचे डोके आपल्या मांडीवर ठेवले. स्वामींनी बाईसांना सांगितले, "बाई, केळी सोलून इकडे दे." स्वामींनी सोभागांना सांगितले, "बाई, तोंड उघड (आ करा)." सोभागांनी तोंड उघडले, तेव्हा स्वामींनी केळे त्यांच्या तोंडाजवळ नेऊन स्वतःच्या तोंडात टाकले! पुन्हा स्वामींनी सांगितले, "आ करा." सोभागांनी तोंड उघडले, स्वामींनी पुन्हा केळे दाखवून स्वतःच्या तोंडात घातले. सोभागांना वाटले स्वामी त्यांची चेष्टा करत आहेत (चाळवीत असिजे). त्या म्हणाल्या, "छे बाई! आपण स्वतः केळी खात आहात आणि मला मात्र तोंड उघडायला लावून नुसतेच दाखवत आहात!"\nस्वामी हसून म्हणाले, "आता तुझी चेष्टा करणार नाही. जर आता तुझी चेष्टा केली तर मला माझ्या मातेची शपथ!" त्यानंतर स्वामींनी बाईसांना साखर आणायला लावली. केळी साखरेमध्ये घोळून स्वामींनी अत्यंत मायेने सोभागा यांना तृप्त होईपर्यंत केळी खाऊ घातली.\n\n**निष्कर्ष:**\nया अत्यंत हृदयस्पर्शी आणि विनोदी लीळेतून स्वामींचे भक्तांवरील अपार वात्सल्य आणि त्यांच्यासाठी कोरड्या कर्मकांडांपेक्षा भक्तांची भूक व सुख अधिक महत्त्वाचे होते, हे सुंदर रीतीने प्रकट होते।'
+  },
+  {
+    id: 'lc_p306',
+    bookId: 'leela_charitra',
+    number: 306,
+    title: 'लीळा ३०६: आबाईसां आप्तधर्मू नीरोपण',
+    titleEn: 'Leela 306: Abaisan Aptadharmu Niropan',
+    content: 'आबाईसें : उमाइसें : एका ब्राह्मणाच्या घरासि नीद्रास्थानासि गेलीया : ते घरिचीं अवचींच जागरणासि गेलीं होतीं : मध्याने एकी रात्रीं भरली : आणि आबाईसांसि भूक लागली : तवं आबाईसें उठलीं : "उमै उमै : उठि :" उमैसें उठिलीं : मग म्हणीतलें : "उमै : इतुकी मीयां एकवतें केली : एकादसी केलीया : परि ऐसी भूक कहीं लागली नाही : " मुठिभरि धातु : दोनि चुळ आसानिचा कांजी घेतला : कुसकरूनि घांस दोनि घेतले : आणि पाठि घातली : तवं क्षेणा एका उमाइसें उठिलीं : आणि म्हणीतलें : "आबै आबै : उठी :" उठिली : उमाइसीं म्हणीतलें : "इतुकी एकवतें नव्हेते मासोपवास केले : परि ऐसी भूक कहीं लागली नाही :" तेह्वळि मुठिभरि धातु : दोनि चुळ कांजी : पाणी घेतलें : मग पाठि घातली : तेयाहीं नीज आली : सवळेसीच दोघी उठलीया : गोसावीयाचेया दरीसनासि आलीया : तवं गोसावीयांसि गुळुळा होत होता : सर्वज्ञें म्हणीतलें : "पारणाती बाड्या आलीया मा ?" "जी जी :" दंडवतें घातलीं : श्रीचरणां लागलीया : तेह्वळि रात्रीची गोष्टि अवधी गोसावीयापुढें सांगीतली : "जी जी : अपुसीं आम्हीं तेयांचें घेतलें : तरि आम्हांसि काइ दोखु जाला ?" सर्वज्ञें म्हणीतलें : "बाइ : तैसां अवस्वरीं तेतुकें घेतां तेतुका दोखु नाहीं : प्राणापंदी पीडा समे इतुके घेइजे :" ॥',
+    explanation: '**लीळा भावार्थ व निरूपण:**\n\n**प्रसंग:** आबाईसा आणि उमैसा यांना रात्रीच्या वेळी एका ब्राह्मणाच्या घरी तीव्र भूक लागल्यामुळे तिथले अन्न खावे लागले, त्याविषयी त्यांनी स्वामींकडे व्यक्त केलेला संकोच आणि स्वामींनी केलेला "आप्तधर्म" (आपत्कालीन धर्म) उपदेश.\n\n**विवरण आणि निरूपण:**\n१. **रात्रीची तीव्र भूक आणि विवशता:**\nआबाईसा आणि उमैसा या दोन्ही साधिका एका ब्राह्मणाच्या घरी रात्री झोपण्यासाठी गेल्या होत्या. त्या घराचे मालक अचानक काही कारणाने गावातील जागरणासाठी निघून गेले होते. मध्यरात्रीच्या वेळी आबाईसांना अत्यंत तीव्र भूक लागली. त्यांनी उमैसांना उठवले, "उमै, उमै उठ!" उमैसा उठल्या. आबाईसा म्हणाल्या, "मी आयुष्यात कितीतरी उपवास आणि एकादशी केल्या, पण कधीही अशी जीवघेणी भूक लागली नव्हती." त्यांनी त्या घरातील पात्रात असलेले थोडे धान्य (मुठभर धातु) आणि कांजी घेतली, त्याचे दोन घास खाल्ले आणि पाणी पिऊन पुन्हा झोपल्या.\n२. **उमाइसांची तीच अवस्था:**\nकाही वेळाने उमैसांचीही तीच अवस्था झाली. त्यांनी आबाईसांना उठवले, "आबै, आबै उठ!" आणि म्हणाल्या, "मी तर अनेक महिने सलग उपवास केले आहेत, पण अशी तीव्र भूक मला कधीच जाणवली नव्हती." त्यांनीही तिथले थोडे धान्य आणि कांजी प्राशन केली व पाणी पिऊन झोपल्या.\n३. **स्वामींचे दर्शन व शंका निरसन:**\nसकाळी दोघी उठून स्वामींच्या दर्शनासाठी आल्या. स्वामी तेव्हा तोंड धुवून चूळ भरत होते. स्वामींनी हसतमुखाने विचारले, "काय ग, रात्री उपाशी राहून सकाळी पारणे फेडून आलात का?" त्यांनी रात्री घडलेली सर्व हकीकत स्वामींसमोर प्रांजळपणे कबूल केली आणि विचारले, "बाबा, आम्ही घरमालकाच्या परवानगीशिवाय त्यांचे अन्न घेतले, तर यामुळे आम्हाला चोरीचा या धर्माचरणाचा काही दोष (पाप) लागला का?"\n४. **स्वामींचा आपत्कालीन उपदेश:**\nस्वामींनी त्यांना मोलाचा उपदेश केला, "बाई, जेव्हा प्राणावर संकट येते (आपत्काल), तेव्हा प्राण वाचवण्यासाठी तितके अन्न घेण्यात कोणताही दोष नसतो. अत्यंत कठीण प्रसंगात शरीराचे रक्षण करणे आणि प्राणांची पीडा दूर करणे हाच \"आप्तधर्म\" आहे."\n\n**निष्कर्ष:**\nईश्वरी मार्गात शरीराचे विनाकारण हाल करण्यापेक्षा शरीराचे रक्षण करणे महत्त्वाचे आहे, आणि आपत्कालीन परिस्थितीत घेतलेले अन्न हे पाप ठरत नाही, हा अत्यंत व्यावहारिक व मोलाचा सिद्धांत स्वामींनी या लीळेतून मांडला आहे।'
+  },
+  {
+    id: 'lc_p307',
+    bookId: 'leela_charitra',
+    number: 307,
+    title: 'लीळा ३०७: उमाईसां नीरे नीरोपण',
+    titleEn: 'Leela 307: Umaisan Nire Niropan',
+    content: 'उमाइसें ऐसीं खडकलीए कडे अवकासा गेलीं होतीं : तवं अमेध्यामध्यें कीवींचुळंबुळु करीत होते : ते उमाइसीं देखिले : मग म्हणतात पां : "ऐ रे : गोसावी नर्क नीरे नीरोपीति तैसे आणि काइ :" आलीं : मग बाइसांपुढां सांगों लागलीं : सर्वज्ञें म्हणीतलें : "बाइ : मासोपवासीए काइ सांगतें असति ?" बाईसीं म्हणीतलें : "बाबा : हे ऐसी बाहिरि गेली होती :" ऐसी अवछी गोष्टि गोसावीयांपुढे सांगीतली : सर्वज्ञें म्हणीतलें : "बाइ : जाणतेयासि एथचि नर्कु :" ॥',
+    explanation: '**लीळा भावार्थ व निरूपण:**\n\n**प्रसंग:** उमाईसा बाहेरील खडकावर शौचास (अवकासा) गेल्या असताना घाणीत व नरकात वळवळणारे किडे पाहून त्यांना स्वामींनी आधी सांगितलेल्या नरकाच्या वर्णनाची प्रत्यक्ष प्रचिती येणे.\n\n**विवरण आणि निरूपण:**\n१. **शौचाचा प्रसंग व घाणेरडे दृश्य:**\nउमाईसा गावाबाहेरील एका खडकाकडे शौचास (अवकासा) गेल्या होत्या. तिथे घाणीत (अमेध्यामध्यें) आणि विष्ठेत असंख्य बारीक किडे (कीवीं) वळवळत असलेले त्यांनी पाहिले. ते दृश्य पाहून त्यांना अत्यंत किळस आली आणि त्या म्हणाल्या, "अरेरे! आपले स्वामी प्रवचनात ज्या नरकाचे वर्णन करतात, तो नरक प्रत्यक्ष असाच असावा!"\n२. **स्वामींजवळ अनुभव कथन:**\nत्या मठात परत आल्यावर बाईसांना हा प्रसंग सांगू लागल्या. स्वामींनी विचारले, "बाई, या मासोपवास करणाऱ्या उमाईसा काय सांगत आहेत?" बाईसा म्हणाल्या, "बाबा, या बाहेर शौचास गेल्या होत्या." आणि त्यांनी पाहिलेले ते भयानक किळसवाणे दृश्य स्वामींसमोर मांडले.\n३. **स्वामींचे सत्य निरूपण:**\nस्वामींनी यावर अत्यंत गंभीरपणे सांगितले, "बाई, जो खरा ज्ञानी आणि आत्मज्ञानी मनुष्य आहे (जाणतेयासि), त्याला या जगातच आणि या शरीरातच नरकाची प्रत्यक्ष जाणीव होते." हे संसार रूप आणि मानवी शरीर हे मल-मूत्राने भरलेले असून ज्ञानी पुरुष या भौतिक सुखांना नरक समानच मानतो.\n\n**निष्कर्ष:**\nया लीळेतून स्वामींनी मानवी शरीराची नश्वरता, संसारातील अनित्यता आणि ज्ञानी पुरुषाची विरक्ती अत्यंत स्पष्टपणे मांडली आहे।'
+  },
+  {
+    id: 'lc_p308',
+    bookId: 'leela_charitra',
+    number: 308,
+    title: 'लीळा ३०८: आबैसां अनंतु नीरोपण',
+    titleEn: 'Leela 308: Abaisan Anantu Niropan',
+    content: 'अनंतव्रताचां दीसीं आबैसीं पाट्सुताचा अनंतु केला : हवीक्षाअनाचा उपहारु नीफजविला : बरवी पुजाद्रव्यें आणीलीं : गोसावीयांसी बरवी साष्टांगीं पुजा केली : गोसावीयांच्या श्रीचरणांवरि अनंतु ठेविला : गोसावीं श्रीकरीं घेतला आणि पुसिलें : "बाइ : हें काइ ?" आबैसीं अवलोकिला : दोही श्रीकरीं दोन्हीं शेवट धरिलें : आणि म्हणीतलें : "जी जी : हा अनंतु :" सर्वज्ञें म्हणीतलें : "बाइ : अनंतु काइ सुताचा : सोळा तांयूचा : चौदा गांठीचा ? यांसि एकु सेवटु इउती : एकु सेवटु इउती : बाइ : अनंतु काइ ऐसा ? अंतु नाहीं तो अनंतु : अनंतु तो अनंतु कीं :" ॥',
+    explanation: '**लीळा भावार्थ व निरूपण:**\n\n**प्रसंग:** अनंत चतुर्दशीच्या दिवशी आबाईसांनी केलेला सुताचा "अनंत" (अनंत दोरा) स्वामींच्या चरणी अर्पण करणे, आणि स्वामींनी त्यांना "खऱ्या अनंताचे" (परमेश्वराचे) भव्य स्वरूप समजावून सांगणे.\n\n**विवरण आणि निरूपण:**\n१. **अनंत पूजा व दोरा अर्पण:**\nअनंत चतुर्दशीच्या दिवशी आबाईसांनी रेशमी सुताचा चौदा गाठी असलेला अनंत (दोरा) तयार केला. देवासाठी सात्त्विक भोजन (हविश्यान्न) तयार केले आणि उत्तम पूजा साहित्याने स्वामींची अत्यंत श्रद्धेने साष्टांग पूजा केली. पूजा झाल्यावर त्यांनी तो चौदा गाठींचा सुताचा अनंत स्वामींच्या चरणावर ठेवला.\n२. **स्वामींचा प्रश्न आणि संवाद:**\nस्वामींनी तो सुताचा दोरा आपल्या हातात घेतला आणि आबाईसांना विचारले, "बाई, हे काय आहे?" आबाईसांनी तो दोरा दोन्ही हातांनी धरून दोन्ही टोके दाखवली आणि म्हणाल्या, "बाबा, हा अनंत (भगवान विष्णूंचे प्रतीक असलेला दोरा) आहे."\n३. **स्वामींचे दिव्य निरूपण:**\nस्वामींनी यावर अत्यंत गहन आध्यात्मिक सत्य सांगितले, "बाई, सोळा धाग्यांचा आणि चौदा गाठींचा सुताचा दोरा कधी \"अनंत\" असू शकतो का? ज्याला एक टोक इकडे आहे आणि दुसरे टोक तिकडे आहे, त्याला अनंत कसे म्हणायचे? ज्याला कोणतीही सीमा आणि टोक नसते, ज्याला अंत नसतो, तोच खरा \"अनंत\" (परमेश्वर) आहे!"\n\n**निष्कर्ष:**\nया लीळेतून स्वामींनी बाह्य धार्मिक प्रतिकांच्या पलीकडे जाऊन परमेश्वराचे अमर्याद, असीम आणि सर्वव्यापी स्वरूप समजून घेण्याची प्रेरणा दिली आहे।'
+  },
+  {
+    id: 'lc_p309',
+    bookId: 'leela_charitra',
+    number: 309,
+    title: 'लीळा ३०९: प्रसनाएका चांदोवा ब्रह्मकथन',
+    titleEn: 'Leela 309: Prasanaeka Chandova Brahmakathan',
+    content: 'एकु दीसु गोसावीं माहालखूमीचेया देऊळीं बीजें केलें : सरिसें बाइंसें : भट : प्रसनाएक मुख्धकरूनि भक्तजन वसति : गोसावी चौकीं उभे ठेले : भीतरि अवलोकिलें : तवं तेथ चांदोवा बांधला होता : तो देखिला : मग सर्वज्ञें म्हणीतलें : "प्रसेया : यें तुमचीं ब्रह्मों गा :" "जी जी :" म्हणोनि उगेचि राहिले : बाईसीं पुसिलें : "तें कैंसे बाबा ?" सर्वज्ञें म्हणीतलें : "कंव्हणी एकु क्षुधार्थी देऊळासि ये : तवं चांदोवां आंबेयासारिखे आंबे देखे : केळांसारिखीं केळें देखे : नार्येळासारिखीं नार्येलें देखे : जांबुळासारिखीं जांबुळे देखें : तीयें तोडोनि खाओं बैसे तवं सेणेमातीया तोंड भरे : ऐसीं गा प्रसेयाचीं ब्रह्मों : मुतें आणि चुतिमतें :" ॥',
+    explanation: '**लीळा भावार्थ व निरूपण:**\n\n**प्रसंग:** महालक्ष्मी मंदिरात बांधलेला शेण-मातीचा फळांसारखा चांदोबा (झुंबर/छत) पाहून स्वामींनी प्रसन्नायकांच्या "जड ब्रह्माची" (मिथ्या संकल्पना) केलेली सुंदर परीक्षा आणि निरूपण.\n\n**विवरण आणि निरूपण:**\n१. **महालक्ष्मी मंदिरात झुंबर पाहणे:**\nएके दिवशी स्वामी महालक्ष्मीच्या मंदिरात गेले. सोबत बाईसा, नागदेवाचार्य (भट), प्रसन्नायक आणि इतर भक्तगण होते. स्वामी मंदिराच्या सभामंडपात (चौकीत) उभे राहिले आणि त्यांनी वर छताकडे पाहिले. तिथे एक सुंदर झुंबर किंवा नक्षीदार चांदोबा बांधलेला होता.\n२. **प्रसन्नायकांचे ब्रह्म:**\nतो चांदोबा पाहून स्वामींनी प्रसन्नायकांना विचारले, "प्रसन्नायका, हेच का तुमचे ब्रह्म (परम तत्व)?" प्रसन्नायक अत्यंत नम्रपणे "होय बाबा" म्हणून गप्प बसले. बाईसांनी विचारले, "बाबा, आपण असे का म्हणत आहात?"\n३. **नश्वरता व मातीचा देखावा:**\nस्वामींनी यावर अत्यंत सुंदर रूपक सांगितले, "बाई, जेव्हा एखादा भुकेलेला माणूस (क्षुधार्थी) या देवळात येईल, तेव्हा तो वर छताला बांधलेले आंब्यासारखे आंबे, केळीसारखी केळी, नारळासारखे नारळ आणि जांभळासारखी जांभळे पाहील. भुकेपोटी तो ते फळ तोडून खायला जाईल, तेव्हा त्याच्या तोंडात अन्न नसून केवळ शेण आणि मातीच भरेल! कारण हे केवळ बाहेरून सुंदर दिसणारे, मातीचे व शेणाचे बनवलेले खेळणे आहे. प्रसन्नायकांचे ब्रह्म देखील असेच केवळ बाह्य देखावा असलेले नश्वर आणि क्षणभंगुर आहे, ज्यात खरे चैतन्य नाही."\n\n**निष्कर्ष:**\nया लीळेतून स्वामींनी संसारातील भौतिक सुखांची तुलना मातीच्या व शेणाच्या फळांशी केली आहे. संसारातील सुखे बाहेरून आकर्षक दिसतात, पण त्यांचा उपभोग घ्यायला गेल्यास केवळ दुःख आणि निराशाच हाती येते, हा महान संदेश मिळतो।'
+  },
+  {
+    id: 'lc_p310',
+    bookId: 'leela_charitra',
+    number: 310,
+    title: 'लीळा ३१०: रूम्हणेयाचा दृष्टांत कथन',
+    titleEn: 'Leela 310: Rumhaneyacha Drishtant Kathan',
+    content: 'यावरि गोसावीं भटांप्रति रूंहणेयाचां दृष्टांत निरूपिला : सर्वज्ञें म्हणीतलें : "कव्हणी एक दुधाचे गुणविसेष अनमोदीत होते : तेथ जात्यंधु बैसला होता : तेणें पुसिलें : \'हां गा : दूध तें कैंसे ?\' \'दूध तें पांढरें :\' \'पांढरें तें कैंसें ?\' \'पांढरें तें बळ्हेसारिखें :\' \'बळ्हे ते कैसी ?\' \'बळ्हे ते रूंहणेयासारिखी :\' \'रूंहणें तें कैंसें ?\' \'रूंहणें तें ऐसें :\' म्हणौनि हातु वांकुडा करूनि दाखविले : एकु दीसीं तेणें रूंहणें कोठां देखिलें : हातु वांकुडा करूनि पाहीले : \'दूध तें हें :\' म्हणौनि पेवों लागला : हीरडीया फुटति : रगत नीगे : \'आरे : हें काइ करितासि ?\' \'ना दूध पीतायें :\' \'आरे : सांडी सांडी : हें रूंहणें :\' हीरडीया फुटति : रगत नीगे : परि न संडी : \'ना माझेनि बापें सांगितलें :\' \'दुख होए परि न संडी : तैसें कव्हणी एक परमेश्वराचे गुणविसेष अनमोदीत होते : तेथ कठीया बैसला होता : तेणें पुसिलें : \'हां गा : परमेश्वरू तो कैसा ?\' \'ना जैसा कैलासवैकुंठीचा ब्रह्माविष्णुमहादेवो :\' \'ब्रह्मा तो कैसा ?\' \'जैसा अयोध्येचा रामु :\' \'रामु तो कैसा ?\' मग द्रीभुज चतुर्भुज म्हणौनि प्रतिमा दाखवी : मग तो तेथ राहे : झाडी : सडासमार्जन करी : पालापाणी घाली : तेणें अधिका नरकचि होति :" ॥',
+    explanation: '**लीळा भावार्थ व निरूपण:**\n\n**प्रसंग:** स्वामींनी नागदेवाचार्यांसमोर (भटांप्रति) "रूम्हणेयाचा" (लाकडी कोपरा/खोड) दृष्टांत सांगून जड मूर्तीपूजा आणि अज्ञानामुळे जीवावर होणारा आघात यांचे मार्मिक विश्लेषण केले.\n\n**विवरण आणि निरूपण:**\n१. **दुधाचे वर्णन आणि जन्मांधाचा गोंधळ:**\nस्वामींनी सांगितले की, कोणीतरी एका माणसाने दुसऱ्याजवळ दुधाच्या चवीचे आणि गुणांचे वर्णन केले. तिथे एक जन्मांध (जन्मापासून आंधळा) माणूस बसला होता. त्याने विचारले, "दूध कसे असते?" त्या माणसाने सांगितले, "दूध पांढरे असते." आंधळ्याने विचारले, "पांढरे म्हणजे काय?" त्यावर तो म्हणाला, "पांढरे म्हणजे बगळ्यासारखे." आंधळ्याने पुन्हा विचारले, "बगळा कसा असतो?" तो माणूस म्हणाला, "बगळा रूम्हण्यासारखा (शेतीचे वाकडे लाकूड/खोड) वाकडा असतो." आंधळ्याने विचारले, "रूम्हणे कसे असते?" तेव्हा त्या माणसाने आंधळ्याचा हात धरून वाकडा करून दाखवला, "हे असे असते."\n२. **अज्ञानातून लाकूड खाणे:**\nएके दिवशी त्या आंधळ्याला कुठेतरी एक रूम्हणे (लाकडाचे खोड) सापडले. त्याने आपला हात वाकडा करून पाहिले आणि म्हटले, "अरे! हेच ते दूध!" आणि तो त्या लाकडी खोडाला चाटू लागला व खाऊ लागला. त्यामुळे त्याच्या हिरड्या कापल्या गेल्या, तोंडातून रक्त वाहू लागले. लोकांनी त्याला पाहिले आणि ओरडले, "अरे मूर्खा, हे तू काय करत आहेस?" तो म्हणाला, "मी दूध पीत आहे." लोक म्हणाले, "अरे वेड्या, ते सोड! ते लाकूड आहे." पण तरीही तो ते सोडत नव्हता, "नाही, हे माझ्या वडिलांनी सांगितले आहे!" तोंडातून रक्त येत असूनही अज्ञानापोटी तो ते खातच राहिला.\n३. **कठियाचा (पुजाऱ्याचा) दृष्टांत आणि अज्ञान:**\nत्याचप्रमाणे, कोणीतरी परमेश्वराच्या अथांग आणि निर्गुण स्वरूपाचे वर्णन करत असताना तिथे एक कठिया (मंदिराचा पुजारी) बसला होता. त्याने विचारले, "परमेश्वर कसा असतो?" सांगणाऱ्याने सांगितले, "कैलास आणि वैकुंठातील ब्रह्मा, विष्णू व महादेवासारखा." पुजाऱ्याने विचारले, "ब्रह्मा कसा असतो?" सांगणारा म्हणाला, "अयोध्येच्या रामासारखा." पुजाऱ्याने पुन्हा विचारले, "राम कसा असतो?" तेव्हा त्याने दोन हात व चार हात असलेली मूर्ती (प्रतिमा) दाखवली. तो पुजारी आता तिथेच मंदिरामध्ये राहू लागला. मूर्तीलाच सर्व काही मानून मंदिराची साफसफाई करू लागला, सडा-संमार्जन करू लागला आणि झाडांना पाणी घालू लागला. परंतु, मूर्तीपूजेतच अडकून राहिल्यामुळे त्याला आत्मज्ञान मिळाले नाही आणि त्याला अधिकाधिक संसाराचा नरकच प्राप्त झाला.\n\n**निष्कर्ष:**\nया प्रसिद्ध आणि अत्यंत महत्त्वाच्या दृष्टांतातून स्वामींनी केवळ बाह्य आणि जड मूर्तीपूजेमध्ये अडकून राहणाऱ्या साधकांचे डोळे उघडले आहेत. बाह्य प्रतिकांनाच देव मानून आत्मज्ञानापासून दूर राहणे हे त्या आंधळ्याने लाकूड चाटण्यासारखेच वेदनादायी व व्यर्थ आहे, हा अद्भूत सिद्धांत स्वामींनी स्पष्ट केला आहे।'
+  },
+  {
+    id: 'lc_u13',
+    bookId: 'leela_charitra',
+    number: 13,
+    title: 'लीळा १३: लीळाचरित्र उत्तरार्ध (Leela Charitra - Uttarardh)',
+    titleEn: 'Leela Charitra - Uttarardh',
+    content: 'लीळाचरित्र उत्तरार्धामध्ये सर्वज्ञ श्रीचक्रधर स्वामी महाराजांच्या उत्तरार्ध परिभ्रमणातील गहन अध्यात्म निरूपण, ब्रह्मविद्याशास्त्र, मुख्य शिष्यांना दिलेला मोक्षप्रद उपदेश आणि त्यांच्या उत्तरापथाकडील प्रयाणाचे प्रसंग अत्यंत विस्ताराने आणि श्रद्धेने संकलित केले आहेत।',
+    explanation: 'या भागात प्रभूंचे मुख्य आध्यात्मिक सिद्धांत, आचारधर्म आणि नागदेवाचार्यादी भक्तांशी झालेल्या संवादांचे अगाध चरित्र सामावलेले आहे।'
+  },
   {
     id: 'dp_1',
     bookId: 'drishtantapath',
@@ -500,8 +3134,7 @@ export const initialChapters: Chapter[] = [
     titleEn: 'The Goldsmith Parable',
     content: 'जैसे एक सुवर्णकार सोन्याचे अलंकार बनवताना त्यातील मळी अग्नीच्या साहाय्याने दूर करतो, आणि शुद्ध सोने मिळवतो. त्याचप्रमाणे परमेश्वर आपल्या भक्ताचे मन दुःख आणि कर्माच्या भट्टीमध्ये टाकून शुद्ध करतो, जेणेकरून भक्त ज्ञानासाठी पात्र बनेल।',
     explanation: 'इस दृष्टांत में स्वामी समझाते हैं कि जीवन में आने वाले दुःख और कठिन प्रसंग हमारे पूर्वकर्मों के शोधन की प्रक्रिया हैं, जिससे आत्मा पवित्र और तेजस्वी बनती है।'
-  }
-,
+  },
   {
     id: 'dp_2',
     bookId: 'drishtantapath',
@@ -510,8 +3143,7 @@ export const initialChapters: Chapter[] = [
     titleEn: 'The Seed and the Plant',
     content: 'एक लहान बीज जेव्हा जमिनीमध्ये समर्पित होते, तेव्हाच त्यापासून विशाल आणि फळ देणारा वृक्ष तयार होतो. जर बीज स्वतःचे अस्तित्व टिकवून ठेवेल, तर ते कोरडेच राहील. तसेच मानवाने जेव्हा आपला अहंकार नष्ट करून शरण जावे, तेव्हाच आध्यात्मिक उन्नती होते।',
     explanation: 'अहंकार के त्याग और संपूर्ण शरणागति का महत्व। जब जीव स्वयं को परमेश्वर के चरणों में विलीन कर देता है, तभी वास्तविक मोक्ष का अंकुर फूटता है।'
-  }
-,
+  },
   {
     id: 'dp_3',
     bookId: 'drishtantapath',
@@ -520,8 +3152,7 @@ export const initialChapters: Chapter[] = [
     titleEn: 'The Lion Cub Parable',
     content: 'एक सिंहाचे पिल्लू मेंढरांच्या कळपात वाढल्यामुळे स्वतःला मेंढी समजू लागले आणि मेंढरांसारखे ओरडू लागले. नंतर एका दुसऱ्या सिंहाने त्याला विहिरीतील त्याचे प्रतिबिंब दाखवून त्याच्या खऱ्या सिंह असण्याची व सामर्थ्याची जाणीव करून दिली. त्याचप्रमाणे जीव अज्ञानामुळे स्वतःला संसारी व दुर्बळ समजतो, परंतु सद्गुरू त्याला आत्मस्वरूपाची आणि अमर्याद शक्तीची जाणीव करून देतात।',
     explanation: 'अज्ञानावस्थेतून आत्मज्ञानाकडे जाण्याचा मार्ग। जीव संसारात गुरफटला आहे, पण सद्गुरूच्या दिव्य उपदेशाने आणि कृपेने त्याला स्वतःच्या मूळ दिव्य रूपाची प्रचिती येते आणि तो बंधनांतून मुक्त होतो।'
-  }
-,
+  },
   {
     id: 'dp_4',
     bookId: 'drishtantapath',
@@ -530,8 +3161,7 @@ export const initialChapters: Chapter[] = [
     titleEn: 'Magnet and Iron Parable',
     content: 'लोखंड जसे लोहचुंबकाच्या (लोहकांत) संपर्कात येताच त्याच्याकडे तीव्रतेने आकर्षित होते आणि त्याला चिकटून राहते. त्याचप्रमाणे शुद्ध निष्पाप भाव असलेला जीव जेव्हा परमेश्वर किंवा अवतारी पुरुषाच्या सन्निध येतो, तेव्हा तो आपोआप भगवंताच्या दिव्य स्वरूपाकडे आकर्षित होतो आणि भक्तिभावात तल्लीन होतो।',
     explanation: 'ईश्वरी सान्निध्याचे आकर्षण आणि भक्तीचा मूळ स्वभाव। भगवंताची अथांग कृपा आणि भक्ताचा शुद्ध भाव एकत्र आले की मनाची अनन्य ओढ निर्माण होते, हे या उदाहरणावरून स्पष्ट होते।'
-  }
-,
+  },
   {
     id: 'dp_5',
     bookId: 'drishtantapath',
@@ -540,8 +3170,7 @@ export const initialChapters: Chapter[] = [
     titleEn: 'The Chatak Bird Parable',
     content: 'चातक पक्षी जसा केवळ आकाशातील मेघांमधून पडणाऱ्या पावसाच्या पहिल्या पावन थेंबाची (स्वाती नक्षत्राचे पाणी) वाट पाहतो, तलाव, विहीर किंवा नदीचे पाणी तो कधीही प्राशन करत नाही. त्याचप्रमाणे खरा अनन्य भक्त केवळ भगवंताच्या कृपाप्रसादाची आणि दर्शनाची आस धरून राहतो, इतर कोणत्याही लौकिक सुखांची मुळीच इच्छा करत नाही।',
     explanation: 'एकनिष्ठता आणि अनन्य भक्तीचे परम आदर्श रूप। साधकाचे लक्ष केवळ ईश्वरावरच एकाग्र असावे, संसारातील इतर क्षणभंगुर भौतिक सुखांनी त्याचे चित्त विचलित होऊ नये, हा संदेश मिळतो।'
-  }
-,
+  },
   {
     id: 'dp_6',
     bookId: 'drishtantapath',
@@ -550,8 +3179,7 @@ export const initialChapters: Chapter[] = [
     titleEn: 'The Touchstone Parable',
     content: 'लोखंड कितीही जुने किंवा गंजलेले असले तरी ते जेव्हा परिसाच्या संपर्कात येते, तेव्हा त्याचे रूपांतर तात्काल मौल्यवान सोन्यामध्ये होते. तसेच सामान्य संसारी जीव जेव्हा अवतारी पुरुषाच्या किंवा सद्गुरूंच्या संगतीमध्ये येतो, तेव्हा त्याचे सर्व पाप आणि अज्ञान नष्ट होऊन त्याला मोक्षाचा दिव्य मार्ग प्राप्त होतो।',
     explanation: 'सत्संगतीचे अलौकिक महात्म्य। दुर्गुणांनी भरलेला जीव देखील ईश्वरी विचारांच्या आणि सद्गुरूंच्या सान्निध्यात आल्यावर कसा पावन आणि गुणांनी परिपूर्ण होतो, याचे सुंदर वर्णन परिसाच्या उदाहरणाने केले आहे।'
-  }
-,
+  },
   {
     id: 'dp_7',
     bookId: 'drishtantapath',
@@ -560,8 +3188,7 @@ export const initialChapters: Chapter[] = [
     titleEn: 'The Blind Men and Elephant Parable',
     content: 'काही जन्मांध व्यक्ती हत्तीच्या वेगवेगळ्या अवयवांना स्पर्श करून हत्तीचे स्वरूप ठरवू लागतात. ज्याने पाय स्पर्श केला तो हत्तीला खांबासारखा म्हणतो, ज्याने कान स्पर्श केला तो सुपासारखा म्हणतो, तर ज्याने शेपूट पाहिले तो दोरीसारखा म्हणतो. परंतु हत्ती पूर्णपणे वेगळा असतो. त्याचप्रमाणे अज्ञानी लोक परमेश्वराच्या केवळ एकाच रूपाला संपूर्ण सत्य समजून आपसात भांडत राहतात।',
     explanation: 'सर्वसमावेशकता आणि मानवी बुद्धीच्या मर्यादा। परमेश्वर अनंत गुणांचा सागर आहे, संकुचित बुद्धीने केवळ त्याचे अंशिक आकलन होऊ शकते. ईश्वराचा पूर्ण साक्षात्कार केवळ सद्गुरूंच्या दिव्य ज्ञानानेच शक्य आहे।'
-  }
-,
+  },
   {
     id: 'dp_8',
     bookId: 'drishtantapath',
@@ -570,8 +3197,7 @@ export const initialChapters: Chapter[] = [
     titleEn: 'The Dog and Bone Parable',
     content: 'एक कुत्रा कोरडे हाड अत्यंत चवीने चघळताना त्याच्या स्वतःच्याच हिरड्यांमधून रक्त निघू लागते. त्या रक्ताची चव चाखून कुत्र्याला वाटते की त्या कोरड्या हाडातूनच हा रुचकर रस येत आहे. तसेच अज्ञानी मनुष्य संसारातील जड आणि अनित्य विषयांमध्ये सुख शोधत राहतो, तर ते सुख त्याच्या स्वतःच्या मनाच्या कल्पनेतून निर्माण झालेले असते आणि शेवटी त्याला दुःखच प्राप्त होते।',
     explanation: 'सांसारिक सुखाचा खोटा आभास। बाह्य वस्तूंमध्ये वास्तविक सुख नसून ते आपल्या अंतकरणात आहे, पण अज्ञानामुळे जीव बाह्य जगात सुखाचा शोध घेऊन दुःख ओढवून घेतो।'
-  }
-,
+  },
   {
     id: 'dp_9',
     bookId: 'drishtantapath',
@@ -580,8 +3206,7 @@ export const initialChapters: Chapter[] = [
     titleEn: 'The Tortoise and Her Offspring Parable',
     content: 'कासवी आपल्या पिल्लांना सतत जवळ न घेता किंवा स्पर्श न करता, केवळ अतिशय प्रेमाने आणि मायेने त्यांच्याकडे पाहून (दृष्टीनेच) त्यांचे पालनपोषण व रक्षण करते. तसेच परमेश्वर आपल्या भक्तांचे कल्याण आणि संगोपन बाह्य भौतिक्तेशिवाय केवळ आपल्या परम करुणामयी कृपाकटाक्षाने आणि स्मरणाने करतो।',
     explanation: 'ईश्वराची अतींद्रिय आणि सूक्ष्म कृपा। भगवंताची कृपा सर्वव्यापी आहे. तो बाह्य जगापासून दूर भासत असला तरी आपल्या अनन्य भक्तांच्या योगक्षेमाची काळजी केवळ कृपा नजरेने घेतो।'
-  }
-,
+  },
   {
     id: 'dp_10',
     bookId: 'drishtantapath',
@@ -590,8 +3215,7 @@ export const initialChapters: Chapter[] = [
     titleEn: 'Water and Wave Parable',
     content: 'पाणी आणि पाण्याचे तरंग किंवा तुषार (पाण्याचे थेंब) दिसायला वेगळे आणि भिन्न भासत असले तरी मूळ स्वरूपात ते केवळ एकच पाणी आहेत. तरंग पाण्यातूनच उत्पन्न होतात आणि शेवटी पाण्यातच विलीन होतात. तसेच ही संपूर्ण सृष्टी आणि जीव ईश्वरापासून निर्माण झाले आहेत आणि मूळ रूपात त्या परम कृपाळू परमात्म्याचेच अंश आहेत।',
     explanation: 'ईश्वर आणि जीवाचा अभेद संबंध। परमेश्वर आणि त्याचा अंश असलेला जीव यांच्यातील मूळ संबंध स्पष्ट करून, संसारातील अज्ञानामुळे निर्माण झालेली भेदबुद्धी नष्ट करणे, हाच याचा मूळ उद्देश आहे।'
-  }
-,
+  },
   {
     id: 'dp_11',
     bookId: 'drishtantapath',
@@ -600,8 +3224,7 @@ export const initialChapters: Chapter[] = [
     titleEn: 'The Lame Man Parable',
     content: 'जो मनुष्य पाय नसल्यामुळे अपंग (पंगू) आहे, तो स्वतःच्या बळावर मोठा दुर्गम मार्ग कधीही पार करू शकत नाही. परंतु जेव्हा त्याला राजाच्या रथात किंवा एखाद्या बलवान व्यक्तीच्या खांद्यावर बसवले जाते, तेव्हा तो सहज इच्छित स्थळी पोहोचतो. तसेच संसारी जीव स्वतःच्या बळावर मोक्ष मिळवू शकत नाही, त्याला भगवंताच्या कृपारूपी रथाची अनन्य गरज असते।',
     explanation: 'ईश्वरी कृपेचे सर्वोच्च महत्त्व आणि शरणागती। आत्मशक्तीच्या मर्यादा ओळखून जेव्हा जीव ईश्वराला अनन्य भावे शरण जातो, तेव्हा भगवंत स्वतः त्याला या भयंकर संसारातून सहजपणे तारून नेतात।'
-  }
-,
+  },
   {
     id: 'dp_12',
     bookId: 'drishtantapath',
@@ -610,8 +3233,7 @@ export const initialChapters: Chapter[] = [
     titleEn: 'The Musk Deer Parable',
     content: 'कस्तुरी मृगाच्या स्वतःच्याच नाभीमध्ये अत्यंत सुवासिक आणि दुर्मिळ कस्तुरी असते, परंतु त्या मधुर सुवासाने वेडा होऊन तो संपूर्ण घनदाट जंगलात त्याचा शोध घेत इकडे-तिकडे धावतो. त्याला हे माहित नसते की तो अमूल्य सुगंध त्याच्या आतूनच येत आहे. तसेच अज्ञानी मनुष्य आपल्या स्वतःच्या हृदयात असलेल्या ईश्वराला शोधण्यासाठी बाह्य जगात आणि तीर्थक्षेत्री आयुष्यभर भटकत राहतो।',
     explanation: 'अंतर्यामी ईश्वराचा साक्षात्कार। परमेश्वर प्रत्येक जीवाच्या हृदयात सतत वास करतो. बाह्य जगात त्याला शोधण्याऐवजी आत्मपरीक्षणाने आणि ध्यानाने स्वतःच्या अंतकरणात डोकावून पाहिल्यास त्याचा साक्षात्कार होतो।'
-  }
-,
+  },
   {
     id: 'dp_13',
     bookId: 'drishtantapath',
@@ -620,8 +3242,7 @@ export const initialChapters: Chapter[] = [
     titleEn: 'The Well of Nectar Parable',
     content: 'एका गावानजीक अमृताची विहीर असते, पण लोक तिच्या गोडव्याला न जाणता सामान्य विहिरीचे खारट पाणी पितात. तसेच परमेश्वर कृपाळू असून त्याच्याकडे मोक्षाचे अमृत आहे, पण संसारी जीव त्याच्याकडे न वळता मायेच्या क्षणभंगुर आणि खारट सुखांच्या मागे धावत राहतो।',
     explanation: 'ईश्वरी आनंदाचे श्रेष्ठत्व आणि सांसारिक सुखांचे तुच्छत्व। मोक्षाच्या अमृतमय सुखाची तुलना खारट पाण्याशी करून मानवी अज्ञानाचा मार्ग दाखवला आहे।'
-  }
-,
+  },
   {
     id: 'dp_14',
     bookId: 'drishtantapath',
@@ -630,8 +3251,7 @@ export const initialChapters: Chapter[] = [
     titleEn: 'The Frog and the Lotus Parable',
     content: 'कमळाच्या फुलाजवळ राहणारा बेडूक कमळाचा सुवास आणि मधुर मध न घेता केवळ चिखल खातो, तर लांबून आलेला भ्रमर (मधमाशी) कमळातील मध गोळा करतो. तसेच भगवंताच्या अगदी जवळ राहणारे संसारी लोक (किंवा सामान्य जन) त्यांचे महत्त्व जाणू शकत नाहीत, तर लांबचे निष्पाप भाव असलेले भक्त त्यांच्या कृपेचे मानकरी बनतात।',
     explanation: 'सान्निध्याचे महत्त्व आणि खरं आकलन। परमेश्वराच्या भौतिक सान्निध्यापेक्षा त्याच्याबद्दल असणारा आंतरिक भक्तीभाव श्रेष्ठ आहे, हा संदेश मिळतो।'
-  }
-,
+  },
   {
     id: 'dp_15',
     bookId: 'drishtantapath',
@@ -639,19 +3259,17 @@ export const initialChapters: Chapter[] = [
     title: 'दृष्टांत १५: रायाचा पुत्र दृष्टांत (The Lost Prince Parable)',
     titleEn: 'The Lost Prince Parable',
     content: 'एका राजाचा लहान मुलगा हरवतो आणि तो भिकाऱ्यांच्या टोळीत वाढल्यामुळे स्वतःला भिकारी समजू लागतो. नंतर त्याला ओळखणाऱ्या एका मंत्र्याने त्याला त्याच्या राजपुत्र असण्याची आणि सिंहासनाची जाणीव करून दिली, तेव्हा तो सर्व दारिद्र्य विसरून महालात परततो. त्याचप्रमाणे जीव स्वतःला संसारी समजतो, परंतु गुरुदेव त्याला ईश्वरी पुत्राचे स्मरण करून देतात।',
-    explanation: 'जीवाचे मूळ स्वरूप आणि दिव्य वारसा। आपण सर्व परमेश्वराचे अंश आहोत, हे विसरून मायेत गुंतलेल्या जीवाला सद्गुरू त्याच्या मूळ मोक्षप्राप्तीच्या अधिकाराची जाणीव करून देतात।'
-  }
-,
+    explanation: 'जीवाचे मूळ स्वरूप आणि दिव्य वारसा। आपण सर्व परमेश्वराचे अंश आहोत, हे विसरून मायेत गुंतलेले आहोत. सद्गुरूंच्या उपदेशाने या स्वरूपाची जाणीव होते.'
+  },
   {
     id: 'dp_16',
     bookId: 'drishtantapath',
     number: 16,
-    title: 'दृष्टांत १६: चिंतामणी दृष्टांत (The Chintamani Gem Parable)',
-    titleEn: 'The Chintamani Gem Parable',
-    content: 'ज्या व्यक्तीकडे सर्व काही देणारा दिव्य चिंतामणी हा मौल्यवान खडा आहे, तो जर त्याच्या मोबदल्यात केवळ सामान्य काचेचे तुकडे किंवा कस्पटे मागत असेल, तर तो मूर्ख ठरतो. त्याचप्रमाणे मानवी जन्म लाभल्यावर केवळ संसारातील क्षुल्लक गोष्टी मागणे म्हणजे चिंतामणी गमावण्यासारखे आहे।',
+    title: 'दृष्टांत १६: चिंतामणी दृष्टांत (The Chintamani Stone Parable)',
+    titleEn: 'The Chintamani Stone Parable',
+    content: 'एका व्यक्तीला चिंतामणी नावाचा दिव्य मणी सापडतो, जो सर्व प्रकारची सुखे देण्यास समर्थ आहे. परंतु तो मनुष्य जर त्याच्या मोबदल्यात केवळ सामान्य काचेचे तुकडे किंवा कस्पटे मागत असेल, तर तो मूर्ख ठरतो. त्याचप्रमाणे मानवी जन्म लाभल्यावर केवळ संसारातील क्षुल्लक गोष्टी मागणे म्हणजे चिंतामणी गमावण्यासारखे आहे।',
     explanation: 'नरदेहाचे महत्त्व आणि भक्तीची श्रेष्ठता। मानवी जन्म हा अत्यंत दुर्मिळ असून त्याचा उपयोग केवळ भगवंताची प्राप्ती व मोक्षासाठी करावा, क्षुल्लक सांसारिक सुखांसाठी नाही।'
-  }
-,
+  },
   {
     id: 'dp_17',
     bookId: 'drishtantapath',
@@ -660,8 +3278,7 @@ export const initialChapters: Chapter[] = [
     titleEn: 'The Miser\'s Treasure Parable',
     content: 'एक लोभी माणूस त्याचे धन जमिनीमध्ये पुरून ठेवतो आणि रात्रंदिवस केवळ त्या धनाचाच विचार करतो, त्याचे ध्यान तेथेच जडलेले असते. त्याचप्रमाणे साधकाचे मन केवळ परमेश्वराच्या नामस्मरणामध्ये आणि चरणी पुरलेले असावे, जेणेकरून संसारातील कोणतीही वादळे त्याचे लक्ष विचलित करू शकणार नाहीत।',
     explanation: 'एकाग्रता आणि ईश्वरी ध्यानाची पराकाष्ठा। जसे लोभी माणसाचे मन धनात असते, तसेच भक्ताचे मन निरंतर ईश्वराच्या स्वरूपात स्थिर असावे।'
-  }
-,
+  },
   {
     id: 'dp_18',
     bookId: 'drishtantapath',
@@ -670,8 +3287,7 @@ export const initialChapters: Chapter[] = [
     titleEn: 'The Glass House and Sunlight Parable',
     content: 'जर एखाद्या घराचे दरवाजे आणि खिडक्या धुळीने माखलेल्या असतील, तर सूर्याचा प्रकाश घरात पूर्णपणे प्रवेश करू शकत नाही. खिडक्या स्वच्छ करताच प्रकाश आपोआप पसरतो. तसेच मानवी अंतकरण जोवर वासना आणि अहंकाराच्या धुळीने माखलेले आहे, तोवर ईश्वराचे ज्ञान प्रकट होत नाही, अंतकरण शुद्ध होताच प्रकाश पडतो।',
     explanation: 'चित्तशुद्धी आणि अंतकरणात ज्ञानप्रकाशाचे आगमन। साधनेने मनातील मळ दूर केल्यावर ईश्वरी कृपा आणि दिव्य ज्ञान कसे सहज प्राप्त होते, हे सांगितले आहे।'
-  }
-,
+  },
   {
     id: 'dp_19',
     bookId: 'drishtantapath',
@@ -680,8 +3296,7 @@ export const initialChapters: Chapter[] = [
     titleEn: 'The Golden Pot Parable',
     content: 'एखाद्या सुवर्ण घटात (सोन्याच्या माठात) विष भरले तरी त्याचे मूळ सोन्याचे असणे बदलत नाही, तसेच मातीच्या घागरीत अमृताचे पाणी भरले तरी ती घागर बाहेरून मातीचीच राहते. तसेच मानवाचे बाह्य सौंदर्य किंवा जात महत्त्वाची नसून त्याच्या अंतकरणात असलेली ईश्वराची भक्ती आणि सत्त्वगुण महत्त्वाचा आहे।',
     explanation: 'बाह्य अवडंबर विरुद्ध आंतरिक गुणवत्ता। भगवंताला बाह्य रूप, रंग किंवा जात प्रिय नसून केवळ अंतकरणातील शुद्ध भक्ती आणि शील प्रिय आहे।'
-  }
-,
+  },
   {
     id: 'dp_20',
     bookId: 'drishtantapath',
@@ -690,8 +3305,7 @@ export const initialChapters: Chapter[] = [
     titleEn: 'The Rope and Snake Parable',
     content: 'अंधारामध्ये पडलेल्या एका साध्या दोरीला पाहून सर्प समजून माणूस घाबरतो आणि पळू लागतो. परंतु जेव्हा तेथे प्रकाश केला जातो, तेव्हा तो सर्प नसून केवळ एक निर्जीव दोरी आहे याची जाणीव होते व भीती नष्ट होते. तसेच अज्ञानामुळे संपूर्ण जगत हेच अंतिम सत्य वाटते, पण ज्ञानाचा प्रकाश पडताच ईश्वरी सत्य स्पष्ट होते।',
     explanation: 'माया आणि अज्ञानाचा निरास। संसारातील खोट्या भीती आणि मोहांचा नाश केवळ ईश्वरी ज्ञान आणि अंतिम सत्याच्या दर्शनानेच होतो, हे दोरीच्या सुंदर उदाहरणाने सांगितले आहे।'
-  }
-,
+  },
   {
     id: 'dp_21',
     bookId: 'drishtantapath',
@@ -700,8 +3314,7 @@ export const initialChapters: Chapter[] = [
     titleEn: 'The Mother and Child Parable',
     content: 'आई घरचे सर्व काम करत असताना तिचे बाळ खेळण्यात मग्न असते, तोवर आई आपले काम करत राहते. पण जेव्हा बाळ खेळणी बाजूला टाकून रडायला लागते आणि केवळ आईसाठीच हट्ट धरते, तेव्हा आई सर्व कामे सोडून धावत येते व बाळाला जवळ घेते. तसेच जोवर जीव संसारात रमतो, तोवर देव दूर राहतो, पण अनन्य भावाने आळवणी करताच देव धावून येतो।',
     explanation: 'अनन्य शरणागती आणि देवाचा भक्तवत्सल स्वभाव। संसारातील इतर सुखांचा मोह सोडून जेव्हा भक्त केवळ भगवंताची आस धरतो, तेव्हा परमेश्वर स्वतः त्याच्या कल्याणासाठी धावून येतो।'
-  }
-,
+  },
   {
     id: 'dp_22',
     bookId: 'drishtantapath',
@@ -710,8 +3323,7 @@ export const initialChapters: Chapter[] = [
     titleEn: 'The Peacock and Raincloud Parable',
     content: 'आकाशामध्ये काळेभोर ढग दाटून येताच मयूर (मोर) आनंदाने थुईथुई नाचू लागतो, कारण त्याला पावसाची अत्यंत तीव्र ओढ असते. ढगांचा गडगडाट त्याला सुखावून जातो. तसेच भगवंताच्या लीला, कीर्तन किंवा कथेचे श्रवण करताच भक्ताचे हृदय प्रेमाने आणि आनंदाने नाचू लागते, त्याला परमात्म्याविषयी अनन्य प्रेम वाटते।',
     explanation: 'भक्तिरसाचा आल्हाद आणि ईश्वरी भेटीची आतुरता। ईश्वरी संकीर्तन आणि लीलेमध्ये भक्ताला मिळणाऱ्या परमानंदाचे मयूराच्या माध्यमातून अत्यंत सुरेख वर्णन केले आहे।'
-  }
-,
+  },
   {
     id: 'dp_23',
     bookId: 'drishtantapath',
@@ -720,8 +3332,7 @@ export const initialChapters: Chapter[] = [
     titleEn: 'The Tree and Shade Parable',
     content: 'एक महावृक्ष (झाड) स्वतः उन्हातान्हात उभा राहतो आणि स्वतःला त्रास सहन करावा लागला तरी त्याच्या सावलीत येणाऱ्या प्रवाशांना थंड आणि सुखद सावली देतो, फळे देतो. तो कधीही कुणाशी भेद करत नाही. तसेच संत आणि सद्गुरू स्वतः अपार कष्ट सोसून सामान्य जीवांना भवतापापासून वाचवतात आणि मोक्षाचा मार्ग दाखवतात।',
     explanation: 'संत आणि सद्गुरूंचा परोपकारी स्वभाव। संतांचे जीवन केवळ परोपकारासाठी आणि जीवांच्या कल्याणासाठी असते, हे वृक्षाच्या सावलीवरून स्पष्ट होते।'
-  }
-,
+  },
   {
     id: 'dp_24',
     bookId: 'drishtantapath',
@@ -730,8 +3341,7 @@ export const initialChapters: Chapter[] = [
     titleEn: 'The Ganges and Ocean Parable',
     content: 'गंगा नदी कितीही वळणे घेऊन किंवा पर्वत पार करून वाहत असली तरी तिचा अंतिम मार्ग आणि विलीनीकरण विशाल सागरामध्येच होते. तिला सागर सोडून दुसरीकडे कुठेही विसावा मिळत नाही. तसेच मुमुक्षू जीवाच्या मनाची सर्व ओढ केवळ भगवंताच्या प्राप्तीकडेच असते, ईश्वराच्या चरणी लीन झाल्याशिवाय त्याला कुठेही शांती मिळत नाही।',
     explanation: 'जीवाचा अंतिम विसावा आणि ईश्वरी ऐक्य। गंगेच्या सागराकडे जाणाऱ्या प्रवाहाप्रमाणे भक्ताचे जीवन अविरत ईश्वराच्या दिशेने गतिमान असले पाहिजे।'
-  }
-,
+  },
   {
     id: 'dp_25',
     bookId: 'drishtantapath',
@@ -740,8 +3350,7 @@ export const initialChapters: Chapter[] = [
     titleEn: 'Gold and Ornaments Parable',
     content: 'सोन्यापासून बनवलेले मुकुट, कडे, आणि हार हे बाह्यतः वेगवेगळ्या आकाराचे आणि नावांचे भासतात, पण मूळ रूपात ते सर्व केवळ सोनेच आहेत. तसेच सृष्टीतील सर्व भिन्न रूपे आणि जीव एकाच परम तत्त्वाचे विलास आहेत।',
     explanation: 'एकरूपता आणि अद्वैत भावाचे आकलन। बाह्य भेद तात्पुरते असून अंतिम स्तरावर सर्व ईश्वराचेच अंश आहेत, हे सोन्याच्या दागिन्यांच्या आधारे स्पष्ट केले आहे।'
-  }
-,
+  },
   {
     id: 'dp_26',
     bookId: 'drishtantapath',
@@ -750,8 +3359,7 @@ export const initialChapters: Chapter[] = [
     titleEn: 'The Lamp and Darkness Parable',
     content: 'एका खोल अंधाऱ्या खोलीत शेकडो वर्षांपासून घनदाट अंधार असला, तरी तेथे एक छोटासा दिवा लावताच तो क्षणार्धात नाहीसा होतो. तसेच आत्मज्ञानाचा दिवा तेवताच मनातील जुने अज्ञान नष्ट होते।',
     explanation: 'ज्ञानशक्तीचा तात्काळ प्रभाव। ईश्वराचे ध्यान आणि सद्गुरूंचा एकच उपदेश जन्मोन्जन्मांचे संचित अज्ञान आणि पाप एका क्षणात नाहीसे करू शकतो।'
-  }
-,
+  },
   {
     id: 'dp_27',
     bookId: 'drishtantapath',
@@ -760,8 +3368,7 @@ export const initialChapters: Chapter[] = [
     titleEn: 'The Heron and Swan Parable',
     content: 'बक (बगळा) चिखलात बसून केवळ मासे आणि किडे शोधण्यात मग्न असतो, तर राजहंस केवळ स्वच्छ सरोवर आणि मोत्यांचा शोध घेतो व दुधातून पाणी वेगळे करतो. तसेच सामान्य जीव संसारात रमतात, तर साधक केवळ ईश्वराचा शोध घेतात।',
     explanation: 'विवेक आणि सत्त्वगुणांची पारख। संसार आणि अध्यात्म यातील फरक ओळखून केवळ मोक्षाचा दिव्य मार्ग निवडणारा विवेकशील साधक राजहंसासारखा पूजनीय ठरतो।'
-  }
-,
+  },
   {
     id: 'dp_28',
     bookId: 'drishtantapath',
@@ -770,8 +3377,7 @@ export const initialChapters: Chapter[] = [
     titleEn: 'The Seed and Sprout Parable',
     content: 'एका छोट्याशा बीजामध्ये अथांग वटवृक्ष बनण्याचे सामर्थ्य सुप्त अवस्थेत दडलेले असते. योग्य माती आणि पाणी मिळताच ते प्रकट होते. तसेच प्रत्येक जीवात ईश्वरी सामर्थ्य आहे, पण भक्तीने ते प्रकट होते।',
     explanation: 'साधनेचे महत्त्व आणि मूळ क्षमता। योग्य गुरुमार्ग व निष्ठेच्या सिंचनाने भक्तामधील दिव्य गुणांचे प्रकटीकरण होते आणि त्याचा भवसागर तरतो।'
-  }
-,
+  },
   {
     id: 'dp_29',
     bookId: 'drishtantapath',
@@ -780,8 +3386,7 @@ export const initialChapters: Chapter[] = [
     titleEn: 'The Drunkard and Wine Parable',
     content: 'मद्य पिणारा माणूस तात्पुरत्या मोहासाठी आणि सुखासाठी स्वतःचे भान गमावतो आणि शेवटी दुःख ओढवून घेतो. याउलट नामस्मरणाचे अमृत पिणारा भक्त सदैव ईश्वरी आनंदात तल्लीन राहून शाश्वत शांती मिळवतो।',
     explanation: 'संसारिक वासना विरुद्ध भक्तिरस। संसारातील क्षणिक सुखे जीवाचे अधःपतन करतात, तर भगवंताच्या नामाची गोडी निरंतर चैतन्य आणि निखळ आनंद प्रदान करते।'
-  }
-,
+  },
   {
     id: 'dp_30',
     bookId: 'drishtantapath',
@@ -790,8 +3395,7 @@ export const initialChapters: Chapter[] = [
     titleEn: 'The Potter and Clay Pot Parable',
     content: 'कुंभार मातीचा सुंदर घट बनवताना बाहेरून त्यावर हाताने आघात करतो, पण आतून त्याला मायेचा आधार देतो. तसेच सद्गुरू शिष्याला घडवताना वरून शिस्तीचे प्रहार करत असले तरी त्यांच्या मनात शिष्याविषयी अथांग प्रेम असते।',
     explanation: 'सद्गुरूंची शिस्त आणि आंतरिक कृपा। शिष्याच्या कल्याणासाठी सद्गुरू जे कठोर आचरण दाखवतात, त्यामागे केवळ आणि केवळ शिष्याला मोक्षाचा परिपूर्ण मार्ग दाखवणे हाच उद्देश असतो।'
-  }
-,
+  },
   {
     id: 'dp_31',
     bookId: 'drishtantapath',
@@ -800,8 +3404,7 @@ export const initialChapters: Chapter[] = [
     titleEn: 'The Wish-Fulfilling Tree Parable',
     content: 'कल्पवृक्षाच्या खाली बसून माणूस जे काही मागेल ते त्याला त्वरित प्राप्त होते. जर त्याने केवळ क्षुल्लक सुखाची मागणी केली तर त्याला तेच मिळेल आणि तो मूळ ईश्वरी संपदेला मुकेल. तसेच नरदेह मिळाल्यावर केवळ संसार मागणे चूक आहे।',
     explanation: 'संकल्प आणि अध्यात्मिक ध्येय। मानवी बुद्धीने केवळ ईश्वरी भक्ती आणि मोक्षाचीच मागणी करावी, संसारातील अनित्य सुखांच्या जाळ्यात स्वतःला गुंतवू नये।'
-  }
-,
+  },
   {
     id: 'dp_32',
     bookId: 'drishtantapath',
@@ -810,8 +3413,7 @@ export const initialChapters: Chapter[] = [
     titleEn: 'The Oyster and Raindrop Parable',
     content: 'स्वाती नक्षत्राच्या पावसाचा थेंब जेव्हा समुद्रातील एका शिंपल्यामध्ये पडतो, तेव्हा त्याचे रूपांतर मौल्यवान मोत्यात होते. तोच थेंब सापाच्या तोंडात पडल्यास त्याचे विष बनते. संगतीनुसार परिणाम बदलतो।',
     explanation: 'सत्संगती आणि वाईट संगतीचा परिणाम। जीव ज्या प्रकारच्या विचारांच्या आणि माणसांच्या संगतीत राहतो, त्याचा तसाच विकास होतो. म्हणून सदैव संतांची आणि भगवंताची संगती धरावी।'
-  }
-,
+  },
   {
     id: 'dp_33',
     bookId: 'drishtantapath',
@@ -820,8 +3422,7 @@ export const initialChapters: Chapter[] = [
     titleEn: 'The Moth and Lamp Parable',
     content: 'एक पतंग (कीटक) दिव्याच्या ज्वालांकडे आकर्षित होऊन त्यात स्वतःचा प्राण देतो, कारण त्याला केवळ बाह्य प्रकाशाची भुरळ पडते. तसेच अज्ञानी जीव संसारातील मोहमयी आणि विनाशी सुखांना भुलून स्वतःचा नाश करून घेतात।',
     explanation: 'मोहाचा घातक परिणाम। बाह्य सौंदर्याच्या आणि उपभोगांच्या क्षणिक सुखांमध्ये जीव कसा अडकून स्वतःचे अमूल्य जीवन संपवतो, याची जाणीव करून देणारा हा संदेश आहे।'
-  }
-,
+  },
   {
     id: 'dp_34',
     bookId: 'drishtantapath',
@@ -830,8 +3431,7 @@ export const initialChapters: Chapter[] = [
     titleEn: 'The Moon and Chakora Parable',
     content: 'चकोर पक्षी ज्याप्रमाणे संपूर्ण रात्र केवळ चंद्राच्या शीतल किरणांचे (किरणांच्या अमृताचे) प्राशन करण्यासाठी आकाशाकडे पाहत राहतो. तसेच भक्ताचे चित्त चकोराप्रमाणे अहोरात्र केवळ ईश्वरी लीलेवर एकाग्र असावे।',
     explanation: 'एकनिष्ठ भक्तीची परिसीमा। ज्याप्रमाणे चकोर पक्षाचा जीव चंद्रावर असतो, त्याचप्रमाणे सच्च्या भक्ताचा प्राण केवळ भगवंताच्या नामस्मरणात आणि ध्यानधारणेत गुंतलेला असतो।'
-  }
-,
+  },
   {
     id: 'dp_35',
     bookId: 'drishtantapath',
@@ -840,8 +3440,7 @@ export const initialChapters: Chapter[] = [
     titleEn: 'Gold and Glass Parable',
     content: 'एक अडाणी माणूस मौल्यवान सोन्याला केवळ पिवळा दगड समजून फेकून देतो आणि चमकदार काचेला मौल्यवान रत्न समजून कपाटात ठेवतो. तसाच मूर्ख मनुष्य शाश्वत ईश्वरी सत्याला सोडून अशाश्वत संसाराचे कौतुक करतो।',
     explanation: 'पारख आणि अध्यात्मिक अज्ञान। सद्गुरूंच्या ज्ञानाशिवाय खऱ्या कल्याणाच्या मार्गाची पारख होऊ शकत नाही, हे या सोन्याच्या आणि काचेच्या उदाहरणावरून सिद्ध होते।'
-  }
-,
+  },
   {
     id: 'dp_36',
     bookId: 'drishtantapath',
@@ -850,8 +3449,7 @@ export const initialChapters: Chapter[] = [
     titleEn: 'The Boat and Flood Parable',
     content: 'नदीला आलेल्या भयंकर महापुरातून सामान्य व्यक्ती पोहून पलीकडे जाऊ शकत नाही, पण एका चांगल्या आणि मजबूत नौकेत बसून कुशल नाविक प्रवाशांना सहज पलीकडे नेतो. तसेच भवसागरातून सद्गुरुरूपी नाविक आपल्याला तारतो।',
     explanation: 'सद्गुरूंचे तारणहार रूप। संसारातील भयंकर संकटांमधून आणि जन्म-मृत्यूच्या फेऱ्यातून केवळ सद्गुरूंच्या कृपेची नौकाच आपल्याला सुखरूप मोक्षाच्या किनाऱ्यावर पोहोचवू शकते।'
-  }
-,
+  },
   {
     id: 'dp_37',
     bookId: 'drishtantapath',
@@ -860,8 +3458,7 @@ export const initialChapters: Chapter[] = [
     titleEn: 'The Rat and Snake Parable',
     content: 'एका टोपलीत साप आणि उंदीर एकत्र बंद असतात. उंदीर स्वतःचे प्राण वाचवण्यासाठी आणि बाहेर पडण्यासाठी टोपलीला छिद्र पाडतो, पण छिद्र तयार होताच साप बाहेर पडून उंदराला खाऊन टाकतो. तसेच माणूस संसारातून सुटण्यासाठी धडपडतो, पण चुकीच्या संगतीने तो मायेच्या विळख्यात अधिकच अडकतो।',
     explanation: 'अयोग्य संगतीचा धोका आणि मायेचा विळखा। संसारातून मुक्त होण्याचे प्रयत्न करताना जर वाईट विचार किंवा अयोग्य संगती लाभली, तर साधक अधोगतीला जातो.'
-  }
-,
+  },
   {
     id: 'dp_38',
     bookId: 'drishtantapath',
@@ -870,18 +3467,25 @@ export const initialChapters: Chapter[] = [
     titleEn: 'The Golden Deer Parable',
     content: 'जगात कुठेही सोन्याचे हरीण अस्तित्वात नसते, हे माहीत असूनही मोहामुळे सीतामाता सुवर्णमृगाकडे आकर्षित झाली आणि पुढे मोठे संकट ओढवले. तसेच ज्ञानी साधकही कधीकधी संसारातील अतिशय मोहक अशा अवास्तव प्रलोभनांना बळी पडतात आणि साधना गमावून बसतात।',
     explanation: 'प्रलोभन आणि मायेची विनाशकारी शक्ती। माया अत्यंत सूक्ष्म आणि भुरळ पाडणारी असते, तिच्या मोहात अडकल्यास विवेकी पुरुषाचेही पतन होऊ शकते.'
-  }
-,
+  },
   {
     id: 'dp_39',
     bookId: 'drishtantapath',
     number: 39,
     title: 'दृष्टांत ३९: राजा आणि माळी दृष्टांत (The King and Gardener Parable)',
     titleEn: 'The King and Gardener Parable',
-    content: 'माळी दिवसभर कष्ट करून सुंदर बागेची निगा राखतो, झाडांना पाणी घालतो, पण त्या बागेचॾचा प्रकाश पडताच हे सर्व स्वप्नवत भासते।',
-    explanation: 'जगाचे अनित्य स्वरूप आणि मिथ्यात्व। सांसारिक सुखे क्षणभंगुर असून केवळ ईश्वरी ज्ञानच शाश्वत सत्य आहे, हे जागृतीच्या अवस्थेवरून सिद्ध होते.'
-  }
-,
+    content: 'माळी दिवसभर कष्ट करून सुंदर बागेची निगा राखतो, झाडांना पाणी घालतो, पण त्या बागेचा स्वामी आल्यावर तो बागेतील कष्टांची फळे राजाला अर्पण करतो. तसेच मानवाने संसारात प्रामाणिक कर्म करावे आणि त्याचे फळ भगवंताला समर्पण करावे।',
+    explanation: 'कर्मयोगाचे महत्त्व आणि निष्काम कर्म। संसारात राहून आपली कर्तव्ये पार पाडत असताना कर्माची फळे ईश्वराच्या चरणी अर्पण केल्याने जीवाचे परम कल्याण होते.'
+  },
+  {
+    id: 'dp_40',
+    bookId: 'drishtantapath',
+    number: 40,
+    title: 'दृष्टांत ४०: राजा आणि स्वप्न दृष्टांत (The King and Dream Parable)',
+    titleEn: 'The King and Dream Parable',
+    content: 'एक राजा स्वप्नात स्वतःला भिकारी म्हणून पाहतो आणि अन्नासाठी दारोदारी भटकतो. तो अत्यंत भुकेला आणि दुःखी होतो. परंतु जेव्हा तो जागा होतो, तेव्हा त्याला जाणवते की तो आपल्या आलिशान महालात सुरक्षित आहे आणि तो कधीही भिकारी नव्हता. जागृतीच्या एकाच क्षणाने त्याचे सर्व दुःख आणि दारिद्र्य नाहीसे होते।',
+    explanation: 'संसाराची स्वप्नवतता. हा संसार देखील एका मोठ्या स्वप्नासारखा आहे, जिथे जीव स्वतःला सुखी किंवा दुःखी समजतो. जेव्हा त्याला ब्रह्मविद्येचा आणि सद्गुरूंचा दिव्य उपदेश मिळून आत्मजागृती होते, तेव्हा त्याचे सर्व सांसारिक दुःख आणि भ्रम तत्काळ नष्ट होतात.'
+  },
   {
     id: 'dp_41',
     bookId: 'drishtantapath',
@@ -890,8 +3494,7 @@ export const initialChapters: Chapter[] = [
     titleEn: 'The Hunter and Birds Parable',
     content: 'पारधी झाडावर जाळे पसरवून त्यावर सुमधुर दाणे टाकतो. भुकेलेले पक्षी दाण्यांच्या मोहाने खाली येतात आणि जाळ्यात अडकतात. तसेच माया मानवासमोर अनेक प्रकारची भोगसाधने आणि सुखे ठेवते, ज्यामध्ये अडकून जीव आपला मोक्ष गमावतो।',
     explanation: 'विषयांचे आकर्षण आणि बंधनाची कारणे। संसारातील क्षणिक सुखे म्हणजे केवळ जाळ्यात अडकवणारे दाणे आहेत, सुजाण साधकाने यापासून सावध राहावे.'
-  }
-,
+  },
   {
     id: 'dp_42',
     bookId: 'drishtantapath',
@@ -900,8 +3503,7 @@ export const initialChapters: Chapter[] = [
     titleEn: 'The Bee and Honey Parable',
     content: 'मधमाशी अहोरात्र कष्ट करून फुलां फुलांमधून मधुर रस गोळा करते आणि मध गोळा करते, पण शेवटी मध गोळा करणारा शिकारी येतो आणि तिचे सर्व मध पळवून नेतो. तसेच अज्ञानी मनुष्य केवळ धन गोळा करण्यात आयुष्य संपवतो आणि शेवटी रिकाम्या हाताने मृत्यूला सामोरा जातो।',
     explanation: 'संचयाची निरर्थकता आणि मृत्यूचे सत्य। भौतिक संपत्ती कधीही सोबत येत नाही, केवळ ईश्वराची भक्ती आणि पुण्याची पुंजीच जीवाचे अंतिम कल्याण करते.'
-  }
-,
+  },
   {
     id: 'dp_43',
     bookId: 'drishtantapath',
@@ -910,8 +3512,7 @@ export const initialChapters: Chapter[] = [
     titleEn: 'The Salt Doll Parable',
     content: 'मिठापासून बनवलेला एक बाहुला जेव्हा समुद्राची खोली मोजण्यासाठी पाण्यात उतरतो, तेव्हा तो स्वतः पाण्यात विरघळून समुद्ररूपच होतो. त्याचे वेगळे अस्तित्व उरत नाही. तसेच जेव्हा जीव ईश्वरी ध्यानात लीन होतो, तेव्हा तो अहंकाराचा त्याग करून ईश्वराशी एकरूप होतो।',
     explanation: 'अहंकाराचे विसर्जन आणि सायुज्य मोक्ष। परमेश्वराच्या अथांग प्रेमात स्वतःचे वेगळेपण विसरून विलीन होणे हीच भक्तीची पराकाष्ठा आहे.'
-  }
-,
+  },
   {
     id: 'dp_44',
     bookId: 'drishtantapath',
@@ -920,8 +3521,7 @@ export const initialChapters: Chapter[] = [
     titleEn: 'The Camphor and Fire Parable',
     content: 'कापूर जेव्हा अग्नीच्या संपर्कात येतो, तेव्हा तो जळताना कोणतीही राख मागे ठेवत नाही, तो संपूर्णपणे हवेत नाहीसा होतो. तसेच जेव्हा शुद्ध ज्ञान अंतकरणात जागृत होते, तेव्हा सर्व वासना आणि संचित कर्मे कोणतीही खूण न ठेवता जळून भस्म होतात।',
     explanation: 'वासनांचा समूळ उच्चाटन। ईश्वरी ज्ञानाचा अग्नी साधकाच्या मनातील नकारात्मक विचार आणि पापांचा नाश संपूर्णपणे आणि कायमचा करतो.'
-  }
-,
+  },
   {
     id: 'dp_45',
     bookId: 'drishtantapath',
@@ -930,8 +3530,7 @@ export const initialChapters: Chapter[] = [
     titleEn: 'The Lame and Blind Parable',
     content: 'जंगलाला लागलेल्या वणव्यातून आंधळा धावू शकत नाही आणि पांगळा मार्ग पाहू शकत नाही. पण जेव्हा आंधळा पांगळ्याला आपल्या खांद्यावर बसवतो, तेव्हा पांगळा रस्ता दाखवतो आणि आंधळा वेगाने चालतो; दोघेही संकटातून सुटतात. तसेच क्रिया आणि ज्ञान एकत्र आल्याशिवाय मोक्ष मिळत नाही।',
     explanation: 'ज्ञान आणि भक्तीचा समन्वय। केवळ कोरडे ज्ञान किंवा केवळ आंधळी कृती उपयोगाची नसून, दोन्हीच्या समन्वयानेच भवसागरातून मुक्ती मिळते.'
-  }
-,
+  },
   {
     id: 'dp_46',
     bookId: 'drishtantapath',
@@ -940,8 +3539,7 @@ export const initialChapters: Chapter[] = [
     titleEn: 'The Touchstone and Iron Shackle Parable',
     content: 'लोखंडाची साखळी किंवा बेडी चोर दरोडेखोरांना बांधण्यासाठी वापरली जाते, पण जर त्या बेडीला परिसाचा स्पर्श झाला तर ती सोन्याची बनते. सोन्याची बेडी बनली तरी तिचे बांधण्याचे काम थांबत नाही. तसेच भौतिक आणि स्वर्गसुखाची बंधने ही बंधनेच आहेत, खरी मुक्ती केवळ ईश्वराच्या निष्काम भक्तीत आहे।',
     explanation: 'लौकिक सुखांचे बंधन। सुवर्ण बंधन असो की लोह बंधन, ते जीवाला संसारातच बांधून ठेवते. जीव केवळ निष्काम ईश्वरी भक्तीनेच मुक्त होऊ शकतो.'
-  }
-,
+  },
   {
     id: 'dp_47',
     bookId: 'drishtantapath',
@@ -950,8 +3548,7 @@ export const initialChapters: Chapter[] = [
     titleEn: 'The Sandalwood Tree Parable',
     content: 'चंदन वृक्षाच्या अवतीभवती अत्यंत विषारी सापांचा वेढा असतो, तरीही चंदन वृक्ष स्वतःचा सुवास आणि शीतलता कधीही सोडत नाही. तसेच संतांच्या अवतीभवती कितीही दुष्ट किंवा संसारी लोक असले तरी संत आपले पावित्र्य आणि शांती कधीही सोडत नाहीत।',
     explanation: 'संतांची अविचलता आणि आंतरिक शांती। बाह्य परिस्थिती कितीही प्रतिकूल किंवा नकारात्मक असली तरी सत्पुरुष आपले सत्त्व आणि सदाचार दृढ ठेवतात.'
-  }
-,
+  },
   {
     id: 'dp_48',
     bookId: 'drishtantapath',
@@ -960,8 +3557,7 @@ export const initialChapters: Chapter[] = [
     titleEn: 'The Shadow Play Parable',
     content: 'भिंतीवर पडणाऱ्या हातांच्या सावलीतून कधी सिंह, कधी पक्षी तर कधी राक्षसाचे चित्र दिसते. लहान मुले त्या सावलीला पाहून खरे समजून घाबरतात किंवा आनंदित होतात, पण प्रौढ व्यक्तीला माहित असते की तो केवळ हातांचा खेळ आहे. तसेच संसारातील खेळ ज्ञानी माणसासाठी केवळ मायेचा विलास आहे।',
     explanation: 'मायेचा आभास आणि ज्ञानी दृष्टी। जगातील सुख-दुःख आणि घडामोडी या केवळ मायेच्या सावल्या आहेत, अंतिम सत्य केवळ परमेश्वरच आहे.'
-  }
-,
+  },
   {
     id: 'dp_49',
     bookId: 'drishtantapath',
@@ -970,8 +3566,7 @@ export const initialChapters: Chapter[] = [
     titleEn: 'The Empty Pot and Water Parable',
     content: 'जो मातीचा घट आतून संपूर्ण कोरडा आणि रिकामा आहे, तोच पाण्यामध्ये बुडवल्यावर पाणी शोषून घेतो आणि पूर्ण भरतो. पण जो आधीच चिखलाने किंवा दगडांनी भरलेला आहे, त्यात पाणी जाऊ शकत नाही. तसेच ज्याचे मन संसाराच्या कचऱ्यापासून मुक्त आहे, त्याचेच मन ईश्वरी प्रेमाने भरते।',
     explanation: 'मन रिकामे करण्याचे महत्त्व (निरहंकारिता)। ईश्वरी कृपा आणि भक्तीची प्राप्ती केवळ नम्र, शुद्ध आणि मोकळ्या अंतकरणातच होऊ शकते.'
-  }
-,
+  },
   {
     id: 'dp_50',
     bookId: 'drishtantapath',
@@ -980,8 +3575,7 @@ export const initialChapters: Chapter[] = [
     titleEn: 'The Mirror and Dust Parable',
     content: 'एका आरशावर जोवर धुळीचा जाड थर जमा असतो, तोवर त्यात स्वतःचा चेहरा स्वच्छ दिसत नाही. धूळ पुसून टाकताच प्रतिबिंब स्पष्ट आणि सुंदर दिसते. तसेच मनावर साचलेली वासनांची धूळ नामस्मरण आणि सद्गुरू उपदेशाने दूर करताच आत्मज्ञान स्पष्ट प्रकट होते।',
     explanation: 'चित्तशुद्धीचा अंतिम संदेश। मानवी मनातील मलिनता दूर करणे हाच अध्यात्माचा खरा पाया आहे. मन स्वच्छ होताच ईश्वरी स्वरूपाची प्रचिती येते.'
-  }
-,
+  },
   {
     id: 'dp_51',
     bookId: 'drishtantapath',
@@ -990,8 +3584,7 @@ export const initialChapters: Chapter[] = [
     titleEn: 'The King and Beggar Parable',
     content: 'एक याचक राजाकडे स्वतःचे दारिद्र्य घालवण्यासाठी भीक मागण्यासाठी जातो, पण राजाच्या दारात येताच त्याला अत्यंत बहुमूल्य सोन्याचे नाणे सापडते. तो भीक मागण्याचे सोडून त्या नाण्याने श्रीमंत होतो. तसेच जीव संसारात सुख मागण्यासाठी येतो, पण सद्गुरूंच्या भेटीने त्याला अमूल्य नामस्मरणाचा ठेवा मिळतो आणि त्याचे दैन्य कायमचे संपते।',
     explanation: 'ईश्वरी नामाचा महिमा। संसारातील क्षुल्लक सुखांच्या याचना करणाऱ्या जीवाला सद्गुरू जेव्हा नामस्मरणाचा दिव्य ठेवा देतात, तेव्हा त्याचे पारमार्थिक दारिद्र्य नष्ट होते।'
-  }
-,
+  },
   {
     id: 'dp_52',
     bookId: 'drishtantapath',
@@ -1000,8 +3593,7 @@ export const initialChapters: Chapter[] = [
     titleEn: 'The Golden Bracelet Parable',
     content: 'सोन्याचे कंकण आणि शुद्ध सोने यात कोणताही तात्विक फरक नसतो, केवळ आकाराचा आणि नामाचा भेद असतो. कंकण विरघळवल्यावर ते पुन्हा सोनेच बनते. तसेच जीव आणि शिव (परमेश्वर) यांच्यात केवळ मायेच्या उपाधीचा भेद आहे, ती उपाधी दूर होताच अभेद प्रकट होतो।',
     explanation: 'जीवाचा ब्रह्मभाव। अज्ञानाचे आवरण दूर होताच जीव स्वतःला परमेश्वराचाच अंश म्हणून ओळखतो आणि द्वैतभाव संपतो।'
-  }
-,
+  },
   {
     id: 'dp_53',
     bookId: 'drishtantapath',
@@ -1010,8 +3602,7 @@ export const initialChapters: Chapter[] = [
     titleEn: 'The Golden Cage Parable',
     content: 'पोपट जरी अतिशय मौल्यवान अशा सोन्याच्या पिंजऱ्यात ठेवला असला, तरी त्याला उडण्याचे स्वातंत्र्य मिळत नाही, तो बंदीच राहतो. लोखंडी पिंजरा असो वा सोन्याचा, बंधनात काही फरक पडत नाही. तसेच भौतिक सुख समृद्धी ही देखील शेवटी संसाराचे एक सुंदर बंधनच आहे, खरी मुक्ती केवळ बंधनांच्या पलीकडे आहे।',
     explanation: 'भौतिक सुखांचे बंधनकारक स्वरूप। संसारातील ऐश्वर्य कितीही मोठे असले तरी ते आत्म्याला बंधनातच ठेवते. खरी मुक्ती केवळ ईश्वरी प्रेमानेच मिळते.'
-  }
-,
+  },
   {
     id: 'dp_54',
     bookId: 'drishtantapath',
@@ -1020,8 +3611,7 @@ export const initialChapters: Chapter[] = [
     titleEn: 'The Actor and His Role Parable',
     content: 'एक कुशल नट रंगमंचावर वेगवेगळ्या राजा, भिकारी किंवा साधूची सोंगे (भूमिका) घेतो, परंतु तो स्वतःचे मूळ अस्तित्व कधीही विसरत नाही. प्रेक्षक त्याला राजा समजतात, पण तो स्वतःला नटच मानतो. तसेच ज्ञानी मनुष्य संसारात सर्व व्यवहार करतो, पण स्वतःला संसारी मानत नाही।',
     explanation: 'अलिप्तता आणि अनासक्ती। संसारात राहूनही कर्तव्याचे पालन करताना मनातून अलिप्त असणे हाच खरा ज्ञानी मार्ग आहे.'
-  }
-,
+  },
   {
     id: 'dp_55',
     bookId: 'drishtantapath',
@@ -1030,8 +3620,7 @@ export const initialChapters: Chapter[] = [
     titleEn: 'Honey and Poison Parable',
     content: 'मध आणि विष एकत्र मिसळल्यास दिसायला ते मधासारखेच गोड भासते, पण प्राशन करताच ते प्राण हरण करते. तसेच संसारातील भोगांचे सुख सुरुवातीला अतिशय मधुर वाटते, पण शेवटी ते जीवाचे आध्यात्मिक अधःपतन करते।',
     explanation: 'सांसारिक मोहाचा विळखा। विषयसुख हे वरवर मधुर असले तरी ते अंतिमतः दुःखदायक आणि अधोगतीकडे नेणारे असते.'
-  }
-,
+  },
   {
     id: 'dp_56',
     bookId: 'drishtantapath',
@@ -1040,8 +3629,7 @@ export const initialChapters: Chapter[] = [
     titleEn: 'The Stone and Sculpture Parable',
     content: 'एक साधा दगड रस्त्यावर पडलेला असतो, पण जेव्हा शिल्पकार त्यावर छिन्न-भिन्न घाव घालून अवांछित भाग काढून टाकतो, तेव्हा त्यातून देवाची अत्यंत सुंदर मूर्ती प्रकट होते आणि तिची मंदिरात पूजा होते. तसेच सद्गुरू शिष्याच्या दोषांचे निर्मूलन करून त्याचे जीवन पावन करतात।',
     explanation: 'सद्गुरूंची कृपा आणि घडवणूक। संकटे आणि शिस्त यांच्या माध्यमातून सद्गुरू शिष्यामधील सुप्त देवत्व कसे जागे करतात, याचे सुंदर वर्णन आहे.'
-  }
-,
+  },
   {
     id: 'dp_57',
     bookId: 'drishtantapath',
@@ -1050,8 +3638,7 @@ export const initialChapters: Chapter[] = [
     titleEn: 'The Banyan Tree and Birds Parable',
     content: 'एका विशाल वटवृक्षावर शेकडो पक्षी आश्रयाला येतात, तेथील फळे खातात आणि आनंदाने किलबिलाट करतात. जेव्हा वृक्ष सुकू लागतो, तेव्हा ते निघून जातात. तसेच संसारातील मित्र आणि नातलग केवळ सुखाचे सोबती असतात, संकटात केवळ परमेश्वरच धावून येतो।',
     explanation: 'संसाराची अनित्यता आणि ईश्वराची शाश्वतता। संसारातील संबंध स्वार्थावर आधारलेले असतात, केवळ भगवंताचे नातेच निस्वार्थी आणि अखंड असते.'
-  }
-,
+  },
   {
     id: 'dp_58',
     bookId: 'drishtantapath',
@@ -1060,8 +3647,7 @@ export const initialChapters: Chapter[] = [
     titleEn: 'Gold and Touchstone Parable',
     content: 'सोन्याची शुद्धता पारखण्यासाठी त्याला कसोटीच्या दगडावर (कस) घासून पाहिले जाते आणि अग्नीतून तावून सुलाखून काढावे लागते. तसेच भक्ताच्या श्रद्धेची खरी पारख संकटांच्या कसोटीवर होते, जो अढळ राहतो तोच खरा भक्त ठरतो।',
     explanation: 'भक्तीची परीक्षा आणि निष्ठा। संकटाच्या काळातही ज्याची भक्ती ढळत नाही, त्याचे अंतकरण सोन्यासारखे चकाकते आणि त्याला ईश्वरी कृपा लाभते.'
-  }
-,
+  },
   {
     id: 'dp_59',
     bookId: 'drishtantapath',
@@ -1070,8 +3656,7 @@ export const initialChapters: Chapter[] = [
     titleEn: 'The Cloud and Rain Parable',
     content: 'आकाशातील ढग जेव्हा बरसतात, तेव्हा ते नदी, नाले, सुपीक जमीन किंवा खडकाळ डोंगर यावर समानपणे बरसतात. ते कुठेही भेद करत नाहीत, परंतु डोंगरावर पाणी टिकत नाही आणि सुपीक जमिनीत सुंदर पीक येते. तसेच ईश्वराची कृपा सर्वांवर समान असते, पण श्रद्धावान हृदयातच भक्ती अंकुरते।',
     explanation: 'कृपेची समता आणि स्वीकारशीलता। परमेश्वराची करुणा सर्वव्यापी आहे, पण साधकाच्या मनातील पात्रतेनुसार त्याचा अनुभव येतो.'
-  }
-,
+  },
   {
     id: 'dp_60',
     bookId: 'drishtantapath',
@@ -1080,8 +3665,7 @@ export const initialChapters: Chapter[] = [
     titleEn: 'The Mirror and True Reflection Parable',
     content: 'आरशामध्ये आपले जे रूप दिसते, ते केवळ एक आभासी प्रतिबिंब असते. आरसा बाजूला करताच केवळ मूळ रूप उरते. तसेच हे दृश्य जगत आणि माया ही परम सत्याचे केवळ प्रतिबिंब आहेत, जेव्हा अज्ञान संपते तेव्हा केवळ परब्रह्मच शिल्लक राहतो।',
     explanation: 'अंतिम अद्वैत सत्य। जगाच्या दृश्य रूपाच्या पलीकडे जाऊन मूळ शाश्वत तत्त्वाचा साक्षात्कार करून घेणे, हाच खरा ज्ञानमार्ग आहे.'
-  }
-,
+  },
   {
     id: 'dp_61',
     bookId: 'drishtantapath',
@@ -1090,8 +3674,7 @@ export const initialChapters: Chapter[] = [
     titleEn: 'Fragrance and Wind Parable',
     content: 'फुलांमधील सुवास वारा आपल्यासोबत वाहून नेतो, पण सुवास दिसत नाही, केवळ अनुभवता येतो. वारा सर्वत्र असतो, पण सुवास केवळ फुलांच्या संपर्कातच येतो. तसेच परमेश्वर सर्वव्यापी असला तरी संतांच्या आणि भक्तांच्या सान्निध्यात त्याचे अस्तित्व प्रकर्षाने जाणवते।',
     explanation: 'ईश्वराची सर्वव्यापकता आणि प्रकटीकरण। देव चराचरात आहे, पण शुद्ध भक्तीच्या माध्यमातून त्याचे दर्शन आणि अनुभव अधिक सुलभ होतो.'
-  }
-,
+  },
   {
     id: 'dp_62',
     bookId: 'drishtantapath',
@@ -1100,8 +3683,7 @@ export const initialChapters: Chapter[] = [
     titleEn: 'The Oyster and Pearl Parable',
     content: 'शिंपला समुद्राच्या तळाशी राहूनही समुद्राचे अशुद्ध पाणी कधीही प्राशन करत नाही. तो आपले तोंड बंद ठेवून केवळ पावसाच्या थेंबाची वाट पाहतो आणि मोत्याची उत्पत्ती करतो. तसेच साधकाने संसारात राहूनही सांसारिक प्रलोभनांपासून स्वतःला अलिप्त ठेवून केवळ ईश्वरी स्मरणात मग्न राहावे।',
     explanation: 'अलिप्तता आणि आंतरिक साधना। बाह्य जगातील प्रलोभने नाकारून अंतर्मुख होणारा साधकच आपल्या हृदयात भक्तीचे दिव्य मोती निर्माण करू शकतो.'
-  }
-,
+  },
   {
     id: 'dp_63',
     bookId: 'drishtantapath',
@@ -1110,8 +3692,7 @@ export const initialChapters: Chapter[] = [
     titleEn: 'Darkness and the Sun Parable',
     content: 'सूर्याच्या उदयासोबतच लाखो वर्षांचा अंधार एका क्षणात नष्ट होतो, अंधाराला पळायला जागा उरत नाही. तसेच ज्याच्या जीवनात सद्गुरूंच्या ज्ञानाचा सूर्य उगवतो, त्याच्या मनातील संचित कर्मांचा आणि अज्ञानाचा अंधार तात्काळ लयाला जातो।',
     explanation: 'ज्ञानोदयाचे महात्म्य। ज्ञानाच्या प्रकाशामुळे जीवाचे संशय, भीती आणि मोह संपूर्णपणे नष्ट होतात आणि आत्मसाक्षात्कार होतो.'
-  }
-,
+  },
   {
     id: 'dp_64',
     bookId: 'drishtantapath',
@@ -1119,9 +3700,35 @@ export const initialChapters: Chapter[] = [
     title: 'दृष्टांत ६४: बाळ आणि चंद्र दृष्टांत (The Child and Moon Parable)',
     titleEn: 'The Child and Moon Parable',
     content: 'एक लहान मूल आकाशातील चंद्राला खेळणे समजून त्याला मिळवण्यासाठी हट्ट करते. आई त्याला आरशात चंद्र दाखवून त्याचे समाधान करते. तसेच सामान्य लोकांना ईश्वराचे थेट आकलन होऊ शकत नाही, म्हणून सद्गुरू त्यांना प्रतिमा, उपासना आणि लीलांच्या आरशातून ईश्वराचा सुलभ साक्षात्कार घडवतात।',
-    explanation: 'सगुण भक्तीचे सुलभत्व। सामान्य बुद्धीच्या जीवांना अमूर्�  }, जोवर साधक सांसारिक बंधनांपासून पूर्णपणे मुक्त होत नाही, तोवर त्याला खरी मुक्ती मिळत नाही.'
-  }
-,
+    explanation: 'सगुण भक्तीचे सुलभत्व। सामान्य बुद्धीच्या जीवांना अमूर्त ईश्वराची भक्ती करणे कठीण वाटते, म्हणून ईश्वर अवतार घेऊन सगुण रूपात लीळा करतो, ज्यामुळे जीवांना भक्तीचा सुलभ मार्ग मिळतो.'
+  },
+  {
+    id: 'dp_65',
+    bookId: 'drishtantapath',
+    number: 65,
+    title: 'दृष्टांत ६५: सुवर्ण आणि अलंकार दृष्टांत (The Gold and Ornaments Parable)',
+    titleEn: 'The Gold and Ornaments Parable',
+    content: 'सुवर्णापासून अनेक प्रकारचे अलंकार जसे की मुकुट, कुंडल, किंवा कडे बनवले जातात. रूप आणि आकार भिन्न असले तरी त्या सर्वांमध्ये मूळ तत्त्व सोनेच असते. त्याचप्रमाणे या सृष्टीतील सर्व चर-अचर सृष्टी विविध रूपांत भासत असली तरी त्या सर्वांमध्ये मूळ आधार आणि चालक शक्ती एकच परमेश्वर आहे।',
+    explanation: 'एकत्व आणि विश्वात्मकता. सृष्टीतील विविधतेच्या मागे असलेले एकमेव सत्य म्हणजे परमेश्वर आहे, हे ओळखणे म्हणजेच खरे ज्ञान.'
+  },
+  {
+    id: 'dp_66',
+    bookId: 'drishtantapath',
+    number: 66,
+    title: 'दृष्टांत ६६: कल्पवृक्ष दृष्टांत (The Wish-Fulfilling Tree Parable)',
+    titleEn: 'The Wish-Fulfilling Tree Parable',
+    content: 'एक प्रवासी कल्पवृक्षाच्या सावलीत बसतो आणि मनामध्ये सुग्रास भोजन, थंड पाणी आणि सुखद शय्येची इच्छा करतो. कल्पवृक्ष त्याच्या सर्व इच्छा तत्काळ पूर्ण करतो. परंतु जर तो वाघ किंवा संकटाची कल्पनावृत्ती करेल, तर ते संकटही समोर उभे राहील. तसेच मानवी मन हे कल्पवृक्षासारखे आहे, ते जसा विचार करेल, तसाच त्याचा जन्म आणि गती ठरते।',
+    explanation: 'मनाचे सामर्थ्य आणि विचारांची शुद्धता. जीवाचे उद्धार किंवा पतन हे त्याच्या स्वतःच्या विचारांवर आणि वासनेवर अवलंबून असते. म्हणून मन सदैव भगवंताच्या स्मरणात ठेवावे.'
+  },
+  {
+    id: 'dp_67',
+    bookId: 'drishtantapath',
+    number: 67,
+    title: 'दृष्टांत ६७: पिंजरस्थ पक्षी दृष्टांत (The Caged Bird Parable)',
+    titleEn: 'The Caged Bird Parable',
+    content: 'एका पिंजऱ्यामध्ये बंद असलेला पक्षी कितीही गोड गाणी गात असला आणि त्याला सोन्याच्या पिंजऱ्यात उत्तम अन्न मिळत असले, तरी त्याला मुक्त आकाशात उडण्याचे स्वातंत्र्य आणि आनंद मिळू शकत नाही. तो सदैव बंधनातच राहतो. तसेच मानवी जीव संसारात कितीही सुखात असला तरी तो मायेच्या आणि कर्माच्या बंधनात अडकलेला असतो आणि खरी मुक्ती केवळ ईश्वर भक्तीनेच शक्य आहे।',
+    explanation: 'मुक्तीचे महत्त्व. जोवर साधक सांसารिक बंधनांपासून पूर्णपणे मुक्त होत नाही, तोवर त्याला खरी मुक्ती आणि शाश्वत आनंद मिळत नाही.'
+  },
   {
     id: 'dp_68',
     bookId: 'drishtantapath',
@@ -1130,8 +3737,7 @@ export const initialChapters: Chapter[] = [
     titleEn: 'The Blind Man and Lantern Parable',
     content: 'एका जन्मांध माणसाच्या हातात दिवा (फानस) दिला तरी त्याला स्वतःला त्याचा काही उपयोग होत नाही, पण इतरांना त्याचा मार्ग दिसतो. तसेच जो मनुष्य केवळ पुस्तकी ज्ञान मिळवतो पण त्याचे आचरण करत नाही, तो स्वतः अंधच राहतो, जरी त्याचे ज्ञान इतरांना उपदेश करण्यासाठी वापरले जात असले तरी।',
     explanation: 'आचरणाचे महत्त्व। केवळ कोरडे वाचन किंवा ज्ञान उपयोगाचे नसून, ते स्वतःच्या आचरणात आणणे हीच खरी साधना आहे.'
-  }
-,
+  },
   {
     id: 'dp_69',
     bookId: 'drishtantapath',
@@ -1140,8 +3746,7 @@ export const initialChapters: Chapter[] = [
     titleEn: 'The Raincloud and Farming Parable',
     content: 'मेघ संपूर्ण भूमीवर कोणताही भेदभाव न करता समान पाणी बरसतो. पण ज्या शेतकऱ्याने शेत नांगरून तयार ठेवले आहे तेथेच पीक उगवते, खडकाळ जागेवर नाही. तसेच परमेश्वराचा कृपाप्रसाद सर्वांसाठी समान असतो, पण जो साधक भक्तीने अंतकरण तयार करतो त्यालाच अनुभव येतो।',
     explanation: 'पात्रता आणि भक्तीची पूर्वतयारी। ईश्वरी आशीर्वाद मिळवण्यासाठी स्वतःच्या अंतकरणात भक्तीची मशागत करणे गरजेचे आहे.'
-  }
-,
+  },
   {
     id: 'dp_70',
     bookId: 'drishtantapath',
@@ -1150,8 +3755,7 @@ export const initialChapters: Chapter[] = [
     titleEn: 'The Musk and Fragrance Parable',
     content: 'कस्तुरी जोवर हरणाच्या नाभीमध्ये असते तोवर तिचा सुवास लपलेला राहतो, पण वारे वाहू लागताच तो सुगंध चहूकडे पसरतो. तसेच परमेश्वर आपल्या हृदयात सुप्त आहे, पण भक्ती आणि नामस्मरणाच्या वायूने त्याचे अस्तित्व संपूर्ण विश्वात आणि आपल्या अनुभूतीत प्रकट होते।',
     explanation: 'नामस्मरणाचा सुवास। नामस्मरणाच्या सततच्या अभ्यासाने अंतरीचा परमेश्वर भक्ताच्या दैनंदिन आचरणातून सुवासासारखा दरवळू लागतो.'
-  }
-,
+  },
   {
     id: 'dp_71',
     bookId: 'drishtantapath',
@@ -1160,8 +3764,7 @@ export const initialChapters: Chapter[] = [
     titleEn: 'The Ganges and Impurity Parable',
     content: 'गंगा नदीमध्ये कितीही नाले किंवा कचरा येऊन मिळाला तरी गंगा स्वतः कधीही अपवित्र होत नाही, उलट ती त्या कचऱ्यालाही स्वतःसारखे पवित्र आणि पावन करून सागराकडे नेते. तसेच संतांच्या सान्निध्यात येणारे पापी... लोकही संतांच्या पावनतेने शुद्ध आणि मोक्षाचे धनी बनतात।',
     explanation: 'संतांचे पतितपावन रूप। महापुरुषांच्या आणि ईश्वरी अवतारांच्या स्पर्शाने जीवाचे सर्व संचित दोष धुऊन जातात.'
-  }
-,
+  },
   {
     id: 'dp_72',
     bookId: 'drishtantapath',
@@ -1170,8 +3773,7 @@ export const initialChapters: Chapter[] = [
     titleEn: 'The Elephant and Chain Parable',
     content: 'अतिशय बलवान असलेला हत्ती केवळ एका साध्या साखळीने खांबाला बांधलेला असतो आणि तो स्वतःला दुर्बळ समजून शांत उभा राहतो. पण जेव्हा तो चिडतो किंवा त्याला स्वबळाची जाणीव होते, तेव्हा तो ती साखळी एका झटक्यात तोडून टाकतो. तसेच जीव मायेच्या साखळीने बांधलेला आहे, ज्ञानाने स्वबळ ओळखताच तो मुक्त होतो।',
     explanation: 'आत्मशक्तीचे प्रकटीकरण। अज्ञानाच्या बंधनातून सुटण्यासाठी केवळ एका दृढ संकल्पाची आणि आत्मज्ञानाची आवश्यकता असते.'
-  }
-,
+  },
   {
     id: 'dp_73',
     bookId: 'drishtantapath',
@@ -1180,8 +3782,7 @@ export const initialChapters: Chapter[] = [
     titleEn: 'The Sun and Clouds Parable',
     content: 'आकाशात काळे ढग जमा झाल्यावर सूर्य दिसेनासा होतो, पण सूर्य नष्ट झालेला नसतो. ढग सरकताच सूर्य आपल्या पूर्ण तेजाने तळपू लागतो. तसेच मनामध्ये वासनांचे आणि संशयाचे ढग दाटले की ईश्वराचे अस्तित्व जाणवत नाही, पण साधनेने हे ढग दूर होताच ईश्वरी प्रकाश मिळतो।',
     explanation: 'मायेचे तात्पुरते आवरण। ईश्वर सदैव आपल्या सोबतच असतो, केवळ मनातील विकारांचे आवरण दूर करण्याची आवश्यकता असते.'
-  }
-,
+  },
   {
     id: 'dp_74',
     bookId: 'drishtantapath',
@@ -1190,8 +3791,7 @@ export const initialChapters: Chapter[] = [
     titleEn: 'The Stone and Water Parable',
     content: 'पाण्यामध्ये कित्येक वर्षे पडलेला दगड बाहेर काढला तरी तो आतून कोरडाच राहतो, त्यात पाण्याचा थेंबही मुरत नाही. पण सुपीक माती पाणी मिळताच मऊ होते. तसेच कठोर आणि अभक्त मनाच्या माणसाला कितीही उपदेश केला तरी त्याच्यावर काही परिणाम होत नाही, तर श्रद्धावान जीव लगेच पावन होतो।',
     explanation: 'श्रद्धेची आर्द्रता। ज्ञानाचा स्वीकार करण्यासाठी अंतकरणात कोरडेपणा नसून भक्तीची आणि श्रद्धेची ओलावा असणे आवश्यक आहे.'
-  }
-,
+  },
   {
     id: 'dp_75',
     bookId: 'drishtantapath',
@@ -1200,8 +3800,7 @@ export const initialChapters: Chapter[] = [
     titleEn: 'The Swan and Mud Parable',
     content: 'हंस पक्षी सरोवरात फिरताना चिखलात कधीही पाय माखवून घेत नाही, तो नेहमी स्वच्छ पाण्यात विहार करतो. तसेच साधकाने संसारी लोकांच्या मध्ये आणि मायेच्या चिखलात वावरताना आपले मन नेहमी ईश्वरी विचारात शुद्ध आणि अलिप्त ठेवावे।',
     explanation: 'संसारात राहून अलिप्तता। सांसारिक कर्मांमध्ये गुंतले तरी मनाचा ताबा केवळ भगवंताकडे असावा.'
-  }
-,
+  },
   {
     id: 'dp_76',
     bookId: 'drishtantapath',
@@ -1210,8 +3809,7 @@ export const initialChapters: Chapter[] = [
     titleEn: 'The Wish-Fulfilling Tree Fruit Parable',
     content: 'कल्पवृक्षाच्या फांदीला सुंदर फळे लागलेली असतात. जो चतुर असतो तो फळे खाऊन तृप्त होतो, पण जो मूर्ख असतो तो केवळ पानांची मोजणी करत बसतो. तसेच मानवी जन्म मिळाल्यावर जो ईश्वराची भक्ती करतो तो धन्य होतो, तर जो केवळ वादात आणि शास्त्रांच्या मोजणीत वेळ घालवतो तो रिकाम्या हाताने जातो।',
     explanation: 'भक्तीची प्रत्यक्ष अनुभूती। कोरड्या चर्चांपेक्षा प्रत्यक्ष भक्ती आणि नामस्मरण करणे हेच मानवी जीवनाचे खरे सार्थक आहे.'
-  }
-,
+  },
   {
     id: 'dp_77',
     bookId: 'drishtantapath',
@@ -1220,8 +3818,7 @@ export const initialChapters: Chapter[] = [
     titleEn: 'The Ocean and River Parable',
     content: 'नदी जेव्हा समुद्राला मिळते, तेव्हा ती स्वतःचे नाव, रूप आणि प्रवाह विसरून समुद्रासारखीच अथांग आणि विशाल बनते. तिचे वेगळे अस्तित्व संपते. तसेच जेव्हा भक्त ईश्वराच्या चरणी अनन्य भावे समर्पित होतो, तेव्हा तो अहंकाराचा त्याग करून सच्चिदानंद स्वरूपात विलीन होतो।',
     explanation: 'पूर्ण समर्पण आणि ऐक्य। भक्तीची अंतिम पायरी म्हणजे स्वतःचे अस्तित्व देवाच्या इच्छेत पूर्णपणे विलीन करणे.'
-  }
-,
+  },
   {
     id: 'dp_78',
     bookId: 'drishtantapath',
@@ -1230,8 +3827,7 @@ export const initialChapters: Chapter[] = [
     titleEn: 'The Lamp and Moth Parable',
     content: 'पतंग दिव्याच्या केवळ बाह्य प्रकाशाने मोहित होऊन झेप घेतो आणि स्वतःचे प्राण गमावतो. पण मधमाशी सुवासिक कमळात बसून मध पिते. तसेच संसारी लोग बाह्य मोहाने विनाशाकडे जातात, तर भक्त ईश्वराच्या गुणांचा मधुर रस पिऊन अमर होतात।',
     explanation: 'विवेक आणि मोहाची निवड। क्षणिक भौतिक सुखांना भुलण्यापेक्षा शाश्वत ईश्वरी आनंदाची निवड करणे हाच खरा विवेक आहे.'
-  }
-,
+  },
   {
     id: 'dp_79',
     bookId: 'drishtantapath',
@@ -1240,8 +3836,7 @@ export const initialChapters: Chapter[] = [
     titleEn: 'The Miser and Wealth Parable',
     content: 'लोभी मनुष्य स्वतःचे प्राण धोक्यात घालून संपत्तीचे रक्षण करतो, तो सतत केवळ पैशाचाच ध्यास धरतो. त्याचे मन झोपेतही धनाकडेच असते. साधकानेही आपल्या ईश्वरी नामस्मरणाचा आणि भक्तीचा ठेवा तसाच जीवापाड जपावा, जेणेकरून संसारातील प्रलोभने ती चोरू शकणार नाहीत।',
     explanation: 'भक्तीचे रक्षण। जशी लोभ्याची निष्ठा संपत्तीवर असते, तशीच साधकाची अढळ श्रद्धा आपल्या उपासनेवर असावी.'
-  }
-,
+  },
   {
     id: 'dp_80',
     bookId: 'drishtantapath',
@@ -1250,8 +3845,7 @@ export const initialChapters: Chapter[] = [
     titleEn: 'The Boat and Boatman Parable',
     content: 'प्रवाशांनी भरलेली नौका जेव्हा वादळात सापडते, तेव्हा प्रवाशांचे रडणे किंवा घाबरणे निरुपयोगी असते; केवळ नाविकच कुशलतेने नौका किनाऱ्याला लावू शकतो. तसेच संसारातील संकटांच्या वादळात घाबरण्यापेक्षा सद्गुरुरूपी नावाड्यावर पूर्ण विश्वास ठेवल्यास तो आपल्याला मोक्षाच्या पैलतीरी सुखरूप नेईल।',
     explanation: 'सद्गुरूंवरील अढळ विश्वास। जीवनाच्या प्रवासात सद्गुरूंचे मार्गदर्शन आणि त्यांची कृपा हीच आपल्याला तारून नेणारी एकमेव शक्ती आहे.'
-  }
-,
+  },
   {
     id: 'dp_81',
     bookId: 'drishtantapath',
@@ -1260,8 +3854,7 @@ export const initialChapters: Chapter[] = [
     titleEn: 'The Pig Parable',
     content: 'सूकर (डुकराला) कितीही सुवासिक आणि उत्तम पक्वान्ने दिली, तरी तो घाणीकडेच धाव घेतो, त्याला घाणीतच सुख वाटते. तसेच संसारी जीव सुवर्ण संधी असूनही ईश्वरी भक्ती सोडून विषयांच्या घाणीतच आनंद शोधतो।',
     explanation: 'विषयासक्ती आणि स्वभावदोष। मानवी देह लाभूनही संसारी वासनांमध्ये गुंतणे म्हणजे सुवर्ण सोडून घाणीची निवड करण्यासारखे आहे.'
-  }
-,
+  },
   {
     id: 'dp_82',
     bookId: 'drishtantapath',
@@ -1270,8 +3863,7 @@ export const initialChapters: Chapter[] = [
     titleEn: 'The Crooked and Straight Path Parable',
     content: 'एक वाटसरू सरळ महामार्ग सोडून चोरट्या आडमार्गाने जातो आणि वाटेत दरोडेखोरांच्या हाती सापडून लुटला जातो. तसेच ईश्वराचा सरळ भक्तीमार्ग सोडून जे तांत्रिक किंवा कपटी मार्गाला लागतात, त्यांचे आध्यात्मिक नुकसान होते।',
     explanation: 'सन्मार्गाची निवड। प्रपंचातील आडमार्ग टाळून केवळ सरळ आणि शास्त्रशुद्ध भक्तीमार्गावर चालल्यानेच सुरक्षित मोक्ष मिळतो.'
-  }
-,
+  },
   {
     id: 'dp_83',
     bookId: 'drishtantapath',
@@ -1280,8 +3872,7 @@ export const initialChapters: Chapter[] = [
     titleEn: 'The Chakora Bird Parable',
     content: 'चकोर पक्षी केवळ चंद्राच्या किरणांवर (चंद्रप्रकाश) जगतो, तो तहान लागली तरी इतर कोणतेही पाणी पीत नाही. तसेच खऱ्या भक्ताची ओढ केवळ आणि केवळ ईश्वराच्या दर्शनासाठी आणि त्यांच्या कृपेसाठी असते।',
     explanation: 'एकनिष्ठ भक्ती। साधकाचे मन चकोर पक्षाप्रमाणे केवळ ईश्वरी रूपाच्या आराधनेत स्थिर आणि एकनिष्ठ असावे.'
-  }
-,
+  },
   {
     id: 'dp_84',
     bookId: 'drishtantapath',
@@ -1290,8 +3881,7 @@ export const initialChapters: Chapter[] = [
     titleEn: 'The Potter and Clay Parable',
     content: 'कुंभार मातीच्या गोळ्याला बाहेरून हळुवारपणे थोपटतो पण आतून हाताचा आधार देतो, जेणेकरून सुंदर घडा तयार व्हावा. तसेच सद्गुरू साधकावर बाह्य शिस्तीचे प्रहार करत असले, तरी त्यांच्या अंतकरणात अपार कृपा आणि आधार असतो।',
     explanation: 'सद्गुरूंचे संस्कार। गुरूंनी केलेली कठोर शिस्त ही साधकाच्या अंतरंगाला परिपक्व आणि सुंदर बनवण्यासाठीच असते.'
-  }
-,
+  },
   {
     id: 'dp_85',
     bookId: 'drishtantapath',
@@ -1300,8 +3890,7 @@ export const initialChapters: Chapter[] = [
     titleEn: 'The Lion and Rabbit Parable',
     content: 'एक लहान शशक (ससा) आपल्या बुद्धीने बलाढ्य सिंहाला विहिरीत त्याचेच प्रतिबिंब दाखवून त्याचा नाश करतो. तसेच साधक आपल्या आंतरिक आत्मिक बळाने आणि विवेकाने महाकाय काम-क्रोधादी शत्रूंचा पराभव करू शकतो।',
     explanation: 'विवेक आणि बुद्धीचे श्रेष्ठत्व। शारीरिक सामर्थ्यापेक्षा बुद्धी आणि ईश्वरी विवेक हा मोठ्या संकटांवर मात करण्यासाठी महत्त्वाचा ठरतो.'
-  }
-,
+  },
   {
     id: 'dp_86',
     bookId: 'drishtantapath',
@@ -1310,8 +3899,7 @@ export const initialChapters: Chapter[] = [
     titleEn: 'The Goldsmith Parable',
     content: 'सुवर्णकार सोन्याला शुद्ध करण्यासाठी आगीत तापवतो आणि घणाने ठोकतो, शेवटी त्यातून तेजस्वी दागिना बनतो. तसेच ईश्वर साधकाला वेगवेगळ्या संकटांतून तावून सुलाखून शुद्ध करतो, जेणेकरून त्याच्यातील आत्मिक तेज प्रकट व्हावे।',
     explanation: 'साधनेतील परीक्षा। कठीण परिस्थिती ही साधकाची भक्ती अधिक दृढ आणि शुद्ध करण्यासाठी देवाने दिलेली एक संधी असते.'
-  }
-,
+  },
   {
     id: 'dp_87',
     bookId: 'drishtantapath',
@@ -1320,8 +3908,7 @@ export const initialChapters: Chapter[] = [
     titleEn: 'The Hunter and Deer Parable',
     content: 'व्याध (पारधी) मधुर बासरी वाजवून हरणाला मोहित करतो आणि शेवटी त्याला जाळ्यात पकडतो. तसेच माया देखील संसारी जीवाला वेगवेगळ्या बाह्य सुखांचे मधुर संगीत दाखवून वासनेच्या जाळ्यात ओढते।',
     explanation: 'मायेचे प्रलोभन। बाह्य सुख आणि क्षणिक मोहाच्या जाळ्यातून सुटण्यासाठी निरंतर सावध राहणे आणि भगवंताच्या नामाचा आश्रय घेणे गरजेचे आहे.'
-  }
-,
+  },
   {
     id: 'dp_88',
     bookId: 'drishtantapath',
@@ -1330,8 +3917,7 @@ export const initialChapters: Chapter[] = [
     titleEn: 'The Monkey and Coconut Parable',
     content: 'एक मर्कट (माकड) नारळाला घट्ट धरून ठेवतो, पण त्याला ते फोडता येत नाही आणि खातही येत नाही, तरीही तो ते सोडत नाही. तसेच संसारी जीव प्रपंचातील दुःखांना कवटाळून बसतो, पण मोक्षासाठी प्रपंच सोडायला तयार होत नाही।',
     explanation: 'खोटा अट्टहास आणि मोह। संसारातील आसक्ती ही केवळ ओझे वाढवते, म्हणून साधकाने यातून मुक्तता मिळवायला शिकले पाहिजे.'
-  }
-,
+  },
   {
     id: 'dp_89',
     bookId: 'drishtantapath',
@@ -1340,8 +3926,7 @@ export const initialChapters: Chapter[] = [
     titleEn: 'The Elephant and Blind Men Parable',
     content: 'चार आंधळे एका हत्तीला स्पर्श करून आपापल्या समजुतीने हत्तीचे वर्णन करतात - कोणी त्याला खांब म्हणतो तर कोणी सूप. परंतु डोळस मनुष्य त्यांना हत्तीचे खरे रूप सांगतो. तसेच वेगवेगळे पंथ ईश्वराला तुकड्यांत पाहतात, पण पूर्ण ज्ञानी ईश्वर स्वरूप ओळखतो।',
     explanation: 'पूर्ण ज्ञानाचे महत्त्व। अर्धवट ज्ञानामुळे मतभेद निर्माण होतात, पूर्ण सत्य समजण्यासाठी डोळस आणि सद्गुरुरूपाचे मार्गदर्शन आवश्यक आहे.'
-  }
-,
+  },
   {
     id: 'dp_90',
     bookId: 'drishtantapath',
@@ -1350,8 +3935,7 @@ export const initialChapters: Chapter[] = [
     titleEn: 'The Peacock and Cloud Parable',
     content: 'आकाशात काळे ढग दाटून येताच मोर आनंदाने थुईथुई नाचू लागतो, कारण त्याला पावसाची आस असते. तसेच परमेश्वराच्या भक्तीची आणि स्मरणाची चिन्हे दिसताच भक्ताचे हृदय आनंदाने नाचू लागते।',
     explanation: 'भक्तीचा आनंद। ईश्वराच्या सान्निध्याची ओढ भक्ताच्या अंतकरणात निरंतर प्रफुल्लितता निर्माण करते.'
-  }
-,
+  },
   {
     id: 'dp_91',
     bookId: 'drishtantapath',
@@ -1360,8 +3944,7 @@ export const initialChapters: Chapter[] = [
     titleEn: 'The Bee and Honey Parable',
     content: 'मधमाशी निरनिराळ्या फुलांवर फिरून केवळ त्यांतील गोड मधच गोळा करते, ती फुलांच्या काट्यांकडे पाहत नाही. तसेच साधकाने जगातील लोकांचे दोष न पाहता केवळ त्यांचे चांगले गुण आणि ईश्वरी अंश ग्रहण करावा।',
     explanation: 'गुणग्राही वृत्ती। जगात प्रत्येकात काही ना काही उणिवा असतात, पण साधकाचे लक्ष केवळ चांगुलपणा आणि सत्यावर असायला हवे.'
-  }
-,
+  },
   {
     id: 'dp_92',
     bookId: 'drishtantapath',
@@ -1370,8 +3953,7 @@ export const initialChapters: Chapter[] = [
     titleEn: 'The Fish and Water Parable',
     content: 'मासा पाण्याचा त्याग एका क्षणासाठीही करू शकत नाही; पाण्यातून बाहेर काढताच तो प्राण सोडतो. तसेच भक्ताचे जीवन ईश्वराच्या नामस्मरणाशिवाय निरर्थक असावे, त्याचे अस्तित्वच ईश्वरी भक्तीवर अवलंबून असावे।',
     explanation: 'प्राणप्रिय भक्ती। भगवंताशी असणारा संबंध इतका दृढ असावा की त्यांच्या विरहामध्ये जीवाची घालमेल झाली पाहिजे.'
-  }
-,
+  },
   {
     id: 'dp_93',
     bookId: 'drishtantapath',
@@ -1380,8 +3962,7 @@ export const initialChapters: Chapter[] = [
     titleEn: 'The Tortoise Parable',
     content: 'कासव संकटाची चाहूल लागताच आपले सर्व अवयव आपल्या कठीण पाठीखाली ओढून घेते व सुरक्षित होते. तसेच साधकाने संसारातील कुसंगती आणि वासनेची वादळे येताच आपल्या इंद्रियांना आवरून अंतकरणात स्थिर व्हावे।',
     explanation: 'इंद्रिय संयम। बाह्य जगातील प्रलोभनांपासून स्वतःचे रक्षण करण्यासाठी इंद्रियांवर ताबा मिळवणे हे साधनेचे पहिले पाऊल आहे.'
-  }
-,
+  },
   {
     id: 'dp_94',
     bookId: 'drishtantapath',
@@ -1390,8 +3971,7 @@ export const initialChapters: Chapter[] = [
     titleEn: 'The Bull and Burden Parable',
     content: 'एक वृषभ (बैल) दिवसभर ओझे वाहतो आणि रात्री मालक त्याला थोडे गवत देतो, तो त्याच समाधानात राहतो. पण तो कधी बंधनातून सुटण्याचा विचार करत नाही. तसेच जीव संसाराचे ओझे वाहण्यात संपूर्ण आयुष्य घालवतो आणि मोक्षाचा विचार विसरतो।',
     explanation: 'संसाराचे बंधन। प्रपंचातील तात्पुरत्या सुख-सोयींसाठी जीवाने मोक्ष प्राप्तीसारख्या उच्च ध्येयाचा बळी देऊ नये.'
-  }
-,
+  },
   {
     id: 'dp_95',
     bookId: 'drishtantapath',
@@ -1400,8 +3980,7 @@ export const initialChapters: Chapter[] = [
     titleEn: 'The Chakora and Moon Parable',
     content: 'चंद्र पृथ्वीपासून कोट्यवधी मैल दूर असूनही चकोर पक्षी आपले लक्ष चंद्रावरच केंद्रित ठेवतो. तसेच ईश्वर कोणत्याही स्वरूपात असला, तरी भक्ताचे लक्ष निरंतर त्यांच्या चरणांवर आणि स्वरूपावर खिळलेले असावे।',
     explanation: 'अंतरंग ध्यान। भौतिक अंतराचा भक्तीवर काहीही परिणाम होत नाही, भक्ती तर मनाच्या तारांनी जोडलेली असते.'
-  }
-,
+  },
   {
     id: 'dp_96',
     bookId: 'drishtantapath',
@@ -1410,8 +3989,7 @@ export const initialChapters: Chapter[] = [
     titleEn: 'The Swan and Water-Milk Parable',
     content: 'हंस पक्ष्यासमोर दूध आणि पाणी एकत्र करून ठेवले, तर तो केवळ दूधच पितो आणि पाणी सोडून देतो. तसेच विवेकी पुरुषाने या जगात सुख आणि दुःख, चांगले आणि वाईट यांमधून केवळ सत्त्वगुण आणि ईश्वरी ज्ञानच स्वीकारले पाहिजे।',
     explanation: 'नीर-क्षीर विवेक। असत्याच्या आणि मायेच्या प्रपंचातून केवळ सत्याची आणि मोक्षाची निवड करणे हाच खरा विवेक आहे.'
-  }
-,
+  },
   {
     id: 'dp_97',
     bookId: 'drishtantapath',
@@ -1420,8 +3998,7 @@ export const initialChapters: Chapter[] = [
     titleEn: 'The Deer and Musk Parable',
     content: 'कस्तुरी मृगाच्या स्वतःच्या बेंबीतच सुवासिक कस्तुरी असते, पण तो सुगंध कुठून येतो हे न समजल्यामुळे तो वेड्यासारखा वनात इकडेतिकडे शोधत फिरतो. तसेच देव प्रत्येकाच्या हृदयात असूनही अज्ञानी माणूस त्याला मंदिरात-मशिदीत बाहेर शोधतो।',
     explanation: 'आत्मज्ञान आणि ईश्वराचा वास। परमेश्वर बाहेर नसून आपल्याच अंतकरणात आहे, गरज आहे ती अंतर्मुख होऊन त्याला ओळखण्याची.'
-  }
-,
+  },
   {
     id: 'dp_98',
     bookId: 'drishtantapath',
@@ -1430,8 +4007,7 @@ export const initialChapters: Chapter[] = [
     titleEn: 'The Tree and Fruit Parable',
     content: 'ज्या वृक्षाला गोड फळे येतात, त्या वृक्षावर लोक दगड मारतात, तरीही वृक्ष त्यांना मधुर फळेच देतो. तसेच सज्जन आणि भक्त पुरुषांवर जगाने कितीही अन्याय केला, तरी ते प्रत्युत्तरादाखल जगाचे कल्याणच करतात।',
     explanation: 'सहनशीलता आणि परोपकार। भगवंताच्या भक्तामध्ये सहनशीलता आणि जगाविषयी केवळ करुणेचाच भाव असतो.'
-  }
-,
+  },
   {
     id: 'dp_99',
     bookId: 'drishtantapath',
@@ -1440,8 +4016,7 @@ export const initialChapters: Chapter[] = [
     titleEn: 'The Gem and Glass Parable',
     content: 'रत्न कितीही धुळीत पडले तरी त्याचे मूल्य कमी होत नाही आणि काचेचा तुकडा कितीही सजवला तरी तो हिरा बनू शकत नाही. तसेच ईश्वराचा खरा भक्त कोणत्याही परिस्थितीत आपले चारित्र्य आणि निष्ठा बदलत नाही।',
     explanation: 'सच्च्या भक्तीची किंमत। बाह्य संकट किंवा गरिबी भक्ताच्या आंतरिक आध्यात्मिक संपत्तीला कमी करू शकत नाही.'
-  }
-,
+  },
   {
     id: 'dp_100',
     bookId: 'drishtantapath',
@@ -1450,8 +4025,7 @@ export const initialChapters: Chapter[] = [
     titleEn: 'The Sun and Darkness Parable',
     content: 'सूर्याच्या समोर अंधकार कधीही उभा राहू शकत नाही; सूर्य उगवताच अंधाराचे अस्तित्व संपते. त्याचप्रमाणे ज्याच्या अंतकरणात ईश्वराच्या नामाचा आणि ज्ञानाचा प्रकाश प्रकट होतो, त्याच्या मनातील सर्व पाप आणि वासनांचा अंधकार पळून जातो।',
     explanation: 'ईश्वरी प्रकाशाचे सामर्थ्य। ईश्वरी नामाचा उच्चार आणि स्मरण हे सर्व पापांचा नाश करणारे आणि मनाला पवित्र करणारे आहे.'
-  }
-,
+  },
   {
     id: 'dp_101',
     bookId: 'drishtantapath',
@@ -1460,8 +4034,7 @@ export const initialChapters: Chapter[] = [
     titleEn: 'The Pot and Space Parable',
     content: 'घडा फुटला तरी त्याच्या आतील आकाश (पोकळी) नष्ट होत नाही, ते बाह्य विशाल आकाशात विलीन होते. तसेच हा नश्वर देह जरी नष्ट झाला, तरी आत्मा अमर राहून अखेर परमेश्वराच्या अनंत स्वरूपात विलीन होतो।',
     explanation: 'आत्म्याचे अमरत्व। मृत्यू हा केवळ शरीराचा अंत आहे, आत्म्याचा नाही; आत्मा ईश्वराचाच अंश असल्यामुळे शाश्वत आहे.'
-  }
-,
+  },
   {
     id: 'dp_102',
     bookId: 'drishtantapath',
@@ -1470,8 +4043,7 @@ export const initialChapters: Chapter[] = [
     titleEn: 'The Desire Tree Parable',
     content: 'कल्पतरूच्या खाली बसून माणूस जे काही मागतो, ते त्याला मिळते. पण जर त्याने वाईट विचार केला, तर त्याचे वाईटच होते. तसेच भक्ताने देवाजवळ मागताना नेहमी बुद्धी, भक्ती आणि मोक्ष मागावा, संसारी विषये मागू नयेत।',
     explanation: 'प्रार्थनेची शुद्धता। ईश्वराजवळ भौतिक सुखांची मागणी करणे म्हणजे कल्पवृक्षाखाली बसून विष मागण्यासारखे आहे.'
-  }
-,
+  },
   {
     id: 'dp_103',
     bookId: 'drishtantapath',
@@ -1480,8 +4052,7 @@ export const initialChapters: Chapter[] = [
     titleEn: 'The Touchstone and Iron Parable',
     content: 'लोखंडाचा तुकडा पारस मण्याला स्पर्श करताच त्याचे शुद्ध सोन्यात रूपांतर होते, त्याचा काळेपणा नष्ट होतो. तसेच कितीही पापी मनुष्य असला, तरी सद्गुरूंच्या केवळ सान्निध्याने त्याचे रूपांतर पवित्र साधकामध्ये होते।',
     explanation: 'सत्संगतीचा महिमा। सद्गुरूंचे सान्निध्य आणि कृपा ही अत्यंत दुर्गुणी माणसालाही सज्जन आणि भक्त बनवण्यास समर्थ आहे.'
-  }
-,
+  },
   {
     id: 'dp_104',
     bookId: 'drishtantapath',
@@ -1490,8 +4061,7 @@ export const initialChapters: Chapter[] = [
     titleEn: 'The Iron and Fire Parable',
     content: 'लोखंडाचा तुकडा आगीत टाकला की तो स्वतः तांबडालाल होऊन अग्नीसारखाच प्रकाशू लागतो. तसेच जेव्हा भक्त ईश्वराच्या चिंतनात पूर्णपणे लीन होतो, तेव्हा त्याच्यामध्ये ईश्वरी गुणांचा साक्षात्कार घडू लागतो।',
     explanation: 'तन्मयता आणि सायुज्यता। ईश्वरी आराधनेत स्वतःचे अस्तित्व विसरून लीन होणे म्हणजे देवमय होणे होय.'
-  }
-,
+  },
   {
     id: 'dp_105',
     bookId: 'drishtantapath',
@@ -1500,8 +4070,7 @@ export const initialChapters: Chapter[] = [
     titleEn: 'The Gold and Ornaments Parable',
     content: 'सोन्यापासून बनवलेले दागिने वेगवेगळ्या नावांनी ओळखले जातात - बांगडी, हार, अंगठी. पण त्या सर्वांचे मूळ सोन्याचेच असते. तसेच या जगात सर्व जीव वेगवेगळ्या रूपांत दिसले, तरी त्यांच्यातील चैतन्य एकच ईश्वर आहे।',
     explanation: 'अद्वैत भाव आणि एकत्व। बाह्य विविधता असली तरी सृष्टीतील प्रत्येक कणामध्ये आणि जीवामध्ये एकाच ईश्वराचा अंश सामावलेला आहे.'
-  }
-,
+  },
   {
     id: 'dp_106',
     bookId: 'drishtantapath',
@@ -1510,8 +4079,7 @@ export const initialChapters: Chapter[] = [
     titleEn: 'The Seed and Tree Parable',
     content: 'एका छोट्याशा बीजामध्ये अवाढव्य वटवृक्ष दडलेला असतो, योग्य वेळ आणि माती मिळताच तो प्रकट होतो. तसेच साधकाच्या मनात पडलेले ईश्वरी वचनाचे बीज योग्य भक्तीच्या मशागतीने दिव्य ज्ञानात रूपांतरित होते।',
     explanation: 'साधनेचे फळ। लहान वचनांचे निरंतर मनन केल्यास कालांतराने त्यातून अथांग आध्यात्मिक ज्ञानाचा आणि शांतीचा उदय होतो.'
-  }
-,
+  },
   {
     id: 'dp_107',
     bookId: 'drishtantapath',
@@ -1520,8 +4088,7 @@ export const initialChapters: Chapter[] = [
     titleEn: 'The Wave and Ocean Parable',
     content: 'सागराच्या लाटा सागरापासून वेगळ्या नसतात, त्या पाण्यातून निर्माण होतात आणि पाण्यातच विरून जातात. तसेच हे संपूर्ण विश्व ईश्वराच्या शक्तीतून निर्माण होते आणि अखेर त्यांच्यातच सामावून जाते।',
     explanation: 'सृष्टीचे मूळ कारण। संपूर्ण विश्व हे ईश्वराचेच खेळणे (लीला) असून त्यांचे अस्तित्व वेगळे नाही.'
-  }
-,
+  },
   {
     id: 'dp_108',
     bookId: 'drishtantapath',
@@ -1530,8 +4097,7 @@ export const initialChapters: Chapter[] = [
     titleEn: 'The Mirror and Reflection Parable',
     content: 'आरशासमोर जशी वस्तू धरली, तसेच प्रतिबिंब दिसते; आरसा स्वतः पक्षपाती नसतो. तसेच परमेश्वर प्रत्येक जीवाला त्याच्या कर्मानुसार फळ देतो, त्यांच्या मनात कोणताही भेदभाव नसतो।',
     explanation: 'कर्माचा सिद्धांत। ईश्वरी न्याय हा निःपक्षपाती असून आपण जशी साधना करू, तसेच फळ आपल्याला प्राप्त होईल.'
-  }
-,
+  },
   {
     id: 'dp_109',
     bookId: 'drishtantapath',
@@ -1540,8 +4106,7 @@ export const initialChapters: Chapter[] = [
     titleEn: 'The Flower and Fragrance Parable',
     content: 'फुलातील सुवास दिसत नाही, पण तो हवेमध्ये पसरून प्रत्येकाला आनंद देतो. तसेच ईश्वराचे अस्तित्व डोळ्यांनी दिसत नाही, पण त्यांच्या भक्तीचा सुगंध भक्ताच्या पवित्र वर्तनातून संपूर्ण जगात पसरतो।',
     explanation: 'अदृश्य ईश्वरी शक्ती। ईश्वराला डोळ्यांनी पाहण्यापेक्षा त्यांच्या अस्तित्वाचा अनुभव भक्ती आणि प्रेमाच्या माध्यमातून घेणे श्रेष्ठ आहे.'
-  }
-,
+  },
   {
     id: 'dp_110',
     bookId: 'drishtantapath',
@@ -1550,8 +4115,7 @@ export const initialChapters: Chapter[] = [
     titleEn: 'The Milk and Butter Parable',
     content: 'दुधात लोणी पूर्णपणे मिसळलेले असते, पण नुसते पाहिल्याने ते दिसत नाही; त्यासाठी दुधाचे दही करून ते घुसळावे लागते. तसेच देव विश्वात असूनही दिसत नाही, पण भक्तीने अंतकरण घुसळल्यास तो प्रकट होतो।',
     explanation: 'साधनेची आवश्यकता। ईश्वराची प्रचिती घेण्यासाठी केवळ पुस्तकी ज्ञान पुरेसे नसून नामस्मरण आणि आंतरिक मनन आवश्यक आहे.'
-  }
-,
+  },
   {
     id: 'dp_111',
     bookId: 'drishtantapath',
@@ -1560,8 +4124,7 @@ export const initialChapters: Chapter[] = [
     titleEn: 'The Ganges and Ocean Parable',
     content: 'गंगा नदी शेकडो अडथळे, डोंगर आणि दऱ्या पार करून अखेर सागराला मिळते व शांत होते; तिला सागराशी एकरूप झाल्यावरच विश्रांती मिळते. तसेच भक्ताचा आत्मा संसारातील संकटे पार करून ईश्वराच्या चरणी मिळून तृप्त होतो।',
     explanation: 'आद्यात्मिक ध्येय। संसारातील अडथळ्यांना न जुमानता भक्ताने केवळ ईश्वरी मीलनाचा आणि मोक्षाचा ध्यास धरावा.'
-  }
-,
+  },
   {
     id: 'dp_112',
     bookId: 'drishtantapath',
@@ -1570,8 +4133,7 @@ export const initialChapters: Chapter[] = [
     titleEn: 'The Sandalwood Tree Parable',
     content: 'चंदन वृक्षाला सापांनी वेढलेले असले, तरी तो कधी आपले शीतलत्व सोडत नाही आणि विषारी बनत नाही. तसेच खऱ्या संतांच्या अवतीभोवती कितीही वाईट प्रवृत्तीचे लोक असले, तरी ते आपली शांती आणि सत्त्वगुण कधी सोडत नाहीत।',
     explanation: 'अढळ नीतिमत्ता। वाईट परिस्थिती किंवा संगती साधकाच्या मूळ स्वभावगुणाला आणि ईश्वरी श्रद्धेला कलंकित करू शकत नाही.'
-  }
-,
+  },
   {
     id: 'dp_113',
     bookId: 'drishtantapath',
@@ -1580,8 +4142,7 @@ export const initialChapters: Chapter[] = [
     titleEn: 'The Musk Fragrance Parable',
     content: 'कस्तुरीचा सुगंध कधीही लपवून ठेवता येत नाही; तो आपोआप हवेत पसरून सर्वांना आकर्षित करतो. तसेच ईश्वराचा खरा साधक कितीही एकांतात असला, तरी त्याच्या भक्तीचा आणि ज्ञानाचा सुवास लोकांपर्यंत पोहोचतोच।',
     explanation: 'खऱ्या भक्तीचे तेज। अस्सल आध्यात्मिक प्रगती कधीही लपून राहत नाही, तिचे तेज आणि शांतता इतरांना प्रेरणा देते.'
-  }
-,
+  },
   {
     id: 'dp_114',
     bookId: 'drishtantapath',
@@ -1590,8 +4151,7 @@ export const initialChapters: Chapter[] = [
     titleEn: 'The Lamp and Flame Parable',
     content: 'एका पेटलेल्या दिव्यापासून हजारो दिवे पेटवले तरी मूळ दिव्याचा प्रकाश कमी होत नाही. तसेच ईश्वर सर्व जीवांमध्ये आपली भक्ती आणि ज्ञान वाटत असले, तरी त्यांचे पूर्णत्व कधीही कमी होत नाही, ते अनंतच राहतात।',
     explanation: 'अनंत ईश्वरी स्वरूप। परमेश्वर हा पूर्ण आहे आणि त्यांच्यापासून निर्माण झालेले हे जगही त्यांच्या पूर्णत्वाला कधी कमी करू शकत नाही.'
-  }
-,
+  },
   {
     id: 'sp_1',
     bookId: 'sutrapath',
@@ -1599,10 +4159,8 @@ export const initialChapters: Chapter[] = [
     title: 'प्रकरण १: आचार मालिका (Achar Malika)',
     titleEn: 'Achar Malika',
     content: '॥ श्री परमेश्वरायनमः ॥\n१. परिग्रहा पासौनि निवृत्ति करावी।\n२. संनिधि परिहारे, असंभोगु रक्षीजे।\n३. विविचेनी ठाणे राहावे।\n४. ग्राम्य धर्मासी सन्निधान न करावे।\n५. असंभोगु रक्षीजे: स्त्रीयां, पुरुषां, नपुसकां, पशूं, पक्षीयांसी संग न करावा।',
-    explanation: 'इस प्रकरण में साधक के दैनिक आचार, विरक्ति और ब्रह्मचर्य की रक्षा के लिए परमेश्वर की ओर से नियमों का निरूपण किया गया है। साधक को परिग्रह (संग्रह वृत्ति) से दूर रहकर एकांत और साधनापूर्ण जीवन बिताना चाहिए।',
-    audioUrl: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3'
-  }
-,
+    explanation: 'इस प्रकरण में साधक के दैनिक आचार, विरक्ति और ब्रह्मचर्य की रक्षा के लिए परमेश्वर की ओर से नियमों का निरूपण किया गया है। साधक को परिग्रह (संग्रह वृत्ति) से दूर रहकर एकांत और साधनापूर्ण जीवन बिताना चाहिए।'
+  },
   {
     id: 'sp_2',
     bookId: 'sutrapath',
@@ -1610,10 +4168,8 @@ export const initialChapters: Chapter[] = [
     title: 'प्रकरण २: विचार मालिका (Vichar Malika)',
     titleEn: 'Vichar Malika',
     content: '१. ज्ञान हेचि परमेश्वर स्वरूप।\n२. प्रपंचु तो अज्ञान रूपु।\n३. जीव हा अज्ञाने आवृत आहे।\n४. परमेश्वर कृपेनेचि मुमुक्षूला ज्ञानाची प्राप्ती होते।\n५. ईश्वर भक्तीवाचून गत्यंतर नाही।',
-    explanation: 'विचार मालिका में ज्ञान और अज्ञान के स्वरूप पर प्रकाश डाला गया है। चक्रधर स्वामी समझाते हैं कि प्रपंच माया का रूप है और केवल परमेश्वर भक्ति व ज्ञान ही आत्मा के उद्धार का मार्ग है।',
-    audioUrl: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3'
-  }
-,
+    explanation: 'विचार मालिका में ज्ञान और अज्ञान के स्वरूप पर प्रकाश डाला गया है। चक्रधर स्वामी समझाते हैं कि प्रपंच माया का रूप है और केवल परमेश्वर भक्ति व ज्ञान ही आत्मा के उद्धार का मार्ग है।'
+  },
   {
     id: 'sp_3',
     bookId: 'sutrapath',
@@ -1622,8 +4178,7 @@ export const initialChapters: Chapter[] = [
     titleEn: 'Achar Vidhi',
     content: '१. नित्य देवपूजा करावी, मन ईश्वरी लीन ठेवावे।\n२. दीनाचा पाश न घ्यावा, दयाभाव दृढ करावा।\n३. भोजनकाळी शुद्ध भाव ठेवावा, भिक्षेचे अन्न पवित्र मानावे।\n४. वाद-विवादापासून दूर राहावे।',
     explanation: 'साधक को दयाभाव, संयमित जीवनशैली और सात्विक आहार का पालन करना चाहिए। भिक्षा का अन्न ईश्वर प्रसाद स्वरूप ग्रहण करना और सभी जीवों पर दया करना धर्म का अंग है।'
-  }
-,
+  },
   {
     id: 'sp_4',
     bookId: 'sutrapath',
@@ -1632,8 +4187,7 @@ export const initialChapters: Chapter[] = [
     titleEn: 'Lakshan Sutra',
     content: '१. परमेश्वर लक्षण हे केवळ आनंद व परमोदारता होय।\n२. खरा साधक तो जो द्वंद्वरहित आहे।\n३. सुख-दुःख समान मानणे हे विरागी लक्षणाचे चिन्ह होय।\n४. परमेश्वर भक्तांना निरंतर शांती लाभते।',
     explanation: 'इस अध्याय में परमेश्वर और सच्चे भक्त के उत्तम लक्षणों की विवेचना की गई है। भक्त वह है जो समता, शांती और पूर्ण आत्मसमर्पण के भाव में लीन रहता है।'
-  }
-,
+  },
   {
     id: 'lc_1',
     bookId: 'leelacharitra',
@@ -1641,10 +4195,8 @@ export const initialChapters: Chapter[] = [
     title: 'लीला १: श्री चक्रपाणि अवतार लीला (Chakrapani Avatar Leela)',
     titleEn: 'Chakrapani Avatar Leela',
     content: 'एके दिवशी द्वारकापुरीमध्ये श्री चक्रपाणि महाराज आपल्या भक्तांसह क्रीडा करत होते. त्यांनी भक्तांना परम आनंद दिला आणि नंतर लीलाविग्रहाने लोककल्याणासाठी अवतार प्रगट केला. उनके स्पर्श मात्र से ही दीनों के कष्ट दूर हो गए।',
-    explanation: 'श्री चक्रपाणि महाराज महानुभाव पंथ के पंचकृष्णों में से द्वितीय अवतार हैं। यह लीला उनके दिव्य अवतार ग्रहण करने और द्वारका में भक्तों के उद्धार की सुंदर कथा वर्णित करती है।',
-    audioUrl: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3'
-  }
-,
+    explanation: 'श्री चक्रपाणि महाराज महानुभाव पंथ के पंचकृष्णों में से द्वितीय अवतार हैं। यह लीला उनके दिव्य अवतार ग्रहण करने और द्वारका में भक्तों के उद्धार की सुंदर कथा वर्णित करती है।'
+  },
   {
     id: 'lc_2',
     bookId: 'leelacharitra',
@@ -1653,8 +4205,7 @@ export const initialChapters: Chapter[] = [
     titleEn: 'Changdev Raul Meet',
     content: 'सर्वज्ञ श्रीचक्रधर स्वामी आणि चांगदेव राऊळ महाराज यांची भेट झाली. दोन दिव्य अवतार एकत्र आल्यावर सृष्टीवर दैवी आनंदाचा वर्षाव झाला. दोघांनी परस्परांना आलिंगन दिले व लोककल्याणाच्या आध्यात्मिक कार्याचे सूत्र निश्चित केले।',
     explanation: 'चांगदेव राऊळ (द्वारकाचे परमेश्वर) और चक्रधर स्वामी जी की पावन आध्यात्मिक भेंट की सुंदर गाथा। दोनों महाप्रभुओं का एकात्म भाव दर्शनीय है।'
-  }
-,
+  },
   {
     id: 'lc_3',
     bookId: 'leelacharitra',
@@ -1663,8 +4214,7 @@ export const initialChapters: Chapter[] = [
     titleEn: 'Paithan Visit',
     content: 'स्वामी पैठण नगरीत दाखल झाले. तेथे गोदावरी काठी त्यांनी लोकांना अतिशय सोप्या शब्दांत परमेश्वर भक्तीचा आणि अहिंसेचा उपदेश केला. अनेक विद्वानांनी त्यांचे श्रेष्ठत्व मान्य करून त्यांचे शिष्यत्व स्वीकारले।',
     explanation: 'पैठण में गोदावरी नदी के तट पर स्वामी द्वारा दिए गए दिव्य उपदेशों और शिष्यों के साथ उनके पावन संस्मरणों का वर्णन।'
-  }
-,
+  },
   {
     id: 'achar_1',
     bookId: 'acharpath',
@@ -1672,8 +4222,7 @@ export const initialChapters: Chapter[] = [
     title: 'प्रकरण १: आचार धर्म',
     content: '१. नित्य नैमित्तिक कृत्य यथाविधी करावे।\n२. शुचिर्भूत राहुनि धर्मग्रंथांचे वाचन करावे।\n३. परपीडेपासून परावृत्त व्हावे, सत्य व अहिंसेचे आचरण करावे।',
     explanation: 'आचारपाठ में साधकों के आचरण की पवित्रता, सात्विक आचार और मर्यादा का गहन विवेचन है।'
-  }
-,
+  },
   {
     id: 'vichar_1',
     bookId: 'vicharpath',
@@ -1681,8 +4230,7 @@ export const initialChapters: Chapter[] = [
     title: 'प्रकरण १: विचार रहस्य',
     content: '१. विवेक हा चि सर्व कर्मांचे मूळ होय।\n२. शुद्ध विचारानेच मन निर्विषय होते।\n३. ईश्वराचे ध्यान हेच मनाला स्थिर करते।',
     explanation: 'विचारपाठ में आत्मा, जीव, जगत और माया के चिंतन की वैज्ञानिक विवेचना की गई है।'
-  }
-,
+  },
   {
     id: 'vach_1',
     bookId: 'vachanamrut',
@@ -1690,8 +4238,7 @@ export const initialChapters: Chapter[] = [
     title: 'वचनामृत संग्रह १',
     content: '१. "माझा जीव अनंत सुखाचा धनी आहे, परी तो मायेने वेढिला गेला आहे।"\n२. "परमेश्वर भक्ती हीच मानवी जन्माचे सार्थक होय।"\n३. "दया, क्षमा, शांती ज्याच्या ठायी, परमेश्वर तेथेच वास करतो।"',
     explanation: 'स्वामी के वचन अमृत की तरह साधकों को भवसागर से तारते हैं और आत्मिक शांती प्रदान करते हैं।'
-  }
-,
+  },
   {
     id: 'lakshan_1',
     bookId: 'lakshanratnakar',
@@ -1699,8 +4246,7 @@ export const initialChapters: Chapter[] = [
     title: 'अध्याय १: ईश्वरी लक्षणे',
     content: '१. ईश्वराचे अंगी परम कारुणिकता, सर्वज्ञता आणि सर्वशक्तिमत्ता असते।\n२. तो जीवांच्या कल्याणासाठी विविध सगुण अवतार धारण करतो।',
     explanation: 'इस अध्याय में परमेश्वर के सगुण-साकार स्वरूप की विशेषताओं और उनके दयालु लक्षणों की शास्त्रीय मीमांसा है।'
-  }
-,
+  },
   {
     id: 'prak_1',
     bookId: 'prakaranvas',
@@ -1708,8 +4254,7 @@ export const initialChapters: Chapter[] = [
     title: 'प्रकरण १: दार्शनिक विवेचन',
     content: 'महानुभाव संप्रदायातील मूळ सिद्धांत जसे की चार विधी, पंच अवतार आणि जीवाचे मूळ स्वरूप यांचे सविस्तर विवेचन या प्रकरणात आढळते।',
     explanation: 'महानुभाव दर्शन के आधारभूत सिद्धांतों को समझने के लिए यह प्रकरण ग्रन्थ अत्यंत सहायक है।'
-  }
-,
+  },
   {
     id: 'nir_1',
     bookId: 'niruktashesh',
@@ -1717,8 +4262,7 @@ export const initialChapters: Chapter[] = [
     title: 'शब्द निरूक्त १: कठीण शब्दार्थ',
     content: '१. परिग्रह - संग्रह वृत्ती किंवा संचय वृत्ती।\n२. असंभोग - सर्व प्रकारच्या संसर्गाचा त्याग।\n३. सगुण - गुणांसह किंवा साकार रूपाने प्रगट झालेला परमेश्वर।',
     explanation: 'महानुभाव ग्रंथों में प्रयुक्त प्राचीन मराठी के दार्शनिक और क्लिष्ट शब्दों का सटीक निरूपण।'
-  }
-,
+  },
   {
     id: 'panch_1',
     bookId: 'panchakrishna_charitra',
@@ -1726,8 +4270,7 @@ export const initialChapters: Chapter[] = [
     title: 'अवतार १: श्रीकृष्ण चरित्र',
     content: 'भगवान श्रीकृष्ण हे महानुभाव संप्रदायाचे आद्यदैवत आहेत। त्यांच्या गोकुळ आणि द्वारकेतील सर्व लीला मोक्षप्रद आहेत।',
     explanation: 'महानुभाव मान्यतानुसार पंचकृष्णों में सर्वप्रथम श्रीकृष्ण महाराज के दिव्य रूप की वन्दना।'
-  }
-,
+  },
   {
     id: 'shreek_1',
     bookId: 'shreekrishnacharitra',
@@ -2087,9 +4630,8 @@ export const initialChapters: Chapter[] = [
     titleEn: 'Divine Return to His Supreme Abode',
     content: 'यदुवंशाच्या विनाशानंतर श्रीकृष्ण एका पिंपळाच्या वृक्षाखाली विश्रांती घेत होते, तेव्हा जरा नावाच्या व्याधाचा बाण त्यांच्या पायाला लागला. व्याधाला अभय व मोक्ष देऊन, त्यांनी आपल्या दिव्य दिव्य देहाने स्वर्गारोहण केले आणि भक्तांसाठी आपले ज्ञान मागे ठेवले।',
     explanation: 'अवतारकार्याची समाप्ती आणि संपूर्ण सृष्टीला शाश्वत मोक्षाचा मार्ग दाखवणारे स्वधामगमन।'
-  }
-,
-    {
+  },
+  {
     id: 'shreed_1',
     bookId: 'shreedattatreyacharitra',
     number: 1,
@@ -2222,8 +4764,7 @@ export const initialChapters: Chapter[] = [
     title: 'प्रकरण १: चांगदेव राऊळ अवतार लीला',
     content: 'श्री चांगदेव राऊळ महाराज हे द्वारकापुरीचे परमेश्वर होते। त्यांनी भक्तांच्या उद्धारासाठी आणि चक्रधर स्वामींच्या अवतार कार्याची पूर्वपीठिका म्हणून दिव्य लीला केल्या।',
     explanation: 'महानुभाव संप्रदाय के तृतीय अवतार चांगदेव राऊळ महाराज का पावन जीवन संस्मरण।'
-  }
-,
+  },
   {
     id: 'shreegov_1',
     bookId: 'shreegovindaprabhu_charitra',
@@ -2231,8 +4772,7 @@ export const initialChapters: Chapter[] = [
     title: 'लीला १: ऋद्धिपूर निवास आणि करुणामयी लीला',
     content: 'श्री गोविंदप्रभू महाराज हे परम कारुणिक अवतार होते। त्यांनी ऋद्धिपूर येथे राहून दीन-दुःखी, प्राणी आणि पक्ष्यांवर अपार करुणा केली। त्यांच्या सान्निध्यात आल्याने प्रत्येकाचा उद्धार झाला।',
     explanation: 'भगवान गोविंदप्रभु महाराज की पावन और करुणामयी लीलाओं का मर्म।'
-  }
-,
+  },
   {
     id: 'shreechak_1',
     bookId: 'shreechakradharswami_leelacharitra',
@@ -2240,8 +4780,7 @@ export const initialChapters: Chapter[] = [
     title: 'लीला १: सर्वज्ञ श्रीचक्रधर स्वामी अवतार धारण',
     content: 'गुजरातच्या विशाल देशातील हरपाळदेव रूपाने स्वामींनी अवतार लीला संपवून महाराष्ट्रातील पैठण नगरीत चक्रधर स्वामींच्या रूपात प्रगट होऊन मुमुक्षूंना मोक्षाचा मार्ग दाखवला।',
     explanation: 'महानुभाव संप्रदाय के प्राण आधार श्रीचक्रधर स्वामी के दिव्य प्रकटीकरण की कथा।'
-  }
-,
+  },
   {
     id: 'battis_1',
     bookId: 'battis_lakshanachi_tip',
@@ -2249,8 +4788,7 @@ export const initialChapters: Chapter[] = [
     title: 'लक्षण विवरण: बत्तीस महालक्षणे',
     content: 'अवतार पुरुषाच्या शरीरावर बत्तीस लक्षणे प्रगट होतात। जसे की - समचरणता, उन्नत नासिका, दीर्घ बाहू आणि अत्यंत शांत व ओजस्वी कांती।',
     explanation: 'ईश्वरी अवतार को पहचानने की शास्त्रीय पद्धति और उनके अलौकिक लक्षणों का विवेचन।'
-  }
-,
+  },
   {
     id: 'sutrat_1',
     bookId: 'sutrapath_tika',
@@ -2258,8 +4796,7 @@ export const initialChapters: Chapter[] = [
     title: 'भाष्य १: आचार मालिका विवेचन',
     content: 'आचार मालिकेतील "परिग्रहा पासौनि निवृत्ती" या सूत्राचा अर्थ केवळ बाह्य वस्तूंचा त्याग नसून अंतःकरणातील आसक्तीचा समूळ नाश करणे हा होय।',
     explanation: 'श्री सूत्रपाठ के गूढ़ रहस्यों का प्राचीन आचार्यों द्वारा सरल भाषा में प्रणीत भाष्य।'
-  }
-,
+  },
   {
     id: 'drisht_1',
     bookId: 'drishtantapath_tika',
@@ -2267,8 +4804,7 @@ export const initialChapters: Chapter[] = [
     title: 'दृष्टांत स्पष्टीकरण: सुवर्णकार दृष्टांत रहस्य',
     content: 'ज्याप्रमाणे सोने तापवल्याशिवाय शुद्ध होत नाही, त्याचप्रमाणे मनुष्याचे मन कठीण साधना आणि भक्तिभावाच्या योगानेच निर्मळ होते।',
     explanation: 'स्वामी द्वारा प्रयुक्त सुंदर दृष्टांतों का सविस्तार और गहन दार्शनिक अर्थ।'
-  }
-,
+  },
   {
     id: 'mahab_1',
     bookId: 'mahabhashya',
@@ -2276,8 +4812,7 @@ export const initialChapters: Chapter[] = [
     title: 'मंगलाचरण आणि मूळ भाष्य',
     content: '॥ श्री पंचकृष्णाय नमः ॥\nया भाष्यात जीव, प्रपंच, देवता आणि परमेश्वर या चार प्रमुख तत्त्वांचे परस्पर संबंध अत्यंत तर्कशुद्ध पद्धतीने मांडण्यात आले आहेत।',
     explanation: 'महानुभाव तत्वज्ञान का सर्वश्रेष्ठ भाष्य ग्रंथ जो संप्रदाय की दार्शनिक नींव को सुदृढ़ करता है।'
-  }
-,
+  },
   {
     id: 'brahm_1',
     bookId: 'brahmavidya',
@@ -2285,8 +4820,7 @@ export const initialChapters: Chapter[] = [
     title: 'अध्याय १: ब्रह्मज्ञान निरूपण',
     content: 'ब्रह्मविद्या ही ती विद्या होय जी जीवाला अज्ञानाच्या अंधारातून बाहेर काढून परमेश्वराच्या नित्य स्वरूपाची प्राप्ती करून देते।',
     explanation: 'सत्य ज्ञान, जीव के बंधन और ईश्वर की मुक्तिदायिनी कृपा का सविस्तार निरूपण।'
-  }
-,
+  },
   {
     id: 'jnanp_1',
     bookId: 'jnanprabodh',
@@ -2294,8 +4828,7 @@ export const initialChapters: Chapter[] = [
     title: 'प्रकरण १: ज्ञानाचा प्रकाश',
     content: 'मनुष्याला जोपर्यंत स्वरूपाचे ज्ञान होत नाही, तोपर्यंत तो संसाराच्या फेऱ्यात भटकत राहतो। ईश्वराची कृपा हाच ज्ञानाचा खरा मार्ग आहे।',
     explanation: 'साती ग्रंथों के अंतर्गत सुंदर काव्य शैली में ज्ञान के महत्व का प्रतिपादन।'
-  }
-,
+  },
   {
     id: 'tattvas_1',
     bookId: 'tattvasar',
@@ -2303,8 +4836,7 @@ export const initialChapters: Chapter[] = [
     title: 'सार १: तत्त्व विवेचन',
     content: 'या सृष्टीचा कर्ता केवळ परमेश्वरच आहे। प्रपंच हा नाशिवंत असून केवळ परमेश्वर भक्तीच शाश्वत आणि खरी आहे।',
     explanation: 'अत्यंत सुबोध शैली में महानुभाव तत्वज्ञान के मुख्य निष्कर्षों का संग्रह।'
-  }
-,
+  },
   {
     id: 'vivek_1',
     bookId: 'viveksindhu',
@@ -2312,8 +4844,7 @@ export const initialChapters: Chapter[] = [
     title: 'अध्याय १: विवेक व वैराग्य संवाद',
     content: 'विवेक म्हणजे काय सत्य आणि काय असत्य याचे ज्ञान असणे। वैराग्य म्हणजे असत्य प्रपंचाचा मोह सोडून सत्याकडे धाव घेणे।',
     explanation: 'मुकुंदराज कृत अत्यंत प्राचीन ग्रंथ का महानुभाव पंथ में स्थान व आध्यात्मिक महत्व।'
-  }
-,
+  },
   {
     id: 'pooja_1',
     bookId: 'poojavasar',
@@ -2321,8 +4852,7 @@ export const initialChapters: Chapter[] = [
     title: 'पूजा विधी: षोडशोपचार पूजा',
     content: 'नित्यकाळी उठून स्नान करून अत्यंत भक्तीभावाने परमेश्वराच्या पावन प्रतिमेची किंवा ओट्याची गंध, पुष्प, धूप, दीप आणि नैवेद्याने पूजा करावी।',
     explanation: 'परमेश्वर पूजा की पारंपरिक वैदिक व महानुभाव पद्धति का नियम संग्रह।'
-  }
-,
+  },
   {
     id: 'aarti_1',
     bookId: 'aarti_sangrah',
@@ -2330,8 +4860,7 @@ export const initialChapters: Chapter[] = [
     title: 'श्रीचक्रधर स्वामी आरती',
     content: 'जय देव जय देव जय श्रीचक्रधरा।\nआरती ओवाळू चरणी सुंदर मुख पाहा ॥ ध्रु. ॥\nपैठण प्रगटले स्वामी अवतार धारण।\nदीन दुःखी भक्तांचे केले संकट हरण ॥ १ ॥\nजय देव जय देव...',
     explanation: 'स्वामी चक्रधर महाराज की परम मंगलकारी आरती का भक्तिमय पाठ।'
-  }
-,
+  },
   {
     id: 'stotra_1',
     bookId: 'stotra_sangrah',
@@ -2339,8 +4868,7 @@ export const initialChapters: Chapter[] = [
     title: 'श्री पंचकृष्ण स्तोत्रम्',
     content: 'नमः श्रीकृष्णाय द्वारकानाथाय धीमते।\nनमः चांगदेवराऊळाय ब्रह्मरूपाय धारिणे।\nनमः गोविंदप्रभवे कारुण्यमूर्तये नमो नमः।',
     explanation: 'संस्कृत में निबद्ध पंचकृष्णों का ध्यान व वन्दना स्तोत्र।'
-  }
-,
+  },
   {
     id: 'nitya_1',
     bookId: 'nityapath',
@@ -2348,8 +4876,7 @@ export const initialChapters: Chapter[] = [
     title: 'नित्य मंगल पाठ',
     content: 'सकाळी उठल्यावर पंचकृष्णांचे स्मरण करावे, नित्यसूत्रांचे पठन करावे आणि दिवसाची सुरुवात मंगलमयी विचारांनी करावी।',
     explanation: 'साधकों के दैनिक पठन के लिए निश्चित की गई नित्य मंगलमय सूक्तियां।'
-  }
-,
+  },
   {
     id: 'namas_1',
     bookId: 'namasmaran_sangrah',
@@ -2357,8 +4884,7 @@ export const initialChapters: Chapter[] = [
     title: 'नामस्मरण विधी व जप संख्या',
     content: '"ॐ नमो श्रीचक्रधर स्वामी परमेश्वराय नमः"\nया दिव्य नामाचा निरंतर जप केल्याने अंतःकरण शुद्ध होते व चित्तातील अज्ञान नष्ट होते।',
     explanation: 'नामस्मरण का आध्यात्मिक महत्व और जप की शास्त्रीय प्रणाली।'
-  }
-,
+  },
   {
     id: 'prarth_1',
     bookId: 'prarthana_sangrah',
@@ -2366,8 +4892,7 @@ export const initialChapters: Chapter[] = [
     title: 'शरणगती प्रार्थना',
     content: 'हे देवा, मी अज्ञानी आहे, संसाराच्या मायेत अडकलो आहे। मला तुमच्या चरणांचा आश्रय द्या आणि माझा उद्धार करा। तुमची कृपा हीच माझी खरी संपत्ती आहे।',
     explanation: 'परमेश्वर के चरणों में की जाने वाली दीन व आत्मसमर्पण युक्त भावपूर्ण प्रार्थना।'
-  }
-,
+  },
   {
     id: 'smrut_1',
     bookId: 'smrutisthal',
@@ -2375,8 +4900,7 @@ export const initialChapters: Chapter[] = [
     title: 'प्रकरण १: नागदेवाचार्य संघ संचालन',
     content: 'स्वामींच्या उत्तरायणानंतर भटोबास (नागदेवाचार्य) यांनी संपूर्ण महानुभाव संघाला एकत्र ठेवले। म्हाइंभटांनी लीळाचरित्र लिहिण्यास सुरुवात केली आणि भटोबासांनी त्याला संमती दिली।',
     explanation: 'महानुभाव संप्रदाय के इतिहास और नागदेवाचार्य जी के दिव्य जीवन के पावन संस्मरण।'
-  }
-,
+  },
   {
     id: 'sthan_1',
     bookId: 'sthanpothi',
@@ -2384,8 +4908,7 @@ export const initialChapters: Chapter[] = [
     title: 'तीर्थ दर्शन: ऋद्धिपूर धाम',
     content: 'ऋद्धिपूर (अमरावती, महाराष्ट्र) हे श्री गोविंदप्रभू महाराजांचे क्रीडास्थान आहे। येथे स्वामींच्या चरण पादुका आणि अनेक पवित्र ओटे आहेत, जे अत्यंत जाग्रत मानले जातात।',
     explanation: 'पवित्र महानुभाव स्थानों का भौगोलिक और ऐतिहासिक विवरण।'
-  }
-,
+  },
   {
     id: 'sati_1',
     bookId: 'sati_granth',
@@ -2393,8 +4916,7 @@ export const initialChapters: Chapter[] = [
     title: 'साती ग्रंथांचा परिचय व महात्म्य',
     content: 'महानुभाव साती ग्रंथामध्ये रुक्मिणी स्वयंवर, शिशुपालवध, सह्याद्रीवर्णन, वत्सहरण, मूर्तिप्रकाश, ऋद्धिपूरवर्णन आणि ज्ञानप्रबोध यांचा समावेश होतो। हे ग्रंथ मराठी साहित्याचे वैभव आहेत।',
     explanation: 'महानुभाव संप्रदाय के प्रसिद्ध सात काव्यों की साहित्यिक व दार्शनिक महत्ता।'
-  }
-,
+  },
   {
     id: 'dhav_1',
     bookId: 'dhavale',
@@ -2402,8 +4924,7 @@ export const initialChapters: Chapter[] = [
     title: 'धवळे १: महदंबेची मधुर गीते',
     content: 'मंगळवेढ्याच्या शुभ प्रसंगी महदंबेने श्रीकृष्ण भगवंतांच्या विवाहाचे गाणे अत्यंत सुंदर ओवी छंदात गायले। "श्रीकृष्ण गोविंद हरे मुरारी..."',
     explanation: 'मराठी साहित्य की प्रथम कवयित्री महदंबा द्वारा रचित प्राचीन विवाह गीतों का माधुर्य।'
-  }
-,
+  },
   {
     id: 'rukm_1',
     bookId: 'rukmini_swayamvar',
@@ -2411,8 +4932,7 @@ export const initialChapters: Chapter[] = [
     title: 'अध्याय १: रुक्मिणीचे गुप्त पत्र',
     content: 'रुक्मिणीने श्रीकृष्णाला पत्र पाठवून सांगितले की - "मी तुम्हालाच पती मानले आहे, जर तुम्ही मला वाचवले नाही तर मी माझा प्राण अर्पण करेन।" हे वाचून कृष्ण तात्काळ धावून आले।',
     explanation: 'श्रीमदभागवत और महानुभाव ग्रंथों पर आधारित श्रीकृष्ण-रुक्मिणी विवाह कथा का रसमय विवेचन।'
-  }
-,
+  },
   {
     id: 'murt_1',
     bookId: 'murtiprakash',
@@ -2420,8 +4940,7 @@ export const initialChapters: Chapter[] = [
     title: 'अध्याय १: स्वामींचे सगुण रूप ध्यान',
     content: 'स्वामींचे चरणकमल अत्यंत कोमल आहेत। त्यांचे मुखकमल पौर्णिमेच्या चंद्रासारखे तेजस्वी आणि डोळे अत्यंत करुणेने भरलेले आहेत। त्यांच्या हास्याने भक्तांचे दुःख पळून जाते।',
     explanation: 'सर्वज्ञ श्रीचक्रधर स्वामी महाराज के दिव्य साकार रूप का ध्यान।'
-  }
-,
+  },
   {
     id: 'sahy_1',
     bookId: 'sahyadrivarnan',
@@ -2429,8 +4948,7 @@ export const initialChapters: Chapter[] = [
     title: 'प्रकरण १: सह्याद्रीची पावन भूमी',
     content: 'सह्याद्री पर्वताच्या रांगांमध्ये भगवान श्रीदत्तात्रेय महाराज निवास करतात। तेथील झाडे, वेली, नद्या आणि पशु-पक्षी सर्वच त्या पावन अवताराच्या भक्तीत दंग आहेत।',
     explanation: 'सह्याद्री के पर्वतराज की पावनता और भगवान दत्त गुरु की निवास भूमि का अलौकिक गौरव।'
-  }
-,
+  },
   {
     id: 'art_1',
     bookId: 'chakradhar_aarti',
@@ -2438,8 +4956,7 @@ export const initialChapters: Chapter[] = [
     title: 'श्रीचक्रधर स्वामी आरती (Shree Chakradhar Swami Aarti)',
     content: '॥ श्रीचक्रधर स्वामी आरती ॥\nजय देव जय देव जय चक्रधरा स्वामी । आरती ओवाळू चरणी निजधामी ॥ ध्रु० ॥\nअमरावतीचा राजा गुंडम करुणाकर । तारिले अनंत जीव तूचि जगी ईश्वर ॥ जय देव० ॥ १ ॥\nभक्तांच्या हाकेला धावसी धावून । ओवाळू कापुराची वात अंतरी रंगून ॥ जय देव० ॥ २ ॥',
     explanation: 'चक्रधर स्वामी महाराजांच्या चरणी लीन होऊन त्यांची दिव्य आरती आणि स्तुती करण्याची विधी आणि भावार्थ।'
-  }
-,
+  },
   {
     id: 'art_2',
     bookId: 'chakradhar_aarti',
@@ -2447,8 +4964,7 @@ export const initialChapters: Chapter[] = [
     title: 'श्री दत्तात्रेय अष्टक आणि स्तोत्र',
     content: '॥ श्री दत्तात्रेय स्तोत्र ॥\nदत्त गुरु महाराज कृपाळा । अत्रि अनसूया नंदन बाळा ॥\nज्ञान विरक्तीचे तूचि स्वरूप । हरिशी भक्तांचे भवताप कूप ॥\nसह्याद्री पर्वती तुझाची वास । पुरवी भक्तांची मनोवेध आस ॥',
     explanation: 'भगवान श्रीदत्तात्रेय महाराजांच्या दिव्य ध्यान आणि स्तोत्राचे वर्णन आणि अर्थ।'
-  }
-,
+  },
   {
     id: 'bhj_bk_1',
     bookId: 'm_bhajanavali',
@@ -2456,8 +4972,7 @@ export const initialChapters: Chapter[] = [
     title: 'भजन १: चक्रधरा रे चक्रधरा',
     content: '॥ भजन ॥\nचक्रधरा रे चक्रधरा, देवा मज पावन करा ॥ ध्रु० ॥\nप्रपंचात मी खूप थकलो, नाम तुझे मी विसरलो ।\nहातामध्ये हात घ्यावा, मोक्षाचा तो मार्ग द्यावा ॥ १ ॥\nऋद्धपूरच्या मातीमध्ये, ध्यान तुझे अंतरात माझ्या ॥ २ ॥',
     explanation: 'चक्रधर स्वामी महाराजांच्या भक्तीमध्ये रंगून आपल्या चुकीची क्षमा मागून मोक्षाची याचना करणारे भजन।'
-  }
-,
+  },
   {
     id: 'bhj_bk_2',
     bookId: 'm_bhajanavali',
@@ -2465,8 +4980,7 @@ export const initialChapters: Chapter[] = [
     title: 'भजन २: दत्तात्रेय स्वामी सगुण सुंदर',
     content: '॥ भजन ॥\nदत्तात्रेय स्वामी सगुण सुंदर, ध्यान करावे निरंतर ॥ ध्रु० ॥\nतीन शिरे आणि सहा हात, पाठीवरती भक्तीची गाठ ।\nकामधेनू उभी द्वारी, श्वान चौघे रक्षणकारी ॥ १ ॥\nज्ञान भक्तीचा तूच सागर, भवसागर पैलपार कर ॥ २ ॥',
     explanation: 'भगवान दत्तात्रेय प्रभुंच्या साकार सगुण रूपाचे सुंदर आणि ध्यानमग्न भजन।'
-  }
-,
+  },
   {
     id: 'puj_1',
     bookId: 'shree_pujavsar',
@@ -2474,8 +4988,7 @@ export const initialChapters: Chapter[] = [
     title: 'श्री पूजावसर पाठविधी',
     content: '॥ श्री पूजावसर पाठ ॥\n१. प्रथम उठून श्रीचक्रधर स्वामींच्या स्मरणाने नमस्कार करावा।\n२. शुद्ध वस्त्र परिधान करून पूजा स्थानाची स्वच्छता करावी।\n३. अष्टगंध, सुवासिक फुले आणि पंचामृताने चरणांचे ध्यान करावे।\n४. "॥ श्री कृष्ण चक्रधर स्वामी महाराजाय नमः ॥" या मंत्राचा जप नित्य करावा।\n५. दैनंदिन नैवेद्य दाखवून आत्मसमर्पण प्रार्थना करावी।',
     explanation: 'नित्य नियमाने करावयाच्या पूजा आणि सेवेची शास्त्रोक्त पद्धत ज्याने मन ईश्वरामध्ये लीन होते।'
-  }
-,
+  },
   {
     id: 'par_1',
     bookId: 'sutrapath_parayan',
@@ -2919,7 +5432,7 @@ export const initialMessages: CommunityMessage[] = [
         userName: 'व्यवस्थापक (Admin)',
         userRole: 'admin',
         message: 'संगीता जी, बुकिंग १ जुलाई से इसी ऐप के "समाचार" सेक्शन में उपलब्ध कराए गए लिंक द्वारा प्रारंभ होगी। दंडवत प्रणाम।',
-        timestamp: '२०२६-०६-२८ ०४:१० PM'
+        timestamp: '२०२६-०६-२८ ०४:१० PM',
       }
     ]
   }

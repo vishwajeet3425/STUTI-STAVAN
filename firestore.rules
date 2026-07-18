@@ -1,13 +1,63 @@
 rules_version = '2';
 service cloud.firestore {
   match /databases/{database}/documents {
-    function isValidId(id) {
-      return id.matches('^[a-zA-Z0-9_\\-]+$') && id.size() <= 128;
+    // Global safety net: Deny all other collections by default
+    match /{document=**} {
+      allow read, write: if false;
     }
 
+    // Helper functions
+    function isValidId(id) {
+      return id is string && id.size() <= 128 && id.matches('^[a-zA-Z0-9_\\-]+$');
+    }
+
+    function isValidSthanDarshan(data) {
+      return data.id is string && data.id.size() <= 128
+        && data.number is int
+        && data.title is string && data.title.size() <= 200
+        && data.content is string && data.content.size() <= 1000
+        && data.latitude is number
+        && data.longitude is number
+        && (!('titleEn' in data) || (data.titleEn is string && data.titleEn.size() <= 200))
+        && (!('explanation' in data) || (data.explanation is string && data.explanation.size() <= 2000))
+        && (!('photoUrl' in data) || (data.photoUrl is string && data.photoUrl.size() <= 500))
+        && (!('state' in data) || (data.state is string && data.state.size() <= 100))
+        && (!('district' in data) || (data.district is string && data.district.size() <= 100))
+        && (!('taluka' in data) || (data.taluka is string && data.taluka.size() <= 100))
+        && (!('village' in data) || (data.village is string && data.village.size() <= 100));
+    }
+
+    function isValidPlace(data) {
+      return data.placeNameMr is string && data.placeNameMr.size() <= 300
+        && data.placeNameEn is string && data.placeNameEn.size() <= 300
+        && data.latitude is number
+        && data.longitude is number
+        && (!('state' in data) || (data.state is string && data.state.size() <= 200))
+        && (!('district' in data) || (data.district is string && data.district.size() <= 200))
+        && (!('taluka' in data) || (data.taluka is string && data.taluka.size() <= 200))
+        && (!('village' in data) || (data.village is string && data.village.size() <= 200))
+        && (!('category' in data) || (data.category is string && data.category.size() <= 200))
+        && (!('history' in data) || (data.history is string && data.history.size() <= 10000))
+        && (!('leela' in data) || (data.leela is string && data.leela.size() <= 10000))
+        && (!('specialInfo' in data) || (data.specialInfo is string && data.specialInfo.size() <= 5000))
+        && (!('status' in data) || (data.status is string && data.status.size() <= 100));
+    }
+
+    // Sthan Darshan collection matching
     match /sthan_darshan/{sthanId} {
+      // Sthan Darshan collection is public to read (get & list)
       allow read: if true;
-      allow write: if isValidId(sthanId);
+
+      // Allow write (create & update) under validation rules
+      allow create, update: if isValidId(sthanId) && isValidSthanDarshan(request.resource.data);
+      allow delete: if false; // Prevention of data deletion by client SDK
+    }
+
+    // Places collection matching
+    match /places/{placeId} {
+      allow read: if true;
+      allow create, update: if isValidId(placeId) && isValidPlace(request.resource.data);
+      allow delete: if isValidId(placeId);
     }
   }
 }

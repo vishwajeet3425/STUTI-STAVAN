@@ -55,12 +55,90 @@
         }
       },
       "required": ["id", "number", "title", "content", "latitude", "longitude"]
+    },
+    "places": {
+      "title": "Sacred Place",
+      "description": "Sacred place details managed in CRUD admin console",
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Unique identifier of the place"
+        },
+        "placeNameMr": {
+          "type": "string",
+          "description": "Name of the place in Marathi"
+        },
+        "placeNameEn": {
+          "type": "string",
+          "description": "Name of the place in English"
+        },
+        "state": {
+          "type": "string",
+          "description": "State where located"
+        },
+        "district": {
+          "type": "string",
+          "description": "District where located"
+        },
+        "taluka": {
+          "type": "string",
+          "description": "Taluka where located"
+        },
+        "village": {
+          "type": "string",
+          "description": "Village where located"
+        },
+        "category": {
+          "type": "string",
+          "description": "Category of place"
+        },
+        "latitude": {
+          "type": "number",
+          "description": "Latitude coordinate"
+        },
+        "longitude": {
+          "type": "number",
+          "description": "Longitude coordinate"
+        },
+        "history": {
+          "type": "string",
+          "description": "Spiritual history in Marathi"
+        },
+        "leela": {
+          "type": "string",
+          "description": "Leela or stories related to the place in Marathi"
+        },
+        "specialInfo": {
+          "type": "string",
+          "description": "Special instructions or notes"
+        },
+        "status": {
+          "type": "string",
+          "description": "Status of the place entry, e.g. active, inactive"
+        },
+        "createdAt": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Creation timestamp"
+        },
+        "updatedAt": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Last update timestamp"
+        }
+      },
+      "required": ["placeNameMr", "placeNameEn", "latitude", "longitude"]
     }
   },
   "firestore": {
     "/sthan_darshan/{sthanId}": {
       "schema": "sthan_darshan",
       "description": "Sacred Sthan Darshan places collection"
+    },
+    "/places/{placeId}": {
+      "schema": "places",
+      "description": "Places CRUD collection"
     }
   }
 }

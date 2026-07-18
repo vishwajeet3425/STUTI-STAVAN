@@ -5,8 +5,9 @@
 
 import React, { useState } from 'react';
 import { Book, Chapter, Bhajan, Temple, EventKaryakram, Samachar, AnalyticsData } from '../types';
-import { Settings, Plus, TrendingUp, Bell, Image, Shield, AlertCircle, PlayCircle, Eye, EyeOff, CheckCircle } from 'lucide-react';
+import { Settings, Plus, TrendingUp, Bell, Image, Shield, AlertCircle, PlayCircle, Eye, EyeOff, CheckCircle, MapPin } from 'lucide-react';
 import { MAHARASHTRA_DISTRICTS_AND_TALUKAS, maharashtraDistricts } from '../data';
+import PlacesAdmin from './PlacesAdmin';
 
 interface AdminConsoleProps {
   books: Book[];
@@ -37,7 +38,7 @@ export default function AdminConsole({
   onSendNotification,
   lang = 'mr'
 }: AdminConsoleProps) {
-  const [activePanel, setActivePanel] = useState<'analytics' | 'customize' | 'add_book' | 'add_chapter' | 'add_temple' | 'add_bhajan' | 'add_sthan'>('analytics');
+  const [activePanel, setActivePanel] = useState<'analytics' | 'customize' | 'add_book' | 'add_chapter' | 'add_temple' | 'add_bhajan' | 'add_sthan' | 'places_crud'>('places_crud');
 
   // Form states
   const [statusMsg, setStatusMsg] = useState<{ type: 'success' | 'error'; text: string } | null>(null);
@@ -237,6 +238,15 @@ export default function AdminConsole({
         {/* Navigation Options sidebar */}
         <div className="border-r border-saffron-100 p-4 bg-saffron-50/20 space-y-1">
           <h3 className="text-xs font-bold text-gray-500 uppercase tracking-wider mb-2.5 px-2">प्रबंधन श्रेणियां</h3>
+          <button
+            onClick={() => { setActivePanel('places_crud'); setStatusMsg(null); }}
+            className={`w-full text-left px-3.5 py-2 rounded-lg text-xs font-bold transition-all flex items-center gap-2 ${
+              activePanel === 'places_crud' ? 'bg-saffron-500 text-white shadow-xs' : 'text-gray-700 hover:bg-saffron-50 hover:text-saffron-600'
+            }`}
+          >
+            <MapPin className="w-4 h-4" />
+            तीर्थक्षेत्र व्यवस्थापन (Places CRUD)
+          </button>
           <button
             onClick={() => { setActivePanel('analytics'); setStatusMsg(null); }}
             className={`w-full text-left px-3.5 py-2 rounded-lg text-xs font-bold transition-all flex items-center gap-2 ${
@@ -999,6 +1009,11 @@ export default function AdminConsole({
                 स्थान सहेजें (Save to Firestore)
               </button>
             </form>
+          )}
+
+          {/* PLACES CRUD ADMIN PANEL */}
+          {activePanel === 'places_crud' && (
+            <PlacesAdmin lang={lang} />
           )}
 
         </div>

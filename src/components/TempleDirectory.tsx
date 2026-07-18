@@ -63,6 +63,10 @@ export default function TempleDirectory({ temples, lang = 'mr' }: TempleDirector
   // Track selection, default to the first filtered item
   const [selectedTempleId, setSelectedTempleId] = useState<string | null>(null);
   
+  // Navigation modal state
+  const [showNavSelector, setShowNavSelector] = useState(false);
+  const [navTemple, setNavTemple] = useState<Temple | null>(null);
+  
   const currentSelected = displayTemples.find(t => t.id === selectedTempleId) || displayTemples[0] || null;
 
   const handleResetFilters = () => {
@@ -71,8 +75,9 @@ export default function TempleDirectory({ temples, lang = 'mr' }: TempleDirector
     setSelectedTaluka('all');
   };
 
-  const getGoogleMapsUrl = (t: Temple) => {
-    return `https://www.google.com/maps/search/?api=1&query=${t.latitude},${t.longitude}`;
+  const handleNavigate = (t: Temple) => {
+    setNavTemple(t);
+    setShowNavSelector(true);
   };
 
   return (
@@ -375,17 +380,15 @@ export default function TempleDirectory({ temples, lang = 'mr' }: TempleDirector
                         {currentSelected.latitude.toFixed(4)}°N, {currentSelected.longitude.toFixed(4)}°E
                       </span>
                     </div>
-                    <a
-                      href={getGoogleMapsUrl(currentSelected)}
-                      target="_blank"
-                      rel="noreferrer"
+                    <button
+                      onClick={() => handleNavigate(currentSelected)}
                       id={`navigate-btn-${currentSelected.id}`}
-                      className="w-full justify-center px-5 py-3 bg-saffron-500 hover:bg-saffron-600 text-white rounded-xl font-bold text-sm transition-all flex items-center gap-2 shadow-sm border border-saffron-600"
+                      className="w-full justify-center px-5 py-3 bg-saffron-500 hover:bg-saffron-600 text-white rounded-xl font-bold text-sm transition-all flex items-center gap-2 shadow-sm border border-saffron-600 cursor-pointer"
                     >
                       <Compass className="w-4 h-4 animate-[spin_4s_linear_infinite]" />
-                      {lang === 'mr' ? 'गूगल मॅपवर मार्ग शोधणे' : lang === 'hi' ? 'गूगल मैप पर मार्गदर्शन' : 'Navigate on Google Maps'}
+                      {lang === 'mr' ? 'नकाशावर मार्ग शोधणे' : lang === 'hi' ? 'मानचित्र पर मार्गदर्शन' : 'Navigate on Map'}
                       <ExternalLink className="w-4 h-4" />
-                    </a>
+                    </button>
                   </div>
                 </div>
               </div>
@@ -403,6 +406,73 @@ export default function TempleDirectory({ temples, lang = 'mr' }: TempleDirector
           )}
         </div>
       </div>
+
+      {showNavSelector && navTemple && (
+        <div className="fixed inset-0 bg-black/50 backdrop-blur-xs flex items-center justify-center z-[9999] p-4">
+          <div className="bg-white rounded-3xl max-w-sm w-full p-6 shadow-2xl border border-gray-100 relative animate-in fade-in zoom-in duration-200">
+            <button 
+              onClick={() => {
+                setShowNavSelector(false);
+                setNavTemple(null);
+              }}
+              className="absolute top-4 right-4 text-gray-400 hover:text-gray-600 p-1"
+            >
+              ✕
+            </button>
+            <h3 className="text-base font-bold text-gray-800 font-devanagari mb-2 text-center">
+              {lang === 'mr' ? '🧭 प्रवासाचे साधन निवडा' : '🧭 Select Navigation App'}
+            </h3>
+            <p className="text-xs text-gray-500 text-center font-devanagari mb-5">
+              {lang === 'mr' ? 'मार्गदर्शन सुरू करण्यासाठी खालीलपैकी एका नकाशा ॲपवर टॅप करा.' : 'Select a mapping application to begin turn-by-turn routing.'}
+            </p>
+            
+            <div className="space-y-3">
+              <a
+                href={`https://www.google.com/maps/dir/?api=1&destination=${navTemple.latitude},${navTemple.longitude}&travelmode=driving`}
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={() => {
+                  setShowNavSelector(false);
+                  setNavTemple(null);
+                }}
+                className="w-full py-3 px-4 bg-blue-50 hover:bg-blue-100 text-blue-700 font-bold rounded-xl flex items-center justify-between transition-all"
+              >
+                <span className="font-devanagari text-sm">🌐 Google Maps</span>
+                <span className="text-xs text-blue-500 font-semibold font-sans">Open ↗</span>
+              </a>
+              
+              <a
+                href={`https://maps.apple.com/?daddr=${navTemple.latitude},${navTemple.longitude}&dirflg=d`}
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={() => {
+                  setShowNavSelector(false);
+                  setNavTemple(null);
+                }}
+                className="w-full py-3 px-4 bg-gray-50 hover:bg-gray-100 text-gray-800 font-bold rounded-xl flex items-center justify-between transition-all"
+              >
+                <span className="font-devanagari text-sm">🍎 Apple Maps (iOS Only)</span>
+                <span className="text-xs text-gray-400 font-semibold font-sans">Open ↗</span>
+              </a>
+
+              <a
+                href={`https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=;${navTemple.latitude},${navTemple.longitude}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={() => {
+                  setShowNavSelector(false);
+                  setNavTemple(null);
+                }}
+                className="w-full py-3 px-4 bg-emerald-50 hover:bg-emerald-100 text-emerald-800 font-bold rounded-xl flex items-center justify-between transition-all"
+              >
+                <span className="font-devanagari text-sm">🗺️ OpenStreetMap Directions</span>
+                <span className="text-xs text-emerald-600 font-semibold font-sans">Open ↗</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      )}
+
     </div>
   );
 }

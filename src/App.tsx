@@ -18,16 +18,18 @@ import LiveChannel from './components/LiveChannel';
 import DonationGateway from './components/DonationGateway';
 import NiwasKosh from './components/NiwasKosh';
 import AdminConsole from './components/AdminConsole';
+import SthanMap from './components/SthanMap';
+import MyYatra from './components/MyYatra';
 import { translations } from './translations';
 
 // Icons
 import {
   BookOpen, Music, Radio, MapPin, Calendar, Newspaper, MessageSquare, Tv, Bell, Settings,
-  Sparkles, Heart, Compass, Volume2, ShieldAlert, ShieldCheck, User, VolumeX, Menu, ChevronDown, Check, Home
+  Sparkles, Heart, Compass, Volume2, ShieldAlert, ShieldCheck, User, VolumeX, Menu, ChevronDown, Check, Home, Map
 } from 'lucide-react';
 
 export default function App() {
-  const [activeTab, setActiveTab] = useState<string>('granthalaya');
+  const [activeTab, setActiveTab] = useState<string>('sthan_darshan');
   const [lang, setLang] = useState<'hi' | 'mr' | 'en'>('mr');
 
   // Server state data
@@ -53,6 +55,9 @@ export default function App() {
   // Notifications dropdown open state
   const [showNotifications, setShowNotifications] = useState(false);
   const [hasNewNotifications, setHasNewNotifications] = useState(true);
+
+  // Yatra state count
+  const [yatraCount, setYatraCount] = useState(0);
 
   // API Fetches
   const fetchAllData = async () => {
@@ -97,6 +102,29 @@ export default function App() {
       .then(r => r.json())
       .then(updatedAnalytics => setAnalytics(updatedAnalytics))
       .catch(err => console.log(err));
+  }, []);
+
+  // Update Yatra list count and synchronize with local storage changes
+  useEffect(() => {
+    const updateYatraCount = () => {
+      try {
+        const saved = localStorage.getItem('mahanubhav_my_yatra');
+        if (saved) {
+          const list = JSON.parse(saved);
+          setYatraCount(Array.isArray(list) ? list.length : 0);
+        } else {
+          setYatraCount(0);
+        }
+      } catch (e) {
+        console.error('Failed reading mahanubhav_my_yatra count:', e);
+      }
+    };
+
+    updateYatraCount();
+    window.addEventListener('yatra-updated', updateYatraCount);
+    return () => {
+      window.removeEventListener('yatra-updated', updateYatraCount);
+    };
   }, []);
 
   // -------------------------------------------------------------
@@ -289,6 +317,19 @@ export default function App() {
           {/* Header Action Tools */}
           <div className="flex items-center gap-3">
             
+            {/* My Yatra Badge */}
+            <button
+              onClick={() => { setActiveTab('my_yatra'); setShowNotifications(false); }}
+              className={`px-3 py-1.5 border rounded-lg text-xs font-bold transition-all flex items-center gap-1.5 whitespace-nowrap cursor-pointer ${
+                activeTab === 'my_yatra'
+                  ? 'bg-saffron-500 border-saffron-600 text-white shadow-sm'
+                  : 'bg-saffron-50 border-saffron-200 text-saffron-700 hover:bg-saffron-100'
+              }`}
+              title={lang === 'mr' ? 'माझी यात्रा यादी' : 'मेरी यात्रा सूची'}
+            >
+              <span>🛕 {lang === 'mr' ? 'माझी यात्रा' : lang === 'hi' ? 'मेरी यात्रा' : 'My Yatra'} ({yatraCount})</span>
+            </button>
+            
             {/* Language Selector Dropdown */}
             <div className="relative group">
               <button className="px-3 py-1.5 border border-saffron-200 text-saffron-600 rounded-lg hover:bg-saffron-50 text-xs font-bold font-sans transition-all flex items-center gap-1 bg-white">
@@ -368,6 +409,8 @@ export default function App() {
           {[
             { id: 'granthalaya', label: translations.tabGranthalaya[lang], icon: BookOpen },
             { id: 'calendar', label: translations.tabCalendar[lang], icon: Calendar },
+            { id: 'sthan_darshan', label: translations.tabSthanDarshan[lang], icon: Compass },
+            { id: 'my_yatra', label: lang === 'mr' ? 'माझी यात्रा' : lang === 'hi' ? 'मेरी यात्रा' : 'My Yatra', icon: Map },
             { id: 'niwas_kosh', label: translations.tabNiwasKosh[lang], icon: Home },
             { id: 'temples', label: translations.tabTemples[lang], icon: MapPin },
             { id: 'samachar', label: translations.tabSamachar[lang], icon: Newspaper },
@@ -406,6 +449,17 @@ export default function App() {
               chapters={chapters}
               onBookRead={handleBookReadCount}
               lang={lang}
+            />
+          )}
+
+          {activeTab === 'sthan_darshan' && (
+            <SthanMap lang={lang} />
+          )}
+
+          {activeTab === 'my_yatra' && (
+            <MyYatra
+              lang={lang}
+              onNavigateToSthanDarshan={() => setActiveTab('sthan_darshan')}
             />
           )}
 
@@ -491,6 +545,8 @@ export default function App() {
         {[
           { id: 'granthalaya', label: translations.tabMobGranth[lang], icon: BookOpen },
           { id: 'calendar', label: translations.tabMobCalendar[lang], icon: Calendar },
+          { id: 'sthan_darshan', label: translations.tabMobSthanDarshan[lang], icon: Compass },
+          { id: 'my_yatra', label: lang === 'mr' ? 'माझी यात्रा' : lang === 'hi' ? 'मेरी यात्रा' : 'My Yatra', icon: Map },
           { id: 'niwas_kosh', label: translations.tabMobNiwasKosh[lang], icon: Home },
           { id: 'temples', label: translations.tabMobSthan[lang], icon: MapPin },
           { id: 'community', label: translations.tabMobCharcha[lang], icon: MessageSquare },

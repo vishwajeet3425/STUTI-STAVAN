@@ -55,6 +55,7 @@ interface BookingRecord {
   roomType: string;
   status: 'pending' | 'confirmed';
   bookingDate: string;
+  bookingType?: 'mofat' | 'shulk';
 }
 
 const PRE_SEEDED_NIWAS: NiwasItem[] = [
@@ -21621,6 +21622,7 @@ export default function NiwasKosh({ lang = 'mr' }: NiwasKoshProps) {
   const [bookingCheckOut, setBookingCheckOut] = useState('');
   const [bookingGuests, setBookingGuests] = useState(1);
   const [bookingRoomType, setBookingRoomType] = useState('साधारण खोल्या');
+  const [bookingType, setBookingType] = useState<'mofat' | 'shulk'>('mofat');
   const [isBookedSuccess, setIsBookedSuccess] = useState(false);
 
   // New Niwas Form State
@@ -21725,7 +21727,8 @@ export default function NiwasKosh({ lang = 'mr' }: NiwasKoshProps) {
       guests: bookingGuests,
       roomType: bookingRoomType,
       status: 'confirmed',
-      bookingDate: new Date().toLocaleDateString()
+      bookingDate: new Date().toLocaleDateString(),
+      bookingType: bookingType
     };
 
     setBookings([newBooking, ...bookings]);
@@ -21736,6 +21739,7 @@ export default function NiwasKosh({ lang = 'mr' }: NiwasKoshProps) {
       setBookingMobile('');
       setBookingCheckIn('');
       setBookingCheckOut('');
+      setBookingType('mofat');
       setSelectedNiwas(null);
     }, 2000);
   };
@@ -21973,6 +21977,7 @@ export default function NiwasKosh({ lang = 'mr' }: NiwasKoshProps) {
                           <th className="px-2 py-3 font-bold text-center border-b border-r border-saffron-700/50 w-20">मुले / इतर</th>
                           <th className="px-2 py-3 font-bold text-center border-b border-r border-saffron-700/50 w-20 bg-saffron-700">एकूण मंडळी</th>
                           <th className="px-3 py-3 font-bold border-b border-r border-saffron-700/50">मोबाईल / संपर्क क्रमांक</th>
+                          <th className="px-3 py-3 font-bold border-b border-r border-saffron-700/50 text-center w-36">आरक्षण पर्याय</th>
                           <th className="px-3 py-3 font-bold border-b">पत्ता / ठिकाण</th>
                         </tr>
                       </thead>
@@ -21998,7 +22003,7 @@ export default function NiwasKosh({ lang = 'mr' }: NiwasKoshProps) {
                             // Village Header Row
                             rows.push(
                               <tr key={`v-${groupIdx}`} className="bg-saffron-50/60 font-devanagari font-bold text-xs text-saffron-900 border-y border-saffron-100/50">
-                                <td colSpan={8} className="px-3 py-2">
+                                <td colSpan={9} className="px-3 py-2">
                                   <div className="flex items-center gap-1.5">
                                     <MapPin className="w-4 h-4 text-saffron-600 shrink-0" />
                                     <span>{group.village}</span>
@@ -22014,6 +22019,11 @@ export default function NiwasKosh({ lang = 'mr' }: NiwasKoshProps) {
                               const c = niwas.children !== undefined ? niwas.children : 0;
                               const hasMembersBreakdown = niwas.bhikshuk !== undefined || niwas.tapasvini !== undefined || niwas.children !== undefined;
                               const membersStr = hasMembersBreakdown ? `(${b}+${tapasviniVal}+${c})` : '';
+
+                              // Check if is free (mofat) or paid (shulk) or both
+                              const chargeText = (niwas.sevaCharge.mr || '').toLowerCase();
+                              const isFree = chargeText.includes('निःशुल्क') || chargeText.includes('मोफत') || chargeText.includes('ऐच्छिक') || chargeText === 'voluntary donation';
+                              const isPaid = chargeText.includes('₹') || chargeText.includes('शुल्क') || chargeText.includes('charge') || chargeText.includes('rs');
 
                               rows.push(
                                 <tr key={niwas.id} className="hover:bg-saffron-50/5 transition text-xs sm:text-sm">
@@ -22056,6 +22066,30 @@ export default function NiwasKosh({ lang = 'mr' }: NiwasKoshProps) {
                                     ) : (
                                       <span className="text-gray-400 font-sans">-</span>
                                     )}
+                                  </td>
+                                  {/* आरक्षण पर्याय */}
+                                  <td className="px-2 py-2 border-r border-gray-200 text-center bg-gray-50/20">
+                                    <div className="flex flex-col items-center gap-1.5">
+                                      <div className="flex gap-1 justify-center">
+                                        <span className={`px-1.5 py-0.5 rounded text-[9px] font-bold ${
+                                          isFree ? 'bg-green-100 text-green-800 border border-green-200' : 'bg-gray-100 text-gray-400'
+                                        }`}>
+                                          मोफत
+                                        </span>
+                                        <span className={`px-1.5 py-0.5 rounded text-[9px] font-bold ${
+                                          isPaid || !isFree ? 'bg-amber-100 text-amber-800 border border-amber-200' : 'bg-gray-100 text-gray-400'
+                                        }`}>
+                                          सशुल्क
+                                        </span>
+                                      </div>
+                                      <button
+                                        onClick={() => setSelectedNiwas(niwas)}
+                                        className="bg-saffron-600 hover:bg-saffron-700 text-white font-bold text-[10px] px-2 py-1 rounded-md transition shadow-xs flex items-center gap-1"
+                                      >
+                                        <Calendar className="w-3 h-3" />
+                                        आरक्षण करा
+                                      </button>
+                                    </div>
                                   </td>
                                   {/* पत्ता / ठिकाण */}
                                   <td className="px-3 py-3 text-left font-devanagari text-gray-600 text-xs sm:text-sm">
@@ -22381,7 +22415,7 @@ export default function NiwasKosh({ lang = 'mr' }: NiwasKoshProps) {
                       </span>
                     </div>
 
-                    <div className="mt-3 grid grid-cols-2 md:grid-cols-4 gap-2 text-xs border-t border-gray-100 pt-3">
+                    <div className="mt-3 grid grid-cols-2 md:grid-cols-5 gap-2 text-xs border-t border-gray-100 pt-3">
                       <div>
                         <span className="text-gray-400 font-sans block">{labels.guestName}</span>
                         <span className="font-semibold text-gray-700 font-sans">{bk.guestName}</span>
@@ -22397,6 +22431,16 @@ export default function NiwasKosh({ lang = 'mr' }: NiwasKoshProps) {
                       <div>
                         <span className="text-gray-400 font-sans block">{labels.checkOut}</span>
                         <span className="font-semibold text-gray-700 font-sans">{bk.checkOut}</span>
+                      </div>
+                      <div>
+                        <span className="text-gray-400 font-sans block">आरक्षण प्रकार</span>
+                        <span className={`inline-block font-bold px-1.5 py-0.5 rounded text-[10px] mt-0.5 ${
+                          bk.bookingType === 'shulk'
+                            ? 'bg-amber-100 text-amber-800'
+                            : 'bg-green-100 text-green-800'
+                        }`}>
+                          {bk.bookingType === 'shulk' ? 'सशुल्क (Paid)' : 'मोफत (Free)'}
+                        </span>
                       </div>
                     </div>
                   </div>
@@ -22498,6 +22542,34 @@ export default function NiwasKosh({ lang = 'mr' }: NiwasKoshProps) {
                         <option key={idx} value={room}>{room}</option>
                       ))}
                     </select>
+                  </div>
+                </div>
+
+                <div>
+                  <label className="block text-xs font-semibold text-gray-600 mb-1 font-devanagari">आरक्षण प्रकार *</label>
+                  <div className="grid grid-cols-2 gap-2">
+                    <button
+                      type="button"
+                      onClick={() => setBookingType('mofat')}
+                      className={`py-2.5 px-3 rounded-lg text-xs font-bold transition-all border text-center font-devanagari ${
+                        bookingType === 'mofat'
+                          ? 'bg-green-600 text-white border-green-700 shadow-xs'
+                          : 'bg-white text-gray-600 border-gray-200 hover:bg-gray-50'
+                      }`}
+                    >
+                      {lang === 'mr' ? 'मोफत (Free)' : lang === 'hi' ? 'निःशुल्क (Free)' : 'Free'}
+                    </button>
+                    <button
+                      type="button"
+                      onClick={() => setBookingType('shulk')}
+                      className={`py-2.5 px-3 rounded-lg text-xs font-bold transition-all border text-center font-devanagari ${
+                        bookingType === 'shulk'
+                          ? 'bg-amber-600 text-white border-amber-700 shadow-xs'
+                          : 'bg-white text-gray-600 border-gray-200 hover:bg-gray-50'
+                      }`}
+                    >
+                      {lang === 'mr' ? 'सशुल्क (Paid)' : lang === 'hi' ? 'सशुल्क (Paid)' : 'Paid'}
+                    </button>
                   </div>
                 </div>
 

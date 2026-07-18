@@ -5484,10 +5484,10 @@ export default function KaryakramCalendar({ events, lang = 'mr' }: KaryakramCale
 
       {/* Main Container Switch */}
       {viewMode === 'grid' ? (
-        <div className="flex-1 flex flex-col bg-amber-50/10 p-4 md:p-6">
+        <div className="flex-1 flex flex-col bg-amber-50/10 p-2 md:p-6">
           
           {/* Calendar Traditional Banner Header */}
-          <div className="bg-sky-600 rounded-2xl p-4 md:p-6 shadow-md text-white mb-6 border-2 border-sky-400">
+          <div className="bg-sky-600 rounded-2xl p-2.5 md:p-6 shadow-md text-white mb-3 md:mb-6 border-2 border-sky-400">
             <div className="grid grid-cols-1 md:grid-cols-3 items-center gap-4 text-center">
               
               {/* Left Column: Traditional details */}
@@ -5564,7 +5564,7 @@ export default function KaryakramCalendar({ events, lang = 'mr' }: KaryakramCale
           </div>
 
           {/* User Guides */}
-          <div className="flex flex-col md:flex-row md:items-center justify-between gap-2 px-2 mb-4">
+          <div className="flex flex-col md:flex-row md:items-center justify-between gap-2 px-2 mb-2 md:mb-4">
             <span className="text-[11px] md:text-xs font-bold text-gray-500 font-sans flex items-center gap-1 bg-white border border-gray-100 px-3 py-1 rounded-full shadow-2xs">
               <Info className="w-3.5 h-3.5 text-sky-500" />
               {calendarLocalTranslations.clickDayHint[lang]}

@@ -4,7 +4,7 @@
  */
 
 import { initializeApp } from 'firebase/app';
-import { getFirestore } from 'firebase/firestore';
+import { initializeFirestore } from 'firebase/firestore';
 
 const firebaseConfig = {
   projectId: "central-bonus-njkjx",
@@ -18,5 +18,7 @@ const firebaseConfig = {
 // Initialize Firebase App
 const app = initializeApp(firebaseConfig);
 
-// Initialize Firestore with custom databaseId
-export const db = getFirestore(app, "ai-studio-mahanubhavvishwa-1b42ed01-f742-41d4-b5c1-3834de4c3685");
+// Initialize Firestore with custom databaseId and long polling
+export const db = initializeFirestore(app, {
+  experimentalForceLongPolling: true,
+}, "ai-studio-mahanubhavvishwa-1b42ed01-f742-41d4-b5c1-3834de4c3685");

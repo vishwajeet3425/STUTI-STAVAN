@@ -139,6 +139,12 @@ export interface AnalyticsData {
   activeUsersToday: number;
 }
 
+export interface GranthReference {
+  bookName: 'लीळाचरित्र' | 'सूत्रपाठ' | 'दृष्टांतपाठ' | 'स्थानपोथी' | 'इतर ग्रंथ' | string;
+  chapter: string;
+  pageNumber: string;
+}
+
 export interface SthanDarshanPlace {
   id: string;
   number: number;
@@ -152,5 +158,45 @@ export interface SthanDarshanPlace {
   state?: string;
   district?: string;
   taluka?: string;
+  village?: string;
+  
+  // Phase 3 fields
+  spiritualImportance?: string;
+  history?: string;
+  leela?: string;
+  specialInfo?: string;
+  granthReferences?: string[];
+  elevation?: string;
+  images?: string[];
+  videos?: string[];
+  audioUrl?: string;
+  
+  // Phase 3 additional complete fields
+  architecture?: string;
+  festivals?: string;
+  darshanTiming?: string;
+  contactNumber?: string;
+  website?: string;
+  granthRefs?: GranthReference[];
+}
+
+export interface Place {
+  id?: string;
+  placeNameMr: string;
+  placeNameEn: string;
+  state: string;
+  district: string;
+  taluka: string;
+  village: string;
+  category: string;
+  latitude: number;
+  longitude: number;
+  history: string;
+  leela: string;
+  specialInfo: string;
+  status: string;
+  photoUrl?: string;
+  createdAt?: string;
+  updatedAt?: string;
 }
 

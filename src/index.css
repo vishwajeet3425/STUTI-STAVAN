@@ -49,3 +49,109 @@
   animation: pulse-ring 2s infinite;
 }
 
+/* Responsive CSS Overrides for KaryakramCalendar monthly grid on Mobile/Android WebViews */
+@media (max-width: 768px) {
+  /* Prevent horizontal and vertical overflow of the calendar container */
+  #calendar-root {
+    min-height: 0 !important;
+  }
+  
+  /* Make the main grid and its parent 100% width, disabling horizontal scroll entirely on mobile */
+  .grid-rows-7 {
+    min-width: 0 !important;
+    width: 100% !important;
+    grid-template-columns: 32px repeat(5, 1fr) !important;
+  }
+  
+  /* Specifically target October with 6 columns */
+  .grid-rows-7[class*="repeat(6"] {
+    grid-template-columns: 32px repeat(6, 1fr) !important;
+  }
+
+  /* Force the entire grid wrapper to fit perfectly without overflow scrolling */
+  .overflow-x-auto.custom-scrollbar {
+    overflow-x: hidden !important;
+  }
+
+  /* Compress the height and padding of each grid cell to scale cleanly with viewport height (vh) */
+  .grid-rows-7 > div {
+    min-height: 38px !important;
+    height: 7vh !important;
+    max-height: 55px !important;
+    padding: 0.15rem 0.2rem !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+  }
+
+  /* Hide center text contents, long lists of events/yogs, and info strings inside the cells on mobile */
+  .grid-rows-7 > div > div:nth-child(2), /* Hide center block */
+  .grid-rows-7 > div > div:nth-child(3), /* Hide "अधिक माहिती..." string */
+  .grid-rows-7 > div p,
+  .grid-rows-7 > div img,
+  .grid-rows-7 > div span[class*="text-[8px]"],
+  .grid-rows-7 > div .text-slate-800,
+  .grid-rows-7 > div .bg-blue-50\/40,
+  .grid-rows-7 > div .bg-amber-50\/30 {
+    display: none !important;
+  }
+
+  /* Re-align and center the top header in each active day cell */
+  .grid-rows-7 > div > div:first-child {
+    border-bottom: none !important;
+    padding-bottom: 0 !important;
+    justify-content: center !important;
+    width: 100% !important;
+    gap: 1px !important;
+  }
+
+  /* Scale down date numbers to fit nicely inside smaller cell sizes */
+  .grid-rows-7 span[class*="font-black font-sans"] {
+    font-size: 13px !important;
+    line-height: 1 !important;
+  }
+
+  /* Compress the "Today" badge */
+  .grid-rows-7 span[class*="bg-red-600"] {
+    font-size: 8px !important;
+    padding: 1px 2px !important;
+    margin-left: 1px !important;
+  }
+
+  /* Hide Shubh label badges to avoid cluttering small mobile viewports */
+  .grid-rows-7 span[class*="font-black px-1.5"] {
+    display: none !important;
+  }
+  
+  /* Scale down any icons shown inside the cells */
+  .grid-rows-7 svg {
+    width: 10px !important;
+    height: 10px !important;
+  }
+
+  /* Format Sunday-Saturday row headers on the left-most margin */
+  .grid-rows-7 > div[style*="gridColumnStart: 1"] {
+    padding: 0 !important;
+    font-size: 11px !important;
+    justify-content: center !important;
+    align-items: center !important;
+  }
+  
+  .grid-rows-7 > div[style*="gridColumnStart: 1"] span:first-child {
+    font-size: 10px !important;
+    font-weight: 900 !important;
+  }
+  
+  .grid-rows-7 > div[style*="gridColumnStart: 1"] span:last-child {
+    display: none !important; /* Hide English sub-label on mobile */
+  }
+
+  /* Convert ad/wishes block cells on mobile to simple, clean flat placeholders matching default cells */
+  .grid-rows-7 > div[class*="from-amber-50"],
+  .grid-rows-7 > div[class*="from-[#dc2626]"] {
+    background: #fdfbf7 !important;
+    border: 1px solid #ffeed6 !important;
+  }
+}
+

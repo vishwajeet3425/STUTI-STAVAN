@@ -60,6 +60,11 @@ export const translations = {
     hi: 'महानुभाव निवास कोष',
     en: 'Mahanubhav Niwas Kosh'
   },
+  tabSthanDarshan: {
+    mr: 'महानुभाव स्थान दर्शन',
+    hi: 'महानुभाव स्थान दर्शन',
+    en: 'Mahanubhav Sthan Darshan'
+  },
   tabAdmin: {
     mr: 'प्रशासक नियंत्रण',
     hi: 'एडमिन पैनल',
@@ -91,6 +96,11 @@ export const translations = {
     mr: 'निवास कोष',
     hi: 'निवास कोष',
     en: 'Niwas Kosh'
+  },
+  tabMobSthanDarshan: {
+    mr: 'स्थान दर्शन',
+    hi: 'स्थान दर्शन',
+    en: 'Sthan Darshan'
   },
   tabMobCharcha: {
     mr: 'चर्चा',
